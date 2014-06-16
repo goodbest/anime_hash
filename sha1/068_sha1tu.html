@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja" dir="ltr"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="robots" content="index,noarchive">
+<title>ハッシュ保管庫 SHA1-ツ版</title>
+<style type="text/css">
+<!--
+*{margin:0; padding:0;}
+body{margin:0; padding:0; font-size:9pt; color:#000000; background:#F5F5F5;}
+dd{margin:0 0 0 20px;}
+hr{margin:1px 0; border:1px #C1C0B5 solid;}
+hr.A{text-align:left; width:95%; margin:2px 0; border:1px #87A9D5 solid;}
+hr.B{text-align:left; width:95%; margin:2px 0; border:2px #43599A solid;}
+a{color:#0080C0; text-decoration:none;}
+a:hover{color:#FFFFFF; background-color:#0080C0;}
+table{font-size:8pt;}
+td{text-align:center; width:50px; border:2px #0080C0 solid;}
+td a{display:block; height:1.2em; line-height:1.2em;}
+.font{margin:5px 0 0 2px; font-size:10pt; color:#6E6E6E;}
+.title{color:#D95131;}
+.sup{color:#0000FF;}
+.exc{color:#808080;}
+-->
+</style></head><body>
+<a name="header"></a>
+<table><tr>
+<td><a href="051_sha1aa.html">あ</a></td><td><a href="052_sha1ai.html">い</a></td><td><a href="053_sha1au.html">う</a></td><td><a href="054_sha1ae.html">え</a></td>
+<td><a href="055_sha1ao.html">お</a></td><td><a href="056_sha1ka.html">か</a></td><td><a href="057_sha1ki.html">き</a></td><td><a href="058_sha1ku.html">く</a></td>
+<td><a href="059_sha1ke.html">け</a></td><td><a href="060_sha1ko.html">こ</a></td><td><a href="061_sha1sa.html">さ</a></td><td><a href="062_sha1si.html">し</a></td>
+<td><a href="063_sha1su.html">す</a></td><td><a href="064_sha1se.html">せ</a></td><td><a href="065_sha1so.html">そ</a></td><td><a href="066_sha1ta.html">た</a></td>
+<td><a href="067_sha1ti.html">ち</a></td><td><a href="068_sha1tu.html">つ</a></td><td><a href="069_sha1te.html">て</a></td><td><a href="070_sha1to.html">と</a></td>
+<td><a href="071_sha1na.html">な</a></td><td><a href="072_sha1ni.html">に</a></td><td><a href="0javascript:void(0)">ぬ</a></td>
+<td><a href="0javascript:void(0)">ね</a></td><td><a href="075_sha1no.html">の</a></td>
+</tr><tr>
+<td><a href="076_sha1ha.html">は</a></td><td><a href="077_sha1hi.html">ひ</a></td><td><a href="078_sha1hu.html">ふ</a></td><td><a href="079_sha1he.html">へ</a></td>
+<td><a href="080_sha1ho.html">ほ</a></td><td><a href="081_sha1ma.html">ま</a></td><td><a href="082_sha1mi.html">み</a></td><td><a href="083_sha1mu.html">む</a></td>
+<td><a href="084_sha1me.html">め</a></td><td><a href="085_sha1mo.html">も</a></td><td><a href="086_sha1ya.html">や</a></td><td><a href="087_sha1yu.html">ゆ</a></td>
+<td><a href="088_sha1yo.html">よ</a></td><td><a href="089_sha1ra.html">ら</a></td><td><a href="090_sha1ri.html">り</a></td><td><a href="091_sha1ru.html">る</a></td>
+<td><a href="092_sha1re.html">れ</a></td><td><a href="093_sha1ro.html">ろ</a></td><td><a href="094_sha1wa.html">わ</a></td><td><a href="095_sha1ld.html">LD</a></td>
+<td><a href="096_sha1ow.html">旧</a></td><td><a href="../bd/047_bd.html">BD</a></td><td><a href="../psp/048_psp.html">PSP</a></td>
+<td colspan="2" style="width:100px;"><a href="../update.html">更新リスト</a></td>
+</tr></table>
+<span class="font">ハッシュ保管庫 SHA1-ツ版</span><hr>
+<dl>
+<dt><span class="title">ついでにとんちんかん<b>◆</b></span>08/08/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+ついでにとんちんかん 映像特典 ノンテロップOP 「ごめんねカウボーイ」 (DVD 640x480 x264).mp4 rDLotN7hLy 45,835,760 68663c6afd5a977794e98d9e41358357ababa308<br>
+ついでにとんちんかん 映像特典 ノンテロップOP 「ほらね、春が来た」 (DVD 640x480 x264).mp4 rDLotN7hLy 52,003,307 b5590a6e01972c14c92b3fb3fffe91dc17758d8e<br>
+ついでにとんちんかん 映像特典 ノンテロップOP 「麦わらでダンス」 (DVD 640x480 x264).mp4 rDLotN7hLy 61,321,355 87d4992d78a2de0a00e99da7c276a9b2f592fe4c<br>
+ついでにとんちんかん 映像特典 ノンテロップED 「メビウスの恋人」 (DVD 640x480 x264).mp4 rDLotN7hLy 29,475,930 86ab02ac6025a327daf619531ed4711793a357c9<br>
+ついでにとんちんかん 映像特典 ノンテロップED 「誰も知らないブルーエンジェル」 (DVD 640x480 x264).mp4 rDLotN7hLy 24,544,320 ed1fd75da4b67534260fe6f54743a53211db7550<br>
+ついでにとんちんかん 映像特典 ノンテロップED 「夢に逢いたい」 (DVD 640x480 x264).mp4 rDLotN7hLy 33,417,295 615f3e429142565c73140dad8c31c23eba453c10<br>
+ついでにとんちんかん 第01話 「完全アホ100％！怪盗とんちんかん参上！！」 (DVD 640x480 x264).mp4 rDLotN7hLy 292,398,020 c6ce91a99025e57b901cc0db2e9aa6bce620b211<br>
+ついでにとんちんかん 第02話 「集合の合図はバカ笑い／由緒ある鐘をねらえ！」 (DVD 640x480 x264).mp4 rDLotN7hLy 268,639,904 59763f63f62dde62899f7c22859122ef688a7f15<br>
+ついでにとんちんかん 第03話 「激突ゴンベエVS東風／投げナイフにご用心」 (DVD 640x480 x264).mp4 rDLotN7hLy 276,904,822 09f839353b2f8d82c6a5a2119ed8c8155e8e1685<br>
+ついでにとんちんかん 第04話 「天才少女アンディ登場／恐怖の目覚まし時計」 (DVD 640x480 x264).mp4 rDLotN7hLy 257,377,505 212936ff96c9894c1b9bda858038fcb1225717d8<br>
+ついでにとんちんかん 第05話 「勝手にあんぽんたん／10年に一度のワラ人形」 (DVD 640x480 x264).mp4 rDLotN7hLy 260,176,274 bcdc19ed8311a5e815e23547589000d79484a435<br>
+ついでにとんちんかん 第06話 「ぷるんぷるんアンディ／帰ってきたアホー鳥」 (DVD 640x480 x264).mp4 rDLotN7hLy 275,907,716 4a77f2775428788e7aa6a4a0b050096bc0126c16<br>
+ついでにとんちんかん 第07話 「パソコン作戦大混戦／抜作先生の授業開始」 (DVD 640x480 x264).mp4 rDLotN7hLy 253,585,818 db341b136a20ebea0ac9cdfaa92d21687a8d1e3c<br>
+ついでにとんちんかん 第08話 「ライバル天地くん登場／大乱戦！！ミラクル迷路」 (DVD 640x480 x264).mp4 rDLotN7hLy 270,065,320 031d8fbd9feee15a0cff7cc824c759d8fc64adfb<br>
+ついでにとんちんかん 第09話 「吉沢先生のラブラブ騒動／海を夢みる少女」 (DVD 640x480 x264).mp4 rDLotN7hLy 262,073,841 f83ed41d8434a7492e5dcc5fc9496a8f8a3ef53b<br>
+ついでにとんちんかん 第10話 「出た！！大家のばあさん／カミナリサンタさん」 (DVD 640x480 x264).mp4 rDLotN7hLy 281,752,082 e257ff41c838baaa28d9f8a3b6bdbbec425e803e<br>
+ついでにとんちんかん 第11話 「犯人捕まえてみれば・・・！？／東風・甘子の純情物語」 (DVD 640x480 x264).mp4 rDLotN7hLy 244,939,369 ee0ab49e017225972ee3bb3174cd4d2ef1c6ed62<br>
+ついでにとんちんかん 第12話 「アッと驚く新春初仕事／東風の修行はツライ！！」 (DVD 640x480 x264).mp4 rDLotN7hLy 261,762,656 f82aa95ec751a6c8ef62ed3aa7ce887bd6739184<br>
+ついでにとんちんかん 第13話 「ポリスあほデミー／雪に消えた抜作先生」 (DVD 640x480 x264).mp4 rDLotN7hLy 266,554,619 7130397ded9d9e08d585694bb2419f3f27d9e885<br>
+ついでにとんちんかん 第14話 「ゲゲゲの妖怪屋敷！！／校内ウルトラ俳句大会」 (DVD 640x480 x264).mp4 rDLotN7hLy 260,487,714 85b032356a4dce04bd83bfca062b1b985d0c7b1d<br>
+ついでにとんちんかん 第15話 「恋の嵐を呼ぶ転校生／ニセモノはホンモノ！？」 (DVD 640x480 x264).mp4 rDLotN7hLy 258,263,212 9d1ffda15d0cf3ad0931a5f38760ca04e22111e1<br>
+ついでにとんちんかん 第16話 「恐怖の本気チョコ／挑戦！！道場やぶり道場」 (DVD 640x480 x264).mp4 rDLotN7hLy 327,451,776 f91324d4d8fa6b1fd3fa1f31026c692e78b0ff55<br>
+ついでにとんちんかん 第17話 「シロン危機一髪！！／久しぶりのあんぽんたん」 (DVD 640x480 x264).mp4 rDLotN7hLy 266,556,345 61343524b654f578efc8a6445ff8a12011a5d9cd<br>
+ついでにとんちんかん 第18話 「抜作先生の人間ポンプ／最後の必殺スキップ」 (DVD 640x480 x264).mp4 rDLotN7hLy 323,285,901 ae3ce1dab3ff270492b960c7e709a38f9f071bd2<br>
+ついでにとんちんかん 第19話 「ウーパーパーパーを盗め！！／リーダー対殺し屋」 (DVD 640x480 x264).mp4 rDLotN7hLy 273,348,828 6da11ed9c50b9fe1af6ac49b63bb3b84a2328431<br>
+ついでにとんちんかん 第20話 「女子プロレスに挑戦！！／抜作先生は名医！？」 (DVD 640x480 x264).mp4 rDLotN7hLy 304,296,858 4ea1ab8aa24a8467eb3dc7beea806da443cfcdbe<br>
+ついでにとんちんかん 第21話 「毒鬼警部の大逆襲／どんより雲の悪夢」 (DVD 640x480 x264).mp4 rDLotN7hLy 284,299,221 4dc45c6300da9e02c994f1fa09c980f54fe9b7b4<br>
+ついでにとんちんかん 第22話 「天地くんの春／抜作先生と怒りのエンマ大王」 (DVD 640x480 x264).mp4 rDLotN7hLy 318,641,930 1ee8f99535dfb1d962fc8bf3b52a5dcd876c5c6b<br>
+ついでにとんちんかん 第23話 「京都に参上とんちんかん／激突！！京都夢芝居」 (DVD 640x480 x264).mp4 rDLotN7hLy 257,646,529 51d7252a2e41caa6065fe4100c6284caeb0c27ce<br>
+ついでにとんちんかん 第24話 「四代目はセーラー服／怪奇！！ホラー教室」 (DVD 640x480 x264).mp4 rDLotN7hLy 251,536,826 cd8afd969ee7b0679e6d68738f75881248236952<br>
+ついでにとんちんかん 第25話 「モテモテ東風くん／ニセ物を捕まえろ！！」 (DVD 640x480 x264).mp4 rDLotN7hLy 310,497,499 2e990b3eae825b1ba4db08c7d11ef087d4b54574<br>
+ついでにとんちんかん 第26話 「よけいなおせわの天地くん／お絵かきは嫌い！！」 (DVD 640x480 x264).mp4 rDLotN7hLy 330,553,742 305762661d90f49786693d327d1641c44588426d<br>
+ついでにとんちんかん 第27話 「初デート初キッス／助けて！！幸運の女神さま」 (DVD 640x480 x264).mp4 rDLotN7hLy 339,137,473 2d6cc5eeba401d56a609361641a85df3c52ef68e<br>
+ついでにとんちんかん 第28話 「愛の奇跡パワフル吉沢先生／世界最強は誰か」 (DVD 640x480 x264).mp4 rDLotN7hLy 350,290,677 06a2f80ecf18f02c616230009b9bebd00bf8827e<br>
+ついでにとんちんかん 第29話 「ワンワン・ラブストーリィ／ドジな吸血鬼」 (DVD 640x480 x264).mp4 rDLotN7hLy 308,361,027 d0d91516a068a0277f3721432c642a73a4705133<br>
+ついでにとんちんかん 第30話 「あほ忍法みだれとび！！／変な外人おもしろ日本」 (DVD 640x480 x264).mp4 rDLotN7hLy 327,721,456 c7f6e282c62c398d527e9f50fe632ba4a698232a<br>
+ついでにとんちんかん 第31話 「爆笑ファッションショー／先生の一日署長」 (DVD 640x480 x264).mp4 rDLotN7hLy 345,142,557 e04fd8cb35151203bb0b56345c4e7058852164a7<br>
+ついでにとんちんかん 第32話 「あわれな宇宙人／抜作先生のドキドキ大特訓！！」 (DVD 640x480 x264).mp4 rDLotN7hLy 300,246,295 8e4660d724c54d6bbdcc2631b17dc34ed861509d<br>
+ついでにとんちんかん 第33話 「珍平のガールフレンド／アホロボット登場！！」 (DVD 640x480 x264).mp4 rDLotN7hLy 382,533,455 450e91a3c04f0759f9cd9d39ff0e31543c895eda<br>
+ついでにとんちんかん 第34話 「パニック！抜作・甘子の珍騒動／君の名は・・・」 (DVD 640x480 x264).mp4 rDLotN7hLy 309,711,701 2ed7a196a3e3165e8728ad61e4213d5824fc6bb8<br>
+ついでにとんちんかん 第35話 「怪談ユウレイ騒動／出た！！なぞなぞバーサン」 (DVD 640x480 x264).mp4 rDLotN7hLy 298,345,380 3b9868f82b391d149e817dd2ac029b2c223187ad<br>
+ついでにとんちんかん 第36話 「天地くんがいっぱい／クラス対抗アホ泳ぎ！！」 (DVD 640x480 x264).mp4 rDLotN7hLy 372,397,905 340f7a6f8fe277fa2371c3ee32d7cf1918142aeb<br>
+ついでにとんちんかん 第37話 「サマースペシャル南の島の大陰謀！！｣ (DVD 640x480 x264).mp4 rDLotN7hLy 288,020,893 4c13e6edd3791bafd5042306ede8fe5ca3061b47<br>
+ついでにとんちんかん 第38話 「好きと言えない二人だから／燃えろ毒鬼警部」 (DVD 640x480 x264).mp4 rDLotN7hLy 263,722,740 485bd1c7fdd675f16eac6c81a41576f77b45baeb<br>
+ついでにとんちんかん 第39話 「笑撃！！マツタケ狩り／青春してソフトボール」 (DVD 640x480 x264).mp4 rDLotN7hLy 265,009,386 28ac9901cc656c0d4220ca1437170c906596a829<br>
+ついでにとんちんかん 第40話 「髪の毛一本秘攻防戦／恐怖のお笑いバクダン」 (DVD 640x480 x264).mp4 rDLotN7hLy 285,745,480 7b9dfe34bf4a988939e19ad74b7cef86cf2d1b04<br>
+ついでにとんちんかん 第41話 「すべて見せます華麗なるテクニック！！」 (DVD 640x480 x264).mp4 rDLotN7hLy 353,909,640 41a86750cf3881dd570e80c221826c100f6029f7<br>
+ついでにとんちんかん 第42話 「激突！！大運動会／とっておきのジ・エンド(最終話)」 (DVD 640x480 x264).mp4 rDLotN7hLy 298,060,025 a83a70aaf34f1edd81ea88ceba0e5786ad6dce0a<br>
+ついでにとんちんかん 未放送第42話 「新メンバー！？トン吉くん／モテモテ抜作先生」 (DVD 640x480 x264).mp4 rDLotN7hLy 291,296,613 07be71894f000cb0f95bfc3ee89cb71dd49cf119<br>
+<br></dd>
+<dt><span class="title">ツインビーPARADAISE<b>◆</b></span>08/02/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] ツインビーPARADAISE リマスター版 「ウィンビーの1／8パニック」 (640x480 WMV9).wmv サキCNS9Um2lXI 368,736,726 022a18fde4a9e3c037d150949ebc96105b349407<br>
+[アニメ DVD] ツインビーPARADAISE リマスター版 「チューリップ海岸物語」 (640x480 WMV9).wmv サキCNS9Um2lXI 97,001,358 8fad4d430c7cb8abd25c71e6b89a18edce513820<br>
+[アニメ DVD] ツインビーPARADAISE リマスター版 映像特典 ファンタジアンな日常① (640x480 WMV9).wmv サキCNS9Um2lXI 23,591,006 617208732adfd2523c4e7104c673e4f6b326ec48<br>
+[アニメ DVD] ツインビーPARADAISE リマスター版 映像特典 ファンタジアンな日常② (640x480 WMV9).wmv サキCNS9Um2lXI 18,342,700 9afadc9072347d32637208db5d560fb0f5581c2f<br>
+[アニメ DVD] ツインビーPARADAISE リマスター版 映像特典 ファンタジアンな日常③ (640x480 WMV9).wmv サキCNS9Um2lXI 20,294,640 4ef74a8d338156182dd7af55238b5b08ff32aeb3<br>
+[アニメ DVD] ツインビーPARADAISE リマスター版 第01話 「ヴィーナスの微笑み」 (640x480 WMV9).wmv サキCNS9Um2lXI 252,127,550 ee2799259a3052ea3d621d2d4cb434028f78fc64<br>
+[アニメ DVD] ツインビーPARADAISE リマスター版 第02話 「真夏の蜃気楼」 (640x480 WMV9).wmv サキCNS9Um2lXI 226,574,530 5f689ffdd3c5917f54eefda75ea4b6f935b0e6ea<br>
+[アニメ DVD] ツインビーPARADAISE リマスター版 第03話 「悪よ復活せよ！」 (640x480 WMV9).wmv サキCNS9Um2lXI 239,327,400 2855c306b7161845714bc60e7a0b26a5511d2e1a<br>
+<br></dd>
+<dt><span class="title">月は東に日は西に<b>◆</b></span>07/11/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ VOL1 メニュー.bmp aucjOwkaxK 921,654 1760b8addd092bb6b2bf635c6237b76994efeccd<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ VOL1 映像特典 ノンテロップOP (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 43,364,352 279fe4ca8fb97d8303a23ccaf193d2e6c6b6a136<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ VOL2 メニュー.bmp aucjOwkaxK 921,654 199a7d020a4c31ce01e615ae68895db0693ec148<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ VOL3 メニュー.bmp aucjOwkaxK 921,654 1384a7aa9949cde318a757a1924d0a6395af82de<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ VOL3 映像特典 12話 ノンテロップED (Divx5.2.1 712×394 24fps).avi aucjOwkaxK 37,060,608 97400e81990ca11fcd9111a5f752c4f4bc2aa151<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ VOL3 映像特典 特別編「東奔西走スクールライフ」 (Divx5.2.1 712×394 24fps).avi aucjOwkaxK 442,998,784 0d8980a595290e279d37b890f3b7260945954981<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ VOL4 メニュー.bmp aucjOwkaxK 921,654 7adaf6e62e8fec108b981a4ae4f18e388f8c1af4<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ VOL4 映像特典 12’話ノンテロップED (Divx5.2.1 712×394 24fps).avi aucjOwkaxK 34,166,784 6ddbc9fe11c92eabff884629ea3eecb9820e4925<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ VOL4 映像特典 DVD告知CM (Divx5.2.1 712×394 24fps).avi aucjOwkaxK 5,476,352 adb94c3558e26fecf6ad1a6870cfce7350d66846<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ VOL4 映像特典 番宣スポット (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 4,067,328 23909e9c0f9c5333a983153ad2e525eca9665126<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第01話 「空から舞い降りた少女」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 256,559,104 ef8820e86c397ab0a0dd4c9f1110914715b19763<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第02話 「楽しい学園生活の予感」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 227,352,576 b995adda53f0c23531c505dc44ee59bb4fd43ab5<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第03話 「ドキドキ身体検査」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 252,651,520 03bdd9b238f051151aee4e71a14089cfedf26ad8<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第04話 「走れ、まるぴん！」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 197,646,336 50d69654ff56e4903bd0ebff7f5e4ecab99b4ea1<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第05話 「ハッピーバースデー」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 267,331,584 d529ef82b638f485eae6d9cedda50077bcdc6c07<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第06話 「恋のバイシクル」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 266,047,488 5a4f200a52ff35d2310e7a6d170339f6f72fca91<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第07話 「ブラザー＆シスター」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 230,725,632 66553c977456527683a91acb33e616119ae75c15<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第08話 「それぞれの夜」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 210,483,200 0fa9bbdc4477e1c84c21dab6c557933394e8733e<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第09’話 「ロンリネス」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 247,934,976 776b69968b9c002516d55b73f69fa5f0d48b8beb<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第09話 「夏祭り」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 231,600,128 b7de7591c5b26018e9065368d23d60d74fa7da02<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第10’話 「夢と現実」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 266,078,208 f08746167e14af7c89ceddf0badd1a4e461e41a3<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第10話 「もう一人の自分」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 251,359,232 09fcbcacc7263b1a994ba0e6b5bfec85df6e4921<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第11’話 「記憶」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 264,153,088 1dfb1eb6d8d984a420bc083caacb310d6eaec963<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第11話 「時空を超えて」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 250,331,136 5bec19b3f60eeb105f4ae66ab181249c14f9455f<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第12’話 「オペレーティング・サンクチュアリー」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 360,163,328 51644590ccd630c212517d153e3cdd90b9336c46<br>
+[DVD] 月は東に日は西に ～Operation Sanctuary～ 第12話 「月は東に日は西に」 (Divx5.2.1 712×394 120fps).avi aucjOwkaxK 346,732,544 aebb60866014616281dbc8a139957cbc943bef9b<br>
+<hr class="A">
+[DVD アニメ] 月は東に日は西に ノンクレジットOP (704x396 WMV9).wmv 27,003,394 7e508ddc82397d4a741642d1a5d2c22e74c78797<br>
+[DVD アニメ] 月は東に日は西に 第01話 (704x396 WMV9).wmv 141,015,312 75a2484742f605a5514e66d94b8c545e210514cc<br>
+[DVD アニメ] 月は東に日は西に 第02話 (704x396 WMV9).wmv 123,311,312 431a4b604852bef3576be5be354e99747b2b68c3<br>
+[DVD アニメ] 月は東に日は西に 第03話 (704x396 WMV9).wmv 133,671,312 db5f617dd72a85df07767cef7ee24305a6b4cfd8<br>
+[DVD アニメ] 月は東に日は西に 第04話 (704x396 WMV9).wmv 109,823,312 56fe335ce40abdfb8f2a2f12f5c379e1d28617c4<br>
+[DVD アニメ] 月は東に日は西に 第05話 (704x396 WMV9).wmv 138,231,312 f747511aa374f5d1a704446825ad470b462d72fc<br>
+[DVD アニメ] 月は東に日は西に 第06話 (704x396 WMV9).wmv 142,087,312 745e624135e4a6474525dd54eb5d0e233f7f0a8d<br>
+[DVD アニメ] 月は東に日は西に 第07話 (704x396 WMV9).wmv 132,623,312 8cbe5fc1c49770f3ea44cd0d2bb00ed2e59722aa<br>
+[DVD アニメ] 月は東に日は西に 第08話 (704x396 WMV9).wmv 115,487,312 12a6088bb7c6c8af01ebff50be4acd535331abbd<br>
+<hr class="A">
+[DVD アニメ] 月は東に日は西に ノンクレジットOP (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 14,136,835 4abe48a0a103c63ee71edb59dc0c8f26dc731ffe<br>
+[DVD アニメ] 月は東に日は西に 第01話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,141,548 4aca485c0d9714ef1ff8109193e38e4df4b7314b<br>
+[DVD アニメ] 月は東に日は西に 第02話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,161,535 31787aa3a2bdc672c0639427d6ba473ca0bc67a9<br>
+[DVD アニメ] 月は東に日は西に 第03話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,127,299 ec320ba0c6f20f186520f332ac26ad9668123e40<br>
+[DVD アニメ] 月は東に日は西に 第04話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,202,909 6534275aeb9c833ef24ac730893752029693a471<br>
+[DVD アニメ] 月は東に日は西に 第05話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,107,755 b706ccca8e4f05ce5af9212f4fc41a0a2ea00c81<br>
+[DVD アニメ] 月は東に日は西に 第06話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,111,663 73112aca3cc966358d3a18f73ad29f6e0e853202<br>
+[DVD アニメ] 月は東に日は西に 第07話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,174,670 2be76c38e1201924035dffcd1325b4ec872f945b<br>
+[DVD アニメ] 月は東に日は西に 第08話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,208,730 85847c1fecd01c726fafd4d7d7afe5fe4b3039e4<br>
+[DVD アニメ] 月は東に日は西に 第09話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,139,269 0443693c57c1d0da682101601ea0959fa775f982<br>
+[DVD アニメ] 月は東に日は西に 第09'話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,166,256 10e1c65e4b17487824b293a832a00dd1cddd99f8<br>
+[DVD アニメ] 月は東に日は西に 第10話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,183,967 0751d09394d14122b3be9e96c7f1ee60bc96de77<br>
+[DVD アニメ] 月は東に日は西に 第10'話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,120,288 bdd0513ee41c714b7f8464c2e4009f5acab4bbde<br>
+[DVD アニメ] 月は東に日は西に 第11話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,195,048 dc03ae2bf6560c2d3de78cab27b01e56f3937e9f<br>
+[DVD アニメ] 月は東に日は西に 第11'話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,136,989 595a4b53fcb3227c1661db55941eedba28626062<br>
+[DVD アニメ] 月は東に日は西に 第12話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,308,078 63465fbd278ded2ef5596a316e514af2bdc0ece8<br>
+[DVD アニメ] 月は東に日は西に 第12'話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 109,315,339 d134f69b31c5ec07ebb0d1f292ea23abae9b2ea4<br>
+<br></dd>
+<dt><span class="title">月詠 -Moon Phase-<b>◆</b></span>09/08/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] 月詠 -Moon Phase- 第01話「おにいさま、私のシモベになりなさい」(XviD1.1.0Beta1 1024x576 24fps Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 268,188,844 96fd3d99227760ebaeb6058d635b33859fdb4465<br>
+[アニメ DVD] 月詠 -Moon Phase- 第02話「御主人様とお呼びなさい」(XviD1.1.0Beta1 1024x576 24fps Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 264,256,825 710c15da7a65f76385281acdb964f2b63371a2d8<br>
+[アニメ DVD] 月詠 -Moon Phase- 第03話「おにいさま、私といっしゅに暮らいてくださいね」(XviD1.1.0Beta1 1024x576 24fps Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 229,700,343 50572306ee99002397a7d277a7c6699550fbd75b<br>
+[アニメ DVD] 月詠 -Moon Phase- 第04話「おにいさま、…キスしたくなっちゃった」(XviD1.1.0Beta1 1024x576 24fps Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 232,459,169 5e49fbbaa8b3b30c39abd94efa95610329120089<br>
+[アニメ DVD] 月詠 -Moon Phase- 第05話「おにいさま、ふるふるふるむーん」(XviD1.1.0Beta1 1024x576 24fps Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 240,289,563 1af9928ed64759786f9da4d5ce0449ce5f1e296e<br>
+[アニメ DVD] 月詠 -Moon Phase- 第06話「おにいさまと京都で…うふわくわく」(XviD1.1.0Beta1 1024x576 24fps Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 240,449,631 d9a937ff52e7ce960a9ee5e3bc59de32580a62a6<br>
+[アニメ DVD] 月詠 -Moon Phase- 第07話「……だって欲しかったんだもん」(XviD1.1.0Beta2 1024x576 24fps Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 240,437,450 20a539aff5ace4d9858c921a94bf8e7d60afe150<br>
+[アニメ DVD] 月詠 -Moon Phase- 第08話「母様がきてくれた！うれしい」(XviD1.1.0Beta2 1024x576 24fps Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 240,564,065 418761f1f74802d947e16ccafe7ab80f90362fe8<br>
+[アニメ DVD] 月詠 -Moon Phase- 第09話「おにいさま、私を夢から助けて…おねがい」(XviD1.1.0Beta2 1024x576 VFR Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 230,328,818 8e24a1c224ac2b0f74c7520c6c664378b90b40aa<br>
+[アニメ DVD] 月詠 -Moon Phase- 第10話「ゆるさない…初めてのシモベのくせに」(XviD1.1.0Beta2 1024x576 VFR Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 230,909,475 8267dd3591d5be8989fabe2ef07b0fe19e57d71a<br>
+[アニメ DVD] 月詠 -Moon Phase- 第11話「おにいさま、安静にしてなきゃだめ」(XviD1.1.0Beta2 1024x576 VFR Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 230,111,234 7fe6d9d121a9c0e2ce25a446635cd1dee1ee3b7b<br>
+[アニメ DVD] 月詠 -Moon Phase- 第12話「ゆるせないの、あいつだけは…！」(XviD1.1.0Beta2 1024x576 VFR Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 229,386,226 9a3d1babea124ddb865f3c5172019907ccaabdd1<br>
+[アニメ DVD] 月詠 -Moon Phase- 第13話「おにいさま、みんなで伯爵を倒しましょうね」(XviD1.1.0Beta2 1024x576 VFR Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 225,312,241 252afd235a6a0caf9cb2693a36a10bb540c333a3<br>
+[アニメ DVD] 月詠 -Moon Phase- 第14話「おにいさまといっしょに……お散歩したいです」(XviD1.1.0Beta2 1024x576 VFR Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 229,375,418 3b135be4fd146c14b44ae4f7b6d97b572daa9e59<br>
+[アニメ DVD] 月詠 -Moon Phase- 第15話「おにいさま、＂せきにん＂とってくださいね」(XviD1.1.0Beta2 1024x576 VFR Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 229,882,096 59f4c93fc88bb9b63bdfd6bcc7fc7a30ced3523e<br>
+[アニメ DVD] 月詠 -Moon Phase- 第16話「おにいさま、どうしてもふるふる堂のネコミミ饅頭じゃなくちゃだめなんです」(XviD1.1.0Beta2 1024x576 VFR Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 224,815,083 916920b33b80ba8d7cdd04459f6022e740dd10fb<br>
+[アニメ DVD] 月詠 -Moon Phase- 第17話「おにいさま、なんでこんなことになるわけ！」(XviD1.1.0Beta2 1024x576 24fps Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 229,494,945 b8d69391bc35e1486d8d7206d362d04f7ab22de3<br>
+[アニメ DVD] 月詠 -Moon Phase- 第18話「ヤッホー ハイホー 今、会いに行きますネ」(XviD1.1.0Beta2 1024x576 VFR Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 230,585,622 a170f6bf855d64e26031eb23917c3a2f1280d5a1<br>
+[アニメ DVD] 月詠 -Moon Phase- 第19話「お山の日 湯けむりのサル ねこのヒゲ …で、あんたたち誰？」(XviD1.1.0Beta2 1024x576 VFR Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 230,143,897 2b481e570591123d1353c4e9e839820a79d42ef8<br>
+[アニメ DVD] 月詠 -Moon Phase- 第20話「おじいさま、どーしてそんな格好してるんですか？」(XviD1.1.0Beta2 1024x576 24fps Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 230,104,458 7263f0b1af1ac40c58c48aabbdc70099f08c2b60<br>
+[アニメ DVD] 月詠 -Moon Phase- 第21話「おにいさま、それってどこの地方の手まり唱？」(XviD1.1.0Beta2 1024x576 24fps Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 229,980,639 bb0ab1f3db4bc4a7691d1c9baee6f5dd0be7bcbe<br>
+[アニメ DVD] 月詠 -Moon Phase- 第22話「おにいさま、そんな人だったんですか！？」(XviD1.1.0Beta2 1024x576 24fps Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 230,407,777 2a442f445f0431df63618d97b95e1b8b6d2eaf6b<br>
+[アニメ DVD] 月詠 -Moon Phase- 第23話「おにいさま、わたしってそんなにへんですか？」(XviD1.1.0Beta2 1024x576 24fps Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 229,809,585 6e421ed74e43f3841444d44fea15b694aeb0e8a8<br>
+[アニメ DVD] 月詠 -Moon Phase- 第24話「サヨナラおにいさま 私、ホントに帰っちゃうよ？ 帰っちゃうよ？」(XviD1.1.0Beta2 1024x576 24fps Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 229,816,170 a7084e83d615ce63085f56920807986afb1759b5<br>
+[アニメ DVD] 月詠 -Moon Phase- 第25話「おにいさま、最終回だそうですよ ずっと私のシモベでいてくださいね」(XviD1.1.0 1024x576 VFR Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 228,573,742 14a7322ead8c6cf7fc612436124e153ef16661ba<br>
+[アニメ DVD] 月詠 -Moon Phase- 第26話「おにいさま、ゆらゆらきらきらどんぶらここれって、なーんだ？」(XviD1.1.0 1024x576 VFR Vorbis 0.4q).Ertai.mkv Bo5Q2E5H6w 228,580,003 2d35f3ed2fb5e825eb925c8b44e5edc2d39dc18d<br>
+<hr class="A">
+[アニメ DVD]月詠 -Moon Phase- 第01話「おにいさま、私のシモベになりなさい」(704x480 x264 AAC).mp4 灸削2X2SON69C1 175,728,374 74dd5ecf7ed92604305e74ed03d60b62f502a484<br>
+[アニメ DVD]月詠 -Moon Phase- 第02話「御主人様とお呼びなさい」(704x480 x264 AAC).mp4 灸削2X2SON69C1 137,094,037 06b15976b87783807a8aaf321739789a2b97a2d4<br>
+[アニメ DVD]月詠 -Moon Phase- 第03話「おにいさま、私といっしゅに暮らいてくださいね」(704x480 x264 AAC).mp4 灸削2X2SON69C1 164,459,022 61e736b909fa6910d08181071e9fab47b788b77c<br>
+[アニメ DVD]月詠 -Moon Phase- 第04話「おにいさま、…キスしたくなっちゃった」(704x480 x264 AAC).mp4 灸削2X2SON69C1 159,637,285 5bf8d1c8813ca8cb618001ce8705ef201ef52dee<br>
+[アニメ DVD]月詠 -Moon Phase- 第05話「おにいさま、ふるふるふるむーん」(704x480 x264 AAC).mp4 灸削2X2SON69C1 167,793,965 5afae23726ccf182a15e3621e7768d9a4d2bf0c1<br>
+[アニメ DVD]月詠 -Moon Phase- 第06話「おにいさまと京都で…うふわくわく」(704x480 x264 AAC).mp4 灸削2X2SON69C1 169,405,041 3fcbd3cb8bb1d72b8cb1e6fae478e86fbbe0d0e8<br>
+[アニメ DVD]月詠 -Moon Phase- 第07話「……だって欲しかったんだもん」(704x480 x264 AAC).mp4 灸削2X2SON69C1 148,637,842 1acc2b78983ee012f5a2579c19dba32e8855f3b6<br>
+[アニメ DVD]月詠 -Moon Phase- 第08話「母様がきてくれた！うれしい」(704x480 x264 AAC).mp4 灸削2X2SON69C1 172,233,076 94ccaa26541cb27431c738790900a49643aa3919<br>
+[アニメ DVD]月詠 -Moon Phase- 第09話「おにいさま、私を夢から助けて…おねがい」(704x480 x264 AAC).mp4 灸削2X2SON69C1 189,051,507 c8869daadfedde54feb1257f10311150d4e46cd9<br>
+[アニメ DVD]月詠 -Moon Phase- 第10話「ゆるさない…初めてのシモベのくせに」(704x480 x264 AAC).mp4 灸削2X2SON69C1 156,671,589 36b8e8a07d22c5276ab1da02317efc654bd6b765<br>
+[アニメ DVD]月詠 -Moon Phase- 第11話「おにいさま、安静にしてなきゃだめ」(704x480 x264 AAC).mp4 灸削2X2SON69C1 162,873,579 071fef8114789c1157e69d65a68740888036c778<br>
+[アニメ DVD]月詠 -Moon Phase- 第12話「ゆるせないの、あいつだけは…！」(704x480 x264 AAC).mp4 灸削2X2SON69C1 162,967,302 d03928845ce4edcd3f63c5c2cdef2e97aad353c4<br>
+[アニメ DVD]月詠 -Moon Phase- 第13話「おにいさま、みんなで伯爵を倒しましょうね」(704x480 x264 AAC).mp4 灸削2X2SON69C1 167,569,568 5bfcdde20d6316c7bd8ceda9bdb0137125ac62e9<br>
+[アニメ DVD]月詠 -Moon Phase- 第14話「おにいさまといっしょに……お散歩したいです」(704x480 x264 AAC).mp4 灸削2X2SON69C1 161,154,868 a2515d29b113616890a7dbf26f8c32c75926750e<br>
+[アニメ DVD]月詠 -Moon Phase- 第15話「おにいさま、＂せきにん＂とってくださいね」(704x480 x264 AAC).mp4 灸削2X2SON69C1 158,064,277 9e1147335a8b7930f1737c9f352a3bc0df71cccd<br>
+[アニメ DVD]月詠 -Moon Phase- 第16話「おにいさま、どうしてもふるふる堂のネコミミ饅頭じゃなくちゃだめなんです」(704x480 x264 AAC).mp4 灸削2X2SON69C1 162,650,931 9a5d41943bf9e0bcdc48376efa93e63bc8242b09<br>
+[アニメ DVD]月詠 -Moon Phase- 第17話「おにいさま、なんでこんなことになるわけ！」(704x480 x264 AAC).mp4 灸削2X2SON69C1 138,293,763 9e0ea89e383ecb8f2fb8d486b216eb62fb213f02<br>
+[アニメ DVD]月詠 -Moon Phase- 第18話「ヤッホー ハイホー 今、会いに行きますネ」(704x480 x264 AAC).mp4 灸削2X2SON69C1 176,563,266 82103a057687c218a1c1b4c16f84992ddb812c54<br>
+[アニメ DVD]月詠 -Moon Phase- 第19話「お山の日 湯けむりのサル ねこのヒゲ …で、あんたたち誰？」(704x480 x264 AAC).mp4 灸削2X2SON69C1 190,982,621 9f3a30af4bf878600a7f70d2ebb961d067d17b1e<br>
+[アニメ DVD]月詠 -Moon Phase- 第20話「おじいさま、どーしてそんな格好してるんですか？」(704x480 x264 AAC).mp4 灸削2X2SON69C1 136,190,288 1d2688643551a090b9bee56cc78bcccf8e4d070c<br>
+[アニメ DVD]月詠 -Moon Phase- 第21話「おにいさま、それってどこの地方の手まり唱？」(704x480 x264 AAC).mp4 灸削2X2SON69C1 126,733,389 34a84cdbc6080991741b2b45d332165b3e7121a1<br>
+[アニメ DVD]月詠 -Moon Phase- 第22話「おにいさま、そんな人だったんですか！？」(704x480 x264 AAC).mp4 灸削2X2SON69C1 135,713,971 306d6418c3990c81ae729b8df69dda955ae761a9<br>
+[アニメ DVD]月詠 -Moon Phase- 第23話「おにいさま、わたしってそんなにへんですか？」(704x480 x264 AAC).mp4 灸削2X2SON69C1 131,720,870 95a0f304e1be489e6df2116eb91e0081b8f3ad98<br>
+[アニメ DVD]月詠 -Moon Phase- 第24話「サヨナラおにいさま 私、ホントに帰っちゃうよ？ 帰っちゃうよ？」(704x480 x264 AAC).mp4 灸削2X2SON69C1 148,839,496 7f34194a83943e6705824057ea86c394315ca994<br>
+[アニメ DVD]月詠 -Moon Phase- 第25話「おにいさま、最終回だそうですよ ずっと私のシモベでいてくださいね」(704x480 x264 AAC)rev.1.mp4 灸削2X2SON69C1 159,323,554 b087d41e769c93573f6ded9ad65ce8930eb137e9<br>
+[アニメ DVD]月詠 -Moon Phase- 第26話「おにいさま、ゆらゆらきらきらどんぶらここれって、なーんだ？」(704x480 x264 AAC).mp4 灸削2X2SON69C1 163,859,076 a0304c2592382569a56db35645c00909a3126de8<br>
+<hr class="A">
+[アニメ] 月詠 映像特典「ノンクレジットED 悲しい予感ver.」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 20,267,778 d99e2ba251faf862eb13e74572d9812a3896eb0e<br>
+[アニメ] 月詠 映像特典「第1話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 18,374,312 23faf0dd9338d7c929fdbd5db65fbe4be64e32ab<br>
+[アニメ] 月詠 映像特典「第1話ノンクレジットED」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 19,346,796 c5fd7be91d9e8307f8c070dda66f3a8f18c30bd4<br>
+[アニメ] 月詠 映像特典「第2話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 18,454,312 599190cea4071655b44d6b6a37a647e584e9ee45<br>
+[アニメ] 月詠 映像特典「第2話ノンクレジットED」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 18,310,504 cf45eb0df4b8874b59210a8f26dd048bd4e24d64<br>
+[アニメ] 月詠 映像特典「第2話次回予告ネコミミver.」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 7,003,719 979b0cdce048435a9a12649c951ed5dbcfe5bc2e<br>
+[アニメ] 月詠 映像特典「第3話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 18,278,312 1f933f791ca05604c6418b052d90a27f872759e6<br>
+[アニメ] 月詠 映像特典「第4話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 18,326,312 33efdfe2b7f357090772253182794ceedc81a694<br>
+[アニメ] 月詠 映像特典「CD発売告知TV-SPOT集」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 9,507,476 5ed94704177a1194095a59b351a3afb8a7551259<br>
+[アニメ] 月詠 映像特典「第5話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 18,787,746 a5151778cc6505326e37da86eb6acff6a49bd489<br>
+[アニメ] 月詠 映像特典「第6話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 19,027,746 2a0d4fd1478ed5da4b2fbb6a96f2a515f4ed09c3<br>
+[アニメ] 月詠 映像特典「第7話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 19,459,734 24b0de68524dbcff700224c6a2565153644e4d49<br>
+[アニメ] 月詠 映像特典「DVD発売告知TV-SPOT」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 9,075,374 726050fb786c23a13d039e37aaa4596e4eba74df<br>
+[アニメ] 月詠 映像特典「第7話放送EDver.」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 46,532,028 9907dcd9e880e3d9d321b825e822c3ddef7a1e69<br>
+[アニメ] 月詠 映像特典「第8話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 19,459,734 c99efe0868b007d2e08c487cb20388b4db3a9858<br>
+[アニメ] 月詠 映像特典「DVD発売告知TV-SPOT2」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 4,928,963 bc449962d692d548cb66af6b1b1c92644c4c07c0<br>
+[アニメ] 月詠 映像特典「第9話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 43,075,746 60eec33de6402998537455413781cdeb46ce37ce<br>
+[アニメ] 月詠 映像特典「第10話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 20,163,806 461a11ba7682c7b8f9be2a9cc7092e8ea8e94cae<br>
+[アニメ] 月詠 映像特典「DVD発売告知TV-SPOT3／着信ボイスTV-SPOT」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 14,819,560 b90c0cba7b4606c94e20af37e2676d12e1f4e54e<br>
+[アニメ] 月詠 映像特典「第11話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 20,355,746 7ff7bb82280dbbc77453c81c00b9c0cc26ea2a2b<br>
+[アニメ] 月詠 映像特典「第12話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 20,355,746 b3a699f2f4c2cabc43b001cab2295370d58ebfa6<br>
+[アニメ] 月詠 映像特典「DVD発売告知TV-SPOT4-5」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 18,995,572 44cae0922f8e533d3db507c527d57380008dc5f6<br>
+[アニメ] 月詠 映像特典「第13話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 19,875,746 07603045d1efc1ce852aac62a6a9c746c89432a1<br>
+[アニメ] 月詠 映像特典「第14話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 31,779,746 388d849350d3fd8819a650b94ba8c43276721623<br>
+[アニメ] 月詠 映像特典「第15話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 18,019,806 bce6548bb539fdff7c1021ef46c391a5b95bdeb2<br>
+[アニメ] 月詠 映像特典「第16話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 21,139,746 806348b3964b3d030d9a58176f46c8bb5334ee73<br>
+[アニメ] 月詠 映像特典「第17話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 19,827,746 f55cbb36c56cad17e878d14c03d0899a306062f9<br>
+[アニメ] 月詠 映像特典「第17話ノンクレジットED」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 27,059,956 4154db01cd42c510b9efcf7e8eb14b62ba9d5122<br>
+[アニメ] 月詠 映像特典「第18話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 20,307,746 34ead13378b88f836d5f3eed08340b363652c792<br>
+[アニメ] 月詠 映像特典「第19話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 21,699,746 bb7614cc377c637312ff9332182753d279b11e7a<br>
+[アニメ] 月詠 映像特典「第19話ノンクレジットED」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 45,633,179 25f38074bfa3f3c344bbc28bafd173c2afa5fb1c<br>
+[アニメ] 月詠 映像特典「第20話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 21,635,746 9c14c07a7528f240a3e722216afb6427d755870a<br>
+[アニメ] 月詠 映像特典「第20話ノンクレジットED」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 30,435,746 ffd3441a5e62e9b9d9579a323c5ea5b4d4f03247<br>
+[アニメ] 月詠 映像特典「DVD発売告知TV-SPOT6-8」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 28,515,752 64294fff09268efb7fc6fe25bbf671346556c39d<br>
+[アニメ] 月詠 映像特典「第21話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 21,635,746 3a4bdf0284b93127133e9b5012063b0b62f8aee4<br>
+[アニメ] 月詠 映像特典「第22話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 21,187,746 38b62f5958c74591a8fd127c5489ae42601eb8cc<br>
+[アニメ] 月詠 映像特典「DVD発売告知TV-SPOT9-11」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 30,787,752 e83dc7851e5b6f0ee73911f5521d2a8e69b010b9<br>
+[アニメ] 月詠 映像特典「第23話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 21,203,746 eca1b435b9d7fa0ec8c6b86950192fe24db640ce<br>
+[アニメ] 月詠 映像特典「第24話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 22,067,806 1cc74cbff6e8834f735a0a271054ab345e43fa3f<br>
+[アニメ] 月詠 映像特典「DVD発売告知TV-SPOT12-13」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 27,827,662 81da1e2f7a78e9bae200376149ec67a546913097<br>
+[アニメ] 月詠 映像特典「第25話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 13,667,632 fdf21c8816f4cb646b76b158d67c093ceaeb31d9<br>
+[アニメ] 月詠 映像特典「第26話ノンクレジットOP」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 24,179,806 6ca0fe32e026a7cbb11806a6e6d8063c6ac2dcac<br>
+[アニメ] 月詠 映像特典「番組宣伝集」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 12,666,986 91b5fef28fb2ffcd29b3d112e0d2749e5b6f8ff4<br>
+[アニメ] 月詠 第01話「おにいさま、私のシモベになりなさい」 (DVD 704x396 WMV9 rev3).wmv kyupzkthMGu2E 323,358,514 dae9c26fafcb686b770c9e5bb38f4d0fbed9a512<br>
+[アニメ] 月詠 第02話「御主人様とお呼びなさい」 (DVD 704x396 WMV9 rev2).wmv kyupzkthMGu2E 268,830,334 51d2bc595818a9d08b459af4561442e0eda17ee3<br>
+[アニメ] 月詠 第03話「おにいさま、私といっしょに暮らしてくださいね」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 283,566,514 450f3caba727240c1b61e0eff893fd17e2264dc9<br>
+[アニメ] 月詠 第04話「おにいさま、・・・キスしたくなっちゃった」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 241,230,508 b98e776838023d17ad7137fcf777c6dc96678882<br>
+[アニメ] 月詠 第05話「おにいさま、ふるふるふるむーん」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 290,859,948 949644976e335f0f17870a1fb524da5b49bec0e4<br>
+[アニメ] 月詠 第06話「おにいさまと京都で・・・うふ わくわく」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 291,339,942 706c3bd705c2b8d91fe4cc3cb0d218379e671b45<br>
+[アニメ] 月詠 第07話「・・・・・・だって欲しかったんだもん」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 270,027,990 d4434e9bad56869a92adae808b985796d6af05f7<br>
+[アニメ] 月詠 第08話「母様がきてくれた！ うれしい」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 296,955,942 3dc417676809ef72f3d1ce2d150f6ee179954b84<br>
+[アニメ] 月詠 第09話「おにいさま、私を夢から助けて・・・おねがい」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 341,579,954 dc2a05e6a34c068da264c1d7a25e7f2d53e61ac3<br>
+[アニメ] 月詠 第10話「ゆるさない・・・初めてのシモベのくせに」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 269,291,942 0dc3281e77824bc70efb8b8fc2271d219f299dd7<br>
+[アニメ] 月詠 第11話「おにいさま、安静にしてなきゃダメ」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 292,859,948 f06f61653330866041217c6aeddbd5bace2ffcbb<br>
+[アニメ] 月詠 第12話「ゆるせないの、あいつだけは・・・！」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 266,859,102 ede6394883ee2d31b5d2de22d8f4af92a47e7aff<br>
+[アニメ] 月詠 第13話「おにいさま、みんなで伯爵を倒しましょうね」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 286,491,948 2b37a81e191c66b57159a9356f524738d50025f6<br>
+[アニメ] 月詠 第14話「おにいさまといっしょに・・・・・・お散歩したいです」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 268,907,942 b56cb275a05540f31c5845d793190b5fbd81a13c<br>
+[アニメ] 月詠 第15話「おにいさま、”せきにん”とってくださいね」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 267,851,948 341057fe51781365a8b280ea51b8ff88416a663b<br>
+[アニメ] 月詠 第16話「おにいさま、どうしてもふるふる堂のネコミミ饅頭じゃなくちゃだめなんです」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 310,619,942 6ec9d8acc5b9332ad09403df973ad670b43c9271<br>
+[アニメ] 月詠 第17話「おにいさま、なんでこんなことになるわけ！？」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 286,315,954 ddd1f9feee0c917d14e27b932eb2a327cf0f5c60<br>
+[アニメ] 月詠 第18話「ヤッホー ハイホー 今、会いに行きますネ」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 369,595,942 94602f7542839988f1295ac5fb40d3aa90f04731<br>
+[アニメ] 月詠 第19話「お山の日 湯けむりのサル ねこのヒゲ ・・・で、あんたち誰？」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 330,347,948 a82787ab879bbdeaae8251be150f944d97e46ff9<br>
+[アニメ] 月詠 第20話「おじいさま、どうしてそんな格好してるんですか？」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 322,651,942 c5fd1515543e1a13cc88e2f7ef4832120cf011f6<br>
+[アニメ] 月詠 第21話「おにいさま、それってどこの地方の手まり唄？」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 288,251,948 d31432915dc18aabec4f36712c92fcca3fc26249<br>
+[アニメ] 月詠 第22話「おにいさま、そんな人だったんですか！？」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 321,627,942 23fdb3114a48a8e94d62f8dbd8cb23fc692fa7c6<br>
+[アニメ] 月詠 第23話「おにいさま、わたしってそんなにヘンですか？」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 313,547,948 8b8f4de67b364144a077775a8818005f1d0e8287<br>
+[アニメ] 月詠 第24話「サヨナラ、おにいさま・・・・・・私、ホントに帰っちゃうよ？帰っちゃうよ？」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 357,259,942 ba2d24e040d1a93ecde1ecf13aea1cb619e51418<br>
+[アニメ] 月詠 第25話「おにいさま、最終回だそうですよ　ずっとわたしのシモベでいてくださいね」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 319,563,948 0f9a5922eaec74747b01bc78012cfad0b9c877ae<br>
+[アニメ] 月詠 第26話「おにいさま、ゆらゆらきらきらどんぶらこ　これって、なーんだ？」 (DVD 704x396 WMV9).wmv kyupzkthMGu2E 345,003,828 9ba12f87128a6f6a61a58363943695af74ee7ea8<br>
+<hr class="A">
+[DVD] 月詠 -MOON PHASE- 第01話 おにいさま、私のシモベになりなさい (DVD 24m21s 704x396 XviD 119.88fps 902Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 205,507,728 b5149e20cb82df2b72d7b33b306884af5737f3ff<br>
+[DVD] 月詠 -MOON PHASE- 第02話 御主人様とおよびなさい (DVD 24m29s 704x396 XviD 119.88fps 758Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 180,324,864 e4b4006e38e5f2b40093b631effa4e3e13dfcae1<br>
+[DVD] 月詠 -MOON PHASE- 第03話 おにいさま、私といっしょに暮らしてくださいね (DVD 24m21s 704x396 XviD 119.88fps 742Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 176,334,940 84401811a7250763152118a98eb1ac601068c04b<br>
+[DVD] 月詠 -MOON PHASE- 第04話 おにいさま、・・・キスしたくなっちゃた (DVD 24m35s 704x396 XviD 119.88fps 619Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 155,329,558 7f7eeb9ffc1861389b2a8e404b59194932d13488<br>
+[DVD] 月詠 -MOON PHASE- 第05話 おにいさま、ふるふるふるむーん (DVD 24m20s 704x396 XviD 119.88fps 772Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 181,684,362 a4aa575573774c3e0cd039f7dfcd634201b8715c<br>
+[DVD] 月詠 -MOON PHASE- 第06話 おにいさまと京都で…うふわくわく (DVD 24m35s 704x396 XviD 119.88fps 813Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 191,094,092 645059cdcfa031aedc8e924ff8692bb62e9be049<br>
+[DVD] 月詠 -MOON PHASE- 第07話 ……だって欲しかったんだもん (DVD 24m27s 704x396 XviD 119.88fps 722Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 173,450,728 2f53a3c696c806ff8b8b964ac8be714825aea7da<br>
+[DVD] 月詠 -MOON PHASE- 第08話 母様がきてくれた！うれしい (DVD 24m35s 704x396 XviD 119.88fps 783Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 185,710,536 97f7d280118ec9c5b1f7735869adbbb97f4926f3<br>
+[DVD] 月詠 -MOON PHASE- 第09話 おにいさま、私を夢から助けて…おねがい (DVD 24m21s 704x396 XviD 119.88fps 964Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 216,920,312 b957c59cc2a9d64112864b5b6659960fc845921d<br>
+[DVD] 月詠 -MOON PHASE- 第10話 ゆるさない…初めてのシモベのくせに (DVD 24m35s 704x396 XviD 119.88fps 641Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 159,452,094 c2fd7e41667fb68d541f0ba4ba17c35aa2c2df55<br>
+[DVD] 月詠 -MOON PHASE- 第11話 おにいさま、安静にしてなきゃダメ (DVD 24m20s 704x396 XviD 119.88fps 713Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 171,044,292 b3cf1e4d0383d90b55cef22a0346ac55468d3d66<br>
+[DVD] 月詠 -MOON PHASE- 第12話 ゆるせないの、あいつだけは…！ (DVD 24m35s 704x396 XviD 119.88fps 733Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 176,303,812 fd127df48766cecad46f77d2b4be36c2cf580969<br>
+[DVD] 月詠 -MOON PHASE- 第13話 おにいさま、みんなで伯爵を倒しましょうね (24m20s 704x396 XviD1.1.0β2 119.88fps 719Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 171,984,422 9a189d8b568ffbf5824f439d17d55aa88985f3bb<br>
+[DVD] 月詠 -MOON PHASE- 第14話 おにいさまといっしょに…お散歩したいです (24m35s 704x396 XviD1.1.0β2 119.88fps 630Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 157,292,008 b3bcc32f8d396d68d726ca3dfb4a0be4e506b251<br>
+[DVD] 月詠 -MOON PHASE- 第15話 おにいさま、“せきにん”とってくださいね (24m20s 704x396 XviD1.1.0β2 119.88fps 642Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 158,068,532 51dc62f813386ae10838f4da7149496e564b0eb5<br>
+[DVD] 月詠 -MOON PHASE- 第16話 おにいさま、どうしてもふるふる堂のネコミミ饅頭じゃなくちゃだめなんです (24m35s 704x396 XviD1.1.0β2 119.88fps 735Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 176,722,806 e198a25748e62d93e6d3b9ceea64b4b6e8cee15c<br>
+[DVD] 月詠 -MOON PHASE- 第17話 おにいさま、なんでこんなことになるわけ！？ (24m21s 704x396 XviD1.1.0β2 119.88fps 716Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 171,566,592 7d85ffae52943a898a956408301f46f555639792<br>
+[DVD] 月詠 -MOON PHASE- 第18話 ヤッホーハイホー　今、会いに行きますね (24m35s 704x396 XviD1.1.0β2 119.88fps 946Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 215,574,048 a3fb7883cb21cfe699dff18fbf9fd0830633f23c<br>
+[DVD] 月詠 -MOON PHASE- 第19話 お山の日 湯けむりのサル ねこのヒゲ？ …で、あんたたち誰？ (24m21s 704x396 XviD1.1.0β2 119.88fps 770Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 181,480,062 e902382772090ae262a71d2c4bcb077f2a0938cf<br>
+[DVD] 月詠 -MOON PHASE- 第20話 おじいさま、どーしてそんな格好してるんですか？ (24m35s 704x396 XviD1.1.0β2 119.88fps 678Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 166,226,432 97f5668585d7ee9df5b53e2329ea05c52a449bfb<br>
+[DVD] 月詠 -MOON PHASE- 第21話 おにいさま、それってどこの地方の手まり唄？ (24m21s 704x396 XviD1.1.0β2 119.88fps 578Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 146,365,952 fae46b5b060c6388f400b50c2754f833171e9cd5<br>
+[DVD] 月詠 -MOON PHASE- 第22話 おにいさま、そんな人だったんですか！？ (24m35s 704x396 XviD1.1.0β2 119.88fps 671Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 164,877,824 404be084bd6416478ecfe509c9fdec243d562b38<br>
+[DVD] 月詠 -MOON PHASE- 第23話 おにいさま、わたしってそんなにヘンですか？ (24m20s 704x396 XviD1.1.0β2 119.88fps 666Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 162,412,032 54f3b28c8227a8f0c074d261ca9031a82d24c9e2<br>
+[DVD] 月詠 -MOON PHASE- 第24話 サヨナラ、おにいさま……私、ホントに帰っちゃうよ？　帰っちゃうよ？ (24m35s 704x396 XviD1.1.0β2 119.88fps 848Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 197,497,856 83e753a75232560f40121faf7179b1bae3a7342a<br>
+[DVD] 月詠 -MOON PHASE- 第25話 おにいさま、最終回だそうですよずっと私のシモベでいてくださいね (24m20s 704x396 XviD1.1.0β2 119.88fps 648Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 159,133,182 30fabe89dfc455e4086cab445541ec8dc3d3c77a<br>
+[DVD] 月詠 -MOON PHASE- 第26話 おにいさま、ゆらゆらきらきらどんぶらこ　これって、なーんだ？ (24m00s 704x396 XviD1.1.0β2 119.88fps 727Kbps MP3 192Kbps QT2.0).avi aucjOwkaxK 171,049,132 c37c47eda2513611fa689ce24f1560acf46f3346<br><br>
+[DVD] 月詠 -MOON PHASE- 第01話 おにいさま、私のシモベになりなさい (DVD 24m21s 704x400 H264 119.88fps 558Kbps MP3 192Kbps QT20).avi aucjOwkaxK 142,748,760 82618eb0ea131b146d15d10784c152bf5b8c71c4<br>
+[DVD] 月詠 -MOON PHASE- 第02話 御主人様とおよびなさい (DVD 24m30s 704x400 H264 119.88fps 446Kbps MP3 192Kbps QT20).avi aucjOwkaxK 122,917,376 d6513f640906808dcabb1669e46d2136917a20ab<br>
+[DVD] 月詠 -MOON PHASE- 第03話 おにいさま、私といっしょに暮らしてくださいね (DVD 24m21s 704x400 H264 119.88fps 442Kbps MP3 192Kbps QT20).avi aucjOwkaxK 121,487,484 4fc6cfbcb205d2e458b410f4b3b7213b99565b0f<br>
+[DVD] 月詠 -MOON PHASE- 第04話 おにいさま、・・・キスしたくなっちゃた (DVD 24m35s 704x400 H264 119.88fps 348Kbps MP3 192Kbps QT20).avi aucjOwkaxK 105,300,762 e76b67637b8cac6a7f5fe09aa3a92d1a3ecda00e<br>
+[DVD] 月詠 -MOON PHASE- 第05話 おにいさま、ふるふるふるむーん (DVD 24m20s 704x400 H264 119.88fps 475Kbps MP3 192Kbps QT20).avi aucjOwkaxK 127,511,542 10d9a3a60850f1cabec53dc3b0b8a5309364bb97<br>
+[DVD] 月詠 -MOON PHASE- 第06話 おにいさまと京都で…うふわくわく (DVD 24m35s 704x400 H264 119.88fps 521Kbps MP3 192Kbps QT20).avi aucjOwkaxK 137,297,566 b385f2226304d20eb94ef4a5dc0f88b8dea056fe<br>
+[DVD] 月詠 -MOON PHASE- 第07話 ……だって欲しかったんだもん (DVD 24m27s 704x400 H264 119.88fps 440Kbps MP3 192Kbps QT20).avi aucjOwkaxK 121,594,774 0bcce94d05bbb663eb60584742237c86cc0bef3b<br>
+[DVD] 月詠 -MOON PHASE- 第08話 母様がきてくれた！うれしい (DVD 24m35s 704x400 H264 119.88fps 477Kbps MP3 192Kbps QT20).avi aucjOwkaxK 129,228,742 84d95b34a0774ac6eed2ffe8c741a08cffd8cf27<br>
+[DVD] 月詠 -MOON PHASE- 第09話 おにいさま、私を夢から助けて…おねがい (DVD 24m21s 704x400 H264 119.88fps 641Kbps MP3 192Kbps QT20).avi aucjOwkaxK 157,843,306 0f30b6de0f63315f86beb3956b9f1bca9efdabbb<br>
+[DVD] 月詠 -MOON PHASE- 第10話 ゆるさない…初めてのシモベのくせに (DVD 24m35s 704x400 H264 119.88fps 368Kbps MP3 192Kbps QT20).avi aucjOwkaxK 108,967,426 beb1bf8474f0933c0769d11f263dabeae1534708<br>
+[DVD] 月詠 -MOON PHASE- 第11話 おにいさま、安静にしてなきゃダメ (DVD 24m20s 704x400 H264 119.88fps 426Kbps MP3 192Kbps QT20).avi aucjOwkaxK 118,628,374 bc03be640422f58b998c079ed3b05cf7e5d83f95<br>
+[DVD] 月詠 -MOON PHASE- 第12話 ゆるせないの、あいつだけは…！ (DVD 24m35s 704x400 H264 119.88fps 440Kbps MP3 192Kbps QT20).avi aucjOwkaxK 122,397,284 86dbd2072a10b4605329bcc0535601de53b24945<br>
+[DVD] 月詠 -MOON PHASE- 第13話 おにいさま、みんなで伯爵を倒しましょうね (24m20s 704x400 x264 119.88fps 444Kbps MP3 192Kbps QT20).avi aucjOwkaxK 121,794,900 1603b10348b1706892ce57dab4ada2cb70f53ab2<br>
+[DVD] 月詠 -MOON PHASE- 第14話 おにいさまといっしょに…お散歩したいです (24m35s 704x400 x264 119.88fps 372Kbps MP3 192Kbps QT20).avi aucjOwkaxK 109,806,898 d9d65f4fdd39736286a3549f170561e66cafcf60<br>
+[DVD] 月詠 -MOON PHASE- 第15話 おにいさま、“せきにん”とってくださいね (24m20s 704x400 x264 119.88fps 376Kbps MP3 192Kbps QT20).avi aucjOwkaxK 109,414,456 c98e810bc147b890fb37bf45f0155ff2ea9dfe37<br>
+[DVD] 月詠 -MOON PHASE- 第16話 おにいさま、どうしてもふるふる堂のネコミミ饅頭じゃなくちゃだめなんです (24m35s 704x400 x264 119.88fps 446Kbps MP3 192Kbps QT20).avi aucjOwkaxK 123,365,056 1139bb1c093963bbd0fed70ca481fe1e4d7b091a<br>
+[DVD] 月詠 -MOON PHASE- 第17話 おにいさま、なんでこんなことになるわけ！？ (24m21s 704x400 x264 119.88fps 435Kbps MP3 192Kbps QT20).avi aucjOwkaxK 120,344,576 11ee5b207b97aa58bb417f6f82d5b85f33a13fb1<br>
+[DVD] 月詠 -MOON PHASE- 第18話 ヤッホーハイホー　今、会いに行きますね (24m35s 704x400 x264 119.88fps 635Kbps MP3 192Kbps QT20).avi aucjOwkaxK 158,344,918 bde60bf83fa5fc0307a69178ee5e289eaabbe452<br>
+[DVD] 月詠 -MOON PHASE- 第19話 お山の日 湯けむりのサル ねこのヒゲ？ …で、あんたたち誰？ (24m21s 704x400 x264 119.88fps 478Kbps MP3 192Kbps QT20).avi aucjOwkaxK 128,023,264 a96402c8874ab69e6b8a291d99773c5e70ef370e<br>
+[DVD] 月詠 -MOON PHASE- 第20話 おじいさま、どーしてそんな格好してるんですか？ (24m35s 704x400 x264 119.88fps 407Kbps MP3 192Kbps QT20).avi aucjOwkaxK 116,236,288 2b43e046adf4656c1d01ebc681248e462101afb3<br>
+[DVD] 月詠 -MOON PHASE- 第21話 おにいさま、それってどこの地方の手まり唄？ (24m21s 704x400 x264 119.88fps 326Kbps MP3 192Kbps QT20).avi aucjOwkaxK 100,380,160 575c54eccd8379ab986076a2012a52a0ac84f788<br>
+[DVD] 月詠 -MOON PHASE- 第22話 おにいさま、そんな人だったんですか！？ (24m35s 704x400 x264 119.88fps 399Kbps MP3 192Kbps QT20).avi aucjOwkaxK 114,749,952 9f2a05c1311942afebbde5a9ab560af4dae0ba47<br>
+[DVD] 月詠 -MOON PHASE- 第23話 おにいさま、わたしってそんなにヘンですか？ (24m20s 704x400 x264 119.88fps 389Kbps MP3 192Kbps QT20).avi aucjOwkaxK 111,856,640 97a792de183f43f299780fdbbccf434b73a70704<br>
+[DVD] 月詠 -MOON PHASE- 第24話 サヨナラ、おにいさま……私、ホントに帰っちゃうよ？　帰っちゃうよ？ (24m35s 704x400 x264 119.88fps 532Kbps MP3 192Kbps QT20).avi aucjOwkaxK 139,351,552 b2033163822c78d3bd3ec525657973cfcfda70fb<br>
+[DVD] 月詠 -MOON PHASE- 第25話 おにいさま、最終回だそうですよずっと私のシモベでいてくださいね (24m20s 704x400 x264 119.88fps 370Kbps MP3 192Kbps QT20).avi aucjOwkaxK 108,275,898 85cb373aadc59b1ef40c13b76e9bb3650c716389<br>
+[DVD] 月詠 -MOON PHASE- 第26話 おにいさま、ゆらゆらきらきらどんぶらこ　これって、なーんだ？ (24m00s 704x400 x264 119.88fps 434Kbps MP3 192Kbps QT20).avi aucjOwkaxK 118,256,046 f9c4899d13a94058ac92c33b25cdbab100c5aab7<br>
+<br></dd>
+<dt><span class="title">ツバサ・クロニクル<b>◆</b></span>08/04/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+#(映画) ツバサ・クロニクル 鳥カゴの国の姫君(DVD)  [34m29s 640x360 XviD 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 313,513,628 96331fb93e397ed4d4a883ba1620ebafbbdc9f0d<br>
+<hr class="A">
+[DVD] 劇場版 ツバサ・クロニクル 映像特典 「アフレコ風景」(WMV9 640×480 AC3).avi aucjOwkaxK 259,954,688 6d019d2d052276c58c7aecf2f90d037d16938052<br>
+[DVD] 劇場版 ツバサ・クロニクル 映像特典 「イベント映像」(WMV9 640×480 AC3).avi aucjOwkaxK 871,938,048 8f8bdf0400061f297355f41e53e876056a07b6f7<br>
+[DVD] 劇場版 ツバサ・クロニクル 映像特典 「初日舞台挨拶」(WMV9 640×480 AC3).avi aucjOwkaxK 957,564,928 1fb8315c4117824442aa1799677d55d5b844271e<br>
+[DVD] 劇場版 ツバサ・クロニクル 映像特典 「設定資料集」(WMV9 640×480 AC3).avi aucjOwkaxK 74,616,832 f749f3e497b41f2eea224f3e08c5c17f5b52794f<br>
+[DVD] 劇場版 ツバサ・クロニクル 「鳥カゴの国の姫君」(WMV9 AC3 5.1ch +オーディオコメンタリー×2).mkv aucjOwkaxK 738,440,785 bb5768027f5f27058fc42685188fbb0ea9e81dad<br><br>
+[DVD] ツバサ・クロニクル ～年代記～ Ⅰ 特典映像 「ノンクレジットオープニング」 (WMV9 704×396).avi aucjOwkaxK 25,991,168 f65f43d1961584d175c4c005bff7b76c43f7b8a5<br>
+[DVD] ツバサ・クロニクル ～年代記～ Ⅰ 特典映像 「ノンクレジットエンディング」 (WMV9 704×396).avi aucjOwkaxK 27,738,112 8eeac51560a5fdbae79da55d1933dcad92d28abd<br>
+[DVD] ツバサ・クロニクル ～年代記～ Ⅰ 特典映像 「第01話予告」 (WMV9 704×396).avi aucjOwkaxK 4,466,688 ceaf7f62a1f50f8964d08be540149ed7deaba32f<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第26話放送後モコナ挨拶 (WMV9 704×396).avi aucjOwkaxK 7,741,440 b77a2ccc5ce04328984fe5f2501607e813c9380f<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第01話 「必然のデアイ」 (WMV9 704×396).avi aucjOwkaxK 195,102,720 12c9ea21462eaa0ef0e7cd163678f299ba939837<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第02話 「戦うチカラ」 (WMV9 704×396).avi aucjOwkaxK 221,911,040 df392d3afec796b3b737865a63fd8a7c876fc005<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第03話 「破魔のカタナ」 (WMV9 704×396).avi aucjOwkaxK 184,330,240 5ab3f745fbbf99d0c911441a0c12073109d72b79<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第04話 「汚れなき放浪」 (WMV9 704×396).avi aucjOwkaxK 181,243,904 c1d9a1e06886eb0ec5ef0c982ba5cef9ad1b5bcc<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第05話 「魔術師のバトル」 (WMV9 704×396).avi aucjOwkaxK 212,480,000 a17628c24a4288c39d341936582f988e81bed5bf<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第06話 「泣かないナミダ」 (WMV9 704×396).avi aucjOwkaxK 228,403,200 d47cc845261d08d121699d17ee7954fc5caee42b<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第07話 「砕けたカタミ」 (WMV9 704×396).avi aucjOwkaxK 195,940,352 eb76c3dddcbc977a9895574314fb6ac01c3f6859<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第08話 「神の愛娘」 (WMV9 704×396).avi aucjOwkaxK 172,771,328 34019457f8be8477de1f8c39ad29082dfe3106c6<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第09話 「妖しきオンナ」 (WMV9 704×396).avi aucjOwkaxK 172,138,496 7eb710189a176f4b91819a32df2ff72621577dec<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第10話 「離別のカガミ」 (WMV9 704×396).avi aucjOwkaxK 164,974,592 bb8c898dd3d819d4f42896bea3b85b5d37bdc018<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第11話 「選ばれたアシタ」 (WMV9 704×396).avi aucjOwkaxK 194,449,408 3aacd25ed09ba3906152380284cc5fca0636485c<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第12話 「暖かなエガオ」 (WMV9 704×396).avi aucjOwkaxK 205,279,232 d6949c53d93b6e13c2007eaeabe93e14c13f4250<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第13話 「まぼろしのオトギ」 (WMV9 704×396).avi aucjOwkaxK 215,187,456 f1fdc805b9162c18c188fea7c3dbcdbd72647bdf<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第14話 「真実のレキシ」 (WMV9 704×396).avi aucjOwkaxK 189,632,512 085ac90702f5413d476a6604188975ebbe567732<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第15話 「信じるココロ」 (WMV9 704×396).avi aucjOwkaxK 187,215,872 e7d8acdb51d28d6d404e6839aba1089788b513a4<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第16話 「強さと優しさ」 (WMV9 704×396).avi aucjOwkaxK 191,641,600 4b3f1bf2f54ac61bc78931bd7048fa87ba91b09a<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第17話 「桜の国のカフェ」 (WMV9 704×396).avi aucjOwkaxK 190,384,128 05d4b4f5805f8acd46272c84f08da1b5b1ed4bb0<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第18話 「にゃんことワンコ」 (WMV9 704×396).avi aucjOwkaxK 165,261,312 a119e59a7edfb71fc7447ff589c83279d9ff900d<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第19話 「生きるカクゴ」 (WMV9 704×396).avi aucjOwkaxK 162,832,384 c9df6d4a3a51fb1e27cc2e7d45995584f0f1f189<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第20話 「午後のピアノ」 (WMV9 704×396).avi aucjOwkaxK 183,674,880 74611330d8143c4e109b91807eeafcdfb992e200<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第21話 「鬼児のスガオ」 (WMV9 704×396).avi aucjOwkaxK 180,379,648 4406cfa75b6e222b964ed235bca580d68c0cef0c<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第22話 「消せないキオク」 (WMV9 704×396).avi aucjOwkaxK 166,359,040 0f9afc74f158b4807c33bda498098f5f3c457df6<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第23話 「消えゆくイノチ」 (WMV9 704×396).avi aucjOwkaxK 174,489,600 5eb5faa361189fb27c2d0b630f399dc49ed38786<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第24話 「死闘のヤイバ」 (WMV9 704×396).avi aucjOwkaxK 170,788,864 b553320406b586dcfe5fcde263395617873da8cd<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第25話 「究極のゲーム」 (WMV9 704×396).avi aucjOwkaxK 189,943,808 f02e6a4923dfb7009b1f99003da3cd7eb5ee2bc2<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第26話(一部完) 「最後の願い」 (WMV9 704×396).avi aucjOwkaxK 182,544,384 a9b8cdc7c863e750e25006cdf4f27d3187e71295<br><br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ Chapter.I 映像特典 「ツバサ・クロニクル座談会モドキ」 (WMV9 704×396 MP3).avi WgPZCQtRPj 870,644,750 ac8badab6e8e63d718e4112594ea8d0488031560<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ Chapter.I 映像特典 「ノンクレジット・オープニング」 (WMV9 704×396 MP3).avi WgPZCQtRPj 25,015,740 09e16c4a5e926c2357c03ffb6ca346dbd7e9db45<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ Chapter.I 映像特典 「ノンクレジット・エンディング」 (WMV9 704×396 MP3).avi WgPZCQtRPj 12,560,074 1ac110fdd2cb58f89182380e8230594828918e31<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ Chapter.I 映像特典 「第01話予告」 (WMV9 704×396 MP3).avi WgPZCQtRPj 8,327,822 408fed83e70f7cbbbfc4a0fc551f28f9a6c8561f<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第01話 「危険なレース」 (WMV9 704×396 MP3).avi WgPZCQtRPj 281,112,444 afeb87cf22848430e858731a8f96107c6c60ecfb<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第02話 「三つのバッジ」 (WMV9 704×396 MP3).avi WgPZCQtRPj 239,814,102 46a5c1bbd42fb15d7d5a600715a207c300524f2d<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第03話 「栄光のゴール」 (WMV9 704×396 MP3).avi WgPZCQtRPj 230,957,056 556d2782ee45d94c78818a18b5ff9c46ecf3751c<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第04話 「哀しいキセキ」 (WMV9 704×396 MP3).avi WgPZCQtRPj 196,421,632 291f1db95aede90b23f0f6312383b98abb79afc1<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第05話 「少年のケツイ」 (WMV9 704×396 MP3).avi WgPZCQtRPj 187,123,712 f4b87679f1494302a14c3d5ffce58ba5357fd3f6<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第06話 「魔術師とデート」 (WMV9 704×396 MP3).avi WgPZCQtRPj 194,338,816 606993b945feb0521bd2cd2898a92dbf7cc74218<br><br>
+[DVD] 劇場版 ツバサ・クロニクル 映像特典 「アフレコ風景」(x264 640×480 AC3).mkv aucjOwkaxK 75,181,358 d815257770b5917f2c0b465bce0e160284e5c311<br>
+[DVD] 劇場版 ツバサ・クロニクル 映像特典 「イベント映像」(x264 640×480 AC3).mkv aucjOwkaxK 226,189,267 d616b5f1a0b2578eb62bbbbe692fa34ee7e5de74<br>
+[DVD] 劇場版 ツバサ・クロニクル 映像特典 「初日舞台挨拶」(x264 640×480 AC3).mkv aucjOwkaxK 222,182,861 7eabb58bd5117f25d47bcf00bab53a938bfe6212<br>
+[DVD] 劇場版 ツバサ・クロニクル 「鳥カゴの国の姫君」(x264 AC3 5.1ch +オーディオコメンタリー×2).mkv aucjOwkaxK 529,354,148 9bd0dd1fac365d1f430986e89c950c6415df73bd<br><br>
+[DVD] ツバサ・クロニクル ～年代記～ Ⅰ 特典映像 「ノンクレジットオープニング」 (H.264 704×396+4).avi aucjOwkaxK 19,558,400 71fe96547fe694e6c50fd696eae80b38c6f19c43<br>
+[DVD] ツバサ・クロニクル ～年代記～ Ⅰ 特典映像 「ノンクレジットエンディング」 (H.264 704×396+4).avi aucjOwkaxK 21,991,424 bc84e279d0e517b7804a3ec7f8b641d473ea3c15<br>
+[DVD] ツバサ・クロニクル ～年代記～ Ⅰ 特典映像 「第01話予告」 (H.264 704×396+4).avi aucjOwkaxK 3,139,584 177a92572dd79662cc26495a8320d2eb66607236<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第26話放送後モコナ挨拶 (H.264 704×396).avi aucjOwkaxK 5,001,216 92d881769f430dfcf77d3cddbe0113ca91ec9eaf<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第01話 「必然のデアイ」 (H.264 704×396+4).avi aucjOwkaxK 138,438,656 57b50e4ddaf095fdbd22a225da67d2029d9cd312<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第02話 「戦うチカラ」 (H.264 704×396+4).avi aucjOwkaxK 157,161,472 bd9b38d8d02b31d373cda37a0299b5957c078e57<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第03話 「破魔のカタナ」 (H.264 704×396+4).avi aucjOwkaxK 127,715,328 b73fade2c7e3aa08313bff2dc071c7234ab11725<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第04話 「汚れなき放浪」 (H.264 704×396).avi aucjOwkaxK 124,659,712 8e2757f04654e8ac27f480404341e2fc85b699b0<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第05話 「魔術師のバトル」 (H.264 704×396).avi aucjOwkaxK 146,614,272 a593c3c4a8839728307ba0b7593db90d766e2a8c<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第06話 「泣かないナミダ」 (H.264 704×396).avi aucjOwkaxK 157,859,840 2e7a1a59b5495c213c1139f503a397100d07e969<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第07話 「砕けたカタミ」 (H.264 704×396).avi aucjOwkaxK 134,041,600 bbb621a2bea4316941abbaabc4d3b67d4e58fda1<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第08話 「神の愛娘」 (H.264 704×396).avi aucjOwkaxK 118,046,720 df6ba6610656b76589e31b1778a6e9aecb14cc96<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第09話 「妖しきオンナ」 (H.264 704×396).avi aucjOwkaxK 118,591,488 698137733ca8f43616d4d6ac59f96c7ada99094d<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第10話 「離別のカガミ」 (H.264 704×396).avi aucjOwkaxK 113,727,488 48be3c808d458a16f57fa5eb62cacf4541e1b305<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第11話 「選ばれたアシタ」 (H.264 704×396).avi aucjOwkaxK 131,878,912 c1cc1ac35cb9b1b3fd5f073bb160b752ddfab687<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第12話 「暖かなエガオ」 (H.264 704×396).avi aucjOwkaxK 139,094,016 aa952fa4a650c12cff592881afa96c704f51c15a<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第13話 「まぼろしのオトギ」 (H.264 704×396).avi aucjOwkaxK 146,718,720 1eea0b57d577a202d1d8edc201200fdc9da0a705<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第14話 「真実のレキシ」 (H.264 704×396).avi aucjOwkaxK 130,056,192 33a4c4ea5810336626d7b0a78dd83ba7f80a1e96<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第15話 「信じるココロ」 (H.264 704×396).avi aucjOwkaxK 128,442,368 02e22b831e06bcc6244ac015251f8545e1a313ec<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第16話 「強さと優しさ」 (H.264 704×396).avi aucjOwkaxK 131,131,392 44141967b858a39fb6da41d0b3e236aa36224dc2<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第17話 「桜の国のカフェ」 (H.264 704×396).avi aucjOwkaxK 131,506,176 b9806e2f4821ecd85fe45ab7e8e6a51bbbfe430d<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第18話 「にゃんことワンコ」 (H.264 704×396).avi aucjOwkaxK 114,018,304 d63123ffcfc9b3177460dc1fe8123d1685c2676a<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第19話 「生きるカクゴ」 (H.264 704×396).avi aucjOwkaxK 113,328,128 720e3000021fa29e08b2bcfe3e6cee06d0351621<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第20話 「午後のピアノ」 (H.264 704×396).avi aucjOwkaxK 124,405,760 7bebee508a4f481848e93aa78c4f11420e688576<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第21話 「鬼児のスガオ」 (H.264 704×396).avi aucjOwkaxK 126,429,184 2d0cba7feeb6940babee2afefc41a6fb98f5a297<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第22話 「消せないキオク」 (H.264 704×396).avi aucjOwkaxK 115,810,304 eb06c64145f32883ccd706aaa598916db4e6ee32<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第23話 「消えゆくイノチ」 (H.264 704×396).avi aucjOwkaxK 122,777,600 9cfad8841aef9bcc92346df4369762bac6c7fbea<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第24話 「死闘のヤイバ」 (H.264 704×396).avi aucjOwkaxK 120,766,464 0987129b9aff240d64b71a7ffc418be5ae0e46f6<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第25話 「究極のゲーム」 (H.264 704×396).avi aucjOwkaxK 135,358,464 a04339b5f8c4915ff6bce1136c25f14ae86fd2aa<br>
+[DVD] ツバサ・クロニクル ～年代記～ 第26話(一部完) 「最後の願い」 (H.264 704×396).avi aucjOwkaxK 127,758,336 b802108b5dc93ccd12716d4e838723268cb7a2d3<br><br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ Chapter.I 映像特典 「ツバサ・クロニクル座談会モドキ」 (H.264 704×396 MP3).avi WgPZCQtRPj 365,892,562 79ef67830ebfde4a9c39bd801fd4d7c08d2bd71b<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ Chapter.I 映像特典 「ノンクレジット・オープニング」 (H.264 704×396 MP3).avi WgPZCQtRPj 16,481,050 433be91efaa844144881f97903ce4475bfa2cc95<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ Chapter.I 映像特典 「ノンクレジット・エンディング」 (H.264 704×396 MP3).avi WgPZCQtRPj 8,015,052 98ca4b52e495047cdecb4f78197a4d6b0a6d216b<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ Chapter.I 映像特典 「第01話予告」 (H.264 704×396 MP3).avi WgPZCQtRPj 5,644,658 0a6955a5d32e51d9ce9bdf772be40af627646880<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第01話 「危険なレース」 (H.264 704×396 MP3).avi WgPZCQtRPj 180,030,292 ee3346e066ca110bb5a00668b7ea4680469e19ca<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第02話 「三つのバッジ」 (H.264 704×396 MP3).avi WgPZCQtRPj 153,547,568 8944aa12f23d43e11564c3bf84bc9e9224b44848<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第03話 「栄光のゴール」 (H.264 704×396 MP3).avi WgPZCQtRPj 154,257,408 1a69449ddc5347ec98ee2cfdf20b2bd6aa2b840c<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第04話 「哀しいキセキ」 (H.264 704×396 MP3).avi WgPZCQtRPj 130,877,440 d499f3b09c1f8870ba5ed87411cb392855d96e98<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第05話 「少年のケツイ」 (H.264 704×396 MP3).avi WgPZCQtRPj 123,555,840 dcb6fb93f9276575b3741e748ab1a7636fa1a17f<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第06話 「魔術師とデート」 (H.264 704×396 MP3).avi WgPZCQtRPj 126,836,736 0a75dc8babda4646fb4dc56fda6d7e356949e96f<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第07話 「阿修羅のイワレ」 (H.264 704×396 MP3).avi WgPZCQtRPj 123,367,424 74be4ac13fb5ae5b5dd666f36988ec777881cc0e<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第08話 「終わりなきイクサ」 (H.264 704×396 MP3).avi WgPZCQtRPj 139,411,456 48fec6131a7efd3273dc8814952c88eb6f3a8f97<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第09話 「ふたつのキオク」 (H.264 704×396 MP3).avi WgPZCQtRPj 131,373,056 9969e2aa14fd5f2d672cbe1f156a9eea248cc740<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第10話 「時をこえるオモイ」 (H.264 704×396 MP3).avi WgPZCQtRPj 166,461,440 cd17e8dd4538601aad6f43d6bb448108fe5b6688<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第11話 「おえかきモコナ」 (H.264 704×396 MP3).avi WgPZCQtRPj 140,269,568 1279d5feb04d19afff9530b211522b452d1de5e4<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第12話 「危険なロード」 (H.264 704×396 MP3).avi WgPZCQtRPj 126,453,760 22cdbdb7e390841f1e4919283f298a35ad00c7eb<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第13話 「始まりのワカレ」 (H.264 704×396 MP3).avi WgPZCQtRPj 115,937,280 d3801f771e7ff5594e6862f15e9a8d5ccce9d7a2<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第14話 「黒き鋼」 (H.264 704×396 MP3).avi WgPZCQtRPj 115,208,192 f21cadf5ccee71ee91865580b4f4932754ddab85<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第15話 「図書館のヒミツ」 (H.264 704×396 MP3).avi WgPZCQtRPj 137,877,504 3c75dfc8730224fce7ec05c8900eab1fd757653a<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第16話 「望郷のカナタ」 (H.264 704×396 MP3).avi WgPZCQtRPj 110,667,776 fa6af81f3f1ea85d1ea87a47a37c692447b75e17<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第17話 「五つ目のチカイ」 (H.264 704×396 MP3).avi WgPZCQtRPj 109,561,856 3d393d001ac89117444316aa38ba5c82707d7462<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第18話 「ケロちゃんとモコナ」 (H.264 704×396 MP3).avi WgPZCQtRPj 123,791,360 b13c695686cd675e0cde08f20abff6e41688d021<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第19話 「二度目のクナン」 (H.264 704×396 MP3).avi WgPZCQtRPj 144,203,776 659d0b4c3b93c1090ccf9cfe994ce4e1f3ab5655<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第20話 「秘術のゴクイ」 (H.264 704×396 MP3).avi WgPZCQtRPj 137,228,288 ec7949e0224d5a29c62e19c669d61e78862429e5<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第21話 「はたらくサクラ」 (H.264 704×396 MP3).avi WgPZCQtRPj 120,004,608 35c551ad23cc4497381c467ee26e2c5cde24a200<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第22話 「羽王カオス」 (H.264 704×396 MP3).avi WgPZCQtRPj 134,150,144 7abd6e56f6663e1c962c4f5adfebc095e2ed7bb3<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第23話 「歪んだネガイ」 (H.264 704×396 MP3).avi WgPZCQtRPj 130,152,448 e34f07a26569141c24caa6a5e531d4a25886a937<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第24話 「決意のナカマ」 (H.264 704×396 MP3).avi WgPZCQtRPj 128,210,944 adecf739d1773a206ecd8bd801c0c0dbb02cdafb<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第25話 「凍てつくミタマ」 (H.264 704×396 MP3).avi WgPZCQtRPj 121,432,064 64d690c9528a6aa9e6916dde6b18a4f5c5f354ae<br>
+[DVD] ツバサ・クロニクル 年代記 第2シリーズ 第26話(最終話) 「明日へのツバサ」 (H.264 704×396 MP3).avi WgPZCQtRPj 151,814,144 58ab1019a662c94a5566665616fdd0538e14dd76<br>
+<hr class="A">
+#(DVDアニメ) ツバサクロニクル 第2期 第01話 「危険なレース」  [25m00s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 112,495,320 6d283edd0e2e6c7a9818eafe7096882eacb083e4<br>
+#(DVDアニメ) ツバサクロニクル 第2期 第02話 「三つのバッジ」  [25m00s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 96,507,030 861b6e562884036d771ff229c2a292b0027ed479<br>
+#(DVDアニメ) ツバサクロニクル 第2期 第03話 「栄光のゴール」  [25m00s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 98,892,112 88cb214c172ddfe84b2c589b6e6878901bce5254<br>
+#(DVDアニメ) ツバサクロニクル 第2期 第04話 「哀しいキセキ」  [25m00s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 83,897,888 fb87335b6ba073a7dfe6b2ce3f7a09be0f984fb1<br>
+#(DVDアニメ) ツバサクロニクル 第2期 第05話 「少年のケツイ」  [25m00s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 79,781,676 9e15aa6c8b92de6766ead7610dbb0195981ab8f3<br>
+<br></dd>
+<dt><span class="title">ツバサ -RESERVoir CHRoNiCLE-<b>◆</b></span>09/06/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD] ツバサ -RESERVoir CHRoNiCLE- 第21巻 DVD付初回限定版 付属DVD「ツバサTOKYO REVELATIONS 1 魔術師の伝言」 (x264 704x396 AC3).avi 川澄舞uc73gwPjhy 200,298,496 8becdcb3f2be3513dadfacab08a0dfaff45e887c<br>
+[DVD] ツバサ -RESERVoir CHRoNiCLE- 第22巻 DVD付初回限定版 付属DVD「ツバサTOKYO REVELATIONS 2 少年の右目」 (x264 704x396 AC3).avi 川澄舞uc73gwPjhy 263,550,976 4d4ee044a50b369022eaf56c80866cc2fc87d82c<br>
+[DVD] ツバサ -RESERVoir CHRoNiCLE- 第23巻 DVD付初回限定版 付属DVD「ツバサTOKYO REVELATIONS 3 姫君の視た夢」 (x264 704x396 AC3).avi 川澄舞uc73gwPjhy 235,413,504 5632fa4db4d3dc3a0c0fd5e996b0ecbc447c5a62<br><br>
+[DVD] ツバサ -RESERVoir CHRoNiCLE- 第26巻 DVD付初回限定版 付属DVD「ツバサ 春雷記 〔前編〕」(704x396 x264).avi 川澄舞uc73gwPjhy 239,180,322 035486141f94316a64c96fa287cee0fdfa8ee43d<br>
+[DVD] ツバサ -RESERVoir CHRoNiCLE- 第26巻 DVD付初回限定版 付属DVD「ツバサ 春雷記 〔前編〕」(704x480 x264 AAC).mp4 川澄舞uc73gwPjhy 246,630,909 185c197f95a35fa90ef72879d13432776911a30b<br>
+[DVD] ツバサ -RESERVoir CHRoNiCLE- 第27巻 DVD付初回限定版 付属DVD「ツバサ 春雷記 〔後編〕」(704x480 x264 AAC).mp4 川澄舞uc73gwPjhy 264,942,993 b4f515b873aa5fcf9cdaaa6855677c1a6c5998af<br>
+<br></dd>
+<dt><span class="title">つよきす Cool×Sweet<b>◆</b></span>08/03/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] つよきす Cool×Sweet 映像特典 つよきす”もしも”コマーシャル #1 (704x396 WMV9).wmv サキCNS9Um2lXI 23,240,084 6d2940ad3b76d93a2a3127894870ddd8bf9bc67c<br>
+[アニメ DVD] つよきす Cool×Sweet 映像特典 つよきす”もしも”コマーシャル #2 (704x396 WMV9).wmv サキCNS9Um2lXI 16,936,294 b8e17796ffef9d4c1418d112cac23b3d05367c0d<br>
+[アニメ DVD] つよきす Cool×Sweet 映像特典 つよきす”もしも”コマーシャル #3 (704x396 WMV9).wmv サキCNS9Um2lXI 26,744,322 0c1de6a20529ae390dc6f264077cd179ce2972fd<br>
+[アニメ DVD] つよきす Cool×Sweet 映像特典 つよきす”もしも”コマーシャル #4 (704x396 WMV9).wmv サキCNS9Um2lXI 30,488,378 b23d5156ccc29b878a226b547b12e9c9f5755225<br>
+[アニメ DVD] つよきす Cool×Sweet 映像特典 つよきす”もしも”コマーシャル #5 (704x396 WMV9).wmv サキCNS9Um2lXI 20,760,448 38129d677a7eeca0aa0c313dbe94cb3ca1859ec7<br>
+[アニメ DVD] つよきす Cool×Sweet 映像特典 つよきす”もしも”コマーシャル #6 (704x396 WMV9).wmv サキCNS9Um2lXI 37,609,232 ea8816f566744c67e719347ea17a0e8ec2083e1a<br>
+[アニメ DVD] つよきす Cool×Sweet 映像特典 ノンテロップOP (704x396 WMV9).wmv サキCNS9Um2lXI 21,847,328 c605184ab636555709ea03ad4dd97da1eb482080<br>
+[アニメ DVD] つよきす Cool×Sweet 映像特典 ノンテロップED (704x396 WMV9).wmv サキCNS9Um2lXI 10,615,538 491a93565f79775214c6c3e0a594ba6b15802aae<br>
+[アニメ DVD] つよきす Cool×Sweet 第01話 「よろしくッ！近衛素奈緒です！」 (704x396 WMV9).wmv サキCNS9Um2lXI 195,482,732 58f254f7dd430e774e8fa8ceaf0d50d6897a53c5<br>
+[アニメ DVD] つよきす Cool×Sweet 第02話 「生徒会なんて、大キライ！！」 (704x396 WMV9).wmv サキCNS9Um2lXI 193,002,760 977c71cb47efa1698c63e1d2a470e052f1392d10<br>
+[アニメ DVD] つよきす Cool×Sweet 第03話 「激突！体育武道祭！！」 (704x396 WMV9).wmv サキCNS9Um2lXI 226,042,522 bf9acd4736938839f1fd91302f1b5f9271748bb7<br>
+[アニメ DVD] つよきす Cool×Sweet 第04話 「ココナッツの夏」 (704x396 WMV9).wmv サキCNS9Um2lXI 169,995,180 2530d0f0830aff1c0715df410ce6a8919c7e649d<br>
+[アニメ DVD] つよきす Cool×Sweet 第05話 「アルバイトはキケンな香り」 (704x396 WMV9).wmv サキCNS9Um2lXI 203,466,676 c60e7b3aac9cbe18f9951d09f1ff50118b7fdc08<br>
+[アニメ DVD] つよきす Cool×Sweet 第06話 「流されて・・・烏賊島」 (704x396 WMV9).wmv サキCNS9Um2lXI 184,635,054 22384d07d6b9d7bdb0fd54cafe12625412fef29a<br>
+[アニメ DVD] つよきす Cool×Sweet 第07話 「対決！テストでGO！！」 (704x396 WMV9).wmv サキCNS9Um2lXI 203,099,180 1091691d55982000d8176b3b19fb955d095b1ffc<br>
+[アニメ DVD] つよきす Cool×Sweet 第08話 「嵐を呼ぶまつかさ祭！」 (704x396 WMV9).wmv サキCNS9Um2lXI 240,282,606 179663ae3cc8fde91d1f83579a25eb3b1a2c63b5<br>
+[アニメ DVD] つよきす Cool×Sweet 第09話 「演劇同好会始動！？」 (704x396 WMV9).wmv サキCNS9Um2lXI 208,458,984 42dc30c21d727a6a8f15f087f1ffd2e5d1a9fdee<br>
+[アニメ DVD] つよきす Cool×Sweet 第10話 「おにぎりと舞台と竜鳴祭」 (704x396 WMV9).wmv サキCNS9Um2lXI 224,858,872 bb7950f07a3b25dd3ea86ad985023cd35a6b2140<br>
+[アニメ DVD] つよきす Cool×Sweet 第11話 「素奈緒になれなくて・・・」 (704x396 WMV9).wmv サキCNS9Um2lXI 205,834,942 dc5204969adecf719dbe860e27efbffaf1b4b051<br>
+[アニメ DVD] つよきす Cool×Sweet 第12話 「改めてよろしくッ！近衛素奈緒です！」 (704x396 WMV9).wmv サキCNS9Um2lXI 231,323,684 c5dfdc8c655314d2ac846895fb818bb585964931<br>
+<hr class="A">
+[アニメ DVD] つよきす CoolxSweet Vol.01 映像特典 ｢ノンテロップOP｣(704x396 x264).mkv YTXu5UiCog 27,485,356 b73576cb57fa8ee6180455f6e0006b80abda03ef<br>
+[アニメ DVD] つよきす CoolxSweet Vol.01 映像特典 ｢ノンテロップED｣(704x396 x264).mkv YTXu5UiCog 11,402,112 d5fbfec3a2bbdd1703d05fbba6bc4e54dfe86cc0<br>
+[アニメ DVD] つよきす CoolxSweet Vol.01 映像特典 ｢新作もしもCM集｣(704x396 x264).mkv YTXu5UiCog 28,449,465 b03f5f96d2cbf08ddcf3038ff59c437e2c306fd1<br>
+[アニメ DVD] つよきす CoolxSweet Vol.02 映像特典 ｢新作もしもCM集｣(704x396 x264).mkv YTXu5UiCog 24,422,468 615ff4117b0e552d92bf5db67f867a09720e4aed<br>
+[アニメ DVD] つよきす CoolxSweet Vol.03 映像特典 ｢新作もしもCM集｣(704x396 x264).mkv YTXu5UiCog 29,822,283 3befd50731c7c8b8cb25e419ffc68ec3d2d6b60d<br>
+[アニメ DVD] つよきす CoolxSweet Vol.04 映像特典 ｢新作もしもCM集｣(704x396 x264).mkv YTXu5UiCog 38,023,215 71b98387e9978dae272f8f3ab2ce29d6dccf502b<br>
+[アニメ DVD] つよきす CoolxSweet Vol.05 映像特典 ｢新作もしもCM集｣(704x396 x264).mkv YTXu5UiCog 29,422,055 48a9b64faa36c8ef003aee89905cc156d872c8a7<br>
+[アニメ DVD] つよきす CoolxSweet Vol.06 映像特典 ｢新作もしもCM集｣(704x396 x264).mkv YTXu5UiCog 48,473,555 a676ea79d91132c1c445c8adf4fc51fe2b701773<br>
+[アニメ DVD] つよきす CoolxSweet 第01話 ｢よろしくッ！近衛素奈緒です！｣(704x396 x264).mkv YTXu5UiCog 242,343,346 3f10c082a231b86449d35d222da9896d5c86da4e<br>
+[アニメ DVD] つよきす CoolxSweet 第02話 ｢生徒会なんて、大キライ！！｣(704x396 x264).mkv YTXu5UiCog 237,540,191 0b7b8b438c8540d50226488b614fc633a89c0d8e<br>
+[アニメ DVD] つよきす CoolxSweet 第03話 ｢激突！体育武道祭！！｣(704x396 x264).mkv YTXu5UiCog 354,333,274 cd9f8f3c2aff69e42db8e3c53cbbe46ab1a44463<br>
+[アニメ DVD] つよきす CoolxSweet 第04話 ｢ココナッツの夏｣(704x396 x264).mkv YTXu5UiCog 233,824,397 fd1f298f4557fc60bf46c6933bcb5e04222a2b77<br>
+[アニメ DVD] つよきす CoolxSweet 第05話 ｢アルバイトは危険な香り｣(704x396 x264).mkv YTXu5UiCog 228,527,690 2a9c647da47226e98e4f3d5a9814afd180ab8b47<br>
+[アニメ DVD] つよきす CoolxSweet 第06話 ｢流されて…烏賊島｣(704x396 x264).mkv YTXu5UiCog 210,720,887 624df1c8e97db4eadd17271e3d553b37a5e79811<br>
+[アニメ DVD] つよきす CoolxSweet 第07話 ｢対決！テストでGO！！｣(704x396 x264).mkv YTXu5UiCog 261,696,683 4b2604d915e5281093ae88f720a32d076f3a0b6d<br>
+[アニメ DVD] つよきす CoolxSweet 第08話 ｢嵐を呼ぶまつかさ祭！｣(704x396 x264).mkv YTXu5UiCog 298,317,005 38ee99ef318e3d660c1eb15fd19302513f0ea2fa<br>
+[アニメ DVD] つよきす CoolxSweet 第09話 ｢演劇同好会始動！？｣(704x396 x264).mkv YTXu5UiCog 251,462,214 82b0ee672f98c9ea15016da8b4256a0d26b51d09<br>
+[アニメ DVD] つよきす CoolxSweet 第10話 ｢おにぎりと舞台と竜鳴祭｣(704x396 x264).mkv YTXu5UiCog 286,685,919 761b2166bca6fd2b0594937b0d2e8741a4b24216<br>
+[アニメ DVD] つよきす CoolxSweet 第11話 ｢素奈緒になれなくて…｣(704x396 x264).mkv YTXu5UiCog 283,031,603 ce377589a7bd7facfbfc68b0d44adf02300278b7<br>
+[アニメ DVD] つよきす CoolxSweet 第12話 ｢改めてよろしくッ！ 近衛素奈緒です！｣(704x396 x264).mkv YTXu5UiCog 309,241,963 a914677e82d134ae17521462614628e46821cda1<br>
+<hr class="A">
+(アニメ DVD) Cool×Sweet 映像特典 第01巻「ノンテロップOP」(XviD 704x396 AAC).mkv Noise120PU1m1xR 37,068,489 11568a26f306eb051f401ebfe7942bcd05a22845<br>
+(アニメ DVD) Cool×Sweet 映像特典 第01巻「ノンテロップED」(XviD 704x396 AAC).mkv Noise120PU1m1xR 22,990,188 c5c321546c6eb73e128b69b4d632c7cf4c1c9e64<br>
+(アニメ DVD) Cool×Sweet 映像特典 第01巻「新作もしもCM集」(XviD 704x396 AAC).mkv Noise120PU1m1xR 38,719,409 89fd52547d72ac32a085eb0afd08663fbb9d53d9<br>
+(アニメ DVD) Cool×Sweet 映像特典 第01巻「番宣映像SPOT」(XviD 640x360 AAC).mkv Noise120PU1m1xR 13,049,766 003c0b5cd3eb5ebc95ec663be320486e16d0b58f<br>
+(アニメ DVD) Cool×Sweet 映像特典 第02巻「新作もしもCM集」(XviD 704x396 AAC).mkv Noise120PU1m1xR 29,793,458 41a0e1d6dbc8fa4790b200aad8817613be31938f<br>
+(アニメ DVD) Cool×Sweet 映像特典 第03巻「新作もしもCM集」(XviD 704x396 AAC).mkv Noise120PU1m1xR 43,017,184 e77093d029d30dc95ea8b8ae0f62eac8027ef524<br>
+(アニメ DVD) Cool×Sweet 第01話「よろしくッ！近衛素奈緒です！」(XviD 704x396 AAC).mkv Noise120PU1m1xR 333,772,356 5c93b4ee484b4060dd4b5da8c4c02773d7b78d87<br>
+(アニメ DVD) Cool×Sweet 第02話「生徒会なんて、大キライ！！」(XviD 704x396 AAC).mkv Noise120PU1m1xR 334,997,386 db751a7fb5348bdd56c5404b2821b5568e2bf0ce<br>
+(アニメ DVD) Cool×Sweet 第03話「激突！体育武道祭！！」(XviD 704x396 AAC).mkv Noise120PU1m1xR 404,603,774 082182dee4e943785dd31b3e3a8d6fb0c1c7de3b<br>
+(アニメ DVD) Cool×Sweet 第04話「ココナッツの夏」(XviD 704x396 AAC).mkv Noise120PU1m1xR 272,294,503 37c761b9041f44e77620eb6e5e936c3c1849f88e<br>
+(アニメ DVD) Cool×Sweet 第05話「アルバイトは危険な香り」(XviD 704x396 AAC).mkv Noise120PU1m1xR 355,811,887 20da8c8995d4c77f65fb298f6ef59d330e9611eb<br>
+(アニメ DVD) Cool×Sweet 第06話「流されて・・・烏賊島」(XviD 704x396 AAC).mkv Noise120PU1m1xR 299,371,911 c2a61e0e000c45aabdc440f1999a2205e1d96d22<br>
+<hr class="A">
+[DVD] つよきす CoolxSweet NCOP (800x450 XviD MP3 2Audio).avi puiAh0X7b3 33,191,936 75182ce4ed1820f7d9cc3e601f348d48517964ef<br>
+[DVD] つよきす CoolxSweet 第01話 (800x450 XviD MP3 192kbps rev2).avi ErSblJvCqG 276,591,980 7e44c6c160362ad90156d68043c65d7068d2ab8a<br>
+[DVD] つよきす CoolxSweet 第02話 (800x450 XviD MP3 192kbps rev2).avi ErSblJvCqG 276,996,692 d29f01f88e045545dd31eb4ba6db74a4c0075e9f<br>
+[DVD] つよきす CoolxSweet 第03話 (800x450 XviD MP3 192kbps).avi ErSblJvCqG 364,628,530 ffb84836e5a933edf4650af8b2c0540e04037af0<br>
+[DVD] つよきす CoolxSweet 第04話 (800x450 XviD MP3 192kbps).avi ErSblJvCqG 237,068,684 edef50f6d0bcc130977d3f223be69cf83ed16b93<br>
+[DVD] つよきす CoolxSweet 第05話 (800x450 XviD MP3 192kbps).avi ErSblJvCqG 254,374,526 a3fd683b74788afc770864e8aa9be77b777bd3bf<br>
+[DVD] つよきす CoolxSweet 第06話 (800x450 XviD MP3 192kbps).avi ErSblJvCqG 232,769,782 2c6f4ca561f07481baa8872a1bd0c19b7fc5e4a6<br>
+[DVD] つよきす CoolxSweet 第07話 (800x450 XviD MP3 192kbps).avi ErSblJvCqG 252,710,912 d5b74639bcd422c1051dd96e57ff352ec978ffe6<br>
+[DVD] つよきす CoolxSweet 第08話 (800x450 XviD MP3 192kbps).avi ErSblJvCqG 304,691,200 77acecb778d97c3aec548fb392b372dea8ae171a<br>
+[DVD] つよきす CoolxSweet 第09話 (800x450 XviD).avi puiAh0X7b3 276,474,146 998c61e45ca206cb641ecd2ee82d9820c65fcb9e<br>
+[DVD] つよきす CoolxSweet 第10話 (800x450 XviD).avi puiAh0X7b3 312,446,520 11e1e6569a476e30c7517da5250ad4d08b7af806<br>
+[DVD] つよきす CoolxSweet 第11話 (800x450 XviD).avi puiAh0X7b3 253,010,380 1bf648621b869aab4bec39d28172efb2d38956a7<br>
+[DVD] つよきす CoolxSweet 第12話 (800x450 XviD).avi puiAh0X7b3 289,282,282 958221a73646e0acb77d362ff15aded820ebd9b7<br>
+<hr class="A">
+[DVD] つよきす Cool×Sweet 「ノンクレジットオープニング」 (x264 704×480 16：9 AC3).mkv r3kwYzw8Oy 33,435,092 f654a7fc64fc6031435513bbfbabcb64c917bd88<br>
+[DVD] つよきす Cool×Sweet 第01話 「よろしくッ！近衛素奈緒です！」 (x264 704×480 16：9 AC3).mkv r3kwYzw8Oy 327,232,158 31f37cd7c1b58b6c05fc50388977f1ee40831332<br>
+[DVD] つよきす Cool×Sweet 第02話 「生徒会なんて、大キライ！！」 (x264 704×480 16：9 AC3).mkv r3kwYzw8Oy 336,505,041 b321f2eb075f97beeffadd6e6c178a655eaadef4<br>
+[DVD] つよきす Cool×Sweet 第03話 「激突！体育武道祭！！」 (x264 704×480 16：9 AC3).mkv r3kwYzw8Oy 387,641,583 e1bc9141603c08ee337edcbd11ed08e37bb12e74<br>
+[DVD] つよきす Cool×Sweet 第04話 「ココナッツの夏」 (x264 704×480 16：9 AC3).mkv r3kwYzw8Oy 264,307,513 dd4b58964fd8f787520603e0556556a74879b4d8<br>
+[DVD] つよきす Cool×Sweet 第05話 「アルバイトは危険な香り」 (x264 704×480 16：9 AC3).mkv r3kwYzw8Oy 339,579,176 a8857285141ca5c27ec9087be04c71e42a8eb28b<br>
+[DVD] つよきす Cool×Sweet 第06話 「流されて・・・烏賊島」 (x264 704×480 16：9 AC3).mkv r3kwYzw8Oy 294,074,626 00f07a21f4b7d224d155ebfa194a2a96886a3f49<br>
+[DVD] つよきす Cool×Sweet 第07話 「対決！テストでGO！！」 (x264 704×480 16：9 AC3).mkv r3kwYzw8Oy 345,542,887 94babb2efc7bee84688a1673c2fcb655adc1f4b6<br>
+[DVD] つよきす Cool×Sweet 第08話 「嵐を呼ぶまつかさ祭！」 (x264 704×480 16：9 AC3).mkv r3kwYzw8Oy 402,879,835 e6fba9763b19143820183275902930ff78fc436e<br>
+[DVD] つよきす Cool×Sweet 第09話 「演劇同好会始動！？」 (x264 704×480 16：9 AC3).mkv r3kwYzw8Oy 328,947,986 3f7c7b321eedab5b9704478713f14c880941eb7f<br>
+[DVD] つよきす Cool×Sweet 第10話 「おにぎりと舞台と竜鳴祭」 (x264 704×480 16：9 AC3).mkv r3kwYzw8Oy 372,729,835 f87ff7cf6abacb557dd9151661b5aba3c853326f<br>
+[DVD] つよきす Cool×Sweet 第11話 「素奈緒になれなくて・・・」 (x264 704×480 16：9 AC3).mkv r3kwYzw8Oy 357,447,961 aa933fde7432494210c9f8f42075a9f81ca7f5a0<br>
+[DVD] つよきす Cool×Sweet 第12話(最終話) 「改めてよろしくッ！近衛素奈緒です！」 (x264 704×480 16：9 AC3).mkv r3kwYzw8Oy 389,131,819 a5774447b73ed3fb6f60bbd5febdafda1606fbda<br>
+<hr class="A">
+#(DVDアニメ) つよきす CoolxSweet vol.2特典  [2m39s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 9,191,792 65b7e0485e9db4db9fd90537d79074458510d7b5<br>
+#(DVDアニメ) つよきす CoolxSweet vol.3特典  [2m41s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 14,939,466 b6b4bfbd37bd0ecba64523c5e23b758c2a657627<br>
+#(DVDアニメ) つよきす CoolxSweet 第01話 「よろしくッ！ 近衛素奈緒です！」  [24m36s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 115,287,746 0a4e1f794110c121ae5a10cc4ea8ad3a2feb2f7e<br>
+#(DVDアニメ) つよきす CoolxSweet 第02話 「生徒会なんて、大キライ！！」  [24m38s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 112,021,778 7385acad1598f9a863073acee3892b52562314c0<br>
+#(DVDアニメ) つよきす CoolxSweet 第03話 「激突！体育武道祭！！」  [24m21s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 128,756,336 c908755f59e1e101231dbcdc8014e35463f68aa4<br>
+#(DVDアニメ) つよきす CoolxSweet 第04話 「ココナッツの夏」  [25m08s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 92,645,546 a61a1b627c4aad3ee9cc117d993b1beed66a0473<br>
+#(DVDアニメ) つよきす CoolxSweet 第05話 「アルバイトはキケンな香り」  [24m32s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 111,865,792 a6e6834fcb640ee5edbfbc8d946053e4d729cb43<br>
+#(DVDアニメ) つよきす CoolxSweet 第06話 「流されて…烏賊島」  [24m59s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 107,960,278 00697b231eaa027969870b90ce5119505eb317d9<br>
+#(DVDアニメ) つよきす CoolxSweet 第07話 「対決！テストでGO！！」  [25m08s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 113,001,652 4b3e6424e72778e0b67eabd39562541100f1d293<br>
+#(DVDアニメ) つよきす CoolxSweet 第08話 「嵐を呼ぶまつかさ祭！」  [24m27s 704x396 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 134,122,838 83a7b94bd4875697d81e76cafcbba54d8dc7e724<br>
+<hr class="A">
+つよきす Cool×Sweet 第01話 「よろしくッ！近衛素奈緒です！」 (DVD 704x396 XviD).avi YAyAoONEVq 280,208,244 5669a37b00020d78a5ee1638011ec185c5b168ff<br>
+つよきす Cool×Sweet 第02話 「生徒会なんて、大キライ！！」 (DVD 704x396 XviD).avi YAyAoONEVq 280,370,116 76560d2c91f5699e128b2e0be48e42bb535ec75f<br>
+つよきす Cool×Sweet 第03話 「激突！体育武道祭！！」 (DVD 704x396 XviD).avi YAyAoONEVq 333,521,192 07fbd01be96cd5679c3804e5e46a787126e0f9a4<br>
+つよきす Cool×Sweet 第04話 「ココナッツの夏」 (DVD 704x396 XviD).avi YAyAoONEVq 226,107,318 3ea8a7069ccfe17c1b8121e401a0c71e6f722944<br>
+つよきす Cool×Sweet 第05話 「アルバイトはキケンな香り」 (DVD 704x396 XviD).avi YAyAoONEVq 282,679,538 a1157a4e2b0aef79b49d2d4125d4d9c03ffdf452<br>
+つよきす Cool×Sweet 第06話 「流されて…烏賊島」 (DVD 704x396 XviD).avi YAyAoONEVq 242,942,564 0ca961273a1800a385949fc92cc8c6e620d8db43<br>
+つよきす Cool×Sweet 第07話 「対決！テストでGO！！」 (DVD 704x396 XviD).avi YAyAoONEVq 251,053,214 3af7d2971714c0432d860673e7ad06ec8f0bcbee<br>
+つよきす Cool×Sweet 第08話 「嵐を呼ぶまつかさ祭！」 (DVD 704x396 XviD).avi YAyAoONEVq 294,688,260 57353cfd8a73f06ba5ef7c2b6f334d3ee905fcf8<br>
+つよきす Cool×Sweet 第09話 「演劇同好会始動！？」 (DVD 704x396 XviD).avi YAyAoONEVq 286,616,414 7e110923d5f4d973bdca65d05019d336e1d27351<br>
+つよきす Cool×Sweet 第10話 「おにぎりと舞台と竜鳴祭」 (DVD 704x396 XviD).avi YAyAoONEVq 317,234,410 29747c7e395914b2696d0c957d81d77c5acd3458<br>
+つよきす Cool×Sweet 第11話 「素奈緒になれなくて…」 (DVD 704x396 XviD).avi YAyAoONEVq 350,268,656 82d48074a1dff69cc77fa4528c757c3dbc5eb0fe<br>
+つよきす Cool×Sweet 第12話 「改めてよろしくッ! 近衛素奈緒です!」 (DVD 704x396 XviD).avi YAyAoONEVq 382,263,956 860d94781c915931963dfbe87a0ffc445a626d13<br>
+<br></dd>
+</dl><a name="footer"></a><hr><br></body></html>

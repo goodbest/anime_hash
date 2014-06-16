@@ -1,0 +1,1396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja" dir="ltr"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="robots" content="index,noarchive">
+<title>ハッシュ保管庫 SHA1-ウ版</title>
+<style type="text/css">
+<!--
+*{margin:0; padding:0;}
+body{margin:0; padding:0; font-size:9pt; color:#000000; background:#F5F5F5;}
+dd{margin:0 0 0 20px;}
+hr{margin:1px 0; border:1px #C1C0B5 solid;}
+hr.A{text-align:left; width:95%; margin:2px 0; border:1px #87A9D5 solid;}
+hr.B{text-align:left; width:95%; margin:2px 0; border:2px #43599A solid;}
+a{color:#0080C0; text-decoration:none;}
+a:hover{color:#FFFFFF; background-color:#0080C0;}
+table{font-size:8pt;}
+td{text-align:center; width:50px; border:2px #0080C0 solid;}
+td a{display:block; height:1.2em; line-height:1.2em;}
+.font{margin:5px 0 0 2px; font-size:10pt; color:#6E6E6E;}
+.title{color:#D95131;}
+.sup{color:#0000FF;}
+.exc{color:#808080;}
+-->
+</style></head><body>
+<a name="header"></a>
+<table><tr>
+<td><a href="051_sha1aa.html">あ</a></td><td><a href="052_sha1ai.html">い</a></td><td><a href="053_sha1au.html">う</a></td><td><a href="054_sha1ae.html">え</a></td>
+<td><a href="055_sha1ao.html">お</a></td><td><a href="056_sha1ka.html">か</a></td><td><a href="057_sha1ki.html">き</a></td><td><a href="058_sha1ku.html">く</a></td>
+<td><a href="059_sha1ke.html">け</a></td><td><a href="060_sha1ko.html">こ</a></td><td><a href="061_sha1sa.html">さ</a></td><td><a href="062_sha1si.html">し</a></td>
+<td><a href="063_sha1su.html">す</a></td><td><a href="064_sha1se.html">せ</a></td><td><a href="065_sha1so.html">そ</a></td><td><a href="066_sha1ta.html">た</a></td>
+<td><a href="067_sha1ti.html">ち</a></td><td><a href="068_sha1tu.html">つ</a></td><td><a href="069_sha1te.html">て</a></td><td><a href="070_sha1to.html">と</a></td>
+<td><a href="071_sha1na.html">な</a></td><td><a href="072_sha1ni.html">に</a></td><td><a href="0javascript:void(0)">ぬ</a></td>
+<td><a href="0javascript:void(0)">ね</a></td><td><a href="075_sha1no.html">の</a></td>
+</tr><tr>
+<td><a href="076_sha1ha.html">は</a></td><td><a href="077_sha1hi.html">ひ</a></td><td><a href="078_sha1hu.html">ふ</a></td><td><a href="079_sha1he.html">へ</a></td>
+<td><a href="080_sha1ho.html">ほ</a></td><td><a href="081_sha1ma.html">ま</a></td><td><a href="082_sha1mi.html">み</a></td><td><a href="083_sha1mu.html">む</a></td>
+<td><a href="084_sha1me.html">め</a></td><td><a href="085_sha1mo.html">も</a></td><td><a href="086_sha1ya.html">や</a></td><td><a href="087_sha1yu.html">ゆ</a></td>
+<td><a href="088_sha1yo.html">よ</a></td><td><a href="089_sha1ra.html">ら</a></td><td><a href="090_sha1ri.html">り</a></td><td><a href="091_sha1ru.html">る</a></td>
+<td><a href="092_sha1re.html">れ</a></td><td><a href="093_sha1ro.html">ろ</a></td><td><a href="094_sha1wa.html">わ</a></td><td><a href="095_sha1ld.html">LD</a></td>
+<td><a href="096_sha1ow.html">旧</a></td><td><a href="../bd/047_bd.html">BD</a></td><td><a href="../psp/048_psp.html">PSP</a></td>
+<td colspan="2" style="width:100px;"><a href="../update.html">更新リスト</a></td>
+</tr></table>
+<span class="font">ハッシュ保管庫 SHA1-ウ版</span><hr>
+<dl>
+<dt><span class="title">VANDREAD<b>◆</b></span>06/11/16 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ] VANDREAD 第01話 「ボーイ・ミーツ・ガール」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_CB916A9A].avi 272,578,560 e93697449c2a286f13adf441c3b95d1985fc487d<br>
+[アニメ] VANDREAD 第02話 「そして僕は途方にくれる」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_21073F44].avi 263,002,112 28fbddf09791b3b4aa90b6055ce9705e471ff113<br>
+[アニメ] VANDREAD 第03話 「これが私の生きる道」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_2AADC897].avi 221,104,128 dd8a27e9842dabbe28897e67abd61cb02cf519c3<br>
+[アニメ] VANDREAD 第04話 「もっとあなたを知りたくて」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_040E2E65].avi 268,394,496 cf54877ca4c6b54b2b34395aee269d7e1750f17b<br>
+[アニメ] VANDREAD 第05話 「甘いワナ」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_0A6EBDEC].avi 245,803,008 288383b8068c510834777e45b6e0fbc82273ce79<br>
+[アニメ] VANDREAD 第06話 「What a Wonderful World」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_657CD2F7].avi 275,306,496 078ecd16248f53f496b57745395b275b00a4721b<br>
+[アニメ] VANDREAD 第07話 「Easy Life」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_323AAD0C].avi 214,902,784 9f8900dd7b48e304eceadc35773fd381979be768<br>
+[アニメ] VANDREAD 第08話 「無理だ！」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_1E819915].avi 238,352,384 afa239d14c502ce4c35f70995e49883ac3d90208<br>
+[アニメ] VANDREAD 第09話 「天国より野蛮」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_187D6600].avi 303,325,184 2d6c6b5da11efe3a5428a6cd26813a4f0a63a05f<br>
+[アニメ] VANDREAD 第10話 「White Love」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_530BE46F].avi 290,662,400 7c5243fb39a1e1b2e3ca24e6063a1330868f6ccc<br>
+[アニメ] VANDREAD 第11話 「一緒に…」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_B138FF5D].avi 247,896,064 c0caf53df0785e190298e794a4240c3ad49bd18c<br>
+[アニメ] VANDREAD 第12話 「THEY DON'T CARE ABOUT US」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_D604B7D7].avi 267,165,696 a9a88e2d2a4cf3b10b8f5bd3ef897ca2812f5201<br>
+[アニメ] VANDREAD 第13話 「To Feel The Fire」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_924150EC].avi 322,586,624 cccf43252abbb464f1219d3ffeafca3ffa0ffb28<br><br>
+[アニメ] VANDREAD ヴァンドレッド 胎動編 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_85ED5B5F].avi 1,034,811,392 5c993823334bdc55c5f8fe1b556b79a728feb86a<br><br>
+[アニメ] VANDREAD the Second Stage 第01話 「Red Angel」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_5829968C].avi 345,434,112 fd1f99b7e01231f5ae6c3c54c5453e7032088442<br>
+[アニメ] VANDREAD the Second Stage 第02話 「Be My Baby」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_9639D53B].avi 299,823,104 0221f1c3d107fc394c02c4400730f842068b0c37<br>
+[アニメ] VANDREAD the Second Stage 第03話 「花咲く旅路」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_3D70A27A].avi 279,830,528 7e7ad862faf12e8eb25a065d95f08e0aca3dc9e1<br>
+[アニメ] VANDREAD the Second Stage 第04話 「Everything」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_B7451C9B].avi 263,688,192 27e0444d0faf3b59c087596e5f7e0b420dfd58a4<br>
+[アニメ] VANDREAD the Second Stage 第05話 「Somedays」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_8879A243].avi 399,140,864 79aba11662e8d6412ba04c94123bd17294e6c97f<br>
+[アニメ] VANDREAD the Second Stage 第06話 「オリジナル スマイル」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_BED832EE].avi 350,810,112 7c8ce323e3db687f7ccbee21b0758932d5b75f0a<br>
+[アニメ] VANDREAD the Second Stage 第07話 「頬にキスして」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_BEEBB90F].avi 234,756,096 9f3aafdb9a01aa3e629feb2015b0550f941a579a<br>
+[アニメ] VANDREAD the Second Stage 第08話 「reality」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_7B8A2932].avi 309,067,776 12c37bfc73c361bcaf54ecaa9116d0af4d9e1fb2<br>
+[アニメ] VANDREAD the Second Stage 第09話 「全部抱きしめて」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_3E59582E].avi 280,754,176 144f4ffc07f0d92689247762d0ee0604b5d34349<br>
+[アニメ] VANDREAD the Second Stage 第10話 「Easy Come,Easy Go」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_1BDA31D8].avi 275,902,464 bebe337a4fd6411b9a88b722a8ca355aaf09489f<br>
+[アニメ] VANDREAD the Second Stage 第11話 「楽園」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_D62F96E2].avi 232,630,272 c80e70a73e8954e070c2e4001dc7fd97cd5361ec<br>
+[アニメ] VANDREAD the Second Stage 第12話 「himegoto」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_C0B10725].avi 361,062,400 ac1bf9894b034cc0eecbce967c2f228d3d8efb23<br>
+[アニメ] VANDREAD the Second Stage 第13話 「TRUST」 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_9698D365].avi 427,130,880 5d070f3fec1765c81e0e3b9b43c032735b8c10c7<br><br>
+[アニメ] VANDREAD ヴァンドレッド 激闘編 (DVD 640x360 WMV9VCM QL93 120fps) [CRC32_D075EED1].avi 1,318,342,656 72373f919c999933ac35158ecab5cc2df60c26b7<br>
+<div class="sup">GsaBExmE1n</div>
+<hr class="A">
+[DVD] ヴァンドレッド VANDREAD #01 「ボーイ・ミーツ・ガール」 [23m56s 704x396 WMV9 177.1Kbps].wmv 411,319,434 dd650d401886943d54447d411eed1f192d0c2eb8<br>
+[DVD] ヴァンドレッド VANDREAD #02 「そして僕は途方にくれる」 [22m57s 704x396 WMV9 176.9Kbps].wmv 383,366,608 25b2cf8fc3d9af2e5a3077c17cd96fe0e2a467c5<br>
+[DVD] ヴァンドレッド VANDREAD #03 「これが私の生きる道」 [22m56s 704x396 WMV9 177.1Kbps].wmv 323,382,594 c86b76d96d07b71d9b322ca14634e71eb4cbffbc<br>
+[DVD] ヴァンドレッド VANDREAD #04 「もっとあなたを知りたくて」 [22m57s 704x396 WMV9 177Kbps].wmv 396,918,594 c4f87a26ffdad03ef186791b0b1a2561a21cf3e3<br>
+[DVD] ヴァンドレッド VANDREAD #05 「甘いワナ」 [22m56s 704x396 WMV9 177Kbps].wmv 363,494,594 b99368164862b58e5f97d99414f1b775b5f6426a<br>
+[DVD] ヴァンドレッド VANDREAD #06 「What a Wonderful World」 [23m01s 704x396 WMV9 176.6Kbps].wmv 402,838,664 55ac32e95ad1b0a4a328fee62a874623a8371c0e<br>
+[DVD] ヴァンドレッド VANDREAD #07 「Easy Life」 [22m56s 704x396 WMV9 176.4Kbps].wmv 303,334,594 57ded131f729f925089790fda1d5effe2649dca2<br>
+[DVD] ヴァンドレッド VANDREAD #08 「無理だ！」 [22m57s 704x396 WMV9 176.5Kbps].wmv 333,222,608 5818ef35360e9bd1d085a1df94afdf014de5ee91<br>
+[DVD] ヴァンドレッド VANDREAD #09 「天国より野蛮」 [22m56s 704x396 WMV9 176.6Kbps].wmv 431,350,594 0720c48e993ccff646e988250a8b3c0d8c5bdd4a<br>
+[DVD] ヴァンドレッド VANDREAD #10 「White Love」 [22m57s 704x396 WMV9 176.6Kbps].wmv 410,070,594 9829f9dee6ec9bfccdbdc184fc1f5326abb4114d<br>
+[DVD] ヴァンドレッド VANDREAD #11 「一緒に・・・」 [22m56s 704x396 WMV9 176.9Kbps].wmv 347,238,594 66c894100131ee65f43a26871269225c7c6d8e28<br>
+[DVD] ヴァンドレッド VANDREAD #12 「They Don't Care About Us」 [22m56s 704x396 WMV9 176.7Kbps].wmv 380,406,594 cbf226bb32c5ba2dd5c77b6b7440d19a23236407<br>
+[DVD] ヴァンドレッド VANDREAD #13 「To Feel The Fire」 [22m57s 704x396 WMV9 176.7Kbps].wmv 460,806,608 afd70a9c8bf280164c4cd949d556363d3d148907<br><br>
+[DVD] ヴァンドレッド VANDREAD the Second Stage #01 「Red Angel」 [22m56s 704x396 WMV9 176.6Kbps].wmv 340,630,594 68c755cd77dd8393571df7570ed4ddd84d4a9c53<br>
+[DVD] ヴァンドレッド VANDREAD the Second Stage #02 「Be My Baby」 [22m55s 704x396 WMV9 176.7Kbps].wmv 294,470,566 de38419da57f566dfb85b2e53dddbc183e8d4da7<br>
+[DVD] ヴァンドレッド VANDREAD the Second Stage #03 「花咲く旅路」 [22m56s 704x396 WMV9 176.7Kbps].wmv 270,326,594 aa0daf84fabe41ade7db548fcdfcade6da161f27<br>
+[DVD] ヴァンドレッド VANDREAD the Second Stage #04 「Everything」 [22m56s 704x396 WMV9 177.2Kbps].wmv 257,814,594 d824533f856f04fd0987d87df2deceec4d095d79<br>
+[DVD] ヴァンドレッド VANDREAD the Second Stage #05 「Somedays」 [22m56s 704x396 WMV9 176.7Kbps].wmv 363,782,594 3d5a1e6957fc1294d9c34c15ff33afd7e76338e8<br>
+[DVD] ヴァンドレッド VANDREAD the Second Stage #06 「オリジナル スマイル」 [22m56s 704x396 WMV9 177.2Kbps].wmv 345,478,580 d319b82b8cace2b4670a4fbda540a46068c19209<br>
+[DVD] ヴァンドレッド VANDREAD the Second Stage #07 「頬にキスして」 [22m56s 704x396 WMV9 177Kbps].wmv 224,086,580 d0728971ba87414b4cd5c512f47b9c48e9070553<br>
+[DVD] ヴァンドレッド VANDREAD the Second Stage #08 「reality」 [22m55s 704x396 WMV9 176.6Kbps].wmv 293,046,580 cd4e88ef505911fb958c8795ba2e385c2b06e73d<br>
+[DVD] ヴァンドレッド VANDREAD the Second Stage #09 「全部抱きしめて」 [22m56s 704x396 WMV9 176.4Kbps].wmv 271,750,580 c2f79134b1d5e18d10f5c553492ba5e6fc6e8957<br>
+[DVD] ヴァンドレッド VANDREAD the Second Stage #10 「Easy Come Easy Go」 [22m56s 704x396 WMV9 176.6Kbps].wmv 269,190,594 27f0fadc80761ac991525dcf34e040e7d35f0a39<br>
+[DVD] ヴァンドレッド VANDREAD the Second Stage #11 「楽園」 [22m56s 704x396 WMV9 176.9Kbps].wmv 224,966,580 02669edda4e9bdb1e01d2dbdf71b8d4719d2e292<br>
+[DVD] ヴァンドレッド VANDREAD the Second Stage #12 「himegoto」 [22m56s 704x396 WMV9 176.7Kbps].wmv 355,302,594 fbf7d73191fb890dfdd37192907566a1b1ccde77<br>
+[DVD] ヴァンドレッド VANDREAD the Second Stage #13 「TRUST｣ [23m03s 704x396 WMV9 177.6Kbps].wmv 435,046,544 301346f6947bfe7b4798983f55e12c71e4ff30ba<br>
+<hr class="A">
+[DVD] (OVA) VANDREAD ヴァンドレッド 胎動篇 (DVD 704x396 WMV9).wmv 8jqL45WQsn3h37mol 978,338,154 22b9f9a4a1061fdd368f1c1e390563c1d3e51154<br>
+[DVD] (OVA) VANDREAD ヴァンドレッド 激闘篇 (DVD 704x396 WMV9).wmv 8jqL45WQsn3h37mol 1,230,188,072 da0e8b9a678d49494628b381bf8f25d29eab1ef8<br>
+<br></dd>
+<dt><span class="title">ヴァンパイア騎士<b>◆</b></span>08/11/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメDVD]ヴァンパイア騎士 第01話「ヴァンパイアの夜」(1024x576 XviD 120fps AC3-Lama).avi LamaL8bo4jsAKL 319,377,524 e122988f74136d6c6c5997a598f0ff02cccd2809<br>
+[アニメDVD]ヴァンパイア騎士 第02話「血の記憶 ～メモリ-～」(1024x576 XviD 120fps AC3-Lama).avi LamaL8bo4jsAKL 321,063,028 e19221bfcbe9c5c3be83fc8c23993cba5ca9685a<br>
+<hr class="A">
+(アニメ DVD) ヴァンパイア騎士 ～VAMPIRE KNIGHT～ 第06話 「彼等の選択 ～クライム～」 (1280x720 H264 AAC Chap).mp4 nX0fg0FCz5 237,481,700 fac95f7cd9c46367dc68154da6abe0b2ff218814<br>
+(アニメ DVD) ヴァンパイア騎士 ～VAMPIRE KNIGHT～ 第07話 「緋色の迷宮 ～ラビリンス～」 (1280x720 H264 AAC Chap).mp4 nX0fg0FCz5 246,862,957 4be1c5fd99aad824cd78d4edd10532fd7ee2f6c4<br>
+(アニメ DVD) ヴァンパイア騎士 ～VAMPIRE KNIGHT～ 第08話 「嘆きの銃声 ～ブラスト～」 (1280x720 H264 AAC Chap).mp4 nX0fg0FCz5 258,586,460 2fa6c3018c98ee64770308f76c91372a98a21e98<br>
+(アニメ DVD) ヴァンパイア騎士 ～VAMPIRE KNIGHT～ 第09話 「紅の視線 ～アイズ～」 (1280x720 H264 AAC Chap).mp4 nX0fg0FCz5 246,830,588 828fd3dda218dcdef6e73c750795bae77b4346d1<br>
+(アニメ DVD) ヴァンパイア騎士 ～VAMPIRE KNIGHT～ 第10話 「闇の姫 ～プリズナー～」 (1280x720 H264 AAC Chap).mp4 nX0fg0FCz5 258,925,668 0656790899dd73674f290d315d14ff6cc1af6692<br>
+(アニメ DVD) ヴァンパイア騎士 ～VAMPIRE KNIGHT～ 第11話 「望みの代償 ～ディール～」 (1280x720 H264 AAC Chap).mp4 nX0fg0FCz5 233,078,929 5abd3924bd82c167974ceae0ea93d21e177e3f4e<br>
+<br></dd>
+<dt><span class="title">ヴァンパイア騎士 Guilty<b>◆</b></span>09/06/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] ヴァンパイア騎士 Guilty 映像特典 Cast Comment (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 274,367,808 7b57e2bc2accdd9b3d359b0b371904160caeedd8<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 映像特典 Non-Credit OPENING (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 34,683,462 4cc5155862bf7de084de5c844dd134265cd16d21<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 映像特典 Non-Credit ENDING (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 61,278,114 2cba681101aca988eee1553ddbb6667e608c4781<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 映像特典 Special Event (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 119,724,454 cee1b5cd851290a08de201543da4b66a8ad5ca45<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 映像特典 TV CM (640x480 DivX685 AAC).avi dodododoFsP5G0OreR 60,514,600 4e9af107d070026b0b103a85adb8acc3c3ba6362<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 第01話 「達命の罪人達 ～ギルティ～」 (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 341,248,936 6f504a68a291d6189cd3d1ca87a61ba15012eedd<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 第02話 「永遠の約束 ～パラドックス～」 (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 302,797,022 beb7e1d4542b0e5ca59c73b3c76441fa15ad4263<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 第03話 「瑠璃玉の肖像 ～ミラージュ～」 (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 298,533,822 abfac51975ab33445175fcc89e04290799a522cb<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 第04話 「悪魔の胎動 ～リビドー～」 (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 292,575,168 6362a5439a6e3b2abeaf3b38b85e5bdcd46e679e<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 第05話 「従属の罠 ～トラップ～」 (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 282,164,112 9524cbc8d291f45cf5e11a81a2bbf9c3f8cee946<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 第06話 「偽りの恋人 ～ラヴァーズ～」 (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 293,848,024 82c0e139ac7223df183da4801a2f96cc89080ee6<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 第07話 「茨の口づけ ～キス～」 (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 362,784,924 4945ae309fd67a87b09404bfd8458357013d7296<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 第08話 「追憶の螺旋 ～スパイラル～」 (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 337,629,598 0a78fd6277f0237621627a4d156f70e918d55016<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 第09話 「復活の狂王 ～エンペラー～」 (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 277,118,998 562ba75ecd8c99605920a18d5edc2b19f0692a85<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 第10話 「戦いの序曲 ～プレリュード～」 (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 329,480,276 abd58f428b1387290853c121769f07f51516d25d<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 第11話 「二人の命 ～ソウル～」 (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 341,882,916 0de0aa6048392aebd67f639feb7a3c7aeb58e8cd<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 第12話 「世界の果て ～ピリオド～」 (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 299,755,900 773f0fdefdfd27610d966bb34fbbdd2c50e0e69d<br>
+[アニメ DVD] ヴァンパイア騎士 Guilty 第13話 「ヴァンパイアの騎士」 (848x480 DivX685 AAC).avi dodododoFsP5G0OreR 273,601,502 c54dd7acce1f760411691f60ae97bdfbb58d70ce<br>
+<br></dd>
+<dt><span class="title">吸血姫美夕<b>◆</b></span>08/03/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+吸血姫美夕 OVA 第01話 「妖の都」 (DVD 640x480 DivX5.02).avi 233,862,350 a29290e8505c91bd3e06bcafa7de31b58d61a196<br>
+吸血姫美夕 OVA 第02話 「操の宴」 (DVD 640x480 DivX5.02).avi 244,576,932 9cc2c7ac2a219b295bf9208aeb238c491741e0a0<br>
+吸血姫美夕 OVA 第03話 「脆き鎧」 (DVD 640x480 DivX5.02).avi 234,487,536 5840d3669f0fae4b61fd6f9ffc37606d220103f7<br>
+吸血姫美夕 OVA 第04話 「凍る刻」 (DVD 640x480 DivX5.02).avi 253,524,446 5a80d9abcf545248e704434ab8e4ff96a1c1f02c<br>
+<br></dd>
+<dt><span class="title">ヴィーナス ヴァーサス ヴァイアラス<b>◆</b></span>07/11/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD] Venus Versus Virus 01巻映像特典 ノンテロップオープニング (704x396 WMV9).avi 川澄舞uc73gwPjhy 27,952,528 7028015fd3d5f6ceb10033681074ec0a1f82adc4<br>
+[DVD] Venus Versus Virus 01巻映像特典 ノンテロップエンディング I (704x396 WMV9).avi 川澄舞uc73gwPjhy 24,957,356 a3dfa489c516a3921ce42da00c43713b88d5d691<br>
+[DVD] Venus Versus Virus 01巻映像特典 ノンテロップエンディング II (704x396 WMV9).avi 川澄舞uc73gwPjhy 25,130,810 9bffdb46e7218f27c8bf09f7c79c51b9fd31d79e<br>
+[DVD] Venus Versus Virus 第01話 「アオイ サソイ」 (704x396 WMV9).avi 川澄舞uc73gwPjhy 256,094,644 cba87e0366544a7dfd79d320ca2ab0e0928e9442<br>
+[DVD] Venus Versus Virus 第02話 「イケイ セカイ」 (704x396 WMV9).avi 川澄舞uc73gwPjhy 329,961,654 4a22a09f3a8057424c4372654a1913d442182292<br>
+<hr class="A">
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第01巻 メニュー.bmp WgPZCQtRPj 836,406 d9e267e73b81b5cd3839b87c9acb3f7d4d8598b0<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第02巻 メニュー.bmp WgPZCQtRPj 836,406 a3d7007d50420347d763319d0277a7a53099f779<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第03巻 メニュー.bmp WgPZCQtRPj 836,406 2ec3977bf702703a99531e53498847f7f38d24c0<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第04巻 メニュー.bmp WgPZCQtRPj 836,406 e41e4f23283a81975e8a8251d95dd1848a745c31<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第05巻 メニュー.bmp WgPZCQtRPj 836,406 efdfc2e001c8444aa7ef5ab5f94aeb7e391b29e2<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第06巻 メニュー.bmp WgPZCQtRPj 836,406 45faad9c627abfa80e2f5653fa6ef589570c3fe3<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 特典 「ノンテロップオープニング」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 27,465,260 49ecbcbbdf0654fce07807ae70b889f466e6b710<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 特典 「ノンテロップエンディングⅠ」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 24,072,004 36241a7823dc3950d8f3e706811cb97c669c502f<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 特典 「ノンテロップエンディングⅡ」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 24,367,767 252600a754ca37e376a016b38523cd1be97d1591<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 特典「PV」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 8,882,631 ef54a5733aae98f9a5f404bc635cc634d4429f0e<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 特典 「特別インタビュー」(x264 720×480 4：3 インタレース保持 AAC).mkv WgPZCQtRPj 195,781,362 660dc3cef69f26bc03cbbfc52a7ab6699d5bd3d9<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第01話「アオイ サソイ」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 239,558,059 8e05b5ae203d8397e24640d27d61b049c8a41cc5<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第02話「イケイ セカイ」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 305,235,647 22be3e6e35c405001aac97e88edb184d3e53e117<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第03話「イライ ケハイ」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 250,161,573 03ffa4cb624090b17e18a9588199eff065a3f5c5<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第04話「メマイ デアイ」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 190,878,172 8b0a318e9e39c630863ad3a7756fbbbe084a7622<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第05話「トオイ ツカイ」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 274,786,899 cebc40b29fcf9a19ab74836681c6e88e9c2c184b<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第06話「トオイ ツカイ」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 232,981,194 da7b067b00f9ba51e5c199988771bdb99f22e151<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第07話「フカイ オモイ」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 278,485,795 1e89ee7d7889cf5fe6acfe1bbb0f40729227aa06<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第08話「クライ ネガイ」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 231,798,402 9da6bbaef85edcac61ae47aa817195b0898169af<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第09話「アマイ ニオイ」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 212,009,311 a282a1499a48c3d43e43d180fa571317113890fa<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第10話「ゴカイ ネライ」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 215,099,609 1efa25c2046bdb51cc0387cb17f2a3ab8950b454<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第11話「ギセイ サツイ」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 305,594,312 a7ab4bbe3db0c2b7c11787f77ecce1b82c85e624<br>
+[DVD] Venus Versus Virus ヴィーナス ヴァーサス ヴァイアラス 第12話「シロイ ミライ」(x264 704×480 16：9 AAC).mkv WgPZCQtRPj 303,476,232 170e5fc0faca4a151466a379ecacdc3bc7adb7d7<br>
+<hr class="A">
+【アニメ】[DVD] Venus Versus Virus ヴィーナス ウ゜ァーサス ヴァイアラス 1巻 ルートメニュー  [bmp(704x396)].rar PWDuLxov1G 474,955 ac5572c176effbaffcbfff3ed349b3905c785503<br>
+【アニメ】[DVD] Venus Versus Virus ヴィーナス ウ゜ァーサス ヴァイアラス 1巻 特典 ノンテロップオープニング  [704x480(16：9) x264+AAC].mp4 PWDuLxov1G 30,178,799 bf73209dea3f0d2fd15f8b2e8683fae1b7fdf6e6<br>
+【アニメ】[DVD] Venus Versus Virus ヴィーナス ウ゜ァーサス ヴァイアラス 1巻 特典 ノンテロップエンディングⅠ  [704x480(16：9) x264+AAC].mp4 PWDuLxov1G 30,464,103 65f4ff37aebf2d15f49eaf7f1b11e99641de0914<br>
+【アニメ】[DVD] Venus Versus Virus ヴィーナス ウ゜ァーサス ヴァイアラス 1巻 特典 ノンテロップエンディングⅡ  [704x480(16：9) x264+AAC].mp4 PWDuLxov1G 32,346,562 a4aa31f4b455bb9c04dc10bc99d0ca74df8d627a<br>
+【アニメ】[DVD] Venus Versus Virus ヴィーナス ウ゜ァーサス ヴァイアラス 2巻 特典 番宣集 16：9  [704x480(16：9) x264+AAC].mp4 PWDuLxov1G 20,750,851 bbb8f2f7c6d40af809204f9b0aa654b7c9471b7b<br>
+【アニメ】[DVD] Venus Versus Virus ヴィーナス ウ゜ァーサス ヴァイアラス 2巻 特典 番宣集 4：3  [704x480(4：3) x264+AAC].mp4 PWDuLxov1G 5,569,721 217eff1c663631dc17558f522ff9f2c3e178dfc5<br>
+【アニメ】[DVD] Venus Versus Virus ヴィーナス ウ゜ァーサス ヴァイアラス 第01話 「アオイ サソイ」  [704x480(16：9) x264+AAC].mp4 PWDuLxov1G 295,533,305 66d913ed20e8351e91679576ccfc0777f0ece6c3<br>
+【アニメ】[DVD] Venus Versus Virus ヴィーナス ウ゜ァーサス ヴァイアラス 第02話 「イケイ セカイ」  [704x480(16：9) x264+AAC].mp4 PWDuLxov1G 367,383,697 b57bac926087d9f78f8018e3eada0a6d8f550d8e<br>
+【アニメ】[DVD] Venus Versus Virus ヴィーナス ウ゜ァーサス ヴァイアラス 第03話 「イライ ケハイ」  [704x480(16：9) x264+AAC].mp4 PWDuLxov1G 313,447,958 716a6df36ad2b916b06dbd47ade5d3d2fecf7e6a<br>
+【アニメ】[DVD] Venus Versus Virus ヴィーナス ウ゜ァーサス ヴァイアラス 第04話 「メマイ デアイ」  [704x480(16：9) x264+AAC].mp4 PWDuLxov1G 264,082,938 c99933e7e22026745152e00703e73752bc3b9f3c<br>
+<br></dd>
+<dt><span class="title">Witch Hunter ROBIN<b>◆</b></span>07/04/17 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] Witch Hunter ROBIN 映像特典 02巻 ノンクレジットオープニング (640x480 WMV9).wmv 33,476,744 e4b0b8f79d2a1cb16c6a4241d272f2d80f55f4cb<br>
+[アニメ DVD] Witch Hunter ROBIN 映像特典 01巻 ノンクレジットエンディング (640x480 WMV9).wmv 7,508,744 7049e5f15b01f83b158c78e692e096fe0bc1be20<br>
+[アニメ DVD] Witch Hunter ROBIN 映像特典 03巻 番組宣伝TVスポット (640x480 WMV9).wmv 10,420,128 fcb9b2b071e47220c0b763d8fdcd4d64835119cc<br>
+[アニメ DVD] Witch Hunter ROBIN 映像特典 04巻 ショートプロモーションビデオ (640x480 WMV9).wmv 10,990,736 853e70d832c7df96312b8806000a73a684aabe6f<br>
+[アニメ DVD] Witch Hunter ROBIN 映像特典 05巻 TVCM 「ロビン編」 「アモン編」 (640x480 WMV9).wmv 11,795,783 38864130bc3eef7c8745fe759aad16fe62efdb48<br>
+[アニメ DVD] Witch Hunter ROBIN 映像特典 06巻 ショートプロモーションビデオ Ver.2 (640x480 WMV9).wmv 6,867,713 a5784fe7138e089a370a7596933b2de368b1413c<br>
+[アニメ DVD] Witch Hunter ROBIN 映像特典 07巻 Special Interview 1 (640x480 WMV9).wmv 68,602,589 05e31922840915310c1d1961ac21b50cedd42731<br>
+[アニメ DVD] Witch Hunter ROBIN 映像特典 08巻 Special Interview 2 (640x480 WMV9).wmv 44,136,235 4f5422c418894a1aa5d09f79037826a1fb5ce0a3<br>
+[アニメ DVD] Witch Hunter ROBIN 映像特典 09巻 Special Interview 3 (640x480 WMV9).wmv 47,031,857 65b27aa683de24e1b6ae0a12affeacc1ab27f86f<br>
+[アニメ DVD] Witch Hunter ROBIN 映像特典 10巻 Special Interview 4 (640x480 WMV9).wmv 48,104,319 d13d84ba09e7ee4b768f575bd22f6a96fe72694c<br>
+[アニメ DVD] Witch Hunter ROBIN 映像特典 11巻 Special Interview 5 (640x480 WMV9).wmv 58,424,179 a3e4b9a3e896e62bcebb38fabc18fa1a44d04bc0<br>
+[アニメ DVD] Witch Hunter ROBIN 映像特典 12巻 Special Interview 6 (640x480 WMV9).wmv 39,112,165 4615e2d50818d9f70aa4d8cf6430b79e095e3b36<br>
+[アニメ DVD] Witch Hunter ROBIN 映像特典 13巻 Main Cast Last Comment (640x480 WMV9).wmv 26,612,858 d1c10cc1729e83b5f9936a0d9c828780d47c71b2<br>
+[アニメ DVD] Witch Hunter ROBIN 映像特典 13巻 Special Interview 7 (640x480 WMV9).wmv 44,892,959 1a87da7febf66e1cbf030c670602ac666552697f<br>
+[アニメ DVD] Witch Hunter ROBIN 第01話 「Replacement」 (640x480 WMV9).wmv 226,369,935 5f2c24a6b7ced4ff4a7e2076874a484a05c15b89<br>
+[アニメ DVD] Witch Hunter ROBIN 第02話 「Addicted to power」 (640x480 WMV9).wmv 225,004,931 2059bae00bb18cf4c24f5517f40b257eb514ea8e<br>
+[アニメ DVD] Witch Hunter ROBIN 第03話 「Dancing in darkness」 (640x480 WMV9).wmv 218,631,651 1a0de5a390642d61cb88e006db5ac1516717110b<br>
+[アニメ DVD] Witch Hunter ROBIN 第04話 「Stubborn aesthetics」 (640x480 WMV9).wmv 306,039,651 52a5f03eb6e8b8cfc035cc019a2c77a0937e08a2<br>
+[アニメ DVD] Witch Hunter ROBIN 第05話 「Smells like the wandering spirit」 (640x480 WMV9).wmv 233,479,651 545fa209f3f702ff6d95dfbf1ac50c03387ae0c7<br>
+[アニメ DVD] Witch Hunter ROBIN 第06話 「Raindrops」 (640x480 WMV9).wmv 231,673,784 48c6ee9ffb3bf52a96f968b733f67acd448b7953<br>
+[アニメ DVD] Witch Hunter ROBIN 第07話 「Simple-mind」 (640x480 WMV9).wmv 178,967,637 ad339fb4f4f66d02dce49676f1b949fa61a29941<br>
+[アニメ DVD] Witch Hunter ROBIN 第08話 「Faith」 (640x480 WMV9).wmv 190,039,651 6b3328cd35f3713b0c2b6e3def4d3e04d9108756<br>
+[アニメ DVD] Witch Hunter ROBIN 第09話 「Sign of the Craft」 (640x480 WMV9).wmv 195,735,651 0875e1071e208856a2c0f574e9281bba481630b8<br>
+[アニメ DVD] Witch Hunter ROBIN 第10話 「Separate lives」 (640x480 WMV9).wmv 164,263,637 de0eeb570cc0a24a154d4dc5bb9e9739a5d2c062<br>
+[アニメ DVD] Witch Hunter ROBIN 第11話 「The soul cages」 (640x480 WMV9).wmv 266,007,637 9a141e2c373cc995fccfce0ac6369ddafd224c02<br>
+[アニメ DVD] Witch Hunter ROBIN 第12話 「Precious illusions」 (640x480 WMV9).wmv 207,259,697 a9a6b611b0209e4ed4a571403606b87c570e2364<br>
+[アニメ DVD] Witch Hunter ROBIN 第13話 「The eyes of truth」 (640x480 WMV9).wmv 187,543,637 bbaa02dfd82aa95a4fc1d12e89853a4fc754f326<br>
+[アニメ DVD] Witch Hunter ROBIN 第14話 「Loaded Guns」 (640x480 WMV9).wmv 219,559,651 21ec2a7aee4763ef9d9cc52868744d7ba674319e<br>
+[アニメ DVD] Witch Hunter ROBIN 第15話 「Time to say Goodbye」 (640x480 WMV9).wmv 228,840,925 fe4dbd98635d752c165dab3eb822de298a84aac1<br>
+[アニメ DVD] Witch Hunter ROBIN 第16話 「Heal the pain」 (640x480 WMV9).wmv 193,015,651 b6e355974cdfd36c7d6e19f45085ae2cd3e2e539<br>
+[アニメ DVD] Witch Hunter ROBIN 第17話 「Dilemma」 (640x480 WMV9).wmv 207,863,651 eceb9ff7b709f87fcd24c84c801190752361d54e<br>
+[アニメ DVD] Witch Hunter ROBIN 第18話 「In my pocket」 (640x480 WMV9).wmv 182,935,637 92018b5cad1830bb951abb48a36ad0b8f8ea03c5<br>
+[アニメ DVD] Witch Hunter ROBIN 第19話 「Missing」 (640x480 WMV9).wmv 182,407,637 85394cb5fcbb8f27af7b74efec11db0e936cc5f0<br>
+[アニメ DVD] Witch Hunter ROBIN 第20話 「All I really oughta know」 (640x480 WMV9).wmv 200,282,476 1173dfbff1fb06b11d0a0d5228a28c0e278daa80<br>
+[アニメ DVD] Witch Hunter ROBIN 第21話 「No way out」 (640x480 WMV9).wmv 219,671,651 5e4c1d19d36d6c462d61eced7ead18a0def417e8<br>
+[アニメ DVD] Witch Hunter ROBIN 第22話 「Family portrait」 (640x480 WMV9).wmv 200,247,651 2cc3ae93bc7feea7ec858e1de4f4b79d5f91a03c<br>
+[アニメ DVD] Witch Hunter ROBIN 第23話 「Sympathy for the Devil」 (640x480 WMV9).wmv 243,350,444 18ff02a2073402d32b11e172e3b76751da17edcd<br>
+[アニメ DVD] Witch Hunter ROBIN 第24話 「Rent」 (640x480 WMV9).wmv 173,351,651 b33f0b4ebac8e04bbcd49281b98fcff7d45903d3<br>
+[アニメ DVD] Witch Hunter ROBIN 第25話 「Redemption day」 (640x480 WMV9).wmv 226,631,651 f260f915adb606222f7e7f07a2bfaaaee0d08329<br>
+[アニメ DVD] Witch Hunter ROBIN 第26話 「Time to tell」 (640x480 WMV9).wmv 203,445,625 fab6c8b9dba5764c8b4050711acb942c2b78c97d<br>
+<div class="sup">aaLPbRVQ8B</div>
+<hr class="A">
+[DVD アニメ] ウィッチハンターロビン ノンクレジットOP (640x480 WMV9).wmv 1dodakemx1N789S3y 19,291,533 5937aa9f438bc135619042879b8fed1628ee0e6b<br>
+[DVD アニメ] ウィッチハンターロビン ノンクレジットED (640x480 WMV9).wmv 1dodakemx1N789S3y 4,599,413 142de4fdd244cfa0b64b8576e70a5d6b0010ffbf<br>
+[DVD アニメ] ウィッチハンターロビン 第01話 (640x480 WMV9).wmv 1dodakemx1N789S3y 156,489,421 9546fd74205d02758dbd862794be9ceb9b2d508b<br>
+[DVD アニメ] ウィッチハンターロビン 第02話 (640x480 WMV9).wmv 1dodakemx1N789S3y 157,772,966 4d515209d01053707f003fe63ce1f0d943d997bc<br>
+[DVD アニメ] ウィッチハンターロビン 第03話 (640x480 WMV9).wmv 1dodakemx1N789S3y 181,024,436 d888a97a4c0437b18ca9aa052db393c338142ae0<br>
+[DVD アニメ] ウィッチハンターロビン 第04話 (640x480 WMV9).wmv 1dodakemx1N789S3y 258,785,370 f28ab67040ff1cf41890f6f74637188b763ea0e4<br>
+[DVD アニメ] ウィッチハンターロビン 第05話 (640x480 WMV9).wmv 1dodakemx1N789S3y 163,567,226 5771d61569df005a6a6d5659dfbed3573c725c98<br>
+[DVD アニメ] ウィッチハンターロビン 第06話 (640x480 WMV9).wmv 1dodakemx1N789S3y 155,626,878 27d79b69fd2a0d7687729d710fa5cf9a8ec9d390<br>
+[DVD アニメ] ウィッチハンターロビン 第07話 (640x480 WMV9).wmv 1dodakemx1N789S3y 153,233,218 d91a9764bf4be48efcc4ae636a3df83d330f5021<br>
+[DVD アニメ] ウィッチハンターロビン 第08話 (640x480 WMV9).wmv 1dodakemx1N789S3y 144,228,104 2d081a9eb38f68f43a4278fa4c363118d35d50a2<br>
+[DVD アニメ] ウィッチハンターロビン 第09話 (640x480 WMV9).wmv 1dodakemx1N789S3y 168,016,132 5b8058b2eb899dbdb1a33e66471b6be7e15dd724<br>
+[DVD アニメ] ウィッチハンターロビン 第10話 (640x480 WMV9).wmv 1dodakemx1N789S3y 133,716,635 430c0a2ea8a6f415eacef12545b2fdeed39e5d6b<br>
+[DVD アニメ] ウィッチハンターロビン 第11話 (640x480 WMV9).wmv 1dodakemx1N789S3y 212,034,714 e784c27c2144557f8e8b5ae29ee5c883c0859117<br>
+[DVD アニメ] ウィッチハンターロビン 第12話 (640x480 WMV9).wmv 1dodakemx1N789S3y 146,151,286 862becfcaa6e0e40ced0577a5528f67875f06ac1<br>
+[DVD アニメ] ウィッチハンターロビン 第13話 (640x480 WMV9).wmv 1dodakemx1N789S3y 152,969,090 5d7cdfaac7c0da74017de018d729c53a115fdf78<br>
+[DVD アニメ] ウィッチハンターロビン 第14話 (640x480 WMV9).wmv 1dodakemx1N789S3y 169,245,978 b6e4e8a83925694fd929863f2a3a2b2c4b6739a3<br>
+[DVD アニメ] ウィッチハンターロビン 第15話 (640x480 WMV9).wmv 1dodakemx1N789S3y 176,390,367 08b9cff852e6ab282e69f1ff894d488a2045404c<br>
+[DVD アニメ] ウィッチハンターロビン 第16話 (640x480 WMV9).wmv 1dodakemx1N789S3y 157,306,567 7ae626c771906194d2dbc037dc55243987e3fcce<br>
+[DVD アニメ] ウィッチハンターロビン 第17話 (640x480 WMV9).wmv 1dodakemx1N789S3y 163,868,497 d6aa081c18a1e2c9ba878f1c9d1e713eaf784c66<br>
+[DVD アニメ] ウィッチハンターロビン 第18話 (640x480 WMV9).wmv 1dodakemx1N789S3y 138,264,589 b292241b52949f856b2285c36b01f15c2ee055ed<br>
+[DVD アニメ] ウィッチハンターロビン 第19話 (640x480 WMV9).wmv 1dodakemx1N789S3y 147,249,068 ddf9c65b31806908bd9c4b83983d77a287073a9a<br>
+[DVD アニメ] ウィッチハンターロビン 第20話 (640x480 WMV9).wmv 1dodakemx1N789S3y 151,504,005 b0645e418c448ab50d915468bdb651aa0eb83730<br>
+[DVD アニメ] ウィッチハンターロビン 第21話 (640x480 WMV9).wmv 1dodakemx1N789S3y 166,460,253 80eced34211cb5a276375c00563bb35afe333610<br>
+[DVD アニメ] ウィッチハンターロビン 第22話 (640x480 WMV9).wmv 1dodakemx1N789S3y 150,790,034 7aad6f188c274a367f4daa8e0d2272a119058ea1<br>
+[DVD アニメ] ウィッチハンターロビン 第23話 (640x480 WMV9).wmv 1dodakemx1N789S3y 148,231,294 1416f703fa1117cbd92546f14a048ff640bb0e37<br>
+[DVD アニメ] ウィッチハンターロビン 第24話 (640x480 WMV9).wmv 1dodakemx1N789S3y 128,755,981 9391fe8b3ecdcfa1261963c4bc74fd6a2780a038<br>
+[DVD アニメ] ウィッチハンターロビン 第25話 (640x480 WMV9).wmv 1dodakemx1N789S3y 164,693,897 91aaf10e49748e7b348cc00b310ef15fe5c28b95<br>
+[DVD アニメ] ウィッチハンターロビン 第26話 (640x480 WMV9).wmv 1dodakemx1N789S3y 141,191,232 a1c8350cd9b5352a0eb8ac5c8c12173d7f1d757c<br>
+<br></dd>
+<dt><span class="title">ウィッチブレイド<b>◆</b></span>08/03/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.01 映像特典 ｢キャストインタビュー｣(640x480 XviD).mkv YTXu5UiCog 83,803,053 aebffbd40d1b0edda6dae5aa33abe5348db7a483<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.01 映像特典 ｢ノンクレジットオープニング｣(704x396 XviD).mkv YTXu5UiCog 25,085,375 04a146a12f426697dc336293bc57348e82bd62d6<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.01 映像特典 ｢ノンクレジットエンディング｣(704x396 XviD).mkv YTXu5UiCog 13,961,686 7412f5c99177b551a7778f9edc1d2a8a27306128<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.01 映像特典 ｢プロモーション映像｣(640x480 XviD).mkv YTXu5UiCog 21,706,458 c2ecd77134d2926c200edf82efc0504667376b6b<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.02 映像特典 ｢キャストインタビュー｣(640x480 XviD).mkv YTXu5UiCog 68,040,407 31f78d1d5246b4319d93c82070f5d8fb062262cb<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.03 映像特典 ｢キャストインタビュー｣(640x480 XviD).mkv YTXu5UiCog 71,714,266 beb4f5f53697ff49ffb104f626e00fdeb42301b3<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.04 映像特典 ｢キャストインタビュー｣(704x396 XviD).mkv YTXu5UiCog 72,253,073 82b50329684b0b63642463674622e1dc507210c5<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.05 映像特典 ｢キャストインタビュー｣(704x396 XviD).mkv YTXu5UiCog 71,538,812 30f0182bf1a92cc436593d0818e1395f0eb87d9f<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.05 映像特典 ｢ノンクレジット後期オープニング｣(704x396 XviD).mkv YTXu5UiCog 19,406,717 04549b7a2bc2a754986201fb5374ce69feae95ab<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.05 映像特典 ｢ノンクレジット後期エンディング｣(704x396 XviD rev2).mkv YTXu5UiCog 42,859,388 48a876011b4319277e2ac71a39455bf2e008db2c<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.06 映像特典 ｢ウィッチブレイド解体新書｣(704x396 XviD).mkv YTXu5UiCog 280,248,514 7fb490c28d135f8ff576bbf45847dfa13db5c322<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.06 映像特典 ｢キャストインタビュー｣(704x396 XviD).mkv YTXu5UiCog 99,578,009 0f814a2d975a67e293676d10c647f9d83880599a<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.07 映像特典 ｢キャストインタビュー｣(704x396 XviD).mkv YTXu5UiCog 70,046,435 3dea51bffdd53bb9ea7735a17b0f69522c023a1b<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.08 映像特典 ｢ウィッチブレイド解体新書｣(640x480 XviD).mkv YTXu5UiCog 86,375,183 32c982d32e20094f3f5d96e9384233dcdba1d00d<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド Vol.08 映像特典 ｢キャストインタビュー｣(640x480 XviD).mkv YTXu5UiCog 86,375,183 32c982d32e20094f3f5d96e9384233dcdba1d00d<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第01話 ｢始｣(704x396 XviD).mkv YTXu5UiCog 214,388,408 faff1ec4faa0b0bac89d773c784bf524c23452db<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第02話 ｢惑｣(704x396 XviD).mkv YTXu5UiCog 188,449,709 59af22110ec5f7ebe50bc7f2c3799320fe1ebf58<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第03話 ｢抗｣(704x396 XviD).mkv YTXu5UiCog 191,684,178 c2e5837486bdbb8ef1c5538fb55bccdfdc5139b2<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第04話 ｢動｣(704x396 XviD).mkv YTXu5UiCog 190,260,686 72c11f5aa48ebea87cd3c35ca5b875b4a3e13f86<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第05話 ｢探｣(704x396 XviD).mkv YTXu5UiCog 184,643,899 aa7d4d02d4282f265efc4586f87a6dee3dcb2eef<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第06話 ｢変｣(704x396 XviD).mkv YTXu5UiCog 188,722,321 262cd9cd6b1b8c9f0d30e44e819d932c7180da82<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第07話 ｢過｣(704x396 XviD).mkv YTXu5UiCog 196,152,703 a9a983d3f5aa12e9a3f7936c3adea7f3db8a8389<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第08話 ｢互｣(704x396 XviD).mkv YTXu5UiCog 174,835,990 a7908aa6ec1a7f9a2332539f14fa37ad8ca489c7<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第09話 ｢哀｣(704x396 XviD).mkv YTXu5UiCog 176,489,067 5060f8c3badaf4a21d1890f079db3f86e36bd741<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第10話 ｢交｣(704x396 XviD).mkv YTXu5UiCog 181,059,690 dd8a89acf15bd83fe0f86ee76ceca5bbf9bab2a5<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第11話 ｢危｣(704x396 XviD).mkv YTXu5UiCog 196,594,398 8a345184c3c50edb61aee6b8efd2c22f0078f0ff<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第12話 ｢因｣(704x396 XviD).mkv YTXu5UiCog 186,121,258 30bb901536a57e37014db56d041b09564261fd3c<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第13話 ｢別｣(704x396 XviD rev2).mkv YTXu5UiCog 212,058,928 d91b81366c54232ecc9c6f9540d4cfa135695a16<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第14話 ｢家｣(704x396 XviD rev2).mkv YTXu5UiCog 193,916,823 f3ff4aac99eb58df91160f9cef95fdebc519fc73<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第15話 ｢絆｣(704x396 XviD rev2).mkv YTXu5UiCog 242,707,326 e44dd4eff4c2d314a9baefa22800f86b82204673<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第16話 ｢憩｣(704x396 XviD rev2).mkv YTXu5UiCog 208,307,583 0ab230fe066749e7ec80c1c4834d6cf959201853<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第17話 ｢錯｣(704x396 XviD rev2).mkv YTXu5UiCog 180,125,959 bd85c53686372c1e6cf6d2a9fb4292a7ce58311e<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第18話 ｢転｣(704x396 XviD rev2).mkv YTXu5UiCog 212,601,248 e68d60aeb98e84e71269d18cb6bc5a94b9b10a8c<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第19話 ｢思｣(704x396 XviD).mkv YTXu5UiCog 224,303,258 a2f4f475d5adb7107b0bfe01cb6a246e6f6d61b8<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第20話 ｢願｣(704x396 XviD).mkv YTXu5UiCog 198,088,515 d22723055134eab079fa1a47c336e4a895ce5fc6<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第21話 ｢誓｣(704x396 XviD).mkv YTXu5UiCog 193,405,426 a3ce19163cc7448e649d40beb182c50f22794b94<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第22話 ｢告｣(704x396 XviD).mkv YTXu5UiCog 210,173,760 17bc224a026ec8691cd7a15cae3db81515c9078e<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第23話 ｢乱｣(704x396 XviD).mkv YTXu5UiCog 193,808,685 83e334775b9baa43fb538218c90162ce2f913d18<br>
+[アニメ DVD] WITCHBLADE ウィッチブレイド 第24話 ｢光｣(704x396 XviD).mkv YTXu5UiCog 204,714,103 936c5ba9ac57c0684e370da19428a1c1798e7032<br>
+<hr class="A">
+(アニメ DVD) WITCHBLADE ウィッチブレイド 映像特典 第01巻「キャストインタビュー 天羽雅音・能登麻美子」(XviD 704x392 AAC).mkv Noise120PU1m1xR 37,352,162 182896856a0c23cbbec8e9354e36e56d6dc74572<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 映像特典 第01巻「ノンテロップOP XTC」(XviD 704x392 AAC).mkv Noise120PU1m1xR 28,635,107 5994ef35ebdc4806c8fdffdc8ea5d49de6f3d272<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 映像特典 第01巻「ノンテロップED あしたの手」(XviD 704x392 AAC).mkv Noise120PU1m1xR 19,627,303 39e6bb72f0aaa45fd04542bac0bbd1692b72d05a<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 映像特典 第01巻「プロモーション映像」(XviD 640x360 AAC).mkv Noise120PU1m1xR 21,670,019 b473e8dafdd2ca798725c898fa5849ec7b8553d8<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 映像特典 第02巻「キャストインタビュー 天羽梨穂子・神田朱未」(XviD 640x480 AAC).mkv Noise120PU1m1xR 36,548,420 155f69ed4c674522d70e13a38342bb1d51078967<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 映像特典 第03巻「キャストインタビュー 斗沢祐介役・松風雅也」(XviD 640x480 AAC).mkv Noise120PU1m1xR 36,016,297 a21c510f5b3ac4227da24f50a2ae3a752a148c22<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 映像特典 第04巻「キャストインタビュー 鷹山澪士役・小山力也」(XviD 640x480 AAC).mkv Noise120PU1m1xR 41,153,150 030a18e70ae082e85ab8532960e9e877aa16186a<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 映像特典 第05巻「キャストインタビュー 蘇峰玲奈役・園崎未恵」(XviD 640x480 AAC).mkv Noise120PU1m1xR 36,371,787 be79b1da7d8291d01bde61bcb4af7e977d168fad<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 映像特典 第05巻「ノンテロップOP Dear Bob」(XviD 704x392 AC3).mkv Noise120PU1m1xR 23,965,824 9e6c77c6ed27010acc0e817baebb6ca513d6e179<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 映像特典 第05巻「ノンテロップED 靴ひも」(XviD 704x392 AC3).mkv Noise120PU1m1xR 54,535,096 679a5293a98f61c4eee7aa0c260cc24089a079e9<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 映像特典 第06巻「キャストインタビュー 瀬川弘樹役・鈴村健一」(XviD 640x480 AAC).mkv Noise120PU1m1xR 49,798,655 755cc9fef5f372bea2d8eb8c7f9b64eae4f5f94e<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第01話「始」(XviD 704x392 AAC).mkv Noise120PU1m1xR 248,245,263 cb2af46434ac17f2991737de8a9928d3c75f5346<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第02話「惑」(XviD 704x392 AAC).mkv Noise120PU1m1xR 209,193,608 cdf4bbf550b1998e952eeb08a62ce61ead01c221<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第03話「抗」(XviD 704x392 AAC).mkv Noise120PU1m1xR 219,582,648 ea9cbdf363108a340698dc784fdff677970a304e<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第04話「動」(XviD 704x392 AAC).mkv Noise120PU1m1xR 231,546,505 41422233c8693f97f872176c4d101b887cbd9b96<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第05話「探」(XviD 704x392 AAC).mkv Noise120PU1m1xR 218,074,731 3745d2df09b211db73fbb526aefd14e02d051922<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第06話「変」(XviD 704x392 AAC).mkv Noise120PU1m1xR 211,111,193 21fb79056585d01828476461d68cd5463318e92a<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第07話「過」(XviD 704x392 AAC).mkv Noise120PU1m1xR 229,283,009 75fe12499d34d44fbcb8396628c8b1c7e3c4d49e<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第08話「互」(XviD 704x392 AAC).mkv Noise120PU1m1xR 196,445,107 cf04125cd94f3c9d8bcfa68425732112233cd702<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第09話「哀」(XviD 704x392 AAC).mkv Noise120PU1m1xR 201,114,422 9380fe06e349c7aba2e1fb0b7d7bc7c5a0ee82b1<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第10話「交」(XviD 704x392 AAC).mkv Noise120PU1m1xR 201,094,258 7346873c1066671ee24f797551eca93e3ddac010<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第11話「危」(XviD 704x392 AAC).mkv Noise120PU1m1xR 224,276,711 4ce3d1a30d0cb311bd768a2dd8880cf9ae60dfc0<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第12話「囚」(XviD 704x392 AAC).mkv Noise120PU1m1xR 218,283,167 cf7693a91feb7cdbf307cfbe98f9a0f326d117c7<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第13話「別」(XviD 704x392 AAC).mkv Noise120PU1m1xR 230,780,745 de096f842bf30a428b582749ff1174e8913e86c2<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第14話「家」(XviD 704x392 AAC).mkv Noise120PU1m1xR 220,048,717 0cb2cfd7a1154fe91c20fed1ec794aea3ff9fee3<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第15話「絆」(XviD 704x392 AAC).mkv Noise120PU1m1xR 269,053,692 e88577c25076a01514a06a093ef8bcb72d0ded08<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第16話「憩」(XviD 704x392 AAC).mkv Noise120PU1m1xR 236,835,694 42e1c771409b54d439f78671df67a63706f2f172<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第17話「錯」(XviD 704x392 AAC).mkv Noise120PU1m1xR 201,707,029 c57b1a812d3f58b761ebbae7af94796ef2eed4dc<br>
+(アニメ DVD) WITCHBLADE ウィッチブレイド 第18話「転」(XviD 704x392 AAC).mkv Noise120PU1m1xR 264,694,615 745eaad302ef1798634f767f6d3fda944fdcba77<br>
+<hr class="A">
+[DVD] WITCHBLADE -ウィッチブレイド- vol.1 映像特典 ノンクレジットED 「あしたの手」 [01m30s 709x396 WMV9 128Kbps].wmv 10,057,710 094b71231b4a2b4c1c052517c2b4f102129f4a38<br>
+[DVD] WITCHBLADE -ウィッチブレイド- vol.4 映像特典 「ウィッチブレイド キャストインタビュー 高山澪士役：小山力也」 [08m05s 640x480 WMV9 128Kbps].wmv 124,153,766 be09c051a7170f7cdd2b61614eda05c228de6484<br>
+[DVD] WITCHBLADE -ウィッチブレイド- vol.6 映像特典 「ウィッチブレイド キャストインタビュー 瀬川弘樹役：鈴村健一」 [08m36s 640x480 WMV9 128Kbps].wmv 135,884,840 e3d13be2f5aea4f0ecb435f5b1e4b9763c942687<br>
+[DVD] WITCHBLADE -ウィッチブレイド- vol.6 映像特典 「ウィッチブレイド」解体新書 [29m10s 640x480 WMV9 128Kbps].wmv 255,938,132 79050c5b4674823ac8b4f8df5633b9f9f006ef94<br>
+[DVD] WITCHBLADE -ウィッチブレイド- vol.8 映像特典 「ウィッチブレイド キャストインタビュー まりあ役：水樹奈々」 [09m41s 640x480 WMV9 128Kbps].wmv 102,832,913 b2ff967ac155743f53d6b38b6e409a9b74e38a4f<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第01話 「始」 [23m41s 709x396 WMV9 128Kbps] rev2.wmv 326,267,808 7add7f75da2eaa945183335eb5209485fa61cc7c<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第02話 「惑」 [23m41s 709x396 WMV9 128Kbps] rev2.wmv 284,549,352 2a1c5d1a2a38e725a3687ca38e8f687bc3c73b0f<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第03話 「抗」 [23s40m 709x396 WMV9 128Kbps] rev2.wmv 296,955,528 2e4fed82a6c9de1d6de27b58120f3ca8bb752fff<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第04話 「動」 [23s39m 709x396 WMV9 128Kbps] rev2.wmv 321,666,282 2880f62c5a7b2309faae6404143d9775304c0d88<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第05話 「探」 [23s40m 709x396 WMV9 128Kbps] rev2.wmv 301,389,720 33e06a940c34c9c02c03d0b2638a82234fed5458<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第06話 「変」 [23s40m 709x396 WMV9 128Kbps] rev2.wmv 294,893,802 d84638e44d737270d83823962d6406b6e15a8bce<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第07話 「過」 [23m41s 704x396 WMV9 128Kbps].wmv 299,100,912 9e587510824d20534680b712d5a59a8d352bd108<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第08話 「互」 [23m41s 704x396 WMV9 128Kbps].wmv 276,941,904 c8baf96cad1bbe7572f39bffa5d0fb7e85dd76d1<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第09話 「哀」 [23m40s 704x396 WMV9 128Kbps].wmv 290,190,690 5a44d3e0a6ccd57f1f85642ba9559bcbe8970e10<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第10話 「交」 [23m41s 704x396 WMV9 128Kbps].wmv 295,539,230 42e9724ae62863a178ad8bf75829950e09e63650<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第11話 「危」 [23m41s 704x396 WMV9 128Kbps].wmv 307,539,038 fa7ce82935075c614267e3c56d62bee0e9c3be21<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第12話 「因」 [23m40s 704x396 WMV9 128Kbps].wmv 293,346,032 475c2ec8ff2b1b6b5664a6ef320aff6ae296b0ae<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第13話 「別」 [23m41s 704x396 WMV9 128Kbps].wmv 299,161,908 dfca25d03a5e66fc333988989702f339c3ff3265<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第14話 「家」 [23m41s 704x396 WMV9 128Kbps].wmv 253,270,862 1c6625d5b41f7f1483265ff08eba91b8327e6508<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第15話 「絆」 [23m42s 704x396 WMV9 128Kbps].wmv 311,913,350 6000661be7483f2faef2692928bab795b4011f46<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第16話 「憩」 [23m42s 704x396 WMV9 128Kbps].wmv 283,192,700 fc0e7159647fc806bbead6d647d4339e0c01e6b7<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第17話 「錯」 [23m41s 704x396 WMV9 128Kbps].wmv 235,659,590 9032e6d657e22af4b2918fd2347f33e3e3ea5f5b<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第18話 「転」 [23m40s 704x396 WMV9 128Kbps].wmv 295,963,394 660a783feb88d866bdf8a3005ced92e6d2c433c4<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第19話 「思」 [23m40s 704x396 WMV9 128Kbps].wmv 292,096,928 8d5998931b0f0c11e30770e1d25b3ec34a7fb50d<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第20話 「願」 [23m43s 704x396 WMV9 128Kbps].wmv 272,447,852 537b5547ac061edc61de4bf245d132c99d16509a<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第21話 「誓」 [23m42s 704x396 WMV9 128Kbps].wmv 259,724,948 f72414109db3892092ba76fa87f44d7e69fd390f<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第22話 「告」 [23m40s 704x396 WMV10 128Kbps].wmv 478,619,841 c6ddccdfa236d65e8fdf4b170a7bf8bc20b9407a<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第23話 「乱」 [23m42s 704x396 WMV10 128Kbps].wmv 429,610,677 f0c50a59897eedf075442f99dd91b78640f4e25c<br>
+[DVD] WITCHBLADE -ウィッチブレイド- 第24話 「光」 [23m12s 704x396 WMV10 128Kbps].wmv 433,246,277 e485be3e7ae5bb99455d3ca7662d42506cba0219<br>
+<hr class="A">
+WITCHBLADE ウィッチブレイド 第01話 「始」 (DVD 704x396 DivX651 LameVBR).avi 201,308,160 4c431c0b5211ecdc7dc52d414e0e5821763d6981<br>
+WITCHBLADE ウィッチブレイド 第02話 「惑」 (DVD 704x396 DivX651 LameVBR).avi 171,800,576 6b7cb84055f6949148683018232f0c2016f588c2<br>
+WITCHBLADE ウィッチブレイド 第03話 「抗」 (DVD 704x396 DivX651 LameVBR).avi 179,781,632 59d5cd19b8cc76370b025eee8a4b269f92b41c72<br>
+WITCHBLADE ウィッチブレイド 第04話 「動」 (DVD 704x396 DivX651 LameVBR).avi 182,220,800 947014d8f2e5ee6e66094a43598dd7a8b492c317<br>
+WITCHBLADE ウィッチブレイド 第05話 「探」 (DVD 704x396 DivX651 LameVBR).avi 175,157,248 7b6ac498d2ab820c48b45930a203de4536aae762<br>
+WITCHBLADE ウィッチブレイド 第06話 「変」 (DVD 704x396 DivX651 LameVBR).avi 173,031,424 d437edaebdbbaa1e7718128f36bd45992f87e144<br>
+WITCHBLADE ウィッチブレイド 第07話 「過」 (DVD 704x396 DivX651 LameVBR).avi 186,056,704 f6830a4bb8165152f2eb7cf34b9c6c7091a844b0<br>
+WITCHBLADE ウィッチブレイド 第08話 「互」 (DVD 704x396 DivX651 LameVBR).avi 159,586,304 d12a8b0ca2d0cfa72d069eeea839d1dff6cff776<br>
+WITCHBLADE ウィッチブレイド 第09話 「哀」 (DVD 704x396 DivX651 LameVBR).avi 162,758,656 0a9c29caab7ccf6c6bfed49b5963eb07be3efc70<br>
+WITCHBLADE ウィッチブレイド 第10話 「交」 (DVD 704x396 DivX651 LameVBR).avi 161,640,448 15dec6d38f1486c5bbab6287e272e71ed6a55c8f<br>
+WITCHBLADE ウィッチブレイド 第11話 「危」 (DVD 704x396 DivX651 LameVBR).avi 182,607,872 f55e24b21c5e1239394cb9437690585ca59b6424<br>
+WITCHBLADE ウィッチブレイド 第12話 「囚」 (DVD 704x396 DivX651 LameVBR).avi 175,128,576 d0d655f4f62024ff48664aaa9b654084d657891b<br>
+WITCHBLADE ウィッチブレイド 第13話 「別」 (DVD 704x396 DivX651 LameVBR).avi 179,648,512 f55aa7c73114be505158e10fb0de3fd500a6023e<br>
+WITCHBLADE ウィッチブレイド 第14話 「家」 (DVD 704x396 DivX651 LameVBR).avi 170,184,704 3e86c354a362811ce5c70a6b8a2271d90587ee30<br>
+WITCHBLADE ウィッチブレイド 第15話 「絆」 (DVD 704x396 DivX651 LameVBR).avi 209,932,288 d193441c9c161eab234ef1af1d08f3a1b1fa6d42<br>
+WITCHBLADE ウィッチブレイド 第16話 「憩」 (DVD 704x396 DivX651 LameVBR).avi 181,035,008 c4c37d141cce2b3f01fcf81f05ffdc6f588848f9<br>
+WITCHBLADE ウィッチブレイド 第17話 「錯」 (DVD 704x396 DivX651 LameVBR).avi 156,958,720 8c0f6bb9a10cd3bde4edb366dbbba9ed0e78adf5<br>
+WITCHBLADE ウィッチブレイド 第18話 「転」 (DVD 704x396 DivX651 LameVBR).avi 201,166,848 94386844153681806aa5620c052af1a5a7b4979e<br>
+WITCHBLADE ウィッチブレイド 第19話 「思」 (DVD 704x396 DivX651 LameVBR).avi 189,552,640 32f8d5826aefd7594b40e40ca51bb58c93e2a5ab<br>
+WITCHBLADE ウィッチブレイド 第20話 「願」 (DVD 704x396 DivX651 LameVBR).avi 183,973,888 761ea7b36a159a03c899dc0691643044c4a733d9<br>
+WITCHBLADE ウィッチブレイド 第21話 「誓」 (DVD 704x396 DivX651 LameVBR).avi 170,625,024 577fb4dbe5b04f64be8872fa9a050b0c29edb4f7<br>
+WITCHBLADE ウィッチブレイド 第22話 「告」 (DVD 704x396 DivX651 LameVBR).avi 185,886,720 0b01b9b512be7e69e81357a58153e3d5d33a161c<br>
+WITCHBLADE ウィッチブレイド 第23話 「乱」 (DVD 704x396 DivX651 LameVBR).avi 174,872,576 8eb086fedd53b5a78b796edc4c7aa1719e483e7b<br>
+WITCHBLADE ウィッチブレイド 第24話 「光」 (DVD 704x396 DivX651 LameVBR).avi 197,126,144 849c94e7529d295fc15557c9a342857c59893415<br>
+<div class="sup">AShph3vVDT</div>
+<br></dd>
+<dt><span class="title">ヴィナス戦記<b>◆</b></span>05/11/21 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD アニメ] ヴィナス戦記（北米版） (640x360 WMV9).wmv 1dodakemx1N789S3y 1,272,986,557 20b620f3acee1b2975b3d442b78850bd4dea3bd2<br>
+<br></dd>
+<dt><span class="title">ウインダリア<b>◆</b></span>08/01/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ 福袋] 2008年福袋 (okidokeiTL：DEATH4y04p).part1.rar okidokeiTL 1,000,000,000 9cf694fa8e49bcf45d91c009a31777eb1de5ff1b<br>
+[アニメ 福袋] 2008年福袋 (okidokeiTL：DEATH4y04p).part2.rar okidokeiTL 1,000,000,000 d1f9e90b2d9ff644b4ed7e7986620be561190638<br>
+[アニメ 福袋] 2008年福袋 (okidokeiTL：DEATH4y04p).part3.rar okidokeiTL 474,266,252 74562a2a11127fa33187b1f579750936a5e64295<br>
+<div class="sup">　<b>↓</b>＆アリオン</div>
+[アニメ DVD] ウインダリア (696x400 WMV9).wmv 1,072,458,959 50117d64fb77834cc02b62e1ae0c91c95a4c7434<br>
+<hr class="A">
+[DVD アニメ] ウインダリア (704x396 WMV9).wmv 1dodakemx1N789S3y 1,187,881,723 44fc2eb2d6558ae55d8a7a102e1be63cfb5d8565<br>
+<hr class="A">
+(アニメ) [DVD] ウインダリア(640x360 WMV9 1h40m45s).wmv 762,968,306 fc78936bea53187699c16dc113de5faeb4c78555<br>
+<div class="sup">kL5SylQbtK</div>
+<br></dd>
+<dt><span class="title">Wind -a breath of heart-<b>◆</b></span>07/08/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] そよかぜのおくりもの -Wind Pleasurable Box- 特典映像 Bonus Track (640x480 WMV9 Q93).avi 43,115,712 576c2d8fdc3fbdb8c7e2f79fafd61837170de816<br>
+[アニメ DVD] そよかぜのおくりもの -Wind Pleasurable Box- (640x480 WMV9 Q93).avi 196,449,416 f04909d459ac8001c77f5946163db6698472e143<br><br>
+[アニメ DVD] Wind -a breath of heart- Volume.2 スペシャル映像特典 (704x396 WMV9 Q93).avi 76,178,200 11e446c5cf375b99daa5e37aefd7ab5ea1ad75d4<br>
+[アニメ DVD] Wind -a breath of heart- Volume.1 「再会」 (704x396 WMV9 Q93).avi 237,489,550 72bc80e8e65247d0bc555cdb00b330423c03e159<br>
+[アニメ DVD] Wind -a breath of heart- Volume.2 「予感」 (704x396 WMV9 Q93).avi 300,347,152 f8acc7a574c2589f29dd9aba40c6e09bd744415b<br>
+[アニメ DVD] Wind -a breath of heart- Volume.3 「希望」 (704x396 WMV9 Q93).avi 272,985,730 baf4a2cbfa7d6244ddbd97516c2fcb7409efb5d3<br><br>
+[アニメ DVD] Wind -a breath of heart- 先行特別版 Serial No.0 1.プロローグ (640x480 WMV9 Q93).avi 16,852,904 f6571a11ea70b7a29677289896ab494f87441b66<br>
+[アニメ DVD] Wind -a breath of heart- 先行特別版 Serial No.0 2.オープニング (640x480 WMV9 Q93).avi 20,666,358 039b099ea92e43237079f9550006edf27b75073d<br>
+[アニメ DVD] Wind -a breath of heart- 先行特別版 Serial No.0 3.キャラクター紹介 (640x480 WMV9 Q93).avi 71,502,616 e3dd18aaac3a30dac49a9d3baad59a106a5e2de3<br>
+[アニメ DVD] Wind -a breath of heart- 先行特別版 Serial No.0 4.主題歌レコーディング (640x480 WMV9 Q93).avi 51,217,786 7e7cded91f9e839335bbd7b825cca8280f806c33<br>
+[アニメ DVD] Wind -a breath of heart- 先行特別版 Serial No.0 5.製作現場 (640x480 WMV9 Q93).avi 67,985,982 5c800f0b3d198b41d5d1e627c0feb58f323ed86d<br>
+[アニメ DVD] Wind -a breath of heart- 先行特別版 Serial No.0 6.「風の思い出」 (640x480 WMV9 Q93).avi 37,111,248 5a9abea8df765c3eef1ccf56e86a85f11703ce87<br>
+[アニメ DVD] Wind -a breath of heart- 先行特別版 Serial No.0 7.先行特別映像 (640x480 WMV9 Q93).avi 26,893,280 feb72181fe566334844f2217cf2a73a04e731da7<br>
+[アニメ DVD] Wind -a breath of heart- 先行特別版 Serial No.0 8.エンディング (640x480 WMV9 Q93).avi 85,345,962 f5744a7a14f04287f4870de916973bcb58bc9168<br>
+[アニメ DVD] Wind -a breath of heart- 先行特別版 Serial No.0 EX.宣伝 (640x480 WMV9 Q93).avi 5,067,706 2e9fd14987fcf7377a460b5e268605ff147716a1<br>
+<div class="sup">CCbbBtcvIl</div>
+<hr class="A">
+[OVA] Wind －a breath of heart－ 先行特別版 Serial No.0(DivX5.02 QB100% 120fps 640x480 DVD).avi kemoneko3oJWAlMfuT 354,576,176 0d70d27ff9662d57cfce769ee6f146c6a4a910eb<br>
+[OVA] Wind －a breath of heart－ Volume.1 「再会」(DivX5.02 QB100% 24fps 640x360 DVD).avi kemoneko3oJWAlMfuT 248,402,818 543e526e4c18327d5cd1a454148a8af4604584cd<br>
+[OVA] Wind －a breath of heart－ Volume.2 「予感」(DivX5.02 QB100% 24fps 704x396 DVD).avi kemoneko3oJWAlMfuT 340,772,834 5b33261c60f22ab66f9ea3d6ad31f88b50a88bac<br>
+[OVA] Wind －a breath of heart－ Volume.3 「希望」(DivX5.02 QB100% 24fps 704x396 DVD).avi kemoneko3oJWAlMfuT 337,326,310 4b4c19ed3d93891a3fd0a7292cd23d60ca088f70<br>
+<hr class="A">
+[アニメ DVD] Wind -a breath of heart- 特典映像 「想いめぐる(特別編)」 (704x396 WMV9 AAC).mkv 108,712,463 85e52c6b7e99247182bec11aa06785abc83a2547<br>
+[アニメ DVD] Wind -a breath of heart- 特典映像 キャストコメント (640x480 WMV9 AAC).mkv 17,549,537 59d6e67772d7dcd13ed97dbd137bdc00425a5f05<br>
+[アニメ DVD] Wind -a breath of heart- 特典映像 ノンテロップオープニング (704x396 WMV9 AAC).mkv 29,209,816 c5d96f1d1d03a96684847b9f9a1ea146f9e5a10b<br>
+[アニメ DVD] Wind -a breath of heart- 特典映像 番宣スポット、DVD告知CM (640x480 WMV9 AAC).mkv 6,426,458 e6aa121663f90b1a1df0000a093363b8e03746c6<br>
+[アニメ DVD] Wind -a breath of heart- 第01話 「再会のメロディ」 (704x396 WMV9 AAC).mkv 106,155,221 eb56ebdf7cfd42d3cd1659f8c10d2a355529e996<br>
+[アニメ DVD] Wind -a breath of heart- 第02話 「思い出の約束」 (704x396 WMV9 AAC).mkv 104,396,049 0c10651cd2c613cf77d49d15e54b7e0672f2ae6a<br>
+[アニメ DVD] Wind -a breath of heart- 第03話 「彩という名の少女」 (704x396 WMV9 AAC).mkv 94,489,025 4100e1245875f0cbf5baf894b67b56478041ed76<br>
+[アニメ DVD] Wind -a breath of heart- 第04話 「親とはぐれた子供たち」 (704x396 WMV9 AAC).mkv 88,071,259 0b1948f8f328562b378d8ef2b0fff81436f96f77<br>
+[アニメ DVD] Wind -a breath of heart- 第05話 「光と影」 (704x396 WMV9 AAC).mkv 123,167,372 209d54c0917b68c823cbb21c7f34a83e944a3cfa<br>
+[アニメ DVD] Wind -a breath of heart- 第06話 「踏み出す勇気」 (704x396 WMV9 AAC).mkv 118,092,271 c0976e928173c7f9c09820a018b2f02e44c8601f<br>
+[アニメ DVD] Wind -a breath of heart- 第07話 「青い空の優しさ」 (704x396 WMV9 AAC).mkv 114,861,967 4dec1303bf0721a2809f3ee4a2aa144b34dda741<br>
+[アニメ DVD] Wind -a breath of heart- 第08話 「風と夜空と」 (704x396 WMV9 AAC).mkv 118,922,771 0d4043e453f57fc183b9644d45ae7732bce2c698<br>
+[アニメ DVD] Wind -a breath of heart- 第09 話 「風音の咆吼」 (704x396 WMV9 AAC).mkv 98,130,216 2a40ee67f28fb32ccae862e0bde5cef1cab812a1<br>
+[アニメ DVD] Wind -a breath of heart- 第09.5話 「風の悲しみ」 (704x396 WMV9 AAC).mkv 89,642,189 9170d3e7cd0db7b45a707385b4e1504c8e4a3842<br>
+[アニメ DVD] Wind -a breath of heart- 第10 話 「同化体」 (704x396 WMV9 AAC).mkv 118,862,468 9a382c0bef5b7e65772c23e049e005b1f7ffe111<br>
+[アニメ DVD] Wind -a breath of heart- 第10.4話 「想い伝えて…」 (704x396 WMV9 AAC).mkv 83,291,607 42fcd10951b7d3e2957204f43829911185109293<br>
+[アニメ DVD] Wind -a breath of heart- 第10.8話 「想い戸惑い」 (704x396 WMV9 AAC).mkv 98,672,157 dfbaf05c29030e0ba8c8260b424b82fba433a7e2<br>
+[アニメ DVD] Wind -a breath of heart- 第11話 「古からの運命」 (704x396 WMV9 AAC).mkv 559,541,781 b0c42a5163832bc7f4b1c18f7789372d986c0f29<br>
+[アニメ DVD] Wind -a breath of heart- 第12 話 「風と共に」 (704x396 WMV9 AAC).mkv 170,511,263 6c6a2c13c990a14c27b75190487dbd8a98977fd1<br>
+[アニメ DVD] Wind -a breath of heart- 第12.0話 「想い届くとき」 (704x396 WMV9 AAC).mkv 116,379,986 4101b31f6d8d165b29c178d9b7fb0faf7f0855fd<br>
+<div class="sup">okidokezwg</div>
+<hr class="A">
+[DVD アニメ] Wind ～a breath of heart～ 第01話 (704x396 WMV9).avi 99,350,528 6cdb76b493a381001892de391a5a5bcefe74315c<br>
+[DVD アニメ] Wind ～a breath of heart～ 第02話 (704x396 WMV9).avi 94,521,344 7668a85d9b77041c43961d540039654803ef224b<br>
+[DVD アニメ] Wind ～a breath of heart～ 第03話 (704x396 WMV9).avi 85,221,376 05ab0799cba73022b1b8540e8127ed39b6f31f3f<br>
+[DVD アニメ] Wind ～a breath of heart～ 第04話 (704x396 WMV9).avi 83,742,720 cc9920d6d6a9046f26cba9e19de345cb53719c9a<br>
+[DVD アニメ] Wind ～a breath of heart～ 第05話 (704x396 WMV9).avi 118,089,728 bc6342d3df20ccb1fa0354722ad55f05af239d04<br>
+[DVD アニメ] Wind ～a breath of heart～ 第06話 (704x396 WMV9).avi 107,988,992 14c4f9ebcb221c3aa38d32e26355d99885eb1cdf<br>
+[DVD アニメ] Wind ～a breath of heart～ 第07話 (704x396 WMV9).avi 103,864,320 30fa5e826d0722fd72fe42f3076e051bc9cf527a<br>
+[DVD アニメ] Wind ～a breath of heart～ 第08話 (704x396 WMV9).avi 108,732,416 b8bc4f1645395b5600c29a170fffddebb7501784<br>
+<hr class="A">
+Wind -a breath of heart- 第01話 「再会のメロディ」+NCOP(DVD版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 147,546,942 14a1e267d03a227283ca92c92fdf235c88aa471c<br>
+Wind -a breath of heart- 第02話 「思い出の約束」(DVD版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 121,666,344 23dd74fae4e02fc6272328b7f76322a1d3eb6173<br>
+Wind -a breath of heart- 第03話 「彩という名の少女」(DVD版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 115,198,042 acbb66611063c23ffaa0a994dca22b5200910d2f<br>
+Wind -a breath of heart- 第04話 「親とはぐれた子供たち」(DVD版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 111,019,438 d78f3cd6e3ee11e4d40a47c6abcf8a9b093b2d3d<br>
+Wind -a breath of heart- 第05話 「光と影」(DVD版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 143,857,810 32bd9e1f1d50b60859c02cfdf6f2ae536fd23b1c<br>
+Wind -a breath of heart- 第06話 「踏み出す勇気」(DVD版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 140,554,468 b5532b38ed053b1b41d6c82f191bdc3a523bab11<br>
+Wind -a breath of heart- 第07話 「青い空の優しさ」(DVD版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 133,145,626 c4ff1da2348a339cc7a05fbc0e8ee0d69c1cdffc<br>
+Wind -a breath of heart- 第08話 「風と夜空と」(DVD版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 134,037,790 586555dc8c49c92d71c0da365aae1ce6d0f98745<br>
+Wind -a breath of heart- 第09話 「風音の咆吼」(DVD版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 115,313,776 ba7b6fddf6fb69676c97e45c53b379f794a38d20<br>
+Wind -a breath of heart- 第09.5話 「風の悲しみ」(DVDオリジナル版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 105,242,482 d90c58606216ae4de936540243b19c6c8fff898b<br>
+Wind -a breath of heart- 第10話 「同化体」(DVD版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 129,065,818 8d6e2e6955ffe547194d75791faf8cc59a89970c<br>
+Wind -a breath of heart- 第10.4話 「想い伝えて……」(DVDオリジナル版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 102,105,528 0fdba3e2061ade9d2fc6914b1cb55c643b1388b9<br>
+Wind -a breath of heart- 第10.8話 「想い戸惑い」(DVDオリジナル版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 114,717,768 eef819df46a23fd432ac68ae1739a59e0022ba0c<br>
+Wind -a breath of heart- 第11話 「古からの運命」(DVD版 DivX5.02 2Pass 1500kbps 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 160,252,812 479b0c9c93dcb3025922359ba790016744ca193d<br>
+Wind -a breath of heart- 第12.0話 「想い届くとき」(DVDオリジナル版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 132,118,532 1ef437d6c1c90c2995c96abf6139746541d55bb4<br>
+Wind -a breath of heart- 第12話 「風と共に」(DVD版 DivX5.02 QB100% 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 173,749,696 6e4178d1b9e6ee6eed77631c9bfbf97eb3ab5401<br>
+<hr class="A">
+Wind -a breath of heart- 第01話 「再開のメロディ」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 76,722,176 a411423c4571b5e84dfa95289f9f6cc962eb02df<br>
+Wind -a breath of heart- 第02話 「思い出の約束」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 71,987,200 2c09fa70318f234ed726c51c77760075b462b466<br>
+Wind -a breath of heart- 第03話 「彩という名の少女」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 69,017,600 568382694ee5dafd4d822a382da87ca4bf3c9eba<br>
+Wind -a breath of heart- 第04話 「親とはぐれた子供たち」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 63,670,272 d6457286e6c7e23adbb84e493a4e1525f548146d<br>
+Wind -a breath of heart- 第05話 「光と影」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 85,886,976 b4794911a73ebb8327cb00651b6af51441550f56<br>
+Wind -a breath of heart- 第06話 「一歩を踏み出す勇気」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 82,173,952 e9c1871d890b5939c50db5c4fbe314edc6cfbc0f<br>
+Wind -a breath of heart- 第07話 「青い空の優しさ」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 81,907,712 15007e4c2b534598c9dfe690a7b2e0b13883d605<br>
+Wind -a breath of heart- 第08話 「夜空と風と」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 83,802,112 9be63dc1f72f0dc37c5358077bd0e397d4bea080<br>
+Wind -a breath of heart- 第09話 「風音の咆吼」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 70,336,512 9a1496776a819f23f5620255a35a33627768025c<br>
+Wind -a breath of heart- 第9.5話 「風の悲しみ」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 64,632,832 03ea3c8f34ed2482581805fdb13644b5a9206126<br>
+Wind -a breath of heart- 第10話 「同化体」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 81,401,856 59f9ffa03fdc2c755ab903e78026ad8c08b49fef<br>
+Wind -a breath of heart- 第10.4話 「想い伝えて･･････」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 61,339,648 db031930e49b4b12caf9e884b2a9380a5bba21eb<br>
+Wind -a breath of heart- 第10.8話 「想い戸惑い」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 70,164,480 0933d9c3d6842d0c7db26af0830f03ee0adcfd6a<br>
+Wind -a breath of heart- 第11話 「古からの運命」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 440,735,744 6723cec112daa5cdbd1cabdc3ccbd33d6ead6086<br>
+Wind -a breath of heart- 第12.0話 「想い届くとき」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 79,968,256 bf5a2b8c477fde944c3951a904f3467a2dbd9463<br>
+Wind -a breath of heart- 第12話 「風と共に」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 113,686,528 36ce7895ddfb5d6d810e9345664aaf6624182769<br><br>
+Wind -a breath of heart- 第01話 「再開のメロディ」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 95,809,536 ded41219b65e37cadc54db43e65d92dc8741d145<br>
+Wind -a breath of heart- 第02話 「思い出の約束」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 106,649,600 1bc16304d0ed4fff117d750c3d07288da3ffba7b<br>
+Wind -a breath of heart- 第03話 「彩という名の少女」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 100,851,712 368566f28d9a5ad3607b56a593680aee587109cd<br>
+Wind -a breath of heart- 第04話 「親とはぐれた子供たち」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 94,896,128 3b48f32567d39d9c45f6d6ac913edf9e7e8b609f<br>
+Wind -a breath of heart- 第05話 「光と影」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 137,867,264 14220723831b3ea654b15e36b8a244ea5e767ce0<br>
+Wind -a breath of heart- 第06話 「一歩を踏み出す勇気」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 132,208,640 7c1f0a79c2b47e8523e2d5e64604d5807900af26<br>
+Wind -a breath of heart- 第07話 「青い空の優しさ」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 128,604,160 67875c46fb828c785749a508e2cb89b9d0588ead<br>
+Wind -a breath of heart- 第08話 「夜空と風と」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 135,518,208 64983a1778aea8fab67c09f9b8c031d1ac495a6a<br>
+Wind -a breath of heart- 第09話 「風音の咆吼」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 114,778,112 c67055c53a8dfa4d46ec04262ba48ecff3b02766<br>
+Wind -a breath of heart- 第9.5話 「風の悲しみ」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 105,754,624 ebbcca11b32bdcb407c1f977f19d9d7e414e5bc2<br>
+Wind -a breath of heart- 第10話 「同化体」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 132,882,432 f85016b7ca438c592cc5daf20c4142531fd79ad5<br>
+Wind -a breath of heart- 第10.4話 「想い伝えて･･････」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 103,227,392 68a74d4f8a764d7788777b4db500ba1026231a23<br>
+Wind -a breath of heart- 第10.8話 「想い戸惑い」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 113,205,248 a415e9a5a2d56519322c8d1f68c27d9eaa1e6484<br>
+Wind -a breath of heart- 第11話 「古からの運命」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 558,049,280 4ddc4872dbb1786afd7995b3418f2bb8e203526c<br>
+Wind -a breath of heart- 第12.0話 「想い届くとき」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 128,212,992 e855b5192613a1a8a23a22d753dfad6223ecce11<br>
+Wind -a breath of heart- 第12話 「風と共に」 (DVD 704x396 WMV9 120fps).avi YAyAoONEVq 182,376,448 82e0e38459d9ffdab42070b1bf0706160ab2464c<br>
+<br></dd>
+<dt><span class="title">うえきの法則<b>◆</b></span>08/02/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ]うえきの法則 映像特典 「植木の法則プラス PV」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 278,672,910 66051dee37d8d09c8d25796e657f1241dc821ab2<br>
+[アニメ]うえきの法則 第01話 「植木耕助・正義の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 335,991,505 4f7c2bd7c9ccca4da557adeb7a76023dced29cb2<br>
+[アニメ]うえきの法則 第02話 「バトル開始！！の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 320,265,935 cb1096b039d662ddf10a6d7e535011ba9b04ec32<br>
+[アニメ]うえきの法則 第03話 「才の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 308,315,803 af992ac481a95cba5c18b9fbe822e79f62983ab9<br>
+[アニメ]うえきの法則 第04話 「体術の男・李崩の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 301,224,535 815dfd1e1414e189608a9442d16dc633caef2f33<br>
+[アニメ]うえきの法則 第05話 「最強能力者ロベルト・ハイドンの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 306,329,614 331fd94656ff19dbbd8b8ae14a9d842546572693<br>
+[アニメ]うえきの法則 第06話 「さらばの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 319,215,367 1a2bc9f4c7125466dc5c2e6b5957fbfe4670ee24<br>
+[アニメ]うえきの法則 第07話 「コバセンの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 307,741,284 fb8290f3fb9af05e5803c3514067a8caeba07c40<br>
+[アニメ]うえきの法則 第08話 「正々堂々！鬼紋の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 365,981,450 900415ef879b4564b41d706ca4b10fc9f4f49748<br>
+[アニメ]うえきの法則 第09話 「鬼紋の特訓の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 406,099,710 9c461555991805b92cf52745144f2e81ee1df2a0<br>
+[アニメ]うえきの法則 第10話 「むくわれない正義の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 355,935,470 d0d2e3fcbbbdff83be6c12b2118d1cec068d5e4b<br>
+[アニメ]うえきの法則 第11話 「ロベルト十団の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 321,940,005 c8c3d4ced29d6dbbbb0691e32301593a03398d1b<br>
+[アニメ]うえきの法則 第12話 「天界人の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 291,588,670 ba5e9b727d35dd53367022273e96baad3f308c80<br>
+[アニメ]うえきの法則 第13話 「天界獣の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 344,067,425 803dc4ca949832f7c94fcb1224ec1d9471171792<br>
+[アニメ]うえきの法則 第14話 「覚醒臓器の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 346,546,104 f5e4fd70ca4f37a9cd3e89fa23829c3930bf2027<br>
+[アニメ]うえきの法則 第15話 「鈴子の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 358,397,970 8042bd89c3dd587a0e4e8eb1a36b42c1aa7787f9<br>
+[アニメ]うえきの法則 第16話 「新天界人（ネオ）の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 387,616,682 412a6f1eb5bb58cd7a745e6830751eaa7d2cadd5<br>
+[アニメ]うえきの法則 第17話 「二つの能力の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 473,647,691 86d1c601ab0b00c1663e549f4104ac54486f5611<br>
+[アニメ]うえきの法則 第18話 「戦慄！ドグラマンションの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 339,586,398 0003fb5a66ec350dc2bdbc09c164910ecc592e99<br>
+[アニメ]うえきの法則 第19話 「コサックダンスの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 400,830,755 020563392baa0541b27de4a680c987da1d9f842d<br>
+[アニメ]うえきの法則 第20話 「ネコとねずみの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 341,687,508 b99f37630ef2b9e3ad3908c0c52cddaf08d4cc3c<br>
+[アニメ]うえきの法則 第21話 「佐野清一郎の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 359,990,231 f1768a315e4daad12821551cc77de11686c7e549<br>
+[アニメ]うえきの法則 第22話 「犬丸の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 346,004,645 f28a658ca0cb620b57ebd00c78a6b342f18b3216<br>
+[アニメ]うえきの法則 第23話 「植木VS十団の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 325,026,283 f25e029b8e33fcbf37acf857bf004c3d531acdba<br>
+[アニメ]うえきの法則 第24話 「少年ロベルトの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 297,629,648 d3eeaf584c0499b9006b735365c3f78a82031226<br>
+[アニメ]うえきの法則 第25話 「復活！！コバセンの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 301,733,402 5b7c38263a892b8d59fbb03441d19b5d7fa89b7a<br>
+[アニメ]うえきの法則 第26話 「恐怖！アノンの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 278,309,193 ac5551659a431bb72a2c4becbc7556f52f0b719a<br>
+[アニメ]うえきの法則 第27話 「ヒデヨシの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 323,713,079 df62363d5f32c3b4cb8a3d1767af730c32097bf4<br>
+[アニメ]うえきの法則 第28話 「たいようの家の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 320,922,533 856dd8b9e2989c00fe0c896491a1122d005ce8b9<br>
+[アニメ]うえきの法則 第29話 「死なないでテンコの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 310,794,482 f6a5716c853fc8815732bed654c81ea2b0c23309<br>
+[アニメ]うえきの法則 第30話 「三次選考の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 349,615,963 373a815487e8f3a505190546f41e6f052b396dec<br>
+[アニメ]うえきの法則 第31話 「最強タッグの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 371,218,091 4c4ad67359964c488a89e259c07e79ff814a600f<br>
+[アニメ]うえきの法則 第32話 「本当の強さ！の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 383,578,588 282e38bbdd028670c975dfdb965c6b8f740fa7af<br>
+[アニメ]うえきの法則 第33話 「激突！植木VS李崩の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 321,726,888 f87b2f2e5073027c27bff891f6e94ab51818efe6<br>
+[アニメ]うえきの法則 第34話 「マリリンチームの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 327,307,984 db3367216f2bd1a732d69f5c3e59e582c123c641<br>
+[アニメ]うえきの法則 第35話 「はかったなあぁぁあ！の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 361,894,381 46e33143ae6913241e6bfb9a1c37d3e0b4c82313<br>
+[アニメ]うえきの法則 第36話 「仲間の証明の法則DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 343,870,701 d08d632a535328d03427f4dafb8e8693c4b02779<br>
+[アニメ]うえきの法則 第37話 「神器の弱点の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 385,630,461 0d32286014d265be6fff9434664ba0b7f6f3619b<br>
+[アニメ]うえきの法則 第38話 「佐野・覚醒！！の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 537,222,990 53a18dda9ab04256a3c64778a755be17194f5519<br>
+[アニメ]うえきの法則 第39話 「閉ざされた心の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 338,617,903 e5eb46dc0b890e82d8e8f004f707d95c55215622<br>
+[アニメ]うえきの法則 第40話 「素晴らしい『あい』の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 320,101,789 d310dbc1304c98346edc76b383c97156d45bce30<br>
+[アニメ]うえきの法則 第41話 「本物と偽者の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 292,442,506 c195c9f190994ecd22c233b220f565f8582c6451<br>
+[アニメ]うえきの法則 第42話 「バロウチームの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 417,426,318 d4b27540f673feda0a2d843dd3b8f3f51da2a4e9<br>
+[アニメ]うえきの法則 第43話 「ぶりっ娘ポーズの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 463,191,340 38894d026cc4fcf0e1cfe4817c9d24bda965425a<br>
+[アニメ]うえきの法則 第44話 「植木・レベル2！の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 411,779,562 d82f32da376d038f7a49a5c3641b0e5dea117652<br>
+[アニメ]うえきの法則 第45話 「過去からの攻撃の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 423,023,835 7f5efa22755901d3f844af820151511359f60916<br>
+[アニメ]うえきの法則 第46話 「神と少女と未来の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 399,698,120 275874d5d2fa0be9f341aa079f45a349e0003082<br>
+[アニメ]うえきの法則 第47話 「神になったアノンの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 362,206,262 7ba752766a80dce3c827b03f4a96ffaa58522cb2<br>
+[アニメ]うえきの法則 第48話 「第四次選考の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 415,440,101 242d71b03a74e86e60a203a21f26e1c37d89dfe0<br>
+[アニメ]うえきの法則 第49話 「十ツ星の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 396,480,772 3accb14e60934d928c425af8c6e769e4b4af1f27<br>
+[アニメ]うえきの法則 第50話 「植木VSアノンの法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 571,858,654 a05dac494a44978104fc404871d7ee4755ab80f2<br>
+[アニメ]うえきの法則 第51話 「空白の才の法則」[DVD-Rip 704x480 4：3 WMV9].wmv QTf2YsEjRgosq 411,040,543 266cc83211d49e7f07311009b5782c702b27cbbd<br>
+<br></dd>
+<dt><span class="title">うさぎちゃんでCue!!<b>◆</b></span>06/11/16 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD アニメ] うさぎちゃんでCue!! ノンクレジットOP (640x480 WMV9).wmv 1dodakemx1N789S3y 19,483,430 5cfb4ca29ec54da71be52cb66de69d9d5b2c2e26<br>
+[DVD アニメ] うさぎちゃんでCue!! ノンクレジットED (640x480 WMV9).wmv 1dodakemx1N789S3y 21,843,472 d2550269a8ba99606926860217b14d625e4d2284<br>
+[DVD アニメ] うさぎちゃんでCue!! 第01話 (640x480 WMV9).wmv 1dodakemx1N789S3y 318,668,340 e97a491e51f3a3a0095c160220d2b0d4d7858eee<br>
+[DVD アニメ] うさぎちゃんでCue!! 第02話 (640x480 WMV9).wmv 1dodakemx1N789S3y 315,404,334 3fac71b19280920e0dbd662b90a200ed960739ca<br>
+[DVD アニメ] うさぎちゃんでCue!! 第03話 (640x480 WMV9).wmv 1dodakemx1N789S3y 313,716,262 b3837d5638a5ece981fa312687d8b191f3975e6d<br>
+<br></dd>
+<dt><span class="title">ウサビッチ<b>◆</b></span>09/09/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+ウサビッチ映像特典1(DVD_640x480_WMV9).wmv io2etbjGWE 206,362,426 8a552b66a224629f7c1b1b1c96e4ef922305d714<br>
+ウサビッチ映像特典2(DVD_640x480_WMV9).wmv io2etbjGWE 17,346,999 b65d9a68e0f29390b1d7a7875d49dbfaccabd94f<br>
+ウサビッチ映像特典3(DVD_640x480_WMV9).wmv io2etbjGWE 13,547,483 7741d058e6208cad3ba83765a3695cbc081364b8<br>
+ウサビッチ第01話(DVD_640x480_WMV9).wmv io2etbjGWE 15,899,247 f3d5351978ebaf80fbeae501642047133bee3687<br>
+ウサビッチ第02話(DVD_640x480_WMV9).wmv io2etbjGWE 15,849,909 bf5338974a4f8e5a7a9ea176229a8f55b048930e<br>
+ウサビッチ第02.5話(DVD_640x480_WMV9).wmv io2etbjGWE 11,302,590 2fc9f4f9aa6cdd7a7a11f1bc82d224fb9d6efbcf<br>
+ウサビッチ第03話(DVD_640x480_WMV9).wmv io2etbjGWE 26,992,074 41a18d331daf9ff3d20a6ee48cc8ac0fc83d63e7<br>
+ウサビッチ第04話(DVD_640x480_WMV9).wmv io2etbjGWE 17,913,882 b50ac6196eeb9420d4d37e4b723cd603f8eac3f2<br>
+ウサビッチ第05話(DVD_640x480_WMV9).wmv io2etbjGWE 20,939,946 226647cd1c96cbdc7fc04fea1ac07eb28e1dc858<br>
+ウサビッチ第06話(DVD_640x480_WMV9).wmv io2etbjGWE 13,884,612 f2ff6c9964576e62ce6eed13406e971798ff2076<br>
+ウサビッチ第07話(DVD_640x480_WMV9).wmv io2etbjGWE 13,465,239 391ff67714f738a27508e5bf335c7879040e7824<br>
+ウサビッチ第08話(DVD_640x480_WMV9).wmv io2etbjGWE 15,636,111 2512aadbd15032f5acc58e1c87561af77939cabc<br>
+ウサビッチ第09話(DVD_640x480_WMV9).wmv io2etbjGWE 13,901,058 8ade62f1d10b6ff463e236f5e87d095eb2cef3d7<br>
+ウサビッチ第10話(DVD_640x480_WMV9).wmv io2etbjGWE 14,822,034 7ac3d40b0e1127877c0196e77eb603920692d361<br>
+ウサビッチ第11話(DVD_640x480_WMV9).wmv io2etbjGWE 13,802,396 b193ba6b4e1b44a05518b81ed27e60f4ed27ec2b<br>
+ウサビッチ第12話(DVD_640x480_WMV9).wmv io2etbjGWE 22,880,574 64d67fee05fe53c41bb9114e4ad41335a9ff45c3<br>
+ウサビッチ第13話(DVD_640x480_WMV9).wmv io2etbjGWE 24,468,257 aec9c7cf5e4cae3cf4798f5703d80a6a7fb293e2<br>
+ウサビッチ第14話(DVD_640x480_WMV9).wmv io2etbjGWE 29,195,852 a4d6552a41d16662087fb434c63370beac145738<br>
+ウサビッチ第15話(DVD_640x480_WMV9).wmv io2etbjGWE 23,291,738 4283ffd29f37a7aadbeb7b0d2089a747d50f99b6<br>
+ウサビッチ第16話(DVD_640x480_WMV9).wmv io2etbjGWE 18,218,133 dc8f127684ea2509e28a4a82e8bdc0e4702369b5<br>
+ウサビッチ第17話(DVD_640x480_WMV9).wmv io2etbjGWE 17,806,997 a0b833e814e82ef23d2ef38c612dce01731f48f2<br>
+ウサビッチ第18話(DVD_640x480_WMV9).wmv io2etbjGWE 32,427,491 05fff2852b32c18ec1e75f4fa78acf46c37e29a7<br>
+ウサビッチ第19話(DVD_640x480_WMV9).wmv io2etbjGWE 34,812,147 2242d7416639fa7e9cefbc8fb5009f3684b78456<br>
+ウサビッチ第20話(DVD_640x480_WMV9).wmv io2etbjGWE 17,576,753 230c010f077b39c5e224250de72328dd3a1cccf6<br>
+ウサビッチ第21話(DVD_640x480_WMV9).wmv io2etbjGWE 20,134,092 363864cbfed3617f28a2c677d248d88a41866792<br>
+ウサビッチ第22話(DVD_640x480_WMV9).wmv io2etbjGWE 37,829,988 f0359d87aaab132c5135230e09f1c88e40d8b6c5<br>
+ウサビッチ第23話(DVD_640x480_WMV9).wmv io2etbjGWE 16,121,268 803159e784382fb92527896aaac23acd7358b0ac<br>
+ウサビッチ第24話(DVD_640x480_WMV9).wmv io2etbjGWE 14,608,236 bd3d0030c3de173b6190b705924f255e2312139d<br>
+ウサビッチ第25話(DVD_640x480_WMV9).wmv io2etbjGWE 27,107,196 5c04407c67ca7fca9d2dddd3caf4958f4102d47b<br>
+ウサビッチ第26話(DVD_640x480_WMV9).wmv io2etbjGWE 38,842,047 e4d9eb60f6e21197ba394c12ffbc4e96fd3d2a65<br>
+ウサビッチ第27話(DVD_640x480_WMV9).wmv io2etbjGWE 23,308,170 c796998210829f2d238a5f76ab5e0fd35675fe44<br>
+ウサビッチ第28話(DVD_640x480_WMV9).wmv io2etbjGWE 18,571,722 33796f4ff3ae3e5da0443d9654c51fa3c87c0e71<br>
+ウサビッチ第29話(DVD_640x480_WMV9).wmv io2etbjGWE 26,474,025 16eb3c3fcf4ce924a05e0cec2f72f7a8e80f0451<br>
+ウサビッチ第30話(DVD_640x480_WMV9).wmv io2etbjGWE 21,293,535 0a56e14b1a113b91f3b92063d2467073ac002f75<br>
+ウサビッチ第31話(DVD_640x480_WMV9).wmv io2etbjGWE 31,284,480 92544c7cb16d416985a1ffac9251333d044c52a7<br>
+ウサビッチ第32話(DVD_640x480_WMV9).wmv io2etbjGWE 22,370,748 0d596feae1176fed621fec5c920aba77f156d4da<br>
+ウサビッチ第33話(DVD_640x480_WMV9).wmv io2etbjGWE 21,383,988 f44c4c1a4eaf00880cd954f1ac364bc6ecfbd2d0<br>
+ウサビッチ第34話(DVD_640x480_WMV9).wmv io2etbjGWE 30,051,044 9c84a8d4e344ee0405a4a782cfcecaac343d7c36<br>
+ウサビッチ第35話(DVD_640x480_WMV9).wmv io2etbjGWE 25,816,185 8766dbe4605d62ca157f8edeb0ba25b180f0cfcf<br>
+ウサビッチ第36話(DVD_640x480_WMV9).wmv io2etbjGWE 23,382,177 05708e0939f98e596afc70202580296933d29520<br>
+ウサビッチ第37話(DVD_640x480_WMV9).wmv io2etbjGWE 20,512,350 01dee582d03880bfd738ae4fb826059391b1ae30<br>
+ウサビッチ第38話(DVD_640x480_WMV9).wmv io2etbjGWE 24,640,296 ab6a950197139a7249db6028263502a8c9174a2f<br>
+ウサビッチ第39話(DVD_640x480_WMV9).wmv io2etbjGWE 36,103,816 1ba43b328e866e23f4cd492ab077d0f94db17da5<br>
+<br></dd>
+<dt><span class="title">うしおととら<b>◆</b></span>07/02/17 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[OVA] うしおととら 第01話 「うしお とらとであうの緑」(CS版 DivX4.12 2Pass 1000kbps 24fps 640x480 DVD R R).avi kemoneko3oJWAlMfuT 214,522,154 d86484c0a022e00deb233df53164c0bd48b70a3b<br>
+[OVA] うしおととら 第02話 「石喰い・百足変化」(CS版 DivX4.12 2Pass 1000kbps 24fps 640x480 DVD R R).avi kemoneko3oJWAlMfuT 213,850,912 630f8f3d29bdaffd41914b56775611851a29e04f<br>
+[OVA] うしおととら 第03話 「符咒師鐶」(CS版 DivX4.12 2Pass 1000kbps 24fps 640x480 DVD R R).avi kemoneko3oJWAlMfuT 213,988,842 81f52b1cf9034683298aee996b7a4e5797e05885<br>
+[OVA] うしおととら 第04話 「鉄輪疾走」(CS版 DivX4.12 2Pass 1000kbps 24fps 640x480 DVD R R).avi kemoneko3oJWAlMfuT 216,708,534 da91098f62e92c35c9fbec1718f8df9eb7daefb5<br>
+[OVA] うしおととら 第05話 「餓眠様 ～とら街へ行く(前編)」(CS版 DivX4.12 2Pass 1000kbps 24fps 640x480 DVD R R).avi kemoneko3oJWAlMfuT 218,272,704 5bbcee5872a95481bd95676c32234f09572fefee<br>
+[OVA] うしおととら 第06話 「餓眠様 ～とら街へ行く(後編)」(CS版 DivX4.12 2Pass 1000kbps 24fps 640x480 DVD R R).avi kemoneko3oJWAlMfuT 216,571,918 98d0eee509de724c1ac43e18f3547da5b2b950c9<br>
+<br></dd>
+<dt><span class="title">うた∽かた<b>◆</b></span>06/08/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ] うた∽かた OP (DVD 640x480 WMV9 24f Vorbis 適当エンコ).mkv 8e3WXRH1Y3 39,530,597 8a2e319b1c058e2df7deea7595bda4ad17f3dbab<br>
+[アニメ] うた∽かた 第01話 「邂逅の初夏」 (DVD 640x480 WMV9 Vorbis).mkv 8e3WXRH1Y3 361,360,257 753687d4eec3bda2b5dd7c6d174677df9fdea8c2<br>
+[アニメ] うた∽かた 第02話 「近接の夜空」 (DVD 640x480 WMV9 Vorbis).mkv 8e3WXRH1Y3 324,095,284 0a0da86a6ed75b45db5dafbf9d8872207dae6183<br><br>
+[アニメ] うた∽かた 第01話 「邂逅の初夏」 (DVD 640x480 WMV9).wmv 8e3WXRH1Y3 367,472,537 7cfe9304b6539a28ab3fe1b01e38747e13270adc<br>
+[アニメ] うた∽かた 第02話 「近接の夜空」 (DVD 640x480 WMV9).wmv 8e3WXRH1Y3 330,608,397 9b9c88bb7eefbe809a68dca7738a34cc7375ab11<br>
+[アニメ] うた∽かた 第03話 「焦熱の砂浜」 (DVD 640x480 WMV9).wmv 8e3WXRH1Y3 355,872,397 6404c37fef96552aae3d43e209f1142db14f90f1<br>
+<hr class="A">
+[DVD] うた∽かた 鎌倉探訪記1 (H.264 4pass 640×480 AC3 オーディオコメンタリー有り Chapters無し).mkv WgPZCQtRPj 349,833,993 84046d1344061fc9e0b77401b2eae7747d91ec5e<br>
+[DVD] うた∽かた 鎌倉探訪記2 (H.264 640×480 AC3 オーディオコメンタリー有り Chapters無し rev.2).mkv WgPZCQtRPj 557,081,159 e68e7753e3dd4d5cfacb90c25e932fcc4c9f85a3<br>
+[DVD] うた∽かた 第01話 「邂逅の初夏」 (H.264 4pass 640×480 AC3 オーディオコメンタリー有り Chapters無し).mkv WgPZCQtRPj 392,768,868 20ea174b6f336d30e8e75dcc67e7edbe44ada621<br>
+[DVD] うた∽かた 第02話 「近接の夜空」 (H.264 4pass 640×480 AC3 オーディオコメンタリー有り Chapters無し).mkv WgPZCQtRPj 392,770,572 bfc5b6eed89e9456a22284603f2399ba15e19935<br>
+[DVD] うた∽かた 第03話 「焦熱の砂丘」 (H.264 4pass 640×480 AC3 オーディオコメンタリー有り Chapters無し).mkv WgPZCQtRPj 392,760,508 56c6f4139e6fdcad28c55bdd7478be031af1f0e2<br>
+[DVD] うた∽かた 第04話 「駿雨の湖畔」 (H.264 4pass 640×480 AC3 オーディオコメンタリー有り Chapters無し).mkv WgPZCQtRPj 393,188,521 cfa92df05aa9a4976c2386030c020454d8ca6bd3<br>
+[DVD] うた∽かた 第05話 「落涙の雷花」 (H.264 4pass 640×480 AC3 オーディオコメンタリー有り Chapters無し).mkv WgPZCQtRPj 392,767,876 08effeacff82c6eb502d5c8e6dae27be51e51a56<br>
+[DVD] うた∽かた 第06話 「濡肌の微熱」 (H.264 4pass 640×480 AC3 オーディオコメンタリー有り Chapters無し).mkv WgPZCQtRPj 392,765,163 70b59a2995391bc0bde0abba0ddcceb8a6eaaae8<br>
+[DVD] うた∽かた 第07話 「木末の嫉妬」 (H.264 4pass 640×480 AC3 オーディオコメンタリー有り Chapters無し).mkv WgPZCQtRPj 393,044,427 e73046fb133a78f3eb092127c221d9610d807c52<br>
+[DVD] うた∽かた 第08話 「散華の衝動」 (H.264 4pass 640×480 AC3 オーディオコメンタリー有り Chapters無し).mkv WgPZCQtRPj 392,771,769 8c0cb3d45f0941e36050536cbfb9299eb4d16c7a<br>
+[DVD] うた∽かた 第09話 「恋愛の痛痒」 (H.264 4pass 640×480 AC3 オーディオコメンタリー有り Chapters無し).mkv WgPZCQtRPj 392,771,787 3af755ead0c21c39f2d453d6fa3c944e213482da<br>
+[DVD] うた∽かた 第10話 「死生の再会」 (H.264 4pass 640×480 AC3 オーディオコメンタリー有り Chapters無し).mkv WgPZCQtRPj 392,778,256 7cb0ccac36c8798f30789eda87281c2c18a9ff08<br>
+[DVD] うた∽かた 第11話 「別離の波動」 (H.264 4pass 640×480 AC3 オーディオコメンタリー有り Chapters無し).mkv WgPZCQtRPj 392,961,315 778632685a200b522116a48ab45cf4487560eb5d<br>
+[DVD] うた∽かた 第12話 「欠片の詩歌」 (H.264 4pass 640×480 AC3 オーディオコメンタリー有り Chapters無し).mkv WgPZCQtRPj 393,120,167 34ab788eba3e06fe8728bf7bfeac5374e805a70d<br>
+[DVD] うた∽かた 第13話 「初冬の双夏」 (H.264 4pass 640×480 AC3 オーディオコメンタリー有り Chapters無し).mkv WgPZCQtRPj 392,962,956 e65b19813069c5eca664fa742af91f8b3cd16118<br>
+<br></dd>
+<dt><span class="title">うたわれるもの<b>◆</b></span>09/02/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] うたわれるもの DVD-BOX1 映像特典 「エクストラトレーラー」 [704x396 WMV9].wmv tad87901fCH2Cock 67,897,894 777cecd65eea4f12df7d9e8922e6570011a5a879<br>
+[アニメ DVD] うたわれるもの DVD-BOX1 映像特典 「ショートエピソード 第1話 ～ 絆 ～」 [704x396 WMV9].wmv tad87901fCH2Cock 52,227,990 e385903292ffae493cfeffdc8445bd01ef2238f8<br>
+[アニメ DVD] うたわれるもの DVD-BOX1 映像特典 「なぜなにうたわれるもの」 [704x396 WMV9].wmv tad87901fCH2Cock 194,196,656 631ca77c5134e5006c2938ae40472b7725a389b7<br>
+[アニメ DVD] うたわれるもの DVD-BOX2 映像特典 「うたわれるもの大百科 第一夜 ～その時トゥスクルが動いた～」 [704x396 WMV9].wmv tad87901fCH2Cock 201,531,258 bd426fca342bb1559587e7ab7b14a213d8c137f7<br>
+[アニメ DVD] うたわれるもの DVD-BOX2 映像特典 「エクストラトレーラー」 [704x396 WMV9].wmv tad87901fCH2Cock 60,504,983 13ce55cfda55f5738342efd240b808c3fcebb145<br>
+[アニメ DVD] うたわれるもの DVD-BOX2 映像特典 「ショートエピソード 第2話 ～ 目撃 ～」 [704x396 WMV9].wmv tad87901fCH2Cock 66,699,876 3096af7c39ede90f28256876e568dbbda7645ba5<br>
+[アニメ DVD] うたわれるもの DVD-BOX2 映像特典 「ショートエピソード 第2話 ノンテロップエンディング」 [704x396 WMV9].wmv tad87901fCH2Cock 20,934,833 eb35af963ad3cb54e9025e9b7638f1fdfbb94b74<br>
+[アニメ DVD] うたわれるもの DVD-BOX3 映像特典 「うたわれるもの大百科 第二夜 ～ハクオロ 栄光と悲劇の旅路～」 [704x396 WMV9].wmv tad87901fCH2Cock 177,873,619 3679a7ca3bbe1a98646139903476ad185445575b<br>
+[アニメ DVD] うたわれるもの DVD-BOX3 映像特典 「エクストラトレーラー」 [704x396 WMV9].wmv tad87901fCH2Cock 58,169,637 5669a428a0d13f13097140b34afe773683b625e1<br>
+[アニメ DVD] うたわれるもの DVD-BOX3 映像特典 「ショートエピソード 第3話 ～ こわされるもの ～」 [704x396 WMV9].wmv tad87901fCH2Cock 51,668,998 e148d001dcf7e3e27dcaef8dd8a2cf35f46fd7f0<br>
+[アニメ DVD] うたわれるもの DVD-BOX4 映像特典 「PS2ゲーム 『うたわれるもの～散りゆく者への子守唄～』 プロモーション映像」 [640x480 WMV9].wmv tad87901fCH2Cock 43,219,624 438380208340a54938fac71e7269a300fa507940<br>
+[アニメ DVD] うたわれるもの DVD-BOX4 映像特典 「うたわれるもの相談室エルルゥの部屋」 [704x396 WMV9].wmv tad87901fCH2Cock 150,576,484 97ee86aa58f372e87bd4554ea4ec03c0137b7ff2<br>
+[アニメ DVD] うたわれるもの DVD-BOX4 映像特典 「エクストラトレーラー」 [704x396 WMV9].wmv tad87901fCH2Cock 52,701,975 4b6eb7d48614d0a28923a42c32a574a70a14cf82<br>
+[アニメ DVD] うたわれるもの DVD-BOX4 映像特典 「ショートエピソード 第4話 ～ 禍日神 ヌグィソムカミ ～」 [704x396 WMV9].wmv tad87901fCH2Cock 88,181,439 8829fac19049a13078c377c930ea5b405f283adf<br>
+[アニメ DVD] うたわれるもの DVD-BOX4 映像特典 「ノンテロップオープニング」 [704x396 WMV9].wmv tad87901fCH2Cock 33,055,286 2d3b6cae2e482a86d4b5e38e3334d526a47a22e2<br>
+[アニメ DVD] うたわれるもの DVD-BOX4 映像特典 「ノンテロップエンディング」 [704x396 WMV9].wmv tad87901fCH2Cock 18,854,151 126c00a74ba03b321910f316a102b847fe45cde0<br>
+[アニメ DVD] うたわれるもの 第01話 「招かれざるもの」 [704x396 WMV9].wmv tad87901fCH2Cock 250,481,380 784c47f3740509f7c47af72c9b0b6542a56ea4f1<br>
+[アニメ DVD] うたわれるもの 第02話 「荒ぶる森の王」 [704x396 WMV9].wmv tad87901fCH2Cock 298,684,590 b99b138d6e5d9cced1743995a5d5a5a5a3b2c5ef<br>
+[アニメ DVD] うたわれるもの 第03話 「紫琥珀」 [704x396 WMV9].wmv tad87901fCH2Cock 231,593,127 9a6bd8edbb67b4e2d3b96ada0c9dce91c6c752f7<br>
+[アニメ DVD] うたわれるもの 第04話 「戻れぬ道」 [704x396 WMV9].wmv tad87901fCH2Cock 265,003,178 d305f86c40fd3905fde15f552330ef5a5b7295f4<br>
+[アニメ DVD] うたわれるもの 第05話 「森の娘」 [704x396 WMV9].wmv tad87901fCH2Cock 304,720,266 9250c6e43846cd30ddc6fdd41d55202db181f6b6<br>
+[アニメ DVD] うたわれるもの 第06話 「集う力」 [704x396 WMV9].wmv tad87901fCH2Cock 285,429,108 0678915893dd2350a7b0e74a5eb5915dcd500a38<br>
+[アニメ DVD] うたわれるもの 第07話 「皇都侵攻」 [704x396 WMV9].wmv tad87901fCH2Cock 361,310,954 44f18a277275d6c250547f1f93b97b07f3b686b0<br>
+[アニメ DVD] うたわれるもの 第08話 「調停者」 [704x396 WMV9].wmv tad87901fCH2Cock 272,905,479 e08caeb1d44ac86eeed120e7412620736c5ee67b<br>
+[アニメ DVD] うたわれるもの 第09話 「禁忌」 [704x396 WMV9].wmv tad87901fCH2Cock 295,165,152 dfa2e81da3e781b06bcd11fdcd501e1a7623e286<br>
+[アニメ DVD] うたわれるもの 第10話 「傭兵」 [704x396 WMV9].wmv tad87901fCH2Cock 347,496,310 d753bdc41ccd882b8d4e2ab32f6d2d374a1cd36d<br>
+[アニメ DVD] うたわれるもの 第11話 「永遠の約束」 [704x396 WMV9].wmv tad87901fCH2Cock 284,705,488 9d731d0b005f217df13dc9860b76d03bcf704ca6<br>
+[アニメ DVD] うたわれるもの 第12話 「動揺」 [704x396 WMV9].wmv tad87901fCH2Cock 318,526,681 d2bbada3a06be2265ecda53bb3ed95d8ce5b95d3<br>
+[アニメ DVD] うたわれるもの 第13話 「血塗られた戦い」 [704x396 WMV9].wmv tad87901fCH2Cock 354,765,452 fc866801b6c35c44e12a7f7ffdd9358b5bd9af1d<br>
+[アニメ DVD] うたわれるもの 第14話 「戦禍」 [704x396 WMV9].wmv tad87901fCH2Cock 354,921,847 3f4e23c12f674e8b8b049cf8e966d0b1f96246af<br>
+[アニメ DVD] うたわれるもの 第15話 「宴の終わり」 [704x396 WMV9].wmv tad87901fCH2Cock 405,180,829 548f0fa522485d15ad1dc5bef8df34a704ead168<br>
+[アニメ DVD] うたわれるもの 第16話 「戦いの果て」 [704x396 WMV9].wmv tad87901fCH2Cock 290,609,754 a552b285748318a2e6112a6fd0c927b6054f94f7<br>
+[アニメ DVD] うたわれるもの 第17話 「幼き皇」 [704x396 WMV9].wmv tad87901fCH2Cock 206,011,512 f01bdc1e33a104526269ef8f19b4ad03bdbd36c5<br>
+[アニメ DVD] うたわれるもの 第18話 「解放軍」 [704x396 WMV9].wmv tad87901fCH2Cock 282,107,140 434548a821d5b89a26e150c2d514aedafc5af782<br>
+[アニメ DVD] うたわれるもの 第19話 「決別」 [704x396 WMV9].wmv tad87901fCH2Cock 272,856,277 72a75f18091872e4bd56cc99a1b24e55c229826b<br>
+[アニメ DVD] うたわれるもの 第20話 「初陣」 [704x396 WMV9].wmv tad87901fCH2Cock 202,031,443 4fae04b435077528f54d5091f1a3fb34beefc43b<br>
+[アニメ DVD] うたわれるもの 第21話 「大封印」 [704x396 WMV9].wmv tad87901fCH2Cock 264,090,412 95835684db2b715526847a7afb844a28e1296763<br>
+[アニメ DVD] うたわれるもの 第22話 「忌まわしき契約」 [704x396 WMV9].wmv tad87901fCH2Cock 314,612,560 15d75b24688b6f3d2e21b4e51f8dc102720d398b<br>
+[アニメ DVD] うたわれるもの 第23話 「心の在り処」 [704x396 WMV9].wmv tad87901fCH2Cock 221,043,011 5bc87541d382d3c2890d89996639bd5053e496d0<br>
+[アニメ DVD] うたわれるもの 第24話 「滅びゆくもの」 [704x396 WMV9].wmv tad87901fCH2Cock 232,489,443 b8603f1ee2cfc0951ae337409fd1846ab750982f<br>
+[アニメ DVD] うたわれるもの 第25話 「太古の夢跡」 [704x396 WMV9].wmv tad87901fCH2Cock 248,993,002 1fbb3daa3fc0dca21e661cda6c74411c1992bc95<br>
+[アニメ DVD] うたわれるもの 第26話 「うたわれるもの」 [704x396 WMV9].wmv tad87901fCH2Cock 252,857,606 11df0e7e92e10ed6084d603403937d126624c293<br>
+<hr class="A">
+[アニメ DVD] うたわれるもの DVD-BOX01 映像特典 エクストラトレーラー 第01話～第07話 (704x396 XviD).mkv YTXu5UiCog 77,068,934 e1ea755162072af16cf2343351caa5c2c8b451ba<br>
+[アニメ DVD] うたわれるもの DVD-BOX01 映像特典 なぜなにうたわれるもの (704x396 XviD).mkv YTXu5UiCog 225,817,602 10458529eb482741b89af70bf1dfe6a2b634caef<br>
+[アニメ DVD] うたわれるもの DVD-BOX01 映像特典 ショートエピソード 第01話 「～絆～」(704x396 XviD).mkv YTXu5UiCog 61,837,822 e6187ad9c4524b85ab7e8fadc492a1c55618e10a<br>
+[アニメ DVD] うたわれるもの DVD-BOX02 映像特典 うたわれるもの大百科 第一夜 「～そのときトゥスクルが動いた～」 (704x396 XviD).mkv YTXu5UiCog 210,133,377 dfa0ae9040b1b1fe23086b6bb2de02bba2f26bd6<br>
+[アニメ DVD] うたわれるもの DVD-BOX02 映像特典 エクストラトレーラー 第08話～第13話 (704x396 XviD).mkv YTXu5UiCog 69,255,372 1a7bbec768f85ba2de6d8e1b0becb745245f06c4<br>
+[アニメ DVD] うたわれるもの DVD-BOX02 映像特典 ショートエピソード 第02話 「ノンテロップエンディング」 (704x396 XviD).mkv YTXu5UiCog 17,421,135 dfb2800d40200c42f35249f38fa5337e4cb91d4a<br>
+[アニメ DVD] うたわれるもの DVD-BOX02 映像特典 ショートエピソード 第02話 「～目撃～」(704x396 XviD).mkv YTXu5UiCog 68,820,812 d7fb4aa7f26a7591e3d2b3388a8bb4285028fd01<br>
+[アニメ DVD] うたわれるもの DVD-BOX03 映像特典 うたわれるもの大百科 第二夜 「～ハクオロ栄光と悲劇の旅路～」 (704x396 XviD).mkv YTXu5UiCog 218,129,740 560a9f9838a36f94a4a49db33e9bf6e9f2ab7100<br>
+[アニメ DVD] うたわれるもの DVD-BOX03 映像特典 エクストラトレーラー 第14話～第19話 (704x396 XviD).mkv YTXu5UiCog 72,502,924 acabc32bc663f6e35d5f841a5151a734bfcd440a<br>
+[アニメ DVD] うたわれるもの DVD-BOX03 映像特典 ショートエピソード 第03話 「～こわされるもの～」(704x396 XviD).mkv YTXu5UiCog 62,537,281 6cc2a30e5ec49844f0dfc38d8c237ba4104d405d<br>
+[アニメ DVD] うたわれるもの DVD-BOX04 映像特典 「うたわれるもの相談室 エルルゥの部屋」 (704x396 XviD).mkv YTXu5UiCog 223,968,085 bc2f86cf5d0aa3bc96e8aa1242b88be921f7cef7<br>
+[アニメ DVD] うたわれるもの DVD-BOX04 映像特典 PS2ゲーム「うたわれるもの ～散りゆく者への子守唄～」プロモーション映像 (640x480 XviD).mkv YTXu5UiCog 48,099,762 3a67c4d9149a4c824e8ee80809ed7b2f54613612<br>
+[アニメ DVD] うたわれるもの DVD-BOX04 映像特典 エクストラトレーラー 第20話～第26話 (704x396 XviD).mkv YTXu5UiCog 68,369,765 04ad192cf43029194f720c37499d96923af2c3b5<br>
+[アニメ DVD] うたわれるもの DVD-BOX04 映像特典 ショートエピソード 第04話 「～禍日神 ヌグィソムカミ～」(704x396 XviD).mkv YTXu5UiCog 116,510,876 f940dd00af6936c76045655e1ee7e48f3f89414f<br>
+[アニメ DVD] うたわれるもの DVD-BOX04 映像特典 ノンテロップオープニング (704x396 XviD).mkv YTXu5UiCog 37,687,024 64f2e089d858d180ff97cf3d02d7b0859b3a7632<br>
+[アニメ DVD] うたわれるもの DVD-BOX04 映像特典 ノンテロップエンディング (704x396 XviD).mkv YTXu5UiCog 17,627,163 3347b74cebfa279de02d94f16b2f96d43748daa4<br>
+[アニメ DVD] うたわれるもの 第01話 ｢招かれざるもの｣(704x396 XviD).mkv YTXu5UiCog 301,996,267 23e139aa9d3694ab1ee5db1dc94db0159d8c847e<br>
+[アニメ DVD] うたわれるもの 第02話 ｢荒ぶる森の王｣(704x396 XviD).mkv YTXu5UiCog 352,019,232 7461365867e52e05a6e3fb9258c79f10fd96d099<br>
+[アニメ DVD] うたわれるもの 第03話 ｢紫琥珀｣(704x396 XviD).mkv YTXu5UiCog 280,460,007 8af46275ec3dd8d6e0ad480979184dc389c003d8<br>
+[アニメ DVD] うたわれるもの 第04話 ｢戻れぬ道｣(704x396 XviD).mkv YTXu5UiCog 316,456,019 0f43057ec57a7c1f896bdcd96be5b88284bce524<br>
+[アニメ DVD] うたわれるもの 第05話 ｢森の娘｣(704x396 XviD).mkv YTXu5UiCog 368,704,407 ca97dcca602fc5c74f504978d75bf5fa4479599a<br>
+[アニメ DVD] うたわれるもの 第06話 「集う力｣(704x396 XviD).mkv YTXu5UiCog 334,187,911 f76db7821dde09cfc5cb0944df4b8efe25f563ee<br>
+[アニメ DVD] うたわれるもの 第07話 「皇都侵攻｣(704x396 XviD).mkv YTXu5UiCog 410,351,123 3c3676733180f99ce01bff310e8e5317e6e349c3<br>
+[アニメ DVD] うたわれるもの 第08話 「調停者｣(704x396 XviD).mkv YTXu5UiCog 317,528,062 3ea0e87724f492a32480068b296289ca9d3f14fd<br>
+[アニメ DVD] うたわれるもの 第09話 「禁忌｣(704x396 XviD).mkv YTXu5UiCog 331,720,754 facfb63a83929f7bcec55e669595f1aeba52f3e6<br>
+[アニメ DVD] うたわれるもの 第10話 ｢傭兵｣(704x396 XviD).mkv YTXu5UiCog 394,947,985 23b0cfdb824ad69d9015f675de99cd8e1895f9c7<br>
+[アニメ DVD] うたわれるもの 第11話 「永遠の約束｣(704x396 XviD).mkv YTXu5UiCog 325,446,173 00ca2fe76fecd9716f92a566e16c06dff8171095<br>
+[アニメ DVD] うたわれるもの 第12話 「動揺｣(704x396 XviD).mkv YTXu5UiCog 350,259,720 5a78243a12fe2c2d9f34fd5817f2736f2845824b<br>
+[アニメ DVD] うたわれるもの 第13話 「血塗られた戦い｣(704x396 XviD).mkv YTXu5UiCog 394,097,270 7fb773e002b2ada5b7e4efab6f13b34a3e07234f<br>
+[アニメ DVD] うたわれるもの 第14話 ｢戦禍」(704x396 XviD).mkv YTXu5UiCog 418,655,012 295c4e6ae44920f7b09049753f6654eef50267eb<br>
+[アニメ DVD] うたわれるもの 第15話 ｢宴の終わり」(704x396 XviD).mkv YTXu5UiCog 496,776,602 7c55b4f20d8bd9566f7d0d8516243bfde9093b01<br>
+[アニメ DVD] うたわれるもの 第16話 ｢戦いの果て」(704x396 XviD).mkv YTXu5UiCog 355,739,182 31415b762bf7de5ad6f101a78bfbb7f3e1ebe1db<br>
+[アニメ DVD] うたわれるもの 第17話 ｢幼き皇」(704x396 XviD).mkv YTXu5UiCog 257,690,010 cdc5272e9b0ec2dc1ee13976e7ebb75ecd90ed23<br>
+[アニメ DVD] うたわれるもの 第18話 ｢解放軍」(704x396 XviD).mkv YTXu5UiCog 333,431,059 152563d58401be9e3a3f1b7c0bba64c1f8e27115<br>
+[アニメ DVD] うたわれるもの 第19話 ｢決別」(704x396 XviD).mkv YTXu5UiCog 330,484,984 cf604e8a4ac13372b089ef102518d8ad07d63587<br>
+[アニメ DVD] うたわれるもの 第20話 ｢初陣」(704x396 XviD).mkv YTXu5UiCog 262,472,281 03d05e77d494ede98d7a569dea98c58905c597cc<br>
+[アニメ DVD] うたわれるもの 第21話 ｢大封印」(704x396 XviD).mkv YTXu5UiCog 333,641,912 c958de3285e1213c7ae3bffe46cf4c22dc919f60<br>
+[アニメ DVD] うたわれるもの 第22話 ｢忌まわしき契約」(704x396 XviD).mkv YTXu5UiCog 388,922,489 3cd18b55e6ffb1af3356c65dc3df3272f19aa4eb<br>
+[アニメ DVD] うたわれるもの 第23話 ｢心の在り処」(704x396 XviD).mkv YTXu5UiCog 285,916,638 275770e13bbe7ec8c9834b9b4ab7021561ff5f90<br>
+[アニメ DVD] うたわれるもの 第24話 ｢滅びゆくもの」(704x396 XviD).mkv YTXu5UiCog 293,397,438 55ee80013c4ded1ecb59fbad3dcb2efdc89dde82<br>
+[アニメ DVD] うたわれるもの 第25話 ｢太古の夢跡」(704x396 XviD).mkv YTXu5UiCog 310,914,926 d81acb19e68358b926308ddd348b49b2d88f61e1<br>
+[アニメ DVD] うたわれるもの 第26話 ｢うたわれるもの」(704x396 XviD).mkv YTXu5UiCog 314,175,475 393aeb0d621b00130149afa18240b744778104a4<br>
+<hr class="A">
+[アニメ] うたわれるもの ショートエピソード 第01話 「～絆～」 (DVD 720x396 WVC1 Q95).wmv FQLwf4F7yI 71,321,692 808d4e713e764aa125b3426afa6f16a287b4155f<br>
+[アニメ] うたわれるもの 第01話 「招かれざるもの」 (DVD 720x396 WVC1 Q95 Test).wmv FQLwf4F7yI 382,727,020 fea5b741819442611db91d70f49583758fd8816b<br>
+[アニメ] うたわれるもの 第02話 「荒ぶる森の王」 (DVD 720x396 WVC1 Q95).wmv FQLwf4F7yI 451,719,020 c22f3fb67b676db93d9002816f76fc2931540ae1<br>
+[アニメ] うたわれるもの 第03話 「紫琥珀」 (DVD 720x396 WVC1 Q95).wmv FQLwf4F7yI 371,399,020 73e26c419a19d0791a9270b8d7ff8c013681c49c<br>
+[アニメ] うたわれるもの 第04話 「戻れぬ道」 (DVD 720x396 WVC1 Q95).wmv FQLwf4F7yI 407,927,020 4eebf9a2d4c43050cecdc25e9982d4acd69ac720<br>
+[アニメ] うたわれるもの 第05話 「森の娘」 (DVD 720x396 WVC1 Q95).wmv FQLwf4F7yI 461,671,020 dbdf9ec5345a933bc2f8d0ae5d3c72d11aeb1eec<br>
+[アニメ] うたわれるもの 第06話 「集う力」 (DVD 720x396 WVC1 Q95).wmv FQLwf4F7yI 437,831,020 08c48026dc5799da3ce47d4c267e8f1a0b9cd0ce<br>
+<hr class="A">
+[DVD] うたわれるもの 余禄其之一 「なぜなにうたわれるもの」 (704x396 WMV9).wmv XWGw6KiGdI 223,939,754 63b15f9b0b9337b0821d0d2b48136980ca11de02<br>
+[DVD] うたわれるもの 余禄其之一 ショートエピソード 第01話 (704x396 WMV9).wmv XWGw6KiGdI 65,545,412 c5241edbfbbc051c0500e43206297820493e23a1<br>
+[DVD] うたわれるもの 余禄其之二 「うたわれるもの大百科 第一夜 その時トゥスクルが動いた」 (704x396 WMV9).wmv XWGw6KiGdI 212,090,261 69b72913c41ddee652007df95775056eb14a4384<br>
+[DVD] うたわれるもの 余禄其之二 ショートエピソード 第02話 (704x396 WMV9).wmv XWGw6KiGdI 80,182,094 eb9b6ef16ec535e8a722d58f1e3b716ac56f3b32<br>
+[DVD] うたわれるもの 余禄其之二 ショートエピソード 第02話 ノンテロップED (704x396 WMV9).wmv XWGw6KiGdI 24,329,732 0e7623d39e865dc7096a0f9c440a7bdfd8e3a93f<br>
+[DVD] うたわれるもの 第01話 「招かれざるもの」 (704x396 WMV9).wmv XWGw6KiGdI 303,006,695 9a1bdc6d06928958652a705c236c7e1575bfb63d<br>
+[DVD] うたわれるもの 第02話 「荒ぶる森の王」 (704x396 WMV9).wmv XWGw6KiGdI 351,760,856 591173fcee5d899c9bfe3afee9e658ddbf2758ae<br>
+[DVD] うたわれるもの 第03話 「紫琥珀」 (704x396 WMV9).wmv XWGw6KiGdI 284,389,817 de81b447a38b5834839822a8008b4979dee266af<br>
+[DVD] うたわれるもの 第04話 「戻れぬ道」 (704x396 WMV9).wmv XWGw6KiGdI 314,897,153 a36ffa5723f0c5086dc0a081bacfca20f3dc27c7<br>
+[DVD] うたわれるもの 第05話 「森の娘」 (704x396 WMV9).wmv XWGw6KiGdI 369,284,075 d901798c945fbf586e9a30719e651510c92bcee5<br>
+[DVD] うたわれるもの 第06話 「集う力」 (704x396 WMV9).wmv XWGw6KiGdI 348,266,081 acd16cac001bdb8627fb1dbf9145096b7c696c51<br>
+[DVD] うたわれるもの 第07話 「皇都侵攻」 (704x396 WMV9).wmv XWGw6KiGdI 412,347,920 d55a47c26f5ad20c158c9d8c6b83fd54c113c3fc<br>
+[DVD] うたわれるもの 第08話 「調停者」 (704x396 WMV9).wmv XWGw6KiGdI 327,058,970 aac564786b40b4b32f75f40c7a08fdaa1cc54141<br>
+[DVD] うたわれるもの 第09話 「禁忌」 (704x396 WMV9).wmv XWGw6KiGdI 340,051,304 9f6c3fe86fc78de23e3dde42cee67b8ede8d46f7<br>
+[DVD] うたわれるもの 第10話 「傭兵」 (704x396 WMV9).wmv XWGw6KiGdI 386,544,146 bf1c7869e174723ea1adbcfdcd75f7fac697a5ac<br>
+[DVD] うたわれるもの 第11話 「永遠の約束」 (704x396 WMV9).wmv XWGw6KiGdI 331,203,362 97eaab69244e1b2c281483a16865914b77f91f70<br>
+[DVD] うたわれるもの 第12話 「動揺」 (704x396 WMV9).wmv XWGw6KiGdI 362,763,230 815217c099a8a3c4fc050291d45c464b482e27ac<br>
+[DVD] うたわれるもの 第13話 「血塗られた戦い」 (704x396 WMV9).wmv XWGw6KiGdI 407,192,105 7ea94ad91dd9a0fce2e80755172322077f224dba<br>
+<hr class="A">
+【アニメ DVD】 うたわれるもの余禄 其之一 「エクストラトレーラー 第01話～第07話」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 77,977,502 42314131de603d00b9773f67b16afc7744a3fd9c<br>
+【アニメ DVD】 うたわれるもの余禄 其之一 「なぜなにうたわれるもの」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 243,523,396 127aee49ee85b07cc4a802cbcb5af8d5b7ad0fc1<br>
+【アニメ DVD】 うたわれるもの余禄 其之一 ショートエピソード 第01話 「～絆～」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 61,356,662 2349329cb1c9f78f16209e0cb23194040d0cd19d<br>
+【アニメ DVD】 うたわれるもの余禄 其之二 「エクストラトレーラー 第08話～第13話」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 69,977,068 715afddb2a88966729e7e5d3535c535e708ff3a2<br>
+【アニメ DVD】 うたわれるもの余禄 其之二 うたわれるもの大百科 第一夜 「～その時トゥスクルが動いた～」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 237,939,110 18d8ebe9b3d775d86062a963ca1afe66f18aaa63<br>
+【アニメ DVD】 うたわれるもの余禄 其之二 ショートエピソード 第02話 「～目撃～」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 76,156,034 10ccaab604680e0c28dae9386157f1d90a25a923<br>
+【アニメ DVD】 うたわれるもの余禄 其之二 ショートエピソード 第02話 「～目撃～ ノンテロップED」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 21,527,992 d416732cacad475f9637f3a62e913c0805273f93<br>
+【アニメ DVD】 うたわれるもの余禄 其之三 「エクストラトレーラー 第14話～第19話」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 73,209,068 b0a3653b5d1e7df858c0b1aefcc0922197e00dc3<br>
+【アニメ DVD】 うたわれるもの余禄 其之三 うたわれるもの大百科 第二夜 「～ハクオロ 栄光と悲劇の旅路～」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 226,962,846 23ff13f25de2554a6207217643bd73983e898081<br>
+【アニメ DVD】 うたわれるもの余禄 其之三 ショートエピソード 第03話 「～こわされるもの～」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 62,764,786 98773dac8250735aa20da3239e7ccd7a7d9ab1e3<br>
+【アニメ DVD】 うたわれるもの余禄 其之四 「ノンテロップOP」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 40,871,700 3a826f5cd8a8190e737e020c5b4c18e4550e1f20<br>
+【アニメ DVD】 うたわれるもの余禄 其之四 「ノンテロップED」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 23,879,700 eb312f3e3bfe8343ea66cfad6b47cc7c22c54c49<br>
+【アニメ DVD】 うたわれるもの余禄 其之四 「うたわれるもの相談室 エルルゥの部屋」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 243,334,252 2abd9da77cdb7566799c10a6118d71f1440eda09<br>
+【アニメ DVD】 うたわれるもの余禄 其之四 「エクストラトレーラー 第20話～第26話」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 70,361,488 b889b85b7c31bf1e54eb484a6eb59b7b5f70fb0e<br>
+【アニメ DVD】 うたわれるもの余禄 其之四 ショートエピソード 第04話 「～禍日神 ヌグィソムカミ～」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 123,055,104 15a3900fb0109b5ac83e81adb62b4c689e2468b4<br>
+【アニメ DVD】 うたわれるもの 第01話 「招かれざるもの」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 320,521,938 b0dc8d01ccc1293a97b878749ef166f75e7911c5<br>
+【アニメ DVD】 うたわれるもの 第02話 「荒ぶる森の王」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 377,865,922 c058a44369844e152abcc03ed09abab2c1670289<br>
+【アニメ DVD】 うたわれるもの 第03話 「紫琥珀」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 298,089,916 a2392a6903021fd630f392dfcf595ca6558f748f<br>
+【アニメ DVD】 うたわれるもの 第04話 「戻れぬ道」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 327,449,918 1a079b82fc08ecd8745093694f271a0bf3cad26c<br>
+【アニメ DVD】 うたわれるもの 第05話 「森の娘」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 389,945,930 f5673cb2b6cada4b389baca881bc10587ed4ec0b<br>
+【アニメ DVD】 うたわれるもの 第06話 「集う力」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 356,041,916 9fb6cd8aabe7b63c4b2689849153e7eac31907ee<br>
+【アニメ DVD】 うたわれるもの 第07話 「皇都侵攻」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 432,521,918 b21fa203ef90ff183971e55833341683f597d10b<br>
+【アニメ DVD】 うたわれるもの 第08話 「調停者」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 337,881,930 08104bb255d8438eebecd38f4d40fbde4913bc61<br>
+【アニメ DVD】 うたわれるもの 第09話 「禁忌」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 353,881,914 270579552dbe305fc2b146cb678f9b32efa6e252<br>
+【アニメ DVD】 うたわれるもの 第10話 「傭兵」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 406,121,914 65df7bb39bbd38901a4a0f9220e2eaf8f60ce150<br>
+【アニメ DVD】 うたわれるもの 第11話 「永遠の約束」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 354,113,984 90532235acee30b24836dabfeb0f1f1eae1e8051<br>
+【アニメ DVD】 うたわれるもの 第12話 「動揺」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 383,113,914 2578c54b1d952ecf0cd20ee738f3b24621b39714<br>
+【アニメ DVD】 うたわれるもの 第13話 「血塗られた戦い」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 420,329,924 d63d826d4b2b8baa1ab3b738e74209487e02ae86<br>
+【アニメ DVD】 うたわれるもの 第14話 「戦禍」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 453,177,900 e129eb90dd65f1162951d0d30561df1f1f11169b<br>
+【アニメ DVD】 うたわれるもの 第15話 「宴の終わり」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 510,633,906 7c492ce0864dc53251349141ba0484c3fc7865c5<br>
+【アニメ DVD】 うたわれるもの 第16話 「戦いの果て」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 375,353,906 6631ae43111fb348d0fbb1c848b202a33ce89b35<br>
+【アニメ DVD】 うたわれるもの 第17話 「幼き皇」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 267,417,902 f0fa187dc82a85fe3ac3927acd3033bd64c67ee8<br>
+【アニメ DVD】 うたわれるもの 第18話 「解放軍」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 366,473,902 8624e9addf43f43a49932f6d7b4c4d3fe8c65043<br>
+【アニメ DVD】 うたわれるもの 第19話 「決別」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 354,873,900 385e838ea6ed4e9b49d8f10d45d26f6d13ca7eb4<br>
+【アニメ DVD】 うたわれるもの 第20話 「初陣」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 274,153,900 19f182375556fecb9acc3802026dea18ff5afc51<br>
+【アニメ DVD】 うたわれるもの 第21話 「大封印」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 365,913,902 2eb694dcde7ef957c5b2d4de05ac296fde83067c<br>
+【アニメ DVD】 うたわれるもの 第22話 「忌まわしき契約」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 417,897,910 89955293b577206fc43a4265580dd578884072e4<br>
+【アニメ DVD】 うたわれるもの 第23話 「心の在り処」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 300,953,906 bb322651ce02c2407a4a7873da1f524cbc1f7f66<br>
+【アニメ DVD】 うたわれるもの 第24話 「滅びゆくもの」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 309,849,908 868359e06006bdef7ebf963c8311a1af1d1dda7e<br>
+【アニメ DVD】 うたわれるもの 第25話 「太古の夢跡」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 337,369,906 bcdf3ad26da69332126dff1c35a4bc9cf5a64a62<br>
+【アニメ DVD】 うたわれるもの 第26話 「うたわれるもの」 ( 704x480 16：9 VC-1 ).wmv YUKKY1dzxv 331,433,700 e6060a588faac4c5d42b0ec28bdf4780caeb72d8<br><br>
+【アニメ DVD】 うたわれるもの 章之一 Menu (bmp2枚).zip YUKKY1dzxv 2,073,922 68105b8d96f4ca5ce7aaa62aa50cd3ca63b9c589<br>
+【アニメ DVD】 うたわれるもの余禄 其之一 「エクストラトレーラー 第01話～第07話」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 49,563,375 400054577f6b3c7c18e36237cc80e1bfce09a70f<br>
+【アニメ DVD】 うたわれるもの余禄 其之一 「なぜなにうたわれるもの」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 170,479,115 32ad53aa369afe2e2a3c8ed36e26373307655266<br>
+【アニメ DVD】 うたわれるもの余禄 其之一 ショートエピソード 第01話 「～絆～」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 45,123,510 6bbcda0155571a57676265e6f4bec83f8388d751<br>
+【アニメ DVD】 うたわれるもの余禄 其之二 「エクストラトレーラー 第08話～第13話」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 44,276,620 637c8ab0682b3091508b9776eba1c74d4e28078c<br>
+【アニメ DVD】 うたわれるもの余禄 其之二 うたわれるもの大百科 第一夜 「～その時トゥスクルが動いた～」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 169,437,686 c4ef1ece6d5d0d6fa2894e78863caceb437f2548<br>
+【アニメ DVD】 うたわれるもの余禄 其之二 ショートエピソード 第02話 「～目撃～ ノンテロップED」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 13,393,066 aba51dfc4d3c6e606a0d250c8b18feef4fdf92da<br>
+【アニメ DVD】 うたわれるもの余禄 其之二 ショートエピソード 第02話 「～目撃～」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 51,229,294 1178eca6a78495a61082dccab8e7509e4e5b4188<br>
+【アニメ DVD】 うたわれるもの余禄 其之三 「エクストラトレーラー 第14話～第19話」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 45,864,832 c69d38153ab4c67a49fc5b6255c780ddd0f35065<br>
+【アニメ DVD】 うたわれるもの余禄 其之三 うたわれるもの大百科 第二夜 「～ハクオロ 栄光と悲劇の旅路～」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 170,926,256 d8dc423537e35ab3cd42a0349cd1e28e44ecf767<br>
+【アニメ DVD】 うたわれるもの余禄 其之四 「PS2ゲーム うたわれるもの ～散りゆく者への子守唄～ プロモーション映像」 ( 704x480 4：3 x264 AAC ).mkv YUKKY1dzxv 34,769,670 c9e343c488b17993bba6993b5f72887aa329a92a<br>
+【アニメ DVD】 うたわれるもの余禄 其之四 「うたわれるもの相談室 エルルゥの部屋」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 173,709,878 819a5212aacaccccc562fa5828e73e5d4fb2247d<br>
+【アニメ DVD】 うたわれるもの余禄 其之四 「エクストラトレーラー 第20話～第26話」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 43,042,484 5e5f713ca2741152cf437dc4131111564282feb4<br>
+【アニメ DVD】 うたわれるもの余禄 其之四 「ノンテロップOP」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 28,287,489 cbda52dacd3bf59d6e95dc49c32fdbb51216549f<br>
+【アニメ DVD】 うたわれるもの余禄 其之四 「ノンテロップED」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 14,806,368 40406d066e2e1f6e0d9bda779f0c7cba67a034f4<br>
+【アニメ DVD】 うたわれるもの余禄 其之四 ショートエピソード 第04話 「～禍日神 ヌグィソムカミ～」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 72,391,814 fc030acdc397b247a6705717a8b24c59d3fe1a48<br>
+【アニメ DVD】 うたわれるもの 第01話 「招かれざるもの」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 245,268,242 eb96e4918312533295a2b2971784ddd09b115d11<br>
+【アニメ DVD】 うたわれるもの 第02話 「荒ぶる森の王」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 275,442,111 fda70989831d6e60c74aa51fa4f9b7e40bd2cc04<br>
+【アニメ DVD】 うたわれるもの 第03話 「紫琥珀」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 230,302,115 eb23e53bf24fa972bf1f7c58e4218d1510bab801<br>
+【アニメ DVD】 うたわれるもの 第04話 「戻れぬ道」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 251,905,712 76c63bb9b697c0db9577426904fecd2a1cfb8324<br>
+【アニメ DVD】 うたわれるもの 第05話 「森の娘」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 283,337,923 54b653c42d37d206d9e196087f7d50b09bcca797<br>
+【アニメ DVD】 うたわれるもの 第06話 「集う力」 ( 704x480 16：9 x264 AAC rev2 ).mkv YUKKY1dzxv 265,085,013 8721dbd6a471aa8c2e928a0ed46bf5bfe355d2f8<br>
+【アニメ DVD】 うたわれるもの 第07話 「皇都侵攻」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 294,639,724 d774f9dbfd5a3ef708c4d444cb572e15c8fe97fb<br>
+【アニメ DVD】 うたわれるもの 第08話 「調停者」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 249,764,424 35ce17ba003ea2f7c2d3891b17aa559c2a6afc37<br>
+【アニメ DVD】 うたわれるもの 第09話 「禁忌」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 258,598,446 2baf379552d55efcb6997d32dcadb16e2126419c<br>
+【アニメ DVD】 うたわれるもの 第10話 「傭兵」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 292,826,500 36fbcd23ce96ff81882914de2a7629cad930a3da<br>
+【アニメ DVD】 うたわれるもの 第11話 「永遠の約束」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 252,657,338 391a314eb4de727445835eed84dcd41204cfc02f<br>
+【アニメ DVD】 うたわれるもの 第12話 「動揺」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 280,671,803 4e89aa21885a6a04f1d3eeeff751007f7880edae<br>
+【アニメ DVD】 うたわれるもの 第13話 「血塗られた戦い」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 294,242,019 447ac796fc2369557ef850463b454a3ee531343e<br>
+【アニメ DVD】 うたわれるもの 第14話 「戦禍」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 313,266,710 05ee7035dc615fc475fceca1838ca5b09b21726e<br>
+【アニメ DVD】 うたわれるもの 第15話 「宴の終わり」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 362,724,474 6b9724342929a75566de33a6cf2b5ebb0cb59fc5<br>
+【アニメ DVD】 うたわれるもの 第16話 「戦いの果て」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 279,641,845 ebfd28aa259736f94ff960f76e1e6cf5cdd85490<br>
+【アニメ DVD】 うたわれるもの 第17話 「幼き皇」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 212,348,991 6e73326187b8bbbb96774f5ad2696df33c2cd6ea<br>
+【アニメ DVD】 うたわれるもの 第18話 「解放軍」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 261,835,955 4dd237f13798b51707129c7cffd0690c32ce7096<br>
+【アニメ DVD】 うたわれるもの 第19話 「決別」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 264,226,489 029729d4c9ee55365d0218822a9b90f9fb6908e2<br>
+【アニメ DVD】 うたわれるもの 第20話 「初陣」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 219,090,626 a80f2f51a297470aa6b30a61de4b653a3645909c<br>
+【アニメ DVD】 うたわれるもの 第21話 「大封印」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 265,070,380 b2823feef92bc8ddfcf80aaa13145e565d8b8349<br>
+【アニメ DVD】 うたわれるもの 第22話 「忌まわしき契約」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 300,996,105 18f847e16d9b9bc95abc39084cc26052b3dd11b4<br>
+【アニメ DVD】 うたわれるもの 第23話 「心の在り処」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 232,839,298 6fc796bebd56c786021baeb21011f6560fdbace6<br>
+【アニメ DVD】 うたわれるもの 第24話 「滅びゆくもの」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 244,144,845 2a5bc2f3a8d0890ee096f3d0c6ca699c8ca747cd<br>
+【アニメ DVD】 うたわれるもの 第25話 「太古の夢跡」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 250,047,403 ded58b949376ee4749998412b2ba50abbe74b11d<br>
+【アニメ DVD】 うたわれるもの 第26話 「うたわれるもの」 ( 704x480 16：9 x264 AAC ).mkv YUKKY1dzxv 234,416,849 91981dedde0fa217cbde7019b2cc3b7452d5939a<br>
+<hr class="A">
+うたわれるもの DVD-BOX 章之一 メニューまとめ(DVD 720x480 bmp B790CBEE).rar wv6uCuxtht 1,580,759 9706645e7f7f83c486a1c4cf2ca3cd38442a3677<br>
+うたわれるもの DVD-BOX 章之二 メニューまとめ(DVD 720x480 bmp 927798D0).rar wv6uCuxtht 1,469,029 a35dd85e9869c5bcd258dae0ef6c6fe4ec9b717b<br>
+うたわれるもの DVD-BOX 章之四 メニューまとめ(DVD 720x480 bmp 1AD5831B).rar wv6uCuxtht 1,429,847 fb25002b423e86cd982418cf7fcf30968dd38bf6<br>
+うたわれるもの余禄 其之一 「うたわれるもの」エクストラトレーラー 第01話～第07話(DVD 716x480[40：33] WMV9 0DB6C3D5).wmv wv6uCuxtht 85,497,199 02fff30d8c7fb6936a89d7e85b99de5f1e387c04<br>
+うたわれるもの余禄 其之一 ショートエピソード 第1話「絆」(DVD 716x480[40：33] WMV9 FA32BAEB).wmv wv6uCuxtht 72,092,363 389cbcb68c67a9c7249052bfb63f89dcd8b586fa<br>
+うたわれるもの余禄 其之一 なぜなにうたわれるもの(DVD 716x480[40：33] WMV9 DA3B05F9).wmv wv6uCuxtht 274,898,907 3ed109742a0f423dc9021932e06455ea47d6a37c<br>
+うたわれるもの余禄 其之二 「うたわれるもの」エクストラトレーラー 第08話～第13話(DVD 716x480[40：33] WMV9 F5E47BEE).wmv wv6uCuxtht 78,632,765 358baee01acf672ed10bb98e9e7d488e2d7b5b48<br>
+うたわれるもの余禄 其之二 うたわれるもの大百科 第一夜 その時トゥスクルが動いた(DVD 716x480[40：33] WMV9 4CAACBBB).wmv wv6uCuxtht 272,386,557 c6ac9ed233c87ed27b1102d63ae54bc60db8481c<br>
+うたわれるもの余禄 其之二 ショートエピソード 第2話 ノンテロップエンディング(DVD 716x480[40：33] WMV9 413F0F54).wmv wv6uCuxtht 63,639,659 5674f1b64a8e56ca9bc03389529574034afdad40<br>
+うたわれるもの余禄 其之二 ショートエピソード 第2話「目撃」(DVD 716x480[40：33] WMV9 1E561B85).wmv wv6uCuxtht 91,307,733 3423545a0af84f246bc5d57b408fda6b0cdcd272<br>
+うたわれるもの余禄 其之三 「うたわれるもの」エクストラトレーラー 第14話～第19話(DVD 716x480[40：33] WMV9 F7949902).wmv wv6uCuxtht 81,224,765 18eaa59e03d94a3ed98e7201925705dba5e1fc21<br>
+うたわれるもの余禄 其之三 うたわれるもの大百科 第二夜 ハクオロ栄光と悲劇の旅路(DVD 716x480[40：33] WMV9 685492DD).wmv wv6uCuxtht 264,866,291 d376f1db40d89cf676a6743fb72853c303968a82<br>
+うたわれるもの余禄 其之三 ショートエピソード 第3話「こわされるもの」(DVD 716x480[40：33] WMV9 44541986).wmv wv6uCuxtht 71,644,461 69802d786e7795844fa8cdf428395caf5b54c408<br>
+うたわれるもの余禄 其之四 「うたわれるもの」エクストラトレーラー 第20話～第26話(DVD 716x480[40：33] WMV9 7A315184).wmv wv6uCuxtht 81,463,341 206e89ba317f663aca4be9578921e571e68f9cf4<br>
+うたわれるもの余禄 其之四 「うたわれるもの相談室 エルルゥの部屋」(DVD 716x480[40：33] WMV9 CBCDEB78).wmv wv6uCuxtht 288,748,571 0b804a94f362ea2caa27c2c6e5104b3e806d0813<br>
+うたわれるもの余禄 其之四 PS2ゲーム プロモーション映像(DVD 716x480[10：11] WMV9 80D84563).wmv wv6uCuxtht 117,494,867 414425646264640b459d074b66ebf42816fa4651<br>
+うたわれるもの余禄 其之四 ショートエピソード 第4話「禍日神～ヌグィソムカミ～」(DVD 716x480[40：33] WMV9 02C83725).wmv wv6uCuxtht 151,881,511 3f45db6ac2ad5f3a64726bef5e45378fe8aca08a<br>
+うたわれるもの余禄 其之四 ノンテロップオープニング(DVD 716x480[40：33] WMV9 57258358).wmv wv6uCuxtht 80,230,585 11ecdf720bd96c9477f8fbda5c38ce934099ff0e<br>
+うたわれるもの余禄 其之四 ノンテロップエンディング(DVD 716x480[40：33] WMV9 718B2FF0).wmv wv6uCuxtht 60,022,579 a17755972ef6d96fcc0e0df8592822fa1caa4404<br>
+うたわれるもの 第一巻 関連情報(DVD 720x480[10：11] WMV9 FF925394).wmv wv6uCuxtht 27,950,255 1e016c727a41ef40abba99325c821f1ca94f7c7e<br>
+うたわれるもの 第三巻 関連情報(DVD 720x480[10：11] WMV9 2E5FF83E).wmv wv6uCuxtht 36,045,359 91f167106e711eb02176e49a2fa2c867aa95a0a0<br>
+うたわれるもの 第01話「招かれざるもの」(DVD 716x480[40：33] WMV9 B0991F0D).wmv wv6uCuxtht 373,193,459 a8b12c53191271bc3ec52e06d3751ccfa4d02873<br>
+うたわれるもの 第02話「荒ぶる森の王」(DVD 716x480[40：33] WMV9 CEC301F2).wmv wv6uCuxtht 448,633,459 89490ee1fa8d3f5ace1af65e61d0031f4082f380<br>
+うたわれるもの 第03話「紫琥珀」(DVD 716x480[40：33] WMV9 3B25E5B7).wmv wv6uCuxtht 347,929,459 d186711171cc2909f96b76bb7d18ed323d59c47c<br>
+うたわれるもの 第04話「戻れぬ道」(DVD 716x480[40：33] WMV9 690FF90B).wmv wv6uCuxtht 389,449,459 80bdd76ee6d5428b47adf2c4d1bbae849ff8e066<br>
+うたわれるもの 第05話「森の娘」(DVD 716x480[40：33] WMV9 3C7B7B29).wmv wv6uCuxtht 457,513,459 e51f2cc01102a4d9a7a080c16a7697a215e738c7<br>
+うたわれるもの 第06話「集う力」(DVD 716x480[40：33] WMV9 C8343746).wmv wv6uCuxtht 424,217,459 61a7e3d1a4551ec5a1b333cd2a5dc49fb3a70a08<br>
+うたわれるもの 第07話「皇都侵攻」(DVD 716x480[40：33] WMV9 8CE4D349).wmv wv6uCuxtht 508,057,459 7171a972f554e517ba1561124774a21c432d8682<br>
+うたわれるもの 第08話「調停者」(DVD 716x480[40：33] WMV9 CA7CF885).wmv wv6uCuxtht 399,369,459 77943d1b125a52dd5ed4ac52793ecee1c80bbbb3<br>
+うたわれるもの 第09話「禁忌」(DVD 716x480[40：33] WMV9 39C5B5C7).wmv wv6uCuxtht 423,097,459 f2f65a5caba6b0721d2e9033822929027a2a600f<br>
+うたわれるもの 第10話「傭兵」(DVD 716x480[40：33] WMV9 6F270057).wmv wv6uCuxtht 493,097,459 a61b8f587a40544518662a28b479b08fc92cbb6c<br>
+うたわれるもの 第11話「永遠の約束」(DVD 716x480[40：33] WMV9 99BF6781).wmv wv6uCuxtht 410,185,445 599926c7c3ff06540876e7a92c663f5105300c43<br>
+うたわれるもの 第12話「動揺」(DVD 716x480[40：33] WMV9 C8F1F65B).wmv wv6uCuxtht 457,657,459 ad31a7f9bd90c2ed5db1538685b4e2a15392d69f<br>
+うたわれるもの 第13話「血塗られた戦い」(DVD 716x480[40：33] WMV9 54D54B0B).wmv wv6uCuxtht 502,521,459 c48526cac012984809cea9ec0bf3f99a43e3761c<br>
+うたわれるもの 第14話「戦禍」(DVD 716x480[40：33] WMV9 A7D9FA4F).wmv wv6uCuxtht 540,889,445 a2eb846f80fc7eae940a89a633c33e057185583a<br>
+うたわれるもの 第15話「宴の終わり」(DVD 716x480[40：33] WMV9 E5346E8D).wmv wv6uCuxtht 610,185,445 f1b96e81c5fb98b7503919267cab66ebfcd3248a<br>
+うたわれるもの 第16話「戦いの果て」(DVD 716x480[40：33] WMV9 82B192D9).wmv wv6uCuxtht 457,193,445 c3e44735309e93d2f7af6e3582acf788ff0e09a4<br>
+うたわれるもの 第17話「幼き皇」(DVD 716x480[40：33] WMV9 E6751C58).wmv wv6uCuxtht 316,729,445 3bee1b4ee7373f42db612a1f2f3d5158430cae3a<br>
+うたわれるもの 第18話「解放軍」(DVD 716x480[40：33] WMV9 E7867563).wmv wv6uCuxtht 436,361,445 461b80f36879b3a2e9ee79caa4182702945be9e3<br>
+うたわれるもの 第19話「決別」(DVD 716x480[40：33] WMV9 67226F23).wmv wv6uCuxtht 422,953,445 5bd29c8014007c4f3dc0e0bd170303a7a15762f4<br>
+うたわれるもの 第20話「初陣」(DVD 716x480[40：33] WMV9 A88F543C).wmv wv6uCuxtht 347,726,179 9cde2072edc0f39678d1814d551de03399f1911a<br>
+うたわれるもの 第21話「大封印」(DVD 716x480[40：33] WMV9 1E497A9F).wmv wv6uCuxtht 454,046,179 d0bf16915ade63176e1af39dde7481b36ec8562e<br>
+うたわれるもの 第22話「忌まわしき契約」(DVD 716x480[40：33] WMV9 1C7A7E49).wmv wv6uCuxtht 514,814,179 8ebf64a17e9030657607a4e2444ce9ad79445947<br>
+うたわれるもの 第23話「心の在り処」(DVD 716x480[40：33] WMV9 4601CB3F).wmv wv6uCuxtht 377,566,179 70f566824886a0662aa1becc322bbea2a525088e<br>
+うたわれるもの 第24話「滅びゆくもの」(DVD 716x480[40：33] WMV9 17714550).wmv wv6uCuxtht 381,358,179 7eea52c979d6508e361feb770f006701acb5b43a<br>
+うたわれるもの 第25話「太古の夢跡」(DVD 716x480[40：33] WMV9 7EB91AA3).wmv wv6uCuxtht 419,854,179 ee5e218cbfdc4725032d6565c286f38f5abb15ba<br>
+うたわれるもの 第26話「うたわれるもの」(DVD 716x480[40：33] WMV9 CCEC5564).wmv wv6uCuxtht 381,982,301 1fb0fd345e25d9675c98eb1849f1ab511bfabf31<br>
+<hr class="A">
+うたわれるものらじお Radio ToHeart2 うたわれ＆TH2ラジオ合同イベント0422 リスナーのみなさ～ん！！ 公開録音でメロメロでありま～す！！.DVD.DivX651q40.avi 2,027,413,504 961dac9f91c2c4415be8726034297480d1d2c7e3<br>
+<div class="sup">tvkD3VFHFV</div>
+<br></dd>
+<dt><span class="title">うたわれるもの OVA<b>◆</b></span>09/07/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ] OVA うたわれるもの 巻ノ一 「望楼の子守唄」 (DVD x264 704x480 AAC コメンタリー切替可).mkv MiZyLKZqK0Jno 173,200,968 b7a02ea21992ede0388e40edf931f4c3a902d0d9<br>
+<br></dd>
+<dt><span class="title">うちのタマ知りませんか？<b>◆</b></span>04/06/24 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ] うちのタマ知りませんか？20周年プレミアムDVD BOXの収録内容.txt NWM1Ro2wJ3to1 4,160 528c2d637154553f76f717c353b441d96530e2bb<br>
+[アニメ] うちのタマ知りませんか？ DVD第1巻 映像特典1 「タマのはつこい」 (DVD 640x480 XviD qt3 BVOP211) [CRC_267E].avi NWM1Ro2wJ3to1 208,777,260 b2425f34ab16197f11f95f37c27b75605ec8de34<br>
+[アニメ] うちのタマ知りませんか？ DVD第1巻 映像特典2 ワザありチャレンジ！ (DVD 640x480 XviD qt3 BVOP211) [CRC_416A].avi NWM1Ro2wJ3to1 126,847,020 35c592c6c8f3593aedd2bb05d8664279b019ec14<br>
+[アニメ] うちのタマ知りませんか？ DVD第2巻 映像特典1 「ポチどうしたの？」 (DVD 640x480 XviD qt3 BVOP211) [CRC_F9BB].avi NWM1Ro2wJ3to1 186,171,436 f61a5d7c3e049c05a38697e7aef39e6beb2a9889<br>
+[アニメ] うちのタマ知りませんか？ DVD第2巻 映像特典2 ワザありチャレンジ！ (DVD 640x480 XviD qt3 BVOP211) [CRC_B811].avi NWM1Ro2wJ3to1 177,154,092 578f1ab7bd7ba53fc38d7cb0f72b5622556f4f4b<br>
+[アニメ] うちのタマ知りませんか？ DVD第3巻 映像特典1 「だいじょーぶ？！タマ」 (DVD 640x480 XviD qt3 BVOP211) [CRC_E31B].avi NWM1Ro2wJ3to1 230,852,652 6b6c71566082e332cc44d75d828d0e6c751b0b94<br>
+[アニメ] うちのタマ知りませんか？ DVD第3巻 映像特典2 ワザありチャレンジ！ (DVD 640x480 XviD qt3 BVOP211) [CRC_443D].avi NWM1Ro2wJ3to1 152,627,244 3cd9b0781c29b49b063fa68efe68b1375121f62e<br>
+[アニメ] うちのタマ知りませんか？ DVD第4巻 映像特典1 「タマ、風船をつかまえて」 (DVD 640x480 XviD qt3 BVOP211) [CRC_E62F].avi NWM1Ro2wJ3to1 230,858,796 a95e8c1653e1586e9ec8f0aca727edc70ddbb207<br>
+[アニメ] うちのタマ知りませんか？ DVD第4巻 映像特典2 ワザありチャレンジ！ (DVD 640x480 XviD qt3 BVOP211) [CRC_785E].avi NWM1Ro2wJ3to1 183,384,108 da0a80c35ac661709739b10d845c2609019b9372<br>
+[アニメ] うちのタマ知りませんか？ DVD第5巻 映像特典1 「タマのこわーいお話」 (DVD 640x480 XviD qt3 BVOP211) [CRC_E35F].avi NWM1Ro2wJ3to1 205,455,404 dea71321385f48155c81e3092187815beeaf62a7<br>
+[アニメ] うちのタマ知りませんか？ DVD第5巻 映像特典2 ワザありチャレンジ！ (DVD 640x480 XviD qt3 BVOP211) [CRC_4AE6].avi NWM1Ro2wJ3to1 177,485,868 f8223f96f5345bd9370090a761c2f1ddd669ad0f<br>
+[アニメ] うちのタマ知りませんか？ DVD第6巻 映像特典1 「タマにはナイショだよ！」 (DVD 640x480 XviD qt3 BVOP211) [CRC_0139].avi NWM1Ro2wJ3to1 211,822,636 3210f1454c34f0cba8faa775b0957a5798d4a782<br>
+[アニメ] うちのタマ知りませんか？ DVD第6巻 映像特典2 ワザありチャレンジ！ (DVD 640x480 XviD qt3 BVOP211)rev2 [CRC_3D03].avi NWM1Ro2wJ3to1 108,914,732 64538e010e1023e8e1f7d9e82ccf8ef0446138c1<br>
+[アニメ] うちのタマ知りませんか？ 第01回(第01-02話) 「タマ＆フレンズ」「タマは新入生」 (DVD 640x480 XviD qt3 BVOP211) [CRC_DC18].avi NWM1Ro2wJ3to1 277,332,012 053297b810fb92f7185dc8a65539e1e1bff6d8ec<br>
+[アニメ] うちのタマ知りませんか？ 第02回(第03-04話) 「リビリビ知りませんか」「ぼくのお気に入り」 (DVD 640x480 XviD qt3 BVOP211) [CRC_2D90].avi NWM1Ro2wJ3to1 350,904,364 01381acf5f498381d074508dc895db6e228fa0d3<br>
+[アニメ] うちのタマ知りませんか？ 第03回(第05-06話) 「王者ポチの伝説」「奪え！池の中のたから」 (DVD 640x480 XviD qt3 BVOP211) [CRC_ECDD].avi NWM1Ro2wJ3to1 289,071,148 26bc65a4a6e8e3879df274c9e5d9c8269e9ed90c<br>
+[アニメ] うちのタマ知りませんか？ 第04回(第07-08話) 「モモの鈴を追いかけて」「雲をつかめ！トラ」 (DVD 640x480 XviD qt3 BVOP211) [CRC_7CB4].avi NWM1Ro2wJ3to1 302,108,716 5f753877be802d39415b93deef74958a6b321539<br>
+[アニメ] うちのタマ知りませんか？ 第05回(第09-10話) 「決戦は５月」「ブルが泣いた日」 (DVD 640x480 XviD qt3 BVOP211) [CRC_6991].avi NWM1Ro2wJ3to1 366,422,060 62d8537cc0f02e12834dc229eafaaa7b3a5bd126<br>
+[アニメ] うちのタマ知りませんか？ 第06回(第11-12話) 「松のゆのなぞ」「売られたヒーロー」 (DVD 640x480 XviD qt3 BVOP211) [CRC_7D66].avi NWM1Ro2wJ3to1 291,121,196 37211f9128b0bd1c0c8006b43ee9017a74659f20<br>
+[アニメ] うちのタマ知りませんか？ 第07回(第13-14話) 「コマの七つの名前」「ビデオカメラで追いかけて」 (DVD 640x480 XviD qt3 BVOP211) [CRC_340B].avi NWM1Ro2wJ3to1 270,309,420 e01d4b306505338fcd403474ebbe527161b6c319<br>
+[アニメ] うちのタマ知りませんか？ 第08回(第15-16話) 「3丁目のラビリンス」「ふたりのノラ」 (DVD 640x480 XviD qt3 BVOP211) [CRC_0349].avi NWM1Ro2wJ3to1 374,722,604 74c8532af1a9275cc848abaeebcb9965543b29b0<br>
+[アニメ] うちのタマ知りませんか？ 第09回(第17-18話) 「デパートで今晩は」「真夜中のクロ」 (DVD 640x480 XviD qt3 BVOP211) [CRC_E193].avi NWM1Ro2wJ3to1 289,419,308 a6225351858fb16b4c461f4e35cd8e74d5cbaa3d<br>
+[アニメ] うちのタマ知りませんか？ 第10回(第19-20話) 「ベーがいっぱい」「天才ポチの伝説」 (DVD 640x480 XviD qt3 BVOP211) [CRC_8AA3].avi NWM1Ro2wJ3to1 304,900,140 8ec0c456556a62d0085247956c8b29972a2ced08<br>
+[アニメ] うちのタマ知りませんか？ 第11回(第21-22話) 「友達になろうぜ」「しっぽがみる夢」 (DVD 640x480 XviD qt3 BVOP211) [CRC_1EF6].avi NWM1Ro2wJ3to1 329,322,540 c028c96de695ac13a75daa6350dfeb6eaa5cae7d<br>
+[アニメ] うちのタマ知りませんか？ 第12回(第23-24話) 「勇気をだして」「ようこそ！たけしくん」 (DVD 640x480 XviD qt3 BVOP211) [CRC_FEB0].avi NWM1Ro2wJ3to1 282,017,836 c1477ed9236ad6c06cab411f253d5c9e00f79aaf<br>
+[アニメ] うちのタマ知りませんか？ 第13回(第25話) 「猫の巣城 前・後編」 (DVD 640x480 XviD qt3 BVOP211) [CRC_803D].avi NWM1Ro2wJ3to1 338,245,676 44627d8e661d051d0f2ef825cba92bec9d685b3a<br>
+[アニメ] うちのタマ知りませんか？ 第14回(第26-27話) 「わらってよチューリップ」「ぼくたちの星くず」 (DVD 640x480 XviD qt3 BVOP211) [CRC_6D99].avi NWM1Ro2wJ3to1 309,481,516 d425410ecda7c5aefe42a3c8d49fe33c52faa887<br>
+[アニメ] うちのタマ知りませんか？ 第15回(第28-29話) 「しっぽでゴール」「ボクらは仲間だ！タマ音頭」 (DVD 640x480 XviD qt3 BVOP211) [CRC_ED15].avi NWM1Ro2wJ3to1 342,614,060 6466f5a868784a8689a6434495caeee416a49f6a<br>
+[アニメ] うちのタマ知りませんか？ 第16回(第30-31話) 「ペンギンだぁーっ！？」「スケボーであそぼー」 (DVD 640x480 XviD qt3 BVOP211) [CRC_066B].avi NWM1Ro2wJ3to1 325,912,620 1e1c74e62060f8890965ac30ee5cdd99db0c30f1<br>
+[アニメ] うちのタマ知りませんか？ 第17回(第32-33話) 「ゴンのお使い」「まつりばやし」 (DVD 640x480 XviD qt3 BVOP211) [CRC_6975].avi NWM1Ro2wJ3to1 251,537,452 3f64f1b7ef1e0765c5c3fb485dbf47f54d05b224<br>
+[アニメ] うちのタマ知りませんか？ 第18回(第34話) 「パラダイス・オブ・カニカン」 (DVD 640x480 XviD qt3 BVOP211) [CRC_2BF3].avi NWM1Ro2wJ3to1 251,746,348 b1647286d23f12d8a923b97efcef1da4048da063<br>
+[アニメ] うちのタマ知りませんか？ 第19回(第35-36話) 「３丁目最後の日」「汚れた顔のエンジェル」 (DVD 640x480 XviD qt3 BVOP211) [CRC_F36E].avi NWM1Ro2wJ3to1 248,920,108 491b06ba5c1792ac621f59457cf3f0edc45aa29a<br>
+[アニメ] うちのタマ知りませんか？ 第20回(第37-38話) 「さまよえる首輪」「デビル・ポチの伝説」 (DVD 640x480 XviD qt3 BVOP211) [CRC_D917].avi NWM1Ro2wJ3to1 297,066,540 27a9d7eb9232a28967309329d9c9be4ca2799690<br>
+[アニメ] うちのタマ知りませんか？ 第21回(第39-40話) 「わんぱく絵の具戦争」「笛のささやき」 (DVD 640x480 XviD qt3 BVOP211) [CRC_537D].avi NWM1Ro2wJ3to1 307,365,932 806f55d23e30c3b64d788f5f7a3fd6b66495c977<br>
+[アニメ] うちのタマ知りませんか？ 第22回(第41話) 「サヨナラ タマ・ロボット」 (DVD 640x480 XviD qt3 BVOP211) [CRC_9F0C].avi NWM1Ro2wJ3to1 288,706,604 c993db33241742ca01647a669aacff5d07673bdc<br>
+[アニメ] うちのタマ知りませんか？ 第23回(第42-43話) 「黒い稲妻」「遠足を追いかけて」 (DVD 640x480 XviD qt3 BVOP211) [CRC_D6E4].avi NWM1Ro2wJ3to1 395,714,604 abd8351fc49f441b56f5b3bba798702d22cb87e1<br>
+[アニメ] うちのタマ知りませんか？ 第24回(第44-45話) 「浪花節だよ！ブル人生」「イカスぜ！ブル仮面」 (DVD 640x480 XviD qt3 BVOP211) [CRC_379F].avi NWM1Ro2wJ3to1 331,538,476 a0a7a93098e4be45f7b6544c8743ff304b406726<br>
+[アニメ] うちのタマ知りませんか？ 第25回(第46-47話) 「はっきりしてよ！タマ」「ボクたちは天使じゃない」 (DVD 640x480 XviD qt3 BVOP211) [CRC_C55C].avi NWM1Ro2wJ3to1 305,565,740 52aeee6b5e8618571a3a0a200896a5afb2d3247f<br>
+[アニメ] うちのタマ知りませんか？ 第26回(第48話) 「キャプテン キャット★タマ」 (最終回 DVD 640x480 XviD qt3 BVOP211) [CRC_01DC].avi NWM1Ro2wJ3to1 312,705,068 20296d6c0a3db069c24858f1b6e135e94bf404b0<br>
+<br></dd>
+<dt><span class="title">宇宙の騎士テッカマンブレード<b>◆</b></span>09/09/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 「MISSING LING」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 153,866,641 058a2e47442266220fe71f7fe48a608d00a35734<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 「OVAテッカマンブレードII 発売時 TV用スポットCM」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 13,720,200 3930793e9c2dd157d9ea4f029706214d05335a2c<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 「TWIN BLOOD」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 71,007,881 8e78d7d0642e7d65a9a26d2cf176782973fbb9bf<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 「クリスタルBOX発売時 TV用スポットCM」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 3,461,718 8dad1048c8d107f68a392eaa1283cfda311622c0<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 「テッカマンブレード変身」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 13,447,816 22b2dd4137eafd336fa26505a7c7bb29bd2e92f5<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 「テックセット集」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 17,040,774 93deebc2350ceeed598ebf0797519c8ffbe2b0cb<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 「ハイコートボルテッカ発射」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 14,485,332 b5956ede5bbe4a7486ead2d0f42503afe8a4e863<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 「ブルーアース号発進」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 9,939,836 13671ba3fc2c6080bede017ede3d6cb4c95cc251<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 「ブレードのブラスター化～超ボルテッカ発射」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 17,165,835 7dada81280361ffa573bc8ac57da299514731208<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 「ブレード変身（ペガスバージョン）」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 29,510,054 73f4c20c1c220b05edeb8749aa15dbded8bdaef4<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 「幻のボルテッカ」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 4,706,963 30fcd347782853c217b2de80e3f92114fa3981fe<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 「長き戦いの序曲」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 285,764,296 e5205ff5b3e8ea88dbdd3fdf767664f285d069d0<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 「燃えた時計」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 74,379,874 faf0062a63fec26b70bb36a162d505be893a1ca4<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 「番組宣伝スポット」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 16,953,055 cd666776f841a71c6206e58b3221ddbb8175d7cd<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 OP2「永遠の孤独」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 36,379,372 aaca1ffa15367f9e13c660312bcd281105dce9c1<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 ノンテロップOP1「REASON」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 27,357,926 c4b0aadeba2e7774551bf44714b16840b4af1f3f<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 映像特典 ノンテロップED1「ENERGY OF LOVE」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 10,757,732 2db7253b12546853b8c6e990b5d6955c0f8d0eed<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第01話 「天駆ける超人」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 276,128,417 1cac2b5635262d6670867f5fb0dbb5e337a70e05<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第02話 「孤独の戦士」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 281,809,762 4e1b96487a28919eada5097342ec0d267125e7a9<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第03話 「防衛軍の野望 」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 230,651,335 b646ca05f093df36a79c4cb34f1c780f2d2fc9b6<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第04話 「理由なき敵前逃亡」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 260,414,539 68294f8c383c20336999bc689aac1e16430073d1<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第05話 「オレを殺せ」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 245,623,209 2ef2a16f1af177165007abf71d5c1d25db8eb5a7<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第06話 「テックセット不能」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 248,231,782 ee5216aabac573694a171e5199afff5f379a6948<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第07話 「機動兵ペガス発進」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 258,846,090 e3f6ab81bad5ec2b683eb8dfcd6af2fc21bf7789<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第08話 「謎の従軍記者」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 269,999,503 37c68fb67b747188011d118dc9b20252b21e515f<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第09話 「救出! 木星クルー」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 268,894,479 7612592df3f71c11e4f523805617c07302cda2e4<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第10話 「戦火に響く子守歌」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 248,915,126 d7fbcfb3c6cd266ccec33f4d04d2fcce320108f1<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第11話 「Dボウイファイル」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 270,752,567 99b0029b8d27ec55bd182350b5fd2ef6dd4e9f62<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第12話 「赤い戦慄エビル 」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 294,598,643 952d2997787c8828ea981873f881f6154ac7e72b<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第13話 「宿命の兄弟」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 242,034,852 13e468eb55adc9e97f6a6b87973d136b3f2f2df0<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第14話 「血をわけた悪魔 」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 243,270,078 e4931bcbe57e604a82a355953efae0213da0d685<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第15話 「魔神蘇る 」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 265,598,687 8e246ce672fd8086fb3735f70e1f72790c963932<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第16話 「裏切りの肖像」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 229,426,194 78a176dc2dc94e5979c48b3631bb7dc4f01dc73e<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第17話 「鋼鉄の救世主 」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 233,676,754 7c5ccba575468480fef0d27302410b7dd4508813<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第18話 「栄光への代償」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 240,606,268 2b1882d4af7b826f63bb4aef9e2d5ef10e95e8a5<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第19話 「心閉ざした戦士」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 245,052,264 eb2fff4d108ee065089bc0d6afa34861ea3cc812<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第20話 「復活! 怒りの変身」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 231,164,254 cb03c8d7341d5945d69b56669fc4792ab567dc14<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第21話 「愛と死の予感」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 234,504,895 46f10242ea5c8e5569fc06abd96ca87314dda04b<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第22話 「ミユキの決意」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 230,746,664 ebd64bb54cbb4b4bcaa284ec331a9d4aad5a75a6<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第23話 「傷だらけの再会」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 279,129,387 0d96a20317b4e792df7102ffecd0c74d9753b9ea<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第24話 「引き裂かれた過去」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 233,732,574 4a4fbf89747118216d6878a065fa715ac5a94d22<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第25話 「新たなる悪魔」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 228,735,914 d63eecbdd97ebfc1beb73df2d47dc609d3b8158d<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第26話 「死をかけた戦い 」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 270,397,529 9dd42dd8ba2cf6fe61c2910549f7c9ce6533810c<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第27話 「残りし者への遺産」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 275,041,783 ee69b8b65aa0a4ed5e139916acc35ff80b559455<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第28話 「白い魔人」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 248,148,519 0e55db7995ce026f32f164cded854fff763dbaa5<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第29話 「戦いの野に花束を」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 220,829,573 a925f0c31c17c9cb7cacedb5c6a0c2269e432e7f<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第30話 「父の面影」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 238,193,703 32e4baa248c91cb1aa293234946dda0680d63742<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第31話 「復讐の街 」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 218,866,663 62dcd03e9388af6f0573e84a7c1cb90a82139d43<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第32話 「待ちわびた少女」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 234,906,191 b6480866501c50aabbab4d7359c8800719cc8360<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第33話 「荒野の再会」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 234,748,653 ff213e4a64830b052a4e758f5aa8321a56544f89<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第34話 「光と影の兄弟」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 256,183,766 741dfb53bb69ea4d94711155b8a4a3367803fcff<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第35話 「霧の中の敵 」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 231,800,791 5bd587e591f2ea549f71e0a9dad10d21f3c41330<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第36話 「決戦!! アックス」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 271,134,697 690b08e1cf62704b171587a73dce605ce6523612<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第37話 「蝕まれた肉体」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 223,819,365 be82851ce6f1eef48c411cc37b8b16290c0586f6<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第38話 「死への迷宮 」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 240,047,831 dfa2edda913804b2fa3a71c48edf540127cd627c<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第39話 「超戦士ブラスター」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 295,333,446 a3b3e8839efcb3289ef7af3234f094199583673f<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第40話 「愛と戦いの二人」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 280,543,502 5289a58fb46f1d6b569c9541b0297c15faf60577<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第41話 「エビル.蘇る悪魔」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 224,800,946 4c587c51082f880b97bb8e2a0efae32bb0e20d95<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第42話 「激突! 赤い宿敵」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 220,307,251 d1a2fa548bf8fc019eecee52b92da22606cf5d0d<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第43話 「訣別の銃弾」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 265,151,757 da07b1eb4c1a08e40b3279dc3e56864f6191fb72<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第44話 「迫り来る闇」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 228,214,147 13f3ace08159bb895fc5b9b8b44ceb81f17ebd80<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第45話 「真実の侵略者」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 230,543,469 618f345201edd7bd1324887ed4601449cbf426f5<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第46話 「時の止まった家」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 241,120,172 4986cfdf285d176846b46b517237ab41dcb9d9fa<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第47話 「闇と死の運命」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 216,124,519 eee624a857306a16e527a1a925daa4298ae03fd8<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第48話 「壮烈! エビル死す 」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 232,448,999 57f15e3478f53d64e5bfdf4fd29245ce18bce39e<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレー 第49話 「燃えつきる命」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 288,224,424 879bf90f6e0ee9c74b7540f0cc2ced724396fd33<br>
+<hr class="A">
+[アニメ DVD] 宇宙の騎士テッカマンブレード 映像特典「LD-BOX告知 TVスポット」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 4,778,541 f5f87f077ee415a10491ce5b964225f0e6f7f591<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 映像特典「MISSING LING」 (x264cli VFR 640x480 AC3).mkv realOrzcbDWERzgWI 122,623,926 b30f9114d3cdd82b715c4bbf898159d09c3a0150<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 映像特典「OVA告知 TVスポット」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 11,403,374 c8de90ea6e80170a35da19ff2aac5d3b5adb7603<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 映像特典「TWIN BLOOD」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 144,448,403 ac66ee4d9a3d4d0ee6699826c0b490970740d685<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 映像特典「オープニング　バージョン２．２」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 26,845,303 284236c559569841443cf897746460fb72e4bc53<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 映像特典「テッカマンブレード変身(ペガスバージョン)」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 17,747,993 ea5edfa1e3d75b84b8f426219217f827b6ce9826<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 映像特典「テッカマンブレード変身」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 13,309,149 5f5044d711c81239d7943a7408660db2549a2049<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 映像特典「テックセット集」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 21,465,063 0315e78700262d9ef91c3967c4279d4b6064d13a<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 映像特典「ノンクレジットオープニング・エンディング」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 44,212,016 60357470235d8e7735d23e93ff5cdcfbf4dc1930<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 映像特典「ハイコートボルテッカ発射」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 12,786,886 a8d3fa709e1af68191f8f71b214f8bc3b8c1e88a<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 映像特典「ブレードのプラスター化～超ボルテッカ発射」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 13,039,107 3e1a51ddd687113523480cdb2a52f11a711dd9d2<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 映像特典「幻のボルテッカ」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 5,112,997 66695d14433e7e76c7fa394a8e4d1b67365622db<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 映像特典「長き戦いの序曲」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 385,455,900 af2ecb09ea4434a1e35787475b748f8a19497c05<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 映像特典「燃えた」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 133,326,204 9cc8cde8202c51b4861eedc31190c9dde129096b<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第01話 「天駆ける超人」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 344,486,721 f30d88cce57f15c9608773baedb41c00d93c633d<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第02話 「孤独の戦士」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 350,534,647 5343230dc5f706df48aef3c56a2b512092aee558<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第03話 「防衛軍の野望」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 349,097,082 e222134f14bd7acd8df063a150c6030426f65978<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第04話 「理由なき敵前逃亡」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 351,450,033 9831628062b6a6a9f935a47e0935dca2bb9dbc69<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第05話 「オレを殺せ」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 353,291,458 959cd41b975cef2c1e1a4bf83e466d0cec72a6ef<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第06話 「テックセット不能」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 331,455,816 e408eed01f683b2dc5567fd404eb3d247bede86b<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第07話 「機動兵ペガス発進」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 353,121,339 2aaeae31df36b36eb06d8f402a8e1fc4dcd3f4dc<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第08話 「謎の従軍記者」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 370,602,468 153e0b9454ad48afab738ee13221aae0724da5a5<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第09話 「救出！ 木星クルー」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 373,259,421 22e6346c5da6b4dbe701e08e386e36998d4aebbb<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第10話 「戦火に響く子守歌」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 350,706,182 3e804438f903e39f3cff94259918c28865d332b7<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第11話 「Ｄボウイファイル」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 369,963,771 98156a9533018ee9f66335ac3ff1de83696fc4c2<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第12話 「赤い戦慄 エビル」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 377,493,448 c0759ed52b550ae0f0220dbaf718596872ab4375<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第13話 「宿命の兄弟」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 341,679,978 2c2be43ec18e4c32e8194dce17738d0640b8c845<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第14話 「血をわけた悪魔」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 345,321,700 0da9dca4328e11bdf592075e5f6db5f7104a5dff<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第15話 「魔神蘇る」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 340,807,289 a1942899b434081e1d8c4281c65618042051567e<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第16話 「裏切りの肖像」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 317,680,195 c964e158c251f666950976f5c238c4078494d3ce<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第17話 「鋼鉄の救世主」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 326,863,063 d84ad3b52bc34d34316501b693ba7f65590a02b3<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第18話 「栄光への代償」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 351,591,222 d373e7305374127d8b50af58ca23297d2e945bf5<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第19話 「心閉ざした戦士」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 349,443,461 868a10a479389e9e532f0ee6f887a9262fbfd890<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第20話 「復活！ 怒りの変身」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 346,368,449 9f112aba4e1ad1fad44f3a68ee11fb3c1d240a0d<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第21話 「愛と死の予感」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 347,734,979 a499d6370ae8a88e591a44907ce5be36017a31b7<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第22話 「ミユキの決意」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 347,535,914 96b30d42cf9f035cca8b7332e913e224b3ba2260<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第23話 「傷だらけの再会」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 360,243,186 7130e195278097d821aa03fc153e88702663d3f2<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第24話 「引き裂かれた過去」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 349,488,136 fb43a343c00e69dc57b4db38925ec3dcdb62ffda<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第25話 「新たなる悪魔」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 354,397,045 13e6f301c12f20821d82f325844ddefb1838b71f<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第26話 「死をかけた戦い」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 362,133,390 23d512686d09472bae8d0b381feeb217470027aa<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第27話 「残りし者への遺産」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 367,564,843 98622f37d155fb9e2566624f344eedcf81ed93e3<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第28話 「白い魔人」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 350,197,926 0560a4fd5d81a09f5a55e80ff6e90eb3d2675f19<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第29話 「戦いの野に花束を」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 336,047,843 8e5cec296467bc57d1082102d4b5ad6c7446f8b8<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第30話 「父の面影」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 332,163,210 d61da05624a979aef7a1e371ae68cf1b33d54c36<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第31話 「復讐の街」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 344,056,415 80b008ffef25df56713ce1a02f2c9ce542141e75<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第32話 「待ちわびた少女」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 335,630,748 650807594b294be2d2456ab3d52ff76a699a6b44<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第33話 「荒野の再会」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 340,814,588 5ddc61ec49c9fb171ae0b79931ab195a0be55482<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第34話 「光と影の兄弟」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 319,472,395 513056cdffa8335c78f656e812f28a15e8fa56b4<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第35話 「霧の中の敵」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 348,852,249 ac8245c1c47aa46d240f84611e9273b32e772c1a<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第36話 「決戦！！ アックス」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 360,983,773 b708a02adecc4d2ea58adb5940ab08f86d30feb9<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第37話 「蝕まれた肉体」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 345,654,134 174a1ce2c87b9d135ce13b017f1f485b03846d68<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第38話 「死への迷宮」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 362,690,295 e7a75a2283fb85501fe23978ed2bf46e0378c907<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第39話 「超戦士ブラスター」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 364,798,913 9663b85c62dcb160b7691d128e9726a8b00d6adf<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第40話 「愛と戦いの二人」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 364,783,019 b303fd57804a4a4d52189f8107f2edbf26d01a9d<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第41話 「エビル・蘇る悪魔」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 328,528,922 91ef18c2bd3292d1f8fba8a908a68a3170a98577<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第42話 「激突！ 赤い宿敵」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 333,964,251 c478232f13031354dcb0494def776609bd27c2ce<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第43話 「訣別の銃弾」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 347,677,810 71d4fc3bc93832c25efaa61661aa28d10be900bf<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第44話 「迫り来る闇」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 329,204,506 48fe1e74c04bcafe754d285777314fef86a67109<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第45話 「真実の侵略者」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 335,528,735 df16c5a8af17d58b2f9cacb8572aef936e14c0ea<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第46話 「時の止まった家」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 329,235,657 21a1de10c2e3780bbd76e582aa407d5a362f241a<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第47話 「闇と死の運命」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 339,469,674 6d79b7225b52307d61f342bb990b7cc0bc042248<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第48話 「壮烈！ エビル死す」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 379,467,846 2492b37178d740bd477cd1d602f95215a4046311<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレード 第49話 「燃えつきる命」 (x264cli 640x480 AC3).mkv realOrzcbDWERzgWI 363,547,677 580f307a7bff486c733a26e035a79df80b441185<br>
+<br></dd>
+<dt><span class="title">宇宙の騎士テッカマンブレードⅡ<b>◆</b></span>09/09/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] 宇宙の騎士テッカマンブレードⅡ 映像特典 「VIRGIN MEMORY」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 377,135,460 51a2ed9581bb3b8c1f90bacefe3a0c007e266530<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレードⅡ 第01話 「VIRGIN FLUSH」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 406,004,110 84555eb830356d206dd59197349ff4b0fe32ceab<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレードⅡ 第02話 「VIRGIN BLOOD」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 332,714,088 e4697c6ee3086929c7f26925f79a762c2b98e8dd<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレードⅡ 第03話 「VIRGIN DREAM」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 323,964,442 1dca6dd52c7cf5e5cec542293288e2c1b8f0851a<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレードⅡ 第04話 「DEAD BOY」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 343,606,651 c0f0d8c5a478d1c5c8ff08230fd4dc2e7fab3ec3<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレードⅡ 第05話 「DIRTY NIGHT」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 348,089,288 caff8fe77020d1d984b6110b826fd05ecc6308b3<br>
+[アニメ DVD] 宇宙の騎士テッカマンブレードⅡ 第06話 「DANGEROUS BOYS」 (640x480 x264 AAC).mp4 dodododoFsP5G0OreR 405,472,910 c23ca5848c2a32f0cc70d4f0874f000a2f7a346f<br>
+<br></dd>
+<dt><span class="title">宇宙のステルヴィア<b>◆</b></span>08/05/16 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] 宇宙のステルヴィア 第01話 「ようこそ」 (640x480 WMV9).wmv 283,979,665 34037f625bd61906bfeb852915143eb1731c09dc<br>
+[アニメ DVD] 宇宙のステルヴィア 第02話 「とまどい」 (640x480 WMV9).wmv 268,130,179 bd88e04551437e31e09a21f9452664640a7fbd0c<br>
+[アニメ DVD] 宇宙のステルヴィア 第03話 「ごめんなさい」 (640x480 WMV9).wmv 238,716,508 2cddad816d7d718e3e418990cdbe0c25c7a2ce28<br>
+[アニメ DVD] 宇宙のステルヴィア 第04話 「がんばります」 (640x480 WMV9).wmv 259,367,007 66e88dd99a2a6c39e035205d5675e1be7604c9f2<br>
+[アニメ DVD] 宇宙のステルヴィア 第05話 「きっかけ」 (640x480 WMV9).wmv 257,239,007 977f712b2736ccfbfb142e3d33c05d643f889700<br>
+[アニメ DVD] 宇宙のステルヴィア 第06話 「まけません」 (640x480 WMV9).wmv 264,631,007 c07140ab5c463ff9209a113043dc514ac1a22fa4<br>
+[アニメ DVD] 宇宙のステルヴィア 第07話 「くやしいよ」 (640x480 WMV9).wmv 267,499,035 af5d53747711c3e3e9b125f50fd2efe848be004b<br>
+[アニメ DVD] 宇宙のステルヴィア 第08話 「わたしですか？」 (640x480 WMV9).wmv 289,675,035 aaffa16eb2e0c675fbfc6c65e8b5d6f0ee26ef95<br>
+[アニメ DVD] 宇宙のステルヴィア 第09話 「いってきます」 (640x480 WMV9).wmv 234,107,035 692c1e2f9d4014dac96512eb62df103c19a4ec92<br>
+[アニメ DVD] 宇宙のステルヴィア 第10話 「おかえりなさい」 (640x480 WMV9).wmv 307,735,890 eb3653f27410b566a92f22ff02c9ab4ba8bd84d1<br>
+[アニメ DVD] 宇宙のステルヴィア 第11話 「ほんとうのあなた」 (640x480 WMV9).wmv 286,055,007 a6788f252619f39bb86b21187ef8675ea06ca96d<br>
+[アニメ DVD] 宇宙のステルヴィア 第12話 「こくはく」 (640x480 WMV9).wmv 263,335,007 216b6c3453e362d33b4bf8e06b8ecfdb09f50870<br>
+[アニメ DVD] 宇宙のステルヴィア 第13話 「ふゆやすみ」 (640x480 WMV9).wmv 272,679,007 febe1e382c623b3084dacd7579e9ad93c32471e2<br>
+[アニメ DVD] 宇宙のステルヴィア 第14話 「ゆめとげんじつ」 (640x480 WMV9).wmv 191,927,179 36d35208ac026a0b541882522b0b6973d47a192f<br>
+[アニメ DVD] 宇宙のステルヴィア 第15話 「わかりません」 (640x480 WMV9).wmv 226,599,179 881b36dc3928a2515d7ac1791cc1e750b62a90e0<br>
+[アニメ DVD] 宇宙のステルヴィア 第16話 「うたがいのなかで」 (640x480 WMV9).wmv 273,405,037 15db51cc113f4e8cde8222d85cb0269e02c1211b<br>
+[アニメ DVD] 宇宙のステルヴィア 第17話 「たたかい」 (640x480 WMV9).wmv 302,843,377 e59af09d00bf3f082212595a7ecea96a27d5f0ec<br>
+[アニメ DVD] 宇宙のステルヴィア 第18話 「とおいこえ」 (640x480 WMV9).wmv 302,791,165 22fb6cee774c48dec525cbda1b93fac7dfc303e5<br>
+[アニメ DVD] 宇宙のステルヴィア 第19話 「なきんぼ おこりんぼ」 (640x480 WMV9).wmv 228,199,179 3b2e82c751117c44b8dda4793e305afa3acd2cbe<br>
+[アニメ DVD] 宇宙のステルヴィア 第20話 「みらいをきみに」 (640x480 WMV9).wmv 267,476,254 83f23aa6cc408d9e009672498f431dc7127918d5<br>
+[アニメ DVD] 宇宙のステルヴィア 第21話 「みえないかべ」 (640x480 WMV9).wmv 254,727,179 103ada44f3b318ab81ce0e3bf7869c43544026d2<br>
+[アニメ DVD] 宇宙のステルヴィア 第22話 「それぞれのみち」 (640x480 WMV9).wmv 268,007,179 6cda5f57f520f55c50dfb807e218c48a312dfd4f<br>
+[アニメ DVD] 宇宙のステルヴィア 第23話 「だからあなたがいる」 (640x480 WMV9).wmv 228,855,179 e0500987fb1758ab7f625bf3db0116ae23f9265b<br>
+[アニメ DVD] 宇宙のステルヴィア 第24話 「ふたたびのやみ」 (640x480 WMV9).wmv 263,512,754 4afe6c2b16ddf6be913813227c6189c20593e94b<br>
+[アニメ DVD] 宇宙のステルヴィア 第25話 「さよなら」 (640x480 WMV9).wmv 352,407,165 36198dc7132ad1efb2302b1bb1830d0cb4ea59b1<br>
+[アニメ DVD] 宇宙のステルヴィア 第26話 「きらめきはこえ」 (640x480 WMV9).wmv 372,838,759 22ff8dd5c448bcf7cc0ef0bdf588944aeb77b2b1<br>
+<div class="sup">aaLPbRVQ8B</div>
+<hr class="A">
+宇宙のステルヴィア 第01話 ｢ようこそ｣(640x480 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 321,202,542 163a054e2f8a65a91f426ff18d3a8c9aa13621f7<br>
+宇宙のステルヴィア 第02話 ｢とまどい｣(640x480 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 334,143,774 0a4f1002e3070ea023b9d809a404218b7968e202<br>
+宇宙のステルヴィア 第03話 ｢ごめんなさい｣(640x480 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 271,517,014 a864f9e6017d52ac3f4481f39ae87cc1f820de29<br>
+宇宙のステルヴィア 第04話 ｢がんばります｣(640x480 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 334,520,362 2d421d2469cbcc455f7bc02e34bf21cf35bca399<br>
+宇宙のステルヴィア 第05話 ｢きっかけ｣(640x480 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 336,645,708 ed7c2e96e191eabbdac19c19248dce9086dcedc4<br>
+宇宙のステルヴィア 第06話 ｢まけません｣(640x480 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 346,237,450 f30fa77d29493c1fd2faf6cc0e52696ec7d91047<br>
+宇宙のステルヴィア 第07話 ｢くやしいよ｣(704x396 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 339,975,220 cd82746bcdcd8967e75e067042b93a160f9f6fc5<br>
+宇宙のステルヴィア 第08話 ｢わたしですか？｣(704x396 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 375,764,700 9bf0785a7214e64cd6736c749631e63b5373bffa<br>
+宇宙のステルヴィア 第09話 ｢いってきます｣(704x396 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 270,278,794 77cce0dc2b8c677b0b18dd989694548804c91b1f<br>
+宇宙のステルヴィア 第10話 ｢おかえりなさい｣(704x396 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 358,833,492 2ffdf7966c2237d4b048855328d45a422ca6f4bf<br>
+宇宙のステルヴィア 第11話 ｢ほんとうのあなた｣(704x396 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 322,584,746 30713ffa893165730c8c32f8febcf7862c52a12d<br>
+宇宙のステルヴィア 第12話 ｢こくはく｣(704x396 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 299,627,250 6c190876f17b28d84bd3b1b6f916effc1afa4ffe<br>
+宇宙のステルヴィア 第13話 ｢ふゆやすみ｣(704x396 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 317,224,750 5736300a0b6cd08b37857a44812d918194d0a314<br>
+<br></dd>
+<dt><span class="title">うる星やつら<b>◆</b></span>08/04/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD アニメ] うる星やつら TVCM集 (640x480 WMV9).wmv 1dodakemx1N789S3y 50,110,932 d05ed766eb66f6d8111f8de748a90f5bed42c485<br>
+[DVD アニメ] うる星やつら 第001-002話 (640x480 WMV9).wmv 1dodakemx1N789S3y 306,054,606 f3f95ca4cbbb4e13919b9099a49f2403d0e789fc<br>
+[DVD アニメ] うる星やつら 第003-004話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,678,606 f8bc63fe56e8fc130d03a432f719e5374c87ab48<br>
+[DVD アニメ] うる星やつら 第005-006話 (640x480 WMV9).wmv 1dodakemx1N789S3y 304,286,606 9f4219302cd44b8d6d28c2f8b550b6f2df64f81a<br>
+[DVD アニメ] うる星やつら 第007-008話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,006,606 e3662dfae3a6afa0a110c7ff46eff7704fe741a5<br>
+[DVD アニメ] うる星やつら 第009-010話 (640x480 WMV9).wmv 1dodakemx1N789S3y 306,502,606 dd39187dd1a9af9161ebd7d0a0d1ab9df6454301<br>
+[DVD アニメ] うる星やつら 第011-012話 (640x480 WMV9).wmv 1dodakemx1N789S3y 306,702,612 1332f3c0dfda3c6a6bb81c6562e83a33016d1ee5<br>
+[DVD アニメ] うる星やつら 第013-014話 (640x480 WMV9).wmv 1dodakemx1N789S3y 306,326,606 d8fdd52d7bddc4eb495e5ad594ba62f889e6cbee<br>
+[DVD アニメ] うる星やつら 第015-016話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,342,606 5be3484cc3eecaf954e782b3e0f478c87ce3c79d<br>
+[DVD アニメ] うる星やつら 第017-018話 (640x480 WMV9).wmv 1dodakemx1N789S3y 306,678,606 23ae7b3b741027ce36092f87a8d48c81dbc16657<br>
+[DVD アニメ] うる星やつら 第019-020話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,214,606 94e6512f341345dfce9ac82c5a8937241cde325f<br>
+[DVD アニメ] うる星やつら 第021-022話 (640x480 WMV9).wmv 1dodakemx1N789S3y 305,142,606 8a335a78a9724aedba5234d71cae07a58aaf827a<br>
+[DVD アニメ] うる星やつら 第023-024話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,150,600 c4242fe41d51c8625f26ffdee7a8022a0dbf4c15<br>
+[DVD アニメ] うる星やつら 第025-026話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,406,612 67911600c9b89302ad47462270d842422a8243a4<br>
+[DVD アニメ] うる星やつら 第027-028話 (640x480 WMV9).wmv 1dodakemx1N789S3y 306,718,606 77ec29e97f6b62d3f066bda8ee74ae93bfde8cca<br>
+[DVD アニメ] うる星やつら 第029-030話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,739,396 cdccd37ca2fea3548736b29d7db6352031d9525a<br>
+[DVD アニメ] うる星やつら 第031-032話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,478,600 c945644b46d59761313d63093dfec0aaf4628f1d<br>
+[DVD アニメ] うる星やつら 第033-034話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,918,606 b4474d47b74934365d3655ec6f65f724b243f43e<br>
+[DVD アニメ] うる星やつら 第035-036話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,134,606 b445120c0d30d6a28038a453ac7d5ac62feb01ee<br>
+[DVD アニメ] うる星やつら 第037-038話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,374,606 6b0e3dfb54836bb2b849143fd77217fb67f2a66b<br>
+[DVD アニメ] うる星やつら 第039-040話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,342,606 f765eeffbf171fb6d072306199978882861ad480<br>
+[DVD アニメ] うる星やつら 第041-042話 (640x480 WMV9).wmv 1dodakemx1N789S3y 306,350,576 17d1e56195ee6c46aa32d6fdc3440db2d7093e93<br>
+[DVD アニメ] うる星やつら 第043-044話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,574,666 7e4dbf02725c6e7395d7679b8fe9e174f0bb9e70<br>
+[DVD アニメ] うる星やつら 第045-046話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,246,672 99c0e82b8cc2810578a66bf59ac9a34defdea89b<br>
+[DVD アニメ] うる星やつら 第047話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,190,666 c10c2100416e8a15c4cf2867f7c07f45992597c7<br>
+[DVD アニメ] うる星やつら 第048話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,390,606 d5ec7991ffab1831cdb92e84177ef7e3ff5d8a0d<br>
+[DVD アニメ] うる星やつら 第049話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,926,606 6012c64a7406fa631552f486b337f8cc38ec5dab<br>
+[DVD アニメ] うる星やつら 第050話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,678,612 f05c61686a5753d3bfd5f419ce01bde6615ca28f<br>
+[DVD アニメ] うる星やつら 第051話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,974,606 b4055930d4de27e862a2edb15dfc930da808baa4<br>
+[DVD アニメ] うる星やつら 第052話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,830,606 8cc57723426aed937761391895dee99577273317<br>
+[DVD アニメ] うる星やつら 第053話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,470,612 2e425edaaf16923cd906c9abffb830b5b909b267<br>
+[DVD アニメ] うる星やつら 第054話 (640x480 WMV9).wmv 1dodakemx1N789S3y 304,774,606 21b4c90e720fef37c82d3ef90e169153d6231253<br>
+[DVD アニメ] うる星やつら 第055話 (640x480 WMV9).wmv 1dodakemx1N789S3y 305,430,600 a75dbe7e64898297fb591d09f2989c8066ac8220<br>
+[DVD アニメ] うる星やつら 第056話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,142,612 3b1cfec3106136d8f8a219a920aaeaef1cf933b9<br>
+[DVD アニメ] うる星やつら 第057話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,310,606 d529447b2fb19796713505fdc687c1a59db3d70b<br>
+[DVD アニメ] うる星やつら 第058話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,750,606 8cbf2f789f769089029c0ab1b9d7eadb51f954b2<br>
+[DVD アニメ] うる星やつら 第059話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,182,618 e8085cbc114df3d8469ba5af020de7f960528ca3<br>
+[DVD アニメ] うる星やつら 第060話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,110,612 ea2513653cb2438691476134a84c59de278803fb<br>
+[DVD アニメ] うる星やつら 第061話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,702,612 ea487081e1643192d80ca9b08b2218a718015a09<br>
+[DVD アニメ] うる星やつら 第062話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,230,612 4be5821e5f92d1ff136f17ffd074c756b7b30ceb<br>
+[DVD アニメ] うる星やつら 第063話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,918,612 8a626d652378bb0243bf489cd2efee92145f31db<br>
+[DVD アニメ] うる星やつら 第064話 (640x480 WMV9).wmv 1dodakemx1N789S3y 303,294,612 22ba77e732fc1b4b395e577a43671ed4ca283b79<br>
+[DVD アニメ] うる星やつら 第065話 (640x480 WMV9).wmv 1dodakemx1N789S3y 306,806,606 abaa1e7fd1baaa00b79aa8d061a4f085a1860050<br>
+[DVD アニメ] うる星やつら 第066話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,014,618 87114c121c19caacbb6ff094a8ed1159b7594afd<br>
+[DVD アニメ] うる星やつら 第067話 (640x480 WMV9).wmv 1dodakemx1N789S3y 312,190,618 67c2028c7e21adf97395feb30493bc23bb38948e<br>
+[DVD アニメ] うる星やつら 第068話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,262,624 7a1b277ff120e9a84eb4850c5c2a439a237484fe<br>
+[DVD アニメ] うる星やつら 第069話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,694,618 a8ae91252addacab05a0bb36f0502577b234940c<br>
+[DVD アニメ] うる星やつら 第070話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,974,618 868724ecd0c799fac695b4f5c8058bfafe15421b<br>
+[DVD アニメ] うる星やつら 第071話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,070,618 249808e7be5ec9be6ca0e84ba44d60c9ee7233b8<br>
+[DVD アニメ] うる星やつら 第072話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,254,618 180f667ea820ff5d5ed7568d43b5513c5ad49ea2<br>
+[DVD アニメ] うる星やつら 第073話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,878,618 1554a8612a7aa1bb95e38fb5f958786e0197a689<br>
+[DVD アニメ] うる星やつら 第074話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,502,618 515f33c3dc86e9a6807bf09e0f12e2e7482a0bb1<br>
+[DVD アニメ] うる星やつら 第075話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,790,618 bf37823ab95ac75ec90c3406b4f4e53ac7e4b901<br>
+[DVD アニメ] うる星やつら 第076話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,590,618 c041017a018901b7b18c392a0b4a2ce5dd5b991d<br>
+[DVD アニメ] うる星やつら 第077話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,694,618 fb92875e38899b0be0bf984284aaeb4011d52f5f<br>
+[DVD アニメ] うる星やつら 第078話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,062,618 ff60e256c83fabe9f1c757d123504ae8ffa43398<br>
+[DVD アニメ] うる星やつら 第079話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,454,624 57cae0f96cbe956da2e91df40de8e69d8ad05f36<br>
+[DVD アニメ] うる星やつら 第080話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,102,612 a52babeb6b60b5949637fea5bf0c2e23fbe3f96c<br>
+[DVD アニメ] うる星やつら 第081話 (640x480 WMV9).wmv 1dodakemx1N789S3y 305,086,612 a20f37f0262bb69903e3ae72113dce2a0645a6e9<br>
+[DVD アニメ] うる星やつら 第082話 (640x480 WMV9).wmv 1dodakemx1N789S3y 306,798,606 027e89d3f0f5ec874ecc5d0bbf921e2fd8fa68c5<br>
+[DVD アニメ] うる星やつら 第083話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,102,612 6c0333e9f0772be45cef86e1610c34e1e19be6fa<br>
+[DVD アニメ] うる星やつら 第084話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,294,612 bb099da592e5cfc99c11193711f9cc6eb4f3e959<br>
+[DVD アニメ] うる星やつら 第085話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,790,612 f38c4d5a0ecc8cc20684f3b54c89458990563074<br>
+[DVD アニメ] うる星やつら 第086話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,886,612 32d5a16c494a94c69fbc30756757a2da9d72f920<br>
+[DVD アニメ] うる星やつら 第087話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,646,612 19a6b114780d7698d7e7614d337cffe8b19d892f<br>
+[DVD アニメ] うる星やつら 第088話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,302,618 61b856792ed61a6d01293eeb7a84d2fae7bd2427<br>
+[DVD アニメ] うる星やつら 第089話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,654,612 5a9e0bbe6ca0cbad06db5196b127371f83e73ca6<br>
+[DVD アニメ] うる星やつら 第090話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,126,612 10fee83ce94d0e149cb3607095487b5ac1962a14<br>
+[DVD アニメ] うる星やつら 第091話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,230,612 37d096f562ee3992e932efbab9af8b01e1cfa057<br>
+[DVD アニメ] うる星やつら 第092話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,654,612 41dfb580a1e65a88d823fffd3fabab2527040753<br>
+[DVD アニメ] うる星やつら 第093話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,006,618 0f771d2f3ec7bdb5640b99dbfc855a71d795a833<br>
+[DVD アニメ] うる星やつら 第094話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,302,618 afdfeb3737a414adc4575850ff987e7ae3f86a5b<br>
+[DVD アニメ] うる星やつら 第095話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,070,618 9f15a44950bab1eab3ebab08fcaa3cc0e7f95d68<br>
+[DVD アニメ] うる星やつら 第096話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,542,612 d1956e72b662a2d11125c28f5421c6ef2b00f7d2<br>
+[DVD アニメ] うる星やつら 第097話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,750,612 496c9d6206d13e4a2c2a8cd8f07960c47d43f9cc<br>
+[DVD アニメ] うる星やつら 第098話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,182,606 c2a5c689a910086177a4cf46168456827fbfbef5<br>
+[DVD アニメ] うる星やつら 第099話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,006,612 2451109722d6f589f36fcc0ca0c81c2f705042f3<br>
+[DVD アニメ] うる星やつら 第100話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,270,612 9f0d37792d707bf64ef63164fd839001597a020d<br>
+[DVD アニメ] うる星やつら 第101話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,142,612 508fb471c13b2660a05c2f0f11dd130980b722d2<br>
+[DVD アニメ] うる星やつら 第102話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,006,618 2ca9d3a9aa64cb8853c9399c09438da0ab7cacb3<br>
+[DVD アニメ] うる星やつら 第103話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,550,618 1b2f738645921543b979202185e3829bf454486a<br>
+[DVD アニメ] うる星やつら 第104話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,406,618 50d010d7c81128eac4ca378f3e0d49df67ef8ffb<br>
+[DVD アニメ] うる星やつら 第105話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,670,618 80e803afd7539ab3823cae0c6579cc258665e460<br>
+[DVD アニメ] うる星やつら 第106話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,950,618 fa28dc992b29d8445c5f8b62f283b42e8b554091<br>
+[DVD アニメ] うる星やつら 第107話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,134,624 9d06b458b07c276c1f7a8c122c8ea125cf24c620<br>
+[DVD アニメ] うる星やつら 第108話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,038,612 92652b24d92b849d4b1015915a25581237ea0610<br>
+[DVD アニメ] うる星やつら 第109話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,326,624 8a589abce0af5183dce9804398d95ae4aa702ee5<br>
+[DVD アニメ] うる星やつら 第110話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,790,618 501e44ee2869fe0dee26df30385bc1cf81b04d93<br>
+[DVD アニメ] うる星やつら 第111話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,662,618 d8cb2c2b9521082aab3b238a4553892850c5eb58<br>
+[DVD アニメ] うる星やつら 第112話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,166,624 a8eb24a7b0d7c50193b126ecdb0c79afc4ba9fe8<br>
+[DVD アニメ] うる星やつら 第113話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,558,612 6fc4acd22a4cfd3fbe2bfc307368b8dafb6a1545<br>
+[DVD アニメ] うる星やつら 第114話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,742,624 6ace5e44252f9dfd7d5cd604469ff30cceb2ad1c<br>
+[DVD アニメ] うる星やつら 第115話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,638,618 43dc777791adc61b851419d2e1a44d56c1143a38<br>
+[DVD アニメ] うる星やつら 第116話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,062,624 ba8acfbbec76ab27bf59401495c88da20284fa18<br>
+[DVD アニメ] うる星やつら 第117話 (640x480 WMV9).wmv 1dodakemx1N789S3y 306,646,612 75345b32c928a727b6892083e807f97d71a4d63a<br>
+[DVD アニメ] うる星やつら 第118話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,462,606 8c2a83dda8f4d5935351eacad19e71e9bb9c21ea<br>
+[DVD アニメ] うる星やつら 第119話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,142,612 8fc8667e17f07e7a6f94d1b2e9e299161b64a8ab<br>
+[DVD アニメ] うる星やつら 第120話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,358,612 8b9d451a9340d5e3701c40434d4e67c5a96a22e8<br>
+[DVD アニメ] うる星やつら 第121話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,006,606 9402b3665ecc8d6da52a9f15e90864636eef6a18<br>
+[DVD アニメ] うる星やつら 第122話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,790,612 8859e678451229bd0c181fc42e6efdfde65ffa14<br>
+[DVD アニメ] うる星やつら 第123話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,414,600 addabfc7d233f09ee7e32c3373728ac51739ee01<br>
+[DVD アニメ] うる星やつら 第124話 (640x480 WMV9).wmv 1dodakemx1N789S3y 313,259,396 f8c69e96a4c9fa8a655137bd6934eeb0be949122<br>
+[DVD アニメ] うる星やつら 第125話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,886,606 ed0f4a23b26970d59fb817bc39a7df7406dfc3b3<br>
+[DVD アニメ] うる星やつら 第126話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,110,618 4f9d6c059417b7853f99d504ab4544b3bae97481<br>
+[DVD アニメ] うる星やつら 第127話 (640x480 WMV9).wmv 1dodakemx1N789S3y 305,958,618 8af4099ace752bc3cd89aa5165c50dd0bae6786d<br>
+[DVD アニメ] うる星やつら 第128話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,214,624 b39edbe84b254e2f83e024282a4c76b13dc16444<br>
+[DVD アニメ] うる星やつら 第129話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,942,618 3c5b8bc3b8622aedbec571c570270baee72931c9<br>
+[DVD アニメ] うる星やつら 第130話 (640x480 WMV9).wmv 1dodakemx1N789S3y 306,862,618 bf39dbbcc179e51c08d7da5dfcbb63c92a5af4a8<br>
+[DVD アニメ] うる星やつら 第131話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,622,624 0fd1fd403a2407526faccd259f0ff1e4cf08642b<br>
+[DVD アニメ] うる星やつら 第132話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,718,612 fc500642d46279bc3eb8d0b5eeabb01ac159224c<br>
+[DVD アニメ] うる星やつら 第133話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,998,618 d3343e41d79d07a2c26de604d9858535fae049a3<br>
+[DVD アニメ] うる星やつら 第134話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,854,618 3f756ea932465981ebaac26c667e9114cb0d867a<br>
+[DVD アニメ] うる星やつら 第135話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,382,618 4aec80882b613dff19a9ce5616bb8efe40efbc0c<br>
+[DVD アニメ] うる星やつら 第136話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,230,618 b927203a0c7ac79abe1fd608f639f411a841eb81<br>
+[DVD アニメ] うる星やつら 第137話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,894,618 8ca6369d167d40266f0747e1257739c9162b19de<br>
+[DVD アニメ] うる星やつら 第138話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,734,618 17eff70404598db0d3e8c1839b9e1354cb9c8ad9<br>
+[DVD アニメ] うる星やつら 第139話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,894,618 b50ecb0e9335f7ece817c9aff9a5e0510e7172eb<br>
+[DVD アニメ] うる星やつら 第140話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,646,612 5e1e60cee00fb518475083bea8fc618c8265144f<br>
+[DVD アニメ] うる星やつら 第141話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,078,612 6d97764d9287750856bc98b4ff7416bafc2f6297<br>
+[DVD アニメ] うる星やつら 第142話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,670,606 5da465ef8a92ba72bd77966f3fc33951b499050c<br>
+[DVD アニメ] うる星やつら 第143話 (640x480 WMV9).wmv 1dodakemx1N789S3y 305,662,612 55ce34010cd3ac6e83159cd554b4504937d30e51<br>
+[DVD アニメ] うる星やつら 第144話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,422,606 a9e47059557b5177cb33ba2bada37ddf636ed635<br>
+[DVD アニメ] うる星やつら 第145話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,638,612 981f43af6d1c905e7d80fdf35ca0071dc052c464<br>
+[DVD アニメ] うる星やつら 第146話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,574,612 3e80c6e7d7e5402c50a9d7215716be5b1db6b7eb<br>
+[DVD アニメ] うる星やつら 第147話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,526,612 b79fc48b464ad7b8855b80bc9dbbefbb37d96798<br>
+[DVD アニメ] うる星やつら 第148話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,342,612 9c5d792b22945eb1ef070deb7bf7d76a49b7ef62<br>
+[DVD アニメ] うる星やつら 第149話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,398,612 1038a0363299541d6d53fbe9cf165eb23e6bf8fb<br>
+[DVD アニメ] うる星やつら 第150話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,734,612 1a880767ce33cc8a239e89f6c405beb6ea3a2e8b<br>
+[DVD アニメ] うる星やつら 第151話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,574,612 d45e8ceac6294a2df051bb0576f728b9ca10b9a4<br>
+[DVD アニメ] うる星やつら 第152話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,710,612 3c770d930a0fb584037e2ead4ebd56fda2bc2dd9<br>
+[DVD アニメ] うる星やつら 第153話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,294,618 991aa0aae38cd4b24b01acbd75a6af1d218890c8<br>
+[DVD アニメ] うる星やつら 第154話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,214,606 6707fb9b1a37182015f41cf6cfdf837b7e892117<br>
+[DVD アニメ] うる星やつら 第155話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,566,612 e8c8add67e24bb86047e3ab3f90fcb4f7b6d973f<br>
+[DVD アニメ] うる星やつら 第156話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,510,612 fc0fddddc34e8a701030828a881fcae35c85bb7f<br>
+[DVD アニメ] うる星やつら 第157話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,918,612 748d5b287b52729ae1421bb8ae65c84575cd186d<br>
+[DVD アニメ] うる星やつら 第158話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,462,612 2d80cc530359fb3f7d5543083af572e7aca797f8<br>
+[DVD アニメ] うる星やつら 第159話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,158,612 4221bd72baf0178a4abb12e9c805db5551f60805<br>
+[DVD アニメ] うる星やつら 第160話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,734,612 bf3eaaaaf945eb67a655a4bda4eafb7be4d95fe6<br>
+[DVD アニメ] うる星やつら 第161話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,718,612 ffabc88c589edf6a43440d4273b63719c289b607<br>
+[DVD アニメ] うる星やつら 第162話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,070,612 0bf99e31d2f83fd0a32bd68972defc419d4fc68c<br>
+[DVD アニメ] うる星やつら 第163話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,718,612 5c9ba22ea83dd9f09d1bd9393cad04e7b2fa11aa<br>
+[DVD アニメ] うる星やつら 第164話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,734,612 571e57cc513bce90a305dc48f5fb7ebee343945d<br>
+[DVD アニメ] うる星やつら 第165話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,774,612 966fa85f9b167bf0bef46bbc4a96adf9532df484<br>
+[DVD アニメ] うる星やつら 第166話 (640x480 WMV9).wmv 1dodakemx1N789S3y 307,198,612 2ebacc7f45d59bb78646d2b80093cef58c24498c<br>
+[DVD アニメ] うる星やつら 第167話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,054,612 8c1de623c89941c61184773ca1448575527ab990<br>
+[DVD アニメ] うる星やつら 第168話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,598,606 005419d145fdec68bc94547a5c68ad525097297f<br>
+[DVD アニメ] うる星やつら 第169話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,094,612 98e39251e652a8a684588a880c5f3a0f3152ebbf<br>
+[DVD アニメ] うる星やつら 第170話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,646,612 cf44af04fff59a52106ff388653609ff5d4e433f<br>
+[DVD アニメ] うる星やつら 第171話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,158,612 96c1027dc1afe99e2c57dc781ece7539d8179bfd<br>
+[DVD アニメ] うる星やつら 第172話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,334,606 aa93ec21b2cbd0c694610b0dd44c6cb7a793b562<br>
+[DVD アニメ] うる星やつら 第173話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,278,612 714246bb163f2bb554d8fc423f5e80b603a91322<br>
+[DVD アニメ] うる星やつら 第174話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,534,618 486a22fed6bdf626074437da20d2bbd2a8d2e239<br>
+[DVD アニメ] うる星やつら 第175話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,078,612 5550f6ef719ac8aef397f70606233c74c0e5ce35<br>
+[DVD アニメ] うる星やつら 第176話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,638,612 738cbacb54b3c38d02a4d777ca924a91f5c8154a<br>
+[DVD アニメ] うる星やつら 第177話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,190,612 854e0a1aadad84daa7ff92c8c13cb269786bf243<br>
+[DVD アニメ] うる星やつら 第178話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,750,612 b380e20b4cbc55357ee41067d24a91e039006c87<br>
+[DVD アニメ] うる星やつら 第179話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,494,612 66e46760ac590fc05eacf9e69d8c4b44c87b5d81<br>
+[DVD アニメ] うる星やつら 第180話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,246,612 6fe5b8592b5f8952b67c81cb5c6ab0d2ca4b700f<br>
+[DVD アニメ] うる星やつら 第181話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,502,612 c0b9724d2b470733f714f11601a3664909387de7<br>
+[DVD アニメ] うる星やつら 第182話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,654,624 2a49616d2f91af7bef80bad597f155c081d63b59<br>
+[DVD アニメ] うる星やつら 第183話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,838,624 3084deed8ffcc858dcaab90a76566f73cf60a262<br>
+[DVD アニメ] うる星やつら 第184話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,958,624 56ca994b3290d029b64988ecb47afaa4c6495ee6<br>
+[DVD アニメ] うる星やつら 第185話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,166,618 4ce9fef1d51d4979e425ee71a3d1c59d8f3a0b8f<br>
+[DVD アニメ] うる星やつら 第186話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,598,618 da2534309f24e1456a692577037ebc41bde22232<br>
+[DVD アニメ] うる星やつら 第187話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,662,636 fe55fbe640c70d6abf4c89e7eeccdef8727c3359<br>
+[DVD アニメ] うる星やつら 第188話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,558,630 cfa47dd0c4cadc54056979f4faf3dc6a8dd4e80b<br>
+[DVD アニメ] うる星やつら 第189話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,414,618 ec8d5ef144aba35573534df3204dd70917f3f3b9<br>
+[DVD アニメ] うる星やつら 第190話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,078,612 d2e79a4fa1f33a4afc410e5f4223a6e4270d8b42<br>
+[DVD アニメ] うる星やつら 第191話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,902,612 1eea6b58a1ee5e22e1373a21df0d0bf47bba3988<br>
+[DVD アニメ] うる星やつら 第192話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,254,618 a7585ef96213d0c8758433eeedae29c08dad8143<br>
+[DVD アニメ] うる星やつら 第193話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,862,618 54754debb0c09b1dbf04f9df0fece56ec3361a15<br>
+[DVD アニメ] うる星やつら 第194話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,318,618 29468c60fe08a674fbf5ea503e1afb70b97bdef8<br>
+[DVD アニメ] うる星やつら 第195話 (640x480 WMV9).wmv 1dodakemx1N789S3y 312,118,618 515eeec152c11e8cb579b5324774c12e90c268a2<br>
+[DVD アニメ] うる星やつら 第196話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,254,612 db94167097ce08149288bacb47514b7eb5c78234<br>
+[DVD アニメ] うる星やつら 第197話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,982,618 4f080da4f83384e2d9d467a731e75e1ec52a1b23<br>
+[DVD アニメ] うる星やつら 第198話 (640x480 WMV9).wmv 1dodakemx1N789S3y 308,790,612 1e2c27acef5a5438d1f1c098f50f69da7bebd87e<br>
+[DVD アニメ] うる星やつら 第199話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,278,612 23c06738e427a6fdb923cc59e5b902e59323948d<br>
+[DVD アニメ] うる星やつら 第200話 (640x480 WMV9).wmv 1dodakemx1N789S3y 309,870,618 cb0b5c89760c1bb96590f6c9c81f3b20b936c5d6<br>
+[DVD アニメ] うる星やつら 第201話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,854,618 0276b9ecc6587e814dc250211c43e532e7842add<br>
+[DVD アニメ] うる星やつら 第202話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,638,618 d704fbccf002cf8ef0bf490d8a175c47c7345f88<br>
+[DVD アニメ] うる星やつら 第203話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,926,612 2708de26510f7b6dc41aa11dea6931da695cb762<br>
+[DVD アニメ] うる星やつら 第204話 (640x480 WMV9).wmv 1dodakemx1N789S3y 312,246,618 4342ea8db233c738fffe84beee033372efac3422<br>
+[DVD アニメ] うる星やつら 第205話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,654,612 84c506956f6dcc2214281b94188af4780c7b91b0<br>
+[DVD アニメ] うる星やつら 第206話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,262,612 59e8573560b29be8491622a814f0d492f80af8a1<br>
+[DVD アニメ] うる星やつら 第207話 (640x480 WMV9).wmv 1dodakemx1N789S3y 310,174,612 3effc655c6f1e132c01b2160bfb103ce65081c0d<br><br>
+[DVD アニメ] うる星やつら 特別番組 春だとびだせ！うる星やつらスペシャル (640x480 WMV9).wmv 1dodakemx1N789S3y 534,581,398 0c3fc5dc30e81c20de7c92c73e530bacbd6254d1<br><br>
+[DVD アニメ] うる星やつら’87 OVA (640x480 WMV9).wmv 1dodakemx1N789S3y 747,994,219 92ae7e26bca719179d2432f0cdd5e7ff828f0921<br>
+[DVD アニメ] うる星やつら OVAカルテット1 第01話 (640x480 WMV9).wmv 1dodakemx1N789S3y 318,126,948 71ddca7edc128ca0f004051cb48f628cdd08678b<br>
+[DVD アニメ] うる星やつら OVAカルテット1 第02話 (640x480 WMV9).wmv 1dodakemx1N789S3y 319,590,942 5a0203741178d8367696f4ef64f973c2aae802c8<br>
+[DVD アニメ] うる星やつら OVAカルテット1 第03話 (640x480 WMV9).wmv 1dodakemx1N789S3y 313,278,744 683d3540752dc69e67667bbcfe91c1181792d3b1<br>
+[DVD アニメ] うる星やつら OVAカルテット1 第04話 (640x480 WMV9).wmv 1dodakemx1N789S3y 313,782,792 70c5640b8664398a7d7b8fdd61edfff0e857cfac<br>
+[DVD アニメ] うる星やつら OVAカルテット2 第01話 (640x480 WMV9).wmv 1dodakemx1N789S3y 311,518,654 08842079952236b790831619a0110447d0035c88<br>
+[DVD アニメ] うる星やつら OVAカルテット2 第02話 (640x480 WMV9).wmv 1dodakemx1N789S3y 319,022,894 1606bc3bf1cf21acb9b20f52ed5f5a6044fcea27<br>
+[DVD アニメ] うる星やつら OVAカルテット2 第03話 (640x480 WMV9).wmv 1dodakemx1N789S3y 295,998,372 7097acf0884a7f496cf4d6fae1ad42081a5b135a<br>
+[DVD アニメ] うる星やつら OVAカルテット2 第04話 (640x480 WMV9).wmv 1dodakemx1N789S3y 339,791,548 988e631783a04513b3c056498361693d303df91f<br><br>
+[DVD アニメ] 劇場うる星やつら2 (704x396 WMV9).wmv 1dodakemx1N789S3y 1,151,909,732 0cf520bee2336c53c0dab5771cf562d9ff16852b<br>
+[DVD アニメ] 劇場うる星やつら3 ハイビジョンマスター版 (640x480 WMV9).wmv 1dodakemx1N789S3y 1,099,988,550 eeb9443ccf594435ff6dc910f1734d5ad8f410a6<br>
+[DVD アニメ] 劇場うる星やつら完結編 ハイビジョンマスター版 (640x480 WMV9).wmv 1dodakemx1N789S3y 984,513,406 916d79f5cc395f163138a6af387e6cfa841439b4<br><br>
+[DVD アニメ] うる星やつら オンリー・ユー（ハイビジョンニューマスター版） (640x480 WMV9).wmv wbintaaroAIcK9ty 1,234,920,600 5f219b56ef6c50876d9946d83f4510e498df0489<br>
+<hr class="A">
+[アニメ映画] うる星やつら 完結編 (DVDRIP 640x480 x264 mp3).avi カキ氷食べたいpb4KrL2Pc3 1,894,604,800 66c2e1e1f1f3ef4dd5dd95e11416d6b341b62100<br>
+[アニメ映画] うる星やつら2 ビューティフルドリーマー (DVDRIP 704x396 x264 AC3 5.1ch).avi カキ氷食べたいpb4KrL2Pc3 1,603,985,408 6414434c240b0c3dafd4060c798ae7f5d16aca8b<br>
+<hr class="A">
+(アニメ DVD) うる星やつら 完結編 (960x720).wmv upconlyyoSrIknTQW 2,499,359,428 7be742d4291da3d38d5c0aae057afd7f0dc766e9<br>
+(アニメ DVD) うる星やつら1 劇場版 (960x720).wmv upconlyyoSrIknTQW 2,361,287,117 21f79eb2ee1ec49d6c768d85f92a9829ba3828e7<br>
+(アニメ DVD) うる星やつら2 劇場版 (1280x720).wmv upconlyyoSrIknTQW 2,804,340,523 268d904a4aa9f84941664e3f9040ac2a7d26e9fe<br>
+(アニメ DVD) うる星やつら3 劇場版 (960x720).wmv upconlyyoSrIknTQW 2,290,535,065 50325ad9aa67138eab69dac39f390db4ad96f4ba<br>
+(アニメ DVD) うる星やつら4 劇場版 (960x720).wmv upconlyyoSrIknTQW 2,369,052,331 34e4086c0ff2b7cf5bd14d6df058495752f8240f<br>
+(アニメ DVD) うる星やつら OVA 第1話 (960x720).wmv upconlyyoSrIknTQW 676,211,710 13c8e045e06444cdaa62c97395d5bc6061251684<br>
+(アニメ DVD) うる星やつら OVA 第2話 (960x720).wmv upconlyyoSrIknTQW 548,829,034 a0148a085a8df5c178e48949a9767567ace3b173<br>
+(アニメ DVD) うる星やつら OVA 第3話 (960x720).wmv upconlyyoSrIknTQW 630,509,740 9714b0f5d9e5884bcbe31ef6adeef984347b47a5<br>
+(アニメ DVD) うる星やつら OVA 第4話 (960x720).wmv upconlyyoSrIknTQW 640,397,200 522a9e8f58a19a5fb829450787ae3f69515e2f58<br>
+(アニメ DVD) うる星やつら OVA 第5話 (960x720).wmv upconlyyoSrIknTQW 746,796,472 14b5f265d10cffd5134ea454d4d0acf6f36f5e33<br>
+(アニメ DVD) うる星やつら OVA 第6話 (960x720).wmv upconlyyoSrIknTQW 584,571,937 749de520d7e0f5d9b3c3c23860fd820ac3e1179b<br>
+(アニメ DVD) うる星やつら OVA 第7話 (960x720).wmv upconlyyoSrIknTQW 819,177,439 de261ea61fb1892beb4dd0f455d461546a8d67b6<br>
+(アニメ DVD) うる星やつら OVA 第8話 (960x720).wmv upconlyyoSrIknTQW 780,875,932 5aeafd98b0fa8aa6b5b49e87ed9e19c48b17d5d3<br>
+(アニメ DVD) うる星やつら’87 (960x720).wmv upconlyyoSrIknTQW 1,410,373,360 cb05b5d39af95555cc8753842a525163977e210c<br>
+<hr class="A">
+うる星やつら いつだって・マイ・ダーリン 映像特典(DVD_640x480_WMV9).wmv io2etbjGWE 8,051,890 fc5e54d374074bd85821e5d1a5bc6bb32485e3f7<br>
+うる星やつら いつだって・マイ・ダーリン(DVD_640x480_WMV9).wmv io2etbjGWE 760,621,325 33ddb1e73068a947a4297699dc6a69928c7ee924<br>
+うる星やつら オンリー・ユー 映像特典(DVD_640x480_WMV9).wmv io2etbjGWE 24,928,521 f8e4fe7303f62698248b368acbb3b754b7991f67<br>
+うる星やつら オンリー・ユー(DVD_640x480_WMV9).wmv io2etbjGWE 1,319,772,607 cde0fdf867dba98affa736fdc2c235668f43d1c2<br>
+うる星やつら 完結篇 映像特典1(DVD_640x480_WMV9).wmv io2etbjGWE 35,618,617 614ab009880b22256a84887dd1d5294d1e6f0d05<br>
+うる星やつら 完結篇 映像特典2(DVD_640x480_WMV9).wmv io2etbjGWE 9,829,847 12e17a19d6431be0b328c0aad795a278244e084a<br>
+うる星やつら 完結篇(DVD_640x480_WMV9).wmv io2etbjGWE 1,453,999,348 ac20697b2e6dedb73fd38e995a9228465cc37418<br>
+うる星やつら2 ビューティフル・ドリーマー 映像特典(DVD_704x396_WMV9).wmv io2etbjGWE 37,961,976 7131ae0506901159772f64e9fd836d54856afcea<br>
+うる星やつら2 ビューティフル・ドリーマー(DVD_704x396_WMV9).wmv io2etbjGWE 1,333,279,300 2d62ef111c62bdde5348517cd60c2162598ef237<br>
+うる星やつら3 リメンバー・マイ・ラヴ 映像特典(DVD_640x480_WMV9).wmv io2etbjGWE 19,878,885 597a824005d0e8c035609ea2b1de94904d6ba2d1<br>
+うる星やつら3 リメンバー・マイ・ラヴ(DVD_640x480_WMV9).wmv io2etbjGWE 1,386,321,772 1106d0b323ee514b15df0f79326dceeac463adde<br>
+うる星やつら4 ラム・ザ・フォーエバー 映像特典1(DVD_640x480_WMV9).wmv io2etbjGWE 28,516,618 7c4c41adafe3f62f4876e6a01d6aa27b2e88f932<br>
+うる星やつら4 ラム・ザ・フォーエバー 映像特典2(DVD_640x480_WMV9).wmv io2etbjGWE 10,997,929 2f8a15caa07b133bbf73ecaf6111be885d6de339<br>
+うる星やつら4 ラム・ザ・フォーエバー(DVD_640x480_WMV9).wmv io2etbjGWE 1,400,014,984 7459ae21d457235ff60b3df280105d02816ff87d<br>
+うる星やつら87「夢の仕掛人因幡君登場！ラムの未来はどうなるっちゃ！？」(DVD_640x480_WMV9).wmv io2etbjGWE 552,867,523 18e9778bcdadb4f441ed01b6ee778184d5bfc701<br>
+うる星やつらOVA_OP1.wmv io2etbjGWE 37,455,952 2dc6d2574b7f97b55d47e737a5539c3b1ff04bfd<br>
+うる星やつらOVA_OP2.wmv io2etbjGWE 39,285,908 6f7d118dfd33938e0a3d5e8e5609818d94df1b40<br>
+うる星やつらOVA_ED1.wmv io2etbjGWE 31,803,968 8b62edeaad4af06d7f56ccddcac771a28cc5e956<br>
+うる星やつらOVA_ED2.wmv io2etbjGWE 51,335,638 eb8ecd98740b10edca6d9126976f85368aa04e0c<br>
+うる星やつらOVA「ハートをつかめ」(DVD_640x480_WMV9).wmv io2etbjGWE 322,366,116 f0c17bf3c28d179e13c50e1ad117d726fcfd52e6<br>
+うる星やつらOVA「ヤギさんとチーズ」(DVD_640x480_WMV9).wmv io2etbjGWE 232,612,631 9b9e865859f79ff36211cf7670d346e1acf902c8<br>
+うる星やつらOVA「乙女ばしかの恐怖」(DVD_640x480_WMV9).wmv io2etbjGWE 321,189,569 96d75690382dfbcf994b47c6f38718bf0755d6fd<br>
+うる星やつらOVA「月に吠える」(DVD_640x480_WMV9).wmv io2etbjGWE 257,355,414 59fde3635e87393759a4a8e47ef7f02d2f5d7784<br>
+うる星やつらOVA「渚のフィアンセ」(DVD_640x480_WMV9).wmv io2etbjGWE 227,966,762 afc779284796ba21a8bf50096a849fcce87de652<br>
+うる星やつらOVA「電気仕掛けのお庭番」(DVD_640x480_WMV9).wmv io2etbjGWE 263,193,604 c9890d393ea19900cb336a5f75cfa3aae49946af<br>
+うる星やつらOVA「怒れ!!シャーベット」(DVD_640x480_WMV9).wmv io2etbjGWE 285,223,511 eddbd16499f554bfbba291b5f30a62f9bb8c17ea<br>
+うる星やつらOVA「了子の9月のお茶会」(DVD_640x480_WMV9).wmv io2etbjGWE 450,532,724 a77e3a1ae2606ce367de62c484cbeda8bd25af3d<br>
+うる星やつらOVA「霊魂とデート」(DVD_640x480_WMV9).wmv io2etbjGWE 304,762,759 919999a73c4797b386214454650667aec52a88d6<br>
+うる星やつらメモリアル・アルバム「アイム・THE・終ちゃん」(DVD_640x480_WMV9).wmv io2etbjGWE 352,915,891 419927725b5bf6349f51440430da9b3236c29340<br>
+<br></dd>
+<dt><span class="title">ウルトラマニアック<b>◆</b></span>07/01/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+ウルトラマニアック 第01話 「Ayu & Nina」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 260,871,927 148f10ff891e9ab29e2fbef91a0f180713781e5b<br>
+ウルトラマニアック 第02話 「Boy meets girl」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 253,382,528 80d124c1ad303edef05a2a85b342599f53b8ffa7<br>
+ウルトラマニアック 第03話 「Change over」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 291,280,827 d1e0f9933f66231c0f8cc8dff87eed123c5075fa<br>
+ウルトラマニアック 第04話 「D.C (Da capo)」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 236,859,274 89471411188b83cb6bd5b1b52b8e7b818c6803d3<br>
+ウルトラマニアック 第05話 「Enigma」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 232,947,735 5741a23604a3c9c649fca02ebb0084ede85895c8<br>
+ウルトラマニアック 第06話 「Fight over」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 249,621,294 bf4f00af241d990be055f78a22ccb5f6784026cd<br>
+ウルトラマニアック 第07話 「Gigantic pets」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 248,542,516 8f4369418df37ce1c88f9b42696f495286161f8b<br>
+ウルトラマニアック 第08話 「Hello,little girls」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 318,160,942 69cc4e982ed4428057c4f6826a8fa35c1cdf9918<br>
+ウルトラマニアック 第09話 「Item」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 256,531,411 1d09b2122b55e7a69cbb82a2c707383dccdd13bd<br>
+ウルトラマニアック 第10話 「Jack straw」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 249,022,128 fc148bcb43b533fef887a5cb205b25cc7b4ed1f4<br>
+ウルトラマニアック 第11話 「Knight spirit」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 278,442,296 1186839447a0aacb5c2cfb4b2d486aa4c4a0c98c<br>
+ウルトラマニアック 第12話 「Lovesick night」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 264,119,131 41edc06f7946dfd8414df4b8b537f88127a2b652<br>
+ウルトラマニアック 第13話 「Magic vest」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 239,575,941 79c7fd9df29ee69f63e76893367556437e87a0ab<br>
+ウルトラマニアック 第14話 「Negative girl」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 277,092,428 288fb456f802ebf35ca2ffd2210a0ccac2b8995d<br>
+ウルトラマニアック 第15話 「Orange stone」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 272,827,247 f63009ce0d3fd2f3aeb604794ab2e50eec95e7a5<br>
+ウルトラマニアック 第16話 「Pinch hitter」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 239,688,702 10fc5cd65f142e975e8a635b1b5191f5dc8913ff<br>
+ウルトラマニアック 第17話 「Quest」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 234,544,360 9888ac018bc161aa3ba259ec97a91ef8375c2b4f<br>
+ウルトラマニアック 第18話 「R & B」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 249,423,837 4da6d2b08be40b9417f3ca1bb15b96c92c9ae8a3<br>
+ウルトラマニアック 第19話 「Stand by me」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 211,161,585 df662c62349ec98e513f4435ae9f7290048b862a<br>
+ウルトラマニアック 第20話 「Tangle」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 214,446,564 9dfd48d1ff20779296b17b0df48e54da13cbb2f0<br>
+ウルトラマニアック 第21話 「Untangle」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 217,332,790 6da848b1342dcf117d0a694ad36587c1bd009080<br>
+ウルトラマニアック 第22話 「Virgin love」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 246,904,893 c670b2de8849a4903238942119753bf94911fe89<br>
+ウルトラマニアック 第23話 「Wonderful night」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 246,798,836 87ea09004f7313d00e57381a8e075eb104908bf8<br>
+ウルトラマニアック 第24話 「X-day」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 262,538,508 1cb67b21749fcb6a4583141eddb042ecdff4c95a<br>
+ウルトラマニアック 第25話 「Yes, I like you」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 257,215,425 92e2e560f2ce02c02399f377df0fa96d9154b597<br>
+ウルトラマニアック 第26話 「Zoom in」 (DVD 640x480 H.264 Ogg).ogm.avi OGM神dcSuZFf3W7 279,031,207 1edd53b4b3c383fb7ba5ad803e181e70fbb0f543<br>
+<br></dd>
+</dl><a name="footer"></a><hr><br></body></html>

@@ -1,0 +1,638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja" dir="ltr"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="robots" content="index,noarchive">
+<title>ハッシュ保管庫 SHA1-レ版</title>
+<style type="text/css">
+<!--
+*{margin:0; padding:0;}
+body{margin:0; padding:0; font-size:9pt; color:#000000; background:#F5F5F5;}
+dd{margin:0 0 0 20px;}
+hr{margin:1px 0; border:1px #C1C0B5 solid;}
+hr.A{text-align:left; width:95%; margin:2px 0; border:1px #87A9D5 solid;}
+hr.B{text-align:left; width:95%; margin:2px 0; border:2px #43599A solid;}
+a{color:#0080C0; text-decoration:none;}
+a:hover{color:#FFFFFF; background-color:#0080C0;}
+table{font-size:8pt;}
+td{text-align:center; width:50px; border:2px #0080C0 solid;}
+td a{display:block; height:1.2em; line-height:1.2em;}
+.font{margin:5px 0 0 2px; font-size:10pt; color:#6E6E6E;}
+.title{color:#D95131;}
+.sup{color:#0000FF;}
+.exc{color:#808080;}
+-->
+</style></head><body>
+<a name="header"></a>
+<table><tr>
+<td><a href="051_sha1aa.html">あ</a></td><td><a href="052_sha1ai.html">い</a></td><td><a href="053_sha1au.html">う</a></td><td><a href="054_sha1ae.html">え</a></td>
+<td><a href="055_sha1ao.html">お</a></td><td><a href="056_sha1ka.html">か</a></td><td><a href="057_sha1ki.html">き</a></td><td><a href="058_sha1ku.html">く</a></td>
+<td><a href="059_sha1ke.html">け</a></td><td><a href="060_sha1ko.html">こ</a></td><td><a href="061_sha1sa.html">さ</a></td><td><a href="062_sha1si.html">し</a></td>
+<td><a href="063_sha1su.html">す</a></td><td><a href="064_sha1se.html">せ</a></td><td><a href="065_sha1so.html">そ</a></td><td><a href="066_sha1ta.html">た</a></td>
+<td><a href="067_sha1ti.html">ち</a></td><td><a href="068_sha1tu.html">つ</a></td><td><a href="069_sha1te.html">て</a></td><td><a href="070_sha1to.html">と</a></td>
+<td><a href="071_sha1na.html">な</a></td><td><a href="072_sha1ni.html">に</a></td><td><a href="0javascript:void(0)">ぬ</a></td>
+<td><a href="0javascript:void(0)">ね</a></td><td><a href="075_sha1no.html">の</a></td>
+</tr><tr>
+<td><a href="076_sha1ha.html">は</a></td><td><a href="077_sha1hi.html">ひ</a></td><td><a href="078_sha1hu.html">ふ</a></td><td><a href="079_sha1he.html">へ</a></td>
+<td><a href="080_sha1ho.html">ほ</a></td><td><a href="081_sha1ma.html">ま</a></td><td><a href="082_sha1mi.html">み</a></td><td><a href="083_sha1mu.html">む</a></td>
+<td><a href="084_sha1me.html">め</a></td><td><a href="085_sha1mo.html">も</a></td><td><a href="086_sha1ya.html">や</a></td><td><a href="087_sha1yu.html">ゆ</a></td>
+<td><a href="088_sha1yo.html">よ</a></td><td><a href="089_sha1ra.html">ら</a></td><td><a href="090_sha1ri.html">り</a></td><td><a href="091_sha1ru.html">る</a></td>
+<td><a href="092_sha1re.html">れ</a></td><td><a href="093_sha1ro.html">ろ</a></td><td><a href="094_sha1wa.html">わ</a></td><td><a href="095_sha1ld.html">LD</a></td>
+<td><a href="096_sha1ow.html">旧</a></td><td><a href="../bd/047_bd.html">BD</a></td><td><a href="../psp/048_psp.html">PSP</a></td>
+<td colspan="2" style="width:100px;"><a href="../update.html">更新リスト</a></td>
+</tr></table>
+<span class="font">ハッシュ保管庫 SHA1-レ版</span><hr>
+<dl>
+<dt><span class="title">RAY THE ANIMATION<b>◆</b></span>08/05/16 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] RAY THE ANIMATION 映像特典 MAKING OF RAY THE ANIMATION (640x480 WMV9).wmv サキCNS9Um2lXI 225,966,400 2114e1ea00398e2cb80852251009a261365e7ffb<br>
+[アニメ DVD] RAY THE ANIMATION 映像特典 SPECIAL INTERVIEW Ⅰ (640x480 WMV9).wmv サキCNS9Um2lXI 98,316,228 885cd860e301389918d35929020d7d645ff42114<br>
+[アニメ DVD] RAY THE ANIMATION 映像特典 SPECIAL INTERVIEW Ⅲ (640x480 WMV9).wmv サキCNS9Um2lXI 110,811,948 75b252abb63f7ef865352da077ae6c79f1b02020<br>
+[アニメ DVD] RAY THE ANIMATION 映像特典 SPECIAL INTERVIEW Ⅳ (640x480 WMV9).wmv サキCNS9Um2lXI 145,918,594 486dfc62980967248461055197dedce2bb818153<br>
+[アニメ DVD] RAY THE ANIMATION 映像特典 SPECIAL INTERVIEW Ⅴ (640x480 WMV9).wmv サキCNS9Um2lXI 183,183,560 7ee267e8d7a754ef4767edfe03b94a19f31745af<br>
+[アニメ DVD] RAY THE ANIMATION 映像特典 SPECIAL TALK EVENT IN TAF 2006 (640x480 WMV9).wmv サキCNS9Um2lXI 204,144,834 1a191093659042a807e2f354f0a090da699f7aa9<br>
+[アニメ DVD] RAY THE ANIMATION 映像特典 TVスポット① (704x396 WMV9).wmv サキCNS9Um2lXI 4,081,152 213bc3f97d88712a0950d2971a6d195360442725<br>
+[アニメ DVD] RAY THE ANIMATION 映像特典 ノンテロップOP (704x396 WMV9).wmv サキCNS9Um2lXI 41,255,328 2abf8e1fb44828a91f99b324ac32b8c8195ce730<br>
+[アニメ DVD] RAY THE ANIMATION 映像特典 ノンテロップED (704x396 WMV9).wmv サキCNS9Um2lXI 34,855,356 cc6a932ab340fee22bd0966577fc20e01534b4b4<br>
+[アニメ DVD] RAY THE ANIMATION 第01話 「神の目」 (704x396 WMV9).wmv サキCNS9Um2lXI 302,185,592 115b26ad37f9b28827895cbd609ab35bb21fac16<br>
+[アニメ DVD] RAY THE ANIMATION 第02話 「パートナー」 (704x396 WMV9).wmv サキCNS9Um2lXI 312,761,606 c24a475039c7af98d4a8bc780524377df17dcabd<br>
+[アニメ DVD] RAY THE ANIMATION 第03話 「ガラス越しの風景」 (704x396 WMV9).wmv サキCNS9Um2lXI 315,402,382 fbd1e1a6517f48ad372958a22ebb001a1227e199<br>
+[アニメ DVD] RAY THE ANIMATION 第04話 「赤いリボン」 (704x396 WMV9 本編・コメンタリー音声切り替え可).wmv サキCNS9Um2lXI 372,336,853 f1dbaf8b5bc635a125405da8c145b967171bbbcc<br>
+[アニメ DVD] RAY THE ANIMATION 第05話 「成り代わり」 (704x396 WMV9).wmv サキCNS9Um2lXI 392,746,396 6e85199096770bdca78e526583c94e22e931dc0e<br>
+[アニメ DVD] RAY THE ANIMATION 第06話 「贈りもの」 (704x396 WMV9 本編・コメンタリー音声切り替え可).wmv サキCNS9Um2lXI 349,264,871 7b04ea9c2c67320cfe33d456a47ed40882bc0c35<br>
+[アニメ DVD] RAY THE ANIMATION 第07話 「想い人」 (704x396 WMV9).wmv サキCNS9Um2lXI 325,306,382 11ce230c8713882dda3fe4e86f77cec2d431ea46<br>
+[アニメ DVD] RAY THE ANIMATION 第08話 「蠢く過去」 (704x396 WMV9 本編・コメンタリー音声切り替え可).wmv サキCNS9Um2lXI 374,176,871 c8fe2de3fbdd62f855205515c5e6ab0cfd9f04ea<br>
+[アニメ DVD] RAY THE ANIMATION 第09話 「現し身」 (704x396 WMV9).wmv サキCNS9Um2lXI 337,994,396 6e9e99816b4d783e55d094d236e2c5c5121c816b<br>
+[アニメ DVD] RAY THE ANIMATION 第10話 「再会」 (704x396 WMV9).wmv サキCNS9Um2lXI 294,330,382 a24b3146a43c67e42157c4a4106f1766d23ddcb5<br>
+[アニメ DVD] RAY THE ANIMATION 第11話 「哀してる・・・」 (704x396 WMV9 本編・コメンタリー音声切り替え可).wmv サキCNS9Um2lXI 324,192,871 9f9ec032ddd2471b1de4603f20e901f6d224c4d0<br>
+[アニメ DVD] RAY THE ANIMATION 第12話 「嘆きの楽園」 (704x396 WMV9).wmv サキCNS9Um2lXI 302,426,396 390f792f9fb889cfdda0ce9b6584bb325d8d0dc7<br>
+[アニメ DVD] RAY THE ANIMATION 第13話 「命」 (704x396 WMV9 本編・コメンタリー音声切り替え可).wmv サキCNS9Um2lXI 341,504,511 6154fbd9ea803702cda8272a2e0d8c6f99449ed6<br>
+<hr class="A">
+[アニメ DVD] RAY THE ANIMATION／ノンクレジットオープニング「zero-G」(800×448 WMV9 QL 96 AC3 192k).avi ZzJu9GYUl6 40,695,808 42bfe11c05dd199ed17f21aa816e6f6167ea0160<br>
+[アニメ DVD] RAY THE ANIMATION／ノンクレジットエンディング「夕凪」(800×448 WMV9 QL 96 AC3 192k).avi ZzJu9GYUl6 12,695,552 279cd6239d06807f95a7f6cde151f6283bc27a30<br>
+[アニメ DVD] RAY THE ANIMATION／第01話「神の目」(800×448 WMV9 QL 96 AC3 192k).avi ZzJu9GYUl6 249,726,976 97d08b94ae891dab6212be00c141f7f73914b5e7<br>
+[アニメ DVD] RAY THE ANIMATION／第02話「パートナー」(800×448 WMV9 QL 96 AC3 192k).avi ZzJu9GYUl6 264,509,440 5e25a906d778f83a2580dc632004c5452d1edace<br>
+[アニメ DVD] RAY THE ANIMATION／第03話「ガラス越しの風景」(800×448 WMV9 QL 96 AC3 192k).avi ZzJu9GYUl6 260,014,080 e4bc75537fc0b18816532b3f6fe7ae9530e5b202<br>
+[アニメ DVD] RAY THE ANIMATION／第04話「赤いリボン」(800×448 WMV9 QL 96 AC3 192k コメンタリー切替可).avi ZzJu9GYUl6 323,215,360 1ad763ce59096c82f94fe7a5eee2bba07e249046<br>
+[アニメ DVD] RAY THE ANIMATION／第05話「成り代わり」(800×448 WMV9 QL 96 AC3 192k).avi ZzJu9GYUl6 345,681,920 8618eafc98b2a43ba293cd0b78592551f4d57676<br>
+[アニメ DVD] RAY THE ANIMATION／第06話「贈りもの」(800×448 WMV9 QL 96 AC3 192k コメンタリー切替可).avi ZzJu9GYUl6 299,442,176 b2047399aa627444ba3307f743ceaa2b8a7f33ba<br>
+[アニメ DVD] RAY THE ANIMATION／第07話「想い人」(800×448 WMV9 QL 96 AC3 192k).avi ZzJu9GYUl6 268,484,608 3fe49ce69fc6842bae603a69a4136f021741631f<br>
+[アニメ DVD] RAY THE ANIMATION／第08話「蠢く過去」(800×448 WMV9 QL 96 AC3 192k コメンタリー切替可).avi ZzJu9GYUl6 328,067,072 52254bb793dfd90e687f324aaf7463287c2f5d29<br>
+[アニメ DVD] RAY THE ANIMATION／第09話「現(うつ)し身」(800×448 WMV9 QL 96 AC3 192k).avi ZzJu9GYUl6 284,420,096 f4d59b90020e170df94106e539c5c8d570a801fd<br>
+[アニメ DVD] RAY THE ANIMATION／第10話「再会」(800×448 WMV9 QL 96 AC3 192k).avi ZzJu9GYUl6 240,379,904 3a8e702030091fbb30871e784db5e961cd1741f6<br>
+[アニメ DVD] RAY THE ANIMATION／第11話「哀してる…」(800×448 WMV9 QL 96 AC3 192k コメンタリー切替可).avi ZzJu9GYUl6 273,790,976 6af8383d6292fd56bec3a69d9af2d77512534d14<br>
+[アニメ DVD] RAY THE ANIMATION／第12話「嘆きの楽園」(800×448 WMV9 QL 96 AC3 192k).avi ZzJu9GYUl6 248,768,512 0fb456732b64cf365de3c5a87f9aea70b9d9ca4e<br>
+[アニメ DVD] RAY THE ANIMATION／第13話「命」(800×448 WMV9 QL 96 AC3 192k コメンタリー切替可).avi ZzJu9GYUl6 300,537,856 d6e770fd7672ce068da8c66530083a037ec0bc76<br>
+<hr class="A">
+[DVD アニメ] RAY 第01話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 289,429,588 289bb9030a504705d563036bcf701547c8d35e89<br>
+[DVD アニメ] RAY 第02話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 289,449,886 846749a02b768025fd5d9c08ff18cf66bc3fcb34<br>
+[DVD アニメ] RAY 第03話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 289,459,106 f50aac579911a4f74c531c0e3ec7c282935f48a6<br>
+[DVD アニメ] RAY 第04話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 289,478,602 e6fe8fba47b59478931bb8990da25a858fce27d4<br>
+[DVD アニメ] RAY 第05話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 289,572,549 a670ada8b079e84ef0783192292c3bcebb9c5858<br>
+[DVD アニメ] RAY 第06話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 289,416,542 93ca79369028525f564816b65c812c709aeec8e3<br>
+[DVD アニメ] RAY 第07話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 289,481,719 cbe5255c0a28a3dd35b0e0a5abb54d15649bb25d<br>
+[DVD アニメ] RAY 第08話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 289,567,990 47eb8c5e5b7785e494d382902e54c11149fcaf5f<br>
+[DVD アニメ] RAY 第09話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 289,556,994 433c5895a0301acb2fbcd6322072dc0d8066dc75<br>
+[DVD アニメ] RAY 第10話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 289,540,589 ee7c9640bf99853fbd3a95b958215d6de94343ef<br>
+[DVD アニメ] RAY 第11話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 289,593,257 99140506ba3f07cd0d85f75429155e49c033baea<br>
+[DVD アニメ] RAY 第12話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 289,493,961 8cb9ee8a017640d6aa2b0e8751f9fcedb6158d53<br>
+[DVD アニメ] RAY 第13話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 285,537,432 663284926377cf8962b82e28d8a0118ed22e1076<br>
+<hr class="A">
+[DVD] RAY THE ANIMATION Vol.1 映像特典 ノンテロップOP「zero-G-」 (704x396 WMV9).wmv XWGw6KiGdI 35,545,808 9683cc38262da63a8585c806b0908719f9879fb1<br>
+[DVD] RAY THE ANIMATION Vol.1 映像特典 ノンテロップED「夕凪」 (704x396 WMV9).wmv XWGw6KiGdI 13,861,757 3b58ba442f386908f4685d954606e18312e37f27<br>
+[DVD] RAY THE ANIMATION 第01話 「神の目」 (704x396 WMV9).wmv XWGw6KiGdI 233,259,551 d8a0c39b2b9a8563b12c09742d816fd8bcb5a36d<br>
+[DVD] RAY THE ANIMATION 第02話 「パートナー」 (704x396 WMV9).wmv XWGw6KiGdI 247,378,442 1f9796de39b50eda71381b1d4a2b6f0c2272abc1<br>
+[DVD] RAY THE ANIMATION 第03話 「ガラス越しの風景」 (704x396 WMV9).wmv XWGw6KiGdI 244,853,981 ae085f7f1a212fadb24cc55a9cbf44a7301cbad9<br>
+[DVD] RAY THE ANIMATION 第04話 「赤いリボン」 (704x396 WMV9).wmv XWGw6KiGdI 288,485,225 79727d84811f7a08af66f518ba70335f5a12fdbd<br>
+[DVD] RAY THE ANIMATION 第05話 「成り代わり」 (704x396 WMV9).wmv XWGw6KiGdI 335,800,367 7e16f0160e039cb29f9ce297dc23e41d1aecc3ed<br>
+<hr class="A">
+[DVD] RAY THE ANIMATION Vol.1 映像特典 「TVスポット①」(x264 720×480 NTSC 16：9 AC3).mkv WgPZCQtRPj 3,090,744 495b8695ff6cbd1ea531d7a5680130c53c420cbd<br>
+[DVD] RAY THE ANIMATION Vol.1 映像特典 「TVスポット②」(x264 720×480 NTSC 16：9 AC3).mkv WgPZCQtRPj 3,107,565 2d0c59d815c56ce1f15ba6dc297bbdb0efedb43a<br>
+[DVD] RAY THE ANIMATION Vol.1 映像特典 「ノンテロップ オープニング」(x264 720×480 NTSC 16：9 AC3).mkv WgPZCQtRPj 35,951,181 2b74387eacf1175d867a5f597d77ef150c6fa52a<br>
+[DVD] RAY THE ANIMATION Vol.1 映像特典 「ノンテロップ エンディング」(x264 720×480 NTSC 16：9 AC3).mkv WgPZCQtRPj 12,704,954 b8724fb2f00ad7d0904d3983f1163d37d85c001b<br>
+[DVD] RAY THE ANIMATION Vol.2 映像特典 「オーディオ・コメンタリー収録後のインタビュー」(x264 640×480 AC3).mkv WgPZCQtRPj 347,696,631 eb123a050436952052ddd09df99b537f8bc434b5<br>
+[DVD] RAY THE ANIMATION Vol.2 映像特典 「東京国際アニメフェアでのトークイベント映像」(x264 640×480 AC3).mkv WgPZCQtRPj 181,179,775 229a95c3e4e2ee7d7bf3144470aa1284a8a28fc7<br>
+[DVD] RAY THE ANIMATION 第01話 「神の目」(x264 720×480 NTSC 16：9 AC3).mkv WgPZCQtRPj 215,371,072 92b775e6cfb70f9d9d5aa00fb8656c14f962bb36<br>
+[DVD] RAY THE ANIMATION 第02話 「パートナー」(x264 720×480 NTSC 16：9 AC3).mkv WgPZCQtRPj 229,301,721 52dc936f30c6fc788f3cb868e1a90fbd94c3d24f<br>
+[DVD] RAY THE ANIMATION 第03話 「ガラス越しの風景」(x264 720×480 NTSC 16：9 AC3).mkv WgPZCQtRPj 229,555,115 9d6af85e03a90ddd38b3898c29e3a8098d1157c2<br>
+[DVD] RAY THE ANIMATION 第04話 「赤いリボン」(x264 720×480 NTSC 16：9 AC3 オーディオコメンタリー付).mkv WgPZCQtRPj 288,620,622 95269da8ad7e547128a9ad5cd4e6deea8fb1b384<br>
+[DVD] RAY THE ANIMATION 第05話 「成り代わり」(x264 720×480 NTSC 16：9 AC3).mkv WgPZCQtRPj 301,257,293 fa51a4c52bb84ec9464a3b3747f62ebc6e495b17<br>
+[DVD] RAY THE ANIMATION 第06話 「贈り物」(x264 720×480 NTSC 16：9 AC3 オーディオコメンタリー付).mkv WgPZCQtRPj 271,616,577 a6a63f886eeb72c61d89831ead16159950f06708<br>
+[DVD] RAY THE ANIMATION 第07話 「想い人」(x264 720×480 NTSC 16：9 AC3).mkv WgPZCQtRPj 238,126,355 8ae39a6b659f389bc41854e22259c164537076c0<br>
+[DVD] RAY THE ANIMATION 第08話 「蠢く過去」(x264 720×480 NTSC 16：9 AC3 オーディオコメンタリー付).mkv WgPZCQtRPj 294,992,760 1bf12eab0bea40ebf0a90e89788f16e081533bc5<br>
+[DVD] RAY THE ANIMATION 第09話 「現し身」(x264 720×480 NTSC 16：9 AC3).mkv WgPZCQtRPj 250,681,006 17823fd0cb34e4bd14f6238e9a788114af656310<br>
+[DVD] RAY THE ANIMATION 第10話 「再会」(x264 720×480 NTSC 16：9 AC3).mkv WgPZCQtRPj 221,635,348 a9eb4788163c0657b8d54cd026436a57b8fc85af<br>
+[DVD] RAY THE ANIMATION 第11話 「哀してる...」(x264 720×480 NTSC 16：9 AC3 オーディオコメンタリー付).mkv WgPZCQtRPj 258,402,636 763a2e7d31c4fb6c2c995ac61b3dace2cf8f60bd<br>
+[DVD] RAY THE ANIMATION 第12話 「嘆きの楽園」(x264 720×480 NTSC 16：9 AC3).mkv WgPZCQtRPj 219,471,339 89ed08b6513e5bf8d1b8aaf69c7766ed14896db5<br>
+[DVD] RAY THE ANIMATION 第13話(最終話) 「命」(x264 720×480 NTSC 16：9 AC3 オーディオコメンタリー付).mkv WgPZCQtRPj 264,801,771 e429800c9af9ba2eebb350251bf36f176c41dbae<br>
+<br></dd>
+<dt><span class="title">RAVE<b>◆</b></span>04/06/24 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+(アニメ)[DVD] RAVE -レイヴ- 第01話 「レイヴを継ぐ者」 (704x396 WMV9 ver2 056EAD1F).wmv sozz7qjUAI0xB 313,751,425 49ed8eab94660a313cfccfcddaadf52757dcce84<br>
+(アニメ)[DVD] RAVE -レイヴ- 第02話 「爆炎のシュダ」 (704x396 WMV9 3749FCFF).wmv sozz7qjUAI0xB 249,495,425 cb2d42eb3a95a57095fe69fc573c55067547cc3d<br>
+(アニメ)[DVD] RAVE -レイヴ- 第03話 「伝説の鍛冶屋 ムジカ」 (704x396 WMV9 8E484132).wmv sozz7qjUAI0xB 249,991,425 fe8f93f55a18b89e239d1b6bfef246bad04d738f<br>
+(アニメ)[DVD] RAVE -レイヴ- 第04話 「獣剣の男 ランス」 (704x396 WMV9 3DA85DB3).wmv sozz7qjUAI0xB 227,575,439 479dd82f622fc24ee9b0e7760fa97a811f12e33b<br>
+(アニメ)[DVD] RAVE -レイヴ- 第05話 「復活！テン・コマンドメンツ」 (704x396 WMV9 D7D9EC09).wmv sozz7qjUAI0xB 268,103,425 fce60197723027c4087695920d048b6a63d55421<br>
+(アニメ)[DVD] RAVE -レイヴ- 第06話 「対決！ムジカのふたつの剣」 (704x396 WMV9 ADCA17CE).wmv sozz7qjUAI0xB 339,591,425 a376cdd2b5c4f2c970eddd381ac5b6b3b9d29382<br>
+(アニメ)[DVD] RAVE -レイヴ- 第07話 「決着！勝利の爆発の剣」 (704x396 WMV9 226711C9).wmv sozz7qjUAI0xB 258,919,425 0bd2eaf912bcae0bb665b8904e48639fe9c1bf56<br>
+(アニメ)[DVD] RAVE -レイヴ- 第08話 「銀の律動のムジカ」 (704x396 WMV9 79907F7A).wmv sozz7qjUAI0xB 191,447,439 6e36b4815de39449abf07c3e064f23042a7e82fc<br>
+(アニメ)[DVD] RAVE -レイヴ- 第09話 「プルーのひみつ」 (704x396 WMV9 99F0B8F6).wmv sozz7qjUAI0xB 272,935,425 a8be5c30497041e66b0c6ba8b8cfb6f83209693f<br>
+(アニメ)[DVD] RAVE -レイヴ- 第10話 「雷鳴の記憶」 (704x396 WMV9 67DA36FF).wmv sozz7qjUAI0xB 235,575,425 3beee6fdbc3c23eef52997dbdfad596d62d41a30<br>
+(アニメ)[DVD] RAVE -レイヴ- 第11話 「ダンシング・ヒーロー」 (704x396 WMV9 42B50C51).wmv sozz7qjUAI0xB 294,519,425 11a96355da378839a12f661565f81d84aed4c796<br>
+(アニメ)[DVD] RAVE -レイヴ- 第12話 「ラストシーン」 (704x396 WMV9 F7CDDC54).wmv sozz7qjUAI0xB 280,839,425 a071ed90753d695b25cb6cb216d65bc341da1472<br>
+(アニメ)[DVD] RAVE -レイヴ- 第13話 「星降りの地」 (704x396 WMV9 000847C8).wmv sozz7qjUAI0xB 221,383,425 4e05d0c7fb177cf9116e691dce0c6f05fed65d76<br>
+(アニメ)[DVD] RAVE -レイヴ- 第14話 「謎の暗殺者」 (704x396 WMV9 6D2B0BA8).wmv sozz7qjUAI0xB 187,255,425 c288d15e246b2d25d7925035014a780394b555b4<br>
+(アニメ)[DVD] RAVE -レイヴ- 第15話 「第2のレイヴ」 (704x396 WMV9 D631CDB5).wmv sozz7qjUAI0xB 242,343,439 aaa138ec92e07bd14646c05510904549b7162a9a<br>
+(アニメ)[DVD] RAVE -レイヴ- 第16話 「決闘！バニッシュフィールド」 (704x396 WMV9 8DE3C482).wmv sozz7qjUAI0xB 242,407,425 a9e296291f378dcb4a483e269c6685bd252ce7ca<br>
+(アニメ)[DVD] RAVE -レイヴ- 第17話 「シュダ 天空に散る」 (704x396 WMV9 62888DB3).wmv sozz7qjUAI0xB 284,615,425 bf7539cbb9fdea2906d35e0a12e9840a6023f646<br>
+(アニメ)[DVD] RAVE -レイヴ- 第18話 「ラプソディア爆発5秒前」 (704x396 WMV9 F18F966F).wmv sozz7qjUAI0xB 246,151,425 6024e76990e6b4fa665dab5d85ece8aec3eda16e<br>
+(アニメ)[DVD] RAVE -レイヴ- 第19話 「3173の女」 (704x396 WMV9 D5BAB1BE).wmv sozz7qjUAI0xB 246,775,425 e4aedfee87820d7bc27b9a3000143867e82619a8<br>
+(アニメ)[DVD] RAVE -レイヴ- 第20話 「エリーの悲劇・・・」 (704x396 WMV9 E55E94A2).wmv sozz7qjUAI0xB 213,767,425 1f9221eb01d32e57b8e79099959da112d7d450a9<br>
+(アニメ)[DVD] RAVE -レイヴ- 第21話 「激突！ハル対ジークハルト」 (704x396 WMV9 FCD5F4B7).wmv sozz7qjUAI0xB 235,303,425 49fabc07de556a589f7adb732f20a7340a1f8f37<br>
+(アニメ)[DVD] RAVE -レイヴ- 第22話 「封印の剣 ルーンセイブ」 (704x396 WMV9 BB92F59D).wmv sozz7qjUAI0xB 238,887,425 4f4196e480f3ac1a4b3be4b4a30e235e3e5cc1c4<br>
+(アニメ)[DVD] RAVE -レイヴ- 第23話 「エーテリオン覚醒」 (704x396 WMV9 81F156F6).wmv sozz7qjUAI0xB 236,343,425 c791f56ccb5ab269181cda771eafa8a49e226811<br>
+(アニメ)[DVD] RAVE -レイヴ- 第24話 「エリーとの約束」 (704x396 WMV9 8459335F).wmv sozz7qjUAI0xB 266,983,425 1f92bdbba9b5964ef6b7b46fad7184da0e777bae<br>
+(アニメ)[DVD] RAVE -レイヴ- 第25話 「さらばソング大陸」 (704x396 WMV9 19FD5965).wmv sozz7qjUAI0xB 249,495,425 d030a7a4e2c070d42104acb7e2670c58a92cd883<br>
+(アニメ)[DVD] RAVE -レイヴ- 第26話 「大強盗！ケツプリ団」 (704x396 WMV9 9C8B4F3D).wmv sozz7qjUAI0xB 279,687,425 e185aec84312f664dac32543edfa80f8eee02f9b<br>
+(アニメ)[DVD] RAVE -レイヴ- 第27話 「結界の都 ラーバリア」 (704x396 WMV9 94117703).wmv sozz7qjUAI0xB 272,775,425 8c8e4bfdca127a33d73d5a72c3e4c9169579b701<br>
+(アニメ)[DVD] RAVE -レイヴ- 第28話 「運命の絆」 (704x396 WMV9 D836A453).wmv sozz7qjUAI0xB 267,031,425 6d5ae2cde1243f112fa1b68e6e40f789e3b6e433<br>
+(アニメ)[DVD] RAVE -レイヴ- 第29話 「魔人の頭ゲイル！」 (704x396 WMV9 7A32DC03).wmv sozz7qjUAI0xB 280,487,425 4324af4c461ac2834e31fd34ec3542ee01848d6d<br>
+(アニメ)[DVD] RAVE -レイヴ- 第30話 「戦慄！王宮守五神」 (704x396 WMV9 662DC815).wmv sozz7qjUAI0xB 281,383,425 3eaada3bff82ca25e5d36e2a651374190957d872<br>
+(アニメ)[DVD] RAVE -レイヴ- 第31話 「ファイナルカウントダウン」 (704x396 WMV9 DC52AD47).wmv sozz7qjUAI0xB 240,471,425 d5326dc44ed391c90591d37ba6591913a90cabab<br>
+(アニメ)[DVD] RAVE -レイヴ- 第32話 「第5の剣 ブルー=クリムソン」 (704x396 WMV9 1F0DDE71).wmv sozz7qjUAI0xB 307,431,425 0f40f227a80682d0d235d2e6db6b136b61ebab2d<br>
+(アニメ)[DVD] RAVE -レイヴ- 第33話 「蒼天四戦士クレア」 (704x396 WMV9 03F7358E).wmv sozz7qjUAI0xB 227,463,425 0f1d8e83501c8668b4cd7280e673e7566f364182<br>
+(アニメ)[DVD] RAVE -レイヴ- 第34話 「ゲイルとキング」 (704x396 WMV9 645F636D).wmv sozz7qjUAI0xB 254,455,425 fdacc4f40ce444e5bb2e16c73e90e9662630f83b<br>
+(アニメ)[DVD] RAVE -レイヴ- 第35話 「戦う理由」 (704x396 WMV9 106014AF).wmv sozz7qjUAI0xB 287,047,425 93ec3bde2d86944ab769e7e326405552582184b3<br>
+(アニメ)[DVD] RAVE -レイヴ- 第36話 「哀しき空の向こうに・・・」 (704x396 WMV9 F0470967).wmv sozz7qjUAI0xB 298,439,425 6ebf0b9dca2f97ab5f883c4de335e456dedeaa10<br>
+(アニメ)[DVD] RAVE -レイヴ- 第37話 「さらば友よ！」 (704x396 WMV9 B8A0AB93).wmv sozz7qjUAI0xB 344,055,425 61b4d1b6dfcce2f662d6bb081069400a9f498a26<br>
+(アニメ)[DVD] RAVE -レイヴ- 第38話 「星の記憶」 (704x396 WMV9 2A98922C).wmv sozz7qjUAI0xB 216,823,425 f16af368a208fb4de0b7d21072c5cb28f53076df<br>
+(アニメ)[DVD] RAVE -レイヴ- 第39話 「RAVE誕生」 (704x396 WMV9 29C10605).wmv sozz7qjUAI0xB 236,951,425 f81c0765c79d1e2220b1ce1cb8b208b7240ba369<br>
+(アニメ)[DVD] RAVE -レイヴ- 第40話 「0065プルー・レジェンド」 (704x396 WMV9 2867EEDD).wmv sozz7qjUAI0xB 289,079,425 5aa4609b78f665b243d9be51a75359f08f9f9b5e<br>
+(アニメ)[DVD] RAVE -レイヴ- 第41話 「決死の路上パフォーマンス」 (704x396 WMV9 F159AC0C).wmv sozz7qjUAI0xB 245,159,425 172140fbffc5a4c3c9ef23cc61fe6abf5d762835<br>
+(アニメ)[DVD] RAVE -レイヴ- 第42話 「空中カジノ エーデルレイク」 (704x396 WMV9 3798EB0D).wmv sozz7qjUAI0xB 218,103,439 b0232e4acf9b6b183b45712f9df826e2cc233f76<br>
+(アニメ)[DVD] RAVE -レイヴ- 第43話 「ケツプリ団の大逆襲」 (704x396 WMV9 BC9E06A8).wmv sozz7qjUAI0xB 241,031,425 cdb90c8c793867a8b38b385524cead23c9c1cc68<br>
+(アニメ)[DVD] RAVE -レイヴ- 第44話 「デスストーム突破」 (704x396 WMV9 BC9708C1).wmv sozz7qjUAI0xB 323,303,425 4d2e30bd8264cbf3a8494babcfc4fbe8880fb472<br>
+(アニメ)[DVD] RAVE -レイヴ- 第45話 「降臨 ダークブリングマスター」 (704x396 WMV9 6116499C).wmv sozz7qjUAI0xB 305,287,439 9dd7d50b4d93badd6202fc4c428b0e7b373f10e0<br>
+(アニメ)[DVD] RAVE -レイヴ- 第46話 「復活！！六祈将軍」 (704x396 WMV9 F1D47200).wmv sozz7qjUAI0xB 278,567,425 cef2706d2aee429a2473825678bf27a54518d4b3<br>
+(アニメ)[DVD] RAVE -レイヴ- 第47話 「竜人の真実」 (704x396 WMV9 59656098).wmv sozz7qjUAI0xB 258,839,425 7eda708270f24f5d2672c481df39b90f851541b1<br>
+(アニメ)[DVD] RAVE -レイヴ- 第48話 「悲しき銀術師」 (704x396 WMV9 17B1F80E).wmv sozz7qjUAI0xB 246,663,425 1249fb99862b4b1f1c284d872806051c19819c67<br>
+(アニメ)[DVD] RAVE -レイヴ- 第49話 「戦いの果てに」 (704x396 WMV9 513141C3).wmv sozz7qjUAI0xB 285,431,425 17b4cd3a3cfd6c5d754e6c425c7393b905fa9aad<br>
+(アニメ)[DVD] RAVE -レイヴ- 第50話 「記憶の扉」 (704x396 WMV9 53EAE9DE).wmv sozz7qjUAI0xB 275,847,425 0a0f39ec10f95ea8f4d054b527984d91aec31f49<br>
+(アニメ)[DVD] RAVE -レイヴ- 第51話 「未来への誓い」 (704x396 WMV9 23AF81E0).wmv sozz7qjUAI0xB 254,135,089 4584e6b1845f9ba8a99724ff1e60f63c02dfb508<br>
+<br></dd>
+<dt><span class="title">REC<b>◆</b></span>08/06/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] REC 第01話 「ローマの休日」(704x480 x264).mp4 GateleezAclXse 130,147,436 4d4795976954ca23d82330bb8c279dbb82d76542<br>
+[アニメ DVD] REC 第02話 「麗しのサブリナ」(704x480 x264).mp4 GateleezAclXse 149,713,034 6d39f4827ee540139bf844c44c20d5e4f1334880<br>
+[アニメ DVD] REC 第03話 「暗くなるまで待って」(704x480 x264).mp4 GateleezAclXse 139,684,644 217ffc78aea20208ca0e8f169719011fb306b050<br>
+[アニメ DVD] REC 第04話 「ティファニーで朝食を」 (704x480 x264).mp4 GateleezAclXse 146,588,672 15fb31262621f846a719f0ef0fab873423dba7f2<br>
+<hr class="A">
+[DVD] REC 映像特典 「イベント用プロモーション映像」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 11,174,022 0300221c07ad73a69cbbc93ae5cf27c1e9b4931b<br>
+[DVD] REC 映像特典 「スナック『は』CM完全版」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 7,407,759 b615dfbdce7c9e64ec4360b2282a17a5ef9dc644<br>
+[DVD] REC 映像特典 「ノンクレジット・オープニング(10バージョン)」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 294,261,719 241217f3c81f97b2a19eac3dc5c655159cef77c9<br>
+[DVD] REC 映像特典 「ノンクレジット・エンディング」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 31,123,709 927ca18db81652e639f817d371fcf5164ca65c91<br>
+[DVD] REC 映像特典 「もうひとつの『REC』～新人声優・酒井香奈子ヒストリー～」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 280,842,872 9abdb2072d0610c132b6c686d6bc894bf1128920<br>
+[DVD] REC 映像特典 「幻の未放送予告（2パージョン）」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 1,647,009 7db0eea0aeb882b070d9e40ba864e36400c4bfd4<br>
+[DVD] REC Take.01 「ローマの休日」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 169,316,136 90f476ba550b5955074304b4245e92c5ffe58c4a<br>
+[DVD] REC Take.02 「麗しのサブリナ」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 200,460,699 f7127179a8709474d6c7d33baf0bb7ed63ac0f63<br>
+[DVD] REC Take.03 「暗くなるまで待って」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 185,876,267 79ee532e8a8be0556a4d37ed84f145179f807f49<br>
+[DVD] REC Take.04 「ティファニーで朝食を」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 198,970,219 125fe822493f19f07d21c3284cdd29fe79447f03<br>
+[DVD] REC Take.05 「昼下がりの情事」(x264 704×480 16：9 AC3 rev.2).mkv WgPZCQtRPj 175,578,965 ea14ef616fef9d957eaab45556244e199dc91f7b<br>
+[DVD] REC Take.06 「噂の二人」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 193,544,475 774d4221c3f2d139ee22ae8fdebadbc7d107b03a<br>
+[DVD] REC Take.07 「戦争と平和」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 174,496,238 07936bbe6f611d128d1b595a0eb4ec9cff7543d6<br>
+[DVD] REC Take.08 「許されざる者」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 191,075,795 17b4ad813ea0aa4d565f184095b3337d0c7396b5<br>
+[DVD] REC Take.09 「マイ・ファア・レディ」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 191,895,434 a59740c56b96b05501791f12feeac1d4bea72096<br>
+[DVD] REC Take.10(最終回) 「いつも二人で」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 182,764,779 1b37290ab0da550ec6f4c67456cd47712f10e3be<br>
+<hr class="A">
+【アニメ】[DVD] REC 01 映像特典 01／15 「ノンクレジット・オープニング Ver.1」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 47,496,547 4e4131949160d1998e85b1f2c007ef2417fa06cc<br>
+【アニメ】[DVD] REC 01 映像特典 02／15 「ノンクレジット・オープニング Ver.2」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 46,929,873 39d6f73ece43a9b3a91438cbc1ae7aaf556fcca8<br>
+【アニメ】[DVD] REC 01 映像特典 03／15 「ノンクレジット・オープニング Ver.3」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 46,905,249 197934c26a0145a2c2098e7dc31c387e7917da49<br>
+【アニメ】[DVD] REC 01 映像特典 04／15 「ノンクレジット・オープニング Ver.4」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 47,139,310 19e11d4c61ae74018526c55bfe6a72cb3804dfde<br>
+【アニメ】[DVD] REC 01 映像特典 05／15 「ノンクレジット・オープニング Ver.5」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 46,942,206 7a4f161ef33215cd793572cbf489c059ff230d1a<br>
+【アニメ】[DVD] REC 01 映像特典 06／15 「ノンクレジット・オープニング Ver.6」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 46,880,611 0b479f9e934ab91d29e5ad1bac02b3c452d5a143<br>
+【アニメ】[DVD] REC 01 映像特典 07／15 「ノンクレジット・オープニング Ver.7」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 47,114,658 214f8ddc756f9fa1d5522805922206768fa6c03d<br>
+【アニメ】[DVD] REC 01 映像特典 08／15 「ノンクレジット・オープニング Ver.8」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 46,917,554 fa1cee2b83b7349f91ff4a3bbea131ac4a3b8dae<br>
+【アニメ】[DVD] REC 01 映像特典 09／15 「ノンクレジット・オープニング Ver.9」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 46,769,726 c1be87f9f24612196ac1aaf967b4c4ac8fe95013<br>
+【アニメ】[DVD] REC 01 映像特典 10／15 「ノンクレジット・オープニング Ver.10」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 46,708,131 bf196c7fc456e4d14d266f31da6a19b9a5047dda<br>
+【アニメ】[DVD] REC 01 映像特典 11／15 「ノンクレジット・エンディング」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 62,402,551 622893fb7910e15ad1f4d81f7d608dc1da9b0c4f<br>
+【アニメ】[DVD] REC 01 映像特典 12／15 「もうひとつの『REC』～新人声優・酒井香奈子ヒストリー～」 (640x480 WMV9).wmv pcT6OjjAFE 76,908,314 9bce2530f2217a02695908001565e75f56e8b73e<br>
+【アニメ】[DVD] REC 01 映像特典 13／15 「スナック『は』CM完全版」 (640x480 WMV9).wmv pcT6OjjAFE 6,921,083 9e649dfb8a5afed640fb01d108148819707bfcad<br>
+【アニメ】[DVD] REC 01 映像特典 14／15 「幻の次放送予告（2バージョン）」 (704x396 WMV9).wmv pcT6OjjAFE 918,311 563bb55b2e40adb4c9fbef84541aaa8c7920c671<br>
+【アニメ】[DVD] REC 01 映像特典 15／15 「イベント用プロモーション映像」 (704x396 WMV9).wmv pcT6OjjAFE 9,799,421 522bd6f2e9895d73d2e4e6632688787aadcb386f<br>
+【アニメ】[DVD] REC 第01話 「ローマの休日」 (704x396 WMV9).wmv pcT6OjjAFE 141,084,074 765163ae4838b2dbc860a098b5de38187f0711e3<br>
+【アニメ】[DVD] REC 第02話 「麗しのサブリナ」 (704x396 WMV9).wmv pcT6OjjAFE 180,266,669 0e526ff2aa45b8a1307c5bc440c2659fae09f93f<br>
+【アニメ】[DVD] REC 第03話 「暗くなるまで待って」 (704x396 WMV9).wmv pcT6OjjAFE 166,608,266 3432b61340050fed3daa269583dca7424bda1c26<br>
+【アニメ】[DVD] REC 第04話 「ティファニーで朝食を」 (704x396 WMV9).wmv pcT6OjjAFE 183,424,307 5bc0ec21b7db99bc4c7de9d5ecd5e8d777f8243f<br>
+【アニメ】[DVD] REC 第05話 「昼下がりの情事」 (704x396 WMV9).wmv pcT6OjjAFE 156,017,042 43ee456a3d136bd68eaab06fcc97ade46262c466<br>
+【アニメ】[DVD] REC 第06話 「噂の二人」 (704x396 WMV9).wmv pcT6OjjAFE 175,373,984 d65c0036c143a8f6e14cf4ddf11dfb95034c6a54<br>
+【アニメ】[DVD] REC 第07話 「戦争と平和」 (704x396 WMV9).wmv pcT6OjjAFE 152,982,755 7be067cfb3e5187df695cc6102a40247a8ac1dc1<br>
+【アニメ】[DVD] REC 第08話 「許されざる者」 (704x396 WMV9).wmv pcT6OjjAFE 171,953,222 8b3db3c5762109bc494e31fa94dc692147523872<br>
+【アニメ】[DVD] REC 第09話 「マイ・フェア・レディ」 (704x396 WMV9).wmv pcT6OjjAFE 168,392,657 6758322d0c7b5e83ffec97341dc5fe46e624d0d1<br>
+【アニメ】[DVD] REC 第10話 「いつも二人で」 (704x396 WMV9).wmv pcT6OjjAFE 161,789,528 1cad870cd0757e042cd1cce34b175005b0efbc63<br>
+<br></dd>
+<dt><span class="title">LEGEND OF BASARA<b>◆</b></span>08/02/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] LEGEND OF BASARA 映像特典 「オープニング＆エンディング ノンスーパーバージョン」 (640x480 WMV9).wmv 66,486,864 fe9a53077c037c6a80f208f5a9b5aa535db9032d<br>
+[アニメ DVD] LEGEND OF BASARA 第01話 「運命の少年」 (640x480 WMV9).wmv 352,750,472 5d6d4419045925799048784260cb503d5e510c82<br>
+[アニメ DVD] LEGEND OF BASARA 第02話 「宿敵！赤の王」 (640x480 WMV9).wmv 332,702,478 50dd81d3480209f0b7a82593687a162891b62b98<br>
+[アニメ DVD] LEGEND OF BASARA 第03話 「襲撃」 (640x480 WMV9).wmv 377,598,472 4021087197ce2c22c8142263706277135ed235ce<br>
+[アニメ DVD] LEGEND OF BASARA 第04話 「試練の闇」 (640x480 WMV9).wmv 349,566,472 feb251a21db1d489376b11c5dca3eaa8a2d89492<br>
+[アニメ DVD] LEGEND OF BASARA 第05話 「朱雀の羅生」 (640x480 WMV9).wmv 303,150,472 757c37a44f7eccb73676c5d2990a7b68dc790340<br>
+[アニメ DVD] LEGEND OF BASARA 第06話 「紅蓮の炎」 (640x480 WMV9).wmv 316,206,478 39c24bc3c5edbe36e18d57620362974474d11b49<br>
+[アニメ DVD] LEGEND OF BASARA 第07話 「死の踊り」 (640x480 WMV9).wmv 340,334,478 21b722a9946ff6c414c5530e2fe0fb04dede765b<br>
+[アニメ DVD] LEGEND OF BASARA 第08話 「新たな絆」 (640x480 WMV9).wmv 392,798,472 91b9d513f43c90678f5b0c276ea73e5e0483a57d<br>
+[アニメ DVD] LEGEND OF BASARA 第09話 「国のまほろば」 (640x480 WMV9).wmv 331,774,472 6113bae9f351257735bcc71072da765ba236700a<br>
+[アニメ DVD] LEGEND OF BASARA 第10話 「桜島噴火」 (640x480 WMV9).wmv 338,622,568 674d4845ad3a75b1ab95ea4261b82625ed3bba22<br>
+[アニメ DVD] LEGEND OF BASARA 第11話 「四道死す」 (640x480 WMV9).wmv 421,918,472 9fdf7ec81705117e82e15ec996731dce22a0a971<br>
+[アニメ DVD] LEGEND OF BASARA 第12話 「群青の浅葱」 (640x480 WMV9).wmv 447,278,472 18882f13a9376bb0e1d3f9adde6c8734d44829ae<br>
+[アニメ DVD] LEGEND OF BASARA 第13話 「再会、そして…」 (640x480 WMV9).wmv 414,782,262 8155e3525646ea5b04340d220cd5be174fdc6a8e<br>
+<div class="sup">jXjfWHdrnS</div>
+<br></dd>
+<dt><span class="title">RED GARDEN<b>◆</b></span>08/05/16 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ] RED GARDEN DVD映像特典 「ノンテロップOP 1～12話ver.」 (DVD 704x480 WMV9 16：9).wmv 38,240,400 519ddf7c6d6bbd40472d29072ae8b45f0133cbf5<br>
+[アニメ] RED GARDEN DVD映像特典 「ノンテロップOP 最終ver.」 (DVD 704x480 WMV9 16：9).wmv 40,123,467 36ec4d8899b65c654dd2bd054f8bb0f336d02902<br>
+[アニメ] RED GARDEN DVD映像特典 「ノンテロップ1期ED 1～2話ver.」 (DVD 704x480 WMV9 16：9).wmv 12,009,030 9fc9c8d2cc630e46c0bf4aa4ea3a9547dc279c30 <br>
+[アニメ] RED GARDEN DVD映像特典 「ノンテロップ1期ED 最終ver.」 (DVD 704x480 WMV9 16：9).wmv 11,375,859 af10d89962319703c54aa9a626020a18ed3c2bc5<br>
+[アニメ] RED GARDEN DVD映像特典 「ノンテロップ2期ED」 (DVD 704x480 WMV9 16：9).wmv 14,673,282 9cc147c83b4256cc3ac749a97117be12b6dad345<br>
+[アニメ] RED GARDEN 第01話 「さよなら少女たち」 (DVD 704x480 WMV9 16：9).wmv 390,241,126 ace27b8e16d15f3d3d5bbce10c430c377db5b773<br>
+[アニメ] RED GARDEN 第02話 「残酷な夜」 (DVD 704x480 WMV9 16：9).wmv 323,108,554 07877c4de774f9d2a7496f6f9a72d9442945c067<br>
+[アニメ] RED GARDEN 第03話 「ほんとうの私」 (DVD 704x480 WMV9 16：9).wmv 382,297,708 5a433ffffe55bf3243ebf2ff0c8e6f6fd9e98514<br>
+[アニメ] RED GARDEN 第04話 「私たちは、どこへ？」 (DVD 704x480 WMV9 16：9).wmv 343,106,890 125a094b1a7970496f0158264e32d028e0bd29ba<br>
+[アニメ] RED GARDEN 第05話 「それぞれの窓」 (DVD 704x480 WMV9 16：9).wmv 361,444,180 aeea883ee54ddda5b6050c2a8db11ef9cadbbe23<br>
+[アニメ] RED GARDEN 第06話 「小さな光」 (DVD 704x480 WMV9 16：9).wmv 367,775,890 837b113f7cd43ab27393d847d79ae65d4ca08548<br>
+[アニメ] RED GARDEN 第07話 「もうひとつの、運命」 (DVD 704x480 WMV9 16：9).wmv 376,886,974 8dcfed16cb8bd2771106ab4036c169110c01e487<br>
+[アニメ] RED GARDEN 第08話 「行きて愛せ」 (DVD 704x480 WMV9 16：9).wmv 348,854,767 cde32ed777261f48dc8cd0a341241bf0195f8b3f<br>
+[アニメ] RED GARDEN 第09話 「めざめ」 (DVD 704x480 WMV9 16：9).wmv 361,945,783 df96fa3b273c5798b78502fe89a1984755f246bf<br>
+[アニメ] RED GARDEN 第10話 「戸惑い」 (DVD 704x480 WMV9 16：9).wmv 366,731,569 2edb61e0be83d46a924c2525af2182b41603c84d<br>
+[アニメ] RED GARDEN 第11話 「それぞれの想い」 (DVD 704x480 WMV9 16：9).wmv 341,338,945 1e8a377c73f858700ab97857cad58b297d59a50f<br>
+[アニメ] RED GARDEN 第12話 「彼の思惑」 (DVD 704x480 WMV9 16：9).wmv 344,347,630 4447fda4f83bb0d6f5c5d632782a4b149a082acd<br>
+[アニメ] RED GARDEN 第13話 「休日」 (DVD 704x480 WMV9 16：9).wmv 337,723,636 b86d9008824a5066a4eacd1b32b32218479a4579<br>
+[アニメ] RED GARDEN 第14話 「戦う理由」 (DVD 704x480 WMV9 16：9).wmv 317,130,433 b57301eea6e3aec612a72ef4871aa5eac2f03c31<br>
+[アニメ] RED GARDEN 第15話 「悲しみと、怒りと…」 (DVD 704x480 WMV9 16：9).wmv 346,330,306 bf64ef0da4d7bab89722e8ce4192efdc07358b14<br>
+[アニメ] RED GARDEN 第16話 「哀しい嘘」 (DVD 704x480 WMV9 16：9).wmv 334,283,611 77419652f4da19cb175963c60dd46ed9bb11c4a4<br>
+[アニメ] RED GARDEN 第17話 「真実」 (DVD 704x480 WMV9 16：9).wmv 347,884,453 1ddc3d418bff1b01cc6c81050ce1bd61b350e366<br>
+[アニメ] RED GARDEN 第18話 「わずかな、望み」 (DVD 704x480 WMV9 16：9).wmv 290,685,259 5d1a15c82d1fff1a5a6b6a67bdf3efe14f907671<br>
+[アニメ] RED GARDEN 第19話 「届かぬ想い」 (DVD 704x480 WMV9 16：9).wmv 337,794,832 9a46c640aa17c59280b735b2816541f23f0488d1<br>
+[アニメ] RED GARDEN 第20話 「残された部屋」 (DVD 704x480 WMV9 16：9).wmv 331,718,035 03fb9ee6cb6ff4ca07bedbb963b4e1b6c645d258<br>
+[アニメ] RED GARDEN 第21話 「最後の朝」 (DVD 704x480 WMV9 16：9).wmv 353,963,636 3369e1a289d2a20e4e1e08bea02befeceeb58250<br>
+[アニメ] RED GARDEN 第22話 「光」 (DVD 704x480 WMV9 16：9).wmv 438,219,534 824e6f345c7f2ac985c207f321946a90b731c35b<br><br>
+[アニメ] RED GARDEN デットガールズ 「前編「不死蝶」／後編「赤い庭」」 (DVD 720x480 WMV9 16：9).wmv 871,606,762 9a7a7f7a269b1973cc878410646ad7160eef549c<br>
+<div class="sup">oppaipoj8r</div>
+<hr class="A">
+[DVD] デッドガールズ -RED GARDEN- (704x396 WMV9).wmv puiAh0X7b3 996,961,551 bb3ed44ead68ec2d8de2f85ed50d534c70733245<br>
+<br></dd>
+<dt><span class="title">れでぃ×ばと！<b>◆</b></span>10/07/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] れでぃ×ばと！ 第1巻 映像特典 オマケアニメ「れでぃ×ばとる！」①朋美＆セルニア編 (WMV9 704x480).wmv NextiLuo0gd2Q9 30,317,757 73d189ca6d65dda58ff52b0202b52ceeb5758fd4<br>
+[アニメ DVD] れでぃ×ばと！ 第1巻 映像特典 ノンテロップOP (WMV9 704x480).wmv NextiLuo0gd2Q9 34,873,445 233bdb9cca09f9890bd06223185e196095cec77d<br>
+[アニメ DVD] れでぃ×ばと！ 第1巻 映像特典 ノンテロップED (WMV9 704x480).wmv NextiLuo0gd2Q9 13,797,949 e8f86a6eeec992da444f32cfcb8b0db1ce7b8d26<br>
+[アニメ DVD] れでぃ×ばと！ 第2巻 映像特典 オマケアニメ「れでぃ×ばとる！」②早苗＆沙織編 (WMV9 704x480).wmv NextiLuo0gd2Q9 25,037,985 6a3143527a5046026de31a1aec7112635af0ea0a<br>
+[アニメ DVD] れでぃ×ばと！ 第3巻 映像特典 オマケアニメ「れでぃ×ばとる！」③みみな＆ピナ編 (WMV9 704x480).wmv NextiLuo0gd2Q9 33,680,593 2f0d173d1bdbbc44f08d57b3e5940b5d454b8a6e<br>
+[アニメ DVD] れでぃ×ばと！ 第01話 (WMV9 704x480 +オーディオコメンタリー).wmv NextiLuo0gd2Q9 261,471,844 6e7840d6372d926213ccbc2c13334d0bc42dc1ff<br>
+[アニメ DVD] れでぃ×ばと！ 第02話 (WMV9 704x480).wmv NextiLuo0gd2Q9 228,723,179 ebc74bf05e114c640fd2793fcb8890d02c781c18<br>
+[アニメ DVD] れでぃ×ばと！ 第03話 (WMV9 704x480).wmv NextiLuo0gd2Q9 211,032,469 1d3d1180d49b51b6292159c7a350410659ec75c4<br>
+[アニメ DVD] れでぃ×ばと！ 第04話 (WMV9 704x480 +オーディオコメンタリー).wmv NextiLuo0gd2Q9 241,615,846 3471613eea9cdded7a3f36a4253830a965aeb8d0<br>
+[アニメ DVD] れでぃ×ばと！ 第05話 (WMV9 704x480 +オーディオコメンタリー).wmv NextiLuo0gd2Q9 242,911,846 ea1e46be03af219ee547389088f65c95de85f3d6<br>
+[アニメ DVD] れでぃ×ばと！ 第06話 (WMV9 704x480).wmv NextiLuo0gd2Q9 277,074,135 541347d12aa3e649536c50340ca0fd53b9111ea5<br>
+<br></dd>
+<dt><span class="title">レ・ミゼラブル 少女コゼット<b>◆</b></span>07/06/16 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] 世界名作劇場 レ・ミゼラブル 少女コゼット 第01話 「ファンティーヌとコゼット」 (x264 704x480 16：9 Main@4.1 AAC).mp4 mnbLes8Jl1laf 236,232,906 296165867541344646b23e764d559d76c7a4d1d8<br>
+[アニメ DVD] 世界名作劇場 レ・ミゼラブル 少女コゼット 第02話 「ジャン・ヴァルジャンの秘密」 (x264 704x480 16：9 Main@4.1 AAC).mp4 mnbLes8Jl1laf 251,522,547 1844c71a2eca60e84f3d0599d11d6cd04b7abfad<br>
+<br></dd>
+<dt><span class="title">LEMON ANGEL PROJECT<b>◆</b></span>06/12/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+LEMON ANGEL PROJECT 第01話 「夢から覚めた天使」 (DVD 704x396 DivX611).avi YAyAoONEVq 228,302,848 e8b54203bfab1a816a3a2819d516c0d04c770995<br>
+LEMON ANGEL PROJECT 第02話 「Evolution」 (DVD 704x396 DivX611).avi YAyAoONEVq 202,352,640 6e4e650b49fed1a253aac80f67e81b40801ed82e<br>
+LEMON ANGEL PROJECT 第03話 「I will」 (DVD 704x396 DivX611).avi YAyAoONEVq 182,267,142 a7810ff4ce087a3a082029ddeba9a1487d3fcd5b<br>
+LEMON ANGEL PROJECT 第04話 「Smile means love」 (DVD 704x396 DivX611).avi YAyAoONEVq 227,211,708 03823337f95cc2ff65a55526aad15ea0d8b2f28c<br>
+LEMON ANGEL PROJECT 第05話 「友達でいいから」 (DVD 704x396 DivX611).avi YAyAoONEVq 209,422,336 e5d1439a7ac8c4cebbb50bb7631d68533b3b6963<br>
+LEMON ANGEL PROJECT 第06話 「Promise you」 (DVD 704x396 DivX611).avi YAyAoONEVq 209,799,168 e303ac94ae6002146db9aa13f01ef26316f501e5<br>
+LEMON ANGEL PROJECT 第07話 「あなたを知りたい」 (DVD 704x396 DivX611).avi YAyAoONEVq 189,686,860 e13b60e465972fcd1d433dbef0be48501b92590a<br>
+LEMON ANGEL PROJECT 第08話 「避暑地の森の天使たち」 (DVD 704x396 DivX611).avi YAyAoONEVq 268,443,284 f1015d983a7ca151c54f26673e84b378c2fba2d2<br>
+LEMON ANGEL PROJECT 第09話 「哀愁のシンフォニー」 (DVD 704x396 DivX611).avi YAyAoONEVq 214,247,562 a5163a82efe4b18e9858a7c76ffbc78cc0694fd0<br>
+LEMON ANGEL PROJECT 第10話 「青いスタスィオン」 (DVD 704x396 DivX611).avi YAyAoONEVq 198,824,054 3194d2ab41ee6920f254e49686bba3854362bc4e<br>
+LEMON ANGEL PROJECT 第11話 「背徳のシナリオ」 (DVD 704x396 DivX611).avi YAyAoONEVq 186,617,954 b1e4bd3ec4b16c9b6944ec63d72c5ae6f2b6419b<br>
+LEMON ANGEL PROJECT 第12話 「ミカヅキ」 (DVD 704x396 DivX611).avi YAyAoONEVq 187,163,316 365c9866fdf2c0f7a9cd1f708a9f72e220f15088<br>
+LEMON ANGEL PROJECT 第13話 「Never give up」 (DVD 704x396 DivX611 120fps).avi YAyAoONEVq 271,511,552 618961bb0cf65c8dbf3186e5e6cbdb1362f9e079<br>
+<br></dd>
+<dt><span class="title">錬金3級 まじかる？ぽか～ん<b>◆</b></span>06/12/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX1 とく1 「脱説の呪文は桃太郎」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 173,133,824 10ac3d7699470fe4d1d0b23cc24e6530fe832694<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX1 特典映像 「ノンテロップオープニング」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 34,529,280 425e19e2420c5991bdcd0fa5a828049f920f484e<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX1 特典映像 「ノンテロップエンディング ゆうまVer のみこ」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 18,925,568 163f2116d86af03abfcf863307014aa12b568938<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX1 特典映像 「ノンテロップエンディング ゆうまVer 斎藤桃子」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 18,919,424 273cf645628e3c843c09201d3b0735eeac75b705<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX2 とく2 「ｉｆの呪文はDr･○×△□」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 157,609,984 5f6bb74f80eec9637be5df4e1b0c0c53216989b3<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX2 特典映像 「ノンテロップエンディング パキラVer のみこ」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 18,911,232 4aa91a32c86e0fc40e08fd126b3bbcc19d45156e<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX2 特典映像 「ノンテロップエンディング パキラVer 平野綾」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 18,911,232 19ff5a9e0be627678e6e5f12addff486d0e1a709<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX2 特典映像 「ノンテロップエンディング りるVer のみこ」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 17,905,664 b384dad815a3fc8e128765fa146cd1ad688ace20<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX2 特典映像 「ノンテロップエンディング りるVer 生天目仁美」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 17,895,424 e68fc0863b35c431a41ec6e8e4d0da7ae584a1fc<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX3 とく3 「大切な呪文はバレンタイン・デー」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 194,086,912 cf147d9016d2943d85bd96d9b67f56426545832e<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX3 特典映像 「ノンテロップエンディング ケイミィVer のみこ」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 24,233,984 2f965203688879cac61ee23dc5c39d87294f96e7<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX3 特典映像 「ノンテロップエンディング 鉄子Ver のみこ」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 37,707,776 7c83c10a9abd25468333f91f5f6bc8123b9b62b4<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX3 特典映像 「ノンテロップエンディング 鉄子Ver 明坂聡美」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 37,734,400 9eed957abf59a32d0c7825070c171e02ef8d723d<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX3 特典映像 「まじぽかCM集」 [120fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 63,178,752 3315e4fa125babaf8f08e01619e407c4fcc5fb9a<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第01話 「はじめての呪文は甘い罠／午後の呪文は赤いカブ」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 314,626,048 076466226ac295020552046663172ece5abc9340<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第02話 「月の呪文は血の系譜／まやかしの呪文はTVショッピング」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 270,563,328 87e0bde426e2d02bb613d12ae3215209fcd024af<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第03話 「明日の呪文は愛の献血／幸せの呪文は理想の男性」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 297,711,616 b166eb632444eaa320d066530eb93ca5998ad3a0<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第04話 「ないしょの呪文は梅雨前線／耳寄りな呪文は七夕祭れ」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 285,050,880 072bd8222efae552d940fe1de1f1d0777b820381<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第05話 「脱力の呪文は海水浴／恋の呪文は海水浴」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 346,617,856 f1d0231663a8805d096df766ed7892023ed5950c<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第06話 「再生の呪文は地獄探訪／癒しの呪文は公園デビュー」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 323,772,416 d4a38103ee37d9154345346a680a0d5317044fea<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第07話 「まったりの呪文は十五夜／合体の呪文は無敵ロボットM5」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 328,583,168 18184fb10a421f9d8b4f0fe64db41a5847f1e935<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第08話 「今夜の呪文は吸血鬼／夢の呪文は一日だけの魔法」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 264,855,552 4e2013f157db70d84cfcee43efc56c92b1f66dbf<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第09話 「絶交の呪文は色男さんいらしゃーい／白の呪文はクリスマス」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 336,527,360 90f32abf33691ca26d9dbcb35d924f5eddb27d9c<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第10話 「コールドの呪文はスノボスキー／ホットな呪文は天然温泉」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 324,360,192 7047b0edd596f1a5d35d4da6afa0e7458407f0ba<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第11話 「無口な呪文は楽しい英会話／ピンチの呪文はさよならの向こう側」 [24fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 392,003,584 3900cab38287e5dbbe6f89e700f4720290ed7a5f<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第12話 「哀愁の呪文は想い出に変わるとき／優しい呪文は魔法使い」 [120fps 640x480 WMV9 QL97].avi tad87901fCH2Cock 316,047,360 9a0ca1b10188220b94f479c89e6e88d298b78b47<br><br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX1 とく1 「脱説の呪文は桃太郎」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 194,903,740 afdc949b01d6371386fd0f47c0ff5d0ea9f83da2<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX1 特典映像 「ノンテロップオープニング」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 40,102,670 5ac0f63fcb8b01f30ef3348a96084a11ee3e40b8<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX1 特典映像 「ノンテロップエンディング ゆうまVer のみこ」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 24,292,959 e5cdf77f947a81fe86b87d9ae57667e6021f6108<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX1 特典映像 「ノンテロップエンディング ゆうまVer 斎藤桃子」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 24,280,097 43a4290dc99481021a2d1f9d0318680f3b92674b<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX2 とく2 「ｉｆの呪文はDr･○×△□」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 157,004,314 a55ce5b19ddc32ad1003bfcd1a9d847e05bad81f<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX2 特典映像 「ノンテロップエンディング パキラVer のみこ」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 18,840,233 7d29072532f6d83901bcb6777f5c7544e9726207<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX2 特典映像 「ノンテロップエンディング パキラVer 平野綾」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 18,840,229 7ffade83e126a1421b68ab7638836f2dc2c58356<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX2 特典映像 「ノンテロップエンディング りるVer のみこ」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 17,830,488 0644091ede94892ce6a74f34c36213ef7c1490d7<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX2 特典映像 「ノンテロップエンディング りるVer 生天目仁美」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 17,825,351 874905b222b35b0ea52777482171451a40d694c6<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX3 とく3 「大切な呪文はバレンタイン・デー」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 193,530,041 d6601845e27794581b48a7d16bc1aa2753148750<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX3 特典映像 「ノンテロップエンディング ケイミィVer のみこ」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 24,163,266 c479f7e57424d8d0973c6df9943ef971df084d72<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX3 特典映像 「ノンテロップエンディング 鉄子Ver のみこ」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 37,625,633 10d7c0cf502525130bc435a8fa252e3f035a8916<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX3 特典映像 「ノンテロップエンディング 鉄子Ver 明坂聡美」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 37,664,203 7e69d287cc291c16c93e68e00b6bcc56a92289b8<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん DVDBOX3 特典映像 「まじぽかCM集」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 62,711,325 d4fce2e57e1b6f869ae792dc5e973300c089e24f<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第01話 「はじめての呪文は甘い罠／午後の呪文は赤いカブ」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 309,458,425 90b3aebc478712542b51fe74b378464e623e44f1<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第02話 「月の呪文は血の系譜／まやかしの呪文はTVショッピング」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 269,740,931 099ea896c44be756b66e9655e5fd25693488379f<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第03話 「明日の呪文は愛の献血／幸せの呪文は理想の男性」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 300,426,291 62ca1de0e5f461c563d0e91b6580a9e72baecf9a<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第04話 「ないしょの呪文は梅雨前線／耳寄りな呪文は七夕祭れ」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 283,120,327 4b702e5b649cb4238ff8597a610e25817ddc6ab8<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第05話 「脱力の呪文は海水浴／恋の呪文は海水浴」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 345,599,069 2779e32c11349866814e99d6ed2a738de0ef83a7<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第06話 「再生の呪文は地獄探訪／癒しの呪文は公園デビュー」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 322,752,562 2d76fb2b4a778129f8831ad8959427087409aede<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第07話 「まったりの呪文は十五夜／合体の呪文は無敵ロボットM5」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 327,567,991 e660c6f04bfe49a11f6cbd40e5eccf406194d041<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第08話 「今夜の呪文は吸血鬼／夢の呪文は一日だけの魔法」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 263,832,188 8ebedf3ea27684881018d17bc64fb65ee070cb41<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第09話 「絶交の呪文は色男さんいらしゃーい／白の呪文はクリスマス」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 335,512,234 9bbb12752c17fa94fc32178e95ca04e16b2f9818<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第10話 「コールドの呪文はスノボスキー／ホットな呪文は天然温泉」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 323,348,462 90d3bdf63e85caaa34f530d5f97acf2a3355d311<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第11話 「無口な呪文は楽しい英会話／ピンチの呪文はさよならの向こう側」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 390,991,011 b416979ea12fd28e43e3c1236912a8d06b0072a2<br>
+[アニメ DVD] 錬金3級まじかる？ぽか～ん 第12話 「哀愁の呪文は想い出に変わるとき／優しい呪文は魔法使い」 [640x480 WMV9+AAC].mkv tad87901fCH2Cock 310,699,393 c8463c4071880d1e982a688e1b4c662d16d6842a<br>
+<hr class="A">
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん ぽか～んとく1 「脱説の呪文は桃太郎」(640x480 XviD).mkv YTXu5UiCog 139,815,022 ff9bccb8c37c932d81c55bb69bdb87e514d91177<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん ぽか～んとく2 「ifの呪文はDr.○×△□」(640x480 XviD).mkv YTXu5UiCog 126,541,422 3fcfe973404c9b0bbeb251f7455bfc3831143090<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん ぽか～んとく3 「大切な呪文はバレンタイン・デー」(640x480 XviD).mkv YTXu5UiCog 143,158,305 30bc6907f124e5f5924720f91e36422989e5b9f3<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップオープニング」(640x480 XviD).mkv YTXu5UiCog 26,428,466 00a776ee4c04ced0200a748c316a661e5814f736<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング パキラVer. 歌 のみこ」(640x480 XviD).mkv YTXu5UiCog 13,641,688 c93a0d58b5c6131e79a3519b2439411100dcde26<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング パキラVer. 歌 平野綾」(640x480 XviD).mkv YTXu5UiCog 13,641,688 9b5e1399142d8536c1ab6e2d300dc0ddf339b21e<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング ゆうまVer. 歌 のみこ」(640x480 XviD).mkv YTXu5UiCog 15,402,303 dc5e26fb7c5931923d2bcc8ca61616f4b1f3ddc0<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング ゆうまVer. 歌 斉藤桃子」(640x480 XviD).mkv YTXu5UiCog 15,408,190 7e083d77175dbfbabc5600d976c7f04e00c21961<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング りるVer. 歌 のみこ」(640x480 XviD).mkv YTXu5UiCog 14,408,174 577b7f0c26a02ff3b306d8dd2bc022ae46dba257<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング りるVer. 歌 生天目仁美」(640x480 XviD).mkv YTXu5UiCog 14,417,470 2b4ab441c34e4628b5c83967e8cafbbd168d790a<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング ケイミィVer. 歌 のみこ」(640x480 XviD).mkv YTXu5UiCog 16,876,896 1a153654b54ac8fbf2baa0190489353e98d70084<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング 鉄子Ver. 歌 のみこ」(640x480 XviD).mkv YTXu5UiCog 26,491,165 81d1b803fffdcd19d51f7abaeee1638a664ebdd0<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング 鉄子Ver. 歌 明坂聡美」(640x480 XviD).mkv YTXu5UiCog 26,418,493 6f73a80bf7085029bcb2cfd3a43d5f0e3852652b<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「まじぽかCM集」(640x480 XviD).mkv YTXu5UiCog 45,691,052 089b8c6127c11f3421df2b4b9be0ddbb24af5bf2<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 第01話 「はじめての呪文は甘い罠」「午後の呪文は赤いカブ」(640x480 XviD).mkv YTXu5UiCog 249,870,752 45f233be8201986cb3270074473496a3255f9c51<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 第02話 「月の呪文は血の系譜」「まやかしの呪文はＴＶショッピング」(640x480 XviD).mkv YTXu5UiCog 218,806,870 bd1e1ccb64909ec8e9ae456670253117d85d4708<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 第03話 「明日の呪文は愛の献血」「幸せの呪文は理想の男性」(640x480 XviD).mkv YTXu5UiCog 238,088,105 c5ec0555fbd7303fbb81e7549d65474b6f475bdf<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 第04話 「ないしょの呪文は梅雨前線」「耳寄りな呪文は七夕祭れ」(640x480 XviD).mkv YTXu5UiCog 230,090,566 9052f9ba244d80db5fc2e858fafab39674a29a05<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 第05話 「脱力の呪文は海水浴」「恋の呪文は海水浴」(640x480 XviD).mkv YTXu5UiCog 283,652,526 75e4f4fe63a043fbf4ef5f31f200078f5ffde7fd<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 第06話 「再生の呪文は地獄探訪」「癒しの呪文は公園デビュー」(640x480 XviD).mkv YTXu5UiCog 244,913,337 205e16ca4ff2aeafd79269d0d5f41f1e58739e2a<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 第07話 「まったりの呪文は十五夜」「合体の呪文は無敵ロボットM5」(640x480 XviD).mkv YTXu5UiCog 261,052,229 ad506ef2533595d9ce5758f15961031753f5d652<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 第08話 「今夜の呪文は吸血鬼」「夢の呪文は一日だけの魔法」(640x480 XviD).mkv YTXu5UiCog 208,974,549 4452d41b8fa78b54b141887b1d49736423058844<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 第09話 「絶交の呪文は色男さんいらしゃーい」「白の呪文はクリスマス」(640x480 XviD).mkv YTXu5UiCog 248,764,346 a835d42057e2bd378bcbe3d3e4813e8113812ff0<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 第10話 「コールドの呪文はスノボスキー」「ホットな呪文は天然温泉」(640x480 XviD).mkv YTXu5UiCog 252,891,788 d2049eb92cebda8c73f09b145bcba2889c0476fc<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 第11話 「無口な呪文は楽しい英会話」「ピンチの呪文はさよならの向こう側」(640x480 XviD).mkv YTXu5UiCog 256,212,166 5ffce7ad87db866e65b10df429d89b2a83340392<br>
+[アニメ DVD] 錬金3級 まじかる？ぽか～ん 第12話 「哀愁の呪文は想い出に変わるとき」「優しい呪文は魔法使い」(640x480 XviD).mkv YTXu5UiCog 234,796,373 c18630bff08d28ca4b5ed83ddcf579cb97a64410<br>
+<hr class="A">
+[DVD] 錬金3級 まじかる？ぽか～ん ① メニュー1.png WgPZCQtRPj 597,470 6d08dd060f8846313695d5c17c42128fe5df4222<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ① メニュー2.png WgPZCQtRPj 606,475 4c63f609ccd776ab8675f40b9e79bcc60acefe46<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ① メニュー3.png WgPZCQtRPj 595,900 960325d90acd8209cb1ce46dd760a03fa7752e7d<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ② メニュー1.png WgPZCQtRPj 596,530 cd8a485433d31d142e68eb71eeff23804de8ec54<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ② メニュー2.png WgPZCQtRPj 588,812 17748c9ad81cb29596ba9357c5ec7cfb64c6193f<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ② メニュー3.png WgPZCQtRPj 596,690 8ae88c77f02cb91bbf43b1930895bfa93b17289a<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ③ メニュー1.png WgPZCQtRPj 596,894 2645ce4cfd8c468440212e99e79ac8f7321f2dfd<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ③ メニュー2.png WgPZCQtRPj 620,173 5225912144e05072b0dd3635c85b6d58e61716e6<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ③ メニュー3.png WgPZCQtRPj 619,905 035028e270a126766e8ca509f2a21c5125546aeb<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ④ メニュー1.png WgPZCQtRPj 590,698 ba0ce3d6cec55ba63e502ca11dc1a9c6f796faf8<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ④ メニュー2.png WgPZCQtRPj 614,733 b2c4d140d31589ee40a859f3525c8efba3f2bb3e<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ④ メニュー3.png WgPZCQtRPj 604,870 e603ff4d7938dd9068f9e044021d739636531d47<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ⑤ メニュー1.png WgPZCQtRPj 605,105 9d6a8400e7471fbf534b14478c8da50d431273ab<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ⑤ メニュー2.png WgPZCQtRPj 622,287 22ab7ee8176f2fbc7fae386a8ee65380bbf7b77b<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ⑤ メニュー3.png WgPZCQtRPj 617,420 f4b60e6a6e45df08f82e7fb9bdd45744d2e4b3d6<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ⑥ メニュー1.png WgPZCQtRPj 606,172 78fa1d7b8915a938b3054158597145123689ea53<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ⑥ メニュー2.png WgPZCQtRPj 627,428 3b22d8eb338bdecdb241f24f673312d615232bef<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ⑥ メニュー3.png WgPZCQtRPj 623,073 5dd20adaf3d8c299ae9ba8361dac0183dc868339<br>
+[DVD] 錬金3級 まじかる？ぽか～ん DVD-BOX1 特典メニュー.png WgPZCQtRPj 594,822 302cd282f874ba0296cd34a42d0773b51e04de60<br>
+[DVD] 錬金3級 まじかる？ぽか～ん DVD-BOX2 特典メニュー.png WgPZCQtRPj 474,742 d887a73904c8b73b4df9bafdbecede5b496f8c1f<br>
+[DVD] 錬金3級 まじかる？ぽか～ん DVD-BOX3 特典メニュー.png WgPZCQtRPj 595,086 870a7f840050c9b05a121684bbb1a1dc00eb2927<br>
+[DVD] 錬金3級 まじかる？ぽか～ん とく 1 「脱説の呪文は桃太郎」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 138,515,224 9232a8ce35210d5544bf4188a602f133ec53d7ab<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ノンテロップオープニング (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 29,728,076 f0876372de39194073c8c3609ea985fb9ce20097<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ノンテロップエンディング ゆうまVer. 歌.のみこ (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 14,855,676 2f0bc9984d0de0df09863c05eb3733c44b923aaa<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ノンテロップエンディング ゆうまVer. 歌.斎藤桃子 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 14,844,450 ca156728882fe729ada278fe04da092ec9c4c5d7<br>
+[DVD] 錬金3級 まじかる？ぽか～ん とく 2 「ifの呪文は Dr. ○×△□」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 122,157,922 fdc2f289f35e7b2c029c0e4ac3a39dccb1d26d66<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ノンテロップエンディング パキラVer. 歌.のみこ (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 17,300,380 725892d59c53f246230c7f29e0b9b68ccf13259b<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ノンテロップエンディング パキラVer. 歌.平野綾 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 17,299,487 342692660b3e3a4b79600439f005742bb7d5d3e4<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ノンテロップエンディング りるVer. 歌.のみこ (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 16,346,043 127aa107801a4df4677b5ae92a7a44be21d00065<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ノンテロップエンディング りるVer. 歌.生天目仁美 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 16,347,443 7dfba24e5752abfae22aca7155c44fdd16b84fe3<br>
+[DVD] 錬金3級 まじかる？ぽか～ん とく 3 「大切な呪文はバレンタイン・デー」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 156,231,458 75a9deb7760241fe064d3fe6fe8a16e725cd3538<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ノンテロップエンディング ケイミィVer. 歌.のみこ (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 18,252,596 f3e5780f43d3b5d32c6fff21463c932301c7ead4<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ノンテロップエンディング 頼子Ver. 歌.のみこ (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 30,884,157 045b7d13e550eaf61a3defaa2dcd684c24c01dbe<br>
+[DVD] 錬金3級 まじかる？ぽか～ん ノンテロップエンディング 頼子Ver. 歌.明坂聡美 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 30,951,382 40cce1e659572c22734b9d714bb1d9df3d4512af<br>
+[DVD] 錬金3級 まじかる？ぽか～ん まじぽかCM集 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 43,393,280 be8b3b793fdbc7f0ddc2b9759f096a9ae5fce623<br>
+[DVD] 錬金3級 まじかる？ぽか～ん 第01話(ぽかーん：1－2) 「はじめての呪文は甘い罠／午後の呪文は赤いカブ」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 242,076,330 cd73e3ee482722e7e12b2192a6871e64dcdba288<br>
+[DVD] 錬金3級 まじかる？ぽか～ん 第02話(ぽかーん：2－4) 「月の呪文は血の系譜／まやかしの呪文はTVショッピング」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 213,230,665 400b7a0f5d307b010bff5ba961c6e45ce4b2a0fd<br>
+[DVD] 錬金3級 まじかる？ぽか～ん 第03話(ぽかーん：5－6) 「明日の呪文は愛の献血／幸せの呪文は理想の男性」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 255,452,222 5d5b07c391f30820186aa3845530f30639f7d002<br>
+[DVD] 錬金3級 まじかる？ぽか～ん 第04話(ぽかーん：7－8) 「ないしょの呪文は梅雨前線／耳寄りな呪文は七夕祭れ」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 227,583,485 fffaa76c30273808d4127ada49afc5a1539b9183<br>
+[DVD] 錬金3級 まじかる？ぽか～ん 第05話(ぽかーん：9－10) 「脱力の呪文は海水浴／恋の呪文は海水浴」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 267,526,631 a80ae35be5aae67d873fe936c92760e2f8dd6427<br>
+[DVD] 錬金3級 まじかる？ぽか～ん 第06話(ぽかーん：11－12) 「再生の呪文は地獄探訪／癒しの呪文は公園デビュー」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 251,910,732 5101084b53d5094eda24e5b5a0d9a99c2d37ef68<br>
+[DVD] 錬金3級 まじかる？ぽか～ん 第07話(ぽかーん：13－14) 「まったりの呪文は十五夜／合体の呪文は無敵ロボットM51」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 250,816,718 c4a090ece4ae3ea13b70d19723ffe7dc65477f71<br>
+[DVD] 錬金3級 まじかる？ぽか～ん 第08話(ぽかーん：15－16) 「今夜の呪文は吸血鬼／夢の呪文は一日だけの魔法」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 202,633,155 93ee31d08f8fe05d9514b38b67c0f186936db0ee<br>
+[DVD] 錬金3級 まじかる？ぽか～ん 第09話(ぽかーん：17－18) 「絶交の呪文は色男さんいらっしゃい／白の呪文はクリスマス」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 264,858,118 67882c43b2b729e800514259b43bf47649755d38<br>
+[DVD] 錬金3級 まじかる？ぽか～ん 第10話(ぽかーん：19－20) 「コールドの呪文はスノボスキー／ホットの呪文は天然温泉」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 239,149,739 330a1e8e25bcd116ff2a237afefae7c4d4eac723<br>
+[DVD] 錬金3級 まじかる？ぽか～ん 第11話(ぽかーん：21－22) 「無口な呪文は楽しい英会話／ピンチの呪文はさようならの向こう側」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 263,159,728 d4771c23590da968282c35206492ce83d1e80edd<br>
+[DVD] 錬金3級 まじかる？ぽか～ん 第12話(ぽかーん：23－24)(最終回) 「無口な呪文は楽しい英会話／優しいの呪文は魔法使い」 (x264 720×480 15：11 AAC).mkv WgPZCQtRPj 235,242,124 533a8ab404bedc6ae367970c4a40653557c05c91<br>
+<hr class="A">
+(DVD)錬金3級 まじかる？ぽか～ん Vol1映像特典 「ノンテロップOP」 (640x480 DivX521).avi しゃなTvg1STVN6A 19,169,280 418a60a146d67ff95919bb6dbecc064ee72e8790<br>
+(DVD)錬金3級 まじかる？ぽか～ん Vol1映像特典 「ノンテロップED1」 (640x480 DivX521).avi しゃなTvg1STVN6A 11,141,120 daff139763292364a0af41afd2bda2c0e1da0bab<br>
+(DVD)錬金3級 まじかる？ぽか～ん Vol1映像特典 「ノンテロップED2」 (640x480 DivX521).avi しゃなTvg1STVN6A 11,134,976 ef2eee5885acb0be95f84b2de58f89ec2793b831<br>
+(DVD)錬金3級 まじかる？ぽか～ん Vol1映像特典 「脱説の呪文は桃太郎」 (640x480 DivX521 音声差替済).avi しゃなTvg1STVN6A 111,192,064 d1dd92da02ec6cf6d6afd56b5336a69f6c96d515<br>
+(DVD)錬金3級 まじかる？ぽか～ん Vol2映像特典 「ifの呪文はDr.○×△□」 (640x480 DivX521).avi しゃなTvg1STVN6A 101,728,256 c899e7bc8abc9d5fb63b24d3b430b3ed328f7a85<br>
+(DVD)錬金3級 まじかる？ぽか～ん Vol2映像特典 「ノンテロップED6」 (640x480 DivX521).avi しゃなTvg1STVN6A 12,568,576 8f1f3941b1fcff265938db27439e64a426257328<br>
+(DVD)錬金3級 まじかる？ぽか～ん Vol2映像特典 「ノンテロップED5」 (640x480 DivX521).avi しゃなTvg1STVN6A 12,480,512 579ea0c1d121afb69a7ac60b329cb0451bcfd739<br>
+(DVD)錬金3級 まじかる？ぽか～ん Vol3映像特典 「ノンテロップED7」 (640x480 DivX521).avi しゃなTvg1STVN6A 20,856,832 508a53a3fe359a6c5266a7540e7a67de150e8358<br>
+(DVD)錬金3級 まじかる？ぽか～ん Vol3映像特典 「ノンテロップED8」 (640x480 DivX521).avi しゃなTvg1STVN6A 20,883,456 08e35b7cf5602bc3da719e7761e8c21831ab823f<br>
+(DVD)錬金3級 まじかる？ぽか～ん Vol3映像特典 「ノンテロップED9」 (640x480 DivX521).avi しゃなTvg1STVN6A 13,312,000 75efa587d6321a613880265ba8c40356ca5e6a5c<br>
+(DVD)錬金3級 まじかる？ぽか～ん Vol3映像特典 「大切な呪文はバレンタイン・デー」 (640x480 DivX521).avi しゃなTvg1STVN6A 123,271,168 7387085ad2ee434a71c7db3d83e7e83cda0afd63<br>
+(DVD)錬金3級 まじかる？ぽか～ん 第01話 「はじめての呪文は甘い罠／午後の呪文は赤いカブ」 (640x480 DivX521).avi しゃなTvg1STVN6A 204,974,080 ac0ad612b432e3d787b31e1bc4cf40228ed524f3<br>
+(DVD)錬金3級 まじかる？ぽか～ん 第02話 「月の呪文は血の系譜／まやかしの呪文はTVショッピング」 (640x480 DivX521).avi しゃなTvg1STVN6A 188,110,848 b729a8e7f54a09760e0c2f908ec7a74125c259da<br>
+(DVD)錬金3級 まじかる？ぽか～ん 第03話 「明日の呪文は愛の献血／幸せの呪文は理想の男性」 (640x480 DivX521).avi しゃなTvg1STVN6A 204,320,768 3e04579645e9c3448ff601937c28f33c823ce99f<br>
+(DVD)錬金3級 まじかる？ぽか～ん 第04話 「ないしょの呪文は梅雨前線／耳寄りな呪文は七夕祭れ」 (640x480 DivX521).avi しゃなTvg1STVN6A 192,065,536 2b2c3f1f7366183548209cc8c9375711fb161959<br>
+(DVD)錬金3級 まじかる？ぽか～ん 第05話 「脱力の呪文は海水浴／恋の呪文は海水浴」 (640x480 DivX521).avi しゃなTvg1STVN6A 238,108,672 292ff61527d5fa982cf16fce15b1491e71791350<br>
+(DVD)錬金3級 まじかる？ぽか～ん 第06話 「再生の呪文は地獄探訪／癒しの呪文は公園デビュー」 (640x480 DivX521).avi しゃなTvg1STVN6A 206,778,368 cbeea0407be403768c303d44da66383b1f9876fe<br>
+(DVD)錬金3級 まじかる？ぽか～ん 第07話 「まったりの呪文は＋五夜／合体の呪文は無敵ロボットＭ５」 (640x480 DivX521).avi しゃなTvg1STVN6A 217,423,872 e31e2acb5c69e3c2a545d57f431306c2a0cf4e7f<br>
+(DVD)錬金3級 まじかる？ぽか～ん 第08話 「今夜の呪文は吸血鬼／夢の呪文は一日だけの魔法」 (640x480 DivX521).avi しゃなTvg1STVN6A 172,544,000 823cbc5672b174d034d764fb762563e1df992980<br>
+(DVD)錬金3級 まじかる？ぽか～ん 第09話 「絶交の呪文は色男さんいらしゃーい／白の呪文はクリスマス」 (640x480 DivX521).avi しゃなTvg1STVN6A 220,653,568 7fa1855b61cc9f68c0e3db6f6b460a460c333013<br>
+(DVD)錬金3級 まじかる？ぽか～ん 第10話 「コールドの呪文はスノボスキー／ホットな呪文は天然温泉」 (640x480 DivX521).avi しゃなTvg1STVN6A 218,462,208 c56ff04503f6ae42773ed093dac4bedb8efececd<br>
+(DVD)錬金3級 まじかる？ぽか～ん 第11話 「無口な呪文は楽しい英会話／ピンチの呪文はさよならの向こう側」 (640x480 DivX521).avi しゃなTvg1STVN6A 226,394,112 69010bf7b21b20d71d5ecd179b77187147d46e2b<br>
+(DVD)錬金3級 まじかる？ぽか～ん 第12話 「哀愁の呪文は思い出に変わるとき／優しい呪文は魔法使い」 (640x480 DivX521).avi しゃなTvg1STVN6A 206,678,016 489f78fa02d502bd16ec8c100be6070314a83c04<br>
+<hr class="A">
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん ぽか～ん とく1 「脱説の呪文は桃太郎」 (640x480 WMV9).wmv pcT6OjjAFE 161,082,596 ee77a3a1bfa02e7086afed6b8db43cf1fb5ace64<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん ぽか～ん とく2 「ifの呪文はDr.○×△□」 (640x480 WMV9).wmv pcT6OjjAFE 142,860,434 50dc6d884baa4409447ebaa8d99807745783bc70<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん ぽか～ん とく3 「大切な呪文はバレンタイン・デー」 (640x480 WMV9).wmv pcT6OjjAFE 153,829,532 4f6f53adda86719d4c0e9de322b67ce9ff7252fc<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップオープニング 妖精帝國」 (640x480 WMV9).wmv pcT6OjjAFE 30,135,044 ba049d1ee58c5fa10c0afd743cf20740a10241fc<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング パキラVer. のみこ」 (640x480 WMV9).wmv pcT6OjjAFE 17,422,280 f9330a237ec543108c3ebc60ad9a2308188a56ec<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング パキラVer. 平野綾」 (640x480 WMV9).wmv pcT6OjjAFE 17,422,280 b68a4edb061f8d163d131ab0129bb0bec02118bc<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング ゆうまVer. のみこ」 (640x480 WMV9).wmv pcT6OjjAFE 18,688,622 7702a7b3ec757d391a243d841bb05321e0739720<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング ゆうまVer. 斉藤桃子」 (640x480 WMV9).wmv pcT6OjjAFE 18,688,622 c80298216400c88395067cb01e7bcba7d5f7412b<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング りるVer. のみこ」 (640x480 WMV9).wmv pcT6OjjAFE 18,976,427 bbe8503582286305c75bcfa0eafa9be0896b43f2<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング りるVer. 生天目仁美」 (640x480 WMV9).wmv pcT6OjjAFE 18,976,427 ad627a63096e88540b100d143f4ba78e8ffab830<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング ケイミィVer. のみこ」 (640x480 WMV9).wmv pcT6OjjAFE 16,747,994 63f8283c1c00c5f710e2ec07af2a0311158b5950<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング 鉄子Ver. のみこ」 (640x480 WMV9).wmv pcT6OjjAFE 25,119,008 60174c282877521e641e92cec1918f819213b9ab<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「ノンテロップエンディング 鉄子Ver. 明坂聡美」 (640x480 WMV9).wmv pcT6OjjAFE 25,119,008 1f33fc92ff6daa9b5dd281b77b73f6ed358bd074<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 映像特典 「まじぽかCM集」 (640x480 WMV9).wmv pcT6OjjAFE 41,228,153 d9d210815639babec75956a5a15599279b7fdea6<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 第01話 「はじめての呪文は甘い罠／午後の呪文は赤いカブ」 (640x480 WMV9).wmv pcT6OjjAFE 288,468,617 89c94a1b555e0696108e1592f27b95210100c324<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 第02話 「月の呪文は血の系譜／まやかしの呪文はTVショッピング」 (640x480 WMV9).wmv pcT6OjjAFE 259,836,131 470ae3fb1e5f2e9e02ab5bdf37c70ad6bb33421b<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 第03話 「明日の呪文は愛の献血／幸せの呪文は理想の男性」 (640x480 WMV9).wmv pcT6OjjAFE 290,220,116 d0aa1890dc3f695977c7c0949d9234d17dad7a1f<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 第04話 「ないしょの呪文は梅雨前線／耳寄りな呪文は七夕祭れ」 (640x480 WMV9).wmv pcT6OjjAFE 268,840,316 42ae50910c923af2562872752cd07327c3a704e9<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 第05話 「脱力の呪文は海水浴／恋の呪文は海水浴」 (640x480 WMV9).wmv pcT6OjjAFE 332,601,458 a22133c5f2a8e00b443d060a8f3412d6576229ce<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 第06話 「再生の呪文は地獄探訪／癒しの呪文は公園デビュー」 (640x480 WMV9).wmv pcT6OjjAFE 292,259,420 dd7e1473faf70ad6a57ae641d7bd7b4d29ee2006<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 第07話 「まったりの呪文は十五夜／合体の呪文は無敵ロボットM5！」 (640x480 WMV9).wmv pcT6OjjAFE 294,685,205 7a35e0762f693e668c101ecc7f1c49050dc14f00<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 第08話 「今夜の呪文は吸血鬼／夢の呪文は一日だけの魔法」 (640x480 WMV9).wmv pcT6OjjAFE 236,096,330 64c47c8f25352c339edcf3f8bd327dae9d1e4aa8<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 第09話 「絶交の呪文は色男さんいらしゃーい／白の呪文はクリスマス」 (640x480 WMV9).wmv pcT6OjjAFE 264,712,370 f74bd919d8aac9e8252be948f80f39a3d8771577<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 第10話 「コールドの呪文はスノボスキー／ホットな呪文は天然温泉」 (640x480 WMV9).wmv pcT6OjjAFE 256,826,513 16837801848635cb0861ad0837ed05ba2a341047<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 第11話 「無口な呪文は楽しい英会話／ピンチの呪文はさよならの向こう側」 (640x480 WMV9).wmv pcT6OjjAFE 265,970,489 f47b0a59b39976b504ba4d79c5cee55551dc87cf<br>
+【アニメ】[DVD] 錬金3級 まじかる？ぽか～ん 第12話 「哀愁の呪文は想い出に変わるとき／優しい呪文は魔法使い」 (640x480 WMV9).wmv pcT6OjjAFE 243,900,779 5d97ce379d1ee97873b4fff453518d97c21dab8b<br>
+<br></dd>
+<dt><span class="title">レンタルマギカ<b>◆</b></span>09/08/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] レンタルマギカ Vol.1 映像特典 「ノンテロップオープニング」 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 52,379,524 1f1410195625d5d42ba49cd8457ef3ab59cdef56<br>
+[アニメ DVD] レンタルマギカ Vol.1 映像特典 「ノンテロップエンディング」 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 50,603,370 d3461811a5c99bd04b86a0c6a4025b8009e518d6<br>
+[アニメ DVD] レンタルマギカ Vol.3 映像特典 「先行プロモーションビデオ」 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 41,335,117 2d85f3de3775a57c5a3147ce4dac61bb64024a71<br>
+[アニメ DVD] レンタルマギカ Vol.4 映像特典 「放送前CM」 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 25,580,011 602a03cfcbc0d4a05b8def0040ff640368cf411c<br>
+[アニメ DVD] レンタルマギカ Vol.5 映像特典 「放送中CM」 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 41,524,408 25b8cc9a5003f6e339fbdea577bbc3fb1f69631f<br>
+[アニメ DVD] レンタルマギカ Vol.6 映像特典 「次回予告総集編① (1話～12話)」 (WMV9 704x480 NTSC 16：9[Par 40：33] afs).wmv TALKca6VWU 23,953,733 2ef14d15f1e819db71aa483f1cc634ad898d17b8<br>
+[アニメ DVD] レンタルマギカ Vol.7 映像特典 「ノンテロップオープニング(英語版)」  (WMV9 704x480 NTSC 16：9[Par 40：33] afs).wmv TALKca6VWU 51,697,015 1860512bc8afa58a2e4a67c7a1e40eab25cb8d65<br>
+[アニメ DVD] レンタルマギカ Vol.8 映像特典 「ノンテロップエンディング(キャスト版)」  (WMV9 704x480 NTSC 16：9[Par 40：33] afs).wmv TALKca6VWU 56,474,578 9d6f5a614951fda40584a0ff6577b27327d03949<br>
+[アニメ DVD] レンタルマギカ Vol.9 映像特典 「イベント用PV5分バージョン」  (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 82,740,828 a364aa2fbb48474078fe78c2c7031d0f904d8b67<br>
+[アニメ DVD] レンタルマギカ Vol.10 映像特典 「DVD発売前CM」 (WMV9 640x360).wmv TALKca6VWU 40,586,868 1edf0b342bf00b6e30eec7eea4a477d0a0da2217<br>
+[アニメ DVD] レンタルマギカ Vol.11 映像特典 「DVD発売前CM」 (WMV9 640x360).wmv TALKca6VWU 49,542,373 dc6d167b4a3ac283905c1046f8c819979b6ca036<br>
+[アニメ DVD] レンタルマギカ Vol.12 映像特典 「Web用CM」 (WMV9 704x360 NTSC 4：3[Par 10：11]).wmv TALKca6VWU 34,981,280 837ffd6bf47dd3619f59627e277e7a381787582c<br>
+[アニメ DVD] レンタルマギカ Vol.12 映像特典 「次回予告総集編② (13話～24話)」 (WMV9 704x480 NTSC 16：9[Par 40：33] afs).wmv TALKca6VWU 33,804,873 0ad4410f69c777ccbe7e1990c886fc6c68cb531a<br>
+[アニメ DVD] レンタルマギカ 第01話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 459,723,193 aaab651956a902d32538cfee70acefe9cbcef318<br>
+[アニメ DVD] レンタルマギカ 第02話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 266,105,863 69ccf7b86da5f1e3f4eeef7d69841bf7c7fe009e<br>
+[アニメ DVD] レンタルマギカ 第03話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 337,641,863 f33ed7bcd75dfa701a373a797ada15c08cc0d9af<br>
+[アニメ DVD] レンタルマギカ 第04話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 301,529,863 9b635420d7c4a530fa5367e0a3eb76e65c8708e4<br>
+[アニメ DVD] レンタルマギカ 第05話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 332,137,863 d30394e26cee8f9a7cf53a86b52bf75dedaa0b4d<br>
+[アニメ DVD] レンタルマギカ 第06話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 334,411,249 90b199d91ec9283a88e236d16168205a7086b14d<br>
+[アニメ DVD] レンタルマギカ 第07話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 314,121,863 eb160564a99cdb7265a7117f221f7c55a09077d0<br>
+[アニメ DVD] レンタルマギカ 第08話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 293,241,863 dc138cc0759a7a2866a3d1ef0a2d8d810e77d966<br>
+[アニメ DVD] レンタルマギカ 第09話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 313,401,863 77dbe1822ba0bbfb1170ac02d42969384d2a025a<br>
+[アニメ DVD] レンタルマギカ 第10話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 283,817,863 8c90391bf317fb4abdd60e99862c81b40f65cf93<br>
+[アニメ DVD] レンタルマギカ 第11話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 252,873,863 1a6df7f9c7e1f46ea52f93bcf55b547aead2d8e9<br>
+[アニメ DVD] レンタルマギカ 第12話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 319,081,863 dea5bf2d539c8659ea9bbfc8ba36d6e2e12a4998<br>
+[アニメ DVD] レンタルマギカ 第13話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 331,257,863 1e5ecb078078b005e6abdfac5c9bc5bc008dea8c<br>
+[アニメ DVD] レンタルマギカ 第14話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 313,657,863 9347ed8aef23fcf5a530b3503ce4c6a7617c13e8<br>
+[アニメ DVD] レンタルマギカ 第15話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 327,497,863 5e95eaf09605116192ba7a2fb1f3c75934892153<br>
+[アニメ DVD] レンタルマギカ 第16話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 294,553,863 cd03714b1c4f8e9d55d67c460906bcad665a9ea5<br>
+[アニメ DVD] レンタルマギカ 第17話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 363,273,863 aec7a03c455af1631e2c33e9c5095ed98ce55be8<br>
+[アニメ DVD] レンタルマギカ 第18話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 338,265,863 eedeeb6483315b5ec2b49aa136cb726fad1f1243<br>
+[アニメ DVD] レンタルマギカ 第19話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 315,785,863 806fb8525698e60bc027cbf13fadbc8300107d9d<br>
+[アニメ DVD] レンタルマギカ 第20話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 376,121,849 c37d1c218ac29ed2e7289f36b825a8eda1f9aa28<br>
+[アニメ DVD] レンタルマギカ 第21話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 311,641,863 b27352e2957ee7b060d4f2aa80db07a5975f768c<br>
+[アニメ DVD] レンタルマギカ 第22話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 317,305,877 d0424cdba3222600647250746d82b19325807f39<br>
+[アニメ DVD] レンタルマギカ 第23話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 301,274,045 069cd0ab1a3b851a6d57776eceabe927b8f9ca8c<br>
+[アニメ DVD] レンタルマギカ 第24話 (WMV9 704x480 NTSC 16：9[Par 40：33]).wmv TALKca6VWU 348,185,863 9542af292c3fdf51046963e88ba96f80dd9f4fe1<br>
+<hr class="A">
+[アニメ DVD] レンタルマギカ 第01話 ｢魔法使い、貸します｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 326,736,303 228263791b0fe3a4e06f4e9687e83383a77af361<br>
+[アニメ DVD] レンタルマギカ 第02話 ｢魔女の誓い｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 301,438,597 b1c5bda0c40b5377d9a7e3ec0f077974fbed45cc<br>
+[アニメ DVD] レンタルマギカ 第03話 ｢神々の禊ぎ｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 251,764,146 a54f90bdde64496c1645181122ede0aebe1ceba9<br>
+[アニメ DVD] レンタルマギカ 第04話 ｢ひとりじゃないから｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 215,084,652 aaa0081b74d25263c4c7f230d59d1a43c6421fcf<br>
+[アニメ DVD] レンタルマギカ 第05話 ｢魔術の夜｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 260,320,886 6257ba84bb12b882474286d036b688b08db0c8cb<br>
+[アニメ DVD] レンタルマギカ 第06話 ｢妖精眼｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 254,518,043 90c17984c9795ed7b330683e3fff0a32ad3c2ed8<br>
+[アニメ DVD] レンタルマギカ 第07話 ｢赤い髪の少女｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 221,360,264 65a550bf592c09940407dbcb17f88f2809f1c8d1<br>
+[アニメ DVD] レンタルマギカ 第08話 ｢温泉魔法｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 221,939,687 bac202f79a67ed514d729b52bc9b119258dbe015<br>
+[アニメ DVD] レンタルマギカ 第09話 ｢父を継ぐ者｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 178,439,938 50bdd5caf83595c0b1669043b5f97fde7745f7fa<br>
+[アニメ DVD] レンタルマギカ 第10話 ｢ホムンクルスの涙｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 171,483,918 80091ebf483a2e0898cc251d1498e5c399aa9998<br>
+[アニメ DVD] レンタルマギカ 第11話 ｢死者に咲く花｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 167,864,954 c907e1ee0f1fd7a5a709d4b7ec843033bfd2fab1<br>
+[アニメ DVD] レンタルマギカ 第12話 ｢聖夜に捧げるレクイエム｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 170,796,662 a74d58babbf489b43dc71629582b607e97e5bef4<br>
+<hr class="A">
+[アニメ DVD]レンタルマギカ 第01話 「魔法使い、貸します」(704x480 x264 AAC).mp4 灸削2X2SON69C1 199,372,090 0f5b187df808e4d913573488b47327af52e575e6<br>
+[アニメ DVD]レンタルマギカ 第02話 「魔女の誓い」(704x480 x264 AAC).mp4 灸削2X2SON69C1 131,766,818 23665fabe49475f729248b6d309e55a9bfdd316c<br>
+[アニメ DVD]レンタルマギカ 第03話 「神々の禊ぎ」(704x480 x264 AAC).mp4 灸削2X2SON69C1 148,512,847 63ed148eea09bbf38b5500bae5a783ecf34f5879<br>
+[アニメ DVD]レンタルマギカ 第04話 「ひとりじゃないから」(704x480 x264 AAC).mp4 灸削2X2SON69C1 145,982,620 258aa4fcac6f00dce9605c0cd0e6b966fce5e556<br>
+[アニメ DVD]レンタルマギカ 第05話 「魔術の夜」(704x480 x264 AAC).mp4 灸削2X2SON69C1 159,091,201 327f0bacd116c12f2d6eee0dc72ddde266c4ebc0<br>
+[アニメ DVD]レンタルマギカ 第06話 「妖精眼」(704x480 x264 AAC).mp4 灸削2X2SON69C1 159,922,230 d71af662b1d4c161c16a888a7163cd3b695a7b6d<br>
+[アニメ DVD]レンタルマギカ 第07話 「赤い髪の少女」(704x480 x264 AAC).mp4 灸削2X2SON69C1 146,438,383 654c8cc6e92954a0bfba60ae06d19b9bb343e7af<br>
+[アニメ DVD]レンタルマギカ 第08話 「温泉魔法」(704x480 x264 AAC).mp4 灸削2X2SON69C1 141,092,462 ac7b4982c2a0622ed41be18f94d71fd603cd1dc3<br>
+[アニメ DVD]レンタルマギカ 第09話 「父を継ぐ者」(704x480 x264 AAC).mp4 灸削2X2SON69C1 145,974,567 437a56d0f52742d91eada5506009a3f8459cbc06<br>
+[アニメ DVD]レンタルマギカ 第10話 「ホムンクルスの涙」(704x480 x264 AAC).mp4 灸削2X2SON69C1 139,905,270 e917dba96044d777c676c24c2bc87f68980a12c2<br>
+[アニメ DVD]レンタルマギカ 第11話 「死者に咲く花」(704x480 x264 AAC).mp4 灸削2X2SON69C1 129,290,588 f27c7b5d407e834fe07bcde549a9a188b1aa61c6<br>
+[アニメ DVD]レンタルマギカ 第12話 「聖夜に捧げるレクイエム」(704x480 x264 AAC).mp4 灸削2X2SON69C1 147,009,262 d2c68e4d4c4e322685cf570be41ca49aa06395fa<br>
+[アニメ DVD]レンタルマギカ 第14話 「星のキオク」(704x480 x264 AAC).mp4 灸削2X2SON69C1 149,000,997 9bb761c33f6768277bc4662812dade5618fb6a68<br>
+[アニメ DVD]レンタルマギカ 第15話 「人魚の伝説」(704x480 x264 AAC).mp4 灸削2X2SON69C1 153,805,150 06aee02ae65d41c4cd65fc3bc9b038d6a7a8b3a3<br>
+[アニメ DVD]レンタルマギカ 第16話 「赤い槍」(704x480 x264 AAC).mp4 灸削2X2SON69C1 144,264,279 c9f2279fc3a7b542f62446b559cc8a9a87682be9<br>
+[アニメ DVD]レンタルマギカ 第17話 「魔神の反乱」(704x480 x264 AAC).mp4 灸削2X2SON69C1 166,734,462 560adc7c6dae73dca30967bc5c88dd656c22cce5<br>
+[アニメ DVD]レンタルマギカ 第18話 「ソロモンの絆」(704x480 x264 AAC).mp4 灸削2X2SON69C1 157,991,767 9b3c11b462fcf5c40b698d99833ef95188b3ea0e<br>
+[アニメ DVD]レンタルマギカ 第19話 「巫女の故郷」(704x480 x264 AAC).mp4 灸削2X2SON69C1 150,732,528 47ca93979a83049638e7b69bd4fc0830c82701ed<br>
+[アニメ DVD]レンタルマギカ 第20話 「鬼の祭り」(704x480 x264 AAC).mp4 灸削2X2SON69C1 170,714,945 952eb1207da5e4ed18dfb37248de3522df31d6d7<br>
+[アニメ DVD]レンタルマギカ 第21話 「白と黒のドレス」(704x480 x264 AAC).mp4 灸削2X2SON69C1 144,066,015 042258fa0055eebd73a4adafbb46b1394ebae4ba<br>
+[アニメ DVD]レンタルマギカ 第22話 「眠れる街」(704x480 x264 AAC).mp4 灸削2X2SON69C1 148,428,433 75d64ab13963f1bf0d0b8783115cffacbce1fafb<br>
+[アニメ DVD]レンタルマギカ 第23話 「取り替え児」(704x480 x264 AAC).mp4 灸削2X2SON69C1 142,978,740 94aad11ef96727a554e2e970e611a36370b7b22f<br>
+[アニメ DVD]レンタルマギカ 第24話 「アストラル」(704x480 x264 AAC).mp4 灸削2X2SON69C1 162,215,814 9ae256b98172ded55713451254db4bb570f6594e<br>
+<hr class="A">
+(アニメ DVD) レンタルマギカ Disc1 映像特典 ノンテロップオープニング (1280x720 H264 S-upconv Vorbis).mkv nX0fg0FCz5 58,123,684 868b8d83337c7611d37c84a9ac7c32e671875598<br>
+(アニメ DVD) レンタルマギカ Disc2 映像特典 ノンテロップエンディング (1280x720 H264 S-upconv Vorbis).mkv nX0fg0FCz5 50,352,780 d5813304ec345501a125796fef05b2b20947eabe<br>
+(アニメ DVD) レンタルマギカ Disc3 映像特典 先行プロモーションビデオ (1280x720 H264 S-upconv Vorbis).mkv nX0fg0FCz5 33,284,589 34064df58f368f9416ea5a0bdb7024a9b5f65949<br>
+(アニメ DVD) レンタルマギカ Disc4 映像特典 放送前CM (1280x720 H264 S-upconv Vorbis).mkv nX0fg0FCz5 23,494,985 b58ec54c27e50774b3ef8ed6e16b4e747387d261<br>
+(アニメ DVD) レンタルマギカ Disc5 映像特典 放送中CM (1280x720 H264 S-upconv Vorbis).mkv nX0fg0FCz5 24,884,273 eef9fa8c7fdd5257075f32c9c7b00bd90c599702<br>
+(アニメ DVD) レンタルマギカ Disc6 映像特典 次回予告総集編① (01話～12話) (1280x720 H264 S-upconv Vorbis).mkv 39,057,582 d9cd92304681b248872023cf5e68e08931d8c9af<br>
+(アニメ DVD) レンタルマギカ Disc7 映像特典 ノンテロップオープニング(英語版) (1280x720 H264 S-upconv Vorbis).mkv 68,546,237 fedfb82289e786c51aa1ed61dc463bae7b33217f<br>
+(アニメ DVD) レンタルマギカ Disc10 映像特典 DVD発売前CM (1280x960 H264 S-upconv Chap).mkv nX0fg0FCz5 44,234,507 74574e42238c247a785a7f876f638e0b87ca5de6<br>
+(アニメ DVD) レンタルマギカ Disc11 映像特典 DVD発売中CM (1280x960 H264 S-upconv Chap).mkv nX0fg0FCz5 82,590,664 b0830b1cceacd0a02ebce6cffe3cc9f3ee251894<br>
+(アニメ DVD) レンタルマギカ 第01話 「魔法使い、貸します」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 504,129,390 192bfc54134f9cec5c17efdb51cec1a816471936<br>
+(アニメ DVD) レンタルマギカ 第02話 「魔女の誓い」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 327,699,013 df94ad2fa9eec13198e073ee5d68a4307930fac1<br>
+(アニメ DVD) レンタルマギカ 第03話 「神々の禊ぎ」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 379,144,598 48baba0662eeffec048d74f84ca9ba64fd3c48c0<br>
+(アニメ DVD) レンタルマギカ 第04話 「ひとりじゃないから」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 342,729,450 8e3c39207dbef44631eaa581451dda978e403ce8<br>
+(アニメ DVD) レンタルマギカ 第05話 「魔術の夜」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 379,676,403 2c1412f6e5bccf84454c0ebe6fc9266d97da9ab4<br>
+(アニメ DVD) レンタルマギカ 第06話 「妖精眼」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 379,600,302 3c458d6ae77938764d14e648a83484c2da52f482<br>
+(アニメ DVD) レンタルマギカ 第07話 「赤い髪の少女」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 275,952,533 d0aa339a0d23dc5c5705c8c57def9e35c4792cc9<br>
+(アニメ DVD) レンタルマギカ 第08話 「温泉魔法」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 271,120,546 945c68bec483e764e33176b910e5551b961bd8fc<br>
+(アニメ DVD) レンタルマギカ 第09話 「父を継ぐ者」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 378,080,890 35a267d1b7fb9f43dfeccb2535ed5353f4a54a03<br>
+(アニメ DVD) レンタルマギカ 第10話 「ホムンクルスの涙」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 371,877,529 2ec236cfbdd2fe2214347e4b47f796251518b563<br>
+(アニメ DVD) レンタルマギカ 第11話 「死者に咲く花」 (1280x720 H264 S-upconv Vorbis Chap).mkv 346,074,662 8f43748627e53bdbb48124bfada2412877ca88f4<br>
+(アニメ DVD) レンタルマギカ 第12話 「聖夜に捧げるレクイエム」 (1280x720 H264 S-upconv Vorbis Chap).mkv 334,893,975 605eaa0031b68631a14af88369f0d058d598c7f8<br>
+(アニメ DVD) レンタルマギカ 第13話 「入信儀礼」 (1280x720 H264 S-upconv Vorbis Chap).mkv 360,962,163 87a248dab1708e9b173dc3e4a3c535cc8db27356<br>
+(アニメ DVD) レンタルマギカ 第14話 「星のキオク」 (1280x720 H264 S-upconv Vorbis Chap).mkv 362,164,758 b4ed285e7bc552251b46209925984a46ddcbfcf9<br>
+(アニメ DVD) レンタルマギカ 第15話 「人魚の伝説」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 353,112,975 4e49b07a86c32319afd6c70bb074ba3d024d814c<br>
+(アニメ DVD) レンタルマギカ 第16話 「赤い槍」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 332,478,962 f89752c2b41b9e592242d3a9e99f1afc7fde06a0<br>
+(アニメ DVD) レンタルマギカ 第17話 「魔神の反乱」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 423,069,648 d3fc7627090217a40fd0349aa9fae7ee1e52663e<br>
+(アニメ DVD) レンタルマギカ 第18話 「ソロモンの絆」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 384,812,962 a1da3162d7ef6bfc5a539fcea3537511bd1904ed<br>
+(アニメ DVD) レンタルマギカ 第19話 「巫女の故郷」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 345,006,584 a2f27647e59fcf210301da57bde67adb1ad02b9f<br>
+(アニメ DVD) レンタルマギカ 第20話 「鬼の祭り」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 388,717,334 1c939023a519eb41502d810956d2e3158de83543<br>
+(アニメ DVD) レンタルマギカ 第21話 「白と黒のドレス」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 348,382,771 52a33dffad7a4f204cc6f29dec5a01e37eae7ab1<br>
+(アニメ DVD) レンタルマギカ 第22話 「眠れる街」 (1280x720 H264 S-upconv Vorbis Chap).mkv nX0fg0FCz5 348,845,647 9868879d6e2317a9a3467ab07274ffb8219b6edd<br>
+<hr class="A">
+[DVD] レンタルマギカ Vol.01 映像特典 「ノンテロップオープニング」 (704x396 WMV9 rev2).wmv puiAh0X7b3 62,726,629 3413ff3cb893def89b2dba7626a2b3d6ca0efa0a<br>
+[DVD] レンタルマギカ Vol.02 映像特典 「ノンテロップエンディング」 (704x396 WMV9 rev2).wmv puiAh0X7b3 59,014,629 e7655414868c8518c9e51eb0d85b81282a0d6a2b<br>
+[DVD] レンタルマギカ Vol.03 映像特典 「先行プロモーションビデオ」 (704x396 WMV9).wmv puiAh0X7b3 37,643,911 80058dcd8253063df722015d7aea40d9f9ff8592<br>
+[DVD] レンタルマギカ Vol.04 映像特典 「放送前CM」 (704x396 WMV9).wmv puiAh0X7b3 24,980,913 d8290fa4780cb04889b40c374628a4ff6750de5a<br>
+[DVD] レンタルマギカ Vol.05 映像特典 「放送中CM」 (704x396 WMV9).wmv puiAh0X7b3 27,346,977 2a6cc7331874e003049d73af24f169353ab948dc<br>
+[DVD] レンタルマギカ Vol.06 映像特典 「次回予告総集編① (1話～12話)」 (704x396 WMV9).wmv puiAh0X7b3 22,955,227 576d051a61da98be430c237d86940067fd0b7f27<br>
+[DVD] レンタルマギカ Vol.07 映像特典 「ノンテロップオープニング(英語版)」 (704x396 WMV9).wmv puiAh0X7b3 54,550,623 71f3e684dc3f7859065f57f7d18c866d82c7e43d<br>
+[DVD] レンタルマギカ Vol.08 映像特典 「ノンテロップエンディング(キャスト版)」 (704x396 WMV9 rev2).wmv puiAh0X7b3 53,384,989 a3aaa873e31531aeac2f50ed727a0e50c972275b<br>
+[DVD] レンタルマギカ Vol.09 映像特典 「イベント用PV 5分Ver.」 (704x396 WMV9 rev2).wmv puiAh0X7b3 85,943,475 761e36a371b4b2fa788d97f2e933f927aaa93654<br>
+[DVD] レンタルマギカ Vol.10 映像特典 「DVD発売前CM」 (640x480 WMV9).wmv puiAh0X7b3 28,822,305 0464f70047c564cc63a124de66dbe3d42f4d2ec4<br>
+[DVD] レンタルマギカ Vol.11 映像特典 「DVD発売中CM」 (640x480 WMV9).wmv puiAh0X7b3 55,446,587 1ee3d86cda4563ce8b9f698d56c49642ce2e522e<br>
+[DVD] レンタルマギカ Vol.12 映像特典 「Web用 CM」 (640x480 WMV9).wmv puiAh0X7b3 55,783,290 1131232ce30419062fd1d6ae1f39dbd51654c4f1<br>
+[DVD] レンタルマギカ Vol.12 映像特典 「次回予告総集編② (13話～24話)」 (704x396 WMV9).wmv puiAh0X7b3 36,567,074 a3090b5023b635999c03ce986066f710e9bf1bb1<br>
+[DVD] レンタルマギカ 第01話 「魔法使い、貸します」 (704x396 WMV9 OPED60 rev2).wmv puiAh0X7b3 506,863,041 4ace744bd17a677bd50e235379329cf5b93131b8<br>
+[DVD] レンタルマギカ 第02話 「魔女の誓い」 (704x396 WMV9 OPED60 rev2).wmv puiAh0X7b3 309,262,471 1b9e7c92429a0ae3d95c31354845f7a0b09f6dd6<br>
+[DVD] レンタルマギカ 第03話 「神々の禊ぎ」 (704x396 WMV9 OPED60 rev2).wmv puiAh0X7b3 388,519,913 d28a3f0c59586af5667a009b3d03a55aa0e2aea0<br>
+[DVD] レンタルマギカ 第04話 「ひとりじゃないから」 (704x396 WMV9 OPED60 rev2).wmv puiAh0X7b3 347,310,395 b0c89ac561284d50caa90e171f8beecb116d0e1c<br>
+[DVD] レンタルマギカ 第05話 「魔術の夜(マギ・ナイト)」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 372,078,471 a178460b3376a2a21668ef884ca0055768643fd1<br>
+[DVD] レンタルマギカ 第06話 「妖精眼(グラム・サイト)」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 378,495,065 5a36493f031fd6413b1651276c74c4f962a33208<br>
+[DVD] レンタルマギカ 第07話 「赤い髪の少女」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 359,038,471 dc3717e023e9c195c4e18f8eb61b04a563857c29<br>
+[DVD] レンタルマギカ 第08話 「温泉魔法」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 333,230,471 8d101842594a9139d28c7e3c62e3cc7495fe49f6<br>
+[DVD] レンタルマギカ 第09話 「父を継ぐ者」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 346,926,395 458b661bdaa03c5284c1f2dbab6d83aba6b7b952<br>
+[DVD] レンタルマギカ 第10話 「ホムンクルスの涙」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 317,038,471 de4c571c03f92fcd09b0cb4a86bcb886e60b34c0<br>
+[DVD] レンタルマギカ 第11話 「死者に咲く花」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 295,564,269 91814c540257ffd7b13aa04f1e4519c34237d335<br>
+[DVD] レンタルマギカ 第12話 「聖夜に捧げるレクイエム」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 376,700,547 6fd59c25b4fc7a2cd44c93bd081cacfbb5ba9ed7<br>
+[DVD] レンタルマギカ 第13話 「入信儀式」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 374,926,471 f0a11bef4423b5aeeb7070cf396d4ac53a88d072<br>
+[DVD] レンタルマギカ 第14話 「星のキオク」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 351,566,471 3ca597799e13726b8759b278d5bd1c4c83fc4179<br>
+[DVD] レンタルマギカ 第15話 「人魚の伝説」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 370,686,471 840b8b5cf56ebe397478e433050a9360c0a80761<br>
+[DVD] レンタルマギカ 第16話 「赤い槍」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 342,830,471 26a28ad8fd1395ab1dc322575b852de113bd4b78<br>
+[DVD] レンタルマギカ 第17話 「魔神の反乱」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 387,454,471 a967ece3a4f996114af56f79e2864681dbdd4c0b<br>
+[DVD] レンタルマギカ 第18話 「ソロモンの絆」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 364,590,471 cc02afa04d84fa19938decc32483a5560e6f6607<br>
+[DVD] レンタルマギカ 第19話 「巫女の故郷」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 357,534,471 9f5d36d32f5e0d03ab91c8e0880946bec01641a8<br>
+[DVD] レンタルマギカ 第20話 「鬼の祭り」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 407,262,465 086209676dbdfab518eb8c3517c3d964bcc81b35<br>
+[DVD] レンタルマギカ 第21話 「白と黒のドレス」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 351,262,471 bd8e0436356a74f229d56d69662b56d0c796f1d1<br>
+[DVD] レンタルマギカ 第22話 「眠れる街」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 349,774,477 a485f4eb2011efe59f2d4f3c1904500a1b2e4d53<br>
+[DVD] レンタルマギカ 第23話 「取り替え児(チェンジリング)」 (704x396 WMV9 OPED60).wmv puiAh0X7b3 428,174,550 cfc1ff65171b1ce8c02040e0df60bd7245aeb8e1<br>
+[DVD] レンタルマギカ 第24話(終) 「アストラル」 (704x396 WMV9 ED60).wmv puiAh0X7b3 477,294,472 5c9ffa4b97c29c5b399ce987198508a71ce9ebd7<br>
+<br></dd>
+</dl><a name="footer"></a><hr><br></body></html>

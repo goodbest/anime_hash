@@ -1,0 +1,905 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja" dir="ltr"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="robots" content="index,noarchive">
+<title>ハッシュ保管庫 SHA1-ロ版</title>
+<style type="text/css">
+<!--
+*{margin:0; padding:0;}
+body{margin:0; padding:0; font-size:9pt; color:#000000; background:#F5F5F5;}
+dd{margin:0 0 0 20px;}
+hr{margin:1px 0; border:1px #C1C0B5 solid;}
+hr.A{text-align:left; width:95%; margin:2px 0; border:1px #87A9D5 solid;}
+hr.B{text-align:left; width:95%; margin:2px 0; border:2px #43599A solid;}
+a{color:#0080C0; text-decoration:none;}
+a:hover{color:#FFFFFF; background-color:#0080C0;}
+table{font-size:8pt;}
+td{text-align:center; width:50px; border:2px #0080C0 solid;}
+td a{display:block; height:1.2em; line-height:1.2em;}
+.font{margin:5px 0 0 2px; font-size:10pt; color:#6E6E6E;}
+.title{color:#D95131;}
+.sup{color:#0000FF;}
+.exc{color:#808080;}
+-->
+</style></head><body>
+<a name="header"></a>
+<table><tr>
+<td><a href="051_sha1aa.html">あ</a></td><td><a href="052_sha1ai.html">い</a></td><td><a href="053_sha1au.html">う</a></td><td><a href="054_sha1ae.html">え</a></td>
+<td><a href="055_sha1ao.html">お</a></td><td><a href="056_sha1ka.html">か</a></td><td><a href="057_sha1ki.html">き</a></td><td><a href="058_sha1ku.html">く</a></td>
+<td><a href="059_sha1ke.html">け</a></td><td><a href="060_sha1ko.html">こ</a></td><td><a href="061_sha1sa.html">さ</a></td><td><a href="062_sha1si.html">し</a></td>
+<td><a href="063_sha1su.html">す</a></td><td><a href="064_sha1se.html">せ</a></td><td><a href="065_sha1so.html">そ</a></td><td><a href="066_sha1ta.html">た</a></td>
+<td><a href="067_sha1ti.html">ち</a></td><td><a href="068_sha1tu.html">つ</a></td><td><a href="069_sha1te.html">て</a></td><td><a href="070_sha1to.html">と</a></td>
+<td><a href="071_sha1na.html">な</a></td><td><a href="072_sha1ni.html">に</a></td><td><a href="0javascript:void(0)">ぬ</a></td>
+<td><a href="0javascript:void(0)">ね</a></td><td><a href="075_sha1no.html">の</a></td>
+</tr><tr>
+<td><a href="076_sha1ha.html">は</a></td><td><a href="077_sha1hi.html">ひ</a></td><td><a href="078_sha1hu.html">ふ</a></td><td><a href="079_sha1he.html">へ</a></td>
+<td><a href="080_sha1ho.html">ほ</a></td><td><a href="081_sha1ma.html">ま</a></td><td><a href="082_sha1mi.html">み</a></td><td><a href="083_sha1mu.html">む</a></td>
+<td><a href="084_sha1me.html">め</a></td><td><a href="085_sha1mo.html">も</a></td><td><a href="086_sha1ya.html">や</a></td><td><a href="087_sha1yu.html">ゆ</a></td>
+<td><a href="088_sha1yo.html">よ</a></td><td><a href="089_sha1ra.html">ら</a></td><td><a href="090_sha1ri.html">り</a></td><td><a href="091_sha1ru.html">る</a></td>
+<td><a href="092_sha1re.html">れ</a></td><td><a href="093_sha1ro.html">ろ</a></td><td><a href="094_sha1wa.html">わ</a></td><td><a href="095_sha1ld.html">LD</a></td>
+<td><a href="096_sha1ow.html">旧</a></td><td><a href="../bd/047_bd.html">BD</a></td><td><a href="../psp/048_psp.html">PSP</a></td>
+<td colspan="2" style="width:100px;"><a href="../update.html">更新リスト</a></td>
+</tr></table>
+<span class="font">ハッシュ保管庫 SHA1-ロ版</span><hr>
+<dl>
+<dt><span class="title">ローゼンメイデン<b>◆</b></span>07/09/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] ローゼンメイデン 第01話 「薔薇乙女」 (704x396 WMV9 Vorbis).mkv FooLptNE19VF17 392,229,739 0fb58c9157fb8b4620b47a631e074ff66c05a31f<br>
+[アニメ DVD] ローゼンメイデン 第02話 「雛苺」 (704x396 WMV9 Vorbis).mkv FooLptNE19VF17 339,252,987 4127c11a2731268b2504f893e375ecb3fb11cddd<br>
+<hr class="A">
+[アニメ DVD] ローゼンメイデン Rozen Maiden ノンクレジット・オープニング(XviD1.1.0Beta2 1024x576 30fps lame VBR qt3).Ertai.avi Bo5Q2E5H6w 36,300,800 dbc8baf08e205246b4295025b2a3992b4db92920<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden ノンクレジット・エンディング(XviD1.1.0Beta2 1024x576 30fps lame VBR qt3).Ertai.avi Bo5Q2E5H6w 49,938,432 4681951b99db1f97f6a7190028378c75544dfb94<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第01話「薔薇乙女 -Fraulein Rose-」(XviD1.1.0Beta2 1024x576 30fps lame VBR qt3).Ertai.avi Bo5Q2E5H6w 313,700,352 da823ec668e088502e03e633fe4cb0e3cbc254a2<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第02話「雛苺 -Kleine Beere-」(XviD1.1.0Beta2 1024x576 30fps lame VBR qt3).Ertai.avi Bo5Q2E5H6w 318,939,136 c6f8399cf81ecbbeeaa665934b5ce7b435601749<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第03話「水銀燈 -Mercury Lampe-」(XviD1.1.0Beta2 1024x576 30fps lame VBR qt3).Ertai.avi Bo5Q2E5H6w 319,803,392 051124a4258cc633bfd38193e19907e2e17d011f<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第04話「翠星石 -Jade Stern-」(XviD1.1.0Beta2 1024x576 30fps lame VBR qt3).Ertai.avi Bo5Q2E5H6w 321,107,968 496d23997180224f01f715a86e7d4cb106d34520<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第05話「階段 -Die Treppe-」(XviD1.1.0Beta2 1024x576 30fps lame VBR qt3).Ertai.avi Bo5Q2E5H6w 320,415,744 0ab8507e787105145e625ce344cfc7c97870f88d<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第06話「涙 -Tranen-」(XviD1.1.0Beta2 1024x576 30fps lame VBR qt3).Ertai.avi Bo5Q2E5H6w 318,566,400 6b0a271b283ad597b749a5eef7dd8b021d82fb1e<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第07話「夢 -Traume-」(XviD1.1.0Beta2 1024x576 30fps lame VBR qt3).Ertai.avi Bo5Q2E5H6w 319,985,664 da0bc5e9b36a44d82aaceb70ebc8e3dfee821fb5<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第08話「蒼星石 -Lapislazuri Stern-」(XviD1.1.0Beta2 1024x576 30fps lame VBR qt3).Ertai.avi Bo5Q2E5H6w 319,895,552 0b24461844f437fd52a4148ff3491ec51e03c932<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第09話「檻 -Die Gefangnis-」(XviD1.1.0Beta2 1024x576 30fps lame VBR qt3).Ertai.avi Bo5Q2E5H6w 318,681,088 fe11c95f3dd9d82602048214aaa04164eb84bf35<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第10話「別離 -Abscheid-」(XviD1.1.0Beta2 1024x576 30fps lame VBR qt3).Ertai.avi Bo5Q2E5H6w 318,908,416 dbce7908ec58e4dbc479994d1b8eee44bcacc078<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第11話「運命 -Schicksal-」(XviD1.1.0Beta2 1024x576 30fps lame VBR qt3).Ertai.avi Bo5Q2E5H6w 361,244,672 5ed911a224dc5e0e98344746d2114e34144755ec<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第12話「真紅 -Reiner Rubin-」(XviD1.1.0Beta2 1024x576 30fps lame VBR qt3).Ertai.avi Bo5Q2E5H6w 361,742,336 83805d2a30cc9adb20bb97a9033b7f918a156496<br><br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 映像特典 「アニクリ ローゼンメイデン特集」 (XviD1.1.0Beta2 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 582,438,694 f977b5fd6b8d157c6d6b03cb3d2986891ea12c7d<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 映像特典 「ノンクレジット・オープニング」 (XviD1.1.0Beta2 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 52,136,735 d1cfc558c8d933e53e674dc3eac800120293fe12<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 映像特典 「ノンクレジット・オープニング」 karaoke version (XviD1.1.0Beta2 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 49,872,376 2eca2709b3c2c2b648fca033e16f786d9c269beb<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 映像特典 「ノンクレジット・エンディング」 (XviD1.1.0Beta2 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 63,194,963 81c80af8182ca97a99f3b3dcf5118054b9a90511<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 映像特典 「ノンクレジット・エンディング」 karaoke version (XviD1.1.0Beta2 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 65,552,628 f7c19b83c18ab0fe45028c704a5060d0f2daacd9<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 映像特典 「ブロモーション用特報映像」 (XviD1.1.0Beta2 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 128,727,544 4ed1fd4e8c859cc37ae83f511bde46ae595bbefe<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 映像特典 「番組宣伝CM」 (XviD1.1.0Beta2 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 19,941,504 7270a744b61717af729e512755f4b40007134177<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第01話 「薔薇乙女 -Fraulein Rose-」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 627,406,609 a22e0f44aed49b2e41021a3f5a69be1490e91597<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第02話 「雛苺 -Kleine Beere-」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 549,571,744 27666fb532cdf69ce60c17acc649fc3259272d05<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第03話 「水銀燈 -Mercury Lampe-」 (XviD1.1.0Beta2 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 416,918,955 62da9de500949d610c04ebbd8d63c89f2efbe1c1<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第04話 「翠星石 -Jade Stern-」 (XviD1.1.0Beta2 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 430,981,008 3caba6ac8ac77c4634b3f5d314c073d97a6db0b2<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第05話 「階段 -Die Treppe-」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 515,607,153 d5b5df2adc231f21d47b9f94fa6005273db157f1<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第06話 「涙 -Tranen-」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 427,905,594 1f6337447cf0602e75051b73e4a80eb5c0d6c319<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第07話 「夢 -Traume-」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 446,337,154 553c6432932139abc6130db76666024c38a7a203<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第08話 「蒼星石 -Lapislazuri Stern-」 (XviD1.1.0Beta2 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 388,705,327 83fdfaeadf972afc39f8d3442c54fcb1eeae6642<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第09話 「檻 -Die Gefangnis-」 (XviD1.1.0Beta2 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 390,911,947 d5353712588ac56f4558f31664a6ab453a67b53e<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第10話 「別離 -Abscheid-」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 403,877,820 3e2ce1e2a7df1bd0e68961a3ae2921a44e841428<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第11話 「運命 -Schicksal-」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 481,310,280 f74371bc5afcc428cd40ae4a4c57c668aeb53e5a<br>
+[アニメ DVD] ローゼンメイデン Rozen Maiden 第12話 「真紅 -Reiner Rubin-」 (XviD1.1.0Beta2 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 640,438,193 fcefdd149bbbaa1bddc08a57de2b90aade3cdacb<br>
+<hr class="A">
+[アニメ DVD] ローゼンメイデン NCOP (DVDrip 704x396 XviD+AAC VFR).mkv EOLIAXv6gM5vCI0 18,073,999 4797c2aabdfb4dcf305a37c832c59303c091b58f<br>
+[アニメ DVD] ローゼンメイデン NCED (DVDrip 704x396 XviD+AAC VFR).mkv EOLIAXv6gM5vCI0 20,083,524 c1f161ddc323482676ed043de79fd3cd5d7b6ff4<br>
+[アニメ DVD] ローゼンメイデン 第01話 「薔薇乙女」 (704x396 XviD+AAC VFR).mkv EOLIAXv6gM5vCI0 304,091,989 d57c22a3eaee054943fa8a6527761d852d2e17df<br>
+[アニメ DVD] ローゼンメイデン 第02話 「雛苺」 (704x396 XviD+AAC VFR).mkv EOLIAXv6gM5vCI0 304,044,692 4f515d6c08babbffa9ce86f59d11d56e725b546d<br>
+[アニメ DVD] ローゼンメイデン 第03話 「水銀燈」 (704x396 XviD+AAC VFR).mkv EOLIAXv6gM5vCI0 303,505,535 1624deea9c21998d12fcd9eaa68942f1d20bbf86<br>
+[アニメ DVD] ローゼンメイデン 第04話 「翠星石」 (704x396 XviD+AAC VFR).mkv EOLIAXv6gM5vCI0 304,059,070 a18fc7ce6685efef8991a11098ed8501d5f01a93<br>
+[アニメ DVD] ローゼンメイデン 第05話 「階段」 (704x396 SviD+AAC VFR).mkv EOLIAXv6gM5vCI0 303,065,442 fbcc835f637c1a2750bc2d55cfdaf1b427d1b912<br>
+[アニメ DVD] ローゼンメイデン 第06話 「涙」 (704x396 XviD+AAC VFR).mkv EOLIAXv6gM5vCI0 303,456,042 5eb167cdc4dc129beefef8d2220c163b3172dc6f<br>
+[アニメ DVD] ローゼンメイデン 第07話 「夢」 (704x396 XviD+AAC VFR).mkv EOLIAXv6gM5vCI0 304,325,012 f37c5e43388ae821931e644ec4a145ebfa405616<br>
+[アニメ DVD] ローゼンメイデン 第08話 「蒼星石」 (704x396 XviD+AAC VFR).mkv EOLIAXv6gM5vCI0 304,157,759 9bd807b1342b47aba71b68f87c4ddb291ec6afb8<br>
+[アニメ DVD] ローゼンメイデン 第09話 「檻」 (704x396 XviD+AAC VFR).mkv EOLIAXv6gM5vCI0 308,941,249 e39d962075a2074625d9577f850e112e75d50208<br>
+[アニメ DVD] ローゼンメイデン 第10話 「別離」 (704x396 XviD+AAC VFR).mkv EOLIAXv6gM5vCI0 307,962,482 48ec42d6f8dbfa547656d216b9c9003611f639cd<br>
+[アニメ DVD] ローゼンメイデン 第11話 「運命」 (704x396 XviD+AAC VFR).mkv EOLIAXv6gM5vCI0 308,805,767 aff7da51d7c1dbb61e165d43fdc0434f59fc7fca<br>
+[アニメ DVD] ローゼンメイデン 第12話 「真紅」 (704x396 XviD+AAC VFR).mkv EOLIAXv6gM5vCI0 308,086,901 ac38d04edcf52f4a04ca328ff4e3a49a243789c3<br>
+<hr class="A">
+[DVD]ローゼンメイデン 第01話「薔薇乙女」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 30FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 279,961,857 c63f9e30af63dc964ba8ffb1fea7d2f1dd69bfec<br>
+[DVD]ローゼンメイデン 第02話「雛苺」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 30FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 255,278,319 f361bdfdc402995e42ab6a235e1e3cc739fa90b7<br>
+[DVD]ローゼンメイデン 第03話「水銀燈」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 186,215,730 496650d7fd485950893305e9a4be881e4842e544<br>
+[DVD]ローゼンメイデン 第04話「翠星石」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 186,071,366 5f852db781f310380dc5b9c76abcb1de0400bf36<br>
+[DVD]ローゼンメイデン 第05話「階段」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 218,650,033 c1be1f38d770df6bd4ce237f66eeeae9f22c41bf<br>
+[DVD]ローゼンメイデン 第06話「涙」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 184,145,501 447f20ea9a7366c137c6aee7d9ab7496a8c5c443<br>
+[DVD]ローゼンメイデン 第07話「夢」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 207,423,944 833737275f389e92e3a6fba66fd1674379938d09<br>
+[DVD]ローゼンメイデン 第08話「蒼星石」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 179,826,092 e4eda21ee5bd9e969ec531a8ad4f7eba8ff19a5e<br>
+[DVD]ローゼンメイデン 第09話「檻」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 182,343,155 ee0fd1a6b9abe057d63cf3920c0b36e173bb5dac<br>
+[DVD]ローゼンメイデン 第10話「別離」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 197,619,873 daba74f4009d922d4150f11d6d84b292f7778087<br>
+[DVD]ローゼンメイデン 第11話「運命」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 192,136,752 3ff9f24fa2076618d4b330b7a9400c45feac7030<br>
+[DVD]ローゼンメイデン 第12話「真紅」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 213,321,818 8f3039245605bfd8854e55bf8cde1202efb58ec2<br>
+<hr class="A">
+Rozen Maiden -ローゼンメイデン- 第01話 「薔薇乙女 －Fraulein Rose－」+映像特典(DVD版 DivX5.02 2Pass 1200kbps 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 291,485,014 932e46afba464be9d70a383e82591c02c5b3ceb8<br>
+Rozen Maiden -ローゼンメイデン- 第02話 「雛苺 －Kleine Beere－」(DVD版 DivX5.02 2Pass 1200kbps 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 246,768,898 9120355d9973621fb9c9371a7af1d3f19ba090c2<br>
+Rozen Maiden -ローゼンメイデン- 第03話 「水銀燈 －Mercury Lampe－」+映像特典(DVD版 DivX5.02 2Pass 1200kbps 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 231,578,028 c13b9cab1489580f6766cd8390f9100bec8c231d<br>
+Rozen Maiden -ローゼンメイデン- 第04話 「翠星石 －Jade Stem－」(DVD版 DivX5.02 2Pass 1200kbps 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 239,336,968 9ac3e7ead348b74ff468fbefaaf1e3924f245a36<br>
+Rozen Maiden -ローゼンメイデン- 第05話 「階段 －Die Treppe－」(DVD版 DivX5.02 2Pass 1200kbps 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 248,960,122 47d04895d5c1665449860b8d403f6846ffd83bdb<br>
+Rozen Maiden -ローゼンメイデン- 第06話 「涙 －Tranen－」(DVD版 DivX5.02 2Pass 1200kbps 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 236,517,106 601b6ab24c467347e19c6abf87d1e66af364d7b8<br>
+Rozen Maiden -ローゼンメイデン- 第07話 「夢 －Traume－」(DVD版 DivX5.02 2Pass 1200kbps 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 237,992,766 67ad588d7df7428d7a3de0cbca84d99c09c8c1c5<br>
+Rozen Maiden -ローゼンメイデン- 第08話 「蒼星石 －Lapislazuri Stern－」(DVD版 DivX5.02 2Pass 1200kbps 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 216,858,168 a0ba7462c6d31d32f6a7a2c3a4c629cd8e88a66e<br>
+Rozen Maiden -ローゼンメイデン- 第09話 「檻 －Die Gefangnis－」(DVD版 DivX5.02 2Pass 1200kbps 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 229,117,406 5ab1b80b89bb6dd841b53b13590a4aaeb92f5995<br>
+Rozen Maiden -ローゼンメイデン- 第10話 「別離 －Abschied－」(DVD版 DivX5.02 2Pass 1200kbps 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 238,960,358 8495b9ded0d6b3471d819d322dea47b84dac11f0<br>
+Rozen Maiden -ローゼンメイデン- 第11話 「運命 －Schicksal－」(DVD版 DivX5.02 2Pass 1200kbps 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 240,988,160 70eaabe11e03efbfd62c5d52a72e16e6f4eee761<br>
+Rozen Maiden -ローゼンメイデン- 第12話 「真紅 －Reiner Rubin－」+第2期予告(DVD版 DivX5.02 2Pass 1200kbps 120fps[itvfr] 704x396).avi kemoneko3oJWAlMfuT 241,878,060 c523e5f79b21c2026143365d3e824ff3dcf9f214<br>
+<br></dd>
+<dt><span class="title">ローゼンメイデン トロイメント<b>◆</b></span>08/02/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] ローゼンメイデン トロイメント DVD 第1巻 特典映像 「アニクリ ローゼンメイデン特集」 [120fps 704x396 WMV9 q93].avi tad87901fCH2Cock 398,872,576 23f9cf21531a5720f1d4f3cfb66e05f364a226f5<br>
+[アニメ DVD] ローゼンメイデン トロイメント DVD 第2巻 特典映像 「ノンクレジットオープニング」 [24fps 704x396 WMV9].avi tad87901fCH2Cock 32,348,160 d86fecbb8e3821a8af3e582731ba670b3925d912<br>
+[アニメ DVD] ローゼンメイデン トロイメント DVD 第3巻 特典映像 「ノンクレジットエンディング」 [30fps 704x396 WMV9].avi tad87901fCH2Cock 51,044,352 50863381f4d7da4dc6531641703850fd60fd5691<br>
+[アニメ DVD] ローゼンメイデン トロイメント DVD 第4巻 特典映像 「MBS ANIME FES '05 上映用映像」 [120fps 704x396 WMV9 q93].avi tad87901fCH2Cock 13,336,576 cf133cef175f9dd8cac010713a6863ef2e487a55<br>
+[アニメ DVD] ローゼンメイデン トロイメント DVD 第4巻 特典映像 「イベント上映用プロモーション映像A」 [30fps 704x396 WMV9 q93].avi tad87901fCH2Cock 19,140,608 b6dd65a2184f0c607ac2ae7225ca297fc9e1cf75<br>
+[アニメ DVD] ローゼンメイデン トロイメント DVD 第4巻 特典映像 「イベント上映用プロモーション映像B」 [30fps 704x396 WMV9 q93].avi tad87901fCH2Cock 18,159,616 1d608bf05d4ec2eabda48ac67ae34c0f721af711<br>
+[アニメ DVD] ローゼンメイデン トロイメント DVD 第4巻 特典映像 「イベント上映用プロモーション映像C」 [30fps 704x396 WMV9 q93].avi tad87901fCH2Cock 41,869,312 9ddbb51adf045ed9bf9a5068f3de698ea8835078<br>
+[アニメ DVD] ローゼンメイデン トロイメント DVD 第5巻 特典映像 「番宣・DVD告知集」 [30fps 704x396 WMV9 q93].avi tad87901fCH2Cock 14,622,720 0cb65b2837d68f57311cd281dc3815c19b7f2360<br>
+[アニメ DVD] ローゼンメイデン トロイメント DVD 第6巻 特典映像 「番組提供背景集」 [30fps 704x396 WMV9 q93].avi tad87901fCH2Cock 18,880,512 de5b685b5678557cab69ba3c0cc990d8c680da07<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第01話 「薔薇水晶」 [120fps 704x396 WMV9 q93].avi tad87901fCH2Cock 347,717,632 a57b4a776d74392292ac91e3901bc46f9cd5a705<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第02話 「槐」 [120fps 704x396 WMV9 q93].avi tad87901fCH2Cock 286,961,664 b598fbebf8be5defe5a5576d3b860e5df8c0f85c<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第03話 「金糸雀」 [120fps 704x396 WMV9 q93].avi tad87901fCH2Cock 296,128,512 f4e738ea54d78c7b359a87e67f1b648d05e2a3a8<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第04話 「契約」 [120fps 704x396 WMV9 q93].avi tad87901fCH2Cock 278,001,664 a6240354c0fbceb718a8dbb8644025cc30ac97a9<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第05話 「手紙」 [120fps 704x396 WMV9 q93].avi tad87901fCH2Cock 336,494,592 c892eaa534254747214242cbb4d28e62d37d0348<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第06話 「天使」 [120fps 704x396 WMV9 q93].avi tad87901fCH2Cock 286,380,032 3ba69a6b57cfa39c4bbbb30b46c4c2e4b5913f6d<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第07話 「茶会」 [120fps 704x396 WMV9 q93].avi tad87901fCH2Cock 383,723,520 1ea6f0423f9387a13d983642e24a62c1c0a5ad74<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第08話 「人形師」 [120fps 704x396 WMV9 q93].avi tad87901fCH2Cock 238,010,368 8b97e240a0d918bfb3979de0891700255964e32e<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第09話 「戒」 [120fps 704x396 WMV9 q93].avi tad87901fCH2Cock 277,862,400 2c46662faef6849a3a061835277aeb4c527b56b7<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第10話 「巴」 [120fps 704x396 WMV9 q93].avi tad87901fCH2Cock 274,833,408 3f55bc94e2ce04d9e0260a8d46f08a6a22e238f2<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第11話 「薔薇園」 [120fps 704x396 WMV9 q93].avi tad87901fCH2Cock 346,116,096 54bf0b2ee416496659c2cd270cbbd8b67df6a848<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第12話 「少女」 [120fps 704x396 WMV9 q93].avi tad87901fCH2Cock 315,226,112 c5748e77c8e434aea99c268fd2e35c28ffcba063<br>
+<hr class="A">
+[アニメ DVD] ローゼンメイデン トロイメント 映像特典 「アニクリ ローゼンメイデン特集」 (XviD1.1.0 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 641,031,203 07c09879e2fcd5c82b093bffaa54acdbc6bd25bd<br>
+[アニメ DVD] ローゼンメイデン トロイメント 映像特典 「ノンクレジット・オープニング」 (XviD1.1.0 1280x720 24fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 60,682,793 870e05dcf354cdba337ad3916eafbf62a4da2ba7<br>
+[アニメ DVD] ローゼンメイデン トロイメント 映像特典 「ノンクレジット・エンディング」 (XviD1.1.0 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 105,312,041 6b338f581f8f1d7dcd9f5e55ed6b428901243712<br>
+[アニメ DVD] ローゼンメイデン トロイメント 映像特典 「ローゼンメイデン トロイメント PV集」 (XviD1.1.0 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 188,026,028 325faa642c2a3bf0651eb8f072efbfc1577101a7<br>
+[アニメ DVD] ローゼンメイデン トロイメント 映像特典 「番組提供背景集」 (XviD1.1.0 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 61,441,257 1894828ad38bde179de3f1c0c58d3c9ccaf85462<br>
+[アニメ DVD] ローゼンメイデン トロイメント 映像特典 「番宣・DVD告知集」 (XviD1.1.0 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 30,049,486 218061f4e92bdcf32e16eff01d9478bbfc8ae4b0<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第01話 「薔薇水晶 -Rozenkristall-」 (XviD1.1.0 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 669,640,301 36b62464d77b53549304d6e3c55b81c45383db4c<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第02話 「槐 -Enju-」 (XviD1.1.0 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 583,720,322 2c074588da048fd4156fdccfb8688b674ec20ffb<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第03話 「金糸雀 -kanarienvogel-」 (XviD1.1.0 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 615,813,952 eaed002d1f6e57bd200f3eb77602eefeccc8fe5a<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第04話 「契約 -Vereinbarung-」 (XviD1.1.0 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 392,420,540 e2e885fe183fb0f73eb2ccdd54cf02415f7baa78<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第05話 「手紙 -Der Brief-」 (XviD1.1.0 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 686,593,967 a7d9925e1c18531c14abb0477428399894c9db3e<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第06話 「天使 -Engel-」 (XviD1.1.0 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 569,583,697 aed12dc0c90e6c23315d0df82e9978227baf574d<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第07話 「茶会 -Teegesellschaft-」 (XviD1.1.0 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 756,315,572 224af4de39ec4f86cce96c07ca7bada7fe963b76<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第08話 「人形師 -Puppenmacher-」 (XviD1.1.0 1280x720 30fps AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 481,012,856 d76a800ab6aaba388ea72425d8072cd1667bcf03<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第09話 「戒 -Der Tadel-」 (XviD1.1.0 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 541,521,729 70b9549900dac7c775b61db668cb9f3763a28fca<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第10話 「巴 -Tomoe-」 (XviD1.1.0 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 537,913,234 40bf689d67a0df94f5343c11c41e4ac10fe44e28<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第11話 「薔薇園 -Rosengarten-」 (XviD1.1.0 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 865,456,578 b405dc59af0a09e579d89599d41c51577bb28d3c<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第12話 「少女 -Alice-」 (XviD1.1.0 1280x720 VFR AAC VBR ultra).Ertai.mkv Bo5Q2E5H6w 789,346,609 061ef708596b653008c2726d1e912b313d856105<br>
+<hr class="A">
+[アニメ DVD] ローゼンメイデン トロイメント DVD第2巻特典映像 NCOP (704x396 x.264+AC3 VFR).mkv EOLIAXv6gM5vCI0 20,153,439 12b32713bfb929fdfd01181dcb1c29f44c16011a<br>
+[アニメ DVD] ローゼンメイデン トロイメント DVD第3巻特典映像 NCED (704x396 x.264+AC3 VFR).mkv EOLIAXv6gM5vCI0 32,049,981 209296cf5b2be16eccd66a10fd9160a9a5b7e25f<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第01話 「薔薇水晶」 (704x396 x.264+AC3 VFR).mkv EOLIAXv6gM5vCI0 319,746,802 fb8752d0678ce7ba542e8c5084d43feff00762cc<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第02話 「槐」 (704x396 x.264+AC3 VFR).mkv EOLIAXv6gM5vCI0 268,211,894 4746d1c73f3b091dbf19a0e97d390d88514320a5<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第03話 「金糸雀」 (704x396 x.264+AC3 VFR).mkv EOLIAXv6gM5vCI0 373,502,387 73bc88efe1e7f8176ca43636311600c9c1d82011<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第04話 「契約」 (704x396 x.264+AC3 VFR).mkv EOLIAXv6gM5vCI0 373,377,413 ec31c1e7c9f0865ee0541f06e39c4f36e7ee7d3d<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第05話 「手紙」 (704x396 x.264+AC3 VFR).mkv EOLIAXv6gM5vCI0 275,439,006 6c86891c1f5bb780ac1d075a45388fcacb3512cf<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第06話 「天使」 (704x396 x.264+AC3 VFR).mkv EOLIAXv6gM5vCI0 257,038,455 34a0123353af8298b6462010879cfc117a770e9c<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第07話 「茶会」 (704x396 XviD+Vorbis VFR).mkv EOLIAXv6gM5vCI0 302,551,112 f8243ae90cb76c4eda92c309143e3f849aacdf89<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第08話 「人形師」 (704x396 XviD+Vorbis VFR).mkv EOLIAXv6gM5vCI0 302,461,626 d2d79fe1056085e9e252a978b0617da095f6d7b7<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第09話 「戒」 (704x396 XviD+Vorbis VFR).mkv EOLIAXv6gM5vCI0 302,742,708 656ad83e7a03e5f87c89c3b70e0edf3a7be28f79<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第10話 「巴」 (704x396 XviD+Vorbis VFR).mkv EOLIAXv6gM5vCI0 302,746,139 c122623af5d7fc13fb3931316bec08c81b020731<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第11話 「薔薇園」 (704x396 XviD+Vorbis VFR).mkv EOLIAXv6gM5vCI0 226,317,511 2750e151d2ae12765beb1bf5fe5aa7c765042b6b<br>
+[アニメ DVD] ローゼンメイデン トロイメント 第12話 「少女」 (704x396 XviD+Vorbis VFR).mkv EOLIAXv6gM5vCI0 212,343,264 16c792890b1cafaf9d6b08886c7c884300a31da1<br>
+<hr class="A">
+[アニメ] ローゼンメイデン トロイメント 第01話 「薔薇水晶」(DVD 704x396 DivX5.11 QB93 120fps).avi madeleineBiLyQxznB 260,307,174 ced0a2845ccb1267aee9d175b95675b7feab350f<br>
+[アニメ] ローゼンメイデン トロイメント 第02話 「槐」(DVD 704x396 DivX5.11 QB93 120fps).avi madeleineBiLyQxznB 224,531,462 c121b8d39e0135f40396f7b324ca0d5e89c9b0fa<br>
+[アニメ] ローゼンメイデン トロイメント 第03話 「金糸雀」(DVD 704x396 DivX5.11 QB93 120fps).avi madeleineBiLyQxznB 238,985,928 61147b510791866622d30689c172b98f2afeb892<br>
+[アニメ] ローゼンメイデン トロイメント 第04話 「契約」(DVD 704x396 DivX5.11 QB93 120fps).avi madeleineBiLyQxznB 222,743,506 08d873946f8c34e7bc48a0200d21f5a2c33bb6f6<br>
+[アニメ] ローゼンメイデン トロイメント 第05話 「手紙」 (DVD 704x396 DivX5.11 QB93 120fps).avi madeleineBiLyQxznB 267,976,050 ee0dc9c6fbc743afb73389301e5760dc18049725<br>
+[アニメ] ローゼンメイデン トロイメント 第06話 「天使」 (DVD 704x396 DivX5.11 QB93 120fps).avi madeleineBiLyQxznB 224,422,790 05e6a26ae94b56980841312ae07faf511b0bd544<br>
+[アニメ] ローゼンメイデン トロイメント 第07話 「茶会」 (DVD 704x396 DivX5.11 QB93 120fps).avi madeleineBiLyQxznB 286,390,004 7e74ada7524e20d8247c4bd203c09ac6be568e19<br>
+[アニメ] ローゼンメイデン トロイメント 第08話 「人形師」 (DVD 704x396 DivX5.11 QB93 120fps).avi madeleineBiLyQxznB 183,966,426 7f6439061d6882338191d49c3484514497058bea<br>
+[アニメ] ローゼンメイデン トロイメント 第09話 「戒」 (DVD 704x396 DivX5.11 QB93 120fps).avi madeleineBiLyQxznB 211,606,338 7b197fe5ec7919bda24842b7864581459cb34b19<br>
+[アニメ] ローゼンメイデン トロイメント 第10話 「巴」 (DVD 704x396 DivX5.11 QB93 120fps).avi madeleineBiLyQxznB 209,044,878 427fd486c168eb4899953af0f3736e7a4d71a481<br>
+[アニメ] ローゼンメイデン トロイメント 第11話 「薔薇園」 (DVD 704x396 DivX5.11 QB93 120fps).avi madeleineBiLyQxznB 239,621,522 e1c2165f8f64abbf54a5d04815facd67515650b9<br>
+[アニメ] ローゼンメイデン トロイメント 第12話 「少女」 (DVD 704x396 DivX5.11 QB93 120fps).avi madeleineBiLyQxznB 219,968,724 40a561719218eb319f35c8acb53f38fc8dfacf24<br>
+<hr class="A">
+[アニメ] ローゼンメイデン トロイメント 映像特典 「ノンクレジットED」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 76,691,704 4465988380eedcf011533d3ed1dc65c98b2a8f68<br>
+[アニメ] ローゼンメイデン トロイメント 映像特典 「プロモーション映像集」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 80,230,592 4ea031984e273009286ed25aac84eb2318c8026a<br>
+[アニメ] ローゼンメイデン トロイメント 映像特典 「番組背景提供集」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 14,313,554 8f0640bf952a3435dcbf6bd5ab3e94a1e852521d<br>
+[アニメ] ローゼンメイデン トロイメント 第01話 「薔薇水晶」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 321,027,924 392883b81e0c3198d8eb88b70a006f0692136446<br>
+[アニメ] ローゼンメイデン トロイメント 第02話 「槐」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 266,842,780 d2c5f0ed5b402d85312cba185144dbab89fb68c3<br>
+[アニメ] ローゼンメイデン トロイメント 第03話 「金糸雀」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 287,391,454 454b3be6d2bf021932d34b88ceaf6ba1a5f5f928<br>
+[アニメ] ローゼンメイデン トロイメント 第04話 「契約」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 265,251,696 06c7493a8914030193607dbebe7a15c0c53e5016<br>
+[アニメ] ローゼンメイデン トロイメント 第05話 「手紙」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 323,149,574 dfc3fd0268333cc334db67f2aac85bca974791dc<br>
+[アニメ] ローゼンメイデン トロイメント 第06話 「天使」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 268,212,348 10f273927657188dcc112c8f3198a785730e0ba0<br>
+[アニメ] ローゼンメイデン トロイメント 第07話 「茶会」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 338,727,616 15425565aa69db6f445b341bf7d33ae05d2a9a1f<br>
+[アニメ] ローゼンメイデン トロイメント 第08話 「人形師」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 207,252,314 71f793d0fc0c5bdf20f28003a1d380e0fe2ff893<br>
+[アニメ] ローゼンメイデン トロイメント 第09話 「戒」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 241,027,184 edd538006455ff978b7e98e4416948082ae5440e<br>
+[アニメ] ローゼンメイデン トロイメント 第10話 「巴」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 238,782,160 a0f18571aa7e21a8be0141d4fcd389ec0f4af57b<br>
+[アニメ] ローゼンメイデン トロイメント 第11話 「薔薇園」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 300,921,534 c5c45e2df3bcac0dbf95b0c6c7dbf2b418bb00df<br>
+[アニメ] ローゼンメイデン トロイメント 第12話 「少女」 (DVD 704x396 WMV9).avi kyupzkthMGu2E 264,704,634 57adfb9add30634774ae87f56e5994ac50cb0a2c<br>
+<hr class="A">
+[アニメ][DVD] ローゼンメイデン トロイメント 第01話 「薔薇水晶」 (704x396 DivX625).avi 30rjT1bVHq 345,649,152 5513795e0773411f4824b413cdb2fe5f8da0c58b<br>
+[アニメ][DVD] ローゼンメイデン トロイメント 第02話 「槐」 (704x396 DivX625).avi 30rjT1bVHq 284,768,256 0dadaa969b1b435a397a47320b5d450f47510074<br>
+[アニメ][DVD] ローゼンメイデン トロイメント 第03話 「金糸雀」 (704x396 DivX625).avi 30rjT1bVHq 332,288,000 c0b9fb6829638012dbb3de4ca3c6cd3814dd8340<br>
+[アニメ][DVD] ローゼンメイデン トロイメント 第04話 「契約」 (704x396 DivX625).avi 30rjT1bVHq 282,202,112 9324e83e513b19d91419fceba109c46a108b4acf<br>
+[アニメ][DVD] ローゼンメイデン トロイメント 第05話 「手紙」 (704x396 DivX625).avi 30rjT1bVHq 353,662,976 3965247e8d378c5a136e6f2ad331582332d0910e<br>
+[アニメ][DVD] ローゼンメイデン トロイメント 第06話 「天使」 (704x396 DivX625).avi 30rjT1bVHq 290,246,656 445116a2c8a8dc84c075454c2e5351054eec67f2<br>
+[アニメ][DVD] ローゼンメイデン トロイメント 第07話 「茶会」 (704x396 DivX625).avi 30rjT1bVHq 363,587,584 ecc2a876e2a95938048ebd16e3915154bec587d4<br>
+[アニメ][DVD] ローゼンメイデン トロイメント 第08話 「人形師」 (704x396 DivX625).avi 30rjT1bVHq 215,259,136 680851deebb7d055c6945a5a3ad3f12c7b06f981<br>
+[アニメ][DVD] ローゼンメイデン トロイメント 第09話 「戒」 (704x396 DivX625).avi 30rjT1bVHq 274,919,424 58334a4ba9118d853f4fee8b7c46a944f67e1d4a<br>
+[アニメ][DVD] ローゼンメイデン トロイメント 第10話 「巴」 (704x396 DivX625).avi 30rjT1bVHq 273,098,752 68f7e4b33a30ba1cfd32d6d10eb3d32e37197022<br>
+[アニメ][DVD] ローゼンメイデン トロイメント 第11話 「薔薇園」 (704x396 DivX625).avi 30rjT1bVHq 330,299,392 76045215bd9d8fa78adaece309bd234b5c3ff325<br>
+[アニメ][DVD] ローゼンメイデン トロイメント 第12話 「少女」 (704x396 DivX625).avi 30rjT1bVHq 277,125,120 2d69baa8889e9cb3c35105e643a6bedb5fbe1b9f<br>
+<hr class="A">
+[DVD]ローゼンメイデン トロイメント 第01話「薔薇水晶」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 222,499,969 5de43f33b5ec9f245fea5e08039e7ae6fef1fa10<br>
+[DVD]ローゼンメイデン トロイメント 第02話「槐」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 188,501,795 3a9423b07030583382f3da1d576250069dd01605<br>
+[DVD]ローゼンメイデン トロイメント 第03話「金糸雀」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 211,171,627 1c2856f655756147911ac5e1045c098ead4d75e9<br>
+[DVD]ローゼンメイデン トロイメント 第04話「契約」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 187,424,233 ab8ddd06eae7b9a2ff60258ebf03ddcfc8e360e1<br>
+[DVD]ローゼンメイデン トロイメント 第05話「手紙」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 231,173,207 18c5002d83b216540761f79b1417402dd73d6f02<br>
+[DVD]ローゼンメイデン トロイメント 第06話「天使」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 195,611,577 1f0c920dfdcaeb18dc8d8757b474ce111398685b<br>
+[DVD]ローゼンメイデン トロイメント 第07話「茶会」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 234,343,722 7b4d7f6a422b0b5db7a598afba15d6078622629e<br>
+[DVD]ローゼンメイデン トロイメント 第08話「人形師」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 153,959,315 59c8b0500c69a2fff21286c54957cdd5b44df31e<br>
+[DVD]ローゼンメイデン トロイメント 第09話「戒」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 196,800,522 1a6fc3b5148e96e70300e8d08dfb13ac56b4d32a<br>
+[DVD]ローゼンメイデン トロイメント 第10話「巴」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 192,010,086 9903987790d0c6e6ef5f7fb49c199aea86a6524c<br>
+[DVD]ローゼンメイデン トロイメント 第11話「薔薇園」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 216,671,761 2cf8e8bf0fb5b1c1be3e65b76706ffba05f7a7b2<br>
+[DVD]ローゼンメイデン トロイメント 第12話「少女」(Rev2 逆テレシネ修正)(x264 720x480 SAR40：33 60FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 187,251,834 afdaadbae7d643ed2137731216dd235c3f61a784<br>
+<hr class="A">
+(DVD)ローゼンメイデン トロイメント 映像特典 ノンクレジットOP(DivX521 704x396 24fps LameVBR).avi しゃなTvg1STVN6A 31,989,760 d064b419cd60de37c91fa586ca14110593eca777<br>
+(DVD)ローゼンメイデン トロイメント 映像特典 ノンクレジットED(DivX521 704x396 30fps LameVBR).avi しゃなTvg1STVN6A 47,249,408 17794c683ea6ca88788edb2b57ce870873a08370<br>
+(DVD)ローゼンメイデン トロイメント 第01話 「薔薇水晶」(DivX5.21 704x396 120fps LameVBR rev2).avi しゃなTvg1STVN6A 317,120,512 59e61617142c096ca9218d51a571a9051871d10c<br>
+(DVD)ローゼンメイデン トロイメント 第02話 「槐」(DivX5.21 704x396 120fps LameVBR rev2).avi しゃなTvg1STVN6A 272,355,328 eb8ec733620269be64b5a1c3dd8521a61a3f84f1<br>
+(DVD)ローゼンメイデン トロイメント 第03話「金糸雀」 (Divx521 704x396 120fps LameVBR).avi しゃなTvg1STVN6A 297,801,728 0d3aa6ef3a8c3b5c5bcd8d96ebac21fc36f8539c<br>
+(DVD)ローゼンメイデン トロイメント 第04話「契約」 (Divx521 704x396 120fps LameVBR).avi しゃなTvg1STVN6A 261,996,544 ba3b93469d3809bf0f483af3b6594d9134ca5e43<br>
+(DVD)ローゼンメイデン トロイメント 第05話「手紙」 (704x396 DivX521 120f LameVBR).avi しゃなTvg1STVN6A 312,059,904 3b4ef54dda381517ebc391bb5f46fc1eda742d65<br>
+(DVD)ローゼンメイデン トロイメント 第06話「天使」 (704x396 DivX521 120fps LameVBR).avi しゃなTvg1STVN6A 265,285,632 02fe361ba6327e6e2a73788c56a4bb5c6281cc13<br>
+(DVD)ローゼンメイデン トロイメント 第07話「茶会」 (704x396 DivX521 120f).avi しゃなTvg1STVN6A 339,666,944 e60d5ce6a3650b4173eb8e84f984cbb3db8f4574<br>
+(DVD)ローゼンメイデン トロイメント 第08話「人形師」 (704x396 DivX521 120f).avi しゃなTvg1STVN6A 208,216,064 175c7d61ada08c2584c838e29bf70ad3ac9c513c<br>
+(DVD)ローゼンメイデン トロイメント 第09話「戒」 (704x396 DivX521 120f).avi しゃなTvg1STVN6A 261,515,264 15ca4944399432e51156f6fa19edcb8b8bc84ed0<br>
+(DVD)ローゼンメイデン トロイメント 第10話「巴」 (704x396 DivX521 120f).avi しゃなTvg1STVN6A 261,263,360 a1f6ecae6c83e2ccaa29483048509b50b02b672b<br>
+(DVD)ローゼンメイデン トロイメント 第11話「薔薇園」 (704x396 DivX521 120f).avi しゃなTvg1STVN6A 264,714,240 497abcbf301cd4c820d51006567277bd6608a2b9<br>
+(DVD)ローゼンメイデン トロイメント 第12話「少女」 (704x396 DivX521 120f rev2).avi しゃなTvg1STVN6A 285,581,312 9461c8d96128dbb857876059b8519c2c39cdaf86<br>
+<hr class="A">
+（アニメ）ローゼンメイデン・トロイメント Vol.1映像特典「『アニクリ』ローゼンメイデン・トロイメント特集」[DVD 704x384 H.264 24fps VBR AC3 0h23m39s].avi ObKIuv0i4B 190,586,880 4d9746eb37c7ee961e6e8d9722aa84ef2806cc19<br>
+（アニメ）ローゼンメイデン・トロイメント 第01話「薔薇水晶~Rozenkristall~」[DVD 704x384 H.264 24fps VBR AC3 0h24m10s].avi ObKIuv0i4B 194,478,080 ff3afc8f2464b4194b70939f8c877c2a5df2b132<br>
+（アニメ）ローゼンメイデン・トロイメント 第02話「槐~Enju~」[DVD 704x384 H.264 24fps VBR AC3 0h24m24s].avi ObKIuv0i4B 196,368,384 ec3c4213ad4c3027d2776d2f9e52324f674d75f6<br>
+（アニメ）ローゼンメイデン・トロイメント 第03話「金糸雀~Kanarienvogel~」[DVD 704x384 H.264 24fps VBR AC3 0h24m10s].avi ObKIuv0i4B 194,471,936 ddc4f7ea17065fd53174b701dc77552e91da554b<br>
+（アニメ）ローゼンメイデン・トロイメント 第04話「契約~Vereinbarung~」[DVD 704x384 H.264 24fps VBR AC3 0h24m24s].avi ObKIuv0i4B 196,374,528 348e2920d633f5add03f871f5bdb57dc3fdae3c3<br>
+（アニメ）ローゼンメイデン・トロイメント 第05話「手紙~Der Brief~」[DVD 704x384 H.264 24fps VBR AC3 0h24m10s].avi ObKIuv0i4B 194,476,032 408ea62e4f6319e94edf00738e7eb1fc8badaff8<br>
+（アニメ）ローゼンメイデン・トロイメント 第06話「天使~Engel~」[DVD 704x384 H.264 24fps VBR AC3 0h24m10s].avi ObKIuv0i4B 196,366,336 c10374af21bdf7c738f34d4ed003202e6cb6eb95<br>
+（アニメ）ローゼンメイデン・トロイメント 第07話「茶会~Teegesellschaft~」[DVD 704x384 H.264 24fps VBR AC3 0h24m10s].avi ObKIuv0i4B 194,451,456 59de28ce045eb2acb15bb3d0540c61337b59409d<br>
+（アニメ）ローゼンメイデン・トロイメント 第08話「人形師~Puppenmacherl~」[DVD 704x384 H.264 24fps VBR AC3 0h24m10s].avi ObKIuv0i4B 196,380,672 73cb28cded5a9851662a98a7b4fded295ad39b38<br>
+（アニメ）ローゼンメイデン・トロイメント 第09話「戒~Der Tadel~」[DVD 704x384 H.264 24fps VBR AC3 0h24m10s].avi ObKIuv0i4B 194,459,648 7a2f73dd2bfb413a02e2ead9db277f32ade6dbb5<br>
+（アニメ）ローゼンメイデン・トロイメント 第10話「巴~Tomoe~」[DVD 704x384 H.264 24fps VBR AC3 0h24m24s].avi ObKIuv0i4B 196,378,624 2f6637f9b5ac67cd8f50630dda390972d8efc1e0<br>
+（アニメ）ローゼンメイデン・トロイメント 第11話「薔薇園~Rosengarten~」[DVD 704x384 H.264 24fps VBR AC3 0h24m10s].avi ObKIuv0i4B 194,471,936 9b5bdb46c2ec6abf763fe37f7218b21056b08c99<br>
+（アニメ）ローゼンメイデン・トロイメント 第12話「少女~Alice~」[DVD 704x384 H.264 24fps VBR AC3 0h23m54s].avi ObKIuv0i4B 192,346,112 4144165086d9b4fb6919ccb8aaadf9954220ab75<br>
+<hr class="A">
+ローゼンメイデン・トロイメント Vol.1 DVD特典CD.tta 33P4cDuUo6 277,429,072 93706e4bfc9813ff96c30d26f71fc87386a4ee7f<br>
+ローゼンメイデン・トロイメント Vol.1 メニュー.bmp 33P4cDuUo6 836,406 75f3d0ec9acc828dc809a2beaab47aee73db4131<br>
+ローゼンメイデン・トロイメント Vol.2 メニュー.bmp 33P4cDuUo6 836,406 7ee145525457677d6f0198f490546ff604023786<br>
+ローゼンメイデン・トロイメント Vol.3 メニュー.bmp 33P4cDuUo6 836,406 296c9978ccfc0927780bfe336e6989a9ff4d06e5<br>
+ローゼンメイデン・トロイメント Vol.4 メニュー.bmp 33P4cDuUo6 921,654 fa40a1ae8c1360daddd6af87b8a9dc52c21abb97<br>
+ローゼンメイデン・トロイメント Vol.5 メニュー.bmp 33P4cDuUo6 921,654 d269c83bc388ee37832ea6e81dcf8dc467033db5<br>
+ローゼンメイデン・トロイメント Vol.6 メニュー.bmp 33P4cDuUo6 921,654 241de177c3aa26a4759744b28512b8780f6fe7fb<br>
+ローゼンメイデン・トロイメント 映像特典 「『アニクリ』ローゼンメイデン特集」(DVD DivX6.1 インターレース保持).avi 33P4cDuUo6 336,479,138 0739e1e81b43c3adc351d21f8b46d59141c4d0ab<br>
+ローゼンメイデン・トロイメント 映像特典 「ノンクレジットオープニング」(DVD DivX6.1 インターレース保持).avi 33P4cDuUo6 46,008,804 cd70f5fa9b06052764e16869d16685e95210e5fa<br>
+ローゼンメイデン・トロイメント 映像特典 「ノンクレジットエンディング」(DVD DivX6.1 インターレース保持).avi 33P4cDuUo6 40,641,794 104ff033793773a18be4f9b1f2ab44b20dfcf4c1<br>
+ローゼンメイデン・トロイメント 映像特典 「番組提供背景集」(DVD DivX6.2.5 インターレース保持).avi 33P4cDuUo6 13,130,170 b81cb1e356417d678ab82bb4a04ecb2e1b339f7a<br>
+ローゼンメイデン・トロイメント 第01話 「薔薇水晶 -RozenKristall-」(DVD DivX6.1 インターレース保持).avi 33P4cDuUo6 276,519,162 e33878d42f4153f4a705d40bbac52586290af17b<br>
+ローゼンメイデン・トロイメント 第02話 「槐 -Enju-」(DVD DivX6.1 インターレース保持).avi 33P4cDuUo6 232,581,280 b5b26b671366e07c40d4dfa64be50bb13771e776<br>
+ローゼンメイデン・トロイメント 第03話 「金糸雀 -Kanarienvogel-」(DVD DivX6.1 インターレース保持).avi 33P4cDuUo6 258,358,290 137aeba4e89ea77ba9cad87ee170615ae49eea1e<br>
+ローゼンメイデン・トロイメント 第04話 「契約 -Vereinbarung-」(DVD DivX6.1 インターレース保持).avi 33P4cDuUo6 228,366,896 89a1902b68b5c7f43ea000746c141903a98241e0<br>
+ローゼンメイデン・トロイメント 第05話 「手紙 -Dcr Brief-」(DVD DivX6.1 インターレース保持).avi 33P4cDuUo6 283,651,012 4868d2c63a578b8fff2fe09414986fb4da565496<br>
+ローゼンメイデン・トロイメント 第06話 「天使 -Engel-」(DVD DivX6.1 インターレース保持).avi 33P4cDuUo6 238,129,994 3a47001d9caf5a37768d70d1dc0e9e30771b9596<br>
+ローゼンメイデン・トロイメント 第07話 「茶会 -Teegesellschaft-」(DVD DivX6.2.1 インターレース保持).avi 33P4cDuUo6 295,801,292 361184c12367e8a1161739398504d6ed7eb20723<br>
+ローゼンメイデン・トロイメント 第08話 「人形師 -Puppenmacher-」(DVD DivX6.2.1 インターレース保持).avi 33P4cDuUo6 206,428,486 c0b28769211595288417e78d44795407c9b8b868<br>
+ローゼンメイデン・トロイメント 第09話 「戒 -Der Tadel-」(DVD DivX6.2.2 インターレース保持).avi 33P4cDuUo6 222,331,902 f9fc55ad116741f2ede4ac607fd3102d413bb29d<br>
+ローゼンメイデン・トロイメント 第10話 「巴 -Tomoe-」(DVD DivX6.2.2 インターレース保持).avi 33P4cDuUo6 218,873,496 ead13494664b18caa0cd234aed8f664c6e2068f7<br>
+ローゼンメイデン・トロイメント 第11話 「薔薇園 -Rosengarten-」(DVD DivX6.2.5 インターレース保持).avi 33P4cDuUo6 263,534,802 1a101b26930c7ced92334c6bc1f9bfb135bc5ad9<br>
+ローゼンメイデン・トロイメント 第12話(最終話) 「少女 -Alice-」(DVD DivX6.2.5 インターレース保持).avi 33P4cDuUo6 233,112,876 483cfbc72a2eb4b0ae3b0fce0b11b8574cb2c909<br>
+<br></dd>
+<dt><span class="title">ローゼンメイデン オーベルテューレ<b>◆</b></span>08/03/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] ローゼンメイデン オーベルテューレ 映像特典 「ノンテロップオープニング」 [30fps 704x396 WMV9 q93].avi tad87901fCH2Cock 29,370,368 81ef4ebfb7f9e85c11f490f928ef49078087b14d<br>
+[アニメ DVD] ローゼンメイデン オーベルテューレ 映像特典 「ノンテロップエンディング」 [30fps 704x396 WMV9 q93].avi tad87901fCH2Cock 16,109,568 953097129bc88ac26ef1929a81e5e581365f6e4c<br>
+[アニメ DVD] ローゼンメイデン オーベルテューレ 前編 「悠久 Ewigkeit」 [30fps 704x396 WMV9 q93].avi tad87901fCH2Cock 203,624,448 7695e7b510f8f22a49f0a44592d76ff45d381166<br>
+[アニメ DVD] ローゼンメイデン オーベルテューレ 後編 「虚飾 Eitelkeit」 [30fps 704x396 WMV9 q93].avi tad87901fCH2Cock 219,420,672 56940046f8a9142edff27426d9c19a8e7a07fc24<br>
+<hr class="A">
+[アニメ DVD] ローゼンメイデン オーベルテューレ 前編 ｢悠久 ～Ewigkeit～｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 391,608,118 90350177975b7f31e84427616530c28cd637257a<br>
+[アニメ DVD] ローゼンメイデン オーベルテューレ 後編 ｢虚飾 ～Eitelkeit～｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 383,619,318 d4924f747688d62930ac6967aaa65aedfa9e8ad6<br>
+<hr class="A">
+[アニメ DVD OVA] ローゼンメイデン・オーベルテューレ 映像特典 「ノンテロップOP」(704x480 x264).mkv YTXu5UiCog 12,550,277 a93a7ac48a92c87b4a6f6614a06ff26d63fea73f<br>
+[アニメ DVD OVA] ローゼンメイデン・オーベルテューレ 映像特典 「ノンテロップED」(704x480 x264).mkv YTXu5UiCog 6,165,003 2427484ef9bcead2acbd097390ab7e5fa0468345<br>
+[アニメ DVD OVA] ローゼンメイデン・オーベルテューレ 前編 「悠久 Ewigkeit」(704x480 x264).mkv YTXu5UiCog 201,294,278 ae5258f6d95454e868fdb9cef62caee03412422e<br>
+[アニメ DVD OVA] ローゼンメイデン・オーベルテューレ 後編 「虚飾 Eitelkeit」(704x480 x264).mkv YTXu5UiCog 215,613,838 d0ce1cc054bdc6a3e8d60db01340004260794ad2<br>
+<hr class="A">
+[アニメ] ローゼンメイデン・オーベルテューレ 映像特典「ノンクジットOP」 (DVD 704x396 XviD).avi kyupzkthMGu2E 42,334,208 727330fdac7fd6efc256e064ad375d609efd9165<br>
+[アニメ] ローゼンメイデン・オーベルテューレ 映像特典「ED1」 (DVD 704x396 XviD).avi kyupzkthMGu2E 33,415,168 ce19799072941332bf71b3383d150af9a6c268f6<br>
+[アニメ] ローゼンメイデン・オーベルテューレ 映像特典「ED2」 (DVD 704x396 XviD).avi kyupzkthMGu2E 43,757,568 35e8b55c29899ba1eb2750c3e3a20835dcb2f459<br>
+[アニメ] ローゼンメイデン・オーベルテューレ 映像特典「予告」 (DVD 704x396 XviD).avi kyupzkthMGu2E 13,541,376 7577aef14acc63c8ad02cafcbc095d58f23b7203<br>
+[アニメ] ローゼンメイデン・オーベルテューレ 「悠久 前編」 (DVD 704x396 XviD).avi kyupzkthMGu2E 316,579,840 1defa3e6cc5a7b2ae3c65fb8373980ee571a59e3<br>
+[アニメ] ローゼンメイデン・オーベルテューレ 「虚飾 後編」 (DVD 704x396 XviD).avi kyupzkthMGu2E 327,768,064 d57897463bf1f60bf2b31d4b8b8411cb397978b1<br>
+<hr class="A">
+[アニメ] ローゼンメイデン オーベルテューレ 特典映像 「ノンクレジットオープニング」 (DVD 704x480 30fps x264 AAC).mp4 DDRpAErJyd 24,573,068 0092c0ae72304edc574bab021fb9932b708b5d1e<br>
+[アニメ] ローゼンメイデン オーベルテューレ 特典映像 「ノンクレジットエンディング」 (DVD 704x480 30fps x264 AAC).mp4 DDRpAErJyd 13,344,912 750457e1bcad1cb84073e928a7783c7a784054e2<br>
+[アニメ] ローゼンメイデン オーベルテューレ 特典映像 「別バージョンエンディング」 (DVD 704x480 30fps x264 AAC).mp4 DDRpAErJyd 18,416,145 4e0672ccf26f1fb9e58fc928282339480b87cf7e<br>
+[アニメ] ローゼンメイデン オーベルテューレ 特典映像 「別バージョン予告(赤い悪魔)」 (DVD 704x480 30fps x264 AAC).mp4 DDRpAErJyd 9,371,426 5de38e2aa76ede33c1d06359b7c027307e6e5fb6<br>
+[アニメ] ローゼンメイデン オーベルテューレ 前編 「悠久」 (DVD 704x480 30fps x264 AAC).mp4 DDRpAErJyd 221,317,262 35ee243dc5a9ba9661ca73bf2a3c14eabf4fe544<br>
+[アニメ] ローゼンメイデン オーベルテューレ 後編 「虚飾」 (DVD 704x480 30fps x264 AAC).mp4 DDRpAErJyd 244,104,713 2afd48badbf096d4e67c12ec82856a658468309d<br>
+<hr class="A">
+[DVD] Rozen Maiden ouverture 前編 「Ewigkeit」 (704x396 WMV9 QL97).wmv puiAh0X7b3 306,814,853 1d227da6fec6153f423f2a319e33776735a3dff2<br>
+[DVD] Rozen Maiden ouverture 後編 「Eitelkeit」 (704x396 WMV9 QL97).wmv puiAh0X7b3 326,977,553 c77c94846709f4ade5ee90683b1e2b415fc2ed16<br>
+<hr class="A">
+[DVD]ローゼンメイデン オーベルテューレ 前編「悠久 Ewigkeit」(x264 720x480 SAR40：33 30FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 158,358,256 3b3ccd32600c2e36cbfdd41d7f7e4ab3ebd473f8<br>
+[DVD]ローゼンメイデン オーベルテューレ 後編「虚飾 Eitelkeit」(x264 720x480 SAR40：33 30FPS)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 171,845,895 f81f4192dcd6c624bc4957e086095b1b2d82b91a<br>
+<hr class="A">
+（アニメ）ローゼンメイデン オーベルテューレ 映像特典「ノンテロップオープニング」 [DVD 704x384 H.264 24fps VBR AC3 0h01m30s].avi ObKIuv0i4B 12,093,440 ad28351ee74f21e8db2e6916c1f2b7323a228962<br>
+（アニメ）ローゼンメイデン オーベルテューレ 映像特典「ノンテロップエンディング」 [DVD 704x384 H.264 24fps VBR AC3 0h01m31s].avi ObKIuv0i4B 12,201,984 b7b5c0b107306af9ee05ddcb00ff42eefd8f2b07<br>
+（アニメ）ローゼンメイデン オーベルテューレ 前編「悠久 - Ewigkeit -」 [DVD 704x384 H.264 24fps VBR AC3 0h24m09s].avi ObKIuv0i4B 225,439,744 c625a0b36d94855edbcbf271b780e1765c087191<br>
+（アニメ）ローゼンメイデン オーベルテューレ 後編「虚飾 - Eitekeit -」 [DVD 704x384 H.264 24fps VBR AC3 0h24m09s].avi ObKIuv0i4B 192,503,808 442d941698d1bf10b543519e4dc0d066d741feaa<br>
+<hr class="A">
+ローゼンメイデン オーベルテューレ 01 前編「悠久 -Ewigkeit-」(x264 L4 インタレース保持 NTSC 16：9 AC3).mp4 33P4cDuUo6 221,812,678 47cee087360b920b173bc4715d5a0c9536f15fd4<br>
+ローゼンメイデン オーベルテューレ 02 後編「虚飾 -Eitelkeit-」(x264 L4 インタレース保持 NTSC 16：9 AC3).mp4 33P4cDuUo6 244,781,230 a965a518a5e8f027032b0b2f614f50ccbfca0f3e<br>
+<br></dd>
+<dt><span class="title">ロードス島戦記<b>◆</b></span>06/11/16 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 「メイキングオブロードス島戦記」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 66,129,614 e91e7b39cddff6e17932581e8f1e251ba0be4ffe<br>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 OP (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 22,963,480 88909951e543b71017f4bbb5153e6eafb65e8588<br>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 ED (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 14,693,844 99b690dbba0ebc4050766b5b0fd7b6631972e9b5<br>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 第02話 予告 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 6,698,216 5d39d1b2616cb3734a3169e75212626f1feddbc9<br>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 第03話 予告 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 6,754,920 0174d40b8cf7c84e6aacf18313aba75195d04201<br>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 第04話 予告 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 4,438,126 b6a699c325be152c6ddc8af3fca95d4527e3e4ac<br>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 第05話 予告 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 4,463,990 a5dc2c5b341a5c3e8973fb3c47b129abd861a1f8<br>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 第06話 予告 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 2,791,550 f2c526b9f12cb2508e3fd75cb0b1926d2740e07e<br>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 第07話 予告 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 4,933,168 7256303b07856a906fd2513ff78e3737802c1588<br>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 第08話 予告 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 2,612,852 994adca651954bcd1ec2c6163a81843604bb5ca3<br>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 第09話 予告 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 7,590,228 e86d91835f5c3a6c52ed90fe6c0f52c6b02d41bf<br>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 第10話 予告 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 4,891,016 a2548718525b951c35e66fc18ac3d947ddb208b5<br>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 第11話 予告 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 4,390,034 c0cdef8be7669b1f8fd52ecf403c5ab13cb70b94<br>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 第12話 予告 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 3,507,028 a20eb84b2102a1680dfb8c7910a31e2e6e664e64<br>
+[アニメ DVD] ロードス島戦記 OVA 映像特典 第13話 予告 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 3,998,952 c6b70f46209d3d63381eb48f6f66fd4c665b6ddc<br>
+[アニメ DVD] ロードス島戦記 OVA 第01話 「伝説への序章」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 359,751,726 0801781ab095b43e0364564644a7c2368f979ded<br>
+[アニメ DVD] ロードス島戦記 OVA 第02話 「炎の旅立ち」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 279,734,412 1a2b5e0477c296cbb47c05900682842b20d701c3<br>
+[アニメ DVD] ロードス島戦記 OVA 第03話 「黒衣の騎士」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 267,784,716 6c2fd1a0550dd6fe7f536edd95184466217eb42d<br>
+[アニメ DVD] ロードス島戦記 OVA 第04話 「灰色の魔女」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 237,351,518 63ee68d69a4c575bd6a49fd0ea5becc8d07e9c3e<br>
+[アニメ DVD] ロードス島戦記 OVA 第05話 「砂漠の王」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 272,163,504 ad499a92392a70fc81dbef3b06dc6546f193f7e3<br>
+[アニメ DVD] ロードス島戦記 OVA 第06話 「暗黒王の剣」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 222,497,224 ee6fdd015c89e215dc2f6c56ce485276ec9ab6dc<br>
+[アニメ DVD] ロードス島戦記 OVA 第07話 「英雄戦争」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 267,782,320 c4a3d7277613e3c65cf3d9d5844c2d122d562a0b<br>
+[アニメ DVD] ロードス島戦記 OVA 第08話 「戦士の鎮魂歌」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 310,988,724 a0fd7843c96564f5c0b856a2de84b8e00881c80d<br>
+[アニメ DVD] ロードス島戦記 OVA 第09話 「支配の王錫」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 232,566,402 2c1713e8ae9b5e20877196a7462bfc4d098486c6<br>
+[アニメ DVD] ロードス島戦記 OVA 第10話 「火竜山の魔竜」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 261,527,586 eaf4f2ac806bb5fc87db4baf5582ef74b4b74be8<br>
+[アニメ DVD] ロードス島戦記 OVA 第11話 「魔導師の野望」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 248,045,714 94e21c5ebca5c1a59dac5d2505cb783d08eff013<br>
+[アニメ DVD] ロードス島戦記 OVA 第12話 「決戦！暗黒の島」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 282,796,172 6d05660f923c3e38b81321fd9d734a6e81555a29<br>
+[アニメ DVD] ロードス島戦記 OVA 第13話 「灼熱の大地」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 354,959,964 90980c268151f38135622bcf3629b974b9956b8c<br>
+<br></dd>
+<dt><span class="title">RPG伝説ヘポイ<b>◆</b></span>08/04/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] RPG伝説ヘポイ 第01話 「ビリビリマンほえる！」 (640x480 x264 ac3).mkv 7TVqpfEJI3 403,860,355 b6eacea07597db51a1aa057a1fc7431cdead8002<br>
+[アニメ DVD] RPG伝説ヘポイ 第02話 「ハリセンボウ通せんぼ！」 (640x480 x264 ac3).mkv 7TVqpfEJI3 398,607,779 af8ca149ff363b716c39127ab8c6a2f28ae2da33<br>
+[アニメ DVD] RPG伝説ヘポイ 第03話 「マンマンドリルのワナ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 390,396,496 3941c15cbd5378dd33794df128258fa67e415ef9<br>
+[アニメ DVD] RPG伝説ヘポイ 第04話 「ドスンとブタコウモリ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 377,144,077 ace283b0e6bd503c20768cd81a945e0350c6780b<br>
+[アニメ DVD] RPG伝説ヘポイ 第05話 「ウルセエ象こわいぞう！」 (640x480 x264 ac3).mkv 7TVqpfEJI3 373,766,559 e49208f69745ba5b3a44049e37300c7c1a030ca2<br>
+[アニメ DVD] RPG伝説ヘポイ 第06話 「お山の大将フレンドル大佐」 (640x480 x264 ac3).mkv 7TVqpfEJI3 371,689,715 9e9480099a1a14a05ec62c163d8c71c68386bc9c<br>
+[アニメ DVD] RPG伝説ヘポイ 第07話 「ドッカン！ マグマ天使」 (640x480 x264 ac3).mkv 7TVqpfEJI3 406,864,631 e197f2f57a91de23d025f8a7f9dfaf0fa7f8ec2c<br>
+[アニメ DVD] RPG伝説ヘポイ 第08話 「ジャークンはジャー君！」 (640x480 x264 ac3).mkv 7TVqpfEJI3 396,546,235 555b645161cb39d26ded11ca1bf8dd5a497c8caf<br>
+[アニメ DVD] RPG伝説ヘポイ 第09話 「ダンディーにおまかせ！」 (640x480 x264 ac3).mkv 7TVqpfEJI3 378,458,858 69dbcab9eda2152799e600ab6defbcba3fd426ca<br>
+[アニメ DVD] RPG伝説ヘポイ 第10話 「愛しのチョッコリーナ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 388,423,730 d8e0ec7ba35a8601049381e3bd2d1fe663785106<br>
+[アニメ DVD] RPG伝説ヘポイ 第11話 「クイズ王だティノ！」 (640x480 x264 ac3).mkv 7TVqpfEJI3 401,437,913 83beb123d024eee2f5f1ee65b18f8a45d3a8fa5d<br>
+[アニメ DVD] RPG伝説ヘポイ 第12話 「そんなのアリバカ！？」 (640x480 x264 ac3).mkv 7TVqpfEJI3 400,870,885 e4f4005cf98504cbbe740f1536b94603b67458cd<br>
+[アニメ DVD] RPG伝説ヘポイ 第13話 「なんたってヘポイ！」 (640x480 x264 ac3).mkv 7TVqpfEJI3 403,438,748 1468a588204db8d689639d73efc54308c474ce07<br>
+[アニメ DVD] RPG伝説ヘポイ 第14話 「まよってピンポン」 (640x480 x264 ac3).mkv 7TVqpfEJI3 364,254,378 adac405aa7672c91180a295e7d0750bfa1f35e95<br>
+[アニメ DVD] RPG伝説ヘポイ 第15話 「かなわん！ たくわん道人」 (640x480 x264 ac3).mkv 7TVqpfEJI3 372,638,119 d10df6030ef8a1b0a024bf86adb8b8872d5a11a4<br>
+[アニメ DVD] RPG伝説ヘポイ 第16話 「クジラッコだよ～ん！」 (640x480 x264 ac3).mkv 7TVqpfEJI3 375,830,414 3be1c6503d618bf582ed11ec20b9b18f70eeca2b<br>
+[アニメ DVD] RPG伝説ヘポイ 第17話 「ぶりッ子ボンボン」 (640x480 x264 ac3).mkv 7TVqpfEJI3 399,746,757 efbabb5799fdc29b04ccb80dec6fbe13f7793366<br>
+[アニメ DVD] RPG伝説ヘポイ 第18話 「星ふる丘の玉子様」 (640x480 x264 ac3).mkv 7TVqpfEJI3 383,990,176 21443401da697802bd1154b98a758e6b19c7d79b<br>
+[アニメ DVD] RPG伝説ヘポイ 第19話 「ドーベロマンガブリ！」 (640x480 x264 ac3).mkv 7TVqpfEJI3 442,119,121 118e4a3f3baaa0db21cceef21404aa07a065a4e4<br>
+[アニメ DVD] RPG伝説ヘポイ 第20話 「おじゃま虫モクモクモ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 407,121,188 79b4452bf310696e7584cb629d6daab46b7196c7<br>
+[アニメ DVD] RPG伝説ヘポイ 第21話 「丸かじりナベランチャ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 417,351,912 cc4a619e8b3b559bace113071933c4b5ed62eb48<br>
+[アニメ DVD] RPG伝説ヘポイ 第22話 「あんたのオモウツボ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 396,540,886 f706f4456de062a71fba45bc0eed335e23d1a270<br>
+[アニメ DVD] RPG伝説ヘポイ 第23話 「アッと驚くマグカップ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 376,178,159 b5a21c7718e8e53d5032b3264283a7763939ab88<br>
+[アニメ DVD] RPG伝説ヘポイ 第24話 「笑って踊ってブリキング」 (640x480 x264 ac3).mkv 7TVqpfEJI3 401,893,019 627b4e0261fc017f848f265d6f3e49f53471fcde<br>
+[アニメ DVD] RPG伝説ヘポイ 第25話 「とんでるスモウトリ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 407,356,129 c5bb98b3f13ec516ad02561b006e9f4d5cd6a85d<br>
+[アニメ DVD] RPG伝説ヘポイ 第26話 「格闘王キューピースズキ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 391,505,544 2b748e9ed6f403b28aeb7207b2b20ebf696ec913<br>
+[アニメ DVD] RPG伝説ヘポイ 第27話 「いきなり！ ガッタイオー」 (640x480 x264 ac3).mkv 7TVqpfEJI3 390,909,284 ebe39b837481ef16ea89318bff330bb33b17ead3<br>
+[アニメ DVD] RPG伝説ヘポイ 第28話 「右や左のゴロゴロー」 (640x480 x264 ac3).mkv 7TVqpfEJI3 365,270,526 472b91f1d88e18f2004e28a71002e93914bf3d3b<br>
+[アニメ DVD] RPG伝説ヘポイ 第29話 「嗚呼ファラオキャッスル」 (640x480 x264 ac3).mkv 7TVqpfEJI3 389,531,979 424f232118b34354c92b0fd8a574845579fd7538<br>
+[アニメ DVD] RPG伝説ヘポイ 第30話 「ごちそう様フカヒレ将軍」 (640x480 x264 ac3).mkv 7TVqpfEJI3 412,719,986 95cd4ef4a67065cce44827d99c863d829b82da18<br>
+[アニメ DVD] RPG伝説ヘポイ 第31話 「激突！ ヘポイ対ドラクネス」 (640x480 x264 ac3).mkv 7TVqpfEJI3 416,531,136 c3f61a69fef0349fce4c74bcbe9f55cc919f8982<br>
+[アニメ DVD] RPG伝説ヘポイ 第32話 「めざめよ勇者の拳！」 (640x480 x264 ac3).mkv 7TVqpfEJI3 411,430,190 10361c5d8d0f6ba134ff8acb9a4d28fd5baab6ff<br>
+[アニメ DVD] RPG伝説ヘポイ 第33話 「再会！ リュートとミーヤ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 405,845,714 ab9e0bc76f14c50c207fe78887105ea8e62f4e14<br>
+[アニメ DVD] RPG伝説ヘポイ 第34話 「時をかけるヘポイ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 401,624,083 015efb04c444d69a8ea8fe10d336cf33181da8ed<br>
+[アニメ DVD] RPG伝説ヘポイ 第35話 「ヘポリスマスターへの道」 (640x480 x264 ac3).mkv 7TVqpfEJI3 425,480,724 06fdb8027b9b556a0b68a2239f954a3aeaba8f07<br>
+[アニメ DVD] RPG伝説ヘポイ 第36話 「悪の華ミカエル」 (640x480 x264 ac3).mkv 7TVqpfEJI3 415,868,644 f3bfc8739a40b160eec92088c29cf2f0b9e3929c<br>
+[アニメ DVD] RPG伝説ヘポイ 第37話 「リュート、お前もか！」 (640x480 x264 ac3).mkv 7TVqpfEJI3 406,654,362 c4b4f971f1499172c1e72d31da23a0687acca47a<br>
+[アニメ DVD] RPG伝説ヘポイ 第38話 「さらば老師よ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 415,500,693 2a52bc0bd4097864dfcb0c8c81ef2519678ebfd4<br>
+[アニメ DVD] RPG伝説ヘポイ 第39話 「マッカサン散る！」 (640x480 x264 ac3).mkv 7TVqpfEJI3 387,278,177 f24ade48162e347e090d13eb1773dec6f041899a<br>
+[アニメ DVD] RPG伝説ヘポイ 第40話 「ミカエルの逆タマ作戦」 (640x480 x264 ac3).mkv 7TVqpfEJI3 411,969,421 ca1036f526fc4fd1673125693f637d4302606442<br>
+[アニメ DVD] RPG伝説ヘポイ 第41話 「セントキャッスルを探せ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 552,707,540 5867ac59873052d26e70f25a367096a893ea78d8<br>
+[アニメ DVD] RPG伝説ヘポイ 第42話 「結婚式をぶっつぶせ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 518,989,831 4a78e79fb8397724a34de39708293e81c8512e17<br>
+[アニメ DVD] RPG伝説ヘポイ 第43話 「絶対無敵王者の剣！」 (640x480 x264 ac3).mkv 7TVqpfEJI3 542,366,744 f9fc3dc9feeb25cb64ba07664d88f398128e83fc<br>
+[アニメ DVD] RPG伝説ヘポイ 第44話 「すねるなファラオ」 (640x480 x264 ac3).mkv 7TVqpfEJI3 521,585,286 4eb7393a3886d7b6854cb1fb95986a10703c5481<br>
+[アニメ DVD] RPG伝説ヘポイ 第45話 「ミカエルの逆襲」 (640x480 x264 ac3).mkv 7TVqpfEJI3 407,159,511 bf01228b8b581524048a2f9d54d84aff7ad2dbee<br>
+[アニメ DVD] RPG伝説ヘポイ 第46話 「ミカエル敗れたり」 (640x480 x264 ac3).mkv 7TVqpfEJI3 432,000,925 514f1b4a424d7d8cdb566cdb532e002c479dc3aa<br>
+[アニメ DVD] RPG伝説ヘポイ 第47話 「復活！ キングキャッスル」 (640x480 x264 ac3).mkv 7TVqpfEJI3 516,287,750 dcde5e1466a4dff4e338841efb8922b6526b60f8<br>
+[アニメ DVD] RPG伝説ヘポイ 第48話 「ヘポイ、決死の封印」 (640x480 x264 ac3).mkv 7TVqpfEJI3 546,135,379 16b24400d071666106949ac2a4139a9b184ad6bc<br>
+[アニメ DVD] RPG伝説ヘポイ 第49話 「不死身の魔王ドラクネス」 (640x480 x264 ac3).mkv 7TVqpfEJI3 528,995,774 1aa2caa0135b2d84da6bee1ff9cb3d75c52b65cb<br>
+[アニメ DVD] RPG伝説ヘポイ 第50話 「最後のヘポリスマスター」 (640x480 x264 ac3).mkv 7TVqpfEJI3 485,961,088 56801a6826d5842da80e98383a99e65b4a3753c0<br>
+<br></dd>
+<dt><span class="title">老人Z<b>◆</b></span>07/06/16 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ映画] 老人Z (DVDRIP 704x396 x264 AC3 5.1ch).avi カキ氷食べたいpb4KrL2Pc3 1,290,149,888 e4ae4e7c8c59afdb52aa442715570c98ee1c3c76<br>
+<hr class="A">
+[DVD] 老人Z [HDマスター版 704x396 WMV9 AC3 5.1ch きまぐれ].avi SVaXnQ1rt4gME 1,504,452,608 bfd7795c434ba5971dbaddbdf993d5e9407314c3<br>
+<br></dd>
+<dt><span class="title">六神合体ゴッドマーズ<b>◆</b></span>06/10/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD アニメ] ゴッドマーズ 第01話 (640x480 WMV9).wmv 1dodakemx1N789S3y 317,134,226 ed253b39a98e9e1a2d2584aea317e6f12a388f93<br>
+[DVD アニメ] ゴッドマーズ 第02話 (640x480 WMV9).wmv 1dodakemx1N789S3y 317,318,232 7c85066ed358922417409913962c315c90699a7e<br>
+[DVD アニメ] ゴッドマーズ 第03話 (640x480 WMV9).wmv 1dodakemx1N789S3y 317,206,226 c0c4b88275f5503f4fb1512df26bd39199a8c9ea<br>
+[DVD アニメ] ゴッドマーズ 第04話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,958,220 571840662c87d01cb1b6426d3a6735c1b34fecc0<br>
+[DVD アニメ] ゴッドマーズ 第05話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,926,220 9007a9132e81553b764ec61129db831857c33de4<br>
+[DVD アニメ] ゴッドマーズ 第06話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,934,220 4b1e74c264f694bd13d815b24549a302e1d32f65<br>
+[DVD アニメ] ゴッドマーズ 第07話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,934,220 e3795c2b46375036609694b9c3cddb1b3588a786<br>
+[DVD アニメ] ゴッドマーズ 第08話 (640x480 WMV9).wmv 1dodakemx1N789S3y 317,006,220 92a0406e8c0b031d885139e844326cc097b5c2fb<br>
+[DVD アニメ] ゴッドマーズ 第09話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,982,220 da4f96b69849d7a1624d0c2908b4af1450d83d2e<br>
+[DVD アニメ] ゴッドマーズ 第10話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,974,220 46968761bcba9c488d51070c727a80fd0aeaa04c<br>
+[DVD アニメ] ゴッドマーズ 第11話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,950,220 a750d15dc911b40fa8ba80400ca705c1729d2b5d<br>
+[DVD アニメ] ゴッドマーズ 第12話 (640x480 WMV9).wmv 1dodakemx1N789S3y 317,086,220 674bad368d8c15732765ab6d8e7105f60cfaa520<br>
+[DVD アニメ] ゴッドマーズ 第13話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,990,220 f1c2e0618f757b28bfcf5585ae3f0a4647e7916c<br>
+[DVD アニメ] ゴッドマーズ 第14話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,822,220 7ac39bb8844398103acc63d1319a9e8dcbd6c3ee<br>
+[DVD アニメ] ゴッドマーズ 第15話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,950,220 13282218f6cd4b4aa7314e53c7fee78b849beaa0<br>
+[DVD アニメ] ゴッドマーズ 第16話 (640x480 WMV9).wmv 1dodakemx1N789S3y 317,102,220 9a7e1cc6b635887e5515f20175a6cf7999479966<br>
+[DVD アニメ] ゴッドマーズ 第17話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,990,220 81453ce469a6c74e776cfaf8b997efc4cf947dec<br>
+[DVD アニメ] ゴッドマーズ 第18話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,958,220 b2ba5a2436b559ed1163c69874bec201b7c7c474<br>
+[DVD アニメ] ゴッドマーズ 第19話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,646,214 34742d0a6aacc2616e5ddbdf411eee902e874ede<br>
+[DVD アニメ] ゴッドマーズ 第20話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,814,220 bdef70748730762e7496cde4fe00b192790fdfb7<br>
+[DVD アニメ] ゴッドマーズ 第21話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,982,220 b63c6189139497ffd3d8aff4a4bfd529cba64e21<br>
+[DVD アニメ] ゴッドマーズ 第22話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,894,220 649e3b5786ad656f7b1819774362d4f81430b32f<br>
+[DVD アニメ] ゴッドマーズ 第23話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,966,220 eeb52d06baf90d1ddddf609623409e232e738c10<br>
+[DVD アニメ] ゴッドマーズ 第24話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,822,220 c5410399eb0be838e41de1015223b62a42daafdb<br>
+[DVD アニメ] ゴッドマーズ 第25話 (640x480 WMV9).wmv 1dodakemx1N789S3y 317,030,220 246fe524833a458893b34ebb803b889b62079814<br>
+[DVD アニメ] ゴッドマーズ 第26話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,910,220 12d1a03cb3e88df18aa89d261e646bf408f8da4f<br>
+[DVD アニメ] ゴッドマーズ 第27話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,838,220 56e37c90535b13b048c8e5ae28be18834e402dd1<br>
+[DVD アニメ] ゴッドマーズ 第28話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,854,220 a5603356b909214fb7bf77849ea6233c1a61bfc6<br>
+[DVD アニメ] ゴッドマーズ 第29話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,974,220 66a5d3ca2b96c93e1b190dac7f24e84f9e282172<br>
+[DVD アニメ] ゴッドマーズ 第30話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,830,220 d45cf3721b832bd67a6caac6f5625f0ae6447bb8<br>
+[DVD アニメ] ゴッドマーズ 第31話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,958,220 0fb27c849e67178d5ae0914b45ee73d3073270e2<br>
+[DVD アニメ] ゴッドマーズ 第32話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,990,220 578eaf826a44ce4577ca1bad67937daacf4364a5<br>
+[DVD アニメ] ゴッドマーズ 第33話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,806,220 730fcde2703bf7a929cdb82b8b5eae2e44944102<br>
+[DVD アニメ] ゴッドマーズ 第34話 (640x480 WMV9).wmv 1dodakemx1N789S3y 317,030,220 ca0a5651b2a710316031ab6b73afb4f739fd9572<br>
+[DVD アニメ] ゴッドマーズ 第35話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,790,220 ece664bdf23e5c8da049301d9f989c66934427b4<br>
+[DVD アニメ] ゴッドマーズ 第36話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,726,220 b19fe7be9cd01ae4e4b2d4d0b2215689123c9f6a<br>
+[DVD アニメ] ゴッドマーズ 第37話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,766,220 5a5dffd4e31aa5c4c6a6f6878df9e6c056190b1c<br>
+[DVD アニメ] ゴッドマーズ 第38話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,822,220 74a143b8a6df5af687cbe347300fba6037a8394b<br>
+[DVD アニメ] ゴッドマーズ 第39話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,774,220 9c3fb5bf924c5910bbea26218828195a115225f7<br>
+[DVD アニメ] ゴッドマーズ 第40話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,854,220 9bb30a4acb8ee6668547d3826bef6bcf31978c5d<br>
+[DVD アニメ] ゴッドマーズ 第41話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,774,220 e1de3ebd3df946d3f71bf6e7cf9a1ed8cf6d69b3<br>
+[DVD アニメ] ゴッドマーズ 第42話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,790,220 a6933e21d1a84c1a97797320df3195425744c542<br>
+[DVD アニメ] ゴッドマーズ 第43話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,686,214 52d1148bfcc3ee5dde9dd62ba43529a861c9a19f<br>
+[DVD アニメ] ゴッドマーズ 第44話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,830,220 0902ac020fee748fb4676c585c42b81c0c9149b3<br>
+[DVD アニメ] ゴッドマーズ 第45話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,870,220 82d0ca068fae027d1046d7f8777c51b3c2db6533<br>
+[DVD アニメ] ゴッドマーズ 第46話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,782,220 ec43e04d0ec332085768a1b1519ea3a4f5666ead<br>
+[DVD アニメ] ゴッドマーズ 第47話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,646,220 32828f1916d1e519d7ff94fb3ddd03d2812185fd<br>
+[DVD アニメ] ゴッドマーズ 第48話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,790,220 6d6cb2c0fddc400b3f11a292a9260731ffe59d27<br>
+[DVD アニメ] ゴッドマーズ 第49話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,670,220 4b3ff363ed692dc34f014636090fef451a073843<br>
+[DVD アニメ] ゴッドマーズ 第50話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,742,214 cc692d5f528b41e46d7392e1320012f9954b3428<br>
+[DVD アニメ] ゴッドマーズ 第51話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,710,220 75d1e89c9607177b53a04bb9b9aa0eb5b9544e4f<br>
+[DVD アニメ] ゴッドマーズ 第52話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,686,214 6a7608bfc92d9c5c20ad301a66a7dc443f8d5fb7<br>
+[DVD アニメ] ゴッドマーズ 第53話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,694,220 73e52a693e1ac4785ac6c231c5152b3d099da22e<br>
+[DVD アニメ] ゴッドマーズ 第54話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,774,220 29a4de3ba507ee1315792c30156114cf085700f4<br>
+[DVD アニメ] ゴッドマーズ 第55話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,750,220 e52c18918a6b82826f4677dbb2782ee439552347<br>
+[DVD アニメ] ゴッドマーズ 第56話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,798,220 62ae7a703b38a58c85846da69dfc1e3c073ec3f5<br>
+[DVD アニメ] ゴッドマーズ 第57話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,806,220 bad00ef2aaa17cca912204b7f6708e749f624b4e<br>
+[DVD アニメ] ゴッドマーズ 第58話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,870,220 3056acbb7036c8fb4eeda828952a4719623125db<br>
+[DVD アニメ] ゴッドマーズ 第59話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,806,220 fd6fe2c23d71077484ddfbee0078c2ff737b3687<br>
+[DVD アニメ] ゴッドマーズ 第60話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,830,220 526b93c807016f3f0fda3df486b1688bea46d3a0<br>
+[DVD アニメ] ゴッドマーズ 第61話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,766,220 cc63b0e467c0d95a2ea423ed1d214ea55ba8c1c3<br>
+[DVD アニメ] ゴッドマーズ 第62話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,710,220 86114718fb56c4e80bb4c6a9c42afa0d24d1a42d<br>
+[DVD アニメ] ゴッドマーズ 第63話 (640x480 WMV9).wmv 1dodakemx1N789S3y 316,766,214 9ce17c17e72f183c7ececa3bd2318d374a9683f0<br>
+[DVD アニメ] ゴッドマーズ 第64話 (640x480 WMV9).wmv 1dodakemx1N789S3y 315,622,184 c39f485e0553f8767ec89ff28a2231f2bb8d43b6<br><br>
+[DVD アニメ] ゴッドマーズ OVA (640x480 WMV9).wmv 1dodakemx1N789S3y 733,753,607 e7e3f031d98d96abb568a47fa5abf03a20b44f00<br>
+[DVD アニメ] ゴッドマーズ 劇場版 (640x480 WMV9).wmv 1dodakemx1N789S3y 1,253,895,959 f4575e6b80dcff5b3b16e1b1cab3939400f4822c<br>
+<br></dd>
+<dt><span class="title">ロケットガール<b>◆</b></span>09/08/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] ロケットガール 映像特典 6 「ロケットガール」 パイロット版 (WMV9 640x480).avi Galopin3BM3EISvpL 75,806,896 a6180182b77ba03d40ba414d0e923f0ea8b97f04<br>
+[アニメ DVD] ロケットガール 映像特典 6 ノンクレジット・オープニング (WMV9 704x396).avi Galopin3BM3EISvpL 33,074,510 6cbd4639a36105739e510c54418115c968644a97<br>
+[アニメ DVD] ロケットガール 映像特典 6 ノンクレジット・エンディング (WMV9 704x396).avi Galopin3BM3EISvpL 9,476,734 e4bb258e2f6be1d0bcd914d1f571e5686b24cc1c<br>
+[アニメ DVD] ロケットガール 第01話 「ディスティニィ -destiny-」 (WMV9 704x396 120fps).avi Galopin3BM3EISvpL 182,382,816 b3f572ae6f5ccded4f51b7e32ab442ffa9cec348<br>
+[アニメ DVD] ロケットガール 第02話 「アッセンブリ -assembly-」 (WMV9 704x396 120fps).avi Galopin3BM3EISvpL 160,739,182 2b8f4616db769f107a083dd73e107b11d361df57<br>
+[アニメ DVD] ロケットガール 第03話 「ランチパッド -launch pad-」 (WMV9 704x396 120fps).avi Galopin3BM3EISvpL 167,375,838 844fa2f467e22c10da7ae086a9b54a51a98a5005<br>
+[アニメ DVD] ロケットガール 第04話 「カウントダウン -count down-」 (WMV9 704x396 120fps).avi Galopin3BM3EISvpL 166,099,134 55318cc654a9bd18af8965c2fb7a58c62dc14fd6<br>
+[アニメ DVD] ロケットガール 第05話 「イグニッション -ignition-」 (WMV9 704x396 120fps).avi Galopin3BM3EISvpL 165,036,682 58070cb687856a9e12a133ea8dce9f03c600e8b9<br>
+[アニメ DVD] ロケットガール 第06話 「コントロール -control-」 (WMV9 704x396 120fps).avi Galopin3BM3EISvpL 149,748,960 af705dcd938a6586032ba75330f2433067dfdcb5<br>
+[アニメ DVD] ロケットガール 第07話 「グラヴィティ -gravity-」 (WMV9 704x396 120fps).avi Galopin3BM3EISvpL 159,461,432 02d345cf6b603c54ee21ceb89ed012e2e954b457<br>
+[アニメ DVD] ロケットガール 第08話 「セパレーション -separation-」 (WMV9 704x396 120fps).avi Galopin3BM3EISvpL 150,530,800 d94dfc4ac55684b2b6c50cd197421e07a5d7bd56<br>
+[アニメ DVD] ロケットガール 第09話 「キックモーター -kick motor-」 (WMV9 704x396 120fps).avi Galopin3BM3EISvpL 134,127,892 265cb4e43899b521985f1aedb3bb121788110183<br>
+[アニメ DVD] ロケットガール 第10話 「オービター -orbiter-」 (WMV9 704x396 120fps).avi Galopin3BM3EISvpL 170,209,296 d586ec6e00ae5311938675d2fcdd7e976849cd80<br>
+[アニメ DVD] ロケットガール 第11話 「ターンスタート -turn start-」 (WMV9 704x396 120fps).avi Galopin3BM3EISvpL 169,812,156 5340f3e9c8965e78f3bddc3dd15c38bfb5fc4c21<br>
+[アニメ DVD] ロケットガール 第12話 「ロケットガール -rocket girls-」 (WMV9 704x396 120fps).avi Galopin3BM3EISvpL 198,266,500 b6fc0bc2cbccafa91447544b1ca7895d19d13d53<br>
+<hr class="A">
+[アニメ DVD] ロケットガール ROCKET GIRLS 第01話 「ディスティニィ -destiny-」 (x264 704x480 16：9 AAC).mp4 120Cwop3tl 286,909,189 153ffed1855dc490b4404fe4f771704730f1b92a<br>
+[アニメ DVD] ロケットガール ROCKET GIRLS 第02話 「アッセンブリ -assembly-」 (x264 704x480 16：9 AAC).mp4 120Cwop3tl 275,113,999 5d2dc9130fd7b21fcd55bcaea4cc6b3977cf4c96<br>
+[アニメ DVD] ロケットガール ROCKET GIRLS 第03話 「ランチパッド -launch pad-」 (x264 704x480 16：9 AAC).mp4 120Cwop3tl 268,981,414 48276ac0297511f356a0b63ca72606f94be0b36f<br>
+[アニメ DVD] ロケットガール ROCKET GIRLS 第04話 「カウントダウン -count down-」 (x264 704x480 16：9 AAC).mp4 120Cwop3tl 277,538,234 7af9ed50266024e831201686754d63c6a1de0c20<br>
+[アニメ DVD] ロケットガール ROCKET GIRLS 第05話 「イグニッション -ignition-」 (x264 704x480 16：9 AAC).mp4 120Cwop3tl 268,945,488 1942470dc200fa04c189b095d8f0a0cbdbc48f4b<br>
+[アニメ DVD] ロケットガール ROCKET GIRLS 第06話 「コントロール -control-」 (x264 704x480 16：9 AAC).mp4 120Cwop3tl 237,629,924 55e07fb8c07664c2134c5079b143e23accd9956c<br>
+[アニメ DVD] ロケットガール ROCKET GIRLS 第07話 「グラヴィティ -gravity-」 (x264 704x480 16：9 AAC).mp4 120Cwop3tl 271,040,324 72085415b6d0baae99cb753d2f8c65415c8d2a88<br>
+[アニメ DVD] ロケットガール ROCKET GIRLS 第08話 「セパレーション -separation-」 (x264 704x480 16：9 AAC).mp4 120Cwop3tl 265,025,218 35c63daab072ab72c845269773cfc6162dbe3654<br>
+[アニメ DVD] ロケットガール ROCKET GIRLS 第09話 「キックモーター -kick motor-」 (x264 704x480 16：9 AAC rev.2).mp4 120Cwop3tl 244,045,642 9b5d4054bd8e217846f7be287f8769725d66e8df<br>
+<hr class="A">
+[アニメ DVD] ロケットガール 映像特典 「ノンテロップOP」 (1280x720 x264).avi PszSZW9uMt 56,057,856 ce66c6008982bd786ac449df90541390fab3c677<br>
+[アニメ DVD] ロケットガール 映像特典 「ノンテロップED」 (1280x720 x264).avi PszSZW9uMt 17,555,456 a159f1a45a639159f30b29cbfe5fd2ecae466ab8<br>
+[アニメ DVD] ロケットガール 第01話 「ディスティニィ -destiny-」 (1280x720 x264).avi PszSZW9uMt 351,408,046 457133144444db776ed69f6f51ccfbeb787e9e62<br>
+[アニメ DVD] ロケットガール 第02話 「アッセンブリ -assembly-」 (1280x720 x264).avi PszSZW9uMt 303,553,028 a39bf6dbe3a7f05bf3d52d2fbc65ee178ee7829a<br>
+[アニメ DVD] ロケットガール 第03話 「ランチパッド -launch pad-」 (1280x720 x264).avi PszSZW9uMt 332,613,960 1125905873dd65ed9fd205dd7d7edf9b3cfe56be<br>
+[アニメ DVD] ロケットガール 第04話 「カウントダウン -count down-」 (1280x720 x264).avi PszSZW9uMt 320,024,374 950e5372393114836d361aba7c838a91ee476ac2<br>
+[アニメ DVD] ロケットガール 第05話 「イグニッション -ignition-」 (1280x720 x264).avi PszSZW9uMt 330,091,480 4374c3ea122540261f6a039b69497507351d89a5<br>
+[アニメ DVD] ロケットガール 第06話 「コントロール -control-」 (1280x720 x264).avi PszSZW9uMt 300,715,810 190d833484e1ced1cedc632195deed7f82fc7392<br>
+[アニメ DVD] ロケットガール 第07話 「グラヴィティ -gravity-」 (1280x720 x264).avi PszSZW9uMt 305,840,840 ded6b4ae6148b9fe7b017bb51bed3c31936a7a9e<br>
+[アニメ DVD] ロケットガール 第08話 「セパレーション -separation-」 (1280x720 x264).avi PszSZW9uMt 282,507,942 bca064faf63f32148527d8913278d014b5f2088e<br>
+[アニメ DVD] ロケットガール 第09話 「キックモーター -kick motor-」 (1280x720 x264).avi PszSZW9uMt 232,927,198 d2bde0d1aff9e18868ecfa1ebc5c6f87f8ea5675<br>
+[アニメ DVD] ロケットガール 第10話 「オービター -orbiter-」 (1280x720 x264).avi PszSZW9uMt 331,955,474 66c6d1dfaf757a4a6562ea4a7314e344db514280<br>
+[アニメ DVD] ロケットガール 第11話 「ターンスタート -turn start-」 (1280x720 x264).avi PszSZW9uMt 337,769,018 ce0a610480259405118cfb0f85a1fec4d5865f79<br>
+[アニメ DVD] ロケットガール 第12話 「ロケットガール -rocket girls-」 (1280x720 x264).avi PszSZW9uMt 387,027,998 de948c94a32ce8ceb213e1793ffedd85dd364f7a<br>
+[アニメ DVD] ロケットガール 第12話 「ロケットガール -rocket girls-」 (1280x720 x264 ED60fps).avi PszSZW9uMt 608,146,876 4b43612bf262042cafc1324e684b80f8e9721fb9<br>
+<hr class="A">
+[アニメ DVD]ロケットガール 第01話 「ディスティニィ -destiny-」(704x480 x264 AC3).mkv 灸削2X2SON69C1 224,892,854 02d1cb340ffb5428415142627378bf76a36d2455<br>
+[アニメ DVD]ロケットガール 第02話 「アッセンブリ -assembly-」(704x480 x264 AC3).mkv 灸削2X2SON69C1 218,535,544 b7ea6b5111f7bbd47c33865335f3d2d463066743<br>
+[アニメ DVD]ロケットガール 第03話 「ランチパッド -launch pad-」(704x480 x264 AC3).mkv 灸削2X2SON69C1 210,655,442 2130f44f7f5fd8cee92b70c553bb15582effe647<br>
+[アニメ DVD]ロケットガール 第04話 「カウントダウン -count down- 」(704x480 x264 AC3).mkv 灸削2X2SON69C1 221,478,949 c0a34ce71643687ccf862a87f2ddfd7f19638eb5<br>
+[アニメ DVD]ロケットガール 第05話 「イグニッション -ignition-」(704x480 x264 AC3).mkv 灸削2X2SON69C1 209,269,149 78bdf5e504e0b5cfa319f520860b2694ac96cd72<br>
+[アニメ DVD]ロケットガール 第06話 「コントロール -control-」(704x480 x264 AC3).mkv 灸削2X2SON69C1 191,959,716 9e9c43f56129f2b36b3b06ac332202c82bc84320<br>
+[アニメ DVD]ロケットガール 第07話 「グラヴィティ -gravity-」(704x480 x264 AC3).mkv 灸削2X2SON69C1 202,507,764 c4fcbdad1d33b791740165aba071bb39a07e90d3<br>
+[アニメ DVD]ロケットガール 第08話 「セパレーション -separation-」(704x480 x264 AC3).mkv 灸削2X2SON69C1 200,447,287 04390244d64d8459d912329c49bdc57ecc14e1ee<br>
+[アニメ DVD]ロケットガール 第09話 「キックモーター -kick motor-」(704x480 x264 AC3).mkv 灸削2X2SON69C1 192,777,705 83a2bc5c2a9eb66b27724672106c305029890dad<br>
+[アニメ DVD]ロケットガール 第10話 「オービター -orbiter-」(704x480 x264 AC3).mkv 灸削2X2SON69C1 203,514,381 32d6db91aa1f8601f0cac65d63657e4c5c00aee5<br>
+[アニメ DVD]ロケットガール 第11話 「ターンスタート -turn start-」(704x480 x264 AC3).mkv 灸削2X2SON69C1 199,446,219 a4fdcd4f404848f40c272c1bd8a5cd4e24ff1d13<br>
+[アニメ DVD]ロケットガール 第12話 「ロケットガール -rocket girls-」(704x480 x264 AC3).mkv 灸削2X2SON69C1 221,751,911 74a93289534c9c28307cad5389e36fe0f722f23c<br>
+<hr class="A">
+【アニメ】[DVD] ロケットガール 映像特典 「『ロケットガール』パイロット版」 (640x480 WMV9).wmv pcT6OjjAFE 88,658,987 7ad602999e464a47aed34106429a2b431693699c<br>
+【アニメ】[DVD] ロケットガール 映像特典 「ノンクレジット・オープニング」 (704x396 WMV9).wmv pcT6OjjAFE 38,037,407 4967095adb391a8d97d1c4d9184bfac6c76c552d<br>
+【アニメ】[DVD] ロケットガール 映像特典 「ノンクレジット・エンディング」 (704x396 WMV9).wmv pcT6OjjAFE 12,027,998 e7d4e6e1b3457c5d73528c1648cdacdb097e2d66<br>
+【アニメ】[DVD] ロケットガール 第01話 「ディスティニィ -destiny-」 (704x396 WMV9).wmv pcT6OjjAFE 273,906,200 6bec0275c34cc6ef09f2027affe4ed8613ebb688<br>
+【アニメ】[DVD] ロケットガール 第02話 「アッセンブリ -assembly-」 (704x396 WMV9).wmv pcT6OjjAFE 234,123,326 898dcabfb2e1bce2fdb2762a2a7a67c07a226d26<br>
+【アニメ】[DVD] ロケットガール 第03話 「ランチパッド -launch pad-」 (704x396 WMV9).wmv pcT6OjjAFE 248,776,166 ee4fd259d7226b86205db993ce7e3fa9006e2dcf<br>
+【アニメ】[DVD] ロケットガール 第04話 「カウントダウン -count down- 」 (704x396 WMV9).wmv pcT6OjjAFE 240,577,841 88d95aae872246dd4a3b085e62b74de55ad00834<br>
+【アニメ】[DVD] ロケットガール 第05話 「イグニッション -ignition-」 (704x396 WMV9).wmv pcT6OjjAFE 247,624,946 9a4f68261dd18a1fc556f44887cb9bdf407a5f76<br>
+【アニメ】[DVD] ロケットガール 第06話 「コントロール -control-」 (704x396 WMV9).wmv pcT6OjjAFE 230,183,969 19f1073b0f2cc4cfcf9fd6772b952051511004f8<br>
+【アニメ】[DVD] ロケットガール 第07話 「グラヴィティ -gravity-」 (704x396 WMV9).wmv pcT6OjjAFE 231,113,168 b562ca3b6d042ce70cdc26ff1d2ace6025c60fbf<br>
+【アニメ】[DVD] ロケットガール 第08話 「セパレーション -separation-」 (704x396 WMV9).wmv pcT6OjjAFE 224,205,848 40d389582b0e893daeb82dc19a84f9cc77a96889<br>
+【アニメ】[DVD] ロケットガール 第09話 「キックモーター -kick motor-」 (704x396 WMV9).wmv pcT6OjjAFE 192,053,912 cd68461ca2720fb904511726cc9ad1c8c5df5d4f<br>
+【アニメ】[DVD] ロケットガール 第10話 「オービター -orbiter-」 (704x396 WMV9).wmv pcT6OjjAFE 251,432,201 ffe8b82097f34b3661a7edc91c26f02b0ef90787<br>
+【アニメ】[DVD] ロケットガール 第11話 「ターンスタート -turn start-」 (704x396 WMV9).wmv pcT6OjjAFE 267,911,087 204d929a7c042b6483234fbd8257824a5076dc30<br>
+【アニメ】[DVD] ロケットガール 第12話 「ロケットガール -rocket girls-」 (704x396 WMV9).wmv pcT6OjjAFE 256,423,766 d4fcb39871bdb33cdaae73e7f932957d64a9b23b<br>
+<hr class="A">
+ロケットガール 第01話 (DVD 1280x720).wmv 656,205,748 8aa8ad35e058b7ef23f776e8a353d1df54b76b42<br>
+ロケットガール 第02話 (DVD 1280x720).wmv 590,251,303 135eca1a79e51c98809a36e025cea8e5e92db8a7<br>
+ロケットガール 第03話 (DVD 1280x720).wmv 604,466,641 4aa1aaecaa13be95bf0921380d2e2a1d1c575587<br>
+ロケットガール 第04話 (DVD 1280x720).wmv 596,507,284 2891a8f3640fd3945d598e7ed72c9fb954a8d48f<br>
+ロケットガール 第05話 (DVD 1280x720).wmv 682,373,854 161393dcf54c704e6f0d9002fedfb134de649edd<br>
+ロケットガール 第06話 (DVD 1280x720).wmv 685,581,772 1968209f914e2a41f39d96c7a654d022126b463b<br>
+ロケットガール 第07話 (DVD 1280x720).wmv 578,677,006 c00797474d5e7da14a39bc31362359ea38eee6cf<br>
+ロケットガール 第08話 (DVD 1280x720).wmv 401,346,487 a188a7f1343a84f3cafbf80bea85b16e6847f472<br>
+ロケットガール 第09話 (DVD 1280x720).wmv 364,724,656 2a2d7c1f8a500973e49bc3b188d9ecc199af2d68<br>
+ロケットガール 第10話 (DVD 1280x720).wmv 462,494,563 70d9876ba24fe332e98e75cf0bb6f6f0dbf0f390<br>
+ロケットガール 第11話 (DVD 1280x720).wmv 468,448,969 f828b3d430817e3fd30af8504ba1ae1ef52c49b0<br>
+ロケットガール 第12話 (DVD 1280x720).wmv 516,946,858 fd21f170f00372c479d6476b932e68ea8e101bd5<br>
+<br></dd>
+<dt><span class="title">ロザリオとバンパイア<b>◆</b></span>09/07/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] ロザリオとバンパイア 映像特典  ノンテロップ OP１ (848x480 x264 AAC) [CRC32_7A3EC3DD].mkv dodododoFsP5G0OreR 22,522,045 b1cbdb42cd9adda482991e508bfa0f529d01d50f<br>
+[アニメ DVD] ロザリオとバンパイア 映像特典  ノンテロップ OP２ (848x480 x264 AAC) [CRC32_7144D77F].mkv dodododoFsP5G0OreR 23,879,253 fd3fa4b596e153c3aa84cb5ac65d669171763fcd<br>
+[アニメ DVD] ロザリオとバンパイア 映像特典  ノンテロップ ED１ (848x480 x264 AAC) [CRC32_A15DC5A8].mkv dodododoFsP5G0OreR 21,502,105 d94bcb13b2306805907c2b0c992664dc393c8050<br>
+[アニメ DVD] ロザリオとバンパイア 映像特典  ノンテロップ ED２ (848x480 x264 AAC) [CRC32_20498C74].mkv dodododoFsP5G0OreR 17,698,844 e615976199957a2507a6fbeac6f047cea4a025b7<br>
+[アニメ DVD] ロザリオとバンパイア 映像特典  ノンテロップ ED３ (848x480 x264 AAC) [CRC32_C78A400D].mkv dodododoFsP5G0OreR 23,792,414 d6790451d7d29d649b089ecdd26e9ef3b2054105<br>
+[アニメ DVD] ロザリオとバンパイア 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～１時限目」(848x480 x264 AAC) [CRC32_436CFEE4].mkv dodododoFsP5G0OreR 175,675,008 bc89be0cd0bac4a468d38014ceff98f7af8fab5a<br>
+[アニメ DVD] ロザリオとバンパイア 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～２時限目」(848x480 x264 AAC) [CRC32_AC69B122].mkv dodododoFsP5G0OreR 102,540,143 cc42ad594a99b52d5481a5dbaacd4524bb4a844b<br>
+[アニメ DVD] ロザリオとバンパイア 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～３時限目」(848x480 x264 AAC) [CRC32_387A4C1B].mkv dodododoFsP5G0OreR 114,822,533 3eff879b0095fcea02e274a2a04566c55eb6b414<br>
+[アニメ DVD] ロザリオとバンパイア 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～４時限目」(848x480 x264 AAC) [CRC32_F87B5A49].mkv dodododoFsP5G0OreR 94,215,011 627a0975b1d7bf44a1ecbfa61f30d6f1955af5b7<br>
+[アニメ DVD] ロザリオとバンパイア 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～５時限目」(848x480 x264 AAC) [CRC32_C90C1109].mkv dodododoFsP5G0OreR 154,460,602 5bd3aa511cc317dd29557b01383deaf41dca0534<br>
+[アニメ DVD] ロザリオとバンパイア 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～６時限目」(848x480 x264 AAC) [CRC32_DC590314].mkv dodododoFsP5G0OreR 159,155,878 4c14135754962a2dc5cc7bfa1aa20b8f2285452b<br>
+[アニメ DVD] ロザリオとバンパイア 第01話 「新生活とバンパイア」(848x480 x264 AAC VFR ED60fps) [CRC32_57CEE53F].mkv dodododoFsP5G0OreR 248,370,249 8df5292b28fa1ccf8b67f45bee21dc3e8e069a7a<br>
+[アニメ DVD] ロザリオとバンパイア 第02話 「夢魔とバンパイア」(848x480 x264 AAC VFR ED60fps) [CRC32_08C6D007].mkv dodododoFsP5G0OreR 266,994,717 112a47ae29e2754cbf88e7384b69fc32d43c1c4c<br>
+[アニメ DVD] ロザリオとバンパイア 第03話 「魔女っ子とバンパイア」(848x480 x264 AAC VFR ED60fps) [CRC32_92DEE204].mkv dodododoFsP5G0OreR 251,243,729 fc1bdf9b261299c3d4f959c219ac5accdb77b686<br>
+[アニメ DVD] ロザリオとバンパイア 第04話 「さよならとバンパイア」(848x480 x264 AAC VFR ED60fps) [CRC32_26137876].mkv dodododoFsP5G0OreR 249,657,800 4f42e4eb6a7dcc6b709496f67ab436faeb2eee6f<br>
+[アニメ DVD] ロザリオとバンパイア 第05話 「スクール水着とバンパイア」(848x480 x264 AAC VFR ED60fps) [CRC32_2E95D0B3].mkv dodododoFsP5G0OreR 274,296,515 71c369bfa8f51713340d984fa609b31de00f1693<br>
+[アニメ DVD] ロザリオとバンパイア 第06話 「新聞部とバンパイア」(848x480 x264 AAC VFR ED60fps) [CRC32_6FC2F12B].mkv dodododoFsP5G0OreR 240,495,019 e5102940369a45ee45576a0551a37332817242e1<br>
+[アニメ DVD] ロザリオとバンパイア 第07話 「雪女とバンパイア」(848x480 x264 AAC VFR ED60fps) [CRC32_E08A4675].mkv dodododoFsP5G0OreR 241,314,133 10aa1023f1b63784064c7d65d484ef02a748ee3b<br>
+[アニメ DVD] ロザリオとバンパイア 第08話 「数学とバンパイア」(848x480 x264 AAC VFR ED60fps) [CRC32_470A5C22].mkv dodododoFsP5G0OreR 234,237,460 2642dc5f832dde5e0f93a8340a7be747b5b9cfe4<br>
+[アニメ DVD] ロザリオとバンパイア 第09話 「夏休みとバンパイア」(848x480 x264 AAC VFR ED60fps) [CRC32_369904A7].mkv dodododoFsP5G0OreR 242,225,698 7600f4b3d178f44efb17707c3ba54d0b7c6b7119<br>
+[アニメ DVD] ロザリオとバンパイア 第10話 「ひまわりとバンパイア」(848x480 x264 AAC VFR ED60fps) [CRC32_8F6E9ADF].mkv dodododoFsP5G0OreR 293,893,040 1a93ed13cc89b49d410e4d170c96bf87e3245b91<br>
+[アニメ DVD] ロザリオとバンパイア 第11話 「新学期とバンパイア」(848x480 x264 AAC VFR ED60fps) [CRC32_607A4A25].mkv dodododoFsP5G0OreR 244,669,393 f7709c2423ded41dd95ef069525d095027e24e23<br>
+[アニメ DVD] ロザリオとバンパイア 第12話 「公安委員会とバンパイア」(848x480 x264 AAC VFR ED60fps) [CRC32_CC9CCB4A].mkv dodododoFsP5G0OreR 224,288,361 2b14b03eceb1deb60323d83abcc001dbde87267d<br>
+[アニメ DVD] ロザリオとバンパイア 第13話 「月音とバンパイア」(848x480 x264 AAC VFR ED60fps) [CRC32_0D7C8E84].mkv dodododoFsP5G0OreR 284,894,391 f11f197503696057cc61f8613c522313834db9a8<br>
+<hr class="A">
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.01 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ 1時限目」 (704x480 x264 AAC).mp4 puiAh0X7b3 175,849,657 178e52e0a7075e70e5d4c1864180992173659687<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.02 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ ２時限目」 (704x480 x264 AAC).mp4 puiAh0X7b3 85,008,397 6e6af4de6a23b09c1a19098b9519e326dbefc4e1<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.03 映像特典 「O.A.版 第１話 ノンテロップED」 (704x480 x264 AAC).mp4 puiAh0X7b3 32,973,386 b93a4e9048af33e29ff9be145c4283073dfe41d9<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.03 映像特典 「O.A.版 第２・３話 ノンテロップOP」 (704x480 x264 AAC).mp4 puiAh0X7b3 30,817,135 bc05aede6fcfdddcf7193b6ade69af8ea426157e<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.03 映像特典 「O.A.版 第２・３話 ノンテロップED」 (704x480 x264 AAC).mp4 puiAh0X7b3 21,637,664 2a282950989289fa1c25920b017f847aebe6924c<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.03 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ ３時限目」 (704x480 x264 AAC).mp4 puiAh0X7b3 112,038,747 d103ae060edcb23d574c6518dc544dfac6d6fe2f<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.04 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ ４時限目」 (704x480 x264 AAC).mp4 puiAh0X7b3 60,993,250 ba7c6653d426b6a0a58e008172c5a8852522aa28<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.05 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ ５時限目」 (704x480 x264 AAC).mp4 puiAh0X7b3 79,252,864 370e5ba0746c51580f85d8fcbcf7a29a17d35e1d<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.06 映像特典 「DVD発売中告知」 (704x480 x264 AAC).mp4 puiAh0X7b3 10,484,148 56cb3da9c6062d4e9d33a8fb3df59cd61ebfb4d4<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.06 映像特典 「O.A.版 第13話 ノンテロップED」 (704x480 x264 AAC 一部 60fps).mp4 puiAh0X7b3 37,555,630 39c846c9a4add6bc5108ab9bbbaac717a94fc866<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.06 映像特典 「O.A.版 第4～12話 ノンテロップED」 (704x480 x264 AAC).mp4 puiAh0X7b3 30,916,280 b95c0369d6d5864f027dfabbe7044e727def74fe<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.06 映像特典 「ジャンプフェスタ2008 PV(CAPCOM ゲームPV)」 (704x480 x264 AAC).mp4 puiAh0X7b3 76,363,463 2471a7d77bb8590dc7ca349e94150f86958cc120<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.06 映像特典 「ジャンプフェスタ2008 PV」 (704x480 x264 AAC).mp4 puiAh0X7b3 31,841,358 e1e99e12ba814ba2d8df9ce0c6aeb8eed41e9a28<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.06 映像特典 「ノンクレジットCM」 (704x480 x264 AAC).mp4 puiAh0X7b3 4,026,591 2f34beabe53c05faf180909bdfd3cde69b9c3d4a<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.06 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ ６時限目」 (704x480 x264 AAC).mp4 puiAh0X7b3 160,176,428 e18046c8846879fe206d7ad6db288dd9006993a6<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.06 映像特典 「今、明かされる パンツ解答篇でチュ～」 (704x480 x264 AAC).mp4 puiAh0X7b3 68,377,764 48c4534091b02c8cfbd3f70371f28fe845634d7a<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire Vol.06 映像特典 「特報PV」 (704x480 x264 AAC).mp4 puiAh0X7b3 23,905,217 b1e17fad1f9c41f99e458e3475ddcf7bfeab736b<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire 第01話 「新生活とバンパイア」 (704x480 x264 AAC [ED一部 60fps] rev2[リネーム]).mp4 puiAh0X7b3 327,333,391 cad38044fbd0c86d50ac9b2b39444dedbb6edd79<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire 第02話 「夢魔とバンパイア」 (704x480 x264 AAC [ED一部 60fps]).mp4 puiAh0X7b3 357,588,505 033514156f479fafc889841f208b72aa12b1ac10<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire 第03話 「魔女っ子とバンパイア」 (704x480 x264 AAC [ED一部 60fps]).mp4 puiAh0X7b3 313,550,669 335debd057d2a933ba9877ee905b5324283bf613<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire 第04話 「さよならとバンパイア」 (704x480 x264 AAC [ED一部 60fps]).mp4 puiAh0X7b3 339,822,353 16ea8669f781304709868c1cd96e60eb8e57d1f3<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire 第05話 「スクール水着とバンパイア」 (704x480 x264 AAC [ED一部 60fps]).mp4 puiAh0X7b3 391,801,734 e5f10342028c437ecfa0273127b83cde843f4608<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire 第06話 「新聞部とバンパイア」 (704x480 x264 AAC [ED一部 60fps]).mp4 puiAh0X7b3 317,445,280 225e27135c5fc1a2568b5a6a8783c4b44ccc1c77<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire 第07話 「雪女とバンパイア」 (704x480 x264 AAC [ED一部 60fps]).mp4 puiAh0X7b3 343,733,578 f540610d3db0548b8e6e9ccce92355d8511e5dbb<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire 第08話 「数学とバンパイア」 (704x480 x264 AAC [ED一部 60fps]).mp4 puiAh0X7b3 255,817,938 91b5b253c21953763651c2d1127f2d0eab780729<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire 第09話 「夏休みとバンパイア」 (704x480 x264 AAC [ED一部 60fps]).mp4 puiAh0X7b3 269,751,820 19388fd12d3a67ddc3b80855eada29a708ed9a27<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire 第10話 「ひまわりとバンパイア」 (704x480 x264 AAC [ED一部 60fps]).mp4 puiAh0X7b3 302,453,632 4da3ceec953f5bdbf5fdb00f9c300347c0427a0e<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire 第11話 「新学期とバンパイア」 (704x480 x264 AAC [ED一部 60fps]).mp4 puiAh0X7b3 276,622,768 90ec34bf8965c98a1862323b60e6e46747d602de<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire 第12話 「公安委員会とバンパイア」 (704x480 x264 AAC [ED一部 60fps]).mp4 puiAh0X7b3 323,910,249 6ba31fd1d71cc935acbcd9534ee6608d1e72b4c0<br>
+[アニメ DVD] ロザリオとバンパイア Rosario＋Vampire 第13話(終) 「月音とバンパイア」 (704x480 x264 AAC [ED一部 60fps]).mp4 puiAh0X7b3 406,806,387 7e7909945f711b246dc2eebb1c32b0017555be94<br>
+<hr class="A">
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.1 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ 1時限目」 (704x480 x264 AAC).mp4 147,635,945 ccb33facfb636b7ed55e6dfd3f291b070af1145c<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.2 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ 2時限目」 (704x480 x264 AAC).mp4 80,235,013 2b493dbfe39752554f14c2f50bb3861f06dc2e18<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.3 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ 3時限目」 (704x480 x264 AAC).mp4 95,090,405 ae59547f18b81c821ae1b4b14e46a370187f1a7c<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.3 映像特典 「O.A.版 第1話 ノンテロップエンディング」 (704x480 x264 AAC).mp4 21,737,636 0a6a566ec1fce926673e1ee9d24142520ac16a01<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.3 映像特典 「O.A.版 第2・3話 ノンテロップオープニング」 (704x480 x264 AAC).mp4 22,234,976 0daca503227702083a2f324e8e3c04d94312d3e7<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.3 映像特典 「O.A.版 第2・3話 ノンテロップエンディング」 (704x480 x264 AAC).mp4 17,380,451 75be61e5345c1c6c90e1d6e08b885152a6a075ef<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.4 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ 4時限目」 (704x480 x264 AAC).mp4 61,178,450 33dcb04c137fe8d7969ecc0a0030b3d59cf001a3<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.5 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ 5時限目」 (704x480 x264 AAC).mp4 127,990,285 0b7d5dcff26e604730fee08d50005cf2d893e4b7<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.6 映像特典 「DVD発売中告知」 (704x480 x264 AAC).mp4 8,219,753 d0f72cf21d29d7d7e47d19b8ff7543f562b6db87<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.6 映像特典 「O.A.版 第13話 ノンテロップエンディング」 (704x480 x264 AAC).mp4 22,981,033 05dbe059d64125fc2b8bd0eb422e7bab0f25e0b9<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.6 映像特典 「O.A.版 第4～12話 ノンテロップエンディング」 (704x480 x264 AAC).mp4 19,152,305 c8ddbd3b9a86584a93474fdf96a8d4f30eedea46<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.6 映像特典 「ジャンプフェスタ2008 PV(カプコン ゲームPV)」 (704x480 x264 AAC).mp4 53,622,007 e25d0c811fb2fdcaee7f7a0634b77da0aa6b5f91<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.6 映像特典 「ジャンプフェスタ2008 PV」 (704x480 x264 AAC).mp4 20,494,237 14d1c1572aff4ca26dadeb421ce4ac88b2bfe31e<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.6 映像特典 「ノンクレジットCM」 (704x480 x264 AAC).mp4 2,577,131 ef5cd3406347c3e212a9e15230d8a9d90735d08e<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.6 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ 6時限目」 (704x480 x264 AAC).mp4 64,500,878 1009ce7eb7dd4df78a40557d792a94b9a0eea602<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.6 映像特典 「今、明かされる パンツ解答篇でチュ～」 (704x480 x264 AAC).mp4 50,045,096 cade2f6d8c4ae3ce661367e96f33cb58862d10dd<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire Vol.6 映像特典 「特報PV」 (704x480 x264 AAC).mp4 14,891,015 c08d99c273a4679695619a2987cb0d848f4a674f<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire 第01話 「新生活とバンパイア」 (704x480 x264 AAC ED60f).mp4 237,447,973 209334b025db3ab277218d7c6c21bea7ee3b4120<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire 第02話 「夢魔とバンパイア」 (704x480 x264 AAC ED60f).mp4 264,978,568 809b3c474b9c6e74a650d3409ee6dbc7ab3be160<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire 第03話 「魔女っ子とバンパイア」 (704x480 x264 AAC ED60f).mp4 238,003,460 87615cb8908798a50fb365d20fc59619aea2b9f9<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire 第04話 「さよならとバンパイア」 (704x480 x264 AAC ED60f).mp4 235,568,473 2c50b6d9f7b13fb6391c88854cb1702659ca2bd3<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire 第05話 「スクール水着とバンパイア」 (704x480 x264 AAC ED60f).mp4 266,879,892 08d80d97ea5408f66f6f76fd6c4e4283e2dc01ae<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire 第06話 「新聞部とバンパイア」 (704x480 x264 AAC ED60f).mp4 225,307,841 e24fb1f11c7e4d9d14be3345b19a2261bffde708<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire 第07話 「雪女とバンパイア」 (704x480 x264 AAC ED60f).mp4 235,717,284 affc0689329cb4c47eeb8b0883106a4be11f38bf<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire 第08話 「数学とバンパイア」 (704x480 x264 AAC ED60f).mp4 217,465,932 bdbd4df45f7f508f667d0b0c5b9deef46027754e<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire 第09話 「夏休みとバンパイア」 (704x480 x264 AAC ED60f).mp4 228,675,250 1e7a3e0e39950649620f25be3188a2e1a4bec8c2<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire 第10話 「ひまわりとバンパイア」 (704x480 x264 AAC ED60f).mp4 247,081,539 46b5269626f59323fe135899c332c8c1f668f81f<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire 第11話 「新学期とバンパイア」 (704x480 x264 AAC ED60f).mp4 237,977,284 a8230ac5b2cad918b8befe958dda008d5ca22380<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire 第12話 「公安委員会とバンパイア」 (704x480 x264 AAC ED60f).mp4 192,935,049 177b86822d41674ded1a59dc65b0582c7731b5be<br>
+[アニメ DVD] ロザリオとバンパイア Rosario+Vampire 第13話 「月音とバンパイア」 (704x480 x264 AAC ED60f).mp4 269,308,495 81d934a249b02f4c235528ab788c6ad7d75da52f<br>
+<div class="sup">@CUNTSLIME=NORiNlircs4HlHeTfJn77ngPPy1</div>
+<hr class="A">
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 01 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ 1時限目」 (704x396 WMV9).wmv pcT6OjjAFE 281,154,650 9ca3749e758462215e47f177ac122f4ccc5c7c7a<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 02 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ 2時限目」 (704x396 WMV9).wmv 140,037,647 d76b6a5bab866ecf19ce8f5fba92bffe4b281efc<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 03 映像特典 「O.A.版 第1話ノンテロップエンディング」 (704x396 WMV9 WMA Lossless QL97).wmv 64,977,236 8e25052fd5dd6ea45dbc2f26133d7c7e7868cfc8<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 03 映像特典 「O.A.版 第2・3話ノンテロップオープニング」 (704x396 WMV9 WMA Lossless QL97).wmv 62,747,497 7eba8c379df755d14496eb903a64f00dca4657ff<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 03 映像特典 「O.A.版 第2・3話ノンテロップエンディング」 (704x396 WMV9 WMA Lossless QL97).wmv 49,837,297 24305b04e0e27b1feed0ab0a2d2785e93b27daff<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 03 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ 3時限目」 (704x396 WMV9).wmv 171,030,494 6d2a2ba98092ffb87af9dbd6dadeac03f189fce7<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 04 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ 3時限目」 (704x396 WMV9).wmv 99,070,223 65f8a03a8c78c0315ae29418548fb4ba0c4ee821<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 05 映像特典 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ 5時限目」 (704x396 WMV9).wmv 113,075,282 0c60900963a8d3effb5d63d1e958dfe520b5726a<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 06 映像特典 01／09 「ヒロイン座談会 ～猫目先生のDVD出張補習だニャ～ 6時限目」 (704x396 WMV9).wmv 97,713,530 17ac5000241c4b19c9fe40c4e4bfd23abd49bd53<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 06 映像特典 02／09 「O.A.版 第4～12話ノンテロップエンディング」 (704x396 WMV9 WMA Lossless QL97).wmv 55,331,571 1dc1d45983a89308935ca67bceb293a54be35b0d<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 06 映像特典 03／09 「O.A.版 第13話ノンテロップエンディング」 (704x396 WMV9 WMA Lossless QL97).wmv 71,986,733 61dbcf53b33f919b0f25e9be7bb94b0361f7d38a<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 06 映像特典 04／09 「DVD発売中告知」 (640x480 WMV9).wmv 12,471,680 6ff52ed4ee2b96175c9bc48116047c11d1957c46<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 06 映像特典 05／09 「ジャンプフェスタ2008 PV（カプコン ゲームPV）」 (640x480 WMV9).wmv 77,713,742 25c345e34ff5334c5e5f55d06dd2e37aa880f15f<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 06 映像特典 06／09 「ジャンプフェスタ2008 PV」 (640x480 WMV9).wmv 29,197,874 99f6b872d3f4a9989d31436f5f127b19c9acbeef<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 06 映像特典 07／09 「特報PV」 (640x480 WMV9).wmv 23,203,037 ba138de870cce186284d60b8c2fba3794ac31ccf<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 06 映像特典 08／09 「ノンクレジットCM」 (640x480 WMV9).wmv 4,445,942 5db5656e9d2e34495bd219c2a0267289c665c6f4<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 06 映像特典 09／09 「今、明かされる パンツ解答篇でチュ～ｖ」 (704x396 WMV9 QL97).wmv 104,373,602 656d9a9c612d65889878e6b863224a5eb167f842<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 第01話 「夏休みとバンパイア」 (704x396 WMV9).wmv pcT6OjjAFE 395,639,258 2cc02e5b8df078959c6761aac355f9a85b73e0b5<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 第02話 「夢魔とバンパイア」 (704x396 WMV9).wmv pcT6OjjAFE 496,074,974 3fc4cddbf072db49d39b3aaced507ad3ba7072c9<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 第03話 「魔女っ子とバンパイア」 (704x396 WMV9).wmv pcT6OjjAFE 405,983,792 475ef1ec39eebae7791bc7eeb8cf579436fccf27<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 第04話 「さよならとバンパイア」 (704x396 WMV9).wmv 420,785,186 6291668a51d5c4c660d0a35a92fad20ad645d2c6<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 第05話 「スクール水着とバンパイア」 (704x396 WMV9).wmv 508,220,345 08119bc3ec2af342733191e41990eb48cd14fd2d<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 第06話 「新聞部とバンパイア」 (704x396 WMV9).wmv 370,904,474 5f5992187d4d784d9ca7ce39eeb35888ca66fe5c<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 第07話 「雪女とバンパイア」 (704x396 WMV9).wmv 409,717,034 c39fa8cafde6f36233e2a239e863771abba85e54<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 第08話 「数学とバンパイア」 (704x396 WMV9).wmv 379,407,050 d8ad014be7bc0e585da0937b5aa71a1b8aecff5f<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 第09話 「夏休みとバンパイア」 (704x396 WMV9).wmv 370,008,167 3d433ba3b23ad2e604fae36d0fa50db2e3be30f1<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 第10話 「ひまわりとバンパイア」 (704x396 WMV9).wmv 343,653,446 b57b58f70ab6fc5cae91331dd597b991ef3de051<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 第11話 「新学期とバンパイア」 (704x396 WMV9).wmv 389,463,779 38a16dd90a257ce7e648d9f62ce14da12d44488a<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 第12話 「公安委員会とバンパイア」 (704x396 WMV9).wmv 327,733,718 f4a5564d955d252f7d09a2f5fd685ad05825e115<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire 第13話 「月音とバンパイア」 (704x396 WMV9).wmv 460,477,523 6eda0e641a5570d92133c5d121ead716852b7000<br>
+<br></dd>
+<dt><span class="title">ロザリオとバンパイア CAPU2<b>◆</b></span>09/07/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] ロザリオとバンパイア CAPU2 ノンテロップOP 「DISCOTHEQUE」 (864x480 x264 AAC) [CRC32_0E843EC7].mkv dodododoFsP5G0OreR 48,555,970 4b91cbd713ae1051309199720b6640a622193681<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 ノンテロップED 「Trinity Cross」 (864x480 x264 AAC) [CRC32_1948109F].mkv dodododoFsP5G0OreR 27,021,487 224017b21a51eb7d51786fbff18a6611a7d8cfc2<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第01話 「再会とバンパイア」(864x480 x264 AAC VFR ED60fps) [CRC32_C23EEBC1].mkv dodododoFsP5G0OreR 378,840,521 57890dcaace3e09ebc8f63f4ceb48cd9c7a3f865<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第02話 「妹とバンパイア」(864x480 x264 AAC VFR ED60fps) [CRC32_01B4EA29].mkv dodododoFsP5G0OreR 337,235,467 8f7149c03ebcef5f07077462fb14c39caa84688f<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第03話 「母と子とバンパイア」(864x480 x264 AAC VFR ED60fps) [CRC32_0BE00E4B].mkv dodododoFsP5G0OreR 295,578,360 9a59ec76411c6dbd3fadaa8189167b951265171e<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第04話 「身体測定とバンパイア」(864x480 x264 AAC VFR ED60fps) [CRC32_6F46B2B7].mkv dodododoFsP5G0OreR 309,819,961 41082a6d40d075a6835618dbc703fdd09334cd3b<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第05話 「カレーとバンパイア」(864x480 x264 AAC VFR ED60fps) [CRC32_99BEFB4D].mkv dodododoFsP5G0OreR 337,837,828 dfc51cdb1d85a5631f6f2bb801843973b5a3f31d<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第06話 「修学旅行とバンパイア」(864x480 x264 AAC VFR ED60fps) [CRC32_71DF89F3].mkv dodododoFsP5G0OreR 355,235,498 059cb2ee832b470e4bc4513a85ef7c82457f3e02<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第08話 「青春とバンパイア」(864x480 x264 AAC VFR ED60fps) [CRC32_CB77057B].mkv dodododoFsP5G0OreR 242,181,173 b8e93cdf15ff86e6f087ea5522ea2e07eebd8b5f<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第09話 「スキーとバンパイア」(864x480 x264 AAC VFR ED60fps) [CRC32_A197623C].mkv dodododoFsP5G0OreR 247,981,215 615867d7f43afdaa88460c512ee2093436384367<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第10話 「美少年とバンパイア」(864x480 x264 AAC VFR ED60fps) [CRC32_36BCB49E].mkv dodododoFsP5G0OreR 319,021,700 b0da765fdb8a3181c380b46b0d896a0535576109<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第11話 「リリスの鏡とバンパイア」(864x480 x264 AAC VFR ED60fps) [CRC32_4D09C041].mkv dodododoFsP5G0OreR 297,980,023 fa3241813d9656106e8d4c1c65024f53c62fd6dc<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第12話 「封印とバンパイア」(864x480 x264 AAC VFR ED60fps) [CRC32_91EBD55A].mkv dodododoFsP5G0OreR 309,671,011 c9cb88bc41dd8f6f6d480860589f3d19a0a7d086<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第13話(終) 「十字架と家族とバンパイア」(864x480 x264 AAC VFR ED60fps) [CRC32_94BB0D01].mkv dodododoFsP5G0OreR 373,733,262 068383f2a336005b47dc56ec82723ddbb7c1e6cc<br>
+<hr class="A">
+[アニメ DVD] ロザリオとバンパイア CAPU2 第01話 「再会とバンパイア」 (XviD 704x396 MP3).avi EagleEyesTpP7AEIoo 310,939,808 a26e8738d4fd9b3e7289c9bb19761b9c4fa74a48<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第02話 「妹とバンパイア」 (XviD 704x396 MP3).avi EagleEyesTpP7AEIoo 291,002,384 662b6b5e17211765ef71d0268bc09379f66a45e8<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第03話 「母と子とバンパイア」 (XviD 704x396 MP3).avi EagleEyesTpP7AEIoo 255,472,058 3706658b42cf685bbbcf50aee31f9287458e6d80<br>
+<hr class="A">
+[アニメ DVD] ロザリオとバンパイア CAPU2 Vol.02 特典映像 「ノンテロップOP」 (704x480 H.264／AVC AAC).mp4 iLllS3UoTS 38,121,648 eb69b31f8ed985c1f59dd2f4830a7008c656b8d0<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 Vol.02 特典映像 「ノンテロップED」 (704x480 H.264／AVC AAC).mp4 iLllS3UoTS 19,669,230 6821edecd0c2d9d9e266ada2ec2f259def54ccf9<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第01話 「再会とバンパイア」 (704x480 H.264／AVC AAC コメンタリー切替可)rev2.mp4 iLllS3UoTS 407,338,177 253327639f753b1f06fd3a92d2cad7cec3c3d0b6<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第03話 「母と子とバンパイア」 (704x480 H.264／AVC AAC)rev2.mp4 iLllS3UoTS 288,654,994 f4fe5a9ff474eedc2b0c6b702fd8f49881ee6f20<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第02話 「妹とバンパイア」 (704x480 H.264／AVC AAC)rev2.mp4 iLllS3UoTS 324,084,621 2eea5000cfd401e467ee752ab722c452ace8e252<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第03話 「母と子とバンパイア」 (704x480 H.264／AVC AAC)rev2.mp4 iLllS3UoTS 288,654,994 f4fe5a9ff474eedc2b0c6b702fd8f49881ee6f20<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第04話 「身体測定とバンパイア」 (704x480 H.264／AVC AAC).mp4 iLllS3UoTS 277,055,117 b58606a903e57220c832aae3deddfd759d07963f<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第05話 「カレーとバンパイア」 (704x480 H.264／AVC AAC).mp4 iLllS3UoTS 303,731,979 2ec932ce62c83037d9a098fdcc31d48b40408ecc<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第06話 「修学旅行とバンパイア」 (704x480 H.264／AVC AAC).mp4 iLllS3UoTS 244,506,874 6e27c68109071e8c94f68788d4573c27cf139db1<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第07話 「バスルームとバンパイア」 (704x480 H.264／AVC AAC).mp4 iLllS3UoTS 235,782,743 1fd277f3fb694ba0e9f2d5a1add4bb1c1c4e5b28<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第08話 「青春とバンパイア」 (704x480 H.264／AVC AAC).mp4 iLllS3UoTS 262,623,631 79b7813ba0151c207150f627334370b3280fbadc<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第09話 「スキーとバンパイア」 (704x480 H.264／AVC AAC).mp4 iLllS3UoTS 251,204,480 b70997a6e0cd5b57d3db172336e8174fae1aa05e<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第10話 「美少年とバンパイア」 (704x480 H.264／AVC AAC).mp4 iLllS3UoTS 269,298,229 c631ba17c5e4a9ffe65199129ee707612804a3d9<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第11話 「リリスの鏡とバンパイア」 (704x480 H.264／AVC AAC).mp4 iLllS3UoTS 238,654,507 5e24f99162337d2c047039b2a5f9bad11f1baad5<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第12話 「封印とバンパイア」 (704x480 H.264／AVC AAC)rev2.mp4 iLllS3UoTS 259,386,813 954864c2ee3e107a64172cb9d8a4d92e9e574b4a<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第13話 「十字架と家族とバンパイア」 (704x480 H.264／AVC AAC)rev2.mp4 iLllS3UoTS 295,913,993 267f6f84a74f2ea507f94c037a73594e25ededbb<br>
+<hr class="A">
+[アニメ DVD] ロザリオとバンパイア CAPU2 Vol.02 映像特典 「ノンテロップOP」 (704x480 x264 AAC ED60fps).mp4 puiAh0X7b3 36,090,049 46e4fad528f678a3d898f5118b9cb98b879d0e9e<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 Vol.02 映像特典 「ノンテロップED」 (704x480 x264 AAC ED60fps).mp4 puiAh0X7b3 20,015,617 e44d73064e2c1588a6702b36b2ef7ec8000184de<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第01話 「再会とバンパイア」 (704x480 x264 AAC コメンタリー切替可 ED60fps).mp4 puiAh0X7b3 362,008,897 749befc9adf37df315bc49385a78d76cb7a5d1b1<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第02話 「妹とバンパイア」 (704x480 x264 AAC ED60fps).mp4 puiAh0X7b3 298,706,016 6cda9c3e45b84b42c1391fc5c0272b07e0eeec6b<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第03話 「母と子とバンパイア」 (704x480 x264 AAC ED60fps).mp4 puiAh0X7b3 276,424,726 aedd5648f883a8e4119604832b43c36cd6881a04<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第04話 「身体測定とバンパイア」 (704x480 x264 AAC ED60fps).mp4 puiAh0X7b3 267,757,246 06f67294b4c5a5fa3f50c6b70a8688d8622d9ba7<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第05話 「カレーとバンパイア」 (704x480 x264 AAC ED60fps).mp4 puiAh0X7b3 287,711,879 3b38d6094788b52ef972fde6603d9f7299ae71e5<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第06話 「修学旅行とバンパイア」 (704x480 x264 AAC ED60fps).mp4 puiAh0X7b3 298,514,193 2674d4df0ee276114f56c9ef971c25424c2f8446<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第07話 「バスルームとバンパイア」 (704x480 x264 AAC ED60fps).mp4 puiAh0X7b3 289,435,693 73e66929e5df768690dbba27345ca730c9515c97<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第08話 「青春とバンパイア」 (704x480 x264 AAC ED60fps).mp4 puiAh0X7b3 311,781,668 49e433f612217771a12fc2c854e54b4e1a829ae9<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第09話 「スキーとバンパイア」 (704x480 x264 AAC ED60fps).mp4 puiAh0X7b3 300,449,900 b3afd792f70015554ca2bfef077ce7073ec68695<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第10話 「美少年とバンパイア」 (704x480 x264 AAC ED60fps).mp4 puiAh0X7b3 317,420,445 b1521e196d3e879dfd088d147bd9c2e056edb416<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第11話 「リリスの鏡とバンパイア」 (704x480 x264 AAC ED60fps).mp4 puiAh0X7b3 289,355,591 c187a1e2eb58cd3665e560e25deb1cc6fd9782d6<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第12話 「封印とバンパイア」 (704x480 x264 AAC ED60fps).mp4 puiAh0X7b3 301,723,198 cbec9dfa4d9da539da4c01d4dac372670f55a335<br>
+[アニメ DVD] ロザリオとバンパイア CAPU2 第13話(終) 「十字架と家族とバンパイア」 (704x480 x264 AAC ED60fps).mp4 puiAh0X7b3 347,557,559 9e3b18e6e38b653b4771961b2ca7b0ff0ddffcfc<br>
+<hr class="A">
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 02 映像特典 「ノンテロップOP」 (704x396 WMV9 WMA Lossless QL97).wmv 53,422,598 349b368306c8d2ab19ddf0da90397501f55f427b<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 02 映像特典 「ノンテロップED」 (704x396 WMV9 WMA Lossless QL97).wmv 41,484,987 64c25b7218960cb7b7766d5decd6cf9c905b4dcb<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 第01話 「再会とバンパイア」 (704x396 WMV9 コメンタリー切替可).wmv 475,585,273 cb08b5c846ef6d88bb7e529eb2a2537ef8a6c691<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 第02話 「妹とバンパイア」 (704x396 WMV9).wmv 393,624,623 546d05942f25c9b63a982f1fc879b5c1f8b50ad8<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 第03話 「母と子とバンパイア」 (704x396 WMV9).wmv 338,620,970 b2a0caa4230abcb8c89b40281915d09e7e4feb5d<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 第04話 「身体測定とバンパイア」 (704x396 WMV9).wmv 319,190,021 5f521c11836dae1153b600cb236ff480ed8ec503<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 第05話 「カレーとバンパイア」 (704x396 WMV9).wmv 347,986,967 9a415e560df02c58dfdca715afb6330c0a4164cb<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 第06話 「修学旅行とバンパイア」 (704x396 WMV9).wmv 345,848,987 69d64fe0c32057c733ddd10d3da372216789a82f<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 第07話 「バスルームとバンパイア」 (704x396 WMV9).wmv 330,249,962 da4f14a55fde02b1ca0a1679030bfd95fdbd1046<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 第08話 「青春とバンパイア」 (704x396 WMV9).wmv 342,411,773 94df354a8635c93cc033f10a4bf9f98510192cd3<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 第09話 「スキーとバンパイア」 (704x396 WMV9).wmv 332,346,827 c3abb5e434c6a4cdc0c758934100fd331092a3d0<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 第10話 「美少年とバンパイア」 (704x396 WMV9).wmv 379,407,050 879edcf481f4407db25770db996ed495649dfac5<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 第11話 「リリスの鏡とバンパイア」 (704x396 WMV9).wmv 316,048,835 cf1e1f6ca3709edf00d7973c663c75bb999883f4<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 第12話 「封印とバンパイア」 (704x396 WMV9).wmv 369,991,715 31229c251f199e44ee57c1447a5373eff82d3fc0<br>
+【アニメ】[DVD] ロザリオとバンパイア Rosario+Vampire CAPU2 第13話 「十字架と家族とバンパイア」 (704x396 WMV9).wmv 404,174,636 f8fdc287d4372cfa4d9a21a4587b5d752f409be8<br>
+<div class="sup">pcT6OjjAFE</div>
+<br></dd>
+<dt><span class="title">ロスト・ユニバース<b>◆</b></span>08/02/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ]ロスト・ユニバース 映像特典01 「番組宣伝スポット30秒Ver.(放送前)」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 10,087,808 fa0d28ffcaf5834f9afaee50613a5cc8e37d9da0<br>
+[アニメ]ロスト・ユニバース 映像特典02 「番組宣伝スポット15秒Ver.(放送前)」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 6,305,132 282b8abd0f56f013a68aaffbf3d9483cdaffdf21<br>
+[アニメ]ロスト・ユニバース 映像特典03 「番組宣伝スポット30秒Ver.(放送当日)」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 10,079,581 30ca6f5e20edc1f0679603a35491ee8ad26952d9<br>
+[アニメ]ロスト・ユニバース 映像特典04 「番組宣伝スポット15秒Ver.(放送当日)」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 6,313,359 ee9dd42c14e5bf4b6c803b94ee098d4af9badc3c<br>
+[アニメ]ロスト・ユニバース 映像特典05 「番組宣伝スポット30秒Ver.(放送中)」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 9,997,349 ab86f04d02c39aa3280ef681b52fb54e292338f3<br>
+[アニメ]ロスト・ユニバース 映像特典06 「番組宣伝スポット15秒Ver.(放送中)」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 6,280,463 a489423010161e8051d9954a6b70db9f0b1eddf3<br>
+[アニメ]ロスト・ユニバース 映像特典07 「ノンクレジットOP」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 63,318,780 69e0c095e291d240053f22149ce348c986d41b05<br>
+[アニメ]ロスト・ユニバース 映像特典08 「ノンクレジットED」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 36,150,652 d3453eacff5d58345554cb38553a1fc457d5b83e<br>
+[アニメ]ロスト・ユニバース 第01話 「光刃輝く」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 390,462,326 4fa8acceaf65b81955799993e4158f3574f94144<br>
+[アニメ]ロスト・ユニバース 第02話 「女神翔ぶ」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 340,734,320 8e19497850d037cf2c3ce4587cf3cde269fa5c3d<br>
+[アニメ]ロスト・ユニバース 第03話 「厨房踊る」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 345,902,326 8e7196548518c4484c2d8b247015a22f81a2c3fd<br>
+[アニメ]ロスト・ユニバース 第04話 「光炎轟く」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 316,830,326 ae1b0a841ec7a1fc43d8c412d551b55a98a6076b<br>
+[アニメ]ロスト・ユニバース 第05話 「駄天使疾る」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 321,550,328 997b6876a8ca449ebfb9e5f624db58d46029e266<br>
+[アニメ]ロスト・ユニバース 第06話 「棋士まみえる」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 352,286,336 32fb3db132a79dbca68a11b8708427cd1e96e142<br>
+[アニメ]ロスト・ユニバース 第07話 「ニーナ窮す」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 310,158,328 42c490ae921ca4b810bb960b2163e1f4af425ea5<br>
+[アニメ]ロスト・ユニバース 第08話 「厠消ゆ」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 271,102,324 6507b2354ee53d6197a8ede99e0cdc5915d94632<br>
+[アニメ]ロスト・ユニバース 第09話 「流浪決する」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 301,694,328 bcfc196880f80bb6423e90642c844145cf94fd3c<br>
+[アニメ]ロスト・ユニバース 第10話 「朋友散る」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 281,678,326 942a268c68e17073413c990d0aff7dce892378c7<br>
+[アニメ]ロスト・ユニバース 第11話 「涙雨果てる」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 248,014,328 6d6f3f729ba2e87eceed496df2c3e9eb5ca64150<br>
+[アニメ]ロスト・ユニバース 第12話 「ヤシガニ屠る」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 328,606,330 590208c7bd39163126406064b0af00ca0d07d5d8<br>
+[アニメ]ロスト・ユニバース 第13話 「追憶巡る」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 334,286,326 481ea7ebc40a035f81434b86427f17d278a5dc1e<br>
+[アニメ]ロスト・ユニバース 第14話 「恐怖ささやく」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 364,110,324 2ad6d0893aaa00f9c14aea9f51ec54a81c39047a<br>
+[アニメ]ロスト・ユニバース 第15話 「悪夢現る」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 431,678,320 fbd73a300a77a8303c312feea153c671f44735ad<br>
+[アニメ]ロスト・ユニバース 第16話 「ミリイ欲する」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 417,982,324 dcc5f353cc06f32766ad65d38d854bf50894a8b0<br>
+[アニメ]ロスト・ユニバース 第17話 「警部ブッ飛ぶ」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 433,950,324 5fbe1704faff5abd60cc64b5d1c383e7e5436d1e<br>
+[アニメ]ロスト・ユニバース 第18話 「無頼流れる」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 433,710,322 29e053f26e5697f566a540dfcf3f03a961ba08bc<br>
+[アニメ]ロスト・ユニバース 第19話 「闇誘う」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 402,398,318 b1f6fa05a88f0ba23690f890c935316c2a62adbc<br>
+[アニメ]ロスト・ユニバース 第20話 「想い届かず」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 407,358,322 039fea816a0974efc1158d21456865410ee5ad5f<br>
+[アニメ]ロスト・ユニバース 第21話 「氷原燃える」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 402,030,328 0af77daf3564fbc12b894349a452834bcc8f3298<br>
+[アニメ]ロスト・ユニバース 第22話 「宿命紡ぐ」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 399,102,322 fbabb927c3568cee8254f986e71ca24e1bc9836f<br>
+[アニメ]ロスト・ユニバース 第23話 「阿修羅来たる」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 372,542,324 e57cc898fb6ec422a61ca4ef7273d82ffeabf29c<br>
+[アニメ]ロスト・ユニバース 第24話 「乙女還る」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 413,102,326 c3f3572f1f7901669ea53259c5b7f72ba7aff8d3<br>
+[アニメ]ロスト・ユニバース 第25話 「聖魔相打つ」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 441,870,320 9ba91e700e3498233c767bd0260bde444b4d55a2<br>
+[アニメ]ロスト・ユニバース 第26話 「そして・・・光刃輝く」[DVD-Rip 640x480 WMV9].wmv QTf2YsEjRgosq 390,366,254 f1c69b0600e117df3b728dee37c92cf8955e5850<br>
+<br></dd>
+<dt><span class="title">ロックマン<b>◆</b></span>07/07/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+ロックマンエグゼ 劇場版 光と闇の遺産 (DVD 704x396 WMV9 q93 AC3 5.1ch).avi rDLotN7hLy 1,001,396,224 f33c0f788b0454a54603ac3355ab5642d6bdc400<br>
+<hr class="A">
+(アニメ DVD) ロックマンエグゼAXESS DVD vol.1 映像特典 ロックマンエグゼダイジェスト＆番宣＆ナビ図鑑.mkv KnYz1dr7YJP0EWP 173,222,291 c2a86a17b86433624fdf1631d2bf45dd5fa2a073<br>
+(アニメ DVD) ロックマンエグゼAXESS DVD vol.3 映像特典 ノンテロップED＆ナビ図鑑～ファイアソウル～.mkv KnYz1dr7YJP0EWP 57,937,159 beb85ab747ee0069375ec5366d0669332ba00740<br>
+(アニメ DVD) ロックマンエグゼAXESS 第01話 「クロスフュージョン！」 (640x480 XviD AC3).mkv KnYz1dr7YJP0EWP 369,351,076 426a876bfb6930b0b353ae866499a11ad2c77f96<br>
+(アニメ DVD) ロックマンエグゼAXESS 第02話 「ネットシティ消滅！」 (640x480 XviD AC3).mkv KnYz1dr7YJP0EWP 366,357,551 c150b6830d0dc6d3c6c3cdedb7d2a916df7761ef<br>
+(アニメ DVD) ロックマンエグゼAXESS 第03話 「じゃばじゃばやばい水の泡！」 (640x480 XviD AC3).mkv KnYz1dr7YJP0EWP 317,408,247 6c3c4855418a7db6c4af1c8a4881a8db0feb396e<br>
+(アニメ DVD) ロックマンエグゼAXESS 第04話 「ソウルユニゾン！」 (640x480 XviD AC3).mkv KnYz1dr7YJP0EWP 448,231,899 e41b9052b949e432fa64a29cff26edd520428ada<br>
+(アニメ DVD) ロックマンエグゼAXESS 第05話 「メタル温泉アッチッチ！」 (640x480 XviD AC3).mkv KnYz1dr7YJP0EWP 380,660,319 d4104e6103063b4aeaed746bcceb8e4137a1e2f8<br>
+(アニメ DVD) ロックマンエグゼAXESS 第06話 「最も危険な球技！」 (640x480 XviD AC3).mkv KnYz1dr7YJP0EWP 367,357,207 3c8be07bbd7d689a39bfef6bdd79419c261e68a5<br>
+(アニメ DVD) ロックマンエグゼAXESS 第07話 「電子の花園！」 (640x480 XviD AC3).mkv KnYz1dr7YJP0EWP 374,818,453 fae5a3ff29063cd051f491dfbbeb016e69b80cb3<br>
+(アニメ DVD) ロックマンエグゼAXESS 第08話 「鏡のなかの友情」 (640x480 XviD AC3).mkv KnYz1dr7YJP0EWP 319,476,208 999269ec8edb56bf4bcfb9f3a5f18732b883467f<br>
+<br></dd>
+<dt><span class="title">ロボットカーニバル<b>◆</b></span>05/11/21 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD] ROBOT CARNIVAL -ロボットカーニバル- ♯1 「OPENING」(大友克洋、福島敦子) [640x352 WMV9].wmv SVaXnQ1rt4gME 82,017,695 1d1e0bbadda5874d446da95417f232a98a2b3d2c<br>
+[DVD] ROBOT CARNIVAL -ロボットカーニバル- ♯2 「フランケンの歯車」(森本晃司) [640x352 WMV9].wmv SVaXnQ1rt4gME 248,413,922 adb0e4bd1b6d0668b60939647a974603be8403e3<br>
+[DVD] ROBOT CARNIVAL -ロボットカーニバル- ♯3 「DEPRIVE」(大森英敏) [640x352 WMV9].wmv SVaXnQ1rt4gME 136,636,569 92cb65fbea31172c5372482e5aced717dd57cce7<br>
+[DVD] ROBOT CARNIVAL -ロボットカーニバル- ♯4 「プレゼンス」(梅津泰臣) [640x352 WMV9 日英音声切替可].wmv SVaXnQ1rt4gME 313,307,615 2826b7d973abc1491df78c6cc476c75ad5e779fd<br>
+[DVD] ROBOT CARNIVAL -ロボットカーニバル- ♯5 「STAR LIGHT ANGEL」(北爪宏幸) [640x352 WMV9].wmv SVaXnQ1rt4gME 178,830,658 d8fbf466c5976a49da5fc9a86a667a8fa5714886<br>
+[DVD] ROBOT CARNIVAL -ロボットカーニバル- ♯6 「CLOUD」(マオ ラムド) [640x480 WMV9].wmv SVaXnQ1rt4gME 213,912,258 116d9016a239474d4a93b3bea3447ec1f5aaa592<br>
+[DVD] ROBOT CARNIVAL -ロボットカーニバル- ♯7 「明治からくり文明奇譚 ～紅毛人襲来之巻～」(北久保弘之) [640x352 WMV9].wmv SVaXnQ1rt4gME 219,413,095 395c0fbab72fa70d24bb56098ed11577dae0a9b4<br>
+[DVD] ROBOT CARNIVAL -ロボットカーニバル- ♯8 「ニワトリ男と赤い首」(なかむら たかし) [640x352 WMV9].wmv SVaXnQ1rt4gME 179,908,739 c556426c1ff7550a8f80421ddf41f691bc89ae78<br>
+[DVD] ROBOT CARNIVAL -ロボットカーニバル- ♯9 「ENDING」(大友克洋、福島敦子) [640x352 WMV9].wmv SVaXnQ1rt4gME 87,693,651 0700bb300892055587f2ec439bbc6fd661047132<br>
+<br></dd>
+<dt><span class="title">ロミオ×ジュリエット<b>◆</b></span>08/03/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] ロミオ×ジュリエット プレミアムDVD 「GONZOフェスタ2007 ステージ映像」 (640x480 Xvid 30fps).avi GPYprivzhsfoM 126,285,824 be9648f3d62c760618d28da766138a7f335df5b1<br>
+[アニメ DVD] ロミオ×ジュリエット プレミアムDVD 「ノンクレジットオープニング」 (800x450 Xvid 24fps).avi GPYprivzhsfoM 36,464,640 f98fdf52371e5a61fd21a07f42618002ae34f1aa<br>
+[アニメ DVD] ロミオ×ジュリエット プレミアムDVD 「ノンクレジットエンディング」 (800x450 Xvid 24fps).avi GPYprivzhsfoM 27,699,200 5ee41fc5e4c1c1853b4266113b83642ba0ea2afa<br>
+[アニメ DVD] ロミオ×ジュリエット プレミアムDVD 「プロモーション映像」 (704x480 Xvid 24fps).avi GPYprivzhsfoM 34,297,856 12ceda1ed0c6f11f5559c877916a88ee17dba473<br>
+[アニメ DVD] ロミオ×ジュリエット プレミアムDVD 「プロモーション映像2」 (704x480 Xvid 24fps).avi GPYprivzhsfoM 39,536,640 77e914428640a0cf2570460abd216775a83f8273<br>
+[アニメ DVD] ロミオ×ジュリエット プレミアムDVD 「革命のPleludio」 (640x480 Xvid 120fps).avi GPYprivzhsfoM 360,574,976 32f9cdc35ecbce5d73a36bcf471823105995026c<br>
+[アニメ DVD] ロミオ×ジュリエット プレミアムDVD 「特別先行上映会ステージ映像」 (640x480 Xvid 30fps).avi GPYprivzhsfoM 180,492,288 c2a111d965fcd4cbd154a9bb91e966bbe828bed8<br>
+[アニメ DVD] ロミオ×ジュリエット 第01話 「ふたり ～出会わなければ～」 (800x450 Xvid 120fps オーディオコメンタリー付).avi GPYprivzhsfoM 337,491,968 bfcb652c8f888e5fad80d3791974f55c41729220<br>
+[アニメ DVD] ロミオ×ジュリエット 第02話 「約束 ～思ひ出の香り～」 (800x450 Xvid 120fps オーディオコメンタリー付).avi GPYprivzhsfoM 307,859,456 518636a984da2f5a7006f55db6c1412a329bca9c<br>
+[アニメ DVD] ロミオ×ジュリエット 第03話 「恋心 ～残酷な悪戯～」 (800x450 Xvid 120fps オーディオコメンタリー付).avi GPYprivzhsfoM 271,929,344 fb6ab13aa4920b6353f4f0df93113cc2cfaa73bc<br>
+[アニメ DVD] ロミオ×ジュリエット 第04話 「恥じらい ～雨に打たれて～」 (800x450 Xvid 120fps オーディオコメンタリー付).avi GPYprivzhsfoM 271,187,968 fe716c893295027989b09638d6cc97dcf241ab2b<br>
+[アニメ DVD] ロミオ×ジュリエット 第05話 「旋風(かぜ) ～燃ゆる覚悟～」 (800x450 Xvid 120fps オーディオコメンタリー付).avi GPYprivzhsfoM 287,901,696 ea2ecc08d6ef32c46d3730078daefe56f453c377<br>
+[アニメ DVD] ロミオ×ジュリエット 第06話 「希望 ～託された明日～」 (800x450 Xvid 120fps オーディオコメンタリー付).avi GPYprivzhsfoM 300,322,816 cc4004c80397de731f78460bd053102c2b3415a0<br>
+<hr class="A">
+[アニメ DVD] ロミオ×ジュリエット ノンクレジットオープニング (704x480 40：33 x264 AAC).mp4 GIAchhEXAz3mD 28,432,940 d01ec554497d95a7b5f25b96990892e5c0da552f<br>
+[アニメ DVD] ロミオ×ジュリエット ノンクレジットエンディング (704x480 40：33 x264 AAC).mp4 GIAchhEXAz3mD 31,748,348 ebcce3993b6f6626e9040dc020063039bbe70a92<br>
+[アニメ DVD] ロミオ×ジュリエット ノンクレジットエンディング2 (704x480 40：33 x264 AAC).mp4 GIAchhEXAz3mD 33,514,528 dfb3453862fb0b99d0648a77df52040da7e9102e<br>
+[アニメ DVD] ロミオ×ジュリエット 第01幕 「ふたり」～出会わなければ～ (704x480 40：33 x264 AAC +コメンタリー rev2 中身は同じです).mp4 GIAchhEXAz3mD 370,890,009 de6c43b0b442a07fc6d2d70149f38c2d507d5628<br>
+[アニメ DVD] ロミオ×ジュリエット 第02幕 「約束」～思ひ出の香り～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 329,935,290 5258f641f2081aff9fdd615ab61cc795c7dfd7bc<br>
+[アニメ DVD] ロミオ×ジュリエット 第03幕 「恋心」～残酷な悪戯～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 302,939,797 c9671ec92eec003877a6bb07d2ac6333cb0fc373<br>
+[アニメ DVD] ロミオ×ジュリエット 第04幕 「恥じらい」～雨に打たれて～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 294,168,863 aa24b1f3d57489821fc824a3cfaf7dac98728f49<br>
+[アニメ DVD] ロミオ×ジュリエット 第05幕 「疾風(かぜ)」～燃ゆる覚悟～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 293,971,177 31d59c14a721bcba8c802cee54dcb86ffd913279<br>
+[アニメ DVD] ロミオ×ジュリエット 第06幕 「希望」～託された明日～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 314,253,736 363978044b713282cd845e7d9178d340285e91c8<br>
+[アニメ DVD] ロミオ×ジュリエット 第07幕 「ぬくもり」～今だけは～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 308,267,497 33bb819af2275d591a11ec883e2b32bcf7508cfe<br>
+[アニメ DVD] ロミオ×ジュリエット 第08幕 「甘え」～正義とは～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 278,541,661 b92e1513fc40c3bab0e1cb9b1483916515290a1d<br>
+[アニメ DVD] ロミオ×ジュリエット 第09幕 「決起」～断ち切る迷い～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 294,307,625 beca93488f1dac5ed19029662cfeca2527ee6635<br>
+[アニメ DVD] ロミオ×ジュリエット 第10幕 「泪」～貴方と逢えて～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 297,901,867 999380ec803a4014583edf1ce9721f367cb02916<br>
+[アニメ DVD] ロミオ×ジュリエット 第11幕 「誓い」～朝陽の祝福～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 326,168,393 38d444b01137f7d2a1a37298832e5c1b73f64cc7<br>
+[アニメ DVD] ロミオ×ジュリエット 第12幕 「安息」～このままで～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 279,416,525 ce3dbbe49cef8276f6f520f165c8a83aef08121c<br>
+[アニメ DVD] ロミオ×ジュリエット 第13幕 「脈動」～導かれて～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 302,517,619 bdc89516b59036f12a60be0f538b88b4eff51507<br>
+[アニメ DVD] ロミオ×ジュリエット 第14幕 「重責」～この腕の中で～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 270,776,977 5f5aebad6a1307a5afec2d6e5d25b4c8373fb0c3<br>
+[アニメ DVD] ロミオ×ジュリエット 第15幕 「自我」～進むべく道～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 275,123,714 7b20cd6f9abadd9c2b0015cd6086cfcdead56526<br>
+[アニメ DVD] ロミオ×ジュリエット 第16幕 「ひとり」～いとしくて～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 267,678,078 6775abd0d2f157a13b0cd72fc144a13e6da1eb4d<br>
+[アニメ DVD] ロミオ×ジュリエット 第17幕 「暴君」～漆黒の因縁～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 341,793,098 a924733b3c7dde862de923a78a898512037b0130<br>
+[アニメ DVD] ロミオ×ジュリエット 第18幕 「志」～それぞれの胸に～ (704x480 40：33 x264 AAC +コメンタリー).mp4 GIAchhEXAz3mD 308,044,091 5a55709a0a7cd19f7d757a8f8139c656a437b513<br>
+<hr class="A">
+[DVD アニメ] ロミオ×ジュリエット ノンクレジットOP (704x480 H.264 AAC rev2).mp4 sororiwzayTkVFQk 23,812,897 b83ee663cbc6d6bf9b774ac2d7baa80453db1178<br>
+[DVD アニメ] ロミオ×ジュリエット ノンクレジットED (704x480 H.264 AAC rev2).mp4 sororiwzayTkVFQk 23,825,988 0015f6e55799524ead0398bfa9972b23c6c64362<br>
+[DVD アニメ] ロミオ×ジュリエット 第01話 (704x480 H.264 AAC rev2).mp4 sororiwzayTkVFQk 283,335,596 bafe1687e358b5ec9cedde13f180afa0998fe550<br>
+[DVD アニメ] ロミオ×ジュリエット 第02話 (704x480 H.264 AAC rev2).mp4 sororiwzayTkVFQk 283,375,755 e85abf5971a60a2fd2e8cb46cf6dc44746bca6ac<br>
+[DVD アニメ] ロミオ×ジュリエット 第03話 (704x480 H.264 AAC rev2).mp4 sororiwzayTkVFQk 283,475,875 26f039650b3ff99446804860714c101b50f5a67d<br>
+[DVD アニメ] ロミオ×ジュリエット 第04話 (704x480 H.264 AAC rev2).mp4 sororiwzayTkVFQk 283,506,848 d1bcf05ef641121217ab2aa8a9336fafe0ea52a5<br>
+[DVD アニメ] ロミオ×ジュリエット 第05話 (704x480 H.264 AAC rev2).mp4 sororiwzayTkVFQk 283,553,103 6f36a6d19905aa2243b6fac90c708d24ee401d42<br>
+[DVD アニメ] ロミオ×ジュリエット 第06話 (704x480 H.264 AAC rev2).mp4 sororiwzayTkVFQk 283,495,380 773dcabbcede72df1bfa6eefbffee3e8a829d4ea<br>
+[DVD アニメ] ロミオ×ジュリエット 第07話 (704x480 H.264 AAC rev2).mp4 sororiwzayTkVFQk 283,447,717 5620d322debfa7700c8117aaa2cc20af4d985708<br>
+[DVD アニメ] ロミオ×ジュリエット 第08話 (704x480 H.264 AAC rev2).mp4 sororiwzayTkVFQk 283,501,836 9054550d88c3234eea1dc478a18de43557fce165<br>
+[DVD アニメ] ロミオ×ジュリエット 第09話 (704x480 H.264 AAC rev2).mp4 sororiwzayTkVFQk 283,502,896 cb75d870397af5c96b35827ae3a34a082182b429<br>
+[DVD アニメ] ロミオ×ジュリエット 第10話 (704x480 H.264 AAC rev2).mp4 sororiwzayTkVFQk 283,627,861 c40789ad09991b1dd7d3cd883901379f4e453c67<br>
+[DVD アニメ] ロミオ×ジュリエット 第11話 (704x480 H.264 AAC rev2).mp4 sororiwzayTkVFQk 283,580,806 a70ae4a4ebbbace734069d5e0d9a70221858909a<br>
+[DVD アニメ] ロミオ×ジュリエット 第12話 (704x480 H.264 AAC rev2).mp4 sororiwzayTkVFQk 280,632,621 a9e2ccc23a5afa7cf4ff1e85beb2d4b2db125328<br>
+[DVD アニメ] ロミオ×ジュリエット 第13話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 283,533,448 dc34ad68b057e7baddb4033cbb7aaebe25265849<br>
+[DVD アニメ] ロミオ×ジュリエット 第14話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 281,261,523 6226d0a7dfef18cee87ccbdc2ba8e1a9b7a4ebf9<br>
+[DVD アニメ] ロミオ×ジュリエット 第15話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 281,590,642 642d7c7f5c05a11e0509e6b857743ba5a8863f16<br>
+[DVD アニメ] ロミオ×ジュリエット 第16話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 282,489,375 fe65eb50e574898aceae3a83507b67a7b87ef8bf<br>
+[DVD アニメ] ロミオ×ジュリエット 第17話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 283,552,034 43ae384e1f351cbab5d30e5ba40035ec5cb7b83f<br>
+[DVD アニメ] ロミオ×ジュリエット 第18話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 283,541,661 6451cd6bb12dcd0261ae04d322cd46e697b2d565<br><br>
+(アニメ DVD) ロミオ×ジュリエット 第01話 (1280x720).wmv upconlyyoSrIknTQW 445,828,771 af0fdca5dc9cfd2cd864690bed1cfc93ef228c25<br>
+(アニメ DVD) ロミオ×ジュリエット 第02話 (1280x720).wmv upconlyyoSrIknTQW 415,853,470 a847c6db4ca7c6b4418d00166fcf833fad6c5920<br>
+(アニメ DVD) ロミオ×ジュリエット 第03話 (1280x720).wmv upconlyyoSrIknTQW 359,110,774 f512e71565098f3c37d536e0146d52c2b50d863e<br>
+(アニメ DVD) ロミオ×ジュリエット 第04話 (1280x720).wmv upconlyyoSrIknTQW 343,774,324 cdbdb21b97756f69141c6e41937d0114e1680a90<br>
+(アニメ DVD) ロミオ×ジュリエット 第05話 (1280x720).wmv upconlyyoSrIknTQW 348,042,385 3efb52bf20806ffe4cd173f73aa3cfd12be1ca58<br>
+(アニメ DVD) ロミオ×ジュリエット 第06話 (1280x720).wmv upconlyyoSrIknTQW 378,133,039 426bdca36366439d5248df76c1be2d6b9891922c<br>
+(アニメ DVD) ロミオ×ジュリエット 第07話 (1280x720).wmv upconlyyoSrIknTQW 385,944,085 bc47f47fee8379f77672c211b54605e72ecfd64e<br>
+(アニメ DVD) ロミオ×ジュリエット 第08話 (1280x720).wmv upconlyyoSrIknTQW 333,705,655 75a59a706ff49ad3a7be335655569226d31c7267<br>
+(アニメ DVD) ロミオ×ジュリエット 第09話 (1280x720).wmv upconlyyoSrIknTQW 348,240,133 0bbd354024b4bb9c08c56a906731f7896d32bc2c<br>
+(アニメ DVD) ロミオ×ジュリエット 第10話 (1280x720).wmv upconlyyoSrIknTQW 319,467,799 8f59ae2dc71c5d519058c4025d9272f6e2e483af<br>
+(アニメ DVD) ロミオ×ジュリエット 第11話 (1280x720).wmv upconlyyoSrIknTQW 405,273,952 d89a0365a1227cee5dee850bf314615951aad0cb<br>
+(アニメ DVD) ロミオ×ジュリエット 第12話 (1280x720).wmv upconlyyoSrIknTQW 330,772,393 ab657723a1ea654e3a4549089113b4f166fabbd3<br>
+(アニメ DVD) ロミオ×ジュリエット 第13話 (1280x720).wmv upconlyyoSrIknTQW 370,508,755 798b3e8194f2f4ff13b8d567f600a38dcbd13650<br>
+(アニメ DVD) ロミオ×ジュリエット 第14話 (1280x720).wmv upconlyyoSrIknTQW 323,461,210 0ed8420dbfea7837347ad3f46f36535622fa5887<br>
+(アニメ DVD) ロミオ×ジュリエット 第15話 (1280x720).wmv upconlyyoSrIknTQW 317,830,885 175ab1bdd59337286e3332b6be537c89bc5ac1e6<br>
+(アニメ DVD) ロミオ×ジュリエット 第16話 (1280x720).wmv upconlyyoSrIknTQW 308,223,628 6875f8ddec4774a50aa3156a57d5b8c480a73f72<br>
+(アニメ DVD) ロミオ×ジュリエット 第17話 (1280x720).wmv upconlyyoSrIknTQW 360,593,890 ff4530bb81d0691b564a711285f9efc0e808c2ed<br>
+(アニメ DVD) ロミオ×ジュリエット 第18話 (1280x720).wmv upconlyyoSrIknTQW 387,971,002 31d72809bed154081ddadcdfdbaad87b7d2b7d8d<br>
+(アニメ DVD) ロミオ×ジュリエット 第19話 (1280x720).wmv upconlyyoSrIknTQW 365,856,184 c69d487f35fdc903937e49d791a9addb580fc3d4<br>
+(アニメ DVD) ロミオ×ジュリエット 第20話 (1280x720).wmv upconlyyoSrIknTQW 364,114,903 d727b11169f8981f3c29945f3f94c950f9307ea6<br>
+(アニメ DVD) ロミオ×ジュリエット 第21話 (1280x720).wmv upconlyyoSrIknTQW 357,001,468 54d70c6745da9017cc2b588322f648b356688534<br>
+(アニメ DVD) ロミオ×ジュリエット 第22話 (1280x720).wmv upconlyyoSrIknTQW 404,711,402 393a0fadb7ebacec59f55a4a6468c8d8a0779de2<br>
+(アニメ DVD) ロミオ×ジュリエット 第23話 (1280x720).wmv upconlyyoSrIknTQW 404,073,614 0fe0517ca6eb22394e8acc8e699ed73bb79caad8<br>
+(アニメ DVD) ロミオ×ジュリエット 第24話 (1280x720).wmv upconlyyoSrIknTQW 414,785,624 2aa897f10b77a02b683e221add88a6df12b2decd<br>
+<br></dd>
+</dl><a name="footer"></a><hr><br></body></html>

@@ -1,0 +1,1516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja" dir="ltr"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="robots" content="index,noarchive">
+<title>ハッシュ保管庫 SHA1-ラ版</title>
+<style type="text/css">
+<!--
+*{margin:0; padding:0;}
+body{margin:0; padding:0; font-size:9pt; color:#000000; background:#F5F5F5;}
+dd{margin:0 0 0 20px;}
+hr{margin:1px 0; border:1px #C1C0B5 solid;}
+hr.A{text-align:left; width:95%; margin:2px 0; border:1px #87A9D5 solid;}
+hr.B{text-align:left; width:95%; margin:2px 0; border:2px #43599A solid;}
+a{color:#0080C0; text-decoration:none;}
+a:hover{color:#FFFFFF; background-color:#0080C0;}
+table{font-size:8pt;}
+td{text-align:center; width:50px; border:2px #0080C0 solid;}
+td a{display:block; height:1.2em; line-height:1.2em;}
+.font{margin:5px 0 0 2px; font-size:10pt; color:#6E6E6E;}
+.title{color:#D95131;}
+.sup{color:#0000FF;}
+.exc{color:#808080;}
+-->
+</style></head><body>
+<a name="header"></a>
+<table><tr>
+<td><a href="051_sha1aa.html">あ</a></td><td><a href="052_sha1ai.html">い</a></td><td><a href="053_sha1au.html">う</a></td><td><a href="054_sha1ae.html">え</a></td>
+<td><a href="055_sha1ao.html">お</a></td><td><a href="056_sha1ka.html">か</a></td><td><a href="057_sha1ki.html">き</a></td><td><a href="058_sha1ku.html">く</a></td>
+<td><a href="059_sha1ke.html">け</a></td><td><a href="060_sha1ko.html">こ</a></td><td><a href="061_sha1sa.html">さ</a></td><td><a href="062_sha1si.html">し</a></td>
+<td><a href="063_sha1su.html">す</a></td><td><a href="064_sha1se.html">せ</a></td><td><a href="065_sha1so.html">そ</a></td><td><a href="066_sha1ta.html">た</a></td>
+<td><a href="067_sha1ti.html">ち</a></td><td><a href="068_sha1tu.html">つ</a></td><td><a href="069_sha1te.html">て</a></td><td><a href="070_sha1to.html">と</a></td>
+<td><a href="071_sha1na.html">な</a></td><td><a href="072_sha1ni.html">に</a></td><td><a href="0javascript:void(0)">ぬ</a></td>
+<td><a href="0javascript:void(0)">ね</a></td><td><a href="075_sha1no.html">の</a></td>
+</tr><tr>
+<td><a href="076_sha1ha.html">は</a></td><td><a href="077_sha1hi.html">ひ</a></td><td><a href="078_sha1hu.html">ふ</a></td><td><a href="079_sha1he.html">へ</a></td>
+<td><a href="080_sha1ho.html">ほ</a></td><td><a href="081_sha1ma.html">ま</a></td><td><a href="082_sha1mi.html">み</a></td><td><a href="083_sha1mu.html">む</a></td>
+<td><a href="084_sha1me.html">め</a></td><td><a href="085_sha1mo.html">も</a></td><td><a href="086_sha1ya.html">や</a></td><td><a href="087_sha1yu.html">ゆ</a></td>
+<td><a href="088_sha1yo.html">よ</a></td><td><a href="089_sha1ra.html">ら</a></td><td><a href="090_sha1ri.html">り</a></td><td><a href="091_sha1ru.html">る</a></td>
+<td><a href="092_sha1re.html">れ</a></td><td><a href="093_sha1ro.html">ろ</a></td><td><a href="094_sha1wa.html">わ</a></td><td><a href="095_sha1ld.html">LD</a></td>
+<td><a href="096_sha1ow.html">旧</a></td><td><a href="../bd/047_bd.html">BD</a></td><td><a href="../psp/048_psp.html">PSP</a></td>
+<td colspan="2" style="width:100px;"><a href="../update.html">更新リスト</a></td>
+</tr></table>
+<span class="font">ハッシュ保管庫 SHA1-ラ版</span><hr>
+<dl>
+<dt><span class="title">ラーゼフォン Part1<b>◆</b></span>07/04/17 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD] RAHXEPHON ラーゼフォン 特典映像 イベント上映用 プロモーション映像 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 61,990,948 3a906d7c6d93f59dfe33490a44a797faa54516da<br>
+[DVD] RAHXEPHON ラーゼフォン 特典映像 ノンクレジットOP (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 22,340,736 c91249f27b647fb3c23bbabb78cf6c9ec4bfeebf<br>
+[DVD] RAHXEPHON ラーゼフォン 第01楽章 「首都侵攻 -Over Load-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 222,791,230 dba1d97584be1aa6fee603de7289faab75958a48<br>
+[DVD] RAHXEPHON ラーゼフォン 第02楽章 「神人目覚める -Awakening-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 239,415,286 5dac003607b9dfd4cafaf931e889b9b3b7051ca3<br>
+[DVD] RAHXEPHON ラーゼフォン 第03楽章 「二人の街 -Welcome to our Town-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 199,319,286 0a4abd3e1484994f4254f3819525ce536a2e617a<br>
+[DVD] RAHXEPHON ラーゼフォン 第04楽章 「自分の時計 -Eatch the your hand-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 207,223,286 15806f3c6861f3bd16efcbf7486ec58da9abe04c<br>
+[DVD] RAHXEPHON ラーゼフォン 第05楽章 「ニライカナイ -on Earth as It is in Heaven-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 183,415,286 d54def2cbe6040d9c57ef8f9c9e8d048789b0e85<br>
+[DVD] RAHXEPHON ラーゼフォン 第06楽章 「消滅都市 -Lost Song Forgotten Melodies-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 195,943,286 908b2e71b449a9e87e9c3a4a039de31d7b98c6ea<br>
+[DVD] RAHXEPHON ラーゼフォン 第07楽章 「集まる日 -Phantom In The Cloud-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 198,807,286 56fa7895f78318ecf15c4829b3fc340994d9fcee<br>
+[DVD] RAHXEPHON ラーゼフォン 第08楽章 「凍る聖夜 -The Dreaming Stone-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 213,975,286 a1912c50cd6136aa77e460e205f6dcdb4e8c8f2c<br>
+[DVD] RAHXEPHON ラーゼフォン 第09楽章 「時の祠 -Sanctuary-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 172,231,300 32a39a7c3b14f162ceb9f20359b79c61b6b6ba13<br>
+[DVD] RAHXEPHON ラーゼフォン 第10楽章 「追憶のソナタ -War In The remembrance-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 177,847,300 aeaca945c3add63aa571963fa6ddd0292f3c374f<br>
+[DVD] RAHXEPHON ラーゼフォン 第11楽章 「虚邪回路 -NightMare-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 167,911,286 1dc1b4fb29a77d79df49ec3010becce0da91ae0d<br>
+[DVD] RAHXEPHON ラーゼフォン 第12楽章 「黒い卵 -Resonance-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 196,567,300 8dd98e955cacc80058a3831e223dca39ea3bcdee<br>
+[DVD] RAHXEPHON ラーゼフォン 第13楽章 「人間標本第1号 -Sleeping Beauty-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 159,143,300 b6f5b6ea7e1bf1b1c6892add5d0779994f3465c9<br>
+[DVD] RAHXEPHON ラーゼフォン 第13楽章 間奏曲 「彼女と彼女自身と-Thatness And Thereness-」 (OVA DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 155,056,538 903ddaae6253aae5dd5588b45d48f486848d1362<br>
+[DVD] RAHXEPHON ラーゼフォン 第14楽章 「鏡の中の少年 -Time After Time-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 173,399,300 35c2955425be29efb19ac52e263068c8102e688c<br>
+[DVD] RAHXEPHON ラーゼフォン 第15楽章 「子供たちの夜 -Child Hood's End-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 158,071,300 edabea8a65659e36f2fc40ff4705cad782ec5502<br>
+[DVD] RAHXEPHON ラーゼフォン 第16楽章 「他人の島 -The Moon Princess-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 153,751,300 f8111d741361e223b059fcbf67e7455062a0efdf<br>
+[DVD] RAHXEPHON ラーゼフォン 第17楽章 「迷宮への帰還 -Ground Zero-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 170,583,300 1d844a699da566c71378fd2f70147454edf51112<br>
+[DVD] RAHXEPHON ラーゼフォン 第18楽章 「青き血の絆 -The Memory Of A Lost City-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 169,239,300 bd9cb8ff4e50950144b356ed64204bc9af8ee889<br>
+[DVD] RAHXEPHON ラーゼフォン 第19楽章 「ブルーフレンド -Ticket To Nowhere-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 198,455,300 7c805fe98725848768ada386544ae26763ea9e5b<br>
+[DVD] RAHXEPHON ラーゼフォン 第20楽章 「綾なす人の戦い -Interested Parties-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 200,455,300 2283f2aa8d7a9486ee13f021c57051aef42edf95<br>
+[DVD] RAHXEPHON ラーゼフォン 第21楽章 「ゼフォンの刻印 -Good Bye My Friend-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 151,671,300 e17aa6a7b00b3f11a0a41f539e7e703c6f5a5e7b<br>
+[DVD] RAHXEPHON ラーゼフォン 第22楽章 「木星消滅作戦 -Down Fall-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 166,583,300 7ea7445a360ff7a98337aae92be2e3a48e8ddd05<br>
+[DVD] RAHXEPHON ラーゼフォン 第23楽章 「ここより永遠に -Where The Sweet Bird Song-」 (DVD 640x480 WMV9 修正版).wmv 8jqL45WQsn3h37mol 191,943,300 5f55de09bb1b15b40cda73a883f63ad1c6dc1976<br>
+[DVD] RAHXEPHON ラーゼフォン 第24楽章 「調律への扉 -Twin Music-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 216,023,300 4e0528712d6705d01c671ccd35ad49e62f09295b<br>
+[DVD] RAHXEPHON ラーゼフォン 第25楽章 「神の不確かな音 -Deus Ex Machina-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 192,439,300 66b389157a1e26b3029e517965e2af97bcecbbb7<br>
+[DVD] RAHXEPHON ラーゼフォン 第26楽章 「遥か久遠の彼方 -Time Enough For Love-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 131,127,048 ecb347440e61900a19c6858c9786c615824baec6<br>
+[DVD] RAHXEPHON ラーゼフォン 特別編集版 「翼の記憶 -Memory-」 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 372,049,436 09e66eb5248de641394db170118521857c74923c<br><br>
+[DVD] RAHXEPHON ラーゼフォン-多元変奏曲- スペシャルDVD スタッフ・キャストインタビュー (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 253,437,934 01e03c9dd920125e59aa3fda2be80d4ea07c8919<br>
+[DVD] RAHXEPHON ラーゼフォン-多元変奏曲- スペシャルDVD 劇場版特報 (DVD 640x480 WMV9 rev2).wmv 8jqL45WQsn3h37mol 24,245,148 cf7b43bbee68b1a8d6b7723f6da842d5d0306286<br>
+[DVD] RAHXEPHON ラーゼフォン-多元変奏曲- 特典ディスク 劇場版予告 (DVD 640x480 WMV9).wmv 8jqL45WQsn3h37mol 13,076,512 b90247767921198f650f6a969202dac0e5988d56<br>
+[DVD] RAHXEPHON ラーゼフォン-多元変奏曲- [5.1ch音声ソース].wma 8jqL45WQsn3h37mol 166,077,886 3f7472b78f300d705d70e93583a2cc8d869649ef<br>
+[DVD] RAHXEPHON ラーゼフォン-多元変奏曲- (MOVIE DVD 640x480 2ch WMV9).wmv 8jqL45WQsn3h37mol 910,069,070 78f6115c14d1b42679f2a79eb2127c7ed94c4e20<br>
+<hr class="A">
+[アニメ 映画] 劇場版 ラーゼフォン 多元変奏曲 (BS-hi+DVD 1376x1032 WMV9 AC3 5.1ch).avi 8e3WXRH1Y3 2,344,665,088 32db9622d95293676beefba2edc60573f4a1d5b6<br>
+<br></dd>
+<dt><span class="title">ラーゼフォン Part2<b>◆</b></span>08/04/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+RAHXEPHON -ラーゼフォン- DVDBOX特典映像 「イベント上映用プロモーション映像」 (DVD 704x480 4：3 x264 24fps AAC).mkv GuyEAejW0o 22,907,367 2b14c41a1f1246d455e700b077729707f71e6bb0<br>
+RAHXEPHON -ラーゼフォン- DVDBOX特典映像 「スペシャルプロモーション映像」 (DVD 704x480 4：3 x264 24fps AAC).mkv GuyEAejW0o 86,844,756 a9b0a76aab5ecdc7e5ae1df0a809687b8daae906<br>
+RAHXEPHON -ラーゼフォン- DVDBOX特典映像 「スポット集」 (DVD 704x480 4：3 x264 30fps AAC).mkv GuyEAejW0o 69,410,415 c66263ae1605b2c6044ddbde51af3475d604fea3<br>
+RAHXEPHON -ラーゼフォン- DVDBOX特典映像 「ノンクレジットオープニング」 (DVD 704x480 4：3 x264 24fps AAC rev2).mkv GuyEAejW0o 31,827,052 de622cd295bd0016114ce1f6d4e325b776085d55<br>
+RAHXEPHON -ラーゼフォン- DVDBOX特典映像 「ノンクレジットエンディング」 (DVD 704x480 4：3 x264 24fps AAC).mkv GuyEAejW0o 13,974,561 2d6e0d0296e2e4ba1c0fc1b9012ecd2ee75e2d56<br>
+RAHXEPHON -ラーゼフォン- DVDBOX特典映像 「初期プロモーション映像」 (DVD 704x480 4：3 x264 24fps AAC).mkv GuyEAejW0o 10,329,174 2d823f2cc6063d1aec8b2e626e143ea77518e0ff<br>
+RAHXEPHON -ラーゼフォン- DVDBOX特典映像 間奏曲 「彼女と彼女自身と」 (DVD 704x480 4：3 x264 24fps AAC).mkv GuyEAejW0o 226,900,525 9580caa3b7a84db2c8602d6e0dbb67f108829c9f<br>
+RAHXEPHON -ラーゼフォン- DVDBOX特典映像 特別編集版 「翼の記憶 -Memory-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 592,427,857 5c1fc7e32ccd050419dcbde5747f98d1202ab807<br>
+RAHXEPHON -ラーゼフォン- 第01楽章 「首都侵攻 -Over Load-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 364,136,940 38cd42777d103013a9dbbc1831f0c913b3408cf1<br>
+RAHXEPHON -ラーゼフォン- 第02楽章 「神人目覚める -Awakening-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 355,408,961 5beeb456015d9d60a64f4ba7381d938c8b4f8d3b<br>
+RAHXEPHON -ラーゼフォン- 第03楽章 「二人の街 -Welcome to our Town-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 301,901,332 9c2c1c663a50fbd6162898e4d418a78b02fe11a5<br>
+RAHXEPHON -ラーゼフォン- 第04楽章 「自分の時計 -Eatch the your hand-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 304,739,934 5b536f1da63a1db9a8030e7d30b4f2ef43f129ed<br>
+RAHXEPHON -ラーゼフォン- 第05楽章 「ニライカナイ -on Earth as It is in Heaven-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 287,774,788 279a5a892f800ced61a4c97356746eb3c64a8eae<br>
+RAHXEPHON -ラーゼフォン- 第06楽章 「消滅都市 -Lost Song Forgotten Melodies-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 298,041,124 ff65180efd140be6a8c345f652e13b8c234a1e34<br>
+RAHXEPHON -ラーゼフォン- 第07楽章 「集まる日 -Phantom In The Cloud-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 292,697,608 8747a2011a7caff0215f4189aa83f162d45a16f8<br>
+RAHXEPHON -ラーゼフォン- 第08楽章 「凍る聖夜 -The Dreaming Stone-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 313,049,022 94eea8193474d5d1a7a8c693bfe028916036c0ca<br>
+RAHXEPHON -ラーゼフォン- 第09楽章 「時の祠 -Sanctuary-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter rev2).mkv GuyEAejW0o 257,483,444 5dc75aaf3829382634d3efd526f1651c598e8e1c<br>
+RAHXEPHON -ラーゼフォン- 第10楽章 「追憶のソナタ -War In The remembrance-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 272,290,634 ad5b406b254d2e414732ee9c4c645a4437bf34d2<br>
+RAHXEPHON -ラーゼフォン- 第11楽章 「虚邪回路 -NightMare-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 240,080,703 96866c9d215c6f509e1fd86aeb707778f7b86516<br>
+RAHXEPHON -ラーゼフォン- 第12楽章 「黒い卵 -Resonance-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 283,498,542 b8c901b244cd83e3a539fd731c0b8a18b9d5f3f1<br>
+RAHXEPHON -ラーゼフォン- 第13楽章 「人間標本第1号 -Sleeping Beauty-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 247,005,315 ae55cfc5a8e71589c0d4fb8d4915f19a44c9dadc<br>
+RAHXEPHON -ラーゼフォン- 第14楽章 「鏡の中の少年 -Time After Time-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 254,494,989 51c0d19861a6d45f76b97493671d0c6045ab8afc<br>
+RAHXEPHON -ラーゼフォン- 第15楽章 「子供たちの夜 -Child Hood's End-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 252,976,500 e04359746729656f96fd90e1ae125daacfb8c98e<br>
+RAHXEPHON -ラーゼフォン- 第16楽章 「他人の島 -The Moon Princess-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 234,960,687 e734fa84602f0e3e67c9f32e80e6e4973968c874<br>
+RAHXEPHON -ラーゼフォン- 第17楽章 「迷宮への帰還 -Ground Zero-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 254,597,137 bcc2c7969f92ee315c042ebf672436077afadcff<br>
+RAHXEPHON -ラーゼフォン- 第18楽章 「青き血の絆 -The Memory Of A Lost City-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 256,455,353 3cf9b66297114b715dea19e0d81bb3342b8ec064<br>
+RAHXEPHON -ラーゼフォン- 第19楽章 「ブルーフレンド -Ticket To Nowhere-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 284,553,856 d7a97e2dcad4a3228976f4eed54d09d6d3144539<br>
+RAHXEPHON -ラーゼフォン- 第20楽章 「綾なす人の戦い -Interested Parties-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 294,979,293 83db530cbcfc1a0d3e6a4fe474d901fffe93f989<br>
+RAHXEPHON -ラーゼフォン- 第21楽章 「ゼフォンの刻印 -Good Bye My Friend-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 234,121,008 5963c731d3e1941cf033ccb57b8f79ade3624898<br>
+RAHXEPHON -ラーゼフォン- 第22楽章 「木星消滅作戦 -Down Fall-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 243,059,678 3fa26c6323a07384e4abe60bf282114f6009eba4<br>
+RAHXEPHON -ラーゼフォン- 第23楽章 「ここより永遠に -Where The Sweet Bird Song-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 281,725,590 e06a3d2909d9034105681877c2b2a221613f80ff<br>
+RAHXEPHON -ラーゼフォン- 第24楽章 「調律への扉 -Twin Music-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 319,893,493 7e77eb7eb8c860084afe5a492ba4aa59b7367415<br>
+RAHXEPHON -ラーゼフォン- 第25楽章 「神の不確かな音 -Deus Ex Machina-」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 272,689,851 7721a1b43525573bcd893a3540f1a921bc5860e7<br>
+RAHXEPHON -ラーゼフォン- 第26楽章 「遥か久遠の彼方 -Time Enough For Love- (終)」 (DVD 704x480 4：3 x264 24fps AAC with Chapter).mkv GuyEAejW0o 190,446,840 4d77a8a3efe986b52c57a700cb81f4edc7bb921d<br>
+<hr class="A">
+[アニメ HDDVD] 劇場版 ラーゼフォン RAHXEPHON 多元変奏曲  [1440x1080 H.264].mp4 PS3專用動畫IDf6v22XCO 1,699,680,695 f407594ad24a57ca87d03e32c28ea13c51637fc5<br>
+<hr class="A">
+[アニメ HD] 劇場版 ラーゼフォン 多元変奏曲 (HD DVD 1920x1080 x264 AAC).mp4 DBGTgiw22yvnz9 1,695,223,939 88a8d83529c3d2cb67f09826c5474e18a5cbd3d3<br>
+<hr class="A">
+RAHXEPHON -ラーゼフォン- 劇場版 -多元変奏曲- (HDDVD 1388x1040 x264 AAC 5.1ch+2.0ch).mp4 GuyEAejW0o 1,942,043,342 882dc02f49b365f32c5d950b613f068692219961<br>
+<br></dd>
+<dt><span class="title">REIDEEN<b>◆</b></span>08/04/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+(アニメ DVD) REIDEEN 第01話 (1280x720).wmv upconlyyoSrIknTQW 390,085,927 c3024b5007da49800982eb04a8fd9f34e8c326a4<br>
+(アニメ DVD) REIDEEN 第02話 (1280x720).wmv upconlyyoSrIknTQW 449,284,000 88b319096007cd98d74dd76b8c1038b3d90168a1<br>
+(アニメ DVD) REIDEEN 第03話 (1280x720).wmv upconlyyoSrIknTQW 475,375,738 7bcd60c8d8d55d6376a9a92280db102bb02cc216<br>
+(アニメ DVD) REIDEEN 第04話 (1280x720).wmv upconlyyoSrIknTQW 425,889,307 417847980b1b72925415e97c070060c5f9749e0a<br>
+(アニメ DVD) REIDEEN 第05話 (1280x720).wmv upconlyyoSrIknTQW 417,138,952 759054d4e6102722ef2f181d0ff02064366ed436<br>
+(アニメ DVD) REIDEEN 第06話 (1280x720).wmv upconlyyoSrIknTQW 450,547,372 245a7b3ecc401e73a90131c9f21f37f6e7b5f85c<br>
+(アニメ DVD) REIDEEN 第07話 (1280x720).wmv upconlyyoSrIknTQW 444,746,764 542c7ff454bfce73acec3625b6f8dbb776ab33df<br>
+(アニメ DVD) REIDEEN 第08話 (1280x720).wmv upconlyyoSrIknTQW 457,781,665 2a907b9f0056a1dc91d7f8750a632837d008c095<br>
+(アニメ DVD) REIDEEN 第09話 (1280x720).wmv upconlyyoSrIknTQW 470,437,537 67b1c1c21687814eac5f44fc035d2af6136e1e02<br>
+(アニメ DVD) REIDEEN 第10話 (1280x720).wmv upconlyyoSrIknTQW 556,518,328 91d1be2b8c779ab4f4b2481fd77cd4b18591a373<br>
+(アニメ DVD) REIDEEN 第11話 (1280x720).wmv upconlyyoSrIknTQW 513,464,212 784bb831a84d4a1ed870bf2aecf83cff89746f7c<br>
+(アニメ DVD) REIDEEN 第12話 (1280x720).wmv upconlyyoSrIknTQW 550,415,617 64efd7e52d46a649af5ad5cf84f8826b6fae0ce1<br>
+(アニメ DVD) REIDEEN 第13話 (1280x720).wmv upconlyyoSrIknTQW 451,651,471 b50df53e04715f42a1b3ad95714f2bcd513ec120<br>
+(アニメ DVD) REIDEEN 第14話 (1280x720).wmv upconlyyoSrIknTQW 530,031,100 77e7ffae18b2e3950a62c8e1f43dc5769f8221fb<br>
+(アニメ DVD) REIDEEN 第15話 (1280x720).wmv upconlyyoSrIknTQW 504,367,792 430426601b3f771985242940c267bee9e0d64ce4<br>
+(アニメ DVD) REIDEEN 第16話 (1280x720).wmv upconlyyoSrIknTQW 501,093,964 96261e7b7c377e28e6431ec8f56f0725c2d30204<br>
+(アニメ DVD) REIDEEN 第17話 (1280x720).wmv upconlyyoSrIknTQW 465,290,602 7f879a026d0ab4fee098d78c4200aad619190946<br>
+(アニメ DVD) REIDEEN 第18話 (1280x720).wmv upconlyyoSrIknTQW 406,136,473 454ff87db26efdfd1a7f8dcc5bf356fb1c75a553<br>
+(アニメ DVD) REIDEEN 第19話 (1280x720).wmv upconlyyoSrIknTQW 489,591,622 c16199e400a94d24036400f93565d3a81cbbacc3<br>
+(アニメ DVD) REIDEEN 第20話 (1280x720).wmv upconlyyoSrIknTQW 378,539,653 c75a71d02dd626dfc01c33b2b07093ae2487a1b6<br>
+(アニメ DVD) REIDEEN 第21話 (1280x720).wmv upconlyyoSrIknTQW 467,789,905 d10b46a1dd6a7fb0deb996169f7f8d3aafc79468<br>
+(アニメ DVD) REIDEEN 第22話 (1280x720).wmv upconlyyoSrIknTQW 472,530,364 4fee26210a2a32ad795dec6ee9c51c1833797012<br>
+(アニメ DVD) REIDEEN 第23話 (1280x720).wmv upconlyyoSrIknTQW 476,078,854 c312a5f74e103f226601aef583e9c0281e2ed438<br>
+(アニメ DVD) REIDEEN 第24話 (1280x720).wmv upconlyyoSrIknTQW 514,694,638 ad1dd7b27a41b8db09b5708c4dd23f9cc9608527<br>
+(アニメ DVD) REIDEEN 第25話 (1280x720).wmv upconlyyoSrIknTQW 447,317,494 07f0ee7ca7235e313671099c3e5686fbd69cd87f<br>
+(アニメ DVD) REIDEEN 第26話 (1280x720).wmv upconlyyoSrIknTQW 715,585,468 9bfb2b6cafd689c1ba24fabfe7227a4b5f7002d3<br>
+<br></dd>
+<dt><span class="title">RIDING BEAN<b>◆</b></span>05/01/22 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] RIDING BEAN -ライディング・ビーン- (640x480 DivX521 QB95 rev2).avi 6969bJP0Q4LGSLO 670,073,996 43f71fcf3fe5623216397c0862e9b2ea3c4fc8b8<br>
+<br></dd>
+<dt><span class="title">らいむいろ戦奇譚<b>◆</b></span>06/10/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ] らいむいろ流奇譚X 映像特典 「ノンクレジットOP」 (DVD 640x480 WMV9).avi kyupzkthMGu2E 36,169,178 a4e4d93d48bcb133ccaa97e9c588b3eb3a29053e<br>
+[アニメ] らいむいろ流奇譚X 映像特典 「ノンクレジットED」 (DVD 640x480 WMV9).avi kyupzkthMGu2E 25,594,780 d1b56d5b53cdbeb8075292166cd4138769ab4a95<br>
+[アニメ] らいむいろ流奇譚X 映像特典 MusicTheater 「たんぽぽになりたい - 島つむぎ」 (DVD 640x480 WMV9).avi kyupzkthMGu2E 58,653,926 bfb2337b07ed09dce4294478deb763a65b760841<br>
+[アニメ] らいむいろ流奇譚X 第01話 「漢の名は強志朗！」 (DVD 640x480 WMV9).avi kyupzkthMGu2E 284,890,706 4e9d93068644ebdaf3bcca81877fef14ac7cf2c6<br>
+[アニメ] らいむいろ流奇譚X 第02話 「甘い衝撃」 (DVD 640x480 WMV9).avi kyupzkthMGu2E 265,529,918 29b0ac349291fbbf2f0a133d35e08eeb44c89ecd<br>
+[アニメ] らいむいろ流奇譚X 第03話 「はじめての先生」 (DVD 640x480 WMV9).avi kyupzkthMGu2E 256,945,496 d1e51b66cfd42206fb1c8b1f859bca71d2beb199<br>
+<hr class="A">
+[OVA] らいむいろ戦奇譚  南国夢浪漫　後編 「さらば凛歌 新たなる防人」(DivX5.02 2pass 1500kbps 120fps 640x480 DVD).avi kemoneko3oJWAlMfuT 309,375,646 1e4ea10b6e805b5c1f3566551de4491ee8388361<br>
+[OVA] らいむいろ戦奇譚  南国夢浪漫　前編 「愛と祭りと告白と」(DivX5.02 2pass 1500kbps 24fps 640x480 DVD).avi kemoneko3oJWAlMfuT 333,417,936 78c2220c0592ae19cb277e5ea82d57a10451b6e8<br>
+<br></dd>
+<dt><span class="title">らき☆すた<b>◆</b></span>08/09/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+らき☆すた ノンクレジットOP (720x384 10：11 x264 AC3 販促用DVD 歌詞無し) rev2 ｱｽ比､ﾌｨﾙﾀ修正.mkv 1MSJX48jeZ 26,082,380 9a0ce6328537bb0640ed57184feb216e33af7e2f<br>
+<hr class="A">
+[アニメ DVD] らき☆すた 第01話 「つっぱしる女」 (WMV9AP 704x396 120fps).avi Galopin3BM3EISvpL 174,553,862 d8bbb9b634d579c12a28055ed6a9c49daa9cd37f<br>
+[アニメ DVD] らき☆すた 第02話 「努力と結果」 (WMV9AP 704x396 120fps).avi Galopin3BM3EISvpL 186,049,552 4d66769a236f5fbffcbe7116c3c882d9d3f0d5f6<br>
+<hr class="A">
+[アニメ DVD] らき☆すた Vol.01 映像特典 「ノンテロップOP（歌詞付き）」 [704x396 WMV9 Q97].wmv tad87901fCH2Cock 78,627,439 eb3d282ba80912b12cd61fe13b1d560a9dfe9efe<br>
+[アニメ DVD] らき☆すた Vol.01 映像特典 「番宣スポット（チバテレビ版）」 [640x480 WMV9].wmv tad87901fCH2Cock 1,601,674 ba0a84297dd614c7cd39b2a1fd85682e0c9153bc<br>
+[アニメ DVD] らき☆すた Vol.01 映像特典 「名場面カット集」 [704x396 WMV9].wmv tad87901fCH2Cock 15,137,908 e380268cecefff2b13d09c1b88e41fb0ea9fbbfd<br>
+[アニメ DVD] らき☆すた Vol.02 映像特典 「白石みのるの冒険エピソード01」 [640x480 WMV9 Q90].wmv tad87901fCH2Cock 472,650,040 bfdf40869ce119eea25065cd44c371a75781acaa<br>
+[アニメ DVD] らき☆すた Vol.02 映像特典 「名場面カット集」 [704x396 WMV9].wmv tad87901fCH2Cock 9,916,149 d43bb5b875ac3c552a8a54123d77900a3a557a8c<br>
+[アニメ DVD] らき☆すた Vol.03 映像特典 「白石みのるの冒険エピソード02」 [640x480 WMV9 Q90].wmv tad87901fCH2Cock 285,359,493 5540ab0e4b0ce9ddfcb1a8f8bd94e493cd04d393<br>
+[アニメ DVD] らき☆すた Vol.03 映像特典 「名場面カット集」 [704x396 WMV9].wmv tad87901fCH2Cock 11,157,856 d04665e2a1dd739f721f45b617c7a681875650f6<br>
+[アニメ DVD] らき☆すた Vol.04 映像特典 「白石みのるの冒険エピソード03」 [640x480 WMV9 Q90].wmv tad87901fCH2Cock 411,683,471 718716eed6765d08cbd0b40b5e6e0d773c17eb5d<br>
+[アニメ DVD] らき☆すた Vol.04 映像特典 「名場面カット集」 [704x396 WMV9].wmv tad87901fCH2Cock 11,462,093 1fdb8ca950587ac955237dd857e3ea72aa7c45ed<br>
+[アニメ DVD] らき☆すた Vol.05 映像特典 「白石みのるの冒険エピソード04」 [640x480 WMV9 Q90].wmv tad87901fCH2Cock 351,304,282 f1cdecc54fd582ca5b1f828bba3996fec8381cee<br>
+[アニメ DVD] らき☆すた Vol.05 映像特典 「名場面カット集」 [704x396 WMV9].wmv tad87901fCH2Cock 11,437,404 6b323a2534accf53d283cba0d2bfa452960cdf92<br>
+[アニメ DVD] らき☆すた Vol.06 映像特典 「白石みのるの冒険エピソード05」 [640x480 WMV9 Q90].wmv tad87901fCH2Cock 263,099,760 570ae952ec640b35a3d6eb43a9bac3352f68764a<br>
+[アニメ DVD] らき☆すた Vol.06 映像特典 「名場面カット集」 [704x396 WMV9].wmv tad87901fCH2Cock 13,665,871 81f22976f62080fb490f35c5455f8ac2c30860ef<br>
+[アニメ DVD] らき☆すた Vol.07 映像特典 「白石みのるの冒険エピソード06」 [640x480 WMV9 Q90].wmv tad87901fCH2Cock 508,321,702 1d5a6f6daf2c964f70df8de05118b299eab61ad3<br>
+[アニメ DVD] らき☆すた Vol.07 映像特典 「名場面カット集」 [704x396 WMV9].wmv tad87901fCH2Cock 9,093,883 b9a8f162e296fc1cd4c1555167189fb4bc0c8317<br>
+[アニメ DVD] らき☆すた Vol.08 映像特典 「白石みのるの冒険エピソード07」 [640x480 WMV9 Q90].wmv tad87901fCH2Cock 652,999,304 acfcc18dad3a520bc7a834dd9c605e41ee6ddf86<br>
+[アニメ DVD] らき☆すた Vol.08 映像特典 「名場面カット集」 [704x396 WMV9].wmv tad87901fCH2Cock 9,266,566 9aeb2519dd33ed52879f9b31b182a9ca585259ba<br>
+[アニメ DVD] らき☆すた Vol.09 映像特典 「白石みのるの冒険エピソード08」 [640x480 WMV9 Q90].wmv tad87901fCH2Cock 237,966,769 eb7985f1fc344d7798cb62e6afdedd2731853899<br>
+[アニメ DVD] らき☆すた Vol.09 映像特典 「名場面カット集」 [704x396 WMV9].wmv tad87901fCH2Cock 8,773,186 00f7667b64fcaf79741252ed6f845136c6af31a0<br>
+[アニメ DVD] らき☆すた Vol.10 映像特典 「名場面カット集」 [704x396 WMV9].wmv tad87901fCH2Cock 8,625,704 41830468d6dc0de4c90f8968ca80b02a33e54481<br>
+[アニメ DVD] らき☆すた 第01話 「つっぱしる女」 [704x396 WMV9].wmv tad87901fCH2Cock 219,341,419 842e9677fea98f311ed29e2435ed8106121e3b57<br>
+[アニメ DVD] らき☆すた 第02話 「努力と結果」 [704x396 WMV9].wmv tad87901fCH2Cock 238,772,366 47a78d4ab35e763f7b7c8fadcf44fb8ceb55461a<br>
+[アニメ DVD] らき☆すた 第03話 「いろいろな人たち」 [704x396 WMV9].wmv tad87901fCH2Cock 220,928,418 56306b15e8f2dc18e832a34939916fbeee4a7743<br>
+[アニメ DVD] らき☆すた 第04話 「やる気の問題」 [704x396 WMV9].wmv tad87901fCH2Cock 204,885,385 936a8403df02ad2cd594cf60ffe957051fec540d<br>
+[アニメ DVD] らき☆すた 第05話 「名射手」 [704x396 WMV9].wmv tad87901fCH2Cock 224,390,187 f55de5477b8b41526b87a7aec7b26b73df25343e<br>
+[アニメ DVD] らき☆すた 第06話 「夏の定番」 [704x396 WMV9].wmv tad87901fCH2Cock 224,982,245 13feef9408d94150655c2f8026c114cf00a2d857<br>
+[アニメ DVD] らき☆すた 第07話 「イメージ」 [704x396 WMV9].wmv tad87901fCH2Cock 225,204,266 877cfd9007983231a14c13519c1a1fecb4b23f2b<br>
+[アニメ DVD] らき☆すた 第08話 「私じゃなくても旺盛」 [704x396 WMV9].wmv tad87901fCH2Cock 249,766,377 49365f23af551230f54dc53e2b8232af31f55bf5<br>
+[アニメ DVD] らき☆すた 第09話 「そんな感覚」 [704x396 WMV9].wmv tad87901fCH2Cock 185,997,004 fbfe68f82704d5662a7ae9f681074c2a18efed4a<br>
+[アニメ DVD] らき☆すた 第10話 「願望」 [704x396 WMV9].wmv tad87901fCH2Cock 218,321,611 4651a8a92a0cfb0ad511f3c1bf66add06df84358<br>
+[アニメ DVD] らき☆すた 第11話 「いろんな聖夜の過ごし方」 [704x396 WMV9].wmv tad87901fCH2Cock 216,512,569 5d1be98bc34c04bc5bf808a6afcbfce28984045f<br>
+[アニメ DVD] らき☆すた 第12話 「お祭りへいこう」 [704x396 WMV9].wmv tad87901fCH2Cock 247,759,961 fb9534800235570739cd7c3eb852a4855992691e<br>
+[アニメ DVD] らき☆すた 第13話 「おいしい日」 [704x396 WMV9].wmv tad87901fCH2Cock 313,042,354 7bb463030f02bd0d2c38b41dc68c4e4bbc6f521c<br>
+[アニメ DVD] らき☆すた 第14話 「ひとつ屋根の下」 [704x396 WMV9].wmv tad87901fCH2Cock 316,890,722 9e84bbbe5a3d043636be40ac104bdd2790b7fe3c<br>
+[アニメ DVD] らき☆すた 第15話 「いきなりは変われない」 [704x396 WMV9].wmv tad87901fCH2Cock 267,421,160 d09dc3d58c839ffd209b17279dd2235d1ebab391<br>
+[アニメ DVD] らき☆すた 第16話 「リング」 [704x396 WMV9].wmv tad87901fCH2Cock 222,293,322 dffb3c9ca0fa574fed435ef1491f36d1ccb19583<br>
+[アニメ DVD] らき☆すた 第17話 「お天道様のもと」 [704x396 WMV9].wmv tad87901fCH2Cock 236,809,995 5869e71b23d05554b9557a817af6e6e5340af2a4<br>
+[アニメ DVD] らき☆すた 第18話 「十人十色」 [704x396 WMV9].wmv tad87901fCH2Cock 239,619,185 76bf92511883a02c3031817247e5129156e94ca1<br>
+<hr class="A">
+[アニメ DVD] らき☆すた 第01,04話 「rev2理由 timecodeが不正でしたので修正しました（特に04話）」 (x264 704x480 AAC rev2).txt BS2DBUB0xb 437 f7fe8ed3076fde3e3b43fe493e32acf87605b32b<br>
+[アニメ DVD] らき☆すた 映像特典 第01巻 「ノンテロップOP（歌詞付き） rev2理由」 (x264 704x480 インタレ保持 AAC rev2).txt BS2DBUB0xb 283 c6f777cc224ed57933439dc87f9b10b6d027c314<br>
+[アニメ DVD] らき☆すた 映像特典 第01巻 「ノンテロップOP（歌詞付き）」 (x264 704x480 インタレ保持 AAC CRC32：8DD49D1F rev2).mp4 BS2DBUB0xb 70,488,008 c2b7c2357c536d4a071b5efbe4c13d63b0bc6ed7<br>
+[アニメ DVD] らき☆すた 映像特典 第01巻 「ノンテロップOP（歌詞付き）」 (x264 704x480 強制30f AAC CRC32：E479203D).mp4 BS2DBUB0xb 56,174,773 7179f15ca4d2aa703d976833b2864f124958be80<br>
+[アニメ DVD] らき☆すた 映像特典 第01巻 「名場面カット集」 (x264 704x480 AAC CRC32：E3BDA3ED).mp4 BS2DBUB0xb 47,150,577 3ae70c4f5c8d20b7d9d8cc19402e46c4f9000e19<br>
+[アニメ DVD] らき☆すた 映像特典 第02巻 「白石みのるの冒険 エピソード00」 (x264 640x480 AAC CRC32：).mp4 BS2DBUB0xb 335,995,703 c7a3ab892fac5506e6900f32538db209cfc973d6<br>
+[アニメ DVD] らき☆すた 映像特典 第02巻 「名場面カット集」 (x264 704x480 AAC CRC32：7BBC16B8).mp4 BS2DBUB0xb 23,458,968 04c915d125e8ff8cbafafb0957a0500a998d09ab<br>
+[アニメ DVD] らき☆すた 映像特典 第03巻 「白石みのるの冒険 エピソード02」 (x264 640x480 AAC CRC32：E9D12BAF).mp4 BS2DBUB0xb 216,000,834 da37f5b2d2be989591c12b0a41c9c2dd5a1734d7<br>
+[アニメ DVD] らき☆すた 映像特典 第03巻 「名場面カット集」 (x264 704x480 AAC CRC32：370E8E4B).mp4 BS2DBUB0xb 31,310,151 6182f21d4c74116a001fdbf56d92bc09d6b3c866<br>
+[アニメ DVD] らき☆すた 映像特典 第04巻 「白石みのるの冒険 エピソード03」 (x264 640x480 AAC CRC32：1AFA0103).mp4 BS2DBUB0xb 299,110,407 40fceb87d4a09f05c5795a4079416f5e081b428c<br>
+[アニメ DVD] らき☆すた 映像特典 第04巻 「名場面カット集」 (x264 704x480 AAC CRC32：C7CE2D54).mp4 BS2DBUB0xb 35,558,607 16601f00f19d161aaa9532046e059a0ba7af259b<br>
+[アニメ DVD] らき☆すた 映像特典 第05巻 「白石みのるの冒険 エピソード04」 (x264 640x480 AAC CRC32：353D50D1 rev1).mp4 BS2DBUB0xb 265,777,561 fc64f41296bf0cb2efc10dc3c6769d4e6350a3fd<br>
+[アニメ DVD] らき☆すた 映像特典 第05巻 「名場面カット集」 (x264 704x480 AAC CRC32：8134AA15).mp4 BS2DBUB0xb 34,302,250 9cd510e8266bc6a58b88f45eec4d634cc8da10e4<br>
+[アニメ DVD] らき☆すた 映像特典 第06巻 「白石みのるの冒険 エピソード05」 (x264 640x480 AAC CRC32：96C33E1F).mp4 BS2DBUB0xb 206,308,126 4a060d9f72061e76ae0b3ed2f341c62bc516cfb9<br>
+[アニメ DVD] らき☆すた 映像特典 第06巻 「名場面カット集」 (x264 704x480 AAC CRC32：E1D15D75).mp4 BS2DBUB0xb 43,285,942 d420f84fe465a7d35b480785b78ae594216c95c2<br>
+[アニメ DVD] らき☆すた 映像特典 第07巻 「白石みのるの冒険 エピソード06」 (x264 640x480 AAC CRC32：BC3A93BD).mp4 BS2DBUB0xb 362,038,615 45be2f3ee465ca3b4f4f0324c978f7e063bf875d<br>
+[アニメ DVD] らき☆すた 映像特典 第07巻 「名場面カット集」 (x264 704x480 AAC CRC32：5F5942E3).mp4 BS2DBUB0xb 35,821,522 b820bce7752c06e83f57e990d792752e0c083412<br>
+[アニメ DVD] らき☆すた 映像特典 第08巻 「白石みのるの冒険 エピソード07」 (x264 640x480 AAC CRC32：564A5933).mp4 BS2DBUB0xb 451,590,581 86fe61baff33eb9d65cb65ca335169687a205d7b<br>
+[アニメ DVD] らき☆すた 映像特典 第08巻 「名場面カット集」 (x264 704x480 AAC CRC32：9BA0BA3C).mp4 BS2DBUB0xb 35,937,997 a0becd9699652a2edc973dd91450315c7b8a4f26<br>
+[アニメ DVD] らき☆すた 映像特典 第09巻 「白石みのるの冒険 エピソード08」 (x264 640x480 AAC CRC32：C0790446).mp4 BS2DBUB0xb 185,940,507 1ac26ea12f95e373502c386d31dbcab6b19b60cc<br>
+[アニメ DVD] らき☆すた 映像特典 第09巻 「名場面カット集」 (x264 704x480 AAC CRC32：29ECE7C1).mp4 BS2DBUB0xb 34,385,734 af5ecf7dc3638ed493272b1bf3ea1b8fa754e095<br>
+[アニメ DVD] らき☆すた 映像特典 第10巻 「白石みのるの冒険 エピソード09」 (x264 640x480 AAC CRC32：F08DB58C).mp4 BS2DBUB0xb 340,184,369 bda7aef2bed686c09ded416b3239371342014777<br>
+[アニメ DVD] らき☆すた 映像特典 第10巻 「名場面カット集」 (x264 704x480 AAC CRC32：41A0473C).mp4 BS2DBUB0xb 30,918,482 a4d285cba2eddbe542624b2230dba6fded59e357<br>
+[アニメ DVD] らき☆すた 映像特典 第11巻 「白石みのるの冒険 エピソード10」 (x264 640x480 AAC CRC32：8587B3C7).mp4 BS2DBUB0xb 423,577,420 fa16f7a7a2489b38e8b838b7410400cdcfa06c61<br>
+[アニメ DVD] らき☆すた 映像特典 第11巻 「名場面カット集」 (x264 704x480 AAC CRC32：10171D7A).mp4 BS2DBUB0xb 36,586,267 04fec4c4fc99cf1dc83511c238f7cc9c262157cc<br>
+[アニメ DVD] らき☆すた 第01話 「つっぱしる女」 (x264 704x480 AAC CRC32：CDF44738 rev2).mp4 BS2DBUB0xb 303,937,143 25545bcffdc62f550d85dbd5a0cc378c1151e121<br>
+[アニメ DVD] らき☆すた 第02話 「努力と結果」 (x264 704x480 AAC CRC32：CA199527).mp4 BS2DBUB0xb 310,930,540 3024bcf1c0947c2628946eab4e6b9e3e5b4f2b33<br>
+[アニメ DVD] らき☆すた 第03話 「いろいろな人たち」 (x264 704x480 AAC CRC32：4D75B78F).mp4 BS2DBUB0xb 319,021,892 71f68cee667b0705712a4ee6dcbe42f43259ceac<br>
+[アニメ DVD] らき☆すた 第04話 「やる気の問題」 (x264 704x480 AAC CRC32：798BA48E rev2).mp4 BS2DBUB0xb 302,480,574 129c2c4028a256a30df9c7487e5040c5ac6c8aa9<br>
+[アニメ DVD] らき☆すた 第05話 「名射手」 (x264 704x480 AAC CRC32：D4757642).mp4 BS2DBUB0xb 343,235,853 7ec46c9e060cef71a9e9a56ce4013d135170bbde<br>
+[アニメ DVD] らき☆すた 第06話 「夏の定番」 (x264 704x480 AAC CRC32：5AD6C33E).mp4 BS2DBUB0xb 332,796,567 bd999fa18ae5a44690154f3e2ca736d4bf29552c<br>
+[アニメ DVD] らき☆すた 第07話 「イメージ」 (x264 704x480 AAC CRC32：479F7243).mp4 BS2DBUB0xb 327,565,601 394f6ae9213ddaa01d459f971a047a29c2173ab2<br>
+[アニメ DVD] らき☆すた 第08話 「私じゃなくても旺盛」 (x264 704x480 AAC CRC32：F7179CB3).mp4 BS2DBUB0xb 344,750,862 95eea869aabaaf23d1ade913078f78703c4e8f57<br>
+[アニメ DVD] らき☆すた 第09話 「そんな感覚」 (x264 704x480 AAC CRC32：3BA2E03E).mp4 BS2DBUB0xb 301,786,432 2d93730fe1ba26cc7add9bf290c14ef75eaffbcb<br>
+[アニメ DVD] らき☆すた 第10話 「願望」 (x264 704x480 AAC CRC32：812E7629).mp4 BS2DBUB0xb 328,363,898 6315b0fca274407fe17e288b2e3d2cb46014d0d0<br>
+[アニメ DVD] らき☆すた 第11話 「いろんな聖夜の過ごし方」 (x264 704x480 AAC CRC32：329EFF25).mp4 BS2DBUB0xb 331,345,055 613f4b1e284ea4bfd7e4f5725df6c47c31533611<br>
+[アニメ DVD] らき☆すた 第12話 「お祭りへいこう」 (x264 704x480 AAC CRC32：DE77166B).mp4 BS2DBUB0xb 355,771,925 7554c73972f27c6ded212bbf66afcd65274badee<br>
+[アニメ DVD] らき☆すた 第13話 「おいしい日」 (x264 704x480 AAC CRC32：1B6F112D).mp4 BS2DBUB0xb 414,432,130 f70a5da081542a84334872371a45786cf5a3dbd0<br>
+[アニメ DVD] らき☆すた 第14話 「ひとつ屋根の下」 (x264 704x480 AAC CRC32：996BE9AA).mp4 BS2DBUB0xb 420,044,291 bbe1677708578c4d636ba03a6920dfaefc110bbc<br>
+[アニメ DVD] らき☆すた 第15話 「いきなりは変われない」 (x264 704x480 AAC CRC32：BC3E8629).mp4 BS2DBUB0xb 357,342,399 5ad4da92721b82d7979684c24f924c572e7b365d<br>
+[アニメ DVD] らき☆すた 第16話 「リング」 (x264 704x480 AAC CRC32：81AE79EA).mp4 BS2DBUB0xb 340,681,271 c47046c14d21350274df75bbb3ad80da018cb4bd<br>
+[アニメ DVD] らき☆すた 第17話 「お天道様のもと」 (x264 704x480 AAC CRC32：1A8B8DE1).mp4 BS2DBUB0xb 333,935,717 57ecc586545d63592b2259b5e61a661d388d730f<br>
+[アニメ DVD] らき☆すた 第18話 「十人十色」 (x264 704x480 AAC CRC32：B63EA108).mp4 BS2DBUB0xb 336,889,725 5795c6fe4a9fea1b0fb82d5ac298924240e6fb1a<br>
+[アニメ DVD] らき☆すた 第19話 「二次に本質あり」 (x264 704x480 AAC CRC32：0E4591EE).mp4 BS2DBUB0xb 248,113,967 d15d67879e7c2c1baafb8aa202a1686db4e83682<br>
+[アニメ DVD] らき☆すた 第20話 「夏の過ごし方」 (x264 704x480 AAC CRC32：C0D54897).mp4 BS2DBUB0xb 326,852,442 f5a4569bfd9ef978be2957ac80b8939730faa212<br>
+[アニメ DVD] らき☆すた 第21話 「パンドラの箱」 (x264 704x480 AAC CRC32：0F853C6A).mp4 BS2DBUB0xb 366,643,929 de0485d918030d47b61e8e54df5f3e4ef1775935<br>
+[アニメ DVD] らき☆すた 第22話 「ここにある彼方」 (x264 704x480 AAC CRC32：F07E7A0C).mp4 BS2DBUB0xb 297,462,928 a9c0dc820eedbc3ab93086fa797fd2a4939630cb<br>
+<hr class="A">
+[アニメ DVD] らき☆すた 第01話 ｢つっぱしる女｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 321,804,536 6ea1aa7e61f4e29cc17a2617ce4a0f3a1160719b<br>
+[アニメ DVD] らき☆すた 第02話 ｢努力と結果｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 321,821,282 1b45d1b609889f788f9742f47017f9ec6c80b619<br>
+[アニメ DVD] らき☆すた 第03話 ｢いろいろな人たち｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 321,607,863 82b5029c6e45f8a3d9d5b1c002b9df3a12930c8e<br>
+[アニメ DVD] らき☆すた 第04話 ｢やる気の問題｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 321,678,959 f1d5e94d4a9d55a539350c8537b87e2bf856941b<br>
+[アニメ DVD] らき☆すた 第05話 ｢名射手｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 321,626,991 9e2ad07c9e41dc8a68f41a4c0846b07564450128<br>
+[アニメ DVD] らき☆すた 第06話 ｢夏の定番｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 321,595,454 071ce9e2ea48124e0c35b2b8c165eaba957bdd7f<br>
+[アニメ DVD] らき☆すた 第07話 ｢イメージ｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 321,837,504 869822fa0bb23585f5754cab08b1f577c3216286<br>
+[アニメ DVD] らき☆すた 第08話 ｢私じゃなくても旺盛｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 321,878,793 d12f576c88e4f6143895214d03945a5b0c8b828a<br>
+[アニメ DVD] らき☆すた 第09話 ｢そんな感覚｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 317,156,250 3e796b22767812a0fa21b322ae24086b459419f5<br>
+[アニメ DVD] らき☆すた 第10話 ｢願望｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 317,148,764 15724f68fa1931b24abd1098c1f331a1df7f8cff<br>
+[アニメ DVD] らき☆すた 第11話 ｢いろんな聖夜の過ごし方｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 317,129,605 bc15aca649223aeaca813d67fe52d019a9165dd8<br>
+[アニメ DVD] らき☆すた 第12話 ｢お祭りへいこう｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 317,133,483 e9468bc4f150b568e56ef66ffa5176b097a1bfa6<br>
+[アニメ DVD] らき☆すた 第13話 ｢おいしい日｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 317,088,999 e3412c24937273f6a9d4c65d251dbe99188d39c0<br>
+[アニメ DVD] らき☆すた 第14話 ｢ひとつ屋根の下｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 317,133,813 3d1d455802834d2744ca7c5436f0d08cc985d0d6<br>
+[アニメ DVD] らき☆すた 第15話 ｢いきなりは変われない｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 317,312,506 8733e4f45572fcff13ac935563904f464611391e<br>
+[アニメ DVD] らき☆すた 第16話 ｢リング｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 317,207,845 c301708c8243ba0e074c28f7fe6b0eb1cbe12bf9<br>
+[アニメ DVD] らき☆すた 第17話 ｢お天道様のもと｣ ( 16：9 x264+AAC.mp4 EOLIAXv6gM5vCI0 317,267,166 f462b97dfe6c52370e12caf573c0e7c521fbbfef<br>
+[アニメ DVD] らき☆すた 第18話 ｢十人十色｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 317,252,538 e743979bc1a2791f112c9274212c27f111a5040f<br>
+[アニメ DVD] らき☆すた 第19話 ｢二次に本質あり｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 164,642,419 7bed9bff6a309c5f382d4d05bbc366f79be5f0f5<br>
+[アニメ DVD] らき☆すた 第20話 ｢夏の過ごし方｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 216,460,863 cf6285dcbb641ad501f6b3fbe5d77f242355ffe6<br>
+[アニメ DVD] らき☆すた 第21話 ｢パンドラの箱｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 212,955,361 ddce0c05ae3852258a40ffa8051e2af8fe884d81<br>
+[アニメ DVD] らき☆すた 第22話 ｢ここにある彼方｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 154,863,426 90bbf7fa4996d51894f629a2405e07dbced54480<br>
+[アニメ DVD] らき☆すた 第23話 ｢微妙なライン｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 201,889,294 4f4a83f9c5003be92894b490c08d7c74b876db73<br>
+[アニメ DVD] らき☆すた 第24話 ｢未定｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 185,614,555 5e447e6291b0edb76795c0be51c3b0f8eb6443ab<br>
+<hr class="A">
+[アニメ DVD] らき☆すた ＢＧＭ＆ラジオ番組「らっきー☆ちゃんねる」のダイジェストを収録したスペシャルCD.rar JPf6cBVnjF 42,439,322 076fcf7622b25ad21cd565fef3820935a05a475f<br>
+[アニメ DVD] らき☆すた Vol.01 映像特典 「ノンテロップOP(歌詞付き)」 (704x396 x264).avi JPf6cBVnjF 48,619,068 8718dc24c67d3247d71d143d5407d33225d730bd<br>
+[アニメ DVD] らき☆すた Vol.01 映像特典 「名場面カット集」 (704x396 x264).avi JPf6cBVnjF 12,514,876 a85bc0814ab319e3c35e82561ba7d0c2de61a525<br>
+[アニメ DVD] らき☆すた 第01話 「つっぱしる女」 (704x396 x264) rev2.avi JPf6cBVnjF 206,609,154 661fa2f9acf3d295fa35a6e02ca78365f5ad5d32<br>
+[アニメ DVD] らき☆すた 第02話 「努力と成果」 (704x396 x264) rev2.avi JPf6cBVnjF 217,754,580 a0a1d68495c3501e2aba220dd9e19fbecfd1320b<br>
+<hr class="A">
+[アニメ DVD] らき☆すた Vol.01 映像特典 「ノンテロップOP（歌詞付き）」 (704x480 16：9 x264 AAC rev2).mp4 YUKKY1dzxv 37,153,619 aa8f77203b255f08250d3438ca95572ba9661304<br>
+[アニメ DVD] らき☆すた 第01話 「つっぱしる女」 (704x480 16：9 x264 AAC rev2).mp4 YUKKY1dzxv 187,210,420 f33c511c52b2d4214a2b91a4cf73de564b64d00a<br>
+[アニメ DVD] らき☆すた 第02話 「努力と結果」 (704x480 16：9 x264 AAC rev2).mp4 YUKKY1dzxv 192,591,444 40f843db0428c5514abc7cc9d551d12af1d7e631<br>
+[アニメ DVD] らき☆すた 第03話 「いろいろな人たち」 (704x480 16：9 x264 AAC).mp4 YUKKY1dzxv 187,892,091 941c54d705625da3a75f80e19e6871b62d3b3a8f<br>
+[アニメ DVD] らき☆すた 第04話 「やる気の問題」 (704x480 16：9 x264 AAC rev2).mp4 YUKKY1dzxv 178,436,696 c3d3c2a4d0f284da3353631d34b714a97842d2ed<br>
+[アニメ DVD] らき☆すた 第05話 「名射手」 (704x480 16：9 x264 AAC rev2).mp4 YUKKY1dzxv 199,241,877 e16dcf42384578f68aded8d7d02ab2bef38aa3eb<br>
+[アニメ DVD] らき☆すた 第05話 「名射手」 (704x480 16：9 x264 AAC).mp4 YUKKY1dzxv 199,289,657 1a7f5b068697488b31385d9137e9170aa2966d19<br>
+[アニメ DVD] らき☆すた 第06話 「夏の定番」 (704x480 16：9 x264 AAC).mp4 YUKKY1dzxv 210,591,650 655d2b1333544368903b57da03b19e1d18ecbcdf<br>
+[アニメ DVD] らき☆すた 第07話 「イメージ」 (704x480 16：9 x264 AAC).mp4 YUKKY1dzxv 199,855,679 7ca61d1ba1c9c168ac0017f03158a35f920ec194<br>
+[アニメ DVD] らき☆すた 第08話 「私じゃなくても旺盛」 (704x480 16：9 x264 AAC).mp4 YUKKY1dzxv 219,634,797 c7215bbb56181d6450a2c3e73b2e0d31cb0b9c86<br>
+[アニメ DVD] らき☆すた 第09話 「そんな感覚」 (704x480 16：9 x264 AAC).mp4 YUKKY1dzxv 180,639,032 9c921e5dc5ef4acab2b7a9a40293223fe24c723d<br>
+[アニメ DVD] らき☆すた 第10話 「願望」 (704x480 16：9 x264 AAC).mp4 YUKKY1dzxv 199,222,674 1e36156d709985c891ae4b8e0f9846baeb327c2c<br><br>
+[アニメ DVD] らき☆すた ハッピーバレンタイン(柊つかさ).mp4 YUKKYavclL 993,082 b6ff76712a752bb1178d428700d5525b796d442b<br>
+[アニメ DVD] らき☆すた Vol.8 映像特典内 「福原香織_ウェディングドレスシーン」 (640x480 x264 AAC).mp4 YUKKYavclL 56,972,433 5c64549b0da16340cfaacda642c98fca9811a26f<br>
+[アニメ DVD] らき☆すた Vol.8 映像特典内 「福原香織_チアシーン」 (640x480 x264 AAC).mp4 YUKKYavclL 95,220,477 5a11b851314bd23597b82242ac3099030a5a3bd3<br>
+[アニメ DVD] らき☆すた 第01話 「つっぱしる女」 (1280x720 x264 AAC S-upconv rev2).mp4 YUKKYavclL 262,528,626 4b5edbf2dc90c88c05042611066c756727a179c2<br>
+[アニメ DVD] らき☆すた 第02話 「努力と結果」 (1280x720 x264 AAC S-upconv rev2).mp4 YUKKYavclL 274,809,766 8e4afd35cbf57c479224fd0c9484e8c1ed4b932f<br>
+[アニメ DVD] らき☆すた 第03話 「いろいろな人たち」 (1280x720 x264 AAC S-upconv rev2).mp4 YUKKYavclL 265,977,193 8b7aa72259f99bb55036486f6a130d610e877e25<br>
+[アニメ DVD] らき☆すた 第04話 「やる気の問題」 (1280x720 x264 AAC S-upconv rev2).mp4 YUKKYavclL 248,864,921 465bee8b993274076e9719bd7f1467b60f909896<br>
+[アニメ DVD] らき☆すた 第05話 「名射手」 (1280x720 x264 AAC S-upconv rev2).mp4 YUKKYavclL 285,328,719 9475f7d07d5066dded6e009b7b966a1d5c182b01<br>
+[アニメ DVD] らき☆すた 第06話 「夏の定番」 (1280x720 x264 AAC S-upconv rev2).mp4 YUKKYavclL 302,717,397 c495cc3bae234b63851dd9371f4c5b660505cc0f<br>
+[アニメ DVD] らき☆すた 第07話 「イメージ」 (1280x720 x264 AAC S-upconv rev2).mp4 YUKKYavclL 289,955,947 a6951c63ce4dd3bf131ed49a03eaa253d9b96008<br>
+[アニメ DVD] らき☆すた 第08話 「私じゃなくても旺盛」 (1280x720 x264 AAC S-upconv rev2).mp4 YUKKYavclL 320,945,995 e5228f1d67e9bae2b7d3285e334137987564ff93<br>
+[アニメ DVD] らき☆すた 第09話 「そんな感覚」 (1280x720 x264 AAC S-upconv rev2).mp4 YUKKYavclL 257,225,391 2c39396f11ffcfbc024f04360bc42bfac7dc89a7<br>
+[アニメ DVD] らき☆すた 第10話 「願望」 (1280x720 x264 AAC S-upconv rev2).mp4 YUKKYavclL 286,899,849 44bc86305ec5d5537ae6617fd31761935682a8ac<br>
+[アニメ DVD] らき☆すた 第11話 「いろんな聖夜の過ごし方」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 285,574,339 051f87b1f4c7c0fa91573a3460fc4a99b662a0b1<br>
+[アニメ DVD] らき☆すた 第12話 「お祭りへいこう」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 322,789,445 0b3e906b004842e1e0935802bb63749077fb7339<br>
+[アニメ DVD] らき☆すた 第13話 「おいしい日」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 445,444,797 321b4fe6215f691043a20aba361f6732434b40e1<br>
+[アニメ DVD] らき☆すた 第14話 「ひとつ屋根の下」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 450,659,534 84a78d16453845bb992759ad88b0bff457d76938<br>
+[アニメ DVD] らき☆すた 第15話 「いきなりは変われない」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 401,159,282 e2e438433c266b1a4ac29369918a44b200f975a6<br>
+[アニメ DVD] らき☆すた 第16話 「リング」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 326,779,011 9caf223d98cdea5d17bcdbdb28cc06a51ee11963<br>
+[アニメ DVD] らき☆すた 第17話 「お天道様のもと」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 352,831,495 6c541dead8cbec31d35c5ebdda3224c0790e99c9<br>
+[アニメ DVD] らき☆すた 第18話 「十人十色」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 342,838,889 7a9c172eaa63ff84a831659225df4749e48cd349<br>
+[アニメ DVD] らき☆すた 第19話 「二次に本質あり」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 244,345,940 e7cf99673389ac4cf20667c1dae20bd9d915e407<br>
+[アニメ DVD] らき☆すた 第20話 「夏の過ごし方」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 406,580,309 c0bd560ca651e28ec74d9c84c1361363016a543d<br>
+[アニメ DVD] らき☆すた 第21話 「パンドラの箱」 (1280x720 x264 AAC S-upconv).mp4 345,185,293 7dcc74d4eb0f6271fb7ce000cbcbf71177c772ec<br>
+[アニメ DVD] らき☆すた 第22話 「ここにある彼方」 (1280x720 x264 AAC S-upconv).mp4 269,113,930 d7ca01d7dd5ea527b4573aa3bfe193ad605f179c<br><br>
+[アニメ DVD] らき☆すた 第13話 「おいしい日」 (1280x720 x264 AAC S-upconv 実写EDカット版).mp4 YUKKYavclL 319,398,385 8a1c7e9880818ca5508feafb1c1d80664f3f969c<br>
+[アニメ DVD] らき☆すた 第14話 「ひとつ屋根の下」 (1280x720 x264 AAC S-upconv 実写EDカット版 音声末尾切れ修正).mp4 YUKKYavclL 255,858,426 8e1e33b42162dab6a0deea48c00ffe6f8abb73b2<br>
+[アニメ DVD] らき☆すた 第15話 「いきなりは変われない」 (1280x720 x264 AAC S-upconv 実写EDカット版).mp4 YUKKYavclL 264,137,000 014478c32f48fd0a2af3138e416ce3d7490ce02f<br>
+[アニメ DVD] らき☆すた 第16話 「リング」 (1280x720 x264 AAC S-upconv 実写EDカット版).mp4 YUKKYavclL 264,958,634 d0d133872446539d27a672507a18ec9ea5488163<br>
+[アニメ DVD] らき☆すた 第17話 「お天道様のもと」 (1280x720 x264 AAC S-upconv 実写EDカット版).mp4 YUKKYavclL 287,385,296 165a186a1698b48bd4030beb7831245781e8110f<br>
+[アニメ DVD] らき☆すた 第18話 「十人十色」 (1280x720 x264 AAC S-upconv 実写EDカット版).mp4 YUKKYavclL 273,241,286 10ad184447cf866defc9e13ac3c8862f02b03119<br>
+[アニメ DVD] らき☆すた 第19話 「二次に本質あり」 (1280x720 x264 AAC S-upconv 実写EDカット版).mp4 YUKKYavclL 207,105,423 f82fa2b4bf93373c0a517e60163ac1d6c4449611<br>
+[アニメ DVD] らき☆すた 第20話 「夏の過ごし方」 (1280x720 x264 AAC S-upconv 実写EDカット版).mp4 YUKKYavclL 222,944,827 62eb9ff3f0e3b799f2c0e1110eb1b4735976f385<br>
+<hr class="A">
+[アニメ DVD] らき☆すた ＢＧＭ＆ラジオ番組「らっきー☆ちゃんねる」のダイジェストを収録したスペシャルCD.rar ZeroIoKMxJY0Qh 42,439,322 076fcf7622b25ad21cd565fef3820935a05a475f<br>
+[アニメ DVD] らき☆すた 01話 「つっぱしる女」 (704x396 x264).avi ZeroIoKMxJY0Qh 166,778,386 c0e1887ba488ca7758266c4b18be8a5664c1415c<br>
+[アニメ DVD] らき☆すた 02話 「努力と成果」 (704x396 x264).avi ZeroIoKMxJY0Qh 175,637,202 4913ba5edfa60c26ec1998ba487e893bce3aa88d<br>
+<hr class="A">
+[アニメDVD][070622] らき☆すた 第01話 「つっぱしる女」 (704x396 H.264 Lame MP3).avi 椎葉　泉RyRfDZIkGo 255,665,670 fbae5d7ecc1f3ea3b8c4825f8663c3afee116397<br>
+[アニメDVD][070622] らき☆すた 第02話 「努力と結果」 (704x396 H.264 Lame MP3).avi 椎葉　泉RyRfDZIkGo 242,328,584 f1a13b4a9409c6e84c4a8d4d0f55fcc8b00d7f6c<br>
+[アニメ DVD][070727] らき☆すた 第03話 「いろいろな人たち」 (704x396 x264 2-pass 1200k Lame 192k).avi 椎葉　泉RyRfDZIkGo 248,846,336 4f38f598cd72ede95426eadfd4d8717351d5c764<br>
+[アニメ DVD][070727] らき☆すた 第04話 「やる気の問題」 (704x396 x264 2-pass 1200k Lame 192k).avi 椎葉　泉RyRfDZIkGo 248,829,952 8d8b4605f731a5554a367006b58a5dfa454ad491<br>
+[アニメ DVD][070824] らき☆すた 第05話 「名射手」 (704x396 x264.667 2-pass 1200k).mp4 椎葉　泉RyRfDZIkGo 247,440,835 3edf7c3b6e1b122df0a3f73343a0cb269bbb1d41<br>
+[アニメ DVD][070824] らき☆すた 第06話 「夏の定番」 (704x396 x264.667 2-pass 1200k) Ver2.0.mp4 椎葉　泉RyRfDZIkGo 247,588,296 416be6502c56f0f57489c4bd970c1f26fb32a92b<br>
+[アニメ DVD][070928] らき☆すた 第07話 「イメージ」 (704x396 x264.680 2-pass 1200k).mp4 椎葉　泉RyRfDZIkGo 247,626,785 b48e80a14cce72e013cfbbbd828d2f921cca44a0<br>
+[アニメ DVD][070928] らき☆すた 第08話 「私じゃなくても旺盛」 (704x396 x264.680 2-pass 1200k).mp4 椎葉　泉RyRfDZIkGo 247,702,122 1106f79980322d2b8693ef9973f9fe805dc8e0a4<br>
+[アニメ DVD][071026] らき☆すた 第09話 「そんな感覚」 (704x396 x264.680 2-pass 1200k).mp4 椎葉　泉RyRfDZIkGo 247,625,904 3bbb35b70405536f35cb31399386ae78f00e626c<br>
+[アニメ DVD][071026] らき☆すた 第10話 「願望」 (704x396 x264.680 2-pass 1200k).mp4 椎葉　泉RyRfDZIkGo 247,647,309 5a5e219c53e8ce0d325b43b27ee7ff75db36d3b4<br>
+[アニメ DVD][071122] らき☆すた 第11話 「いろんな聖夜の過ごし方」 (704x396 x264.680 2-pass 1200k).mp4 椎葉　泉RyRfDZIkGo 247,600,224 d64b14ecaedb5d6fbcf2dffa0708361bebee66ed<br>
+[アニメ DVD][071122] らき☆すた 第12話 「お祭りへいこう」 (704x396 x264.680 2-pass 1200k).mp4 椎葉　泉RyRfDZIkGo 247,634,932 c174281e116d38ee3389f5b05f7306ae591c38da<br>
+<hr class="A">
+[アニメ] らき☆すた 第01巻 映像特典 「ノンテロップOP（歌詞付き）」 (DVD 704x396 DivX651).avi Nsv6A1uD8s 64,669,696 68640f04d506e1748ae8e9dab8b5e66e42e6cf63<br>
+[アニメ] らき☆すた 第01巻 映像特典 「番宣スポット（チバテレビ版）」 (DVD 640x480 DivX651).avi Nsv6A1uD8s 2,383,872 b3d1ca28589888638e985ecfeba4e0ead38fa2a7<br>
+[アニメ] らき☆すた 第01巻 映像特典 「名場面カット集」 (DVD 704x396 DivX651).avi Nsv6A1uD8s 19,038,208 a330e79690383e72870f5e0e5f28b01827fd1212<br>
+[アニメ] らき☆すた 第01話 「つっぱしる女」 (DVD 704x396 DivX651).avi Nsv6A1uD8s 284,114,944 b79a758e39504343ee41ea656800f602209f3af1<br>
+[アニメ] らき☆すた 第02話 「努力と結果」 (DVD 704x396 DivX651).avi Nsv6A1uD8s 331,847,680 58a38e99f9b276132b72edce84ac52f0e083c57b<br>
+<hr class="A">
+[アニメ] らき☆すた DVD 01 映像特典 ノンテロップOP（歌詞付き） (DVD 704x480 16：9 WMV9).wmv q7GuCmXnLk 93,591,547 272f52bfbff46ff9b46a848aaa7518975b5aaee5<br>
+[アニメ] らき☆すた DVD 01 映像特典 番宣スポット（チバテレビ版） (DVD 640x480 WMV9).wmv q7GuCmXnLk 1,583,879 a27ffa6ff906f739309ffe2029c0916f233953d6<br>
+[アニメ] らき☆すた DVD 01 映像特典 名場面カット集 (DVD 704x480 16：9 WMV9).wmv q7GuCmXnLk 58,391,827 a6ad3ac8d27c79e8beff97fc5875f2912d57c768<br>
+[アニメ] らき☆すた 第01話 「つっぱしる女」 (DVD 704x480 16：9 WMV9).wmv q7GuCmXnLk 225,273,795 35dc2c8f8c1377f538e790ca174d0ae532f9bdbc<br>
+[アニメ] らき☆すた 第02話 「努力と結果」 (DVD 704x480 16：9 WMV9).wmv q7GuCmXnLk 237,593,795 552939fcf5b553e15d0fd20b3705ecf25d38a0a1<br>
+<hr class="A">
+(アニメ) らき☆すた Vol.1 特典映像 「ノンテロップOP(歌詞付き)」 [DVD 720×480 H.264 mp3 192k].avi lII55oTryy 26,424,256 fdb36182ea13ae358d79402679445b4bf19e2c4b<br>
+(アニメ) らき☆すた Vol.1 特典映像 「番宣スポット(チバテレビ版)」 [DVD 720×480 H.264 mp3 192k].avi lII55oTryy 1,730,308 d068c33cbc1bf2eddd66535d31891b13c248751a<br>
+(アニメ) らき☆すた Vol.1 特典映像 「名場面集」 [DVD 720×480 H.264 mp3 192k].avi lII55oTryy 6,175,466 f38f999cdb307346101245ddbe2fd37e6e1ced80<br>
+(アニメ) らき☆すた 第01話 「つっぱしる女」 [DVD 720×480 H.264 mp3 192k].avi lII55oTryy 128,065,470 aa2b0f612e3407d87fa53439d46ccbe0c8637fe3<br>
+(アニメ) らき☆すた 第02話 「努力と結果」 [DVD 720×480 H.264 mp3 192k].avi lII55oTryy 136,074,446 d9fe50f9afd22a2b4e13687e9e84e8023e316618<br>
+<hr class="A">
+(アニメ)[DVD] らき☆すた OP 「もってけ！セーラーふく」 (PS3アプコン 1280x720 x264).avi 87,361,536 5b50b02e42f8f219dd418f77809b51e4199195bd<br>
+(アニメ)[DVD] らき☆すた 第01巻 映像特典 TVスポットCM(チバテレビ版) (PS3アプコン版 1280x720 x264).avi 2,420,736 03cc638fe5e6ecaa019dc404b92ba588c043b928<br>
+(アニメ)[DVD] らき☆すた 第01話 「つっぱしる女」 (PS3アプコン版 1280x720 x264).avi 439,463,936 e8951bc43ea623aa96244bf67c89d316776a3f7b<br>
+(アニメ)[DVD] らき☆すた 第02話 「努力と結果」 (PS3アプコン版 1280x720 x264).avi 438,513,664 67360d6e71fcb0e4ac66b0c4af67607e786c0129<br>
+<div class="sup">5vEoAyLhCo</div>
+<hr class="A">
+[DVD] らき☆すた Vol.01 映像特典 「ノンテロップOP（歌詞付き）」 (1024x576 DivX6.61).avi puiAh0X7b3 98,962,190 f9d2d9a463dac5f1c50fa86d60f7d8cddf0d4ed1<br>
+[DVD] らき☆すた Vol.01 映像特典 「名場面カット集」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 42,035,200 e9d91861ce1eeb59007350193b3c333eb6bdd6f1<br>
+[DVD] らき☆すた Vol.02 映像特典 「名場面カット集」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 13,852,856 953c56d5e2bb1c231ca132b59e9e124cfc8722e0<br>
+[DVD] らき☆すた Vol.03 映像特典 「名場面カット集」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 16,502,784 9646ed9d72da48e730ff722cbbd479647963df03<br>
+[DVD] らき☆すた Vol.04 映像特典 「名場面カット集」 (1024x576 DivX6.61).avi puiAh0X7b3 19,122,176 cb002c253c3e83a1307c0c0ac46ec6341b8124f3<br>
+[DVD] らき☆すた Vol.05 映像特典 「名場面カット集」 (1024x576 DivX6.61).avi puiAh0X7b3 17,018,880 03f58046c824771c6f19e9bf61f1627137427928<br>
+[DVD] らき☆すた Vol.06 映像特典 「名場面カット集」 (1024x576 DivX6.61).avi puiAh0X7b3 22,958,080 9ba833e007ff753f090db899a12f05f64115d201<br>
+[DVD] らき☆すた Vol.07 映像特典 「名場面カット集」 (1024x576 DivX6.61).avi puiAh0X7b3 20,822,016 a74ffe19772b0806728b1b884d9a4827429a7d78<br>
+[DVD] らき☆すた Vol.08 映像特典 「名場面カット集」 (1024x576 DivX6.61).avi puiAh0X7b3 16,504,832 b44e6d6ef63912b0432e394203fc70bc79e756ff<br>
+[DVD] らき☆すた 第01話 「つっぱしる女」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 458,528,544 87fcb9f7682e89075365dbd51f8967000503aa3c<br>
+[DVD] らき☆すた 第02話 「努力と結果」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 505,864,464 7e19cae3b20139bbeae35254238357c0c259ced4<br>
+[DVD] らき☆すた 第03話 「いろいろな人たち」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 440,892,120 146f8d4c9e0bc7496a03035e14e0cf4e0f2b6b15<br>
+[DVD] らき☆すた 第04話 「やる気の問題」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 397,586,292 b7e04294339a12d656567b932309d1ce48a85ca4<br>
+[DVD] らき☆すた 第05話 「名射手」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 499,339,264 d5bd9662174c87d990094069bd1181c4a30dee09<br>
+[DVD] らき☆すた 第06話 「夏の定番」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 460,582,912 26c40b83ebafa674def1fb0a2dbcc0dd5115730f<br>
+[DVD] らき☆すた 第07話 「イメージ」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 464,633,856 30e9008f205ffc0d1bc2adc1a89386728ce6f269<br>
+[DVD] らき☆すた 第08話 「私じゃなくても旺盛」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 518,273,024 12aab6bfa06e46c4b0e8e06923e66f50d21740f7<br>
+[DVD] らき☆すた 第09話 「そんな感覚」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 424,968,192 79b29d0f77ddd28500ef13ac5e58842c4d7c764e<br>
+[DVD] らき☆すた 第10話 「願望」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 475,535,360 4aabae4dc8f7dc046c9afc55ffe7232e0080f48c<br>
+[DVD] らき☆すた 第11話 「いろんな聖夜の過ごし方」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 419,117,056 0bde34ce3956ba7522fb76c7c4c0c88fb6f62fad<br>
+[DVD] らき☆すた 第12話 「お祭りへいこう」 (1024x576 DivX6.61 120fps).avi puiAh0X7b3 461,430,784 800de80bb17ada109b774becbbd7e71cb2e6ed6e<br>
+[DVD] らき☆すた 第13話 「おいしい日」 (1024x576 DivX6.61 120fps[ED60]).avi puiAh0X7b3 590,753,792 bd4e081b302d8b4a2ba85bc484d8408d3dc6dea7<br>
+[DVD] らき☆すた 第14話 「ひとつ屋根の下」 (1024x576 DivX6.61 120fps[ED60]).avi puiAh0X7b3 587,044,864 bb87b7cc09060772426e4d4ae1bad59eab4c66e5<br>
+[DVD] らき☆すた 第15話 「いきなりは変われない」 (1024x576 DivX6.61 120fps[ED60]).avi puiAh0X7b3 533,424,128 785c04618579508fdd54adcce619b84b34d70617<br>
+[DVD] らき☆すた 第16話 「リング」 (1024x576 DivX6.61 120fps[ED30]).avi puiAh0X7b3 426,708,992 9c15a12e8e4d3b313c3e25f92bf63e53c4785b61<br><br>
+[DVD] らき☆すた Vol.01 映像特典 「名場面カット集」 (704x396 WMV9).wmv puiAh0X7b3 38,937,261 347ee29966487f24a796f8d2491c544a6785a3b6<br>
+[DVD] らき☆すた Vol.01 映像特典 「ノンテロップOP（歌詞付き）」 (704x396 WMV9).wmv puiAh0X7b3 61,863,277 09642c44a7bb89cab8d15eff748d0d1dd1094a67<br>
+[DVD] らき☆すた Vol.02 映像特典 「名場面カット集」 (704x396 WMV9).wmv puiAh0X7b3 41,401,377 e3e15aba7ce7593a99f80b5b6628d431ebcf6ad0<br>
+[DVD] らき☆すた Vol.03 映像特典 「名場面カット集」 (704x396 WMV9).wmv puiAh0X7b3 29,418,241 a06571ef1aff4101ffe32e5659d520a550c462cb<br>
+[DVD] らき☆すた Vol.04 映像特典 「白石みのるの冒険 エピソ―ド 03」 (640x480 WMV9 60fps).wmv puiAh0X7b3 312,706,068 ccfaa9193a254c1696e4f7134c850424c21ab41b<br>
+[DVD] らき☆すた Vol.04 映像特典 「名場面カット集」 (704x396 WMV9).wmv puiAh0X7b3 23,831,115 4b3629ae01c51f88fa13ac1f08ca38cf9def2ae3<br>
+[DVD] らき☆すた Vol.05 映像特典 「白石みのるの冒険 エピソ―ド 04」 (640x480 WMV9 60fps).wmv puiAh0X7b3 599,902,594 9d4c41240b2e358846d9c5565d63da34b4c24f8e<br>
+[DVD] らき☆すた Vol.05 映像特典 「名場面カット集」 (704x396 WMV9).wmv puiAh0X7b3 32,846,257 50f9e43906cdec49a4d93d4317eddde24bf84d8f<br>
+[DVD] らき☆すた Vol.06 映像特典 「白石みのるの冒険 エピソ―ド 05」 (640x480 WMV9 60fps).wmv puiAh0X7b3 299,930,681 211312b99fb9cd1ea72a009f29064da7a7fcdb96<br>
+[DVD] らき☆すた Vol.06 映像特典 「名場面カット集」 (704x396 WMV9).wmv puiAh0X7b3 60,329,837 e05c31d87be307de674734634eb7ecbc78c4a6bd<br>
+[DVD] らき☆すた Vol.07 映像特典 「白石みのるの冒険 エピソード 06」 (640x480 WMV9 60fps).wmv puiAh0X7b3 566,024,256 85658fbbf4b50d708b536f0d7191be16ed0681d8<br>
+[DVD] らき☆すた Vol.07 映像特典 「名場面カット集」 (704x396 WMV9).wmv puiAh0X7b3 41,817,577 d766444fc47d298c31ad5812c5fae7cc5730729f<br>
+[DVD] らき☆すた Vol.08 映像特典 「白石みのるの冒険 エピソード 07」 (640x480 WMV9 60fps).wmv puiAh0X7b3 589,065,060 5c74c0dd75d6f5a2ffdb65dd4fc83e3f2dd66839<br>
+[DVD] らき☆すた Vol.08 映像特典 「名場面カット集」 (704x396 WMV9).wmv puiAh0X7b3 46,659,245 2dec8db2776c5ccfea8122ba57ee840dfcef559d<br>
+[DVD] らき☆すた Vol.09 映像特典 「白石みのるの冒険 エピソード 08」 (640x480 WMV9 60fps).wmv puiAh0X7b3 315,313,107 933bdd3bd369a608695840464b6df26a641286c7<br>
+[DVD] らき☆すた Vol.09 映像特典 「名場面カット集」 (704x396 WMV9).wmv puiAh0X7b3 45,257,133 34c232bda5ec0336c1226b2cf817cf5bd1d38389<br>
+[DVD] らき☆すた Vol.10 映像特典 「白石みのるの冒険 エピソード 09」 (640x480 WMV9 60fps).wmv puiAh0X7b3 496,021,923 0b6a76140fa35329203a6d790eca1afd1ee932f7<br>
+[DVD] らき☆すた Vol.10 映像特典 「名場面カット集」 (704x396 WMV9).wmv puiAh0X7b3 39,681,547 e835407830e13925adf6b1e39fb588d15f2a737d<br>
+[DVD] らき☆すた Vol.11 映像特典 「白石みのるの冒険 エピソード 10」 (640x480 WMV9 60fps).wmv puiAh0X7b3 634,702,950 ec7041aa4f0ec0b033a4bbeef2638f1e53a43f70<br>
+[DVD] らき☆すた Vol.11 映像特典 「名場面カット集」 (704x396 WMV9).wmv puiAh0X7b3 53,790,299 90d5652ed62b027c7ecfdfe78b7478573014ee11<br>
+[DVD] らき☆すた Vol.12 映像特典 「白石みのるの冒険 エピソード 11」 (640x480 WMV9 60fps).wmv puiAh0X7b3 474,494,349 6dcc9bfa03f18285cbfccc4b9ecb7c70c95da372<br>
+[DVD] らき☆すた Vol.12 映像特典 「名場面カット集」 (704x396 WMV9).wmv puiAh0X7b3 52,815,393 3768eeee3a90cbdd12bfc534968cf678ce32c922<br>
+[DVD] らき☆すた 第01話 「つっぱしる女」 (704x396 WMV9).wmv puiAh0X7b3 293,000,591 aa5c04da32b62b273a959bb9406214310886155a<br>
+[DVD] らき☆すた 第02話 「努力と結果」 (704x396 WMV9).wmv puiAh0X7b3 309,245,379 3e03c140759bbc3c72661c2ca784b2e1035a65e9<br>
+[DVD] らき☆すた 第03話 「いろいろな人たち」 (704x396 WMV9).wmv puiAh0X7b3 288,629,951 859b68adb2543edf3813bd7c82f2051201d8cb7c<br>
+[DVD] らき☆すた 第04話 「やる気の問題」 (704x396 WMV9).wmv puiAh0X7b3 268,814,165 22fc1a35daa8f7f1390295599dff0c86f01aa276<br>
+[DVD] らき☆すた 第05話 「名射手」 (704x396 WMV9).wmv puiAh0X7b3 332,248,779 fe5785dcdcbbc80c3f4d91b80e28d57b1498dc04<br>
+[DVD] らき☆すた 第06話 「夏の定番」 (704x396 WMV9).wmv puiAh0X7b3 319,859,805 3ef3b9919eed7bffde35378a97bc71c153be3481<br>
+[DVD] らき☆すた 第07話 「イメージ」 (704x396 WMV9).wmv puiAh0X7b3 278,136,019 33404415122f6d160d6290016f6498b7e68f29ec<br>
+[DVD] らき☆すた 第08話 「私じゃなくても旺盛」 (704x396 WMV9).wmv puiAh0X7b3 309,617,821 d60c78a218df81f27f5f3f92304db717fe697923<br>
+[DVD] らき☆すた 第09話 「そんな感覚」 (704x396 WMV9).wmv puiAh0X7b3 216,793,619 14f236f092b172f0d5f0a1c568084f5058c4b4e9<br>
+[DVD] らき☆すた 第10話 「願望」 (704x396 WMV9).wmv puiAh0X7b3 248,812,161 5a62129327b025f0ce710f0167e75a4b1abca3f2<br>
+[DVD] らき☆すた 第11話 「いろんな聖夜の過ごし方」 (704x396 WMV9).wmv puiAh0X7b3 247,278,601 45f43ac5a35f1a5cdb18b0cbdcfbf9e2f2677557<br>
+[DVD] らき☆すた 第12話 「お祭りへいこう」 (704x396 WMV9).wmv puiAh0X7b3 275,014,129 f9dd30a963a6ad7221576b6cae2089f318d041e0<br>
+[DVD] らき☆すた 第13話 「おいしい日」 (704x396 WMV9 ED60).wmv puiAh0X7b3 368,990,389 362b8b6dc341f19422cff0248bb0cdf8d1e4e0e4<br>
+[DVD] らき☆すた 第14話 「ひとつ屋根の下」 (704x396 WMV9 ED60 rev2).wmv puiAh0X7b3 350,318,389 7f18b808df9ade2e3345ec960eeb27992c38c447<br>
+[DVD] らき☆すた 第15話 「いきなりは変われない」 (704x396 WMV9 ED60).wmv puiAh0X7b3 323,598,561 553729b8f6a6b5b7875f2fb6def88f218d221535<br>
+[DVD] らき☆すた 第16話 「リング」 (704x396 WMV9 ED30).wmv puiAh0X7b3 253,292,369 95a6eef997a30e64035d9bffdcf45dae7b0d0658<br>
+[DVD] らき☆すた 第17話 「お天道様のもと」 (704x396 WMV9 ED30).wmv puiAh0X7b3 279,801,199 f87e54472be4ca4aa76f2534516732dcfb0c4191<br>
+[DVD] らき☆すた 第18話 「十人十色」 (704x396 WMV9 ED30).wmv puiAh0X7b3 272,648,237 f520983ca6e9d40964ad44fe503673f3bc7e203d<br>
+[DVD] らき☆すた 第19話 「二次に本質あり」 (704x396 WMV9 ED30).wmv puiAh0X7b3 202,411,017 5e29e834c65300e3d431d4f9293189bbcff4615f<br>
+[DVD] らき☆すた 第20話 「夏の過ごし方」 (704x396 WMV9 ED60).wmv puiAh0X7b3 380,574,389 c1787eaa135de2f11eaeb7334fcc72b7d82a7b6f<br>
+[DVD] らき☆すた 第21話 「パンドラの箱」 (704x396 WMV9 ED30).wmv puiAh0X7b3 319,684,541 b096ab0838a3e059492baf56dd5bf1611b7f093d<br>
+[DVD] らき☆すた 第22話 「ここにある彼方」 (704x396 WMV9 ED60).wmv puiAh0X7b3 316,654,389 a74edf246b4e5348a4a472e3d3fe4220fa071875<br>
+[DVD] らき☆すた 第23話 「微妙なライン」 (704x396 WMV9 ED30).wmv puiAh0X7b3 307,142,211 fdfd10b17544efa2bb9ce639c545f15b93eab777<br>
+[DVD] らき☆すた 第24話(終) 「未定」 (704x396 WMV9 ED30).wmv puiAh0X7b3 277,084,435 253a3d533ea6edd78376b776d2e5f25a2958034f<br>
+<hr class="A">
+[DVD] らき☆すた 映像特典「歌詞付きOP」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 28,399,276 a4c53ef3c59d1b312d893fa035aba60a9dd3c941<br>
+[DVD] らき☆すた 第01話「つっぱしる女」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 103,958,641 ff8028b6359ef1d695eaf7f175185b023862cbe8<br>
+[DVD] らき☆すた 第02話「努力と結果」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 109,325,848 f51a8a211c4979f49320a10cc1eec2d219a899f4<br>
+[DVD] らき☆すた 第03話「いろいろな人たち」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 98,786,288 180670beff546dbda0cb9abacb93d78b3342c1f3<br>
+[DVD] らき☆すた 第04話「やる気の問題」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 94,258,888 2232af05140d6da1e04d7a1d2a3f93d46d0b3396<br>
+[DVD] らき☆すた 第05話「名射手」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 114,240,920 bd3440a22b1c459cb92b4d8becd69083cfd33fc3<br>
+[DVD] らき☆すた 第06話「夏の定番」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 119,179,548 f4c3a309132cc04601707dbe7f4c6227f7ab5078<br>
+[DVD] らき☆すた 第07話「イメージ」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 115,948,895 8b85609b0a5f93a58a930f5bd97b81d6f3a39bc5<br>
+[DVD] らき☆すた 第08話「私じゃなくても旺盛」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 133,564,978 2daf5806e58501f4953e2bcf082b471de91e7a86<br>
+[DVD] らき☆すた 第09話「そんな感覚」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 97,108,569 e880bc0f2cb89fadb4107237b622ff2f51c2af6a<br>
+[DVD] らき☆すた 第10話「願望」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 116,991,402 e177731acea90608799e2c792a7653a5e02eb290<br>
+[DVD] らき☆すた 第11話「いろんな聖夜の過ごし方」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 113,407,176 cb5fa1d57a3242932b31d46a866be27f3a663158<br>
+[DVD] らき☆すた 第12話「お祭りへいこう」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 125,995,831 bbf61505b8543746c58ae9ec69bb4e08b6d28591<br>
+[DVD] らき☆すた 第13話「おいしい日」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 197,406,279 707446b252e5ccf09fea20a2c871a4d405330042<br>
+[DVD] らき☆すた 第14話「ひとつ屋根の下」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 267,933,747 e635e2dd4e49aef93141f4892909d83d2ab77843<br>
+[DVD] らき☆すた 第15話「いきなりは変われない」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 162,612,217 6d65029872753280a71c5fd0100b8913a99234d3<br>
+[DVD] らき☆すた 第16話「リング」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 123,972,255 b3ae86947776d60e344991f2a24c7950af1fc039<br>
+[DVD] らき☆すた 第17話「お天道様のもと」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 144,734,036 8deda89b84b0448d7326446575402ce0ecf3e751<br>
+[DVD] らき☆すた 第18話「十人十色」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 137,322,444 73399df8b634bc60ebde97182a22542350997c49<br>
+[DVD] らき☆すた 第19話「二次に本質あり」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 117,061,282 7a70a93bba6b37a9398c2bfb7c525a44a996c5c7<br>
+[DVD] らき☆すた 第20話「夏の過ごし方」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 195,235,309 a268a53b10bb9992ea058cf155aaf1915bdbf60d<br>
+[DVD] らき☆すた 第21話「いろいろな人たち」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 161,882,523 f8f5ec3329f21e11f3e825e8c906666e67ceb3be<br>
+[DVD] らき☆すた 第22話「いろいろな人たち」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 132,309,183 739f533d2faea06cbcfe9e8b280dd8e98741895d<br>
+[DVD] らき☆すた 第23話「微妙なライン」(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 203,110,577 9ef6c27c2f97da8c6f516f6cbc9a75f60523823d<br>
+[DVD] らき☆すた 第24話「未定」(最終回)(x264 704×480 16：9 AAC).mkv 33P4cDuUo6 140,424,991 478564ec75d018bc3bdf69544c9ca4be95e60d4a<br>
+<hr class="A">
+[DVD] らき☆すた 第1巻 映像特典 「ノンテロップOP(歌詞付き)」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 37,180,305 ae8e65bda6a6b402fda9885b2d15eac838ae7aab<br>
+[DVD] らき☆すた 第1巻 映像特典 「番宣スポット(チバテレビ版)」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 3,363,424 fae4bae26ce39d958659737a315173b10fff4daa<br>
+[DVD] らき☆すた 第1巻 映像特典 「名場面カット集」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 18,449,845 281ba61a9976a26ae818695c08902335d7a31d3f<br>
+[DVD] らき☆すた 第2巻 映像特典 「名場面カット集」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 10,295,800 1aa58ec9b4cfe1d2c97926f8d1024b64c1a01e3a<br>
+[DVD] らき☆すた 第2巻 映像特典 白石みのる劇場 「白石みのるの冒険 エピソード01」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 367,633,696 eb9f72d68db33238d012d4308c3bfc56d2d2ca4e<br>
+[DVD] らき☆すた 第3巻 映像特典 「名場面カット集」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 10,378,931 da9d58d974522841c330d8c73bcf378081935e4f<br>
+[DVD] らき☆すた 第3巻 映像特典 白石みのる劇場 「白石みのるの冒険 エピソード02」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 252,400,112 754afee53581a716f618ea5b390edd23730cd7ef<br>
+[DVD] らき☆すた 第4巻 映像特典 「名場面カット集」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 10,239,078 e8f7cad2a57ab39f59a5a0c3532de4718b645f9d<br>
+[DVD] らき☆すた 第4巻 映像特典 白石みのる劇場 「白石みのるの冒険 エピソード03」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 330,067,163 36fc6d692cb3079d8ba1cefb885ba2fd82ff50a2<br>
+[DVD] らき☆すた 第5巻 映像特典 「名場面カット集」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 10,734,173 c654d05a26e7aa93ede9e58b2dd3e177ef753245<br>
+[DVD] らき☆すた 第5巻 映像特典 白石みのる劇場 「白石みのるの冒険 エピソード04」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 300,208,600 1d986a0a3e597440f09a4b8e3b1217bd73079ee6<br>
+[DVD] らき☆すた 第6巻 映像特典 「名場面カット集」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 13,097,408 d3c11b8431fadd3abcc15a2ed61374fca0a16f03<br>
+[DVD] らき☆すた 第6巻 映像特典 白石みのる劇場 「白石みのるの冒険 エピソード05」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 259,590,828 3284203567d600f01ad524c5513eb1fdf32d09a2<br>
+[DVD] らき☆すた 第01話 「つっぱしる女」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 234,853,628 1b1b59d1e058bc044a93fd025fead6937b6fddb1<br>
+[DVD] らき☆すた 第02話 「努力と結果」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 243,588,367 d267d1c2f9cd92af330e9be132ab59e9d0918c31<br>
+[DVD] らき☆すた 第03話 「いろいろな人たち」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 173,034,754 d37af3ce1918d9103cf43a653d3831546bbb0237<br>
+[DVD] らき☆すた 第04話 「やる気の問題」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 163,793,842 4b5260b06034666c8d251f0db9f63e99f6bf2f9f<br>
+[DVD] らき☆すた 第05話 「名射手」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 191,481,895 21ce2a87aaf2e1cde2311813f879fdb17db5412a<br>
+[DVD] らき☆すた 第06話 「夏の定番」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 200,629,604 7e03308517410e0cce4aa1a1fe2add8714961eab<br>
+[DVD] らき☆すた 第07話 「イメージ」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 190,194,079 a2e13c4fcdb398f233e97bc0bc5677e558c94895<br>
+[DVD] らき☆すた 第08話 「私じゃなくても旺盛」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 207,969,336 d0108a2f8f2503812ec680040fb9eddfbf59ad8e<br>
+[DVD] らき☆すた 第09話 「そんな感覚」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 166,976,084 c7c8da9d60cdbb00a843992c0c61bbb9b66309a3<br>
+[DVD] らき☆すた 第10話 「願望」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 189,698,451 4c972d45bf7f2ee1ac7dfb29e90a499905f21ed5<br>
+[DVD] らき☆すた 第11話 「いろんな聖夜の過ごし方」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 188,101,816 906f582b88856d8c2c7c40190777d27154fe3391<br>
+[DVD] らき☆すた 第12話 「お祭りへいこう」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 214,103,813 1cd12d4253a62c6be01ec24788a20187ed6a61d5<br>
+<hr class="A">
+[DVD]らき☆すた 第01話「つっぱしる女」(音ずれ修正版)(x264 720x480 SAR40：33)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 123,781,200 1fb72f54c6db872501779a19649dc8ecf949a353<br>
+[DVD]らき☆すた 第02話「努力と結果」(x264 720x480 SAR40：33)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 121,727,550 996069b948628101246ed6f8dc222b4e1bf4195a<br>
+[DVD]らき☆すた 第03話「いろいろな人たち」(音ずれ修正版)(x264 720x480 SAR40：33)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 119,387,916 9c616f5bcef35327a942f933fe2390080cbf485b<br>
+[DVD]らき☆すた 第04話「やる気の問題」(x264 720x480 SAR40：33)(AAC VBR 全帯域保持).mp4 ぬるい4UPrwrl4SQ 118,063,963 82427334961962d150dbbeda728c91cbaaf1d910<br>
+<hr class="A">
+（アニメ）らき☆すた Vol.1 映像特典「ノンテロップOP（歌詞付き）」[DVD 704x384 H.264 24fps VBR MP3 0h01m41s].avi ObKIuv0i4B 12,988,416 beec05a7e038d815f9c7c83d930aeaad7ef19ff6<br>
+（アニメ）らき☆すた Vol.1 映像特典「名場面カット集」[DVD 704x384 H.264 24fps VBR MP3 0h02m00s].avi ObKIuv0i4B 15,357,952 e33291f78a2740448a50f2cf36cf0671c3e5ca9a<br>
+（アニメ）らき☆すた Vol.2 映像特典「名場面カット集」[DVD 704x384 H.264 24fps VBR MP3 0h02m00s].avi ObKIuv0i4B 15,486,976 65759bab85c1d60dd3ba91736dc7888b74880085<br>
+（アニメ）らき☆すた Vol.3 映像特典「白石みのるの冒険Episode02」[DVD 704x384 H.264 24fps VBR MP3 0h11m45s].avi ObKIuv0i4B 98,981,888 f2d34bdfcc99eb7076f018dab54fa8a9355339cd<br>
+（アニメ）らき☆すた 第01話「つっぱしる女」[DVD 704x384 H.264 24fps VBR MP3 0h23m40s].avi ObKIuv0i4B 182,102,016 f16eb65f63b6aeda78d57428b088b64a64cc0335<br>
+（アニメ）らき☆すた 第02話「努力と結果」[DVD 704x384 H.264 24fps VBR MP3 0h23m41s].avi ObKIuv0i4B 182,046,720 c47f2c98ad43beec97f1f55fad4ee2da61dcbbe2<br>
+（アニメ）らき☆すた 第03話「いろいろな人たち」[DVD 704x384 H.264 24fps VBR MP3 0h23m41s].avi ObKIuv0i4B 182,159,360 c7c966bf7e94fe661cf8868881e3ff96c557d9e7<br>
+（アニメ）らき☆すた 第04話「やる気の問題」[DVD 704x384 H.264 24fps VBR MP3 0h23m41s].avi ObKIuv0i4B 182,104,064 8659c55103e1af2e480c71db220223ce6870a6f5<br>
+（アニメ）らき☆すた 第05話「名射手」[DVD 704x384 H.264 24fps VBR MP3 0h23m41s].avi ObKIuv0i4B 182,089,728 1fe6581e7cef134f97a8cf7ab09397303cdf8a62<br>
+（アニメ）らき☆すた 第06話「名夏の定番」[DVD 704x384 H.264 24fps VBR MP3 0h23m41s].avi ObKIuv0i4B 182,155,264 37eec624b305f71b6761ee99a987a3ca0dd9395a<br>
+<hr class="A">
+【アニメ】[DVD] らき☆すた 01 映像特典 「ノンテロップOP（歌詞付き）」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 88,531,234 c1fd1366e064bb78500cb57ed3c3ae075b980126<br>
+【アニメ】[DVD] らき☆すた 01 映像特典 「番宣スポット（チバテレビ版）」 (640x480 WMV9).wmv pcT6OjjAFE 2,143,616 2612936d45946c1e0d68c1c3fcc92ad24d587d84<br>
+【アニメ】[DVD] らき☆すた 01 映像特典 「名場面カット集」 (704x396 WMV9).wmv pcT6OjjAFE 13,713,887 0022e50988a85f388c373c17070fb4ce2b039ef3<br>
+【アニメ】[DVD] らき☆すた 02 映像特典 「名場面カット集」 (704x396 WMV9).wmv pcT6OjjAFE 9,890,198 c95be563c4922c445ef0b970ae637de135c8f447<br>
+【アニメ】[DVD] らき☆すた 03 映像特典 「名場面カット集」 (704x396 WMV9).wmv pcT6OjjAFE 9,577,724 cc5ba924753214e0b4476c33b4132492bc69da12<br>
+【アニメ】[DVD] らき☆すた 04 映像特典 「名場面カット集」 (704x396 WMV9).wmv pcT6OjjAFE 10,103,996 7c753fa8f4b67e5fa499704a4d221b0495590b3f<br>
+【アニメ】[DVD] らき☆すた 05 映像特典 「名場面カット集」 (704x396 WMV9).wmv pcT6OjjAFE 9,783,305 7e30f3c958347e73bcc0ba2dc4b803ea204a637c<br>
+【アニメ】[DVD] らき☆すた 06 映像特典 「名場面カット集」 (704x396 WMV9).wmv pcT6OjjAFE 11,666,366 5a2d4e144ffd7ab0291cc2ef367d35ab3b91506c<br>
+【アニメ】[DVD] らき☆すた 07 映像特典 「名場面カット集」 (704x396 WMV9).wmv pcT6OjjAFE 9,881,975 96e3fd8915347dc15406d31aa9495dd616512783<br>
+【アニメ】[DVD] らき☆すた 08 映像特典 「名場面カット集」 (704x396 WMV9).wmv pcT6OjjAFE 9,964,205 f63f352c0766d0d9948d964bf96bc58c4d0da32a<br>
+【アニメ】[DVD] らき☆すた 09 映像特典 「名場面カット集」 (704x396 WMV9).wmv pcT6OjjAFE 8,410,058 044f15b9baa98fdde52368b793b3935e0168f798<br>
+【アニメ】[DVD] らき☆すた 10 映像特典 「名場面カット集」 (704x396 WMV9).wmv pcT6OjjAFE 8,969,222 ddf785a05ba1619ee10b12df9aaf1fac775372db<br>
+【アニメ】[DVD] らき☆すた 11 映像特典 「名場面カット集」 (704x396 WMV9).wmv pcT6OjjAFE 9,750,407 dc3c736a059afbc1d25caebef82ed81f1147e9d8<br>
+【アニメ】[DVD] らき☆すた 12 映像特典 「名場面カット集」 (704x396 WMV9).wmv 9,799,745 8ca41d9ae27a7661d86a3d97201768eab81ddec2<br>
+【アニメ】[DVD] らき☆すた 第01話 「つっぱしる女」 (704x396 WMV9).wmv pcT6OjjAFE 234,501,014 79eb2c3d8c61e54f3a9f13e4f2720de4ec936cf9<br>
+【アニメ】[DVD] らき☆すた 第02話 「努力と結果」 (704x396 WMV9).wmv pcT6OjjAFE 247,320,671 b1dc22decf40b87d1b439dc760be919e4631025c<br>
+【アニメ】[DVD] らき☆すた 第03話 「いろいろな人たち」 (704x396 WMV9).wmv pcT6OjjAFE 230,060,594 a3e1484d603ebcb6317638da1239074f7c6101d2<br>
+【アニメ】[DVD] らき☆すた 第04話 「やる気の問題」 (704x396 WMV9).wmv pcT6OjjAFE 212,948,531 2754b4b6325fb099fb1793f195defd5b564be343<br>
+【アニメ】[DVD] らき☆すた 第05話 「名射手」 (704x396 WMV9).wmv pcT6OjjAFE 268,889,600 53e114e563cdca8f126afffbd4bcb922d46259df<br>
+【アニメ】[DVD] らき☆すた 第06話 「夏の定番」 (704x396 WMV9).wmv pcT6OjjAFE 268,297,550 a3f4796fd08b1f681ae7df203e3fa41d366c49ce<br>
+【アニメ】[DVD] らき☆すた 第07話 「イメージ」 (704x396 WMV9).wmv pcT6OjjAFE 269,522,771 44794fa40161318e8379437f7268d2e9adcd827a<br>
+【アニメ】[DVD] らき☆すた 第08話 「私じゃなくても旺盛」 (704x396 WMV9).wmv pcT6OjjAFE 307,258,118 16a12a135e6b4cb054ca81ec1c63426fa2270aa0<br>
+【アニメ】[DVD] らき☆すた 第09話 「そんな感覚」 (704x396 WMV9).wmv pcT6OjjAFE 225,973,763 335b22cbd6ab48390c1f10c408e996153ab29c82<br>
+【アニメ】[DVD] らき☆すた 第10話 「願望」 (704x396 WMV9).wmv pcT6OjjAFE 261,488,900 b594c28bb01388f53077c8747f3ddb9a84c96eaf<br>
+【アニメ】[DVD] らき☆すた 第11話 「いろんな聖夜の過ごし方」 (704x396 WMV9).wmv pcT6OjjAFE 262,409,882 0c0b98ed8262e13efd6a10c5782f515f9bf68853<br>
+【アニメ】[DVD] らき☆すた 第12話 「お祭りへいこう」 (704x396 WMV9).wmv pcT6OjjAFE 288,994,841 482595d3545d505599bfb084c22ce9e323dbe849<br>
+【アニメ】[DVD] らき☆すた 第13話 「おいしい日」 (704x396 WMV9).wmv pcT6OjjAFE 386,116,688 187117e1c1dcd7bf2fbddae9d1ecd0e5a519801b<br>
+【アニメ】[DVD] らき☆すた 第14話 「ひとつ屋根の下」 (704x396 WMV9).wmv pcT6OjjAFE 381,717,389 264e552eb16c4aff78c6657b63947358ec67a5f9<br>
+【アニメ】[DVD] らき☆すた 第15話 「いきなりは変われない」 (704x396 WMV9).wmv pcT6OjjAFE 329,665,793 e97dd1cb270964f52fe5831e21115a4dea618399<br>
+【アニメ】[DVD] らき☆すた 第16話 「リング」 (704x396 WMV9).wmv pcT6OjjAFE 275,509,115 64ec7547fdae3b507a5f810bcd37042820ba0c76<br>
+【アニメ】[DVD] らき☆すた 第17話 「お天道様のもと」 (704x396 WMV9).wmv pcT6OjjAFE 294,150,662 23d23af70a9efc1c111920f2650c949404603d18<br>
+【アニメ】[DVD] らき☆すた 第18話 「十人十色」 (704x396 WMV9).wmv pcT6OjjAFE 283,666,337 3193aa1f40105600429ccc110d3edcfd5cd7af87<br>
+【アニメ】[DVD] らき☆すた 第19話 「二次に本質あり」 (704x396 WMV9).wmv pcT6OjjAFE 216,994,247 8fe052ca4b1e8096f410b8589c75814da63dd103<br>
+【アニメ】[DVD] らき☆すた 第20話 「夏の過ごし方」 (704x396 WMV9).wmv pcT6OjjAFE 302,176,304 2a8a9ee2b8abee5313068f4fd1ec193c06d59cae<br>
+【アニメ】[DVD] らき☆すた 第21話 「パンドラの箱」 (704x396 WMV9).wmv pcT6OjjAFE 340,248,794 afa349a0a421b65a412512d728491767dec22b31<br>
+【アニメ】[DVD] らき☆すた 第22話 「ここにある彼方」 (704x396 WMV9).wmv pcT6OjjAFE 258,495,728 d001119124e57b725ad26fad1d1001298d408e0f<br>
+【アニメ】[DVD] らき☆すた 第23話 「微妙なライン」 (704x396 WMV9).wmv 332,987,885 d1cb48c4a3866edc97c81ee89857df2f4203bde4<br>
+【アニメ】[DVD] らき☆すた 第24話 「未定」 (704x396 WMV9).wmv 301,855,613 921009f206408f8690d0b8de41a700b673e4b8b3<br>
+<hr class="A">
+らき☆すた 第01話 ｢つっぱしる女｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 213,850,346 825c2c529238cccdd2fadf23ea59878b4442529d<br>
+らき☆すた 第02話 ｢努力と結果｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 223,086,242 af8ac0ce0317b09573bce30b85537cc12c070137<br>
+らき☆すた 第03話 ｢いろいろな人たち｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 203,638,756 0c60a387788697b406ec54bc2cef25e95825f0a8<br>
+らき☆すた 第04話 ｢やる気の問題｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 188,739,916 197c62c438390447012ec20f09533e3e0e7f622f<br>
+らき☆すた 第05話 ｢名射手｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 250,521,404 825763add84bbc7373b48a63a4e6009bf95a84db<br>
+らき☆すた 第06話 ｢夏の定番｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 254,670,610 01293b21be5fbe77b3385b400137df888a432967<br>
+らき☆すた 第07話 ｢イメージ｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 255,010,632 8d87dd3f87e5fd509b1e82f8acb8aedc8c24651e<br>
+らき☆すた 第08話 ｢私じゃなくても旺盛｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 302,356,870 b75acfd0b243782dd167f4deed601fcaef30c458<br>
+らき☆すた 第09話 ｢そんな感覚｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 203,702,980 29e1ddc71b187f76882781ff06abb130c20e246e<br>
+らき☆すた 第10話 ｢願望｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 245,722,058 ced6e36a68d96bfae93f10c4a55c610cbdfb44fd<br>
+らき☆すた 第11話 ｢いろんな聖夜の過ごし方｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 211,497,558 8336a940b9dc7ada81cd6a9fa25b46eaf563ea02<br>
+らき☆すた 第12話 ｢お祭りへ行こう｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 235,279,708 63b8e47260a9e80a332f0ed87c78b23a7473f952<br>
+らき☆すた 第13話 ｢おいしい日｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 311,651,218 b299f7f1e9ef654a1d5c3ea9d00fb109b3082feb<br>
+らき☆すた 第14話 ｢ひとつ屋根の下｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 309,445,744 3f9eeda491633e95e5c6b5cc8bdfadda6270d7c0<br>
+らき☆すた 第15話 ｢いきなりは変われない｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 257,983,558 8172b078dfccba9a21495acaaf5d3b4f88795061<br>
+らき☆すた 第16話 ｢リング｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 213,619,464 d8f79bde73a18434fe7eccb270584512622ca78d<br>
+らき☆すた 第17話 ｢お天道様のもと｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 247,265,196 9d74cdd659a24e7131f1087aabdce9a789fa3a6c<br>
+らき☆すた 第18話 ｢十人十色｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 241,492,944 023b0a1c32b600417f57217e158eecdc49dcbb78<br>
+らき☆すた 第19話 ｢二次に本質あり｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 188,404,028 ba7ccb78ff519c89b62e6e0d2819e47c5e1bc46b<br>
+らき☆すた 第20話 ｢夏の過ごし方｣(704x396 DivX661)24fps_q2[DVD].avi 7tavcb9QKU 253,495,268 07b566179198b260dcba3864f478c08ed04ba4e8<br>
+らき☆すた 第21話 ｢パンドラの箱｣(704x396 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 321,150,720 f8a90aa5b5bc550cd79232e869e2db42a2eaae3a<br>
+らき☆すた 第22話 ｢ここにある彼方｣(704x396 DivX682)24fps_q2[DVD].avi 7tavcb9QKU 237,274,528 61913079a285a1b0117a800811b60ba968cbe7f4<br>
+<hr class="A">
+らき☆すた DVD第01巻映像特典 ノンテロップOP(歌詞付き) (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q97).wmv rDLotN7hLy 138,058,310 c99a42a22484e2b10cc099337024cda3cc93a6f7<br>
+らき☆すた DVD第01巻映像特典 番宣スポット(チバテレビ版) (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 2,253,116 fa6c0ea4bbba33387067511a1ccec5bd838770e2<br>
+らき☆すた DVD第01巻映像特典 名場面カット集 (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 36,164,108 221b165efb4c3c41ca7be07456eb5cbef552f769<br>
+らき☆すた DVD第02巻映像特典 白石みのるの冒険 エピソード01 (DVD 704x476 NTSC4：3［pixelratio10：11］WVC1 q90).wmv rDLotN7hLy 969,188,884 44ba6a39f37122a138b73b54d7919cd7894d9153<br>
+らき☆すた DVD第02巻映像特典 名場面カット集 (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 22,346,169 3fd927f0083269bb054198ba17967a0d1099bd71<br>
+らき☆すた DVD第03巻映像特典 白石みのるの冒険 エピソード02 (DVD 704x476 NTSC4：3［pixelratio10：11］WVC1 q90).wmv rDLotN7hLy 570,466,956 eeb921b8d5d0c04f10d2ac73db0891636b3fddad<br>
+らき☆すた DVD第03巻映像特典 名場面カット集 (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 23,924,575 9a56c5909cc690e752779b7b003ca1953acbf570<br>
+らき☆すた DVD第04巻映像特典 白石みのるの冒険 エピソード03 (DVD 704x476 NTSC4：3［pixelratio10：11］WVC1 q90).wmv rDLotN7hLy 769,026,702 b04ee93aa17d8367f42f73e2563d780af316114e<br>
+らき☆すた DVD第04巻映像特典 名場面カット集 (DVD 704x480 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 25,713,810 9126829ac1ae1c2a2db2be4082c021a2bc8b2593<br>
+らき☆すた DVD第05巻映像特典 白石みのるの冒険 エピソード04 (DVD 704x476 NTSC4：3［pixelratio10：11］WVC1 q90).wmv rDLotN7hLy 639,315,498 84186cf9113b2e18dd7e1bf861658413aeaaaa88<br>
+らき☆すた DVD第05巻映像特典 名場面カット集 (DVD 704x480 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 25,451,170 a1bc4cddd17617df238f228161eacb39f8dae347<br>
+らき☆すた DVD第06巻映像特典 白石みのるの冒険 エピソード05 (DVD 704x476 NTSC4：3［pixelratio10：11］WVC1 q90).wmv rDLotN7hLy 336,623,374 431c2b9810f85b356446d0e728a318074b380769<br>
+らき☆すた DVD第06巻映像特典 名場面カット集 (DVD 704x480 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 33,330,370 65042fa9835ebd0f42c93847674ae24e91b759a0<br>
+らき☆すた DVD第07巻映像特典 白石みのるの冒険 エピソード06 (DVD 704x476 NTSC4：3［pixelratio10：11］WVC1 q90).wmv rDLotN7hLy 803,597,354 b346bc7ef6f97dc18c827a8e8cf92f6e5adf5c1d<br>
+らき☆すた DVD第07巻映像特典 名場面カット集 (DVD 704x480 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 23,645,160 6b051d5982c0da0c5da24b9b8bf09de0ee54da94<br>
+らき☆すた DVD第08巻映像特典 白石みのるの冒険 エピソード07 (DVD 704x476 NTSC4：3［pixelratio10：11］WVC1 q90).wmv rDLotN7hLy 626,102,263 2284ed690464b80c68c365e1c69975403558eac5<br>
+らき☆すた DVD第08巻映像特典 名場面カット集 (DVD 704x480 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 17,883,855 63b189c420fc75bae65c24f4a7ae19ab06398619<br>
+らき☆すた DVD第09巻映像特典 白石みのるの冒険 エピソード08 (DVD 704x476 NTSC4：3［pixelratio10：11］WVC1 q90).wmv rDLotN7hLy 241,416,780 39f48299ff4b99d25cec96642037362642b0332a<br>
+らき☆すた DVD第09巻映像特典 名場面カット集 (DVD 704x480 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 17,916,657 4ef46c25777dd2d533d6cbf4d5414550033ac75c<br>
+らき☆すた DVD第10巻映像特典 白石みのるの冒険 エピソード09 (DVD 704x476 NTSC4：3［pixelratio10：11］WVC1 q90).wmv rDLotN7hLy 728,253,410 90ae76f1a0757dd116a74b00f518bb43e7442f96<br>
+らき☆すた DVD第10巻映像特典 名場面カット集 (DVD 704x480 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 21,839,870 7e3f4b15f30033b6929700fe1bb803b31b90bd66<br>
+らき☆すた DVD第11巻映像特典 白石みのるの冒険 エピソード10 (DVD 704x476 NTSC4：3［pixelratio10：11］WVC1 q90).wmv rDLotN7hLy 653,827,926 946932a27f5f224e1711945edd09b828ee025576<br>
+らき☆すた DVD第11巻映像特典 名場面カット集 (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 25,057,210 b993f8d34fbeef95929e438f67262c4d7fea9ee0<br>
+らき☆すた DVD第12巻映像特典 白石みのるの冒険 エピソード11 (DVD 704x476 NTSC4：3［pixelratio10：11］WVC1 q90).wmv rDLotN7hLy 580,551,090 766e18f9388bd606f6be87696f913e10c07f8d8e<br>
+らき☆すた DVD第12巻映像特典 名場面カット集 (DVD 704x480 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 24,531,930 dc920ccc4de1e02161dd6025ff677ccb8d122bbf<br>
+らき☆すた 第01話 「つっぱしる女」 (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 272,839,381 87d431e47e57fdffd8c58dfb68fb6600c24ae228<br>
+らき☆すた 第02話 「努力と結果」 (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 288,760,028 11b9f5468b637c4a38460a19eb4af99ba8885a4d<br>
+らき☆すた 第03話 「いろいろな人たち」 (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 348,853,658 b86dae449573f76c9f5f5a598abf2e4393ea6742<br>
+らき☆すた 第04話 「やる気の問題」 (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95 rev2).wmv rDLotN7hLy 240,538,512 b88ba0c4f8da8fc38f9dd0737417167eb6a8bb18<br>
+らき☆すた 第05話 「名射手」 (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 308,020,751 417e8b6988e71b908ae4a6e95e4413d5d45c5c87<br>
+らき☆すた 第06話 「夏の定番」 (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 304,327,202 35d6234283879268a795288cdb8fa60d5bad7bf6<br>
+らき☆すた 第07話 「イメージ」 (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 302,226,256 d87d476501425f0e5d8562ef49a957fb0f924e60<br>
+らき☆すた 第08話 「私じゃなくても旺盛」 (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 343,444,147 edefd1ceffd739e996a7a6f0427c8de518e26cc6<br>
+らき☆すた 第09話 「そんな感覚」 (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 255,197,295 3c996232f64d25b1a79d7d6f21bc0745c465b074<br>
+らき☆すた 第10話 「願望｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 288,601,632 fc684c30eaa955140a268e03eb539bcceecf16f1<br>
+らき☆すた 第11話 「いろんな聖夜の過ごし方｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 287,895,801 2f0da3751e8f30d768c25802454dfec181908ef4<br>
+らき☆すた 第12話 「お祭りへいこう｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 327,308,376 834026be5d4aeb96e941d60685b500286888cc25<br>
+らき☆すた 第13話 「おいしい日｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotUpTdabc1A3 434,481,751 2deb8103440d4eb3566257b7fee966494fb66cab<br>
+らき☆すた 第14話 「ひとつ屋根の下｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotUpTdabc1A3 399,189,487 080f2d7dd2ebd488375d05385ff4d2599a26c3b4<br>
+らき☆すた 第15話 「いきなりは変われない｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 336,040,996 4e7ba9774b66b6b2e57fa59e5d1e44edd2181a89<br>
+らき☆すた 第16話 「リング｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 226,963,481 b6e7960c10aef0491d54e714bedd076b00c91674<br>
+らき☆すた 第17話 「お天道様のもと｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 380,772,151 f9df2a110fb59715cd9cf036b51e4f540286cbb9<br>
+らき☆すた 第18話 「十人十色｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 370,528,925 bbe3cffeedf3154cf7b8e9537112dfbf99d6485d<br>
+らき☆すた 第19話 「二次に本質あり｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 256,017,871 541f780cff6d0103d04dbd54f8be356d621fc88a<br>
+らき☆すた 第20話 「夏の過ごし方｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 442,738,482 0a7034d61d7ef0f843015f2917845f85c46b4798<br>
+らき☆すた 第21話 「パンドラの箱｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 422,860,091 820b5d44b13478bde46593155f52ea857dab09f8<br>
+らき☆すた 第22話 「ここにある彼方｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 343,033,772 82dc873393e765d19bfa4084f66e696e9c198ded<br>
+らき☆すた 第23話 「微妙なライン｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 386,582,767 2219056dd6e1e0a856d1ab8f5b2c8dfc38e72d97<br>
+らき☆すた 第24話 「未定｣ (DVD 704x476 NTSC16：9［pixelratio40：33］WVC1 q95).wmv rDLotN7hLy 355,328,621 b2968068407f0e0f5e65436c1e752360b3682da7<br>
+<br></dd>
+<dt><span class="title">らき☆すた OVA<b>◆</b></span>09/01/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] らき☆すた OVA オリジナルなビジュアルとアニメーション 映像特典1 (720x480 x264 AAC 60fps).mp4 puiAh0X7b3 260,729,868 825e8ac4435f3af6ed8c52f73b52bb69f1a8eab8<br>
+[アニメ DVD] らき☆すた OVA オリジナルなビジュアルとアニメーション 映像特典2 (720x480 x264 AAC 60fps).mp4 puiAh0X7b3 419,240,763 0101d1aca05270cfdd1335bf04d0f4271b998f33<br>
+[アニメ DVD] らき☆すた OVA オリジナルなビジュアルとアニメーション (720x480 x264 AAC らっきー☆ちゃんねる 60fps).mp4 puiAh0X7b3 696,037,500 fb597c47c33f8f8fd6f66ee6578bd7aabfff0e6b<br>
+<hr class="A">
+(アニメ DVD) らき☆すた OVA (DVD 704×408 x264 AAC Chapter).mp4 WhyUodanV4 282,375,067 f0cf50ea9a2b4471f39705a60d30481c29a50c16<br>
+(アニメ DVD) らき☆すた OVA (DVD 1280×720 EEDI2upconv x264 AAC EDカット Chapter).mp4 WhyUodanV4 354,511,743 59be9758f26dc5ea1587dad5d00ced859f92b4f3<br>
+<hr class="A">
+[アニメ] らき☆すた OVA (PS3アプコン x264 1280x720).mp4 ほんものかくにんTOPDvDeXIw 591,679,591 3f8ceaa128c0b937e8197788b5fd4db364e83724<br>
+<hr class="A">
+[アニメ][DVD] らき☆すた OVA 映像特典1 (704x480 interlaced x264 AAC).mkv RayyyINthEQxE 166,846,885 14672c3af696167bd579003053b3401bb6f4c585<br>
+[アニメ][DVD] らき☆すた OVA 映像特典2 (704x480 interlaced x264 AAC).mkv RayyyINthEQxE 185,394,346 3c1350086b7e6ae5a781a63abe8ff9c07c7afa0f<br>
+[アニメ][DVD] らき☆すた OVA「JK」(704x480 x264 AAC [Interlaced ED] ).mkv RayyyINthEQxE 371,188,412 95fe5048eed3962810d47f81771c4e3c925a8de6<br>
+<hr class="A">
+(アニメ) らき☆すたOVA(オリジナルなビジュアルとアニメーション) (DVD 1280x720 x264 AAC PS3upcon).mp4 OJAMAJOxI1 1,006,517,046 de1772f65480025f2ba048228e02266381d1c02f<br>
+<hr class="A">
+[DVD] らき☆すたOVA(オリジナルなビジュアルとアニメーション)映像特典 (704x396 x264).avi 川澄舞uc73gwPjhy 431,889,822 320b4479af6207ac1c62500adee42fca5aa92944<br>
+[DVD] らき☆すたOVA(オリジナルなビジュアルとアニメーション) (704x396 x264).avi 川澄舞uc73gwPjhy 438,964,780 81eb095aae89df1f818de64a6bcfc5558d9e8ffc<br>
+<hr class="A">
+【アニメ】[DVD] らき☆すた OVA（オリジナルなビジュアルとアニメーション） 映像特典 ｢ラジオ番組『元祖らっきー☆ちゃんねる』公開録音シーン｣ (704x396 WMV9).wmv 232,680,023 aa4adc6fe08e8b40e88d54159ba521c7d96943db<br>
+【アニメ】[DVD] らき☆すた OVA（オリジナルなビジュアルとアニメーション） 映像特典 ｢埼玉県鷲宮町柊家住民票交付イベント映像｣ (704x396 WMV9).wmv 347,275,391 5834b3ab4814305a4936c2345aac9d592458be70<br>
+【アニメ】[DVD] らき☆すた OVA（オリジナルなビジュアルとアニメーション） (704x396 WMV9).wmv 593,458,040 225680cf8ee20b0a7d6ae2e5521e969c02bb3e72<br>
+<div class="sup">pcT6OjjAFE</div>
+<br></dd>
+<dt><span class="title">落語天女おゆい<b>◆</b></span>07/01/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD] 落語天女おゆい 01巻 映像特典 「CLUB AT-X インタビュー映像(完全版)」 (XviD1.2 704×480 4：3 MP3).avi WgPZCQtRPj 364,222,464 c4592442ab0e35b9151a40c14753cd11e4018650<br>
+[DVD] 落語天女おゆい 01巻 映像特典 「インタビュー映像（”後藤砂緒里”編）」 (XviD1.2 704×480 4：3 MP3).avi WgPZCQtRPj 55,721,984 a8660683f1c11753a87c2502113581f43f07eb71<br>
+[DVD] 落語天女おゆい 01巻 映像特典 「キャラクター紹介映像（”月島 唯”編）」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 38,215,680 3a50c9167b2f6b31401d92759e5d085c0c9d82d8<br>
+[DVD] 落語天女おゆい 01巻 映像特典 「ノンテロップオープニング」 (XviD1.2 704×480 16：9 mp3).avi WgPZCQtRPj 47,867,904 e928f4c76ad38b76b83682eeeaab7ec141181720<br>
+[DVD] 落語天女おゆい 01巻 映像特典 「爆笑声優大喜利」 (XviD1.2 704×480 4：3 MP3).avi WgPZCQtRPj 649,828,352 d656c07a9317a515ca87aac76271ec17fea2b55f<br>
+[DVD] 落語天女おゆい 02巻 映像特典 「アミューズソフトフェスティバル Vol.3 ～おゆいコーナー）」 (XviD1.2 704×480 4：3 MP3).avi WgPZCQtRPj 1,452,111,872 61b35cbc8c6e077621afa9c610e911f30720f517<br>
+[DVD] 落語天女おゆい 02巻 映像特典 「インタビュー映像（”小島幸子”編）」 (XviD1.2 704×480 4：3 MP3).avi WgPZCQtRPj 141,021,184 5f9a7abd0a7e8daeffdcfbf86f5aefd05be12424<br>
+[DVD] 落語天女おゆい 02巻 映像特典 「インタビュー映像（”清水 愛”編）」 (XviD1.2 704×480 4：3 MP3).avi WgPZCQtRPj 145,319,936 e609e18b3854db12af7654ace5abad73168a1fd3<br>
+[DVD] 落語天女おゆい 02巻 映像特典 「キャラクター紹介映像（”飛鳥山 雅”編）」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 48,783,360 32cbf1a42c3820b4c556a71f5830626a51dca529<br>
+[DVD] 落語天女おゆい 02巻 映像特典 「ノンテロップエンディング」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 27,578,368 b3e9a1bfa5200d5e3f6154d34b382297d2c78131<br>
+[DVD] 落語天女おゆい 02巻 映像特典 「製作発表会」 (XviD1.2 704×480 4：3 MP3).avi WgPZCQtRPj 339,941,376 7f3401691e29af5ad69b5d9c7d7cf8e2a49551f6<br>
+[DVD] 落語天女おゆい 03巻 映像特典 「インタビュー映像（”清水 愛”編）」 (XviD1.2 704×480 4：3 MP3).avi WgPZCQtRPj 145,319,936 e609e18b3854db12af7654ace5abad73168a1fd3<br>
+[DVD] 落語天女おゆい 03巻 映像特典 「キャラクター紹介映像（”小石山 鈴”編）」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 29,341,696 852e8d3d5599a42e4cacf738c76725e8619d14b7<br>
+[DVD] 落語天女おゆい 03巻 映像特典 「プロモーション映像」 (XviD1.2 704×480 4：3 MP3).avi WgPZCQtRPj 27,924,480 a2cdf8b19010d08149fb1a42934d577967b974f6<br>
+[DVD] 落語天女おゆい 04巻 映像特典 「インタビュー映像（”小林ゆう”編）」 (XviD1.2 640×480 4：3 MP3).avi WgPZCQtRPj 228,655,104 f35d43c1c6238631659104d9b7e98d15<br>
+[DVD] 落語天女おゆい 04巻 映像特典 「キャラクター紹介映像（”千石 涼”編）」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 63,176,704 41589c3ad44c03ee85851676a3bd4450<br>
+[DVD] 落語天女おゆい 05巻 映像特典 「TVスポット」 (XviD1.2 704×480 4：3 MP3).avi WgPZCQtRPj 10,680,320 d213cf213167a4434f4d270849947bc8fea44035<br>
+[DVD] 落語天女おゆい 05巻 映像特典 「インタビュー映像（”野田順子”編）」 (XviD1.2 704×480 4：3 MP3).avi WgPZCQtRPj 75,522,048 9a425506ddf2fa2f01183adbe3e7ad76bc7a129d<br>
+[DVD] 落語天女おゆい 05巻 映像特典 「キャラクター紹介映像（”内藤 晶”編）」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 28,745,728 857c2ea19539ab2183a72af2bce372e98739a744<br>
+[DVD] 落語天女おゆい 06巻 映像特典 「インタビュー映像（”沢城みゆき”編）」 (XviD1.2 704×480 4：3 MP3).avi WgPZCQtRPj 104,949,760 e9b554a1527f2e8c5b35a247bc731b1a4cb13142<br>
+[DVD] 落語天女おゆい 06巻 映像特典 「キャラクター紹介映像（”谷中 妙”編）」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 33,581,056 67d2bd2760da037c40982c1093fa8c3b9e2258bd<br>
+[DVD] 落語天女おゆい 06巻 映像特典 「変身シーン集」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 145,670,144 8a2b81af9bc45ff1e510133169f7e2e03c08200f<br>
+[DVD] 落語天女おゆい 第01(一)席 「華のお江戸に天女舞う」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 367,798,272 8e488df7d175374fbe679560cfbb0d276c8f8914<br>
+[DVD] 落語天女おゆい 第02(二)席 「学園祭で唯、反省！」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 366,882,816 a263fab3ae8cc81ae78203cd60613455f0924550<br>
+[DVD] 落語天女おゆい 第03(三)席 「走れ！唯 妖魔を倒せ」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 331,622,400 6db0a58cf846308406dfea1e1905de292dc2c1ff<br>
+[DVD] 落語天女おゆい 第04(四)席 「落語天女おゆい登場！」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 388,462,592 ad90c16d57b5c92d8c7c23b39bff8bf477a32544<br>
+[DVD] 落語天女おゆい 第05(五)席 「おーっほほほ！落語天女みやび登場」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 387,454,976 f4092af386004aad5866b6db00791692aaab82aa<br>
+[DVD] 落語天女おゆい 第06(六)席 「恋の行方それぞれの覚悟」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 329,455,616 6b108d4b7d32513324186ab01a32fda6401d1ae1<br>
+[DVD] 落語天女おゆい 第07(七)席 「涼、覚醒！決闘！高田馬場」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 444,809,216 f2ac64afdc3a25a98c7dfe7b6a6005ef<br>
+[DVD] 落語天女おゆい 第08(八)席 「恋の行方ふたたび 江戸湾大決戦！」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 396,306,432 ed64d77c9efea98405d0efcad4ae034990dd8283<br>
+[DVD] 落語天女おゆい 第09(九)席 「黒衣の花嫁 明かされる秘密」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 301,758,464 f90a32b955a9802038c50b676026077e59e6157e<br>
+[DVD] 落語天女おゆい 第10(十)席 「妖魔軍侵攻！ 火事と天女は江戸の華」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 432,646,144 1a25b02b96342163b27f10f3ba6ebe780fc9cd7a<br>
+[DVD] 落語天女おゆい 第11(十一)席 「最後の戦い 失われる命」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 456,261,632 1ccd4a94586117a269c21b3b4c24c168206073ce<br>
+[DVD] 落語天女おゆい 第12(十二)席(最終話) 「信じる言葉 ふれあう心」 (XviD1.2 704×480 16：9 MP3).avi WgPZCQtRPj 431,681,536 307ea3566d05761fb1b6a125bb8d1d3e49f60c30<br><br>
+[DVD] 落語天女おゆい 01巻 映像特典 「CLUB AT-X インタビュー映像(完全版)」(x264 704×480 4：3 aac).mkv WgPZCQtRPj 479,169,836 d741d0884605cb53f1b805ddcde081869e50a480<br>
+[DVD] 落語天女おゆい 01巻 映像特典 「インタビュー映像（”後藤砂緒里”編）」 (x264 704×480 4：3 aac).mkv WgPZCQtRPj 101,284,273 46831bf59c8a7f5adc61a2917f1915a0bafe07a7<br>
+[DVD] 落語天女おゆい 01巻 映像特典 「キャラクター紹介映像（”月島 唯”編）」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 31,480,750 241d781c3788c97d33cfd0234a254290f5025edc<br>
+[DVD] 落語天女おゆい 01巻 映像特典 「ノンテロップオープニング」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 53,554,619 19ad95b1a344086c7a26b85f4bb20aebd992752b<br>
+[DVD] 落語天女おゆい 01巻 映像特典 「爆笑声優大喜利」(x264 704×480 4：3 aac).mkv WgPZCQtRPj 703,007,591 ad678209e2d606120557c32a1e3f238ed8d28ab9<br>
+[DVD] 落語天女おゆい 02巻 映像特典 「アミューズソフトフェスティバル Vol.3 ～おゆいコーナー）」 (x264 704×480 4：3 aac).mkv WgPZCQtRPj 1,668,917,385 2876177bbc4ac6d8899b209a5be3240fe863eee3<br>
+[DVD] 落語天女おゆい 02巻 映像特典 「インタビュー映像（”小島幸子”編）」 (x264 704×480 4：3 aac).mkv WgPZCQtRPj 257,634,776 b3a4c683b886928588dfc822c85e2fa9b359fed8<br>
+[DVD] 落語天女おゆい 02巻 映像特典 「キャラクター紹介映像（”飛鳥山 雅”編）」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 37,695,712 7931342619c053fc7b57bd54fad02d4ae6c4c95e<br>
+[DVD] 落語天女おゆい 02巻 映像特典 「ノンテロップエンディング」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 31,456,146 1e55102e8df4260ef88550f24a2dd7a5d57bd916<br>
+[DVD] 落語天女おゆい 02巻 映像特典 「製作発表会」 (x264 704×480 4：3 aac).mkv WgPZCQtRPj 414,351,669 35fc6c1348c0ca66aaab94b15a618d0acf35d9ae<br>
+[DVD] 落語天女おゆい 03巻 映像特典 「インタビュー映像（”清水 愛”編）」 (x264 640×480 aac).mkv WgPZCQtRPj 54,106,680 6c2d5fc89d851b24394b0b36e73ebae9dc231b6c<br>
+[DVD] 落語天女おゆい 03巻 映像特典 「キャラクター紹介映像（”小石山 鈴”編）」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 23,039,590 720704a82dbcca15c8d919fe22032d4b4855cf42<br>
+[DVD] 落語天女おゆい 03巻 映像特典 「プロモーション映像」 (x264 640×480 4：3 aac).mkv WgPZCQtRPj 25,225,597 96f599cd6a617f37d4b3f82ea9c82713d201c023<br>
+[DVD] 落語天女おゆい 04巻 映像特典 「インタビュー映像（”小林ゆう”編）」 (x264 640×480 aac).mkv WgPZCQtRPj 137,590,622 03a2f89e4609ef024d005f8b6ef5850c856465ab<br>
+[DVD] 落語天女おゆい 04巻 映像特典 「キャラクター紹介映像（”千石 涼”編）」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 55,445,896 e241ed1380cab1d1350599aa2e51c8ba00799c8a<br>
+[DVD] 落語天女おゆい 05巻 映像特典 「TVスポット」 (x264 704×480 4：3 aac).mkv WgPZCQtRPj 8,384,468 450969b3777a7bcb852b3fd4382ac0b3e8fcc643<br>
+[DVD] 落語天女おゆい 05巻 映像特典 「インタビュー映像（”野田順子”編）」 (x264 640×480 aac).mkv WgPZCQtRPj 30,988,903 7b7a9c20865fa817ba26943eaa7264d34cea3f0c<br>
+[DVD] 落語天女おゆい 05巻 映像特典 「キャラクター紹介映像（”内藤 晶”編）」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 22,109,245 f36fed3c0ac0fc2293258bf1eecb42cfe93cc3c0<br>
+[DVD] 落語天女おゆい 06巻 映像特典 「インタビュー映像（”沢城みゆき”編）」 (x264 640×480 aac).mkv WgPZCQtRPj 38,744,405 3a1b589e82a84c51e9e1306efaa7d3990d452a41<br>
+[DVD] 落語天女おゆい 06巻 映像特典 「キャラクター紹介映像（”谷中 妙”編）」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 26,475,085 594edcb4ee3bf38696c84c735dc20bc8e71fa4cd<br>
+[DVD] 落語天女おゆい 06巻 映像特典 「変身シーン集」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 116,739,764 ed172946a384f11a14b9e8315f58c3a051f4b6cf<br>
+[DVD] 落語天女おゆい 第01(一)席 「華のお江戸に天女舞う」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 316,743,415 90767894867af928a1c89f1375c9c41a8abcc895<br>
+[DVD] 落語天女おゆい 第02(二)席 「学園祭で唯、反省！」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 318,846,330 4656e368cfe49a103c4db99a50e4b5e4a975d0de<br>
+[DVD] 落語天女おゆい 第03(三)席 「走れ！唯 妖魔を倒せ」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 281,766,245 8a047a8222830dabe042b6a7539d28c5862bad2b<br>
+[DVD] 落語天女おゆい 第04(四)席 「落語天女おゆい登場！」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 334,197,420 7448658dca57fa909504ddcf3c412738e256075c<br>
+[DVD] 落語天女おゆい 第05(五)席 「おーっほほほ！落語天女みやび登場」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 318,087,441 9d1698cf908f0386aa398d7566c070b99a663d1f<br>
+[DVD] 落語天女おゆい 第06(六)席 「恋の行方それぞれの覚悟」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 277,839,838 89c2f840bf826609e9731511a65e3e0b3a5c3d3c<br>
+[DVD] 落語天女おゆい 第07(七)席 「涼、覚醒！決闘！高田馬場」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 376,917,807 4a069ad22bc7de14f57ba87d95fd4aa14375de4f<br>
+[DVD] 落語天女おゆい 第08(八)席 「恋の行方ふたたび 江戸湾大決戦！」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 336,074,342 b6cf5173ac0a6a685267fec0a542e9ac9cba17c5<br>
+[DVD] 落語天女おゆい 第09(九)席 「黒衣の花嫁 明かされる秘密」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 262,481,286 26254c6216436931c623038c7985d111cea15a4c<br>
+[DVD] 落語天女おゆい 第10(十)席 「妖魔軍侵攻！ 火事と天女は江戸の華」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 368,630,718 e4f82f5ce9c3dda2d5fc176310e4bc11af986768<br>
+[DVD] 落語天女おゆい 第11(十一)席 「最後の戦い 失われる命」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 403,506,446 205a6dec1f2b9265d6cc1f4c312c0fc55f16309d<br>
+[DVD] 落語天女おゆい 第12(十二)席(最終話) 「信じる言葉 ふれあう心」 (x264 704×480 16：9 aac).mkv WgPZCQtRPj 383,641,021 8b37b98e211851b9ea6c25100e4f278d834ef41b<br>
+<br></dd>
+<dt><span class="title">RAGNAROK<b>◆</b></span>06/10/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD アニメ] RAGNAROK -THE ANIMATION- ノンクレジットOP (640x480 WMV9).wmv 1dodakemx1N789S3y 17,019,376 6d22c23ea922e3939fa0f515f8f13bf6ba6e2e8c<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- ノンクレジットED (640x480 WMV9).wmv 1dodakemx1N789S3y 5,931,196 6c11004a074d3ceda9bd210ee0ccb3c8a4dbd649<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第01話 (640x480 WMV9).wmv 1dodakemx1N789S3y 289,091,386 06c9614c0e0fdfc6104834eaed6c37978ab14892<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第02話 (640x480 WMV9).wmv 1dodakemx1N789S3y 286,275,386 d82dc4bf033e48da2ee20e55b8c5767f3bb29d7b<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第03話 (640x480 WMV9).wmv 1dodakemx1N789S3y 285,691,386 87e71e7a3fcf1fefda6b361c5d2175448ea2aba0<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第04話 (640x480 WMV9).wmv 1dodakemx1N789S3y 277,187,386 7a34ea631400d52eea02413b48cabcc65870ed92<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第05話 (640x480 WMV9).wmv 1dodakemx1N789S3y 286,659,446 1782caf93534a8bedb670896cfe9e3e653d3c9a5<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第06話 (640x480 WMV9).wmv 1dodakemx1N789S3y 280,315,386 78900b45fe0b338975cd1fd0dd2d579eaadbfbfd<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第07話 (640x480 WMV9).wmv 1dodakemx1N789S3y 302,235,386 df221412affedf1f0e90a9798ca708f8134940ef<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第08話 (640x480 WMV9).wmv 1dodakemx1N789S3y 288,099,446 cb88801299f46963432bf9bb051e9152fab3b3c5<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第09話 (640x480 WMV9).wmv 1dodakemx1N789S3y 277,483,386 e09304653b030f928374c8378d9fdd76bca06b69<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第10話 (640x480 WMV9).wmv 1dodakemx1N789S3y 283,227,386 bf0fdd1cc17f2370a3f10ec8396fd499bae1ad6f<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第11話 (640x480 WMV9).wmv 1dodakemx1N789S3y 278,507,446 7c814151a2e71de8b691c286ac7a15253b3dbe86<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第12話 (640x480 WMV9).wmv 1dodakemx1N789S3y 297,982,904 4102fa28ec319981b44900a15aac99acd5a6b891<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第13話 (640x480 WMV9).wmv 1dodakemx1N789S3y 297,798,904 0149a23342b04d7e384f2d728f59309ac9362565<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第14話 (640x480 WMV9).wmv 1dodakemx1N789S3y 301,111,044 7810059b9637008c99f24b093941bfec2ff15032<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第15話 (640x480 WMV9).wmv 1dodakemx1N789S3y 291,267,386 db353a93ac3454910d6c97b95f984a187cd3a5ef<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第16話 (640x480 WMV9).wmv 1dodakemx1N789S3y 290,747,386 dcb299b2a2dd7c5ff57c47a69e045f3c7aeedf4a<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第17話 (640x480 WMV9).wmv 1dodakemx1N789S3y 293,139,446 339f1632b29671f13312accc52d6cc8a5c931994<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第18話 (640x480 WMV9).wmv 1dodakemx1N789S3y 284,915,386 85ef8e8cbe4dd42afae4af877c7ae16ab2eaaec1<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第19話 (640x480 WMV9).wmv 1dodakemx1N789S3y 282,483,386 9d6e83a1149d6b78a597d8324456dda9396568a2<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第20話 (640x480 WMV9).wmv 1dodakemx1N789S3y 284,595,446 4f5354d695b33d2638e1ea83cbff878816f78994<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第21話 (640x480 WMV9).wmv 1dodakemx1N789S3y 283,963,386 0b1b1951b0e2ce99d1d8ea8693f8aefb175dce01<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第22話 (640x480 WMV9).wmv 1dodakemx1N789S3y 281,259,386 bfa531df5cc9052e0fcdaf0bae7c54d63e37c9d1<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第23話 (640x480 WMV9).wmv 1dodakemx1N789S3y 277,315,446 0e61d49c6407f2deda70fd14c74df59dcf4c0591<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第24話 (640x480 WMV9).wmv 1dodakemx1N789S3y 279,803,386 cbce8625f11ac29acffd0af28d8a9a9729681126<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第25話 (640x480 WMV9).wmv 1dodakemx1N789S3y 283,363,386 91aad338394208aeb713460bc1b7f54e5565249c<br>
+[DVD アニメ] RAGNAROK -THE ANIMATION- 第26話 (640x480 WMV9).wmv 1dodakemx1N789S3y 280,619,356 9eb20218db19a297c02c2014f484f76d4586b77a<br>
+<br></dd>
+<dt><span class="title">LAST EXILE<b>◆</b></span>08/05/16 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] LAST EXILE Pilot Film (704x396 WMV9).wmv 51,588,982 d2e0d621591aee66a80d516935266d936da29c65<br>
+[アニメ DVD] LAST EXILE Textless Opening (704x396 WMV9 ファイル名・タグ修正済).wmv 40,436,688 475d10ad416abf18c28360e77f851205e01349e6<br>
+[アニメ DVD] LAST EXILE Textless Opening Ver．02 (704x396 WMV9).wmv FooLptNE19VF17 41,124,834 8d10b2ca2323ff0f5075923d9392b1ded909852e<br>
+[アニメ DVD] LAST EXILE Textless Ending (704x396 WMV9 ファイル名・タグ修正済).wmv 40,084,674 a18f2799d3872d0468c01d21218949ee93ba198d<br>
+[アニメ DVD] LAST EXILE #01 「First move」 (704x396 WMV9).wmv 225,687,650 3e4b5bf4a6c97baa1d9f7df4d204586e3d45e53f<br>
+[アニメ DVD] LAST EXILE #02 「Luft Vanship」 (704x396 WMV9).wmv 196,023,706 190df32804e07deb006a0eb24b79ac34fc048afc<br>
+[アニメ DVD] LAST EXILE #03 「Transpose」 (704x396 WMV9).wmv 252,119,636 1615cb08e73a3355c24a4017a0eb5d4227633ad5<br>
+[アニメ DVD] LAST EXILE #04 「Zugzwang」 (704x396 WMV9).wmv 193,271,840 58c8916b0f3c75c9f41eedf6c22eaf761bb700be<br>
+[アニメ DVD] LAST EXILE #05 「Positional play」 (704x396 WMV9).wmv 192,967,636 9b13ffcb73beebd3365168f2cd9c52263af68516<br>
+[アニメ DVD] LAST EXILE #06 「Arbiter attack」 (704x396 WMV9).wmv 198,359,706 e3f2efb511fbd229b09b387ac74c8e7f31d8f08d<br>
+[アニメ DVD] LAST EXILE #07 「Interesting Claus」 (704x396 WMV9 rev2).wmv 255,607,636 50caf5f69086385e5178404e6c44af177c2a8cd2<br>
+[アニメ DVD] LAST EXILE #08 「Takeback」 (704x396 WMV9).wmv 176,071,840 1b7cdd3fc2205ffd4e3cf185e48c653d4ec6b599<br>
+[アニメ DVD] LAST EXILE #09 「Calculate Alex」 (704x396 WMV9).wmv 199,223,636 1a17704a213ff92e9a104b9a25c3f96947cbf72d<br>
+[アニメ DVD] LAST EXILE #10 「Swindle」 (704x396 WMV9).wmv 199,079,840 a8f60a376952581e57216cc42dea3c988d4d6f3b<br>
+[アニメ DVD] LAST EXILE #11 「Develop」 (704x396 WMV9).wmv 196,071,636 0d23d1435ff093fd11b09f578e5258fc3909c230<br>
+[アニメ DVD] LAST EXILE #12 「Discovered attack」 (704x396 WMV9).wmv 216,428,397 31d7606b0ed910e01d47f9595317b015c2e17ca3<br>
+[アニメ DVD] LAST EXILE #13 「Isolated pawn」 (704x396 WMV9).wmv 227,783,784 d814ad2d54a936253cd6f6d88f095c7772c9397b<br>
+[アニメ DVD] LAST EXILE #14 「Etude Lavie」 (704x396 WMV9).wmv 256,215,840 be1812b23526e3b8c1c5e1f5bfbe8d34b17595db<br>
+[アニメ DVD] LAST EXILE #15 「Fairy chess」 (704x396 WMV9 rev2).wmv 178,311,636 66aa7ef9bfbc72f0e72f35118b7e93195bddc3b7<br>
+[アニメ DVD] LAST EXILE #16 「Breakthrough」 (704x396 WMV9 rev2).wmv 166,887,706 208de4c8914a63c8d561b8157d8c88d4d8d8fb1f<br>
+[アニメ DVD] LAST EXILE #17 「Making material」 (704x396 WMV9).wmv 164,983,930 4dfa0c892fde3988442194d5b07dec62d6c8e517<br>
+[アニメ DVD] LAST EXILE #18 「Promotion Sophia」 (704x396 WMV9).wmv 210,535,879 e381377a5b38457376373ad5b8ab2161ab2afb9f<br>
+[アニメ DVD] LAST EXILE #19 「Sicilian Defence」 (704x396 WMV9 rev2).wmv 171,431,930 0a3ee4f36770eea5a08065fc8fa224d58fe18323<br>
+[アニメ DVD] LAST EXILE #20 「Grand Stream」 (704x396 WMV9).wmv 213,863,879 62a0c4340c9d2a50c3281100dbb16d8e7647b835<br>
+[アニメ DVD] LAST EXILE #21 「Rook Dio」 (704x396 WMV9).wmv FooLRuwZuMDDL 179,383,809 9d776063d02d80a5e2534c2c71231b3545cbe8d8<br>
+[アニメ DVD] LAST EXILE #22 「Queen Delphine」 (704x396 WMV9).wmv FooLRuwZuMDDL 214,055,879 cc6198e2d8cd6ab3ab8019401b9a266a883c0f82<br>
+[アニメ DVD] LAST EXILE #23 「Castling Lucciola」 (704x396 WMV9).wmv FooLptNE19VF17 498,375,809 349695b394474db1da7935715adefd5d4fab4ca1<br>
+[アニメ DVD] LAST EXILE #24 「Sealed move」 (704x396 WMV9).wmv FooLptNE19VF17 191,671,879 0f01a321c1072a498a50292ad1935076cd0e548b<br>
+[アニメ DVD] LAST EXILE #25 「Quiet move」 (704x396 WMV9).wmv FooLptNE19VF17 232,183,809 4ef2d84d47b803864f0d9eaf2b0b1111ce88a3b2<br>
+[アニメ DVD] LAST EXILE #26 「Resign」 (704x396 WMV9).wmv FooLptNE19VF17 309,143,641 c9ddd08705aed8a860ba33270c2434ca69dd128c<br>
+<div class="sup">L04Dl7U4N7</div>
+<hr class="A">
+LASTEXILE 第01話 (DVD 1280x720).wmv 490,975,984 b76de0c72ec1852beb03bdcdbee0d2e190881f34<br>
+LASTEXILE 第02話 (DVD 1280x720).wmv 432,404,125 d812af30bdbb872905ef4893f3aa52919a54b372<br>
+LASTEXILE 第03話 (DVD 1280x720).wmv 544,543,720 fd814027f0934411d9da7cb929bb3a94285a7666<br>
+LASTEXILE 第04話 (DVD 1280x720).wmv 421,907,008 54758bf8291d9f5c9473f8e60252892cc625fecc<br>
+LASTEXILE 第05話 (DVD 1280x720).wmv 415,425,262 844633e574a29afa87180dadb95deeec78b83b8e<br>
+LASTEXILE 第06話 (DVD 1280x720).wmv 427,811,983 e826fedfbd49e3cf284e77897108a54f62eccea0<br>
+LASTEXILE 第07話 (DVD 1280x720).wmv 551,239,687 2c072d8c955a0105c85a184cc1fb677259cefa11<br>
+LASTEXILE 第08話 (DVD 1280x720).wmv 387,899,845 c97fa858744e7fcc6505b2c90324b35f2e2f5c90<br>
+LASTEXILE 第09話 (DVD 1280x720).wmv 412,524,958 6f3cf65b0ae16693562fe9b830ff4ce6c89035a6<br>
+LASTEXILE 第10話 (DVD 1280x720).wmv 411,459,322 82c987913ad8876b6e62b4089fc396b0ab8de6e3<br>
+LASTEXILE 第11話 (DVD 1280x720).wmv 391,514,233 93a30075c282dcd85664d0e46e75b5a35c1a9a05<br>
+LASTEXILE 第12話 (DVD 1280x720).wmv 428,938,048 cf47f83e744a3d91807fe1cf19cf4e2d6e8bb6a2<br>
+LASTEXILE 第13話 (DVD 1280x720).wmv 459,962,506 5a7642d790b337ffc5a5032df2451d599c608997<br>
+LASTEXILE 第14話 (DVD 1280x720).wmv 516,518,440 92be8503d7319faf4d61e27981e9da0b8a30c943<br>
+LASTEXILE 第15話 (DVD 1280x720).wmv 362,747,392 0b6a2393c7618d7a1fc8fae6e0afe848844b31be<br>
+LASTEXILE 第16話 (DVD 1280x720).wmv 341,956,393 a2bd300fcd16aa05dea750ec685d70600999b7b0<br>
+LASTEXILE 第17話 (DVD 1280x720).wmv 341,275,255 a000aba4dff193cb030110116722a478b5d432df<br>
+LASTEXILE 第18話 (DVD 1280x720).wmv 425,180,836 ae886154e4cfb8919992c607cb1eac982608805e<br>
+LASTEXILE 第19話 (DVD 1280x720).wmv 354,722,167 f34c3bd610718d45298e496391157e583b70c608<br>
+LASTEXILE 第20話 (DVD 1280x720).wmv 424,626,043 0b67cc716a3aa67e34828c4de301d02fb4092aec<br>
+LASTEXILE 第21話 (DVD 1280x720).wmv 363,175,846 f152ca3a8273c7248f081326c5914754be3718d3<br>
+LASTEXILE 第22話 (DVD 1280x720).wmv 421,950,952 76278d771a3021e9d56ab163501dd30fe8bcdd61<br>
+LASTEXILE 第23話 (DVD 1280x720).wmv 796,337,347 09defbcedc21814bb88bb6ca805ed38b597d8afc<br>
+LASTEXILE 第24話 (DVD 1280x720).wmv 387,652,660 6d64e97862a27d05a65d87f6783d98b47d621a9b<br>
+LASTEXILE 第25話 (DVD 1280x720).wmv 472,980,916 d682b9924021003d6fec73d5e8f666d7f39f52ca<br>
+LASTEXILE 第26話 (DVD 1280x720).wmv 597,869,602 e35dd11169ba3706023b104d0dc6170de5fc4cc1<br>
+<br></dd>
+<dt><span class="title">ラブゲッCHU ～ミラクル声優白書～<b>◆</b></span>07/01/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+ラブゲッCHU ～ミラクル声優白書～ 第01話 「桃子、声優になりますっ！！」 (DVD VGA DivX611).avi YAyAoONEVq 292,717,282 a5f21f825b788acf9a46661d38c0913b0ad6132f<br>
+ラブゲッCHU ～ミラクル声優白書～ 第02話 「桃子、新生活スタートですっ！！」 (DVD VGA DivX611).avi YAyAoONEVq 248,627,948 080a0fe15a340129d63d22ccd5cc9f5970e6f55c<br>
+ラブゲッCHU ～ミラクル声優白書～ 第03話 「桃子、アルバイト始めますっ！！」 (DVD VGA DivX611).avi YAyAoONEVq 273,449,322 61ef6e101bae2ce17bba9c9c5429840e2c274307<br>
+ラブゲッCHU ～ミラクル声優白書～ 第04話 「桃子、ステージデビューますっ！？」 (DVD VGA DivX611).avi YAyAoONEVq 253,858,210 0945cbaf9b1fe3fd1573d8498d8e83cd78829965<br>
+ラブゲッCHU ～ミラクル声優白書～ 第05話 「りんか、とにかく走りますっ！」 (DVD VGA DivX611).avi YAyAoONEVq 315,467,314 29aed7748be607b56fcc3b549f39af1162e245ec<br>
+ラブゲッCHU ～ミラクル声優白書～ 第06話 「翼、女の子になりますっ！」 (DVD VGA DivX611).avi YAyAoONEVq 234,485,418 b32f809c1f818eae85f057516d599a1be7b689c8<br>
+ラブゲッCHU ～ミラクル声優白書～ 第07話 「祐理花、この恋に生きますっ！」 (DVD VGA DivX611).avi YAyAoONEVq 230,337,292 566bb41f6bc9f3d8ec9749ca4c3dc9a7dec6fd98<br>
+ラブゲッCHU ～ミラクル声優白書～ 第08話 「天音、反抗させていただきますっ！」 (DVD VGA DivX611).avi YAyAoONEVq 255,481,746 093d585ef8ed7ebb8cde0230937a3f522a14ba79<br>
+ラブゲッCHU ～ミラクル声優白書～ 第09話 「桃子、何か変ですっ！」 (DVD VGA DivX611).avi YAyAoONEVq 224,491,248 94a7c43a0bd2c736562900a9c62abcf09649e35d<br>
+ラブゲッCHU ～ミラクル声優白書～ 第10話 「桃子、作戦成功ステップアップですっ！？」 (DVD VGA DivX611).avi YAyAoONEVq 253,653,756 4be88ea37443b61c78efa01b839d9bff6f4f6fb1<br>
+ラブゲッCHU ～ミラクル声優白書～ 第11話 「桃子、先輩に勝ちますっ！」 (DVD VGA DivX611).avi YAyAoONEVq 252,914,096 fe2d13d3093ecec1ba7dbf12aba50563f12a9070<br>
+ラブゲッCHU ～ミラクル声優白書～ 第12話 「桃子、初仕事頑張っちゃいますっ！」 (DVD VGA DivX611).avi YAyAoONEVq 252,951,828 d59fb4be691791a1e1f20ff63c662d1b69db70a5<br>
+ラブゲッCHU ～ミラクル声優白書～ 第13話 「わたしたち、アイドルやりますっ！！」 (DVD VGA DivX611).avi YAyAoONEVq 232,175,552 77181a17fdffb3a38e2636983843b042184d5281<br>
+<br></dd>
+<dt><span class="title">ラブ★コン<b>◆</b></span>08/01/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD] ラブ★コン DVD-BOX1 映像特典 アニメ「ラブ★コン」 放送直前特別番組 (640x480 WMV9).wmv puiAh0X7b3 400,096,595 c5f37e6b9a223c2ea26d18e8b69bd7f7f0296f26<br>
+[DVD] ラブ★コン DVD-BOX3 映像特典 「～リサがフナ顔でもしょうがねぇぜ～」 (640x480 WMV9).wmv puiAh0X7b3 59,289,543 73bf55df6e838222b8ff8aef40f25f507d6eb99e<br>
+[DVD] ラブ★コン DVD-BOX3 映像特典 「～リサと大谷のキュン死にDAYS～」 (640x480 WMV9 コメンタリー切替可).wmv puiAh0X7b3 422,487,304 8e1c9bd6e3742af8322850d9cbbad89a0e4aa39d<br>
+[DVD] ラブ★コン DVD-BOX3 映像特典 「TBSアニメフェスタ特別映像 ラブ★コン」 (640x480 WMV9).wmv puiAh0X7b3 123,887,327 aa133403bd0e1cb64c52ad8a9d7638d8c0cea11e<br>
+[DVD] ラブ★コン 第01話 「高1の夏！絶対カレシ、つくったるわ！」 (640x480 WMV9).wmv puiAh0X7b3 227,298,505 655b5e8bff72a2bba0e7239afc334c8242e82924<br>
+[DVD] ラブ★コン 第02話 「元カノと三角関係！？」 (640x480 WMV9).wmv puiAh0X7b3 244,605,825 92a19a2cedf45830dbbfe0c53426de5f59899a49<br>
+[DVD] ラブ★コン 第03話 「好きなオトコか、昔のオトコか？」 (640x480 WMV9).wmv puiAh0X7b3 213,310,241 dc5a8c1338716d2dec8e26c9d2e3398593116fdd<br>
+[DVD] ラブ★コン 第04話 「チュッ！好きになっちゃいました！」 (640x480 WMV9).wmv puiAh0X7b3 195,192,361 8a3fa3c0afae0ff8340655924c236340f36e7d89<br>
+[DVD] ラブ★コン 第05話 「禁断の愛をぶっ飛ばせ！」 (640x480 WMV9).wmv puiAh0X7b3 236,839,439 e3176af527d59ac3e7b7193a4888e5bd9ee3c342<br>
+[DVD] ラブ★コン 第06話 「乙女の一大決心！ラブラブ告白大作戦!!」 (640x480 WMV9).wmv puiAh0X7b3 275,868,541 49f8a9609b8e883b4a7f2acc48458eaf7a0a7c46<br>
+[DVD] ラブ★コン 第07話 「撃沈！史上サイテーな告白!!」 (640x480 WMV9).wmv puiAh0X7b3 245,964,121 e24223190611ca1de11f6ee0bc55f00498500855<br>
+[DVD] ラブ★コン 第08話 「再起不能！大失恋!!」 (640x480 WMV9).wmv puiAh0X7b3 275,485,157 299c5ba71c7feeb7feb14deaa484b458b9907c7e<br>
+[DVD] ラブ★コン 第09話 「起死回生!!めざせ彼女の座!!」 (640x480 WMV9).wmv puiAh0X7b3 214,569,927 816413ead113d04dda9ac596e67ccab7a8e0f18e<br>
+[DVD] ラブ★コン 第10話 「元カノと対決！？ 乳だし大作戦!!」 (640x480 WMV9).wmv puiAh0X7b3 194,962,267 050fb721747e22fe9a1111868d265df62d7310d1<br>
+[DVD] ラブ★コン 第11話 「絶体絶命！元カノと復活愛？！」 (640x480 WMV9).wmv puiAh0X7b3 285,267,043 df778bc1b41c8ca0984038d04e48ec7c015381bc<br>
+[DVD] ラブ★コン 第12話 「愛を取り戻せ！本命チョコで女を磨く!!」 (640x480 WMV9).wmv puiAh0X7b3 208,621,941 10532eee59e1f2107d1b8d22dfde0d961fc6df00<br>
+[DVD] ラブ★コン 第13話 「発熱！あいつの部屋でファースト・キッス？」 (640x480 WMV9).wmv puiAh0X7b3 236,784,639 af22ebc304a27323fb252cc3ba54e01364acce1f<br>
+[DVD] ラブ★コン 第14話 「マイティにキュン死にや！」 (640x480 WMV9).wmv puiAh0X7b3 243,192,639 5689442c123d52e917dcafddb08e49c6df50c95a<br>
+[DVD] ラブ★コン 第15話 「危険なオトコ マイティの甘い誘惑」 (640x480 WMV9).wmv puiAh0X7b3 258,802,089 97753dd5519c883207a91a27907846463dcc084c<br>
+[DVD] ラブ★コン 第16話 「マイティの魔法！変化する恋模様！？」 (640x480 WMV9).wmv puiAh0X7b3 208,917,615 ff8c08f7856aff342d8c6b6cbd0a1c3f6fae10f6<br>
+[DVD] ラブ★コン 第17話 「愛の鉄拳！受け止めろ、乙女魂!!」 (640x480 WMV9).wmv puiAh0X7b3 197,240,609 59af1337b58af7f4399da7d8cb72219fa0df2440<br>
+[DVD] ラブ★コン 第18話 「史上最高の誕生日」 (640x480 WMV9).wmv puiAh0X7b3 225,118,539 75d9f9931675739197517e4e3d75025e71556e47<br>
+[DVD] ラブ★コン 第19話 「急転直下!!初デートは不運の始まり」 (640x480 WMV9).wmv puiAh0X7b3 219,093,839 fdfdaa1984d98534091dc56ce0ad8be25e153eca<br>
+[DVD] ラブ★コン 第20話 「宣戦布告!!嫉妬に燃えるデンジャラス美少女!!」 (640x480 WMV9).wmv puiAh0X7b3 157,039,459 0b72b648644024103c88bc284e344c146a2bea3f<br>
+[DVD] ラブ★コン 第21話 「別れの予感？!リサと大谷が歩む別々の道」 (640x480 WMV9).wmv puiAh0X7b3 174,828,845 70c000f64bcd1edba2b29653ccf2bbb13fa5a937<br>
+[DVD] ラブ★コン 第22話 「大谷からの破局宣言!!」 (640x480 WMV9).wmv puiAh0X7b3 210,944,183 9de85d86597e011628101f09d3a3a6fb9196e5ae<br>
+[DVD] ラブ★コン 第23話 「進路はいろいろ!!みんなが抱えるそれぞれの事情」 (640x480 WMV9).wmv puiAh0X7b3 195,783,847 4a532566858922eafb2f8a30f140c8b8783abb4b<br>
+[DVD] ラブ★コン 第24話(終) 「ずっと一緒!!」 (640x480 WMV9).wmv puiAh0X7b3 222,807,305 246542c2b270ce2b3fd847aadf2f3070f16e4c09<br>
+<br></dd>
+<dt><span class="title">らぶドル ～Lovely Idol～<b>◆</b></span>07/05/16 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[OPED][アニメ] らぶドル ♪Lovely Idol♪ OP 「恋、はじめました！」 (DVDRip 704x396 x264 24f).avi BQO37fo3kI 22,147,072 af7de3484fa7743c1f2a0d041068297b423a74db<br>
+[アニメ DVD] らぶドル ♪Lovely Idol♪ 第01話 「らぶドルですか？」 (704x396 x264).avi BQO37fo3kI 187,738,614 9e7e3986a9df27a361afc2a0f20b78432a3e942f<br>
+[アニメ DVD] らぶドル ♪Lovely Idol♪ 第02話 「NGですか？」 (704x396 x264).avi BQO37fo3kI 190,969,792 6c175e5e7d457209a0129839a2659840be2fa0b4<br>
+[アニメ DVD] らぶドル ♪Lovely Idol♪ 第03話 「前座ですか？」 (704x396 x264).avi BQO37fo3kI 160,584,994 953a9afd88446697b7b37a6f5a99c3da3646e44e<br>
+[アニメ DVD] らぶドル ♪Lovely Idol♪ 第04話 「引退ですか？」 (704x396 x264).avi BQO37fo3kI 130,743,602 dd76d18e6f583bfa22690d3a2d2f09e98ecc4910<br>
+[アニメ DVD] らぶドル ♪Lovely Idol♪ 第05話 「バーターですか？」 (704x396 x264).avi BQO37fo3kI 210,329,422 b20e13a7d7d6e21ddbbda5a79908aa711e5dadeb<br>
+[アニメ DVD] らぶドル ♪Lovely Idol♪ 第06話 「セットですか？」 (704x396 x264).avi BQO37fo3kI 184,123,010 9806c3d0ce87dd5ac536b1573d4c07e6a1799dc8<br>
+[アニメ DVD] らぶドル ♪Lovely Idol♪ 第07話 「急展開、ですか？」 (704x396 x264).avi BQO37fo3kI 227,293,272 98ac0b45ea0a17a1676c3328f870288139d1520d<br>
+[アニメ DVD] らぶドル ♪Lovely Idol♪ 第08話 「ソロですか？」 (704x396 x264).avi BQO37fo3kI 166,196,334 d99b11b77284405ffc74ab28b0255f5da23162c2<br>
+[アニメ DVD] らぶドル ♪Lovely Idol♪ 第09話 「解散ですか？」 (704x396 x264).avi BQO37fo3kI 174,353,602 29a229bd803d3c49d0f53da80030c5bece61daec<br>
+[アニメ DVD] らぶドル ♪Lovely Idol♪ 第10話 「届きますか？」 (704x396 x264).avi BQO37fo3kI 189,080,634 89eb995d8062dc07667dca53af8e521181c762b7<br>
+[アニメ DVD] らぶドル ♪Lovely Idol♪ 第11話 「歌・おぼえていますか？」 (704x396 x264).avi BQO37fo3kI 232,607,604 202912f96e1f9dae24c4583824cf6b17d93b3a1d<br>
+[アニメ DVD] らぶドル ♪Lovely Idol♪ 第12話 「はじまり(デビュー)ですか？」 (704x396 x264).avi BQO37fo3kI 191,266,908 a7e4fca6f7410188f0ec4fee50465406290c8f44<br>
+[アニメ DVD] らぶドル ♪Lovely Idol♪ 第13話 「温泉ですか？」 (704x396 x264 120fps).avi BQO37fo3kI 343,820,026 74c7a24ccf1f5e866b960c32be4dfba7fcd2b81f<br>
+<hr class="A">
+らぶドル ～Lovely Idol～ 映像特典 について。(zip).avi YAyAoONEVq 52,542,199 347a4dc19c07b885f9e25f2e69ceb06ab01334ff<br>
+らぶドル ～Lovely Idol～ 映像特典 「らぶドルDAY」後藤・茅原・酒井イベントレポート (DVD VGA DivX611).avi YAyAoONEVq 312,865,628 f532c13698e603c188b21b50b3147c52ce8395d1<br>
+らぶドル ～Lovely Idol～ 映像特典 「11月野川イベントレポート」 (DVD VGA DivX611).avi YAyAoONEVq 173,272,136 7d53b9fb7ff941a8409b2ca1f458218803619c0a<br>
+らぶドル ～Lovely Idol～ 映像特典 「完成披露試写会イベントレポート」 (DVD VGA DivX611).avi YAyAoONEVq 225,201,174 03756374fe22f471eb12e53e3bdc22750eef369f<br>
+らぶドル ～Lovely Idol～ 映像特典 「12月イベントレポート PART 1」 (DVD VGA DivX651).avi YAyAoONEVq 191,556,846 7bfb6fad5b8f9b91978782bdddf6c78724c37f1e<br>
+らぶドル ～Lovely Idol～ 映像特典 「2006年 12月イベントレポート PART 1」 (DVD VGA DivX651).avi YAyAoONEVq 191,556,846 7bfb6fad5b8f9b91978782bdddf6c78724c37f1e<br>
+らぶドル ～Lovely Idol～ 映像特典 「2006年 12月イベントレポート PART 2」 (DVD VGA DivX651).avi YAyAoONEVq 191,909,080 1ba1dae0134b0cb9ce96005d8a400533d2e50029<br>
+らぶドル ～Lovely Idol～ 映像特典 「らぶドルミュージックTV」 (DVD 704x396 DivX651 320kbps).avi YAyAoONEVq 325,092,202 be06d24829d211461396bdbf928e03bbf69581c1<br>
+らぶドル ～Lovely Idol～ 映像特典 「らぶドル声優座談会　最終回スペシャル」 (DVD VGA DivX651).avi YAyAoONEVq 408,090,442 73afb157f9a29b07b0eddd8fa60fa481474eb28c<br>
+らぶドル ～Lovely Idol～ 第01話 「らぶドルですか？」 (DVD 704x396 DivX611).avi YAyAoONEVq 252,919,656 3a0208f74ea616abb040fd3dbbdfceccc0dac8e6<br>
+らぶドル ～Lovely Idol～ 第02話 「NGですか？」 (DVD 704x396 DivX611).avi YAyAoONEVq 254,717,452 d3cac3530677b9e3c5f77d350a301463953fcb46<br>
+らぶドル ～Lovely Idol～ 第03話 「前座ですか？」 (DVD 704x396 DivX611).avi YAyAoONEVq 230,138,418 421746232fba88b638f8e8ff226dd6e244459af8<br>
+らぶドル ～Lovely Idol～ 第04話 「引退ですか？」 (DVD 704x396 DivX611)[Rev2].avi YAyAoONEVq 180,414,464 aa06f22d65a70ef7c3201ba607d27b34065c3a3a<br>
+らぶドル ～Lovely Idol～ 第05話 「バーターですか？」 (DVD 704x396 DivX611).avi YAyAoONEVq 288,101,962 8daa36fb09c89389b08919007e06547db804b32f<br>
+らぶドル ～Lovely Idol～ 第06話 「セットですか？」 (DVD 704x396 DivX611).avi YAyAoONEVq 237,017,504 12eb32f7561c440c495797b84f294982fb42a353<br>
+らぶドル ～Lovely Idol～ 第07話 「急展開、ですか？」 (DVD 704x396 DivX651).avi YAyAoONEVq 236,084,980 61e184cfb0585d40712b5ab14a27148fcc3e866b<br>
+らぶドル ～Lovely Idol～ 第08話 「ソロですか？」 (DVD 704x396 DivX651).avi YAyAoONEVq 144,109,614 a3b383153f827aff6b81a409c3ae0d9c73c3dff0<br>
+らぶドル ～Lovely Idol～ 第09話 「解散ですか？」 (DVD 704x396 DivX651).avi YAyAoONEVq 174,287,566 9e3b9e172a7f4f7bf77331b95c1de85ed150b182<br>
+らぶドル ～Lovely Idol～ 第10話 「届きますか？」 (DVD 704x396 DivX651).avi YAyAoONEVq 187,644,274 c2c55e03badec2f979108be31c9aad680d5cb87c<br>
+らぶドル ～Lovely Idol～ 第11話 「歌・おぼえていますか？」 (DVD 704x396 DivX651).avi YAyAoONEVq 229,051,152 566da62ef94a5b04787afbafd601e06b7853c68b<br>
+らぶドル ～Lovely Idol～ 第12話 「はじまり（デビュー）ですか？」 (DVD 704x396 DivX651).avi YAyAoONEVq 191,827,482 39bc1d134185ac3b4a78e32ad26c3d8160d2f0f7<br>
+らぶドル ～Lovely Idol～ 第13話 「温泉（とくてん）ですか？」 (DVD 704x396 DivX651 120fps).avi YAyAoONEVq 357,714,576 5b703ddc21a7ff57c299105b31b9489d53b1d7aa<br>
+<br></dd>
+<dt><span class="title">ラブひな<b>◆</b></span>08/03/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] ラブひな 第01話 「露天風呂つきの女子寮 温泉な」 (640x480 WMV9 120fps).avi 323,923,968 6f6098802f1ea2977c4ea0efdbd7349d6be8bf9d<br>
+[アニメ DVD] ラブひな 第02話 「ひなた荘の新住人 しのぶ 矢印な」 (640x480 WMV9 120fps).avi 275,128,320 4532bac58f601b6cdf56f1b48b3e58cb80bf8888<br>
+[アニメ DVD] ラブひな 第03話 「恋する！？ケンドー娘 剣劇な」 (640x480 WMV9 120fps).avi 297,181,184 a63f369b080b1bdf7cb9f988a6e5acc7baa4392c<br>
+[アニメ DVD] ラブひな 第04話 「東大の約束は15年前 日記な」 (640x480 WMV9 120fps).avi 290,738,176 feea75c14ab8585463a8d27033aa8350488465a5<br>
+[アニメ DVD] ラブひな 第05話 「急接近！京都二人旅 ドキドキハラハラな」 (640x480 WMV9 120fps).avi 311,072,768 5b665917d5cdfcca925b11f8db9218faff3ffc82<br>
+[アニメ DVD] ラブひな 第06話 「景太郎、初キス？の相手 旅路な」 (640x480 WMV9 120fps).avi 264,114,176 5d4478ed8481e84f26693645794ea7ec5dbca2ba<br>
+[アニメ DVD] ラブひな 第07話 「初デート、景太郎のしたごころ いまどきな」 (640x480 WMV9 120fps).avi 285,360,128 5b74722e8f47bdf69a5e2f0b9ad50d6a69a5e856<br>
+[アニメ DVD] ラブひな 第08話 「ケンドー娘の竜宮伝説 夢かな」 (640x480 WMV9 120fps).avi 287,662,080 4e07dfc635c1447b1d7646545d02e86cee0d8fa9<br>
+[アニメ DVD] ラブひな 第09話 「ひなた荘密室現金強奪事件 ミステリな」 (640x480 WMV9 120fps).avi 282,081,280 9069134b51f5edaa39a256bf111243c5b7d63fff<br>
+[アニメ DVD] ラブひな 第10話 「月夜にさまよう美女の正体は？ 変身な」 (640x480 WMV9 120fps).avi 289,630,208 953fed165ae80856c76b065cd32e801274495cbc<br>
+[アニメ DVD] ラブひな 第11話 「目指せ東大生アイドルは予備校生 歌うな」 (640x480 WMV9 120fps).avi 226,103,296 9eea97983506cf6a07f650ea6d85861bf7b4d8de<br>
+[アニメ DVD] ラブひな 第12話 「お色直し？剣豪モトコの晴れ着姿 女の子な」 (640x480 WMV9 120fps).avi 282,585,088 a3b1a8f11f686629a581489e2b3ca8dde7cb421d<br>
+[アニメ DVD] ラブひな 第13話 「初キスの味はレモン？マシュマロ？ おとな」 (640x480 WMV9 120fps).avi 261,339,136 700eafc053d3518ac72fc0d86a9f092e5deccfef<br>
+[アニメ DVD] ラブひな 第14話 「再会？なる憧れの人は今東大講師 ラブへな」 (640x480 WMV9 120fps).avi 281,540,608 5f2903a9ade5c1e749aeb86c3fb9dcddad7b4929<br>
+[アニメ DVD] ラブひな 第15話 「好き！洞くつの中のラブラブ宣言 ほらあな」 (640x480 WMV9 120fps).avi 235,831,296 2f4bc3057bb28928393b2f9be4c2f2e21be2bf66<br>
+[アニメ DVD] ラブひな 第16話 「海の家・浜茶屋ひなたのサル芝居 チュウかな」 (640x480 WMV9 120fps).avi 277,106,688 49ae6a4c914c0522475783a8e1a07797e3f6deb2<br>
+[アニメ DVD] ラブひな 第17話 「海…なるにドキッ！妖怪にクラッ 妖しいな」 (640x480 WMV9 120fps).avi 207,747,072 1e5ddc4addec4a84a42b4600177a86876d5b12e0<br>
+[アニメ DVD] ラブひな 第18話 「それぞれの浴衣のきみと夏祭り ほな」 (640x480 WMV9 120fps).avi 259,454,976 b41e61c5fc101f0cb92fab35a1f0a2485a51e91e<br>
+[アニメ DVD] ラブひな 第19話 「玉の輿？海のむこうの皇太子 暖かな」 (640x480 WMV9 120fps).avi 243,286,016 258608f3a88e0b5d26057e99f68e9c6bf2f5e8bf<br>
+[アニメ DVD] ラブひな 第20話 「眠りの少女とセピア色の約束 カラクリな」 (640x480 WMV9 120fps).avi 192,323,584 c5642b90497d6f0ecc10f01dea3457cab6fafdf8<br>
+[アニメ DVD] ラブひな 第21話 「嫉妬爆発！？ボート上のお熱い二人 わなわな」 (640x480 WMV9 120fps).avi 232,912,896 f3e62c73a0e25ff08e052f6f4a0380d5446e2990<br>
+[アニメ DVD] ラブひな 第22話 「妹メイのたくらみ、密室大作戦 そんな」 (640x480 WMV9 120fps).avi 226,285,568 d3252bb5bd693bf61629fa39877dc6387b5b0269<br>
+[アニメ DVD] ラブひな 第23話 「成瀬川なる、揺れる女心と景太郎 こなごな」 (640x480 WMV9 120fps).avi 209,217,536 8ac76d1a221c59b3ab684130b108cde1554c571a<br>
+[アニメ DVD] ラブひな 第24話 「祝！サクラサクのは東大？恋？ みんな」 (640x480 WMV9 120fps).avi 212,652,032 6eded3e7dced4a9e111ff6721014baae8845c9b1<br>
+[アニメ DVD] ラブひな 第25話 「素子のセンタク、恋か剣… 泣くな」 (640x480 WMV9 120fps).avi 329,652,224 27fda440b39bce466c906cf99df8af8d93967cc5<br>
+<hr class="A">
+[アニメ][DVD-Rip] ラブひな 第01話 『露天風呂つきの女子寮 温泉な』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,835,072 5eb024ea37286b7744b795dcddb9663e4298ab49<br>
+[アニメ][DVD-Rip] ラブひな 第02話 『ひなた荘の新住人しのぶ 矢印な』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,914,944 f0302543700a7026667964d6b3b881dfaa8ee830<br>
+[アニメ][DVD-Rip] ラブひな 第03話 『恋する！？ケンドー娘 剣劇な』 〔21m35s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,949,760 1a47eb3a980e3949099d8b18b0c4a6f837cacf77<br>
+[アニメ][DVD-Rip] ラブひな 第04話 『東大の約束は15年前 日記な』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,912,896 cb0b2ef81bdcf8ef6850f4a9fb31ea885c258af3<br>
+[アニメ][DVD-Rip] ラブひな 第05話 『急接近！京都二人旅 ドキドキハラハラな』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,908,800 ced5e0d00d68faeddd08e23dd29f3ef0d5eb0c6c<br>
+[アニメ][DVD-Rip] ラブひな 第06話 『景太郎、初キス？の相手 旅路な』 〔21m35s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,921,088 1febf4cb3433cfe95b24c57a2089e5bac33edbc1<br>
+[アニメ][DVD-Rip] ラブひな 第07話 『初デート、景太郎のしたごころ いまどきな』 〔21m35s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,761,344 74bb71b721fc9798ba60b8dac34009466c762fc0<br>
+[アニメ][DVD-Rip] ラブひな 第08話 『ケンドー娘の竜宮伝説 夢かな』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,712,192 ded44d60c69c2472e84a66d0ecb7535f7214fa59<br>
+[アニメ][DVD-Rip] ラブひな 第09話 『ひなた荘密室現金強奪事件 ミステリな』 〔21m35s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,919,040 9858fd7b6fc3c1fb23e16e0e56c88aefae046197<br>
+[アニメ][DVD-Rip] ラブひな 第10話 『月夜にさまよう美女の正体は？ 変身な』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,749,056 1fc980579d22e46dd027aefcc67a5fa6ba7376fe<br>
+[アニメ][DVD-Rip] ラブひな 第11話 『目指せ東大生アイドルは予備校生 歌うな』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,978,432 601d7cc1c37f930182911f2f891e64bcf2fe7063<br>
+[アニメ][DVD-Rip] ラブひな 第12話 『お色直し？剣豪モトコの晴れ着姿 女の子な』 〔21m35s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,876,032 fea2d2c575004f8623b76f20ed0be1a60b1f6511<br>
+[アニメ][DVD-Rip] ラブひな 第13話 『初キスの味はレモン？マシュマロ？ おとな』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,906,752 1a4826daa2f0fdb5fd7d99682dffa0d8ec68af5d<br>
+[アニメ][DVD-Rip] ラブひな 第14話 『再会？なる憧れの人は今東大講師 ラブへな』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,826,880 c946ce320c1e2c7be141d70485ac09c0fb5ba81f<br>
+[アニメ][DVD-Rip] ラブひな 第15話 『好き！洞くつの中のラブラブ宣言 ほらあな』 〔21m35s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,927,232 f70023c1151eb43c1cf4ef641c1e779b9553202a<br>
+[アニメ][DVD-Rip] ラブひな 第16話 『海の家・浜茶屋ひなたのサル芝居 チュウかな』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,951,808 781ca8b21e5099ba89622b42c2d9ac1f3ba767d0<br>
+[アニメ][DVD-Rip] ラブひな 第17話 『海…なるにドキッ！妖怪にクラッ 妖しいな』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,941,568 57e2c130ba5910223d8245a0c77e31d295059276<br>
+[アニメ][DVD-Rip] ラブひな 第18話 『それぞれの浴衣のきみと夏祭り ほな』 〔21m35s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,859,648 6961d4361a6322b67135517aafb55cedc9afefc7<br>
+[アニメ][DVD-Rip] ラブひな 第19話 『玉の輿？海のむこうの皇太子 暖かな』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,159,232 914869430c34bacd263de4e5374832b245f8ee60<br>
+[アニメ][DVD-Rip] ラブひな 第20話 『眠りの少女とセピア色の約束 カラクリな』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,953,856 3bf7c9640f890d660fd157794eb2ae6584fc98af<br>
+[アニメ][DVD-Rip] ラブひな 第21話 『嫉妬爆発！？ボート上のお熱い二人 わなわな』 〔21m35s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,988,672 3ecb3acf0f47065b4f22d053f58a26c286b900e2<br>
+[アニメ][DVD-Rip] ラブひな 第22話 『妹メイのたくらみ、密室大作戦 そんな』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,863,744 f6bae0ae88e2888bc8c34e6bf2f9028c9aeb17ca<br>
+[アニメ][DVD-Rip] ラブひな 第23話 『成瀬川なる、揺れる女心と景太郎 こなごな』 〔21m34s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,994,816 86fc300d8670c155ef6edb2a05b0f0422aaad165<br>
+[アニメ][DVD-Rip] ラブひな 第24話 『祝！サクラサクのは東大？恋？ みんな』 〔21m35s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 168,364,032 036bb1669da7bce42d76636eff5765868ffc2da7<br>
+[アニメ][DVD-Rip] ラブひな 第25話 『素子のセンタク、恋か剣… 泣くな』 〔24m29s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 191,584,256 f91c9ecf4b6110e605a27416c142d45e72c07165<br><br>
+[アニメ][DVD-Rip] ラブひな 『クリスマススペシャル ～サイレント・イヴ～』 〔45m27s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 353,957,888 4c6c72fc0e9f77fa408392347dda65b0b02f8071<br>
+[アニメ][DVD-Rip] ラブひな 『春スペシャル ～キミ サクラチルナカレ！！～』 〔45m54s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 359,331,840 682f5cf9ceee83b50679e86b4d1e6495dde0bea8<br>
+[アニメ][DVD-Rip] ラブひな Again1 『可奈子』 〔29m11s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 227,770,368 6c7e645bcb4f9b3e9f372c2a23b25581ba450aa5<br>
+[アニメ][DVD-Rip] ラブひな Again2 『景太郎』 〔28m55s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 224,788,480 dbed71be7d311771a64d6891c82733cef85590f5<br>
+[アニメ][DVD-Rip] ラブひな Again3 『なる』 〔28m36s 640x352 DivX5.1 120fps MPEG1-Layer3 48KHz 160kbps 89dB〕.avi 223,260,672 81537da29a4b01d8b35b8b79adfd30c5eade47c6<br>
+<hr class="A">
+[DVD] ラブひな 第01話 「露天風呂つきの女子寮 温泉な」 (640x480 WMV9 QB93).wmv 253,605,312 0f944198fd98d4c48a776399af95317ba9444306<br>
+[DVD] ラブひな 第02話 「ひなた荘の新住人しのぶ 矢印な」 (640x480 WMV9 QB93).wmv 213,141,312 fd995bc87ad6d781607c3c9d5cc865c9e8ff545d<br>
+[DVD] ラブひな 第03話 「恋する！？ケンドー娘 剣劇な」 (640x480 WMV9 QB93).wmv 236,949,326 83623cb8e4c7fa2c0c42797f15a2c778d48eba6a<br>
+[DVD] ラブひな 第04話 「東大の約束は15年前 日記な」 (640x480 WMV9 QB93).wmv 225,797,312 da30c8f9d6b091ff5f8e95f5e8988b67b9b53261<br>
+[DVD] ラブひな 第05話 「急接近！京都二人旅 ドキドキハラハラな」 (640x480 WMV9 QB93).wmv 236,501,312 fda98341f0e2be05253ea4e1562e0aac91c8cc9b<br>
+[DVD] ラブひな 第06話 「景太郎、初キス？の相手 旅路な」 (640x480 WMV9 QB93).wmv 206,293,312 df68ae128368129e79f05c0790fc47df21ca2ccb<br>
+[DVD] ラブひな 第07話 「初デート、景太郎のしたごころ いまどきな」 (640x480 WMV9 QB93).wmv 214,069,312 722fa7b9b2f3e4a9e6ed0e48d24121e3d88e5899<br>
+[DVD] ラブひな 第08話 「ケンドー娘の竜宮伝説 夢かな」 (640x480 WMV9 QB93).wmv 227,301,312 059f0298dd4b6c89cd37a3f5b70bd67c85c2fd94<br>
+[DVD] ラブひな 第09話 「ひなた荘密室現金強奪事件 ミステリな」 (640x480 WMV9 QB93).wmv 216,341,312 b3bac706f3e0792f65069af7f76a71c57004b893<br>
+[DVD] ラブひな 第10話 「月夜にさまよう美女の正体は？ 変身な」 (640x480 WMV9 QB93).wmv 223,653,312 645d7641ac040b018e9f1882ffca0f86b2b2614e<br>
+[DVD] ラブひな 第11話 「目指せ東大生 アイドルは予備校生 歌うな」 (640x480 WMV9 QB93).wmv 180,309,312 4433d23e31acb36b8be715c88068dbf1e2b8d34f<br>
+[DVD] ラブひな 第12話 「お色直し？剣豪モトコの晴れ着姿 女の子な」 (640x480 WMV9 QB93).wmv 218,517,312 87f29cfb92710eb4c7d7e41c02b380185249929d<br>
+[DVD] ラブひな 第13話 「初キスの味はレモン？マシュマロ？ おとな」 (640x480 WMV9 QB93).wmv 202,469,312 171f84309808499c97f8126aae1bf6c02afbf9d8<br>
+[DVD] ラブひな 第14話 「再会？なる憧れの人は今東大講師 ラブへな」 (640x480 WMV9 QB93).wmv 212,869,312 ea01da9a6f57bfc988e4f86b28a3eb529011d49a<br>
+[DVD] ラブひな 第15話 「好き！洞くつの中のラブラブ宣言 ほらあな」 (640x480 WMV9 QB93).wmv 185,365,312 08d49f064c8d088bd9d5fa725fb54b383caf62ff<br>
+[DVD] ラブひな 第16話 「海の家・浜茶屋ひなたのサル芝居 チュウかな」 (640x480 WMV9 QB93).wmv 214,517,312 50b28adc1ef3055602641d30f16e4fec73bf7d87<br>
+[DVD] ラブひな 第17話 「海…なるにドキッ！妖怪にクラッ 妖しいな」 (640x480 WMV9 QB93).wmv 165,365,312 7773eec5bfd69f6c6c6c441d2ce51542d4f095f6<br>
+[DVD] ラブひな 第18話 「それぞれの浴衣のきみと夏祭り ほな」 (640x480 WMV9 QB93).wmv 197,653,312 cc85e3467074910fcac43ac828fb56f1da1cd5f3<br>
+[DVD] ラブひな 第19話 「玉の輿？海のむこうの皇太子 暖かな」 (640x480 WMV9 QB93).wmv 189,557,312 af1dbb61c6cabf80e75d78e06490cf07dbabd869<br>
+[DVD] ラブひな 第20話 「眠りの少女とセピア色の約束 カラクリな」 (640x480 WMV9 QB93).wmv 148,885,312 1b5b587d81e3b312b74a9caed3d71624847a9001<br>
+[DVD] ラブひな 第21話 「嫉妬爆発！？ボート上のお熱い二人 わなわな」 (640x480 WMV9 QB93).wmv 189,301,312 7226cc02fa1a7d9746304c94a7fe3d0e01662eb9<br>
+[DVD] ラブひな 第22話 「妹メイのたくらみ、密室大作戦 そんな」 (640x480 WMV9 QB93).wmv 173,413,312 e59dfd1b2ac13816998efcdebca091e1b8d38297<br>
+[DVD] ラブひな 第23話 「成瀬川なる、揺れる女心と景太郎 こなごな」 (640x480 WMV9 QB93).wmv 162,613,312 9512a4d5ccb0805f35f6dc337e80da428fef3ec6<br>
+[DVD] ラブひな 第24話 「祝！サクラサクのは東大？恋？ みんな」 (640x480 WMV9 QB93).wmv 187,637,312 310c255abe570e942464b91d541e6c4cf193ce3c<br>
+[DVD] ラブひな 第25話 「素子のセンタク、恋か剣… 泣くな」 (640x480 WMV9 QB93).wmv 256,375,762 ad3ffd68980135b8aee315eca2d069d3417901b1<br><br>
+[DVD] ラブひな クリスマススペシャル -サイレント・イヴ- 映像特典 ノンクレジットエンディング (640x480 WMV9 QB93).wmv 25,764,660 2d309a3a42238eb3eb49808c38184c136271bfd9<br>
+[DVD] ラブひな クリスマススペシャル -サイレント・イヴ- (640x480 WMV9 QB93).wmv 479,465,360 cfcf6cc7e2bc9e60bfa3642e300703d088669819<br><br>
+[DVD] ラブひな 春スペシャル -キミサクラチルナカレ!!- 映像特典 ノンクレジットエンディング (640x480 WMV9 QB93).wmv 37,108,576 8a406070c64fb1c8634de875d1e633f24345bdcf<br>
+[DVD] ラブひな 春スペシャル -キミサクラチルナカレ!!- (640x480 WMV9 QB93).wmv 552,633,752 ec86ca8309bf94f0a1c262f7f24e55c802b740ef<br><br>
+[DVD] ラブひな Again 映像特典 ノンテロップオープニング (640x480 WMV9 QB93).wmv 25,668,590 d186db4fa8d2daf8376afada2d73a4bc8777f14a<br>
+[DVD] ラブひな Again 映像特典 #1 ノンテロップエンディング (640x480 WMV9 QB93).wmv 11,572,170 0e1878873b212992b28469a98874094165ede7cf<br>
+[DVD] ラブひな Again 映像特典 #2 ノンテロップエンディング (640x480 WMV9 QB93).wmv 9,044,184 0ca5fb579bddd99ff76fd9495e32ded634915d76<br>
+[DVD] ラブひな Again 映像特典 #3 ノンテロップエンディング (640x480 WMV9 QB93).wmv 13,412,170 7f6f3207c8df1485faf90254c66271f0b24c3d97<br>
+[DVD] ラブひな Again 第1話 ～可奈子～ (640x480 WMV9 QB93).wmv 297,243,710 9c5a2717feaf81d8b55b90bd94f5c380b92f9a6a<br>
+[DVD] ラブひな Again 第2話 ～景太郎～ (640x480 WMV9 QB93).wmv 257,115,472 035ae03eeec86d9fe60ba95a493aab9e88bf2d27<br>
+[DVD] ラブひな Again 第3話 ～なる～ (640x480 WMV9 QB93).wmv 272,267,220 8747803a85515f9ee87ced3b484fcdcce5492e16<br>
+<hr class="A">
+[DVD] ラブひな Vol.09 映像特典 らぶ秘な 「#24最終回「みんな」 ノンクレジットED」 (640x480 WMV9).wmv puiAh0X7b3 13,786,021 20ad9657eba020b25f3b5575d24cff61343fc9fa<br>
+[DVD] ラブひな Vol.09 映像特典 らぶ秘な 「５秒番組宣伝集」 (640x480 WMV9).wmv puiAh0X7b3 30,031,073 9bfef77f7245d86fdab320380f7df1c19075ce2f<br>
+[DVD] ラブひな Vol.09 映像特典 らぶ秘な 「TVスポット集」 (640x480 WMV9).wmv puiAh0X7b3 39,758,153 31258cf6b66dd749af28902f181a98b1aecd4c87<br>
+[DVD] ラブひな Vol.09 映像特典 らぶ秘な 「ドリームキャスト用「ラブひな スマイル・アゲイン」 OP」 (640x480 WMV9).wmv puiAh0X7b3 31,443,959 55fadaf47cbc0b45ee17f021c441d2cc20a412a0<br>
+[DVD] ラブひな Vol.09 映像特典 らぶ秘な 「ノンクレジットOP」 (640x480 WMV9).wmv puiAh0X7b3 28,311,115 f6a535c17dc9dcc04dd39dc725d6aa21106c9bd2<br>
+[DVD] ラブひな Vol.09 映像特典 らぶ秘な 「ノンクレジットED」 (640x480 WMV9).wmv puiAh0X7b3 13,041,059 455fa69044d03804c22241168fb3ed9a475e663b<br>
+[DVD] ラブひな Vol.09 映像特典 らぶ秘な 「番組宣伝スポット集」 (640x480 WMV9).wmv puiAh0X7b3 65,971,525 75e5b5bde9d4c19a3041f82793df408796a5bc7d<br>
+[DVD] ラブひな 第01話 「露天風呂つきの女子寮　温泉な」 (640x480 WMV9).wmv puiAh0X7b3 299,364,115 88c891b2b7317b89cdcdcc6f46f63396448d8c92<br>
+[DVD] ラブひな 第02話 「ひなた荘の新住人しのぶ　矢印な」 (640x480 WMV9).wmv puiAh0X7b3 254,934,691 62f547c5f14b016c8598d1845de4280b7c87d923<br>
+[DVD] ラブひな 第03話 「恋する!？ケンドー娘　剣劇な」 (640x480 WMV9).wmv puiAh0X7b3 281,224,297 8ddf7689303cb1cf60fdc66df6ab9d9258514688<br>
+[DVD] ラブひな 第04話 「東大の約束は15年前　日記な」 (640x480 WMV9).wmv puiAh0X7b3 268,419,071 07f1d04540c6e78cd38dd9bb3d71591772baab9a<br>
+[DVD] ラブひな 第05話 「急接近!京都二人旅　ドキドキハラハラな」 (640x480 WMV9).wmv puiAh0X7b3 279,756,455 7ef379f30fc8b611b47c22436b9cadc189cf39a9<br>
+[DVD] ラブひな 第06話 「景太郎、初キス？の相手　旅路な」 (640x480 WMV9).wmv puiAh0X7b3 245,317,085 053ee210955f424dd370c1dc37b1a4df1304908b<br>
+[DVD] ラブひな 第07話 「初デート、景太郎のしたごころ　いまどきな」 (640x480 WMV9).wmv puiAh0X7b3 258,209,943 f41cf0968c6f4614214cc86828cf87429918b8eb<br>
+[DVD] ラブひな 第08話 「ケンドー娘の竜宮伝説　夢かな」 (640x480 WMV9).wmv puiAh0X7b3 264,508,487 c5d546bfdd6e9e596e724d97d1b23da8ae7bab03<br>
+[DVD] ラブひな 第09話 「ひなた荘密室現金強奪事件　ミステリな」 (640x480 WMV9).wmv puiAh0X7b3 252,930,115 e8a45a96863b7f5b6deb80bc78abd5d079288597<br>
+[DVD] ラブひな 第10話 「月夜にさまよう美女の正体は？　変身な」 (640x480 WMV9).wmv puiAh0X7b3 263,796,483 e7e7fc59ef92e89c511bed114fb5c3d4a008f200<br>
+[DVD] ラブひな 第11話 「目指せ東大生アイドルは予備校生　歌うな」 (640x480 WMV9).wmv puiAh0X7b3 214,492,523 a050e0fe9adf0f0ab1e13548c8efb0d144e88823<br>
+[DVD] ラブひな 第12話 「お色直し？剣豪モトコの晴れ着姿　女の子な」 (640x480 WMV9).wmv puiAh0X7b3 259,513,469 023b1d2828a43538a68f27d07f1971e4e193ccf4<br>
+[DVD] ラブひな 第13話 「初キスの味はレモン？マシュマロ？　おとな」 (640x480 WMV9).wmv puiAh0X7b3 238,613,231 605e5a739f43ce329eabe6450f33353fff6cd302<br>
+[DVD] ラブひな 第14話 「再会？なる憧れの人は今東大講師　ラブへな」 (640x480 WMV9).wmv puiAh0X7b3 258,220,891 8a7b6f7f8a43f82a752f9838aeccb3632f332b03<br>
+[DVD] ラブひな 第15話 「好き!洞くつの中のラブラブ宣言　ほらあな」 (640x480 WMV9).wmv puiAh0X7b3 221,656,445 5c90be13f7a4e95e23b082fd99003033c834009b<br>
+[DVD] ラブひな 第16話 「海の家・浜茶家ひなたのサル芝居　チュウかな」 (640x480 WMV9).wmv puiAh0X7b3 252,502,903 48a7f120fc0d303402a777dc9916feade5762865<br>
+[DVD] ラブひな 第17話 「海…なるにドキッ!妖怪にクラッ　妖しいな」 (640x480 WMV9).wmv puiAh0X7b3 197,667,179 e4130622ffa1a1a0e2769d937e30f6910565c6c4<br>
+[DVD] ラブひな 第18話 「それぞれの浴衣のきみと夏祭り　ほな」 (640x480 WMV9).wmv puiAh0X7b3 237,243,987 0229f67439b9a2b326213a21c3b9a8312a5cf907<br>
+[DVD] ラブひな 第19話 「玉の輿？海のむこうの皇太子　暖かな」 (640x480 WMV9).wmv puiAh0X7b3 222,488,943 66e6da082ecab48d157c6fa95ef96f8c7a36ff2a<br>
+[DVD] ラブひな 第20話 「眠りの少女とセピア色の約束　カラクリな」 (640x480 WMV9).wmv puiAh0X7b3 180,951,375 ee2c30c5df3fedc8fa5569efbfe08b4015993f30<br>
+[DVD] ラブひな 第21話 「嫉妬爆発!？ボート上のお熱い二人　わなわな」 (640x480 WMV9).wmv puiAh0X7b3 217,702,051 c2093f21905aecf7e37b72f562a2b328472e0726<br>
+[DVD] ラブひな 第22話 「妹メイのたくらみ、密室大作戦　そんな」 (640x480 WMV9).wmv puiAh0X7b3 206,726,137 214ea45347a16803361db46e3f6a6b1ca1a70aed<br>
+[DVD] ラブひな 第23話 「成瀬川なる、揺れる女心と景太郎　こなごな」 (640x480 WMV9).wmv puiAh0X7b3 195,224,437 ad1c5b239aa888a7853017fc17bf847ba76e5909<br>
+[DVD] ラブひな 第24話 「祝!サクラサクのは東大？恋？　みんな」 (640x480 WMV9).wmv puiAh0X7b3 195,498,293 980edde6e2262770d6d9fc033b3d06a39697e065<br>
+[DVD] ラブひな 第25話 「素子のセンタク、恋か剣…　泣くな」 (640x480 WMV9).wmv puiAh0X7b3 306,069,013 b46a60987e08f4984988a066da0080b0f220547c<br><br>
+[DVD] ラブひな クリスマススペシャル -サイレント・イヴ- 映像特典 「ノンクレジットED」 (640x480 WMV9).wmv puiAh0X7b3 29,735,207 756f8b0ba6a3e690f84da655cd2f964fd1e5c3bd<br>
+[DVD] ラブひな クリスマススペシャル -サイレント・イヴ- (640x480 WMV9).wmv puiAh0X7b3 516,437,177 48d5d23196d3c124bba9337587f609052fd69473<br><br>
+[DVD] ラブひな 春スペシャル -キミサクラチルナカレ!!- 映像特典 「ノンクレジットED」 (640x480 WMV9).wmv puiAh0X7b3 40,634,389 04fda48c0d3a81e3fc3ef31180e28597240654bb<br>
+[DVD] ラブひな 春スペシャル -キミサクラチルナカレ!!- (640x480 WMV9).wmv puiAh0X7b3 579,138,035 1d90a8b172909cf67a6500aae171bb943255beeb<br><br>
+[DVD] ラブひな Again Vol.01 映像特典 「ノンクレジットエンディング」 (640x480 WMV9).wmv puiAh0X7b3 17,214,569 44d479be3429c1c36377f67b18960ffaa1954f18<br>
+[DVD] ラブひな Again Vol.02 映像特典 「ノンクレジットエンディング」 (640x480 WMV9).wmv puiAh0X7b3 13,654,519 34bdc3f917d0b13aab152c94fe3f21c72a89320d<br>
+[DVD] ラブひな Again Vol.03 映像特典 「ノンクレジットオープニング&エンディング」 (640x480 WMV9).wmv puiAh0X7b3 47,678,195 74880505cf8de25586dec64957e6be9049ad11d1<br>
+[DVD] ラブひな Again 第01話 「～可奈子～」 (640x480 WMV9).wmv puiAh0X7b3 391,522,859 2e7d554009cdab72669825b3a348425e55604237<br>
+[DVD] ラブひな Again 第02話 「～景太郎～」 (640x480 WMV9).wmv puiAh0X7b3 325,448,229 1e6dca68a20c6f148ad50a28eb58d4602d6fbdd8<br>
+[DVD] ラブひな Again 第03話 「～なる～」 (640x480 WMV9).wmv puiAh0X7b3 343,314,095 3b38a339793580a9268486850c8e23e479a3445b<br>
+<br></dd>
+<dt><span class="title">LOVE LOVE？<b>◆</b></span>04/09/30 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] LOVE LOVE？ 映像特典 01巻 第01話予告編 (15秒 & 30秒) (640x480 DivX511).avi aaLazGL2NBMWX 8,843,264 9362cb9a798ad1685d507ff37fb3a8a70062c791<br>
+[アニメ DVD] LOVE LOVE？ 映像特典 02巻 ノンクレジットエンディング (640x480 DivX511).avi aaLazGL2NBMWX 12,564,480 280faacae787a040118722d487d69521033a7b04<br>
+[アニメ DVD] LOVE LOVE？ 映像特典 03巻 DVD販売宣伝CM ver.1 (640x480 120f DivX511).avi aaLazGL2NBMWX 18,565,120 c4fe3d4c09aba04f547dedfa2dc557fd3cae9edc<br>
+[アニメ DVD] LOVE LOVE？ 映像特典 03巻 DVD販売宣伝CM ver.2 (640x480 120f DivX511).avi aaLazGL2NBMWX 24,027,136 3395210ee77a057acc97bfa771b0bc21cb9a7c7e<br>
+[アニメ DVD] LOVE LOVE？ 映像特典 03巻 DVD販売宣伝CM ver.3 (640x480 120f DivX511).avi aaLazGL2NBMWX 27,654,144 83b7fee0ae27738d72b9798171660ecd22f77d19<br>
+[アニメ DVD] LOVE LOVE？ 映像特典 03巻 DVD販売宣伝CM ver.4 (640x480 120f DivX511).avi aaLazGL2NBMWX 32,960,512 0e1d6f87ff0b5f7c4ce52fb6ae3dadf60b34d1b0<br>
+[アニメ DVD] LOVE LOVE？ 映像特典 03巻 ノンクレジットオープニング (640x480 DivX511).avi aaLazGL2NBMWX 38,776,832 513be756c7358b9466bee0b71f004384bd0a53bf<br>
+[アニメ DVD] LOVE LOVE？ 映像特典 04巻 DVD販売宣伝CM ver.5 (640x480 120f DivX511).avi aaLazGL2NBMWX 10,246,144 b7bd7eb6763111c9fdf57a48158e71df7dc9ac1c<br>
+[アニメ DVD] LOVE LOVE？ 第01話 「三月の濡れた砂」 (640x480 DivX511).avi aaLazGL2NBMWX 206,940,160 61ae5c3924d9fc921670bcc06677d4ec456941de<br>
+[アニメ DVD] LOVE LOVE？ 第02話 「六月－夢の国」 (640x480 DivX511).avi aaLazGL2NBMWX 158,640,128 6a4f645b9be7ec10fff784dea00131d13889e288<br>
+[アニメ DVD] LOVE LOVE？ 第03話 「七月の狂詩曲」 (640x480 DivX511 TV未放映).avi aaLazGL2NBMWX 150,495,232 d91d1dba9116ec89f7ef54908b0c6b315075672b<br>
+[アニメ DVD] LOVE LOVE？ 第04話 「校庭にいない八月」 (640x480 DivX511).avi aaLazGL2NBMWX 165,486,592 de8f82c900e8685a0f09cf946b0d8e870126c42e<br>
+[アニメ DVD] LOVE LOVE？ 第05話 「九月になれば」 (640x480 DivX511 TV未放映).avi aaLazGL2NBMWX 167,282,688 d516f614d0cbb3c631d1901efb599b31a31aaa36<br>
+[アニメ DVD] LOVE LOVE？ 第06話 「九月の空」 (640x480 DivX511).avi aaLazGL2NBMWX 160,952,320 41cddc4aac57fe05908b239e6c66cdc4e14107e9<br>
+[アニメ DVD] LOVE LOVE？ 第07話 「男はそれを我慢できない」 (640x480 DivX511).avi aaLazGL2NBMWX 167,278,592 4375b00b606923b012ccebda9f70b9afe49b5f13<br>
+[アニメ DVD] LOVE LOVE？ 第08話 「地獄に堕ちた女優ども」 (640x480 DivX511 TV未放映).avi aaLazGL2NBMWX 178,356,224 2526268ffccf9c3fa4cc243f71144fa2dbdc2d58<br>
+[アニメ DVD] LOVE LOVE？ 第09話 「知られすぎていた男」 (640x480 DivX511).avi aaLazGL2NBMWX 147,773,440 e6e4ee24827aa9aac328efd25846580664476f5b<br>
+[アニメ DVD] LOVE LOVE？ 第10話 「愛と追憶の日々」 (640x480 DivX511).avi aaLazGL2NBMWX 161,470,464 a849d58b4d4df4cd4798f986981e6128a87e5ea3<br>
+[アニメ DVD] LOVE LOVE？ 第11話 「わが青春に悔なし」 (640x480 DivX511).avi aaLazGL2NBMWX 167,708,672 8b4a39ba550d532494cc71a13e316d32e04122b8<br>
+[アニメ DVD] LOVE LOVE？ 第12話 「嵐の中で輝いて」 (640x480 120f DivX511).avi aaLazGL2NBMWX 246,681,600 eda6384df5ea80565fce692db1c6936b9cdf87fc<br>
+[アニメ DVD] LOVE LOVE？ 第13話 「歴史は女で作られる」 (640x480 DivX511 TV未放映).avi aaLazGL2NBMWX 198,930,432 d1ff0a8497959000d54abf55609caad60c653dc9<br><br>
+[アニメ DVD] LOVE LOVE？ 映像特典 01巻 第01話予告編 (15秒 & 30秒) (640x480 WMV9).wmv aaLazGL2NBMWX 11,492,530 57f5254be8ba421612a05e0802fbabc127c20db0<br>
+[アニメ DVD] LOVE LOVE？ 映像特典 02巻 ノンクレジットエンディング (640x480 WMV9).wmv aaLazGL2NBMWX 16,037,148 5b0fc72aecef6b103ec20b1552e8f14a602ecaef<br>
+[アニメ DVD] LOVE LOVE？ 映像特典 03巻 DVD販売宣伝CM ver.1 (640x480 WMV9).wmv aaLazGL2NBMWX 22,260,316 fa8601ff99dc0f37aa29d993e1c6813523a874bd<br>
+[アニメ DVD] LOVE LOVE？ 映像特典 03巻 DVD販売宣伝CM ver.2 (640x480 WMV9).wmv aaLazGL2NBMWX 27,380,302 13493efa411100a9887341cae0eb2296a43db096<br>
+[アニメ DVD] LOVE LOVE？ 映像特典 03巻 DVD販売宣伝CM ver.3 (640x480 WMV9).wmv aaLazGL2NBMWX 31,492,316 00eabb7d1dc2c8f55b7a91bc6ca0f9ca9fbcc33a<br>
+[アニメ DVD] LOVE LOVE？ 映像特典 03巻 DVD販売宣伝CM ver.4 (640x480 WMV9).wmv aaLazGL2NBMWX 39,408,918 6ce394ad08e33009d4bf87db01a38613277dd055<br>
+[アニメ DVD] LOVE LOVE？ 映像特典 03巻 ノンクレジットオープニング (640x480 WMV9).wmv aaLazGL2NBMWX 51,365,148 cef6687737abb9ed81dc32cf0cc7fe458fc66608<br>
+[アニメ DVD] LOVE LOVE？ 映像特典 04巻 DVD販売宣伝CM ver.5 (640x480 WMV9).wmv aaLazGL2NBMWX 12,791,075 158c8fc54ab607cf1a2b29793f1619535ab8f12c<br>
+[アニメ DVD] LOVE LOVE？ 第01話 「三月の濡れた砂」 (640x480 WMV9).wmv aaLazGL2NBMWX 213,760,388 bbcea332a8286c23cdbaa7e9587a030fdc9642e2<br>
+[アニメ DVD] LOVE LOVE？ 第02話 「六月－夢の国」 (640x480 WMV9).wmv aaLazGL2NBMWX 141,376,386 bff8df476c723897bf3c16629e2f3b7fa981ffc1<br>
+[アニメ DVD] LOVE LOVE？ 第03話 「七月の狂詩曲」 (640x480 WMV9 TV未放映).wmv aaLazGL2NBMWX 144,512,386 249a2078e20831e0536c4216a611c3caf57c9c01<br>
+[アニメ DVD] LOVE LOVE？ 第04話 「校庭にいない八月」 (640x480 WMV9).wmv aaLazGL2NBMWX 152,736,390 77ab7a1c80440e40eb8a0490742dfc10ef686af3<br>
+[アニメ DVD] LOVE LOVE？ 第05話 「九月になれば」 (640x480 WMV9 TV未放映).wmv aaLazGL2NBMWX 148,624,386 87071c279f319f00ec5a746d2e91a10d3fdfd21c<br>
+[アニメ DVD] LOVE LOVE？ 第06話 「九月の空」 (640x480 WMV9).wmv aaLazGL2NBMWX 157,552,382 e198cd4170fe60e5ae1e64a60a860c592c0107d4<br>
+[アニメ DVD] LOVE LOVE？ 第07話 「男はそれを我慢できない」 (640x480 WMV9).wmv aaLazGL2NBMWX 152,848,396 2d2533be1538d397346b8f0cf3815a1eecc7d0d9<br>
+[アニメ DVD] LOVE LOVE？ 第08話 「地獄に堕ちた女優ども」 (640x480 WMV9 TV未放映).wmv aaLazGL2NBMWX 178,160,394 aaf0e99afd1836cda386d0db4934b21196dbc1fc<br>
+[アニメ DVD] LOVE LOVE？ 第09話 「知られすぎていた男」 (640x480 WMV9).wmv aaLazGL2NBMWX 148,928,392 a0ab14ee402928682347f1d1c069437cdf74a966<br>
+[アニメ DVD] LOVE LOVE？ 第10話 「愛と追憶の日々」 (640x480 WMV9).wmv aaLazGL2NBMWX 150,096,388 1f17b919ebf7b0892fe6011ccf7e4b0e1159e188<br>
+[アニメ DVD] LOVE LOVE？ 第11話 「わが青春に悔なし」 (640x480 WMV9).wmv aaLazGL2NBMWX 163,216,390 ff540183a302621082edc735e6b13ad72e3cff3c<br>
+[アニメ DVD] LOVE LOVE？ 第12話 「嵐の中で輝いて」 (640x480 WMV9).wmv aaLazGL2NBMWX 194,336,414 028ae02b4adaf3fc90d1f82fa402bb8cde33e249<br>
+[アニメ DVD] LOVE LOVE？ 第13話 「歴史は女で作られる」 (640x480 WMV9 TV未放映).wmv aaLazGL2NBMWX 181,839,639 ffd5eaa344fc892524fb3d24a9012c6a108cd1aa<br>
+<hr class="A">
+[DVD] LOVE･LOVE？ ■映像特典：ノンクレジットオープニング 640x480 DivX511 Lame192k(LPCM).avi UMEVNmGcuy 39,250,404 addd5a88ef1e8b4bbb7c37f71ef9527e894f998d<br>
+[DVD] LOVE･LOVE？ 01話 TV ＃01 「三月の濡れた砂」 640x480 DivX511 Lame192k(LPCM).avi UMEVNmGcuy 254,575,980 6269e4b19a3139430b9e6e1c4f9f403d6cf9629c<br>
+[DVD] LOVE･LOVE？ 02話 TV ＃02 「六月－夢の国」 640x480 DivX511 Lame192k(LPCM).avi UMEVNmGcuy 173,337,000 f7c205989c927ec59fba0d89c649443144076aa3<br>
+[DVD] LOVE･LOVE？ 03話 DVD＃01 「七月の狂詩曲」 640x480 DivX511 Lame192k(LPCM).avi UMEVNmGcuy 165,102,552 501761109d49e627ad08c21a9e5dedc8a34eccd9<br>
+[DVD] LOVE･LOVE？ 04話 TV ＃03 「校庭にいない八月」 640x480 DivX511 Lame192k(LPCM).avi UMEVNmGcuy 182,499,804 454e9050be1a51c8b05b3b04011b8b532c06fe9f<br>
+[DVD] LOVE･LOVE？ 05話 DVD＃02 「九月になれば」 640x480 DivX511 Lame192k(LPCM).avi UMEVNmGcuy 179,736,254 147570ed03564142f750d4ba86795a796db0d15c<br>
+[DVD] LOVE･LOVE？ 06話 TV ＃04 「九月の空」 640x480 DivX511 Lame192k(LPCM).avi UMEVNmGcuy 180,548,386 d0def3785d5085d2cebe1d1b9f8f9f44516853da<br>
+[DVD] LOVE･LOVE？ 07話 TV ＃05 「男はそれを我慢できない」 640x480 DivX511 Lame192k(LPCM).avi UMEVNmGcuy 187,294,574 b289e2a6893a05aa7495f264c12975f97474c547<br>
+[DVD] LOVE･LOVE？ 08話 DVD＃03 「地獄に堕ちた女優ども」 640x480 DivX511 Lame192k(LPCM).avi UMEVNmGcuy 210,819,144 c12c7611b38b8a86e3ed8dd22f5e08927ae33c73<br>
+[DVD] LOVE･LOVE？ 09話 TV ＃06 「知られすぎていた男」 640x480 DivX511 Lame192k(LPCM).avi UMEVNmGcuy 176,748,670 0efae756e3666b7b14a20ddb5b3d618876d9213b<br>
+[DVD] LOVE･LOVE？ 10話 TV ＃07 「愛と追憶の日々」 640x480 DivX511 Lame192k(LPCM).avi UMEVNmGcuy 182,063,460 dc5aac484552487855f24555ddfd634761d8de21<br>
+[DVD] LOVE･LOVE？ 11話 TV ＃08 「わが青春に悔なし」 640x480 DivX511 Lame192k(LPCM).avi UMEVNmGcuy 193,272,710 6d09c401925c703a1f4f1b29f61801f8169baa0b<br>
+[DVD] LOVE･LOVE？ 12話 TV ＃最終回 「嵐の中で輝いて」 640x480 DivX511 Lame192k(LPCM).avi UMEVNmGcuy 228,925,544 1fdbedad3cca798744224d8908414e0a07c2ebf7<br>
+[DVD] LOVE･LOVE？ 13話 DVD＃04 「歴史は女で作られる」 640x480 DivX511 Lame192k(LPCM).avi UMEVNmGcuy 215,448,988 2e8479eccffb02e0138eb43ddf8830261eb1b07a<br>
+<br></dd>
+<dt><span class="title">LOVELESS<b>◆</b></span>08/08/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] LOVELESS 第1巻 映像特典 おはよう！ラブレスくん「オヤジには気をつけろの巻」 (XviD1.1.0Beta2 1280x720 24fps AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 41,942,872 d693239d2316231d299c550c3f5f0bef09ad7705<br>
+[アニメ DVD] LOVELESS 第2巻 映像特典 おはよう！ラブレスくん「銀次くん登場の巻」 (XviD1.1.0Beta2 1280x720 24fps AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 45,141,573 dfe3adc5f2c3d9e4a19bc18d2d32632af522dc93<br>
+[アニメ DVD] LOVELESS 第3巻 映像特典 おはよう！ラブレスくん「アドレスはloveless.tvれすの巻」 (XviD1.1.0Beta2 1280x720 24fps AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 63,266,964 248769f80bf21ac5ba08a753efcae958d0f1c1d2<br>
+[アニメ DVD] LOVELESS 第4巻 映像特典 おはよう！ラブレスくん「ライオンを探せの巻」 (XviD1.1.0Beta2 1280x720 24fps AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 51,809,029 933c756fd5a10acb7593f583afbc33251efaa1b1<br>
+[アニメ DVD] LOVELESS 第5巻 映像特典 おはよう！ラブレスくん「暗黒宇宙帝王を倒せの巻」 (XviD1.1.0Beta2 1280x720 24fps AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 40,174,736 43172f3b31903a04009bb0eef1904b14b035f935<br>
+[アニメ DVD] LOVELESS 第6巻 映像特典 おはよう！ラブレスくん「黒幕はあいつだ！の巻」 (XviD1.1.0Beta2 1280x720 24fps AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 35,427,104 fb67db4d8faedfda1284980649d42838cc57cde2<br>
+[アニメ DVD] LOVELESS Ep.01「BREATHLESS」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 426,792,939 d9a1014b40b6ddb6f8136b6a372720738ace96a1<br>
+[アニメ DVD] LOVELESS Ep.02「MEMORYLESS」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 405,829,186 c9b75822492b6e7881a9d1c2fea31db6bfeed040<br>
+[アニメ DVD] LOVELESS Ep.03「BONDLESS」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 368,966,433 8985bd004204e9dc07702e719351186f91c9fd2a<br>
+[アニメ DVD] LOVELESS Ep.04「FREINDLESS」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 363,338,627 51d394f0e4bcac42e4a5d0fabdb478c432da2f04<br>
+[アニメ DVD] LOVELESS Ep.05「SLEEPLESS」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 439,341,563 0e4e7355a39a110b183ce1a7b78716078eb7dace<br>
+[アニメ DVD] LOVELESS Ep.06「PAINLESS」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 399,350,497 ca76eca88317dd6bbed42d5e268e23c3f41fcf43<br>
+[アニメ DVD] LOVELESS Ep.07「TEARLESS」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 498,569,445 ffde075a253dbb7b96ed1e300168b39082486803<br>
+[アニメ DVD] LOVELESS Ep.08「TRUSTLESS」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 492,941,255 270b49459cf2240f548ab0aab937812bb12cb068<br>
+[アニメ DVD] LOVELESS Ep.09「SKINLESS」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 509,556,097 3b765edcea883cf51cd437fe6b43077d67914efd<br>
+[アニメ DVD] LOVELESS Ep.10「NAMELESS」 (XviD1.1.0Beta2 1280x720 VFR AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 560,632,805 225d78f79d7e52346cdc7fdd1853215423691730<br>
+[アニメ DVD] LOVELESS Ep.11「WARLESS」 (XviD1.1.0 1280x720 VFR AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 461,532,057 db04ff39981ff0fcb097e329953f70b5b95031e2<br>
+[アニメ DVD] LOVELESS Ep.12「ENDLESS」 (XviD1.1.0 1280x720 VFR AAC VBR extreme).Ertai.mkv Bo5Q2E5H6w 491,661,003 10592148b8abe95d9351550f65d327ead0f81001<br>
+<hr class="A">
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第1話「オヤジには気をつけろの巻」(DVD DivX5.2.1 704x396 120fps：60有 AC3).avi ASKARyRfUXZsyZ 35,274,752 11f49cc2a220d25bcffc345f22464317868d989f<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第2話「銀次くん登場の巻」(DVD DivX5.2.1 120fps：60有 AC3).avi ASKARyRfUXZsyZ 34,074,868 bf8d3296fce4cdd24354d0ef0bd27223dbf40794<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第3話「アドレスはloveless.tvれすの巻」(DVD DivX5.2.1 120fps：60有 AC3).avi ASKARyRfUXZsyZ 46,078,230 50fdba5065279e205f73f9123041dc8495af556b<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第4話「ライオンを探せの巻」(DVD DivX5.2.1 704x396 120fps：60f有 AC3).avi ASKARyRfUXZsyZ 31,533,322 80268dd1dc3e4f300da1c20a59abba39c581c098<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第5話「暗黒宇宙帝王を倒せの巻」(DVD DivX5.2.1 120fps：60f有 AC3).avi ASKARyRfUXZsyZ 30,333,198 00b324b2dd3f00222f6f09cebe38ce516b07ee31<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第6話「黒幕はあいつだ！の巻」(DVD DivX5.2.1 704x396 120fps：60f有 AC3).avi ASKARyRfUXZsyZ 33,868,044 c939f1c552972440ac05bcb5fba11d62209a963a<br>
+LOVELESS／Ep.01「BREATHLESS」(DVD DivX5.2.1 704x396 120fps AC3).avi ASKARyRfUXZsyZ 357,296,308 b8ddcf00c73a0f4285452561581e32e826dca9bc<br>
+LOVELESS／Ep.02「MEMORYLESS」(DVD DivX5.2.1 704x396 120fps AC3).avi ASKARyRfUXZsyZ 324,253,876 01be16b51813b360573de2fc5d2fa594c1e5f89c<br>
+LOVELESS／Ep.03「BONDLESS」(DVD DivX5.2.1 120fps AC3).avi ASKARyRfUXZsyZ 313,405,618 53a2ca5d297de7750246ab37aa729560909027ff<br>
+LOVELESS／Ep.04「FRIENDLESS」(DVD DivX5.2.1 120fps AC3).avi ASKARyRfUXZsyZ 310,167,732 6ecf2f48d33795dee8e4b969a0f1c248c756c2a2<br>
+LOVELESS／Ep.05「SLEEPLESS」(DVD DivX5.2.1 120fps AC3).avi ASKARyRfUXZsyZ 334,250,184 015584bd46a505ee63ee4dd51921a7b8887820d9<br>
+LOVELESS／Ep.06「PAINLESS」(DVD DivX5.2.1 120fps AC3).avi ASKARyRfUXZsyZ 344,160,454 48aa85c530a203dcab5adca5a66c1ac3124a2738<br>
+LOVELESS／Ep.07「TEARLESS」(DVD DivX5.2.1 704x396 120fps AC3).avi ASKARyRfUXZsyZ 327,368,902 2637bfd3adcdd3e3abf65ec19e4c443c65426a43<br>
+LOVELESS／Ep.08「TRUSTLESS」(DVD DivX5.2.1 704x396 120fps AC3).avi ASKARyRfUXZsyZ 338,337,992 f8d1b48eb2311870b49211d3214d132bb2003fdd<br>
+LOVELESS／Ep.09「SKINLESS」(DVD DivX5.2.1 120fps AC3).avi ASKARyRfUXZsyZ 300,611,782 98abd34883c31fd0e17c2a5e0261340986dfd980<br>
+LOVELESS／Ep.10「NAMELESS」(DVD DivX5.2.1 120fps AC3).avi ASKARyRfUXZsyZ 348,778,694 a0a214656d757d6ab0de6c13af9b4fec7269e713<br>
+LOVELESS／Ep.11「WARLESS」(DVD DivX5.2.1 120fps AC3).avi ASKARyRfUXZsyZ 338,100,422 259dd57aebf2ff06b95861438c8d87a190a214f5<br>
+LOVELESS／Ep.12「ENDLESS」(DVD DivX5.2.1 120fps AC3).avi ASKARyRfUXZsyZ 359,997,638 6df2e5db334b8981aa909b43ed416e52d5df7b99<br><br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第1話「オヤジには気をつけろの巻」(DVD XviD1.1Beta2 16：9NTSC VFR：60有 AC3).mkv ASKARyRfUXZsyZ 42,214,890 fa4687627890fb14c6a5c262a3232442315b6475<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第2話「銀次くん登場の巻」(DVD XviD1.1Beta2 16：9NTSC VFR：60有 AC3).mkv ASKARyRfUXZsyZ 41,774,429 0b675766e81ecfbdf8cdce427ba0737862528ef9<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第3話「アドレスはlovess.tvれすの巻」(DVD XviD1.1Beta2 16：9NTSC VFR：60有 AC3).mkv ASKARyRfUXZsyZ 60,506,207 8813439fc4aa58b03340641a214a934c60c2acca<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第4話「ライオンを探せの巻」(DVD XviD1.1Beta2 16：9NTSC VFR：60f有 AC3 チャプター付).mkv ASKARyRfUXZsyZ 39,539,759 eca5cbe6099d8f2da4d6921038af3e9a753ab364<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第5話「暗黒宇宙帝王を倒せの巻」(DVD XviD1.1.0 16：9NTSC VFR：60f有 AC3).mkv ASKARyRfUXZsyZ 36,351,469 1048d7e99df4c03a7361d103359d95c52e9b477f<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第6話「黒幕はあいつだ！の巻」(DVD XviD1.1.0 16：9NTSC VFR：60f有 AC3).mkv ASKARyRfUXZsyZ 44,923,542 dafda85a556094be0b021ff1a7e30d4effaa033b<br>
+LOVELESS／Ep.01「BREATHLESS」(DVD XviD1.1Beta2 16：9NTSC VFR AC3).mkv ASKARyRfUXZsyZ 417,433,999 a5ba7ee36b1266dc62a23deaeb2fd5e0fdbe4d2e<br>
+LOVELESS／Ep.02「MEMORYLESS」(DVD XviD1.1Beta2 16：9NTSC VFR AC3).mkv ASKARyRfUXZsyZ 374,403,856 689f5ef2a88cd0600acf7c90ef2d1043d8b71eea<br>
+LOVELESS／Ep.03「BONDLESS」(DVD XviD1.1Beta2 16：9NTSC VFR AC3).mkv ASKARyRfUXZsyZ 365,504,002 6772ad84892ed3a7c1fe8c3883def54a1c230590<br>
+LOVELESS／Ep.04「FRIENDLESS」(DVD XviD1.1Beta2 16：9NTSC VFR AC3).mkv ASKARyRfUXZsyZ 366,409,679 92ac082ac395df908316af44f2c88d4984979144<br>
+LOVELESS／Ep.05「SLEEPLESS」(DVD XviD1.1Beta2 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 400,164,775 7aca680d101dc7e09f1605f8687d9d5d247ed1f2<br>
+LOVELESS／Ep.06「PAINLESS」(DVD XviD1.1Beta2 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 402,295,921 8ec59c685ba9b69153185744318e0b7531dcc613<br>
+LOVELESS／Ep.07「TEARLESS」(DVD XviD1.1Beta2 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 382,410,936 7101dcbcfaa700ef71044578e09fc9c4c7e8c5c5<br>
+LOVELESS／Ep.08「TRUSTLESS」(DVD XviD1.1Beta2 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 396,568,722 e9a7d6046206316282966464b2835d566db99de7<br>
+LOVELESS／Ep.09「SKINLESS」(DVD XviD1.1.0 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 348,935,614 5080d9a3eae7233747f192c999db0eacbcc72de8<br>
+LOVELESS／Ep.10「NAMELESS」(DVD XviD1.1.0 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 409,386,321 913ef63014f3375220051782e503d573cb192df3<br>
+LOVELESS／Ep.11「WARLESS」(DVD XviD1.1.0 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 399,452,376 71f69a080a115eb22c8e4cdca889c3cc83f04356<br>
+LOVELESS／Ep.12「ENDLESS」(DVD XviD1.1.0 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 431,326,744 d66d78723ffc6a50d8e3b64f8ed479f32fe37224<br><br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第1話「オヤジには気をつけろの巻」(DVD x264：r275 16：9NTSC VFR：60有 AC3).mkv ASKARyRfUXZsyZ 37,569,991 349425f85fdeaa30fac39afbc0737b36c2143085<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第2話「銀次くん登場の巻」(DVD x264：r287 16：9NTSC VFR：60有 AC3).mkv ASKARyRfUXZsyZ 34,413,325 0482309854571894226f4bb6ac9639c063b1ce20<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第3話「アドレスはlovess.tvれすの巻」(DVD x264：r304 16：9NTSC VFR：60有 AC3).mkv ASKARyRfUXZsyZ 63,010,029 3f8cca0865b8dbc24907d232902069ca0607ab3a<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第4話「ライオンを探せの巻」(DVD x264：Rev341_VFW 16：9NTSC VFR：60f有 AC3 チャプター付).mkv ASKARyRfUXZsyZ 35,804,293 144f1f28621dccf97dac627c6a363c1b328f262d<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第5話「暗黒宇宙帝王を倒せの巻」(DVD x264：Rev375C_VFW 16：9NTSC VFR：60f有 AC3).mkv ASKARyRfUXZsyZ 31,752,107 a2ab0279380492b96509b6deb58f8c9ade7a617c<br>
+LOVELESS DVD映像特典 新作あとがきアニメ 『おはよう！ラブレスくん』／第6話「黒幕はあいつだ！の巻」(DVD x264：Rev388A_VFW 16：9NTSC VFR：60f有 AC3).mkv ASKARyRfUXZsyZ 40,342,239 15cc4dd01952fd7eb2ee3a7965c354df73a764af<br>
+LOVELESS／Ep.01「BREATHLESS」(DVD x264：r275 16：9NTSC VFR AC3).mkv ASKARyRfUXZsyZ 420,883,212 0f9cabc2ec88867b1316316f0920a9fb9eb325e2<br>
+LOVELESS／Ep.02「MEMORYLESS」(DVD x264：r275 16：9NTSC VFR AC3).mkv ASKARyRfUXZsyZ 374,427,927 618c5741431596e95d79f3ca16bc7f41da0f5935<br>
+LOVELESS／Ep.03「BONDLESS」(DVD x264：r287 16：9NTSC VFR AC3).mkv ASKARyRfUXZsyZ 373,580,130 0893f92c3aa8a8d3825d595d02747a0a4f8519f4<br>
+LOVELESS／Ep.04「FRIENDLESS」(DVD x264：r287 16：9NTSC VFR AC3).mkv ASKARyRfUXZsyZ 373,155,799 3393106af1a43ee7cf447193c1805c8626273f37<br>
+LOVELESS／Ep.05「SLEEPLESS」(DVD x264：r304 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 404,266,041 b47c6f1fbf5d769835072695892b8261b2bbcef6<br>
+LOVELESS／Ep.06「PAINLESS」(DVD x264：r304 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 407,096,378 9115b1aefa434c288ad21867dd0b76b9d5638f2f<br>
+LOVELESS／Ep.07「TEARLESS」(DVD x264：Rev341_VFW 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 433,114,424 8ecd6da8290e8a5a0bb1dd5c302812f9c50823d7<br>
+LOVELESS／Ep.08「TRUSTLESS」(DVD x264：Rev341_VFW 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 451,626,298 20e121d936f97551b52990a11853ee2d8267e989<br>
+LOVELESS／Ep.09「SKINLESS」(DVD x264：Rev375C_VFW 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 361,024,379 460da47786fc54de48c1ab2924e9858d872c4d6e<br>
+LOVELESS／Ep.10「NAMELESS」(DVD x264：Rev375C_VFW 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 446,444,948 859dcdcbf251b80d1b7fa9dcaf1d75b54a3aac1d<br>
+LOVELESS／Ep.11「WARLESS」(DVD x264：Rev388A_VFW 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 423,278,193 be151d4a2e90646c7eda10eb7699578410f9271c<br>
+LOVELESS／Ep.12「ENDLESS」(DVD x264：Rev388A_VFW 16：9NTSC VFR AC3 チャプター付).mkv ASKARyRfUXZsyZ 447,681,198 869f2e12dac37d8605922d2455b24473aa01f5b2<br>
+<br></dd>
+<dt><span class="title">ラムネ<b>◆</b></span>08/01/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD アニメ] ラムネ ノンクレジットOP (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 19,038,905 1d4dfe858100ec676afa8ac81aa4bc60c2902e6b<br>
+[DVD アニメ] ラムネ ノンクレジットED (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 19,095,955 6a2f70609d264c9d222d806eabc5b9ce60fd8124<br>
+[DVD アニメ] ラムネ 未公開カット集 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 153,534,431 374490a0c07adbc92f20de3e481a8c7d34ec1eb4<br>
+[DVD アニメ] ラムネ 第01話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 245,337,977 60bbfbf08cee7d9bf81dc1c5a2442578652ab155<br>
+[DVD アニメ] ラムネ 第02話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 243,485,212 4cd00d69575734af145b2e797e1c4c1093779065<br>
+[DVD アニメ] ラムネ 第03話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 238,520,178 c6eaa2fbcd255b6d78e5bb070ecd2365ed85ff0d<br>
+[DVD アニメ] ラムネ 第04話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 244,098,193 cd19d162093ebf76ab2a14c72aa4fd5d6bb07a41<br>
+[DVD アニメ] ラムネ 第05話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 246,724,035 c44a0f2b7fecf2dca2ab395946104a71f162bd50<br>
+[DVD アニメ] ラムネ 第06話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 238,908,451 b4b1e28e279790cd7c086d806da45087e5700d73<br>
+[DVD アニメ] ラムネ 第07話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 247,779,176 0869000d8bdebbd5a891abefc536ae53a8a7c60c<br>
+[DVD アニメ] ラムネ 第08話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 239,904,558 809476d41ea72cb90a238ffc5ce9be03aec3a145<br>
+[DVD アニメ] ラムネ 第09話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 241,951,620 0093f14db4acf245b2799514207975775dfb98ec<br>
+[DVD アニメ] ラムネ 第10話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 238,889,137 04d11ae82f931a8669b1918b97381a408b366a69<br>
+[DVD アニメ] ラムネ 第11話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 241,915,740 a96a1e297d218335aed5c0646a3480082ed8da3c<br>
+[DVD アニメ] ラムネ 第12話 (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 259,620,641 bbfdb819df346e1b0f17f31c6059bc77b27a5840<br>
+<hr class="A">
+[DVD] ラムネ Vol.1 メニュー.png aucjOwkaxK 480,073 a8aebf33e90bee7276c7df014ebc7ef8c8967adb<br>
+[DVD] ラムネ Vol.2 メニュー.png aucjOwkaxK 488,702 48aae86f89fb554ed72bf54933c6cd1a2e46e827<br>
+[DVD] ラムネ Vol.3 メニュー.png aucjOwkaxK 456,765 b110dfe881ae7827d1ed5a7e8c1cfa74e4e014bb<br>
+[DVD] ラムネ Vol.4 メニュー.png aucjOwkaxK 486,533 3be05dbe99ece38ee3ba6b908d5dad035d7a42b6<br>
+[DVD] ラムネ Vol.5 メニュー.png aucjOwkaxK 474,955 db0a7e990e7fd80d86ee2824dc9e03874095ec75<br>
+[DVD] ラムネ Vol.6 メニュー.png aucjOwkaxK 441,285 9c244beabbe70f5280dc2e44ba9dd8fa2891df30<br>
+[DVD] ラムネ Vol.1 特典映像 テレビ未放送カット 1(WMV9 640×480).avi aucjOwkaxK 16,230,400 3494fe22db91e0152835e8ff83b3391bca836ad3<br>
+[DVD] ラムネ Vol.1 特典映像 テレビ未放送カット 2(WMV9 640×480).avi aucjOwkaxK 16,607,232 4bd4d6a4d983a814f024878f520b10a40d86981a<br>
+[DVD] ラムネ Vol.1 特典映像 テレビ未放送カット 3(WMV9 640×480).avi aucjOwkaxK 5,912,576 9135a7b4081693b6d65b577f5d7dc6cb6ac9acfb<br>
+[DVD] ラムネ Vol.1 特典映像 ノンテロップOP(WMV9 640×480).avi aucjOwkaxK 34,027,520 48c65937d9ae186a5acbdb48b97f585e6df54287<br>
+[DVD] ラムネ Vol.1 特典映像 ノンテロップED(WMV9 640×480).avi aucjOwkaxK 13,596,672 d2751b794c610bf085f91c4e3a51c7886383e59b<br>
+[DVD] ラムネ Vol.2 特典映像 OP ライブ映像(WMV9 640×480).avi aucjOwkaxK 326,963,200 d7213d3c91591c41a52f8dbc29a26abd02985c33<br>
+[DVD] ラムネ Vol.2 特典映像 テレビ未放送カット 1(WMV9 640×480).avi aucjOwkaxK 5,335,040 8215f8311c4ec480cc7d21931fb6c6438f4755ef<br>
+[DVD] ラムネ Vol.2 特典映像 テレビ未放送カット 2(WMV9 640×480).avi aucjOwkaxK 10,819,584 134e7e2ab6834dc0c184316fc12b49ad21ce0dab<br>
+[DVD] ラムネ Vol.3 特典映像 ED ライブ映像(WMV9 640×480).avi aucjOwkaxK 404,432,896 6e1044e9511db02d9f232b7c35bddacca9046236<br>
+[DVD] ラムネ Vol.3 特典映像 テレビ未放送カット 1(WMV9 640×480).avi aucjOwkaxK 15,820,800 8330c02ee2aed17bfb23247670add40c5741b896<br>
+[DVD] ラムネ Vol.3 特典映像 テレビ未放送カット 2(WMV9 640×480).avi aucjOwkaxK 10,717,184 e5e8e96251f44ebdfdf669f59ea665e3fa2181ed<br>
+[DVD] ラムネ Vol.4 特典映像 「じゃじゃ馬 特別編 その一」(WMV9 640×480).avi aucjOwkaxK 80,699,392 80d8c1ac3c31a9f942643b75cba3e5a465500fbc<br>
+[DVD] ラムネ Vol.4 特典映像 テレビ未放送カット 1(WMV9 640×480).avi aucjOwkaxK 4,753,408 7e6b75904560614cf32a5fa74598124250aa780f<br>
+[DVD] ラムネ Vol.4 特典映像 テレビ未放送カット 2(WMV9 640×480).avi aucjOwkaxK 13,129,728 f2da770bf2d66bf81ad5b4e7c838f531ee29f36f<br>
+[DVD] ラムネ Vol.4 特典映像 テレビ未放送カット 3(WMV9 640×480).avi aucjOwkaxK 5,738,496 3f0553304f84203fc76364abb6b92079e7115e11<br>
+[DVD] ラムネ Vol.5 特典映像 「じゃじゃ馬 特別編 その二」(WMV9 640×480).avi aucjOwkaxK 72,349,696 a3ff363301a00e75a53fef11840262dae4b9d096<br>
+[DVD] ラムネ Vol.5 特典映像 テレビ未放送カット 1(WMV9 640×480).avi aucjOwkaxK 10,883,072 dde0463bee457bbec89e891c638de8d5a36c65da<br>
+[DVD] ラムネ Vol.5 特典映像 テレビ未放送カット 2(WMV9 640×480).avi aucjOwkaxK 3,923,968 1876f0fdd36034773ff59f049f8fd688b219661d<br>
+[DVD] ラムネ Vol.6 特典映像 「じゃじゃ馬 特別編 その三」(WMV9 640×480).avi aucjOwkaxK 68,919,296 7e7d290b6b8f59506f890a523871425b18007bcf<br>
+[DVD] ラムネ Vol.6 特典映像 テレビ未放送カット 1(WMV9 640×480).avi aucjOwkaxK 13,443,072 ff75c7643de8978cbe08ad8c7ddfc2647ca9e3b7<br>
+[DVD] ラムネ Vol.6 特典映像 テレビ未放送カット 2[最終話エピローグ](WMV9 640×480).avi aucjOwkaxK 33,474,560 e5ea009c2a05ab3c79723d512093fc2709bdf143<br>
+[DVD] ラムネ 第01話 「ヤドカリと麦わら帽子」 (WMV9 120fps 640×480 rev2).avi aucjOwkaxK 418,007,040 0649bb706fffa5d53dd4695cfbff0f99639d315f<br>
+[DVD] ラムネ 第02話 「夏の畑とななみすぺしゃる」 (WMV9 120fps 640×480 rev2).avi aucjOwkaxK 361,578,496 dab606107cdca92826eae69006b85d01f95a7535<br>
+[DVD] ラムネ 第03話 「ちっちゃなイトコと花火」 (WMV9 120fps 640×480).avi aucjOwkaxK 374,593,536 506d2956d248f2dd8f1aec509daa64ab811eee9b<br>
+[DVD] ラムネ 第04話 「自治会長とごほうび」 (WMV9 120fps 640×480).avi aucjOwkaxK 345,018,368 64961da1f13a509b4dca666b65916fc2c5416352<br>
+[DVD] ラムネ 第05話 「星空と望遠鏡」 (WMV9 120fps 640×480).avi aucjOwkaxK 327,395,328 a00f1f9004407e078c1f4f86964f9f84bc7d7c30<br>
+[DVD] ラムネ 第06話 「三人と二つの真珠」 (WMV9 120fps 640×480).avi aucjOwkaxK 388,530,176 96d4ba1f4af9b149364948a0872b1f7c4c076aa6<br>
+[DVD] ラムネ 第07話 「バイク少女とアルバイト」 (WMV9 120fps 640×480).avi aucjOwkaxK 370,669,568 6a4f9d7ef9f6c408929b4783dceed2bddea27ce2<br>
+[DVD] ラムネ 第08話 「ふたりの絆と揺れる想い」 (WMV9 120fps 640×480).avi aucjOwkaxK 304,715,776 5614747efe8939f6f17fff24c9f785db9ccd2474<br>
+[DVD] ラムネ 第09話 「ふたりの距離とラムネの瓶」 (WMV9 120fps 640×480 rev2).avi aucjOwkaxK 354,082,816 e30bbfc166d6bbf343aa71da43cbf689f4ee04f3<br>
+[DVD] ラムネ 第10話 「フォークダンスとかさなる心」 (WMV9 120fps 640×480).avi aucjOwkaxK 389,728,256 de191b6128503c485ef7324feb6d595d958b4ce5<br>
+[DVD] ラムネ 第11話 「台風の夜と愛の終わり」 (WMV9 120fps 640×480).avi aucjOwkaxK 427,237,376 8c39f5a9a0b712be00e658f935d53714dc5bfb0e<br>
+[DVD] ラムネ 第12話(最終話) 「100個の貸しと100個の借り」 (WMV9 120fps 640×480).avi aucjOwkaxK 398,018,560 5d990e65b6175791ea280f359e62b910c8372962<br><br>
+[DVD] ラムネ Vol.1 特典映像 テレビ未放送カット 1(x264 640×480).mkv aucjOwkaxK 11,161,987 acec8ec582d3e6602f5d180d632f7961a462bcc8<br>
+[DVD] ラムネ Vol.1 特典映像 テレビ未放送カット 2(x264 640×480).mkv aucjOwkaxK 9,692,179 5b925757c859c780e05d2aa014205ff37349ab98<br>
+[DVD] ラムネ Vol.1 特典映像 テレビ未放送カット 3(x264 640×480).mkv aucjOwkaxK 3,980,649 8a581d86dab9decf5be80005ac6a4f0996dc46aa<br>
+[DVD] ラムネ Vol.1 特典映像 ノンテロップOP(x264 640×480).mkv aucjOwkaxK 26,029,403 5557e1b9d0c2f84a0d10d2c6019ad0d71ed71ada<br>
+[DVD] ラムネ Vol.1 特典映像 ノンテロップED(x264 640×480).mkv aucjOwkaxK 11,200,147 d7677aa8ba3bedb458ca2befc94798f18d4042b4<br>
+[DVD] ラムネ Vol.2 特典映像 OP ライブ映像(x264 640×480 aac).mkv aucjOwkaxK 209,004,346 a7a28dfda0940136b11a133161af35c67c50beee<br>
+[DVD] ラムネ Vol.2 特典映像 テレビ未放送カット 1(x264 640×480 aac).mkv aucjOwkaxK 4,069,460 14f7bebf30d89a842cde84fd3ab9e0b34b818fb9<br>
+[DVD] ラムネ Vol.2 特典映像 テレビ未放送カット 2(x264 640×480 aac).mkv aucjOwkaxK 8,645,935 c6de12862faca206bdf33ce12afaf21909b94790<br>
+[DVD] ラムネ Vol.3 特典映像 ED ライブ映像(x264 640×480 aac).mkv aucjOwkaxK 228,342,584 7f8764b3858f462966c3275ec776b27cc6259fb4<br>
+[DVD] ラムネ Vol.3 特典映像 テレビ未放送カット 1(x264 640×480 aac).mkv aucjOwkaxK 10,466,122 9b079eb558f4308441d3fb124a7b0a826ebef83d<br>
+[DVD] ラムネ Vol.3 特典映像 テレビ未放送カット 2(x264 640×480 aac).mkv aucjOwkaxK 8,185,246 63d362aa8d7a0a91a82572cc55f7f661c5b50f91<br>
+[DVD] ラムネ Vol.4 特典映像 「じゃじゃ馬 特別編 その一」(x264 640×480 aac).mkv aucjOwkaxK 63,940,216 da5902558aff2993f60e617dde976162103f3b20<br>
+[DVD] ラムネ Vol.4 特典映像 テレビ未放送カット 1(x264 640×480 aac).mkv aucjOwkaxK 3,669,464 4133f91d3e22c581cd9591f7655ebf4d2d99184e<br>
+[DVD] ラムネ Vol.4 特典映像 テレビ未放送カット 2(x264 640×480 aac).mkv aucjOwkaxK 9,275,709 00a6b86d8f58d88ce3797f05c8747bf8848ba6bc<br>
+[DVD] ラムネ Vol.4 特典映像 テレビ未放送カット 3(x264 640×480 aac).mkv aucjOwkaxK 4,854,522 d776fa16b1ab865c6fd971011d0b7f1d39c7abb7<br>
+[DVD] ラムネ Vol.5 特典映像 「じゃじゃ馬 特別編 その二」(x264 640×480 aac).mkv aucjOwkaxK 55,065,773 2aed4832178cb0dcdc45068f9e8ec4955474ae2f<br>
+[DVD] ラムネ Vol.5 特典映像 テレビ未放送カット 1(x264 640×480 aac).mkv aucjOwkaxK 7,651,864 b79337d7c62c1a66fbf648fd62b0fd57b408c6eb<br>
+[DVD] ラムネ Vol.5 特典映像 テレビ未放送カット 2(x264 640×480 aac).mkv aucjOwkaxK 2,895,651 a95326a24c97c679a97de7a38b44a82eb70f3071<br>
+[DVD] ラムネ Vol.6 特典映像 「じゃじゃ馬 特別編 その三」(x264 640×480 aac).mkv aucjOwkaxK 55,861,831 ad7fd806c9c92a4666a386dd20b2632cc4bd2bff<br>
+[DVD] ラムネ Vol.6 特典映像 テレビ未放送カット 1(x264 640×480 aac).mkv aucjOwkaxK 10,755,957 9bf2b3833fb67b83ef6a663ea6d5747be4282156<br>
+[DVD] ラムネ Vol.6 特典映像 テレビ未放送カット 2[最終話エピローグ](x264 640×480 aac).mkv aucjOwkaxK 30,642,458 df41f5bed19b987735b1fd385eddd3308c3ceb9b<br>
+[DVD] ラムネ 第01話 「ヤドカリと麦わら帽子」 (x264 640×480 aac rev2).mkv aucjOwkaxK 302,551,032 e4a6cf40c8a4c6fa867661723752e51bf480fae2<br>
+[DVD] ラムネ 第02話 「夏の畑とななみすぺしゃる」 (x264 640×480 aac rev2).mkv aucjOwkaxK 259,581,118 4fb9f1011a1fce97c50f6efc52d9493b5c2ffaec<br>
+[DVD] ラムネ 第03話 「ちっちゃなイトコと花火」 (x264 640×480 aac).mkv aucjOwkaxK 271,253,223 38625d8a9690efa3fece6aaa2af20e7fb12a24b0<br>
+[DVD] ラムネ 第04話 「自治会長とごほうび」 (x264 640×480 aac).mkv aucjOwkaxK 272,468,399 15ec2c3b030ff379daa269d2088ca40665b0a118<br>
+[DVD] ラムネ 第05話 「星空と望遠鏡」 (x264 640×480 aac).mkv aucjOwkaxK 251,043,289 2ed84683565cc25ae7888af4fdcaa41fd4af9864<br>
+[DVD] ラムネ 第06話 「三人と二つの真珠」 (x264 640×480 aac).mkv aucjOwkaxK 304,193,305 983fbfc08e5b6b40945c0494fd49977c7f4ad386<br>
+[DVD] ラムネ 第07話 「バイク少女とアルバイト」 (x264 640×480 aac).mkv aucjOwkaxK 264,674,182 273c2772c0320825ec48f3ba9e22444b68b0ea51<br>
+[DVD] ラムネ 第08話 「ふたりの絆と揺れる想い」 (x264 640×480 aac).mkv aucjOwkaxK 242,064,482 bcab27ed5841d4048379e600977c88b574f9eb6c<br>
+[DVD] ラムネ 第09話 「ふたりの距離とラムネの瓶」 (x264 640×480 aac).mkv aucjOwkaxK 256,070,084 e6f8a40f3a336a30f8701ae77a888068527c51d9<br>
+[DVD] ラムネ 第10話 「フォークダンスとかさなる心」 (x264 640×480 aac).mkv aucjOwkaxK 286,883,075 eeaf68addc4cdb69a21ea9af910f127c30433625<br>
+[DVD] ラムネ 第11話 「台風の夜と愛の終わり」 (x264 640×480 aac).mkv aucjOwkaxK 324,378,109 b07473508651bc7554deb48e7ae8b947d0e9be64<br>
+[DVD] ラムネ 第12話(最終話) 「100個の貸しと100個の借り」 (x264 640×480 aac).mkv aucjOwkaxK 305,709,265 d5623e6d756c475ed79625fdc5139c51a2967504<br>
+<hr class="A">
+ラムネ 第01話 「ヤドカリと麦わら帽子」 (DVD 640x480 DivX611).avi YAyAoONEVq 276,598,784 c29ed4666fdfda7423c345890917277f87eb532b<br>
+ラムネ 第02話 「夏の畑とななみすぺしゃる」 (DVD 640x480 DivX611).avi YAyAoONEVq 231,723,008 331ce7a7654eb851e7fc6276b3a0215f96b2c7e8<br>
+ラムネ 第03話 「ちっちゃなイトコと花火」 (DVD 640x480 DivX611).avi YAyAoONEVq 231,063,552 17e65bc91a239dba3a998869d6d1ecf3c3b1eb74<br>
+ラムネ 第04話 「自治会長とごほうび」 (DVD 640x480 DivX611).avi YAyAoONEVq 251,803,648 c2b511bf4c2d39237745c4e9c83996109bacb233<br>
+ラムネ 第05話 「星空と望遠鏡」 (DVD 640x480 DivX611).avi YAyAoONEVq 206,125,056 8556db8cc702c2ee9edf744cf01737c4c259ce72<br>
+ラムネ 第06話 「三人と二つの真珠」 (DVD 640x480 DivX611).avi YAyAoONEVq 263,610,368 514626cec8f5c643f702b93f8ec50b1d82be850a<br>
+ラムネ 第07話 「バイクと少女とアルバイト」 (DVD 640x480 DivX611 予告x2).avi YAyAoONEVq 147,674,112 58e838a61fe2ebc55912f631f1b27babc9861f6a<br>
+ラムネ 第08話 「ふたりの絆と揺れる想い」 (DVD 640x480 DivX611).avi YAyAoONEVq 157,111,304 a4719d8d56c2292dc35c01f3861a0729dc0edc14<br>
+ラムネ 第09話 「ふたりの距離とラムネの瓶」 (DVD 640x480 DivX611).avi YAyAoONEVq 295,842,962 cb151de841e8fad885642d26a8c48bf30e648a07<br>
+ラムネ 第10話 「フォークダンスとかさなる心」 (DVD 640x480 DivX611).avi YAyAoONEVq 281,722,618 6881b62209a61ee956eae3701a101b916cdedb9a<br>
+ラムネ 第11話 「台風の夜と夏の終わり」 (DVD 640x480 DivX611).avi YAyAoONEVq 354,555,392 934317340039005bd0855340229a0bea61004595<br>
+ラムネ 第12話 「100個の貸しと100個の借り」 (DVD 640x480 DivX611).avi YAyAoONEVq 347,718,656 2ed822cdd96931cc750b108a3c4daf4b04d3762c<br>
+<br></dd>
+<dt><span class="title">ランジェリー戦士 パピヨンローゼ<b>◆</b></span>08/01/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] OVA ランジェリー戦士 パピヨンローゼ 予告編 (640x360 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 12,592,582 0e960ac9b891a4b642895f6580f65d8f81411787<br>
+[アニメ DVD] OVA ランジェリー戦士 パピヨンローゼ 「つぼみの夢は夜開く」 (640x360 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 162,357,462 09da677a7f8b466351b4f93666c43b3f5080a97e<br><br>
+[アニメ DVD] パピヨンローゼ New Season Disc1 映像特典 「突撃パピヨンちゃんねる」 (640x480 WMV9 QB90 30fps).avi ミスター靖国神社zozoVb6PeX 220,004,146 fe6c475bd87266a5295d7e261368201176298c56<br>
+[アニメ DVD] パピヨンローゼ New Season Disc2 映像特典 「第03話予告」 (704x396 WMV9 QB93 24fps).avi ミスター靖国神社zozoVb6PeX 7,537,128 c633553285c83d7ef865c05e7834a56dd04e8b4c<br>
+[アニメ DVD] パピヨンローゼ New Season Disc2 映像特典 「突撃パピヨンちゃんねる2」 (640x480 WMV9 QB93 30fps).avi ミスター靖国神社zozoVb6PeX 292,401,888 52f0b7b095c3c512ec5351a0c332560759eba8f6<br>
+[アニメ DVD] パピヨンローゼ New Season 第01話 「アキバは萌えているか！？」 オリジナル本編 (704x396 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 204,551,232 61202c6943bbb1318f8e2bc4a5df9c36cc252435<br>
+[アニメ DVD] パピヨンローゼ New Season 第02話 「アキバに舞う碧玉と黄金の蝶」 オリジナル本編 (704x396 WMV9 QB93 24fps).avi ミスター靖国神社zozoVb6PeX 297,403,348 c6f802effa46706869e379c0599f7beb9a233d22<br><br>
+[アニメ DVD] パピヨンローゼ New Season 第01話 「アキバは萌えているか！？」 地上波放送版 (704x396 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 199,514,344 8a231679aa75e6a74aaa746012c3a1bbd9afa355<br>
+[アニメ DVD] パピヨンローゼ New Season 第02話 「アキバに舞う碧玉と黄金の蝶」 地上波放送版 (704x396 WMV9 QB93 24fps).avi ミスター靖国神社zozoVb6PeX 285,516,156 6fb3bea035fce5534d89ff94a4f7947c7d7bef48<br>
+<hr class="A">
+[DVD アニメ] パピヨンローゼ OVA (640x360 H.264 AAC).mp4 sororiwzayTkVFQk 263,956,710 e9b878f9038fd79f9cd675f140e1964fa851661d<br>
+[DVD アニメ] パピヨンローゼ 第1話(DVD) (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 275,797,779 a12d0b215829afc50f8f7fe40459bb14c3d19413<br>
+[DVD アニメ] パピヨンローゼ 第2話(DVD) (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 275,835,456 c589e42b6117d3304413f54f725344f06cafa5f6<br>
+[DVD アニメ] パピヨンローゼ 第3話(DVD) (704x480 H.264 AAC).mp4 sororiwzayTkVFQk 275,833,901 aec5d9a5f92db1350ee750c6bca6402ccc729b3b<br>
+[DVD アニメ] パピヨンローゼ 第4話（TV） (640x360 H.264 AAC).mp4 sororiwzayTkVFQk 280,200,212 10215d201c81715be17f4cc881b2584b6c2a49e7<br>
+[DVD アニメ] パピヨンローゼ 第5話（TV） (640x360 H.264 AAC).mp4 sororiwzayTkVFQk 280,438,901 b5f2dcbae2269302c150345cc2db13c6802514da<br>
+[DVD アニメ] パピヨンローゼ 第6話（TV） (640x360 H.264 AAC).mp4 sororiwzayTkVFQk 280,257,013 ec7ca79b9474d4f8a985d19d5417e8eeb3c3da7e<br>
+<hr class="A">
+[DVD] パピヨンローゼ New Season Vol.1 映像特典 突撃 パピヨンちゃんねる(WMV9 640×480 AC3).avi WgPZCQtRPj 386,678,784 56f5b7cb2b718df1191cefbc88853c8a581ccf62<br>
+[DVD] パピヨンローゼ New Season Vol.2 映像特典 突撃 パピヨンちゃんねる(WMV9 640×480 AC3).avi WgPZCQtRPj 319,592,448 449079845a49befd3c11513950545e89986b6c13<br>
+[DVD] パピヨンローゼ New Season Vol.3 映像特典 突撃 パピヨンちゃんねる(WMV9 640×480 AC3).avi WgPZCQtRPj 521,525,644 ee6e6689a371766d4511c3d4b9b149f498e75b96<br>
+[DVD] パピヨンローゼ New Season 第01話 「アキバは萌えているか！？」(WMV 704×396 AC3).avi WgPZCQtRPj 399,046,656 943fa04aaf8a52c66ad092251fd92d2e7b559afd<br>
+[DVD] パピヨンローゼ New Season 第02話 「アキバに舞う碧玉と黄金の蝶」(WMV 704×396 AC3).avi WgPZCQtRPj 412,479,488 5b892bf4e966229ae249c0c942c6fc97ec7fb413<br>
+[DVD] パピヨンローゼ New Season 第03話 「ぼくらの7時間戦争」(WMV9 704×396 AC3).avi WgPZCQtRPj 433,625,122 05b891b8d4dc1368c8ada6fd9573fb21a08b41bd<br><br>
+[DVD] パピヨンローゼ New Season(テレビ版) 第01話 「アキバは萌えているか！？」(WMV 704×396 AC3).avi WgPZCQtRPj 396,906,496 b4b03055ecc40d306def76f7411e2fd18366ab23<br>
+[DVD] パピヨンローゼ New Season(テレビ版) 第02話 「アキバに舞う碧玉と黄金の蝶」(WMV 704×396 AC3).avi WgPZCQtRPj 406,413,312 5bba87afa0dd577aa2bb90c88980f3151d9ba262<br>
+[DVD] パピヨンローゼ New Season(テレビ版) 第03話 「ぼくらの7時間戦争」(WMV9 704×396 AC3).avi WgPZCQtRPj 415,536,172 35048d0a42ac5cef60ff446198ddbdc8689504d6<br><br>
+[DVD] パピヨンローゼ New Season Vol.1 映像特典 突撃 パピヨンちゃんねる(x264 640×480 AC3).mkv WgPZCQtRPj 289,594,406 1849837663c9daea92c4046a7aa2916e2060cd1b<br>
+[DVD] パピヨンローゼ New Season Vol.2 映像特典 突撃 パピヨンちゃんねる(x264 640×480 AC3).mkv WgPZCQtRPj 313,553,783 2c4164b5c4163060258067d32daed5e35a20cba0<br>
+[DVD] パピヨンローゼ New Season Vol.3 映像特典 突撃 パピヨンちゃんねる(x264 640×480 AC3).mkv WgPZCQtRPj 346,612,313 476c05c99dc2d319478b2f12b478f7c1d71b43b3<br>
+[DVD] パピヨンローゼ New Season 第01話 「アキバは萌えているか！？」(x264 704×396 AC3).mkv WgPZCQtRPj 262,664,246 bd14097907d773050a5f754c61119ce17d4dbd04<br>
+[DVD] パピヨンローゼ New Season 第02話 「アキバに舞う碧玉と黄金の蝶」(x264 704×396 AC3).mkv WgPZCQtRPj 264,303,037 55aea42621aeb5a9f89505265bc3b20a81efc8aa<br>
+[DVD] パピヨンローゼ New Season 第03話 「ぼくらの7時間戦争」(x264 704×396 AC3).mkv WgPZCQtRPj 294,400,595 01b815e520dd1f2c46bef1944515fd51fd5f0ab4<br><br>
+[DVD] パピヨンローゼ New Season(テレビ版) 第01話 「アキバは萌えているか！？」(x264 704×396 AC3).mkv WgPZCQtRPj 263,872,126 3eb292a04aca874cfdb9501393283735071c97d4<br>
+[DVD] パピヨンローゼ New Season(テレビ版) 第02話 「アキバに舞う碧玉と黄金の蝶」(x264 704×396 AC3).mkv WgPZCQtRPj 259,845,529 5ed9a7e9d17ef5ab3bd1730d10252959254a5237<br>
+[DVD] パピヨンローゼ New Season(テレビ版) 第03話 「ぼくらの7時間戦争」(x264 704×396 AC3).mkv WgPZCQtRPj 281,031,721 255beb9555a886359f51f721009112ef0ff95238<br><br>
+[2008福袋] 聖地はうなだれていか[071026] (x264 712×368 10：11 AAC mp4).rar 33P4cDuUo6 1,160,531,831 c54818c9fb36a46da46a3a065b0bbb1b84ba848e<br>
+<br></dd>
+<dt><span class="title">らんま1／2<b>◆</b></span>08/09/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] らんま1／2 第001話 「中国からきたあいつ! ちょっとヘン!!」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 237,511,090 fbe3b441905eb135c1b9382502c04236e760b381<br>
+[アニメ DVD] らんま1／2 第002話 「遊びじゃないのよ学校は」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 264,571,282 b90529fc95ed558544f6b156c65d15465f003065<br>
+[アニメ DVD] らんま1／2 第003話 「いきなり愛の嵐 ちょっと待ってョ」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 237,956,092 91ecfa44823b6f46461654094c598f04d0a14dad<br>
+[アニメ DVD] らんま1／2 第004話 「乱馬とらんま？誤解がとまらない」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 248,991,984 00a611e80bad0607340a36e31b1b2b9215354b1b<br>
+[アニメ DVD] らんま1／2 第005話 「骨まで愛して？あかね恋の複雑骨折」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 248,271,946 a418bf5ee5e3ccc9f0064ac9ec3d1731ec3695e0<br>
+[アニメ DVD] らんま1／2 第006話 「あかねの失恋 だってしょうがないじゃない」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 238,326,796 659ae6a20c4e21f2c8dc3a2c864ee7f1ebd1b107<br>
+[アニメ DVD] らんま1／2 第007話 「登場！ 永遠の迷い子 良牙」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 293,403,766 616ea3992015fc6569c4c9047afbbacd968a8333<br>
+[アニメ DVD] らんま1／2 第008話 「学校は戦場だ！対決 乱馬VS良牙」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 299,803,376 cf8c5f092c291720025ea07f826732464aa76308<br>
+[アニメ DVD] らんま1／2 第009話 「乙女白書 髪は女のいのちなの」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 269,964,706 4269fc6f8f7fd47438d58f2bb9283d4cb6c8206f<br>
+[アニメ DVD] らんま1／2 第010話 「ピーピーPちゃん ろくなもんじゃねェ」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 262,252,790 346fdb6b061d5d73ca1404e84e0965711e608ec4<br>
+[アニメ DVD] らんま1／2 第011話 「乱馬を激愛！新体操のスケバン登場」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 263,780,576 ffa280bbbc2274e83cb4f81d53c4325af7a6b25d<br>
+[アニメ DVD] らんま1／2 第012話 「女の恋は戦争よ！格闘新体操でいざ勝負」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 241,490,178 9a196d0a5399e9005b6a328a654d3e5d917ac8e2<br>
+[アニメ DVD] らんま1／2 第013話 「スケバンの目に涙？ルール無用の格闘新体操決着」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 219,216,200 1a8ea44be3101ba06c70a8529862b69d7485b178<br>
+[アニメ DVD] らんま1／2 第014話 「骨盤占い！らんまは日本一のお嫁さん」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 206,139,954 766270557df30874399b0e9a70e52c92ee1a894f<br>
+[アニメ DVD] らんま1／2 第015話 「激烈少女シャンプー登場！ワタシ 命あずけます」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 237,993,726 03ce99f5ce4e5f601b46566283e46ce962194abc<br>
+[アニメ DVD] らんま1／2 第016話 「シャンプーの反撃 必殺指圧拳は身も心も奪う」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 285,568,090 1c6e4a2ec06fab6f3d5e096980b618de03749055<br>
+[アニメ DVD] らんま1／2 第017話 「乱馬大好き！さよならはいわないで!!」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 248,947,926 c1d053fa5a6215e5bfe5cc54bb55e59582f9aacf<br>
+[アニメ DVD] らんま1／2 第018話 「俺は男だ！らんま中国へ帰る？」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 245,519,042 86e982875cbace77123f91b46121e2f5efdda2df<br>
+[アニメ DVD] らんま1／2 第019話（熱闘編 第001話） 「激突！出前格闘レース」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 280,191,102 310874c129207ff850737b421354238f9d20c912<br>
+[アニメ DVD] らんま1／2 第020話（熱闘編 第002話） 「やっぱり猫が嫌い？」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 236,197,496 35deb7543a7b99b71e6e913c11f9b8cdafd817e9<br>
+[アニメ DVD] らんま1／2 第021話（熱闘編 第003話） 「私が女傑族のおばば！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 279,722,258 d826626bb68df9815fa3f0cc695e3ce8cec36ac2<br>
+[アニメ DVD] らんま1／2 第022話（熱闘編 第004話） 「出た！必殺天津甘栗拳!!」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 298,385,294 e11f4321e6e891cfc0a419a6943948a8f182c8fd<br>
+[アニメ DVD] らんま1／2 第023話（熱闘編 第005話） 「白鳥拳の男 ムース登場！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 271,135,450 c432adb304faf6f300ff235102806e4f03103de6<br>
+[アニメ DVD] らんま1／2 第024話（熱闘編 第006話） 「爆走！雪だるま運びレース」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 320,215,550 2c46697baf3ba3c6bb7be4483dfe9fb0e9c304df<br>
+[アニメ DVD] らんま1／2 第025話（熱闘編 第007話） 「さらわれた Pちゃん」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 323,098,028 5ed064dc199bd9470c2e17eed789ec550393633d<br>
+[アニメ DVD] らんま1／2 第026話（熱闘編 第008話） 「危機一髪！死霊の盆踊り」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 313,082,532 497dcccbd99e81a8944e5a35e4246e072c7ea280<br>
+[アニメ DVD] らんま1／2 第027話（熱闘編 第009話） 「Pちゃん爆発！愛の水柱」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 295,333,090 5a0634edccecc15ce6501fee290e60c9ae539eb4<br>
+[アニメ DVD] らんま1／2 第028話（熱闘編 第010話） 「らんま 恐怖の山ごもり」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 249,072,094 5cbcc7ceea4613a7f219f39f1f7f084dad00ab4e<br>
+[アニメ DVD] らんま1／2 第029話（熱闘編 第011話） 「爆砕点穴とは？良牙大逆襲」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 299,844,270 3c18f55378d8519629cc4e4e3b08b547ebc1b46d<br>
+[アニメ DVD] らんま1／2 第030話（熱闘編 第012話） 「危うし！天道道場」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 301,893,704 c47f2b68a7173108fc9edd68728768a8f47f3551<br>
+[アニメ DVD] らんま1／2 第031話（熱闘編 第013話） 「さらわれた あかね！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 302,363,196 f367555162c78eadcca98788871516a414d29b4b<br>
+[アニメ DVD] らんま1／2 第032話（熱闘編 第014話） 「対決ムース！負けるが勝ち」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 294,408,022 7a7e6378db38275c123aa4262d695bce299d01c4<br>
+[アニメ DVD] らんま1／2 第033話（熱闘編 第015話） 「究極のエロ妖怪 八宝斉」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 273,965,914 d2ff61d73eef1aac599f223621961fcf01dd12d1<br>
+[アニメ DVD] らんま1／2 第034話（熱闘編 第016話） 「女子更衣室を襲え？」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 309,522,834 ccc6277e647e84b2edad8f6c8c55cadd46a3b00c<br>
+[アニメ DVD] らんま1／2 第035話（熱闘編 第017話） 「鬼も逃げだす カラクリ屋敷」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 269,166,524 f12b91268551dfb04931cf18df11856ce264f5c9<br>
+[アニメ DVD] らんま1／2 第036話（熱闘編 第018話） 「これで女とおさらば？」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 89,185,274 57af85c0788e1d4dac98e764007c5de36f202976<br>
+[アニメ DVD] らんま1／2 第037話（熱闘編 第019話） 「愛と憎しみの贈物」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 309,710,572 cfd86d1ce775d07af3b91350f13bfb06f88ccad9<br>
+[アニメ DVD] らんま1／2 第038話（熱闘編 第020話） 「SOS エロ妖怪 八宝斉」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 246,475,164 111a54f0841b1f21a73c7c71820bdce5cf679347<br>
+[アニメ DVD] らんま1／2 第039話（熱闘編 第021話） 「あかねの口びるを奪え」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 266,730,102 d176ac8f3dcfe3783b0e0fee4c26cfefd75c7864<br>
+[アニメ DVD] らんま1／2 第040話（熱闘編 第022話） 「いい湯だな？銭湯で戦闘」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 265,852,840 0d8aab7aa367cad6a8b9beb3f67113b05c8a494e<br>
+[アニメ DVD] らんま1／2 第041話（熱闘編 第023話） 「また一人 乱馬を愛したヤツ」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 300,217,480 5891b0903ea3b9193f3828ee9a7dd012ebba523d<br>
+[アニメ DVD] らんま1／2 第042話（熱闘編 第024話） 「熱愛？良牙とあかね」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 314,513,764 68a01c8a12021db53e55bbbf268ffba0962ac7dd<br>
+[アニメ DVD] らんま1／2 第043話（熱闘編 第025話） 「くしゃみ一発 愛してナイト」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 288,779,204 f27383d0dff9015293e82afc570da8e18030734f<br>
+[アニメ DVD] らんま1／2 第044話（熱闘編 第026話） 「幻の八宝大華輪を探せ」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 253,612,296 a490bb8472cc8d55389c0df92861d4cf3ed11758<br>
+[アニメ DVD] らんま1／2 第045話（熱闘編 第027話） 「大好き！私のうっちゃん」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 308,616,078 e7d985f89ad08a398f46384961d586985032dfa2<br>
+[アニメ DVD] らんま1／2 第046話（熱闘編 第028話） 「魔女が愛した下着ドロボー」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 260,008,702 19624016049a6ee703963d10abd17aa134fcbc6d<br>
+[アニメ DVD] らんま1／2 第047話（熱闘編 第029話） 「変身！ムキムキマンあかね」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 262,281,042 3febbf16b71a56c8031b2e3f5bb160835521fad2<br>
+[アニメ DVD] らんま1／2 第048話（熱闘編 第030話） 「呪泉郷から来た殺し屋」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 278,946,148 b7c7e07794c4cae4be3c494aaf27ce3083a47265<br>
+[アニメ DVD] らんま1／2 第049話（熱闘編 第031話） 「私ってきれい？乱馬女宣言」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 287,118,238 e959341bd0b31104960719b63e576a28398eb44c<br>
+[アニメ DVD] らんま1／2 第050話（熱闘編 第032話） 「対決！八宝斉VS透明人間」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 308,495,356 f53dc1bce27d66aa126a3b11791ee7a702f11194<br>
+[アニメ DVD] らんま1／2 第051話（熱闘編 第033話） 「九能家のレ・ミゼラブル」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 240,161,108 549b5cd24edfc7bb26006cdc31dc8501177c6e68<br>
+[アニメ DVD] らんま1／2 第052話（熱闘編 第034話） 「怪談！乱馬と魔性の剣」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 212,983,350 2636d1a3f34c8791c80bcc11ae4aeb7296626aa8<br>
+[アニメ DVD] らんま1／2 第053話（熱闘編 第035話） 「一粒コロリ・絶倫ホレ薬」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 299,995,760 1df2b59f983eb89f35a25b64993e10d6ba93782a<br>
+[アニメ DVD] らんま1／2 第054話（熱闘編 第036話） 「史上最強？良牙とムース同盟」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 250,120,876 f58f0b6083b478bcabb515225b1dee6f7b5cfb92<br>
+[アニメ DVD] らんま1／2 第055話（熱闘編 第037話） 「バック・トゥ・ザ・八宝斉」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 236,133,636 0c559bd79772a9fb085fc53a099225e83b07c34d<br>
+[アニメ DVD] らんま1／2 第056話（熱闘編 第038話） 「黒バラの小太刀！純愛一直線」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 264,867,748 0b59a5e975080d2c3c703840884e944a427ad57c<br>
+[アニメ DVD] らんま1／2 第057話（熱闘編 第039話） 「八宝斉 最後の日？」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 265,416,184 b4ba700045d3192c7bc91633a67c4baca7bb5328<br>
+[アニメ DVD] らんま1／2 第058話（熱闘編 第040話） 「暴れん坊娘 リンリンランラン」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 280,092,926 5ae9a0c5625f442d6fccfdb3157c40c024a7f365<br>
+[アニメ DVD] らんま1／2 第059話（熱闘編 第041話） 「乱馬を襲う恐怖のタタリ」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 231,224,568 cacb42abd2c67a8f92d1acfc7138126ffa1bb0fa<br>
+[アニメ DVD] らんま1／2 第060話（熱闘編 第042話） 「登場！ものまね格闘技」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 267,426,600 e08920c91edeb83b4962a330a7aa67bf85455c02<br>
+[アニメ DVD] らんま1／2 第061話（熱闘編 第043話） 「良牙の体質改善セッケン！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 270,247,078 053a900a256c468c68b8127c5d5358ba49c08589<br>
+[アニメ DVD] らんま1／2 第062話（熱闘編 第044話） 「格闘！障害物レース」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 252,912,430 627b5db0f5d53e56b0013d52d32b021534870fd1<br>
+[アニメ DVD] らんま1／2 第063話（熱闘編 第045話） 「乱馬、ついに呪泉郷へいく」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 226,247,658 56760eb1542910abbbd49d7eb46afa9e80fa154b<br>
+[アニメ DVD] らんま1／2 第064話（熱闘編 第046話） 「帰ってきた変態校長」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 270,655,964 5323a52750188380fec0a3d608d88b38d069fd3d<br>
+[アニメ DVD] らんま1／2 第065話（熱闘編 第047話） 「登場！史上最強の九能」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 295,957,592 b98e8a2016ac80f28327bb3a7573a530c160da43<br>
+[アニメ DVD] らんま1／2 第066話（熱闘編 第048話） 「乱馬が弱くなっちゃった！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 284,929,944 b8d06aa092ed0db3c977bae64308df6c8a4c93d4<br>
+[アニメ DVD] らんま1／2 第067話（熱闘編 第049話） 「完成！とんでもない必殺技」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 215,833,346 c63c0b68ceb6579a63e301f239ce0873953f58e9<br>
+[アニメ DVD] らんま1／2 第068話（熱闘編 第050話） 「決戦！乱馬復活なるか？」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 278,432,936 edba72501e8ea2837d8f2c2de4f5ef2b4af11b94<br>
+[アニメ DVD] らんま1／2 第069話（熱闘編 第051話） 「右京のスカート大作戦！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 233,686,046 d9730ab0e2cf291ed250e9e560f6a2c74f729567<br>
+[アニメ DVD] らんま1／2 第070話（熱闘編 第052話） 「乱馬のママがやってきた！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 220,873,880 9d969636fceb12a359a9e375e12d2402aee2a066<br>
+[アニメ DVD] らんま1／2 第071話（熱闘編 第053話） 「良牙、愛と苦悩を越えて」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 226,810,126 d8f3fad1aaed7390d47fc23f30113c65e1283dcb<br>
+[アニメ DVD] らんま1／2 第072話（熱闘編 第054話） 「フィアンセは化け猫」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 221,594,968 1138f34157d870acf4d9e2200076cacac8d6e3f0<br>
+[アニメ DVD] らんま1／2 第073話（熱闘編 第055話） 「吹けよ風！青春は熱血だ」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 209,707,772 1ac59bd1c5c0c93405610f4ee0ffb7a99546f921<br>
+[アニメ DVD] らんま1／2 第074話（熱闘編 第056話） 「恐るべき新弟子 現れる」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 217,087,838 dd5dbad2793c11eaacc559e91a0c5303e7dd53fa<br>
+[アニメ DVD] らんま1／2 第075話（熱闘編 第057話） 「おもてに出やがれ！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 327,088,162 a0985e26ab84dc4ec250063c5ca430f16e631c64<br>
+[アニメ DVD] らんま1／2 第076話（熱闘編 第058話） 「良牙の天道道場居候日記」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 289,303,842 0726078339c20e63d1447fb6884f4469cd93ae29<br>
+[アニメ DVD] らんま1／2 第077話（熱闘編 第059話） 「八宝斉の恋」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 287,424,128 47d50e99417a20012526833bc38705e93de1d1c4<br>
+[アニメ DVD] らんま1／2 第078話（熱闘編 第060話） 「九能ボー然！恋の大予言」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 311,739,040 7f4ac1cd1c975006a8ead86479cfe34bb8f195f3<br>
+[アニメ DVD] らんま1／2 第079話（熱闘編 第061話） 「強くなりすぎた良牙」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 275,215,798 cc9ff72afa144d1e1578c5e60fc1fe1f0550253d<br>
+[アニメ DVD] らんま1／2 第080話（熱闘編 第062話） 「あやうし！Pちゃんの秘密」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 270,485,484 ca45dca5bdcbe9c5da6483962a1632c3ca65e606<br>
+[アニメ DVD] らんま1／2 第081話（熱闘編 第063話） 「たまごをつかむ男」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 279,361,432 521c92ef133d980ad557f46a8695a7e02fd01301<br>
+[アニメ DVD] らんま1／2 第082話（熱闘編 第064話） 「らんまと九能の初キッス？！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 304,578,918 b333c1dffdc72593d4ba24d27c0f509dddb8fc29<br>
+[アニメ DVD] らんま1／2 第083話（熱闘編 第065話） 「シャンプーの赤い糸」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 291,766,448 1d09b452d6c2ddca3be05a6fe1681ded880eba41<br>
+[アニメ DVD] らんま1／2 第084話（熱闘編 第066話） 「ムース故郷に帰る」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 299,804,846 5df1aaef6b267eb6efccf1cf0a11aea522de7c6c<br>
+[アニメ DVD] らんま1／2 第085話（熱闘編 第067話） 「史上サイテーの賭け」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 310,956,136 4d321a63a3ea8aee7c29c05ec1cc8a70c7ae7094<br>
+[アニメ DVD] らんま1／2 第086話（熱闘編 第068話） 「マリアンヌになった九能」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 317,337,424 d1f2803ebce1fae5fdeed06fb5838692bfa2957f<br>
+[アニメ DVD] らんま1／2 第087話（熱闘編 第069話） 「乱馬なんか大キライ！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 275,876,690 e23c2e678a799aa51e85f359a5b342c6a83827a4<br>
+[アニメ DVD] らんま1／2 第088話（熱闘編 第070話） 「そのおさげ もらったぁ！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 335,967,712 e75a08da17ad377c3e6112922176d25dacecbd50<br>
+[アニメ DVD] らんま1／2 第089話（熱闘編 第071話） 「男の野望が尽きる時…」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 376,507,134 10865e82204f0bc19288b1e08440e49719e04228<br>
+[アニメ DVD] らんま1／2 第090話（熱闘編 第072話） 「リンリン・ランランの逆襲」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 430,571,270 76b6a908a8052953a4a54c9327b2893d01f2eaff<br>
+[アニメ DVD] らんま1／2 第091話（熱闘編 第073話） 「良牙のプロポーズ」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 387,332,918 fcf40169266865d29c912d4fe4fee209d3d79a7f<br>
+[アニメ DVD] らんま1／2 第092話（熱闘編 第074話） 「玄馬、家出する」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 298,468,566 2d04e84e67abe27f2d4ee53429873f21ada1ba1d<br>
+[アニメ DVD] らんま1／2 第093話（熱闘編 第075話） 「これが格闘茶道でおます」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 315,615,160 262f009e7d92480c7f3a9bdbfdc255c04f8ccd70<br>
+[アニメ DVD] らんま1／2 第094話（熱闘編 第076話） 「道場破りは女の子？」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 290,823,322 27a25a7b882a5abe5d24d6ed03e09bb4493b7706<br>
+[アニメ DVD] らんま1／2 第095話（熱闘編 第077話） 「絶叫！温泉バトル」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 321,980,956 8bcfef4b89e930ddd27526fdcfadbf9f33439c6f<br>
+[アニメ DVD] らんま1／2 第096話（熱闘編 第078話） 「ミーが九能のダディです」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 305,460,730 2818f1faa7348225bf3d676ca648d244d8641a19<br>
+[アニメ DVD] らんま1／2 第097話（熱闘編 第079話） 「格闘茶道・家元立つ！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 290,812,536 5bc202b9a61efd92f5412cc343bff788b2887533<br>
+[アニメ DVD] らんま1／2 第098話（熱闘編 第080話） 「レオタードは乙女の呪い」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 343,183,946 56c9c68116cf15d571c41ae472c18dc63df30889<br>
+[アニメ DVD] らんま1／2 第099話（熱闘編 第081話） 「恐怖の混浴温泉」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 338,196,908 df022971676aefcca8637848f52b531729ca6866<br>
+[アニメ DVD] らんま1／2 第100話（熱闘編 第082話） 「カエルのうらみ はらします」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 294,570,234 24149eb51d9f4bb59f283a0c539563b0e14f749d<br>
+[アニメ DVD] らんま1／2 第101話（熱闘編 第083話） 「逆襲！怒りのお好み焼き」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 378,335,668 78a9bc4afc4025ae1a186781d835a7d222b1ddfc<br>
+[アニメ DVD] らんま1／2 第102話（熱闘編 第084話） 「ナンパになった乱馬」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 429,798,628 93df7392b8dc1ab29fa1ff92d84582767ca8a72c<br>
+[アニメ DVD] らんま1／2 第103話（熱闘編 第085話） 「格闘将棋は命懸け」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 430,740,410 c1de9ecc3ccbfc4db6b6f8acac5257e498216bb8<br>
+[アニメ DVD] らんま1／2 第104話（熱闘編 第086話） 「佐助のスパイ大作戦」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 329,904,670 b466d63644d120827dc10da50f2bf83a4cc92a9a<br>
+[アニメ DVD] らんま1／2 第105話（熱闘編 第087話） 「ボンジュールでございます」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 345,487,646 7b351fc0d98169cd0f633cbd35baf6f8321cad56<br>
+[アニメ DVD] らんま1／2 第106話（熱闘編 第088話） 「ディナーは リングの上で」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 322,377,940 0595826a0c98953872067bd54a04d35398305aae<br>
+[アニメ DVD] らんま1／2 第107話（熱闘編 第089話） 「あかね、涙の水泳大特訓」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 366,457,776 e170e92d3dc31342fa63217079645affe4e878c3<br>
+[アニメ DVD] らんま1／2 第108話（熱闘編 第090話） 「良牙！夕日に向かって走れ」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 345,378,378 d90bebad0eff944d2b70a19744792917dd4fcccb<br>
+[アニメ DVD] らんま1／2 第109話（熱闘編 第091話） 「夢の中へ」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 321,638,140 2eb2958601f3d53d6d3ec1916e64836d1c844ffa<br>
+[アニメ DVD] らんま1／2 第110話（熱闘編 第092話） 「乱馬は なびきの許婚？」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 354,067,636 74c1cf486729ea8a06280b7fe293d46286a0a97b<br>
+[アニメ DVD] らんま1／2 第111話（熱闘編 第093話） 「天道家 消えたたこ焼きの謎」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 312,075,314 e13d7f4caa52284d0ab95330cf53375f0dc42898<br>
+[アニメ DVD] らんま1／2 第112話（熱闘編 第094話） 「対決！乱馬vs影乱馬」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 327,096,502 f5a478c09d518e23e36da39f1c04df44b6214b36<br>
+[アニメ DVD] らんま1／2 第113話（熱闘編 第095話） 「小太刀のマイラブリーパパ」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 321,004,256 25605be709b73e33a069e0594c18769a3d7ccc9a<br>
+[アニメ DVD] らんま1／2 第114話（熱闘編 第096話） 「強敵？五寸釘くん登場」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 335,979,846 9d32b770faa15e6ece131e95c03638ef7e839826<br>
+[アニメ DVD] らんま1／2 第115話（熱闘編 第097話） 「乱馬はヘタクソ？格闘書道」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 364,213,268 3794b62a9fce1a7d96392664fd6e0ee7ad13b77f<br>
+[アニメ DVD] らんま1／2 第116話（熱闘編 第098話） 「風林館高校、影のドン登場」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 331,556,782 2ae117f69a8ea2918808c418a166a9c53d1c14af<br>
+[アニメ DVD] らんま1／2 第117話（熱闘編 第099話） 「悲願！普通の男に戻りたい」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 319,875,970 288978a22ad86f5991daa595ae98881f68cbe2bc<br>
+[アニメ DVD] らんま1／2 第118話（熱闘編 第100話） 「早乙女流の跡継ぎは良牙？」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 309,202,366 4219da438483c11bc40545db5d0a305539021eae<br>
+[アニメ DVD] らんま1／2 第119話（熱闘編 第101話） 「天道家、遊園地へ行く」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 358,364,908 fc859b22eaba64d26887aeebb1de535b01237dad<br>
+[アニメ DVD] らんま1／2 第120話（熱闘編 第102話） 「風林館高校・通り魔事件」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 309,854,516 bd35c5b38c8deafa0aa1bab6a0a29fd620954f51<br>
+[アニメ DVD] らんま1／2 第121話（熱闘編 第103話） 「呪泉郷から来た悪魔 前編」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 284,838,528 c888aafdaad850ef0a15ddd1debbedad5dc2bd37<br>
+[アニメ DVD] らんま1／2 第122話（熱闘編 第104話） 「呪泉郷から来た悪魔 後編」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 306,134,332 7dff9ea808743c5a6ffd2c5673d9a646a0b9df1f<br>
+[アニメ DVD] らんま1／2 第123話（熱闘編 第105話） 「乱馬がいない Ｘmas」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 304,254,812 9ecbdd569d51bd7ba32e4012261ab26d4bf34e85<br>
+[アニメ DVD] らんま1／2 第124話（熱闘編 第106話） 「雪ん子 冬物語」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 275,819,188 51164c43b4c375ae370d23e47fc849979a7fe793<br>
+[アニメ DVD] らんま1／2 第125話（熱闘編 第107話） 「らくがきパンダの呪い」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 369,641,814 d5b4f0b40f4bde0ebda73e33ba594ff53b1118a0<br>
+[アニメ DVD] らんま1／2 第126話（熱闘編 第108話） 「スイカ島の交際鬼」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 365,774,366 7571b7648d151a1366717a6062d4f951ed272e95<br>
+[アニメ DVD] らんま1／2 第127話（熱闘編 第109話） 「幸せのパンダ伝説」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 368,287,110 9bfa7988c7159e670f499aba50d9ffd2946580be<br>
+[アニメ DVD] らんま1／2 第128話（熱闘編 第110話） 「乱馬と右京がソース相愛？」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 343,231,190 d05fbce1cfc765479d7a8bf893a774d063e8e037<br>
+[アニメ DVD] らんま1／2 第129話（熱闘編 第111話） 「偽り夫婦よ永遠に…」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 328,655,510 c45f1399b59f89b5887657f1385f9f8079aef54c<br>
+[アニメ DVD] らんま1／2 第130話（熱闘編 第112話） 「格闘茶道！さらわれた家元」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 318,006,828 ca5ab5e0d17903a4097de373900ab448e9984a0c<br>
+[アニメ DVD] らんま1／2 第131話（熱闘編 第113話） 「大変！あかねが入院した」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 315,290,430 1307d2f9943ba6ca8c0f8776ce589cdf7b54d2e3<br>
+[アニメ DVD] らんま1／2 第132話（熱闘編 第114話） 「謎の暴れタコツボ現る？！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 334,332,912 89313ec0b411736f5724317f2d734a7fadde6cb8<br>
+[アニメ DVD] らんま1／2 第133話（熱闘編 第115話） 「五寸釘！あぁ恋の紙人形」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 302,450,596 1607187df02e29cbb038b650671f46731d15c7c9<br>
+[アニメ DVD] らんま1／2 第134話（熱闘編 第116話） 「あかねの心がわからない」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 342,597,016 851f18a9738e88866c1db1803e2f708b9376ab7e<br>
+[アニメ DVD] らんま1／2 第135話（熱闘編 第117話） 「追跡！手まり唄の謎」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 323,238,790 3c58996ed0d1bdc043fe1048df386119cd40518b<br>
+[アニメ DVD] らんま1／2 第136話（熱闘編 第118話） 「もうあなたから離れない」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 343,242,144 bf25fadacca5574a620babcda2ebb9f0bb6a50bf<br>
+[アニメ DVD] らんま1／2 第137話（熱闘編 第119話） 「九能帯刀、代理校長を命ず」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 314,777,710 5a5b1561dc6fdba3257c9768e8ceb55169b5fbd1<br>
+[アニメ DVD] らんま1／2 第138話（熱闘編 第120話） 「乱馬、月夜に吠える」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 283,417,630 c651f01bd997a4ad0950b20a06869a429aae9051<br>
+[アニメ DVD] らんま1／2 第139話（熱闘編 第121話） 「イ尓好(ニーハオ) ！呪泉郷のガイドさん」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 342,378,948 e7dff48e530ad2dfc890c7f1707e8e6043005f99<br>
+[アニメ DVD] らんま1／2 第140話（熱闘編 第122話） 「迷惑！六人の八宝斉」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 365,201,494 5b472edd1e0daddf9c3b5964e61a77f60413acbd<br>
+[アニメ DVD] らんま1／2 第141話（熱闘編 第123話） 「気分しだいの必殺技(前)」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 298,564,118 6dec12b2f10610ae8be39e057fdc7a19ba1e7309<br>
+[アニメ DVD] らんま1／2 第142話（熱闘編 第124話） 「気分しだいの必殺技(後)」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 260,996,530 df7ff1b4f3d22153b6767b460eb792ae536d3409<br>
+[アニメ DVD] らんま1／2 第143話（熱闘編 第125話） 「シャンプー囚われのキッス」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 297,316,870 fffb41f2d51cf34cff7fc905dc2bda014cafcfdd<br>
+[アニメ DVD] らんま1／2 第144話（熱闘編 第126話） 「ボクと駆け落ちして下さい」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 264,086,866 5aa4c6a9370cf94e1eb4e110fdc6078f7777211f<br>
+[アニメ DVD] らんま1／2 第145話（熱闘編 第127話） 「キノコ寺へ行こう」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 279,977,098 d9fa1132de57a023b36f4909ff803d59baf0387f<br>
+[アニメ DVD] らんま1／2 第146話（熱闘編 第128話） 「必殺！地獄のゆりかご」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 282,598,320 2703fabd80fc43276d20572afa40a620ee733774<br>
+[アニメ DVD] らんま1／2 第147話（熱闘編 第129話） 「青い恐怖にボンジュール」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 256,377,906 b1269a5df9a0de56c23f963e86960ac4b3db35cb<br>
+[アニメ DVD] らんま1／2 第148話（熱闘編 第130話） 「織姫は流れ星に乗って」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 305,519,808 3fc18a42f8b9a0f2f8f2cdf82728f1a7efab5803<br>
+[アニメ DVD] らんま1／2 第149話（熱闘編 第131話） 「一つ召しませ恋の桜餅」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 287,160,630 dbf904b5b0040870effd1f5cb9da9499acd65873<br>
+[アニメ DVD] らんま1／2 第150話（熱闘編 第132話） 「できた！八宝大カビン」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 302,611,994 5946912bd7ad7b32d1a7985d82e1667166849ac2<br>
+[アニメ DVD] らんま1／2 第151話（熱闘編 第133話） 「九能兄妹スキャンダルの嵐」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 332,776,832 91c1f2c92e6d01e0390e9f4b35203b924f896d2d<br>
+[アニメ DVD] らんま1／2 第152話（熱闘編 第134話） 「黄金の茶器、五重塔の決戦」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 296,389,522 5aff9059af0e654566cf73aa38c15c8245ad2a37<br>
+[アニメ DVD] らんま1／2 第153話（熱闘編 第135話） 「五寸釘光、ひと夏の恋」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 285,139,102 716c41f5abd14fc812ab569df142202611307470<br>
+[アニメ DVD] らんま1／2 第154話（熱闘編 第136話） 「愛の格闘チアガール(前)」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 279,898,090 5dcc7dc69ba88b1671530e98c1481475c95c1bb7<br>
+[アニメ DVD] らんま1／2 第155話（熱闘編 第137話） 「愛の格闘チアガール(後)」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 384,052,734 ab2582f495611cb1b8ee70649e7896b11e7197a3<br>
+[アニメ DVD] らんま1／2 第156話（熱闘編 第138話） 「決定！ミス・ビーチサイド」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 322,822,842 ff76bbf1353278369836090b30b6bcdda75c3d5e<br>
+[アニメ DVD] らんま1／2 第157話（熱闘編 第139話） 「爆裂！ハイパーツヅミ」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 289,266,532 3d4ca82a8634ca6ad3cf76cb7405724063bc75a5<br>
+[アニメ DVD] らんま1／2 第158話（熱闘編 第140話） 「忍の犬は白と黒」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 251,188,632 088556b16d824aa6c47f59fbf2e9c438a0b68c4b<br>
+[アニメ DVD] らんま1／2 第159話（熱闘編 第141話） 「天道家・龍神伝説」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 285,538,032 9c07a22e727457b01bce58ae8e4357f4c2186d5a<br>
+[アニメ DVD] らんま1／2 第160話（熱闘編 第142話） 「乱馬、ミーツ・マザー」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 270,607,052 c041cd7448b7e9cc070b7a2690ad6f9aff497042<br>
+[アニメ DVD] らんま1／2 第161話（熱闘編 第143話） 「いつの日か、きっと…」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 258,613,074 53c03d9c525990cc3d2b317cb0e10eccffac0c76<br><br>
+[アニメ DVD] らんま1／2 第019話（熱闘編 第001話） 「激突！出前格闘レース」（OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 302,853,998 22d3b8aa524a28708137f040ac1c68d3cc44637b<br>
+[アニメ DVD] らんま1／2 第020話（熱闘編 第002話） 「やっぱり猫が嫌い？」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 258,860,284 9febee6d9ae26bd3e564f8d68dd627443502cd4a<br>
+[アニメ DVD] らんま1／2 第021話（熱闘編 第003話） 「私が女傑族のおばば！」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 302,383,184 5362b202f4b2e575b02e2fa1c3903e89cf6f47f9<br>
+[アニメ DVD] らんま1／2 第022話（熱闘編 第004話） 「出た！必殺天津甘栗拳!!」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 321,046,108 52a52ce199d1944ffb62d24d337848b34c8a3813<br>
+[アニメ DVD] らんま1／2 第023話（熱闘編 第005話） 「白鳥拳の男 ムース登場！」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 293,796,694 6d4a3b60f7d570857de20cfc61b71f84cd3d2b5e<br>
+[アニメ DVD] らんま1／2 第024話（熱闘編 第006話） 「爆走！雪だるま運びレース」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 342,876,276 ab9c45e5843dc3c3c3e7b7381f534eb17a7cf327<br>
+[アニメ DVD] らんま1／2 第032話（熱闘編 第014話） 「対決ムース！負けるが勝ち」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 317,068,562 8fd220479ad5991deb759005d42a88cd1a8c57f7<br>
+[アニメ DVD] らんま1／2 第033話（熱闘編 第015話） 「究極のエロ妖怪 八宝斉」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 296,627,078 8ea3f2c3dd2f98506e5ffb42128e41588bc65eb7<br>
+[アニメ DVD] らんま1／2 第034話（熱闘編 第016話） 「女子更衣室を襲え？」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 332,185,734 e056f48b3f8fcc84cb05ea2c8aae6093b296a93e<br>
+[アニメ DVD] らんま1／2 第035話（熱闘編 第017話） 「鬼も逃げだす カラクリ屋敷」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 291,827,658 4841683848be8e39d30e11d67360f3da2aedec83<br>
+[アニメ DVD] らんま1／2 第036話（熱闘編 第018話） 「これで女とおさらば？」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 311,846,182 830fa42a1f68fa4b7041f52946d073942022d880<br>
+[アニメ DVD] らんま1／2 第037話（熱闘編 第019話） 「愛と憎しみの贈物」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 332,371,734 bd58d3695bcee82e225355c252d6174c64e4ac3f<br>
+[アニメ DVD] らんま1／2 第038話（熱闘編 第020話） 「SOS エロ妖怪 八宝斉」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 269,136,128 aaa9b04a28d26f2aff1efc253e60c24c0bf37b84<br>
+[アニメ DVD] らんま1／2 第039話（熱闘編 第021話） 「あかねの口びるを奪え」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 289,393,120 d403969b873e6cabefd3d6742860f1b0797aa8aa<br>
+[アニメ DVD] らんま1／2 第040話（熱闘編 第022話） 「いい湯だな？銭湯で戦闘」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 288,513,716 701961add15820c0299b27207548ee259e1a3815<br>
+[アニメ DVD] らんま1／2 第041話（熱闘編 第023話） 「また一人 乱馬を愛したヤツ」 （OPを自主的に追加版）(640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 322,878,336 0471535609987cad77c72ff0efd55e08744b96eb<br><br>
+[アニメ DVD] らんま1／2 劇場版 予告 「中国寝崑崙大決戦！ 掟破りの激闘編」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 142,190,022 aec0ec00136aee93faccf99964c512613b148f6b<br>
+[アニメ DVD] らんま1／2 劇場版 「中国寝崑崙大決戦！ 掟破りの激闘編」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 1,636,220,572 7421d83f551c14251507815caad611b55281b7bf<br><br>
+[アニメ DVD] らんま1／2 劇場版 予告 「決戦桃幻郷！花嫁を奪りもどせ！！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 23,835,896 1d0ab7e45c4abca8155bb24ef95d8cc871efe17d<br>
+[アニメ DVD] らんま1／2 劇場版 「決戦桃幻郷！花嫁を奪りもどせ！！」 (640x480 WMV9 QB90 24fps).avi ミスター靖国神社zozoVb6PeX 951,627,906 fe10ad1110710387366403f9ad2d27a31a243ec5<br>
+<hr class="A">
+#(DVDアニメ) らんま1／2 第001話 「中国から来たあいつ ちょっとヘン」  [23m44s 640x480 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 166,126,114 032009cc3b85b23a1bdf69c27672259b759e3034<br>
+#(DVDアニメ) らんま1／2 第002話 「遊びじゃないのよ 学校は」  [23m44s 640x480 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 190,035,128 9c9c133485d67eccd010ec960b28eee97b18022d<br>
+#(DVDアニメ) らんま1／2 第003話 「いきなり愛の嵐！ちょっと待ってョ」  [23m44s 640x480 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 172,327,848 bda1460ac03371a7de195b7a184d7b96b0cabe2b<br>
+#(DVDアニメ) らんま1／2 第004話 「乱馬とらんま？ 誤解がとまらない」  [23m45s 640x480 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 175,536,676 3db8d0186ec81fb4eb62d676af31fadef1bbe52d<br>
+#(DVDアニメ) らんま1／2 第005話 「骨まで愛して？ あかね恋の複雑骨折」  [23m44s 640x480 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 172,570,538 020610a20823ebe6504b0c69a5bb541abc81c16c<br>
+#(DVDアニメ) らんま1／2 第006話 「あかねの失恋 だってしょうがないじゃない」  [23m44s 640x480 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 165,118,914 c789d886d5a8408bbe8597c3fa58c56e839cec9a<br>
+#(DVDアニメ) らんま1／2 第007話 「登場！ 永遠の迷い子・良牙」  [23m44s 640x480 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 207,343,134 cd4c54a4bfd2e2f6a04a4e8f1c0aa970bb3e6c75<br>
+#(DVDアニメ) らんま1／2 第008話 「学校は戦場だ！対決乱馬VS良牙」  [23m45s 640x480 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 215,963,684 63ff180ff8b12ba6410cd0c84cafd3d41e0bb560<br>
+#(DVDアニメ) らんま1／2 第009話 「乙女白書 髪は女のいのちなの」  [23m45s 640x480 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 187,871,324 68ac2fe9be4620b089ce70cdeb78da9adc4c0687<br>
+#(DVDアニメ) らんま1／2 第010話 「ピーピーPちゃん ろくなもんじゃねェ」  [23m45s 640x480 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 182,520,990 568995fcc6e81b97b33113ea625dcd931745330e<br>
+#(DVDアニメ) らんま1／2 第011話 「乱馬を激愛！ 新体操のスケバン登場」  [23m45s 16x64 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 180,728,386 a2a452be89f7885f5a62c6dad2bb63cb1c97b33f<br>
+#(DVDアニメ) らんま1／2 第012話 「女の恋は戦争よ！格闘新体操でいざ勝負」  [23m44s 640x480 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 163,083,324 8f52ce6be9b946e67fcbbc21a08c27f7272e6bcd<br><br>
+#(映画) らんま１／２決戦桃源郷！花嫁を奪りもどせ！！(DVD)  [59m33s 640x480 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 490,327,774 216f5995964ccea6a03049dcd0e33459caa6f879<br>
+#(映画) らんま１／２中国寝崑崙大決戦！掟やぶりの激闘編！！(DVD)  [1h13m57s 640x480 x264 23.98fps MP3 160Kbps].avi XviD至上主義sCfUgO0x0Y 771,458,252 6d52b903a1d96fc5763f6c70342b8fce422f05e6<br>
+<hr class="A">
+らんま1／2 第01話 「中国からきたあいつ！ちょっとヘン！！」 (DVD 640x480 VC1 q90).wmv rDLotN7hLy 203,529,980 83e18cb93d2e092777613dbad1ea7ad3480e27b1<br>
+らんま1／2 第02話 「遊びじゃないのよ学校は」 (DVD 640x480 VC1 q90).wmv rDLotN7hLy 291,945,994 534039e5a540fd9dfd6061239cdc1d693afbdedd<br>
+らんま1／2 第03話 「いきなり愛の嵐ちょっと待ってョ」 (DVD 640x480 VC1 q90).wmv rDLotN7hLy 263,385,994 234f391a2b1326fdab52c5626dea3b825bfb9b5e<br>
+らんま1／2 第04話 「乱馬とらんま？誤解がとまらない」 (DVD 640x480 VC1 q90).wmv rDLotN7hLy 240,041,994 a5d55b44787112ecc00308087ae1600df930de4e<br>
+<br></dd>
+</dl><a name="footer"></a><hr><br></body></html>

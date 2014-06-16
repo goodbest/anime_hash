@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja" dir="ltr"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="robots" content="index,noarchive">
+<title>ハッシュ保管庫 SHA1-ミ版</title>
+<style type="text/css">
+<!--
+*{margin:0; padding:0;}
+body{margin:0; padding:0; font-size:9pt; color:#000000; background:#F5F5F5;}
+dd{margin:0 0 0 20px;}
+hr{margin:1px 0; border:1px #C1C0B5 solid;}
+hr.A{text-align:left; width:95%; margin:2px 0; border:1px #87A9D5 solid;}
+hr.B{text-align:left; width:95%; margin:2px 0; border:2px #43599A solid;}
+a{color:#0080C0; text-decoration:none;}
+a:hover{color:#FFFFFF; background-color:#0080C0;}
+table{font-size:8pt;}
+td{text-align:center; width:50px; border:2px #0080C0 solid;}
+td a{display:block; height:1.2em; line-height:1.2em;}
+.font{margin:5px 0 0 2px; font-size:10pt; color:#6E6E6E;}
+.title{color:#D95131;}
+.sup{color:#0000FF;}
+.exc{color:#808080;}
+-->
+</style></head><body>
+<a name="header"></a>
+<table><tr>
+<td><a href="051_sha1aa.html">あ</a></td><td><a href="052_sha1ai.html">い</a></td><td><a href="053_sha1au.html">う</a></td><td><a href="054_sha1ae.html">え</a></td>
+<td><a href="055_sha1ao.html">お</a></td><td><a href="056_sha1ka.html">か</a></td><td><a href="057_sha1ki.html">き</a></td><td><a href="058_sha1ku.html">く</a></td>
+<td><a href="059_sha1ke.html">け</a></td><td><a href="060_sha1ko.html">こ</a></td><td><a href="061_sha1sa.html">さ</a></td><td><a href="062_sha1si.html">し</a></td>
+<td><a href="063_sha1su.html">す</a></td><td><a href="064_sha1se.html">せ</a></td><td><a href="065_sha1so.html">そ</a></td><td><a href="066_sha1ta.html">た</a></td>
+<td><a href="067_sha1ti.html">ち</a></td><td><a href="068_sha1tu.html">つ</a></td><td><a href="069_sha1te.html">て</a></td><td><a href="070_sha1to.html">と</a></td>
+<td><a href="071_sha1na.html">な</a></td><td><a href="072_sha1ni.html">に</a></td><td><a href="0javascript:void(0)">ぬ</a></td>
+<td><a href="0javascript:void(0)">ね</a></td><td><a href="075_sha1no.html">の</a></td>
+</tr><tr>
+<td><a href="076_sha1ha.html">は</a></td><td><a href="077_sha1hi.html">ひ</a></td><td><a href="078_sha1hu.html">ふ</a></td><td><a href="079_sha1he.html">へ</a></td>
+<td><a href="080_sha1ho.html">ほ</a></td><td><a href="081_sha1ma.html">ま</a></td><td><a href="082_sha1mi.html">み</a></td><td><a href="083_sha1mu.html">む</a></td>
+<td><a href="084_sha1me.html">め</a></td><td><a href="085_sha1mo.html">も</a></td><td><a href="086_sha1ya.html">や</a></td><td><a href="087_sha1yu.html">ゆ</a></td>
+<td><a href="088_sha1yo.html">よ</a></td><td><a href="089_sha1ra.html">ら</a></td><td><a href="090_sha1ri.html">り</a></td><td><a href="091_sha1ru.html">る</a></td>
+<td><a href="092_sha1re.html">れ</a></td><td><a href="093_sha1ro.html">ろ</a></td><td><a href="094_sha1wa.html">わ</a></td><td><a href="095_sha1ld.html">LD</a></td>
+<td><a href="096_sha1ow.html">旧</a></td><td><a href="../bd/047_bd.html">BD</a></td><td><a href="../psp/048_psp.html">PSP</a></td>
+<td colspan="2" style="width:100px;"><a href="../update.html">更新リスト</a></td>
+</tr></table>
+<span class="font">ハッシュ保管庫 SHA1-ミ版</span><hr>
+<dl>
+<dt><span class="title">みずいろ<b>◆</b></span>13/12/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ] みずいろ OVA 第01巻 映像特典 「インフォメーション」 (DVD x264 AAC 720x480).mp4 11,939,968 ca2de4b73879eef369c61853545ee3c46c740326<br>
+[アニメ] みずいろ OVA 第01巻 映像特典 「ノンテロップオープニング『空のつづき』」 (DVD x264 AAC 704x480).mp4 14,579,098 e4dbcaef849fb51d2c79c148fd9d9f63a2a6cbc6<br>
+[アニメ] みずいろ OVA 第02巻 映像特典 「OVA『みずいろ』発売記念イベント」 (DVD x264 AAC 704x480 interlaced).mp4 173,495,331 f11ab1c37fd1e78344bd5fbc44edc157c3be851d<br>
+[アニメ] みずいろ OVA 第01巻 (DVD x264 AAC 704x480 Chap).mp4 204,766,106 162523a248fd6bd481efa0cd0e2172f87f548297<br>
+[アニメ] みずいろ OVA 第02巻 (DVD x264 AAC 704x480 Chap).mp4 221,905,588 9bb4c05261766cb2c44f9078ddc1e00126acca20<br>
+<hr class="A">
+[OVA] みずいろ　第１巻(DivX5.02 2pass 1500kbps 24fps 640x360 DVD).avi kemoneko3oJWAlMfuT 353,225,102 6796f0a713e5f0c6368a70339c56ef052f0e4069<br>
+[OVA] みずいろ　第２巻(DivX5.02 2pass 1500kbps 24fps 640x360 DVD).avi kemoneko3oJWAlMfuT 295,748,848 888dfce3aaee3b7d7b5e286bc1e4cd34d3ded07f<br>
+<hr class="A">
+[DVD アニメ] みずいろ ノンクレジットOP (704x396 WMV9).wmv 1dodakemx1N789S3y 19,675,406 4d0e002868fab45a9dae3560d295f85985511ab1<br>
+[DVD アニメ] みずいろ 第01話 (704x396 WMV9).wmv 1dodakemx1N789S3y 361,509,462 196f21d28b60cfc9680d92d62300a21c31d8067a<br>
+[DVD アニメ] みずいろ 第02話 (704x396 WMV9).wmv 1dodakemx1N789S3y 349,221,192 0bbb734be3cb1d42732b7330c621c02c1f4616d5<br>
+<br></dd>
+<dt><span class="title">美鳥の日々<b>◆</b></span>08/01/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] 美鳥の日々 オリジナルサウンドドラマ DAYS 1 (640x480 WMV AAC).mkv ayucJ1ACNsPoa 28,847,429 bb3dfc9c0782e3e563ff88a61dea7b8fa300cfc9<br>
+[アニメ DVD] 美鳥の日々 ノンテロップオープニング (640x480 WMV AAC).mkv ayucJ1ACNsPoa 34,779,942 96728cc687b8fdf7cab443963e63ffc571124054<br>
+[アニメ DVD] 美鳥の日々 ノンテロップオープニング について.txt ayucJ1ACNsPoa 209 a6dceb60f2a014767c347b9364c2b3264f99533b<br>
+[アニメ DVD] 美鳥の日々 DAYS 01 「右手no恋人」 (640x480 WMV AAC).mkv ayucJ1ACNsPoa 280,164,688 042e6bf2a824ac8bae6059a960f87fea7708784f<br>
+[アニメ DVD] 美鳥の日々 DAYS 02 「二人no想い」 (640x480 WMV AAC rev2).mkv ayucJ1ACNsPoa 255,874,098 bff39817095a637b83527982a2bb4d065dcbb073<br>
+[アニメ DVD] 美鳥の日々 DAYS 03 「発見no日々」 (640x480 WMV AAC).mkv ayucJ1ACNsPoa 257,951,296 5ffd65810741cee710b5363d357914e1723313a9<br>
+[アニメ DVD] 美鳥の日々 DAYS 04 「秘密no発覚！？」 (640x480 WMV AAC).mkv ayucJ1ACNsPoa 260,430,888 1fbc31d189edb3f7499c7d9418216a491bd1bd64<br>
+[アニメ DVD] 美鳥の日々 DAYS 05 「アイnoチカラ」 (640x480 WMV AAC).mkv ayucJ1ACNsPoa 295,198,112 14f872509b8a887040ada3cf0b9a5ba8e5028f7c<br>
+<hr class="A">
+[アニメ DVD] 美鳥の日々 Vol.1 映像特典 「オリジナルサウンドドラマ DAYS1」 (640x480 WMV9).wmv AstFRKHU8ITbu 31,672,474 ef86093203990b369e89a4e6fb0e69a7da6d1ccb<br>
+[アニメ DVD] 美鳥の日々 Vol.1 映像特典 「ノンテロップオープニング」 (640x480 WMV9).wmv AstFRKHU8ITbu 21,732,671 f026dacd6e228bc4915c1f0ca42fdb46eb232dc2<br>
+[アニメ DVD] 美鳥の日々 Vol.2 映像特典 「オリジナルサウンドドラマ DAYS2」 (640x480 WMV9).wmv AstFRKHU8ITbu 49,241,627 298187b8062c788c13d8d72d38539b8d91d37003<br>
+[アニメ DVD] 美鳥の日々 Vol.2 映像特典 「ノンテロップエンディング」 (640x480 WMV9).wmv AstFRKHU8ITbu 7,236,890 73aef0506b83c99ea11c56ef8f4671145a0842f1<br>
+[アニメ DVD] 美鳥の日々 Vol.3 映像特典 「-LastDays-ノンテロップエンディング」 (640x480 WMV9).wmv AstFRKHU8ITbu 18,319,859 fa4a14c59ae605018782a0f1d053e99909268d98<br>
+[アニメ DVD] 美鳥の日々 Vol.3 映像特典 「オリジナルサウンドドラマ DAYS3」 (640x480 WMV9).wmv AstFRKHU8ITbu 37,963,936 b8e9aac866b5e77ce2ad8e5f493bbc7d0ef1b02e<br>
+[アニメ DVD] 美鳥の日々 Vol.3 映像特典 「番組プロモーション映像」 (640x480 WMV9).wmv AstFRKHU8ITbu 26,756,657 79fd7116a4d6d3369d480936d506a0d6f5712ede<br>
+[アニメ DVD] 美鳥の日々 第01話 「右手no恋人」 (640x480 WMV9).wmv AstFRKHU8ITbu 192,721,211 dee4247bdaa5b4b5158c8fcc9abf5cb930120a86<br>
+[アニメ DVD] 美鳥の日々 第02話 「二人no想い」 (640x480 WMV9).wmv AstFRKHU8ITbu 175,650,069 6462b5017a505cd4879ee05e6f118e2c00e82bde<br>
+[アニメ DVD] 美鳥の日々 第03話 「発見no日々」 (640x480 WMV9).wmv AstFRKHU8ITbu 163,511,235 31bf8c84104778ca1aa1fb354b75796bfc8c7bdd<br>
+[アニメ DVD] 美鳥の日々 第04話 「秘密no発覚！？」 (640x480 WMV9).wmv AstFRKHU8ITbu 167,813,550 70917f39d9a4a2145e7e1bdf4902297c30c2e331<br>
+[アニメ DVD] 美鳥の日々 第05話 「アイnoチカラ」 (640x480 WMV9).wmv AstFRKHU8ITbu 178,151,235 ba334f5edc62591779ad7a2b0e8090db6dd6bfde<br>
+[アニメ DVD] 美鳥の日々 第06話 「栞noラブラブ大作戦」 (640x480 WMV9).wmv AstFRKHU8ITbu 182,551,235 c766d8088ac4389f751b32504a305b0ba32f866c<br>
+[アニメ DVD] 美鳥の日々 第07話 「はじめてnoデート」 (640x480 WMV9).wmv AstFRKHU8ITbu 159,511,235 2b511be97a9876f6895a0f52db504030ca40239b<br>
+[アニメ DVD] 美鳥の日々 第08話 「右手noセイジ」 (640x480 WMV9).wmv AstFRKHU8ITbu 152,519,235 ddbd0d1da8d8006006eec1f57f0f05225a23a3c5<br>
+[アニメ DVD] 美鳥の日々 第09話 「タッキーno日々」 (640x480 WMV9).wmv AstFRKHU8ITbu 167,559,235 80e1bd6f3e164e2076fd4aecbee4605d39b91cad<br>
+[アニメ DVD] 美鳥の日々 第10話 「ココロno距離」 (640x480 WMV9).wmv AstFRKHU8ITbu 172,455,235 f4922a2e4d0ed7929dbcbdc4e1c650786461a9da<br>
+[アニメ DVD] 美鳥の日々 第11話 「運命no再会」 (640x480 WMV9).wmv AstFRKHU8ITbu 185,353,784 7a1146e1928332ad010a26099b224e16818f78fb<br>
+[アニメ DVD] 美鳥の日々 第12話 「突然no別れ」 (640x480 WMV9).wmv AstFRKHU8ITbu 176,457,784 b4666104b5e4eabf520937c8092f609ff10c0b54<br>
+[アニメ DVD] 美鳥の日々 第13話 「二人no日々」 (640x480 WMV9).wmv AstFRKHU8ITbu 179,385,784 3667056e26ba06c3c1e7741c7e8fe3bb071fa6bd<br>
+<hr class="A">
+[DVD] 美鳥の日々 ～Memory①～ Disc① メニュー1.bmp WgPZCQtRPj 921,654 32d2370918bf02c5eb3e4bb4806f23f6d83ccffd<br>
+[DVD] 美鳥の日々 ～Memory①～ Disc① メニュー2.bmp WgPZCQtRPj 921,654 60903d862f15ff7a84fbe7900fa1f9aefc9b98c2<br>
+[DVD] 美鳥の日々 ～Memory①～ Disc① メニュー3.bmp WgPZCQtRPj 921,654 0dc5460b5b3ef9fe815baf87c4bc5b48de5e4be7<br>
+[DVD] 美鳥の日々 ～Memory①～ Disc② メニュー1.bmp WgPZCQtRPj 921,654 049be73559cb30e13621bd0dd16d8baf547f4a76<br>
+[DVD] 美鳥の日々 ～Memory①～ Disc② メニュー2.bmp WgPZCQtRPj 921,654 e0f2a90eae0f4080fb7e5f7ec88f6dfaa683dfb7<br>
+[DVD] 美鳥の日々 ～Memory②～ メニュー1.bmp WgPZCQtRPj 921,654 e32040ce4062dee2ee5a8c8d692c9acf043642e3<br>
+[DVD] 美鳥の日々 ～Memory②～ メニュー2.bmp WgPZCQtRPj 921,654 8c1d916529d208d03c955c4c2ff47377a706b593<br>
+[DVD] 美鳥の日々 ～Memory②～ メニュー3.bmp WgPZCQtRPj 921,654 d6c6fb015ccde0d7ca7c3889244a923ef93d0ddd<br>
+[DVD] 美鳥の日々 ～Memory③～ メニュー1.bmp WgPZCQtRPj 921,654 bae8d1853d982a2e91082dc69fb1b27595248c3d<br>
+[DVD] 美鳥の日々 ～Memory③～ メニュー2.bmp WgPZCQtRPj 921,654 15426809631425ae1f36f25d69e6e854a285981d<br>
+[DVD] 美鳥の日々 ～Memory③～ メニュー3.bmp WgPZCQtRPj 921,654 0a7b3e3d3dd3b9ea44114e7693b51c21caad1cb0<br>
+[DVD] 美鳥の日々 映像特典 「Last Days ノンテロップエンディング」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 20,263,261 7a9420fb15f1d0214837f20d101275822721cb68<br>
+[DVD] 美鳥の日々 映像特典 「サウンドドラマ Days1」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 40,623,212 43693da0701a4772c9488d78b01a8d2377386055<br>
+[DVD] 美鳥の日々 映像特典 「サウンドドラマ Days2」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 59,601,756 342967ce6427ce5a8938a596c24d2697490a2016<br>
+[DVD] 美鳥の日々 映像特典 「サウンドドラマ Days3」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 40,776,277 2cf86fa4d6409c21260e98652ef5c6c491e0ad7d<br>
+[DVD] 美鳥の日々 映像特典 「ノンテロップオープニング」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 28,362,452 eed3770ee81531a2cd0db08f3f20a5d15df305a7<br>
+[DVD] 美鳥の日々 映像特典 「ノンテロップエンディング」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 11,120,755 acb9b91fee087cd0a19f685565bdefc183c4d025<br>
+[DVD] 美鳥の日々 映像特典 「番組プロモーション映像」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 59,145,535 0ad9f77da022c6393f9831b98ed28085df5ce483<br>
+[DVD] 美鳥の日々 Days 01 「右手no恋人」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 235,938,142 06469a8b63dbf1c58e613ace53e3908a5ff4259c<br>
+[DVD] 美鳥の日々 Days 02 「二人no想い」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 219,903,354 cc034058a6d28140d85ff2af1d9b999787b1b1e2<br>
+[DVD] 美鳥の日々 Days 03 「発見no日々」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 213,114,976 3acd44668c495aa67178f1ecb3f3016a38ed3067<br>
+[DVD] 美鳥の日々 Days 04 「秘密no発覚！？」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 208,693,301 847cba99d5f0ef74c19c7a453508da91b1cba726<br>
+[DVD] 美鳥の日々 Days 05 「アイnoチカラ」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 235,141,397 ace3fc80ff20718866efcf2c558ea1cebe88e876<br>
+[DVD] 美鳥の日々 Days 06 「栞noラブラブ大作戦！」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 233,462,484 26d0673c79b6921f246a2004f0ee680102f27521<br>
+[DVD] 美鳥の日々 Days 07 「はじめてnoデート」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 212,195,375 7e14c04cb87f795a944d5eb7743edfa97acb6707<br>
+[DVD] 美鳥の日々 Days 08 「右手noセイジ」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 192,270,467 89c60577c9fbfcacacb91a855860527e0b8653da<br>
+[DVD] 美鳥の日々 Days 09 「タッキーno日々」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 217,121,961 da09defa5fdbb1cd3b2858e8d50113d91e9ae466<br>
+[DVD] 美鳥の日々 Days 10 「ココロno距離」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 189,278,140 8e18d912fe45a4e462dfc20d4b8849ce3d1d7bf5<br>
+[DVD] 美鳥の日々 Days 11 「運命no再会」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 204,130,810 388824e08ed385ca0d2b7a037a62b1e3fd5f42f6<br>
+[DVD] 美鳥の日々 Days 12 「突然no別れ」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 191,630,690 99508124065324d067a71b359a67e78a19f1b96e<br>
+[DVD] 美鳥の日々 Days 13(Last Days) 「二人no日々」(x264 704×480 4：3 AC3).mkv WgPZCQtRPj 275,617,224 d9803c27349a6a1977c617d5c5075e6127dcd17b<br>
+<br></dd>
+<dt><span class="title">みなみけ<b>◆</b></span>09/08/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] みなみけ 映像特典 ④ CDスポット (XviD1.2 640x360 AC3 タグ参照).avi Galopin3BM3EISvpL 22,372,984 799961a06430a8869f376d25e6913b30f8767561<br>
+[アニメ DVD] みなみけ Vol.1 映像特典 「みなみけ in STARCHILD presents 『Starchild Collection 2007』 Autumn・Winter」 (704x480 WMV9AP QL93).wmv Snake7PkQZ 972,971,732 a7d6843e4a3ba10eabd47b5d0a7edcaf5f95a63f<br>
+[アニメ DVD] みなみけ Vol.2 映像特典 「ノンテロップオープニング」 (704x480 WMV9AP QL93).wmv Snake7PkQZ 18,253,763 829aa5d394c0bccc8ade05ad53f7d9f6a1f6218f<br>
+[アニメ DVD] みなみけ Vol.2 映像特典 「ノンテロップエンディング」 (704x480 WMV9AP QL93).wmv Snake7PkQZ 10,894,178 0cae4985b1f6c3b15d5a17430e30c25445f177fa<br>
+[アニメ DVD] みなみけ 第01話 「南さんちの三姉妹」 (704x480 WMV9AP QL93).wmv Snake7PkQZ 158,252,582 d2bc2bb0817b322b6c1a79abc56e88bc41480ea5<br>
+[アニメ DVD] みなみけ 第02話 「おかしな学校」 (704x480 WMV9AP QL93).wmv Snake7PkQZ 140,088,093 772e8586fac413cd66f61d7f15112d10f75ee7ea<br>
+[アニメ DVD] みなみけ 第03話 「球蹴り番長再び」 (704x480 WMV9AP QL93).wmv Snake7PkQZ 142,242,415 c0d8ef06d4ce9033b946e1ef90718f4649449230<br>
+[アニメ DVD] みなみけ 第04話 「恋もよう」 (704x480 WMV9AP QL93).wmv Snake7PkQZ 141,847,697 bf7f539ec84ce5c2d512d93dd84c3becac900c96<br>
+[アニメ DVD] みなみけ 第05話 「海に行こうよ」 (704x480 WMV9AP QL93).wmv Snake7PkQZ 146,041,427 8df48d3ea8e9905cf89b8e454fbb31b13e649291<br>
+[アニメ DVD] みなみけ 第06話 「マコちゃん誕生」 (704x480 WMV9AP QL93).wmv Snake7PkQZ 147,184,438 55e0f6c7a40e30b9f86956ae84820015bb21e716<br><br>
+[アニメ DVD] みなみけ 第01話 「南さんちの三姉妹」 (1280x720 x264 AAC EEDI2-upconv).mp4 Snake7PkQZ 283,308,678 1bea16c3005bcfa342311418126f0841d3365b9f<br>
+[アニメ DVD] みなみけ 第02話 「おかしな学校」 (1280x720 x264 AAC EEDI2-upconv).mp4 Snake7PkQZ 247,768,730 8cd6af1af732c0e84bafcec408bcbfb4fafa6286<br>
+[アニメ DVD] みなみけ 第03話 「球蹴り番長再び」 (1280x720 x264 AAC EEDI2-upconv).mp4 Snake7PkQZ 256,375,986 486df6c239b710ae03f11dfe1eaeff95206a0ba1<br>
+<hr class="A">
+[アニメ DVD] みなみけ vol.1 映像特典 「2007.10.27 Shibuya O-EAST イベント映像ダイジェスト」 (704x396 WMV9 q83 AC3 120fps_テロップ修正rev2).avi 大阪さん8Lk4f313qc 370,253,824 5fbcfec9054f07a99d9aeeb4dd10aa2beb3b566a<br>
+[アニメ DVD] みなみけ vol.2 映像特典 「ノンクレジットオープニング」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 32,028,672 b3e640e5564311b339a0448530b87ee077e0de38<br>
+[アニメ DVD] みなみけ vol.2 映像特典 「ノンクレジットエンディング」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 25,395,200 88128074ad2e9b4bce4367d4a9749097b9d25d2c<br>
+[アニメ DVD] みなみけ vol.4 映像特典1 「最終回ノンテロップエンディング」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 25,321,472 3236b124ff5bd34442186576f4154ccd686fc8ef<br>
+[アニメ DVD] みなみけ vol.4 映像特典2 「番組宣伝スポット」 (640x360 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 42,446,848 ed7d0d98bcfe6eb08541b004a2776a33a8f89899<br>
+[アニメ DVD] みなみけ vol.4 映像特典3 「CDスポット」 (640x360 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 19,894,272 70c901f852d472c0676f49027724561f3d469ac8<br>
+[アニメ DVD] みなみけ vol.4 映像特典4 「DVDスポット」 (640x360 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 58,716,160 e4698dbe86a885c0d96a1a1595aa69cb82c3c8f1<br>
+[アニメ DVD] みなみけ 第01話 「南さんちの三姉妹」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 281,368,576 a605f67303bf82ed70342d1b7052c5a526e2672d<br>
+[アニメ DVD] みなみけ 第02話 「おかしな学校」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 253,489,152 58754978df607daad132b8e1420f334f7b6e86bb<br>
+[アニメ DVD] みなみけ 第03話 「球蹴り番長再び」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 255,121,408 6d49bc753ed77deedab23f1e40a73e13ce71a505<br>
+[アニメ DVD] みなみけ 第04話 「恋もよう」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 256,700,416 3321c6741857f539156f0bc35563d5975a5da70b<br>
+[アニメ DVD] みなみけ 第05話 「海に行こうよ」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 265,474,048 8a3f6403768efd2958be4de54fb3ed2ac8793831<br>
+[アニメ DVD] みなみけ 第06話 「マコちゃん誕生」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 273,967,104 54426f12c8f3319a9f2d92381c4c7defe3e82dbe<br>
+[アニメ DVD] みなみけ 第07話 「いろいろな顔」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 255,346,688 1069f2b818e1fdf479abd59f65fc10686305af14<br>
+[アニメ DVD] みなみけ 第08話 「ほさか」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 266,866,688 a6ed20186ebabe92aeaf4eaea6188922d4a311f2<br>
+[アニメ DVD] みなみけ 第09話 「三姉妹日和」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 240,203,776 1922ff581d43fc37bf5174845d254a9579080ac5<br>
+[アニメ DVD] みなみけ 第10話 「おとこのこ×おんなのこ」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 261,515,264 7a6735cf09b00239866c48eb562cc328492347ae<br>
+[アニメ DVD] みなみけ 第11話 「となりの南さん」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 256,225,280 cdd5a18805e147e9dc23ad2a0ac699b19f1bf4f6<br>
+[アニメ DVD] みなみけ 第12話 「クリスマスとかイブとか」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 251,090,944 40b013e57920c85a74cf9ca8c8879377e42999b0<br>
+[アニメ DVD] みなみけ 第13話 「恋のからまわり」 (704x396 WMV9 q97 AC3 120fps).avi 大阪さん8Lk4f313qc 257,251,328 e4420ffeca193a99885dc1ec77ade7c1b23052ef<br>
+<hr class="A">
+[アニメ DVD] みなみけ 映像特典 ② ノンクレジットオープニング (XviD1.2 704x396 AC3).avi Galopin3BM3EISvpL 38,809,412 db18e518d3c3ec65bc09eb05827f2691775affa9<br>
+[アニメ DVD] みなみけ 映像特典 ② ノンクレジットエンディング (XviD1.2 704x396 AC3).avi Galopin3BM3EISvpL 27,817,916 c74f75d03ff9b60d61e200cf0cc57d48d47f4a12<br>
+[アニメ DVD] みなみけ 映像特典 ④ DVDスポット (XviD1.2 640x360 AC3 タグ参照).avi Galopin3BM3EISvpL 67,355,760 133d929a21ade3a3d3ee9eadbc4d483b0d6ca803<br>
+[アニメ DVD] みなみけ 映像特典 ④ 最終回ノンクレジットエンディング (XviD1.2 704x396 AC3).avi Galopin3BM3EISvpL 27,777,208 85bab5fbc29b7f8fc2969f7f8f676534b6167eb4<br>
+[アニメ DVD] みなみけ 映像特典 ④ 番組宣伝スポット (XviD1.2 640x360 AC3 タグ参照).avi Galopin3BM3EISvpL 50,108,072 6916d79c90609900160ea3060c477add46427379<br>
+[アニメ DVD] みなみけ 第01話 「南さんちの三姉妹」 (XviD1.2 704x396 AC3 rev2).avi Galopin3BM3EISvpL 228,634,498 c2abcfa5b968cbbcf44fe33a8497cb576c9c8cec<br>
+[アニメ DVD] みなみけ 第02話 「おかしな学校」 (XviD1.2 704x396 AC3 rev2).avi Galopin3BM3EISvpL 204,291,136 2da3d45523384818b04329b215edbebd5d8c81eb<br>
+[アニメ DVD] みなみけ 第03話 「球蹴り番長再び」 (XviD1.2 704x396 AC3 rev2).avi Galopin3BM3EISvpL 207,160,974 67005db8e391af5563d5b2d652919d8f6579130b<br>
+[アニメ DVD] みなみけ 第04話 「恋もよう」 (XviD1.2 704x396 AC3 タグ参照).avi Galopin3BM3EISvpL 206,920,084 9f3f3772fd47a908e4fa4078b645418a2b97f5d8<br>
+[アニメ DVD] みなみけ 第05話 「海に行こうよ」 (XviD1.2 704x396 AC3).avi Galopin3BM3EISvpL 210,434,490 ce5ac94b1ea633f049e9f1731df524b12fb48709<br>
+[アニメ DVD] みなみけ 第06話 「マコちゃん誕生」 (XviD1.2 704x396 AC3).avi Galopin3BM3EISvpL 216,178,782 c078bb987f697741ea0c596452a673b62b807855<br>
+[アニメ DVD] みなみけ 第07話 「いろいろな顔」 (XviD1.2 704x396 AC3).avi Galopin3BM3EISvpL 206,441,098 48229cadaca1c60c77c1f132899c2f4c6b39cdb4<br>
+[アニメ DVD] みなみけ 第08話 「ほさか」 (XviD1.2 704x396 AC3).avi Galopin3BM3EISvpL 214,983,638 1fd4f6f9c465d4cffbfd617775365f56b534e6b6<br>
+[アニメ DVD] みなみけ 第09話 「三姉妹日和」 (XviD1.2 704x396 AC3).avi Galopin3BM3EISvpL 193,910,002 f18c8925f05b363f421698a6d317186152832360<br>
+[アニメ DVD] みなみけ 第10話 「おとこのこ×おんなのこ」 (XviD1.2 704x396 AC3).avi Galopin3BM3EISvpL 212,702,200 0ba2d40e5cc24672cfb44d37c0018548bfc2aa2d<br>
+[アニメ DVD] みなみけ 第11話 「となりの南さん」 (XviD1.2 704x396 AC3).avi Galopin3BM3EISvpL 210,472,448 a97764532321e406481308525584be94abdb5879<br>
+[アニメ DVD] みなみけ 第12話 「クリスマスとかイブとか」 (XviD1.2 704x396 AC3).avi Galopin3BM3EISvpL 200,695,048 038f52cad327e7de16bc88c442243cbae0bee830<br>
+[アニメ DVD] みなみけ 第13話 「恋のからまわり」 (XviD1.2 704x396 AC3).avi Galopin3BM3EISvpL 210,677,456 077f0cc83c80c9dd6771d849c38e8c68f5198bee<br>
+<hr class="A">
+[アニメ DVD] みなみけ VOL.1 映像特典 「Starchild Collection 2007」 (704x480 x264 AAC).mp4 AriaXv7lgs 504,144,723 dc514abdad39364b7a4e3adefbeb9b723729848d<br>
+[アニメ DVD] みなみけ 第01話 「南さんちの三姉妹」 (704x480 x264 AAC).mp4 AriaXv7lgs 286,622,053 e767b6facef1707666723337a38423b0eaeaaf4e<br>
+[アニメ DVD] みなみけ 第02話 「おかしな学校」 (704x480 x264 AAC).mp4 AriaXv7lgs 271,840,439 a6133d778eaa037eee36358503500e922742f552<br>
+[アニメ DVD] みなみけ 第03話 「球蹴り番長再び」 (704x480 x264 AAC).mp4 AriaXv7lgs 269,073,856 db9d77e98f253cb7838c8d480d14a71e5afd8722<br>
+<hr class="A">
+[アニメ DVD] みなみけ 第01話 ｢南さんちの三姉妹｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 313,881,924 807845ef5e2920265d37de5d0c74a90e3c1856ef<br>
+[アニメ DVD] みなみけ 第02話 ｢おかしな学校｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 313,867,377 1708ed4ee81281d21feeb919e6b3d139a39134d1<br>
+[アニメ DVD] みなみけ 第03話 ｢玉蹴り番長再び｣ ( 16：9 x264+AAC ).mkv EOLIAXv6gM5vCI0 313,903,222 9bd90cd45b28a880df7ab25485796e0e783e8577<br>
+[アニメ DVD] みなみけ 第04話 ｢恋もよう｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 313,693,583 3b2208784fd042617852ef41c7497b039b18b2c3<br>
+[アニメ DVD] みなみけ 第05話 ｢海に行こうよ｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 313,838,009 be069a4ecf0d1fa720d93a8228d55ddf52f3e918<br>
+[アニメ DVD] みなみけ 第06話 ｢マコちゃん誕生｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 313,834,327 a6c528116d0cf06dfc0b9c9bca1fcfe753ebe75b<br>
+[アニメ DVD] みなみけ 第07話 ｢いろいろな顔｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 128,741,638 4997086226ca4788e331cccfceb7ac7a83a6890d<br>
+[アニメ DVD] みなみけ 第08話 ｢ほさか｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 140,114,579 1db44812e7bfb7b9135d4174eaa8c24d64f1cc6e<br>
+[アニメ DVD] みなみけ 第09話 ｢三姉妹日和｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 119,631,978 967178aefc9552ea03244ff1b72a0428d9590b7d<br>
+[アニメ DVD] みなみけ 第10話 ｢おとこのこ×おんなのこ｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 115,843,643 d430c91c5ff3353536897c5507402d933ee2eaf2<br>
+[アニメ DVD] みなみけ 第11話 ｢となりの南さん｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 117,926,710 058735d198ee3748eb7a85b448a863f90748e390<br>
+[アニメ DVD] みなみけ 第12話 ｢クリスマスとかイブとか｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 111,071,041 4405f1d89cb71aed92eadccb7d288d5ca33172ec<br>
+[アニメ DVD] みなみけ 第13話 ｢恋のからまわり｣ ( 16：9 x264+AAC ).mp4 EOLIAXv6gM5vCI0 118,090,224 4d7896dc785cb7d59b73486d6041532d190f4adb<br>
+<hr class="A">
+[アニメ DVD] みなみけ 第01話 「南さんちの三姉妹」 (704x480 x264 AC3).mkv mivtcxo2nab0050 285,800,186 aea17d8e519d28bed0bd41ae551f1cf5f158739f<br>
+[アニメ DVD] みなみけ 第02話 「おかしな学校」 (704x480 x264 AC3).mkv mivtcxo2nab0050 259,851,801 fbb76a596aa75a65413ae0d8961d4f10a612f6a0<br>
+[アニメ DVD] みなみけ 第03話 「球蹴り番長再び」 (704x480 x264 AC3).mkv mivtcxo2nab0050 261,202,602 bec2192806f426251c69164521254d26467f9536<br>
+<hr class="A">
+[アニメ DVD] みなみけ Vol.4 映像特典 「CDスポット」 (960x720 x264).avi PszSZW9uMt 18,643,968 6ffa849c43190bd18b46a3b549bb1b59925f3baa<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「DVDスポット」 (960x720 x264).avi PszSZW9uMt 56,974,848 b7bcc3e9b2b2428a79fb90e6059eb60e4d3fe6ab<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「最終回ノンテロップED」 (1280x720 x264).avi PszSZW9uMt 28,460,096 d41f2f7785c263b235c2f98845f777ef9ca08d05<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「番組宣伝スポット」 (960x720 x264).avi PszSZW9uMt 39,377,976 32a0b789583ae5804bb4b16cd2aed4bc128e5d62<br>
+[アニメ DVD] みなみけ 第01話 「南さんちの三姉妹」 (1280x720 x264).avi PszSZW9uMt 291,568,064 03e135659babfe090e41d556f4672e986c63e6c1<br>
+[アニメ DVD] みなみけ 第02話 「おかしな学校」 (1280x720 x264).avi PszSZW9uMt 255,513,774 f13d0ea2c186786e6b84573a5c83e8f777f9e718<br>
+[アニメ DVD] みなみけ 第03話 「球蹴り番長再び」 (1280x720 x264).avi PszSZW9uMt 257,876,830 1956599639de96b6294897f42ff6af5b68ff2824<br>
+[アニメ DVD] みなみけ 第04話 「恋もよう」 (1280x720 x264).avi PszSZW9uMt 254,579,682 0d9f2b9e74288349dab7c5c2e9870fd360c00870<br>
+[アニメ DVD] みなみけ 第05話 「海に行こうよ」 (1280x720 x264).avi PszSZW9uMt 265,681,550 60cba9ff571f9c70a92c853a207a10c4de4b0a52<br>
+[アニメ DVD] みなみけ 第06話 「マコちゃん誕生」 (1280x720 x264).avi PszSZW9uMt 277,678,004 810f66abc2fb70337e1fb9fe94c7c2bafed7a85c<br>
+[アニメ DVD] みなみけ 第07話 「いろいろな顔」 (1280x720 x264).avi PszSZW9uMt 255,721,696 a19176cc177ec2324725f68d0698a06c37e8f0b9<br>
+[アニメ DVD] みなみけ 第08話 「ほさか」 (1280x720 x264).avi PszSZW9uMt 266,486,352 d4928f4a1c3dd04bc02f16c1a4622ed8a23f6fb0<br>
+[アニメ DVD] みなみけ 第09話 「三姉妹日和」 (1280x720 x264).avi PszSZW9uMt 234,875,824 594d5adce41b0e3035c0c9034e1ea16f22fba406<br>
+[アニメ DVD] みなみけ 第10話 「おとこのこ×おんなのこ」 (1280x720 x264).avi PszSZW9uMt 265,421,474 90e5652c759e39744b42d731013cc351f9996bc2<br>
+[アニメ DVD] みなみけ 第11話 「となりの南さん」 (1280x720 x264).avi PszSZW9uMt 257,215,524 a1612603ea6b7ba1942bf747625f97900fe2236f<br>
+[アニメ DVD] みなみけ 第12話 「クリスマスとかイブとか」 (1280x720 x264).avi PszSZW9uMt 246,301,730 2ef9274941084a44c9baa9258d603f5912bf89c2<br>
+[アニメ DVD] みなみけ 第13話 「恋のからまわり」 (1280x720 x264).avi PszSZW9uMt 257,891,876 0ff14473d3fb54d8b70b179946e0ff4afb2b999f<br>
+<hr class="A">
+[アニメ DVD] みなみけ Vol.2 映像特典 「ノンテロップOP」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 35,528,381 f630e2d9d159cc5d23b7d222bff4fc76ecea61cd<br>
+[アニメ DVD] みなみけ Vol.2 映像特典 「ノンテロップED」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 24,769,910 a38eca15124311c92ab7634bf373e5fed34015b5<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「CDスポット OPマキシCD発売前ver.」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 3,956,987 28989b5bc5b0ae05048a04e4b1b5fbd46ecd9161<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「CDスポット OPマキシCD発売後ver.」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 3,994,572 798f34a28fdbc8b594e4b43640c5764201943458<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「CDスポット EDマキシCD発売後ver.」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 3,789,930 0d5fe5689b5aaf369af21180602c3de4e408d211<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「CDスポット EDマキシCD発売前ver.」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 3,773,588 48c5aaf5566afeeca3dd91e73e4f446fe038eef0<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「DVDスポット みなみけ① 発売前ver.」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 5,645,665 3f3bc7a20691d0df2e6023f6fd82eddf2e2393bd<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「DVDスポット みなみけ① 発売後ver.」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 5,646,231 1449f4e2340b997ede977114ae3266f79f75281e<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「DVDスポット みなみけ② 発売前ver.(保坂版)」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 3,336,971 9db7792d307f7203630c35b483a766189a35010d<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「DVDスポット みなみけ② 発売前ver.」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 3,685,372 17cded8db2f5d4e24f8d11898805ae4429c33c9d<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「DVDスポット みなみけ② 発売後ver.(保坂版)」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 3,336,492 c7b969ac5a038ebb01edb5baa493edfd2d8b235b<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「DVDスポット みなみけ② 発売後ver.」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 3,703,145 bd1ad41963f86d8efe220558682c9b7bf81b359a<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「DVDスポット みなみけ③ 発売前ver.(保坂版)」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 3,968,112 675b671bd050e65cddeabc8cefa3ccb386cb4d4a<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「DVDスポット みなみけ③ 発売前ver.」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 3,907,457 e49a56794ab6b64e092a6814374af35d8a6d03ed<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「DVDスポット みなみけ③ 発売後ver.(保坂版)」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 3,948,487 be63e3fe95214551f5dc9144705a830194ff3d73<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「DVDスポット みなみけ③ 発売後ver.」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 3,863,667 1acc89976a1c109b3d7f1991b8edd5cc076898b6<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「DVDスポット みなみけ④ 発売前ver.」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 6,004,705 7f484cc60d5c363d0c2084427430c07bcbc57974<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「DVDスポット みなみけ④ 発売後ver.」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 6,010,007 310e97607a65fbb63cc166fb8307845084146be0<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「新番組宣伝スポット」 (1024x576 x264 AAC S-upconv ※).mp4 YUKKYavclL 3,507,835 73ef8689c3846cc72bb33cf6ddd428a1a38d81d7<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「番組宣伝スポット Aタイプ 15秒ver」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 3,971,932 026f2658ba02890a2bbd21da56e09855758c0a61<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「番組宣伝スポット Aタイプ 30秒ver」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 6,809,675 0c70e7f97c8ed9ed01571f5f2d842762d050a436<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「番組宣伝スポット Bタイプ 15秒ver」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 4,253,558 5e9e81d04ba4b54a5e1318d01aaf61c05f964975<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「番組宣伝スポット Bタイプ 30秒ver」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 6,494,546 88a4e1db8e4d5f237823ae94c35e5a83bbb4293a<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「番組宣伝スポット Cタイプ 15秒ver」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 4,085,692 17c797b9b73590081d9d8ab583141babcc3b92f5<br>
+[アニメ DVD] みなみけ Vol.4 映像特典 「番組宣伝スポット Cタイプ 30秒ver」 (1024x576 x264 AAC S-upconv).mp4 YUKKYavclL 6,639,224 2925f02fe6839ca3fe311dd73dd724a5c711283c<br>
+[アニメ DVD] みなみけ 第01話 「南さんちの三姉妹」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 284,277,409 f92869d526b818fe48bc1539f6036427eb1558f3<br>
+[アニメ DVD] みなみけ 第02話 「おかしな学校」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 246,561,263 0b7059f44add9706b8c4db613328ca81fd5a1dc2<br>
+[アニメ DVD] みなみけ 第03話 「球蹴り番長再び」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 254,935,881 1044dc128c1f1084144c9fb6bd19ed6906a9d1a2<br>
+[アニメ DVD] みなみけ 第04話 「恋もよう」 (1280x720 x264 AAC S-upconv rev3).mp4 YUKKYavclL 266,816,400 25880899779d8f852fdaa6cd5b585acbdb5f74b7<br>
+[アニメ DVD] みなみけ 第05話 「海に行こうよ」 (1280x720 x264 AAC S-upconv rev2).mp4 YUKKYavclL 267,518,703 425418a628dbfe8f7fbebafd94f8a7154b828db6<br>
+[アニメ DVD] みなみけ 第06話 「マコちゃん誕生」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 277,371,240 86b549eb674030f7a194ef7b7dc6137dc63b55e8<br>
+[アニメ DVD] みなみけ 第07話 「いろいろな顔」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 233,592,314 5cbc029193f5c1599cab7698a33062e3ab7bc8ab<br>
+[アニメ DVD] みなみけ 第08話 「ほさか」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 251,998,245 200dfc4c62049280802a23fed4eedac7cab8196d<br>
+[アニメ DVD] みなみけ 第09話 「三姉妹日和」 (1280x720 x264 AAC S-upconv rev2).mp4 YUKKYavclL 215,759,308 223b86a718a75284cbb95e7a9e3f11c3e67a4b62<br>
+[アニメ DVD] みなみけ 第10話 「おとこのこ×おんなのこ」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 238,925,575 debd4693c32681abccd75dc4497c829ac5caa9ba<br>
+[アニメ DVD] みなみけ 第11話 「となりの南さん」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 244,616,562 825847df29608cfe8d9c3609d8eca79fe375e619<br>
+[アニメ DVD] みなみけ 第12話 「クリスマスとかイブとか」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 234,373,567 adcf4dc65b4eefa50c09c0b6ff89308e9537ff7c<br>
+[アニメ DVD] みなみけ 第13話 「恋のからまわり」 (1280x720 x264 AAC S-upconv).mp4 YUKKYavclL 244,994,148 df92b11e1ca03fb58f2d4a747224ea251e6177b6<br>
+<hr class="A">
+[アニメ] みなみけ 第01話 「南さんちの三姉妹」 (DVD 提供付 704x396 H.264 MP3).avi Tt5fq3onwY 239,548,416 3edfdcc1654e0ad4afde622b1d203e8b1f27adc7<br>
+[アニメ] みなみけ 第02話 「おかしな学校」 (DVD 提供付 704x396 H.264 MP3).avi Tt5fq3onwY 231,966,720 72dedb39ed0df55f65f387ee2944e0f9d31ea297<br>
+[アニメ] みなみけ 第03話 「球蹴り番長再び」 (DVD 提供付 704x396 H.264 MP3).avi Tt5fq3onwY 229,525,504 b9b63720f271d69840e9ee050ce209419494f75b<br>
+[アニメ] みなみけ 第04話 「恋もよう」 (DVD 提供付 704x396 H.264 MP3).avi Tt5fq3onwY 250,374,144 b0268f7556760c447cd1175f7f8e94d85f103b70<br>
+[アニメ] みなみけ 第05話 「海に行こうよ」 (DVD 提供付 704x396 H.264 MP3).avi Tt5fq3onwY 255,080,448 4ebedcdc5f6d70b5d1612c3a485f61ffdcc08f18<br>
+[アニメ] みなみけ 第06話 「マコちゃん誕生」 (DVD 提供付 704x396 H.264 MP3).avi Tt5fq3onwY 235,235,328 15a4d628c256a48ca6d45b896ac84f9047d95cdd<br>
+<hr class="A">
+(アニメ) みなみけ 映像特典 CDスポット (DVD 1280x720 x264 AAC rev).mp4 OJAMAJOxI1 16,044,898 2c214bf7b2cef60621e5958310a5274804886228<br>
+(アニメ) みなみけ 映像特典 DVDスポット (DVD 1280x720 x264 AAC rev).mp4 OJAMAJOxI1 57,032,067 6013a2c828625ee52976bd83568a498b29ccc64d<br>
+(アニメ) みなみけ 映像特典 ノンクレジットOP (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 24,515,599 82409d4ca06de7057e3fc3ef668246ffeda9383d<br>
+(アニメ) みなみけ 映像特典 ノンクレジットED (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 18,434,003 924d88871f03aef5f431a4d89ca0003918c04657<br>
+(アニメ) みなみけ 映像特典 みなみけ in STARCHILDpresents「StarchildCollection2007」 Autumn・Winter (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 834,614,996 904f5159a2335c2ee99ae854ca04f45147acc25b<br>
+(アニメ) みなみけ 映像特典 最終回ノンクレジットED (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 18,136,208 6c261e556e9a621c4453c391512f5ea33f2584a9<br>
+(アニメ) みなみけ 映像特典 新番組宣伝スポット (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 37,801,129 8f086cb5bc880ff8f098e6174b52773d39bde0b9<br>
+(アニメ) みなみけ 第01話 「南さんちの三姉妹」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 259,106,278 1e856220e559e2f5c838aa8e74591825f00f5682<br>
+(アニメ) みなみけ 第02話 「おかしな学校」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 225,826,489 8d07cd8f58895a50005d1171e090f4a6a935edb3<br>
+(アニメ) みなみけ 第03話 「球蹴り番長再び」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 243,724,202 7a8bd868a1dc64f144a6324bfd0a7e39516728d2<br>
+(アニメ) みなみけ 第04話 「恋もよう」 (DVD 1280x720 x264 AAC rev).mp4 OJAMAJOxI1 246,867,239 b4eba8500d42c1f00e503945215938ee96aa17f3<br>
+(アニメ) みなみけ 第05話 「海に行こうよ」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 246,248,204 0d8a8efa1999804095f01a9c962a2faa8ef65da0<br>
+(アニメ) みなみけ 第06話 「マコちゃん誕生」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 249,084,691 6a290054b4bba507287e38bbd823dadab32bc313<br>
+(アニメ) みなみけ 第07話 「いろいろな顔」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 232,055,131 067e65677dd7af98e959d1e169e6ef4b10f85875<br>
+(アニメ) みなみけ 第08話 「ほさか」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 248,932,327 da6397d611c7721b9923d4f4be0f82912fb4d8f6<br>
+(アニメ) みなみけ 第09話 「三姉妹日和」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 229,174,577 e9951365ba3643cd23e8eea3832ec7dd46aab6c8<br>
+(アニメ) みなみけ 第10話 「おとこのこ×おんなのこ」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 235,947,887 fe580fae9ed7a2e51a359e2719f1960048cc7ae5<br>
+(アニメ) みなみけ 第11話 「となりの南さん」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 244,120,587 2d7df69906437a43f5fd2b09efc18f91333fef52<br>
+(アニメ) みなみけ 第12話 「クリスマスとかイブとか」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 242,303,592 a32b2e827758533a7bfccf9efe2dadfdc84d9976<br>
+(アニメ) みなみけ 第13話（終) 「恋のからまわり」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 249,602,497 cd87f28e9ee8c17ebacfb22750b6dd124f16cd98<br>
+<hr class="A">
+[DVD] みなみけ 第01話 「南さんちの三姉妹」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 171,281,757 9c5f248dec5a09aff336bbd408c72c82002dc339<br>
+[DVD] みなみけ 第02話 「おかしな学校」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 155,827,103 4014e360ffbf627bd1b77f85a616916919e1be59<br>
+[DVD] みなみけ 第03話 「球蹴り番長再び」 (704x480 H.264 AAC).mp4 MIRROR03q5Oq52al 159,236,663 4b980273076a9d9f803b2edb0849286ab488c5d5<br>
+<hr class="A">
+[DVD] みなみけ ① メニュー.bmp WgPZCQtRPj 836,406 aaae4b6feafe29298af2c4be9e613fa83904c09c<br>
+[DVD] みなみけ ① 特典映像(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 551,397,966 5993634c166d3d5be785eac3701877d9901d64b0<br>
+[DVD] みなみけ ② メニュー.bmp WgPZCQtRPj 836,406 68b46ae26800bcc9fca5aee927e6036814731fea<br>
+[DVD] みなみけ ③ メニュー.bmp WgPZCQtRPj 836,406 7c3de5fb53b14a02862cfe133aaa06e67611abb0<br>
+[DVD] みなみけ ④ メニュー.bmp WgPZCQtRPj 836,406 65ec7c1b5503f8e9ec867767b02333a948f2f144<br>
+[DVD] みなみけ おまけ ちょっとだけつづくみなみけ.mp3 WgPZCQtRPj 1,233,223 ea8ec002020e404ecc9846fb908aeac8fd6cdfb1<br>
+[DVD] みなみけ 映像特典 「ノンクレジットオープニング」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 25,210,679 bf11339ca831d7b43d6db4a4fce5bc01a8050990<br>
+[DVD] みなみけ 映像特典 「ノンクレジットエンディング」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 19,865,304 54e068f454bcfbfc76eef815b9bfa287e2311ec3<br>
+[DVD] みなみけ 映像特典 「スポット集」(x264 704×360 AC3).mkv WgPZCQtRPj 83,537,462 7fc80e90bd2def3a8f9bc417e4dd7a0d2347753d<br>
+[DVD] みなみけ 映像特典 「最終回ノンクレジットエンディング」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 17,628,812 5824fc25bbb5cc9aafdfa0ee94ff24f5ec54aea0<br>
+[DVD] みなみけ 第01.5話 ちょっとだけつづくみなみけ1.5.mp3 WgPZCQtRPj 3,402,010 25b6fb1463966505635882eb0df2806fc2fbfc54<br>
+[DVD] みなみけ 第02.5話 ちょっとだけつづくみなみけ2.5.mp3 WgPZCQtRPj 2,872,778 46fba2e446530c5c391b377efd2d580c27109a4d<br>
+[DVD] みなみけ 第03.5話 ちょっとだけつづくみなみけ3.5.mp3 WgPZCQtRPj 2,983,619 93c1909240d9976f4b6574751ca6a355300ac55f<br>
+[DVD] みなみけ 第04.5話 ちょっとだけつづくみなみけ4.5.mp3 WgPZCQtRPj 3,362,750 86a0e3a67fbbfa0b7bfcdf5c8e3db9c94883f9f8<br>
+[DVD] みなみけ 第05.5話 ちょっとだけつづくみなみけ5.5.mp3 WgPZCQtRPj 2,373,614 0fae8c458c88107d9fd15a843cd0fed5151eca31<br>
+[DVD] みなみけ 第06.5話 ちょっとだけつづくみなみけ6.5.mp3 WgPZCQtRPj 3,932,636 04affa7608fc968aa34a88ecbbca4faf27e05aef<br>
+[DVD] みなみけ 第07.5話 ちょっとだけつづくみなみけ 7.5.mp3 WgPZCQtRPj 3,388,820 8e3f5a6f9c1660a88c4daa21333bf27cc3e7d8f5<br>
+[DVD] みなみけ 第08.5話 ちょっとだけつづくみなみけ 8.5.mp3 WgPZCQtRPj 4,659,910 1ae2b90cde6ca339ddc9e645e837c9c739905918<br>
+[DVD] みなみけ 第09.5話 ちょっとだけつづくみなみけ 9.5.mp3 WgPZCQtRPj 2,801,560 0c3d614c669cd0e7b7ccbc90ada69febdf4821cf<br>
+[DVD] みなみけ 第10.5話 ちょっとだけつづくみなみけ 10.5.mp3 WgPZCQtRPj 4,289,170 0a97b9ebcf400c446c27e9203ba844072db3fa76<br>
+[DVD] みなみけ 第11.5話 ちょっとだけつづくみなみけ 11.5.mp3 WgPZCQtRPj 2,363,262 da4acb97aacf32af3bb19d9dc6f4ace7e30e6dca<br>
+[DVD] みなみけ 第12.5話 ちょっとだけつづくみなみけ 12.5.mp3 WgPZCQtRPj 3,406,317 59c224914f43fdeafdd76fc02954aaecb38d49e3<br>
+[DVD] みなみけ 第13.5話 ちょっとだけつづくみなみけ 13.5.mp3 WgPZCQtRPj 3,879,715 e0ebf56ca3619b762ffc363a4015ed5d35e9bcda<br>
+[DVD] みなみけ 01話 「南さんちの三姉妹」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 207,156,546 e8fafd3a3c5a0bec8b10ac9bf982fbc00c518a62<br>
+[DVD] みなみけ 02話 「おかしな学校」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 187,685,939 37315c965d7a3062fecfe98b02ff6ac1dea9a144<br>
+[DVD] みなみけ 03話 「球蹴り番長再び」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 188,823,833 a90310aa353724a333f2d7b54639d60f819f830e<br>
+[DVD] みなみけ 04話 「恋もよう」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 189,627,529 892784cfcdcb3b2461ac25fae582a696e46ff40f<br>
+[DVD] みなみけ 05話 「海に行こうよ」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 194,718,418 7210f879297f9fb41e64f40240314de97e04761e<br>
+[DVD] みなみけ 06話 「マコちゃん誕生」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 200,721,938 c98211402d13b88cc81e9dfc296eabb1e7fc3ac0<br>
+[DVD] みなみけ 07話 「いろいろな顔」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 189,782,385 6fccc3ceab6cd0c095b6c52b0706b2c8bb5c7876<br>
+[DVD] みなみけ 08話 「ほさか」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 195,515,716 37cdd89249b9f29020e9fcd37b561bc7cfc169c9<br>
+[DVD] みなみけ 09話 「三姉妹日和」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 178,245,655 4f93673174556b9f6e776f9cd15a6286c6ead8a5<br>
+[DVD] みなみけ 10話 「おとこのこ×おんなのこ」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 195,250,040 69f0d51273adc44261ae41aaec0b6d2e4ee1c518<br>
+[DVD] みなみけ 11話 「となりの南さん」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 189,435,350 3b9c8bd626ad626b43f4040fe31a7466007bbc68<br>
+[DVD] みなみけ 12話 「クリスマスとかイブとか」(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 186,761,987 caf90d1c7beebd23c2f5d0f7ea20157141e3a19c<br>
+[DVD] みなみけ 13話 「恋のからまわり」(最終回)(x264 704×480 16：9 AC3).mkv WgPZCQtRPj 190,311,655 cbba5537678a1be20fe986e343363a85db6848b3<br>
+<hr class="A">
+【アニメ】[DVD] みなみけ 01 映像特典 「みなみけ in STARCHILD presents 『Starchild Collection 2007』 Autumn・Winter」 (704x396 WMV9).wmv pcT6OjjAFE 478,020,788 af71fe91a74bfba98ebd325e85b4a10a0ca5a6af<br>
+【アニメ】[DVD] みなみけ 02 映像特典 「ノンクレジットオープニング」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 59,680,052 969acbaefb9414c06f6d3351d15a34b5677d4e15<br>
+【アニメ】[DVD] みなみけ 02 映像特典 「ノンクレジットエンディング」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 57,130,019 fd5130a43cb40603527ba45389ec6b32d1d5ff7a<br>
+【アニメ】[DVD] みなみけ 04 映像特典 01／24 「最終話ノンクレジットエンディング」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 57,166,962 9218ef82a990601f76e1cc8f92a68d53cd1efe76<br>
+【アニメ】[DVD] みなみけ 04 映像特典 02／24 「新番組宣伝スポット」 (640x480 WMV9).wmv pcT6OjjAFE 3,516,743 8dc1b77c7f2daf67e14288759ee6e7079507f62c<br>
+【アニメ】[DVD] みなみけ 04 映像特典 03／24 「番組宣伝スポット Aタイプ 15秒」 (640x480 WMV9).wmv pcT6OjjAFE 3,672,980 3136d8e54c4b2e125a84d4179961cfaae49a544e<br>
+【アニメ】[DVD] みなみけ 04 映像特典 04／24 「番組宣伝スポット Aタイプ 30秒」 (640x480 WMV9).wmv pcT6OjjAFE 6,526,451 65b0cc7dfa73a435d06087f5493fdb24ad01feff<br>
+【アニメ】[DVD] みなみけ 04 映像特典 05／24 「番組宣伝スポット Bタイプ 15秒」 (640x480 WMV9).wmv pcT6OjjAFE 4,026,569 715614b136ec77dca6b704ee24e08a18aaa1f751<br>
+【アニメ】[DVD] みなみけ 04 映像特典 06／24 「番組宣伝スポット Bタイプ 30秒」 (640x480 WMV9).wmv pcT6OjjAFE 6,427,775 47bf7046d36a044591c27f90f366ef8a82a0ce83<br>
+【アニメ】[DVD] みなみけ 04 映像特典 07／24 「番組宣伝スポット Cタイプ 15秒」 (640x480 WMV9).wmv pcT6OjjAFE 4,067,684 1839c123c0fc0c36d2b7db3d5e6406084ddc5fc8<br>
+【アニメ】[DVD] みなみけ 04 映像特典 08／24 「番組宣伝スポット Cタイプ 30秒」 (640x480 WMV9).wmv pcT6OjjAFE 6,682,688 f995ed15699f87b84f3c4e133bc2c43cb713b920<br>
+【アニメ】[DVD] みなみけ 04 映像特典 09／24 「CDスポット オープニングマキシCD 発売前」 (640x480 WMV9).wmv pcT6OjjAFE 3,746,987 bcd198e35726d5c730e1b3cc118cc344cd54a785<br>
+【アニメ】[DVD] みなみけ 04 映像特典 10／24 「CDスポット オープニングマキシCD 発売後」 (640x480 WMV9).wmv pcT6OjjAFE 3,746,987 9abce69e2fa7b6e2478bce8406e915858a20f878<br>
+【アニメ】[DVD] みなみけ 04 映像特典 11／24 「CDスポット エンディングマキシCD 発売前」 (640x480 WMV9).wmv pcT6OjjAFE 4,043,015 aa5f04a72533324eef98e2ad762fb3bb514c34a0<br>
+【アニメ】[DVD] みなみけ 04 映像特典 12／24 「CDスポット エンディングマキシCD 発売後」 (640x480 WMV9).wmv pcT6OjjAFE 4,051,238 3392efa4ce66b3f556b229e46f5dfcbe9d0d7604<br>
+【アニメ】[DVD] みなみけ 04 映像特典 13／24 「DVDスポット みなみけ① 通常Ver. 発売前」 (640x480 WMV9).wmv pcT6OjjAFE 4,832,423 30dd2d94215011d9d3aa6445eec9f6f98d2e06f1<br>
+【アニメ】[DVD] みなみけ 04 映像特典 14／24 「DVDスポット みなみけ① 通常Ver. 発売後」 (640x480 WMV9).wmv pcT6OjjAFE 4,824,200 8f20d982cbe533ec60f1a757fb61412b368f7471<br>
+【アニメ】[DVD] みなみけ 04 映像特典 15／24 「DVDスポット みなみけ② 通常Ver. 発売前」 (640x480 WMV9).wmv pcT6OjjAFE 3,475,628 860010dcbcbd4843fc7a6f7eed6d5f40b90fff1d<br>
+【アニメ】[DVD] みなみけ 04 映像特典 16／24 「DVDスポット みなみけ② 通常Ver. 発売後」 (640x480 WMV9).wmv pcT6OjjAFE 3,459,182 9c3456828bc5ca5a63f167f18c5556386577f9d7<br>
+【アニメ】[DVD] みなみけ 04 映像特典 17／24 「DVDスポット みなみけ② 保坂Ver. 発売前」 (640x480 WMV9).wmv pcT6OjjAFE 3,541,412 0215cefb96b2877e54387afc35261cb0f8bb3f36<br>
+【アニメ】[DVD] みなみけ 04 映像特典 18／24 「DVDスポット みなみけ② 保坂Ver. 発売後」 (640x480 WMV9).wmv pcT6OjjAFE 3,549,635 9cb764e35411488f277da1e116f68078bd095149<br>
+【アニメ】[DVD] みなみけ 04 映像特典 19／24 「DVDスポット みなみけ③ 通常Ver. 発売前」 (640x480 WMV9).wmv pcT6OjjAFE 3,771,656 f1b8957a9cacc08df317306d1abae61b8a99bffe<br>
+【アニメ】[DVD] みなみけ 04 映像特典 20／24 「DVDスポット みなみけ③ 通常Ver. 発売後」 (640x480 WMV9).wmv pcT6OjjAFE 3,804,548 2fb69d012bcaefc05dc3d3ca71b83aaf056b36c4<br>
+【アニメ】[DVD] みなみけ 04 映像特典 21／24 「DVDスポット みなみけ③ 保坂Ver. 発売前」 (640x480 WMV9).wmv pcT6OjjAFE 3,006,917 9db4c0dd45f8e45efa702c9ce1476021b68f5976<br>
+【アニメ】[DVD] みなみけ 04 映像特典 22／24 「DVDスポット みなみけ③ 保坂Ver. 発売後」 (640x480 WMV9).wmv pcT6OjjAFE 2,998,694 13856ed9e91ac9b1ee014f6f4f1164502b06af20<br>
+【アニメ】[DVD] みなみけ 04 映像特典 23／24 「DVDスポット みなみけ④ 通常Ver. 発売前」 (640x480 WMV9).wmv pcT6OjjAFE 4,659,740 8ae6060f992485cd8cdf97e30a5774234f3dea0e<br>
+【アニメ】[DVD] みなみけ 04 映像特典 24／24 「DVDスポット みなみけ④ 通常Ver. 発売後」 (640x480 WMV9).wmv pcT6OjjAFE 4,676,186 9d6e938e083fd20de4bb64e0f5df363d055e0356<br>
+【アニメ】[DVD] みなみけ 第01話 「南さんちの三姉妹」 (704x396 WMV9).wmv pcT6OjjAFE 223,161,533 183109c3c1fd51e449adc8e11b4d70f3821d14a0<br>
+【アニメ】[DVD] みなみけ 第02話 「おかしな学校」 (704x396 WMV9).wmv pcT6OjjAFE 194,619,494 a9d8acbe9482a5ef444d2b0202b73a94ecaa498d<br>
+【アニメ】[DVD] みなみけ 第03話 「球蹴り番長再び」 (704x396 WMV9).wmv pcT6OjjAFE 197,892,248 4cfae434effe16f653a7653ff64d92e7e363fa83<br>
+【アニメ】[DVD] みなみけ 第04話 「恋もよう」 (704x396 WMV9).wmv pcT6OjjAFE 197,637,335 4061e907e0bc9f822f158a9478620958c8f80272<br>
+【アニメ】[DVD] みなみけ 第05話 「海に行こうよ」 (704x396 WMV9).wmv pcT6OjjAFE 201,658,382 9c851d71621c21e29ca4eca6991864d3717a21a7<br>
+【アニメ】[DVD] みなみけ 第06話 「マコちゃん誕生」 (704x396 WMV9).wmv pcT6OjjAFE 211,320,407 59e0258782a0e1f6b548bab060c83fd16843b956<br>
+【アニメ】[DVD] みなみけ 第07話 「いろいろな顔」 (704x396 WMV9).wmv pcT6OjjAFE 197,662,004 91faf607f58bac131f973caf9c5230daf86b3b37<br>
+【アニメ】[DVD] みなみけ 第08話 「ほさか」 (704x396 WMV9).wmv pcT6OjjAFE 207,299,360 05589c1ccff1cce594e5c537ea5fe05df784c12b<br>
+【アニメ】[DVD] みなみけ 第09話 「三姉妹日和」 (704x396 WMV9).wmv pcT6OjjAFE 181,734,053 d2342e032e8a088f4f0b0557a55729981f68b25c<br>
+【アニメ】[DVD] みなみけ 第10話 「おとこのこ×おんなのこ」 (704x396 WMV9).wmv pcT6OjjAFE 202,883,609 47293b1004d9d50de7344089252a17343cac35c6<br>
+【アニメ】[DVD] みなみけ 第11話 「となりの南さん」 (704x396 WMV9).wmv pcT6OjjAFE 199,372,388 6c8cfe7596c7affa7b6999181a4d65cc539ec650<br>
+【アニメ】[DVD] みなみけ 第12話 「クリスマスとかイブとか」 (704x396 WMV9).wmv pcT6OjjAFE 190,475,102 933eae94a91d20c3f9e5c8706f443d38ff4b568c<br>
+【アニメ】[DVD] みなみけ 第13話 「恋のからまわり」 (704x396 WMV9).wmv pcT6OjjAFE 200,835,992 bb478e5bae9ea733b2ea6d62c8ba465c763c7c46<br>
+<br></dd>
+<dt><span class="title">みなみけ おかわり<b>◆</b></span>09/08/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[単行本5巻特装版付属DVDrip] みなみけ ～おかわり～ 第01話 「温泉、いただきます」(x264 704x396 AC3).avi 川澄舞uc73gwPjhy 166,682,624 e3f01aaebc62e54c0284ff2452aabc09c0e96007<br>
+<hr class="A">
+(アニメ) みなみけ おかわり映像特典 CDスポット集 (DVD 1280x720 x264 AAC rev).mp4 OJAMAJOxI1 23,988,886 89164425fd76bddcc0ac4792cc02dfc170ff01ce<br>
+(アニメ) みなみけ おかわり映像特典 DVDスポット集 ((DVD 1280x720 x264 AAC chap追加).mp4 OJAMAJOxI1 33,073,166 ae0ac2fcc01dbf8efd6b03b9e66f268680ccc4f0<br>
+(アニメ) みなみけ おかわり映像特典 ノンクレジットOP (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 31,706,571 6a63ed339ee41cf775e72c02467fd97402913e6d<br>
+(アニメ) みなみけ おかわり映像特典 ノンクレジットED 1～3話ver (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 10,701,832 fa3517eac81fcdd94ef1bffc21904a1a4488697f<br>
+(アニメ) みなみけ おかわり映像特典 ノンクレジットED 4～6話ver (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 10,770,028 58ad64aa35a969ee50b9710fc946c07cdb3bd83d<br>
+(アニメ) みなみけ おかわり映像特典 ノンクレジットED 7～9話ver (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 10,877,743 905f89e6acc3254a3a7b40b53081d917d52dbdc9<br>
+(アニメ) みなみけ おかわり映像特典 ノンクレジットED 10～12話ver (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 11,529,041 77958dab1b93dbe86f26372fc2218cf152fc7239<br>
+(アニメ) みなみけ おかわり映像特典 ノンクレジットED フルサイズver 1～3話ver (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 21,417,848 fce44028a66a26b1e548312abc37ab1d0a5d7146<br>
+(アニメ) みなみけ おかわり映像特典 ノンクレジットED フルサイズver 4～6話ver (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 21,381,443 e58fe88e66bd6346007790634232ff51b6465586<br>
+(アニメ) みなみけ おかわり映像特典 ノンクレジットED フルサイズver 7～9話ver (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 22,593,917 b33cf1cadda6dcf76844cdf36d74f8d3d7f6e2c5<br>
+(アニメ) みなみけ おかわり映像特典 ノンクレジットED フルサイズver 10～12話ver (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 24,138,026 41800c6d88e95b8be65857a334188183eacddba2<br>
+(アニメ) みなみけ おかわり映像特典 ノンクレジットED 最終話ver (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 24,870,503 fb058370f1eb442398d58b4c22f0cc1306b3cc33<br>
+(アニメ) みなみけ おかわり映像特典 番宣スポット集 (DVD 1280x720 x264 AAC chap追加).mp4 OJAMAJOxI1 12,617,897 edc6d2b9b7c05e301a5ce6864e362d9174d9dfa0<br>
+(アニメ) みなみけ おかわり 第01話 「1杯目 温泉、いただきます」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 298,737,985 43290504dcd4983ac40024790dfb3aa786f50513<br>
+(アニメ) みなみけ おかわり 第02話 「2杯目 味は代々受け継がれていくもの」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 271,846,781 a7f4e30cc8cff8a18a50e309a18e099ae0f1c8db<br>
+(アニメ) みなみけ おかわり 第03話 「3杯目 もてなしの夜、そっと出し」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 278,083,059 d36d6ddeccaeef24e2926ada057d01a1345525ce<br>
+(アニメ) みなみけ おかわり 第04話 「4杯目 片付けちゃっていいですか？」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 353,056,794 f75a2645cc08b15d0804d7ddeaf02f2f9eaacc72<br>
+(アニメ) みなみけ おかわり 第05話 「5杯目 海に行こうよ」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 341,935,723 c654e91ce2dab2591fb7a6aab09f404a0045798a<br>
+(アニメ) みなみけ おかわり 第06話 「6杯目 冷めてもあったか、ウチゴハン」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 386,238,553 5bd5d2495665259153b3e97080acefafaef55bca<br>
+(アニメ) みなみけ おかわり 第07話 「7杯目 噛めば噛むほど甘くなるんだよ」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 297,961,170 5c12c1cefcbbc2b39e6d6195cb10d05b659879c8<br>
+(アニメ) みなみけ おかわり 第08話 「8杯目 プールは別腹です」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 312,742,849 41150f1650ad3ca7dbf33a7a85a384402bea961b<br>
+(アニメ) みなみけ おかわり 第09話 「9杯目 そろそろ苦しい？ひみつのマコちゃん」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 311,725,195 9e6c7208815ba1d41c80c46fba53245efd44304c<br>
+(アニメ) みなみけ おかわり 第10話 「10杯目 花より団子のお年頃」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 312,958,049 066b614a1f2b182c1ceae8a6b5916518f5fd0708<br>
+(アニメ) みなみけ おかわり 第11話 「11杯目 さすがにヤバくなってきました」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 321,213,138 16b7972a846d971ff074e07afbde4013d282faa9<br>
+(アニメ) みなみけ おかわり 第12話 「12杯目 もう一口が辛いのです」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 327,850,685 15f6e9b0460a2e0af2d9bee55e0ad63c8985fd13<br>
+(アニメ) みなみけ おかわり 第13話(終) 「13杯目 みんな揃って、ごちそうさま」 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 364,465,830 d7cf8ee6dc24a06dc9a82d09c91e4c82841b7256<br>
+<hr class="A">
+【アニメ】[DVD] みなみけ ～おかわり～ 01 映像特典 「ノンクレジットオープニング」 (704x396 WMV9 WMA Lossless QL97).wmv 56,809,725 e97ea7cd74057fbc775ceebdd05427def3b2355d<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 01 映像特典 「ノンクレジットエンディング 1～3話Ver.」 (704x396 WMV9 WMA Lossless QL97).wmv pcT6OjjAFE 20,579,546 b4f9bd8588223add3ba93c4b9c45ed015d3e7512<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 02 映像特典 「ノンクレジットエンディング 4～6話Ver.」 (704x396 WMV9 WMA Lossless QL97).wmv 20,086,786 8eea72e8fec7d62cf6eda4e48d66e56f93fb785d<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 03 映像特典 「ノンクレジットエンディング 7～9話Ver.」 (704x396 WMV9 WMA Lossless QL97).wmv 19,396,922 075837168ddace86580256bbe326edd35e7ce9eb<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 01／21 「ノンクレジットエンディング 10～12話Ver.」 (704x396 WMV9 WMA Lossless QL97).wmv 19,975,915 234c72c4033179d1cecd9f2d18118439e7c69f41<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 02／21 「ノンクレジットエンディング 最終話Ver.」 (704x396 WMV9 WMA Lossless QL97).wmv 41,521,846 4a8bb9a9cdbd5980cad3932dd9dbc21daec1acf4<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 03／21 「ノンクレジットエンディング フルサイズ 1～3話Ver.」 (704x396 WMV9 WMA Lossless QL97).wmv 44,835,657 56ae9568df194fd8a81d58f5f8e6e2aeb570b2fe<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 04／21 「ノンクレジットエンディング フルサイズ 4～6話Ver.」 (704x396 WMV9 WMA Lossless QL97).wmv 43,653,033 3d2aee9b268b1c0a79270c645bde6ac9ad4dc1e3<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 05／21 「ノンクレジットエンディング フルサイズ 7～9話Ver.」 (704x396 WMV9 WMA Lossless QL97).wmv 41,460,251 4cd5fc4fa4b442e2c48271c7c4d73a80b1ce0f75<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 06／21 「ノンクレジットエンディング フルサイズ 10～12話Ver.」 (704x396 WMV9 WMA Lossless QL97).wmv 43,406,653 f93e041511e6c7c32f568b1e8dbc7faf60be3fa5<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 07／21 「新番組宣伝スポット」 (640x480 WMV9).wmv 4,067,684 9a30eaebdae9492b80f2dbb446c6077fa4a962e7<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 08／21 「番組宣伝スポット 30秒Ver.」 (640x480 WMV9).wmv 7,809,239 7f543cd3df54ff5527f9eee033588f157b223cfb<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 09／21 「番組宣伝スポット 15秒Ver.」 (640x480 WMV9).wmv 3,105,593 6c00ab499e5d9903ea27f0d812d51f14d624ec84<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 10／21 「CDスポット OPマキシCD 『ココロノツバサ』 発売前」 (640x480 WMV9).wmv 9,963,575 2dc56c0cdc32456ad4f4ee535a5d4190430dbc56<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 11／21 「CDスポット OPマキシCD 『ココロノツバサ』 発売後」 (640x480 WMV9).wmv 9,938,906 22626d102bf634cd09e127948255a6ce1b411975<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 12／21 「CDスポット EDマキシCD 『その声が聴きたくて』 発売前」 (640x480 WMV9).wmv 6,435,908 42dd7b0850236ff59db1a50dd2b554bd1889f29a<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 13／21 「CDスポット EDマキシCD 『その声が聴きたくて』 発売後」 (640x480 WMV9).wmv 6,444,131 0206586b684bc32f6736e278a0934a72203a7e97<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 14／21 「DVDスポット DVD① 発売前」 (640x480 WMV9).wmv 5,070,890 acfa4190aedf4ed496121e2862141bf98bfeab09<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 15／21 「DVDスポット DVD① 発売後」 (640x480 WMV9).wmv 5,087,336 6b27aa3dd8c0a9b65680e9d26e10c857b104a200<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 16／21 「DVDスポット DVD② 発売前」 (640x480 WMV9).wmv 4,149,914 55addd49c205dc92b2d3c1aa92fddd53433cb79d<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 17／21 「DVDスポット DVD② 発売後」 (640x480 WMV9).wmv 3,640,088 6119e081494698aa1d87c7ff617376e7d1e7c538<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 18／21 「DVDスポット DVD③ 発売前」 (640x480 WMV9).wmv 3,253,607 d408175160cdfd4fb749dbd1e40beb9448358cc4<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 19／21 「DVDスポット DVD③ 発売後」 (640x480 WMV9).wmv 5,942,528 aeebe6b4516eac0da3405ac6fd3928088d72a2ce<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 20／21 「DVDスポット DVD④ 発売前」 (640x480 WMV9).wmv 4,010,123 8065c79c30199da57cc94770039c2ef1d47a398b<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 04 映像特典 21／21 「DVDスポット DVD④ 発売後」 (640x480 WMV9).wmv 5,103,782 78dc8edc21b10427227bf434754a8564f9c24091<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 第01話 「温泉、いただきます」 (704x396 WMV9 TV放映版).wmv 284,718,911 010520a4a9a94c2c8240d560ae193c5452300289<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 第01話 「温泉、いただきます」 (704x396 WMV9).wmv 230,307,314 98d723502100649d2e951c815d498a48deb4aad5<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 第02話 「味は代々受け継がれていくもの」 (704x396 WMV9).wmv 210,728,531 de5ce2bc660cd94f79e4fc1e157dbc5e0be2d6d8<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 第03話 「もてなしの夜、そっと出し」 (704x396 WMV9).wmv 217,364,312 07b1bc968ee845f8d5da28c11b3600b6d47225f8<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 第04話 「片付けちゃっていいですか？」 (704x396 WMV9).wmv 288,518,465 e6086c3f95c082b1b4d5117ac9ff083b1a3ac17e<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 第05話 「出した茶碗は引っ込められない」 (704x396 WMV9).wmv 230,570,450 caeb9f9ab898b9a368e9d6d12b3c4b186c724bea<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 第06話 「冷めてもあったか、ウチゴハン」 (704x396 WMV9).wmv 233,464,946 ec111c3c3e3c9655d064b3c1fea936b2d5e28297<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 第07話 「噛めば噛むほど甘くなるんだよ」 (704x396 WMV9).wmv 198,492,527 5587c5c745ff9319cb888614041617fad45cb0f7<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 第08話 「プールは別腹です」 (704x396 WMV9).wmv 211,065,494 cc5bf9522911dc05feae2993e501ad71ca092d81<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 第09話 「そろそろ苦しい？ひみつのマコちゃん」 (704x396 WMV9).wmv 199,553,294 24ae96709e9c29eb8e4c470d4faf68dd6342cd10<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 第10話 「花より団子のお年頃」 (704x396 WMV9).wmv 193,336,712 4dab8cc0e8d0c721e873969c1e69cbcc692eb3bc<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 第11話 「さすがにヤバくなってきました」 (704x396 WMV9).wmv 184,521,650 dc5c08ecd50f3b7a265baba3accad4f652d8c436<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 第12話 「もう一口が辛いのです」 (704x396 WMV9).wmv 208,754,831 287b3b549d0e4ee45663e11118efd51db97b0cf8<br>
+【アニメ】[DVD] みなみけ ～おかわり～ 第13話 「みんな揃って、ごちそうさま」 (704x396 WMV9).wmv 233,653,985 80db293d950a8b9124941763637c87f1ec6d1b36<br>
+<div class="sup">pcT6OjjAFE</div>
+<br></dd>
+<dt><span class="title">みなみけ おかえり<b>◆</b></span>09/09/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] みなみけ おかえり Vol.1 映像特典 「ノンクレジットオープニング」 (1280x720 x264 AAC rev3).mp4 ZZwoXFPhfl 23,734,513 40ba68438b84ea708511f21cbf022298d01a9ba9<br>
+[アニメ DVD] みなみけ おかえり Vol.1 映像特典 「ノンクレジットエンディング」 (1280x720 x264 AAC rev3).mp4 ZZwoXFPhfl 18,199,437 46a6bad64e333ea6c9ceb9e6f653dcb79883ad47<br>
+[アニメ DVD] みなみけ おかえり 第01話 「年の初めの」 (1280x720 x264 AAC chap付 rev3).mp4 ZZwoXFPhfl 305,629,505 e279ee04c790f96967ac07db42a54de060a88aa1<br>
+[アニメ DVD] みなみけ おかえり 第02話 「オレも」 (1280x720 x264 AAC chap付 rev3).mp4 ZZwoXFPhfl 316,554,352 0628a593de744af52b090566688abf67e0dad10d<br>
+[アニメ DVD] みなみけ おかえり 第03話 「ケンカでも」 (1280x720 x264 AAC chap付 rev3).mp4 ZZwoXFPhfl 293,666,162 536074158b7b62d909ca59339ac90ba22886c119<br>
+[アニメ DVD] みなみけ おかえり 第04話 「あるべき秩序が」 (1280x720 x264 AAC chap付 rev3).mp4 ZZwoXFPhfl 310,882,977 ff7c1ce403819c43519af1bd2293a23afb845a01<br>
+[アニメ DVD] みなみけ おかえり 第05話 「楽しくなる Avan - OPまで」 (1280x720 x264 AAC ###).mp4 ZZwoXFPhfl 98,152,927 66927a60e965062c3808aebb8fae36f708f963ea<br>
+[アニメ DVD] みなみけ おかえり 第05話 「楽しくなる」 (1280x720 x264 AAC chap付 rev3).mp4 ZZwoXFPhfl 315,257,936 c739a6eeaaecb2f5acec6dbb3284587a009284ef<br>
+[アニメ DVD] みなみけ おかえり 第06話 「流してほしい」 (1280x720 x264 AAC chap付 rev3).mp4 ZZwoXFPhfl 282,138,106 04f22136195f571fa5934c5430ec825338138bb9<br>
+<hr class="A">
+(アニメ) みなみけ おかえり 映像特典 CDスポット集 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 21,459,403 d99caf447842f613f12a2e1d1657f0e2aa36a421<br>
+(アニメ) みなみけ おかえり 映像特典 DVDスポット集 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 68,463,524 b7c5d2d6124e43cabb8e91f9a5722b00d3ba8340<br>
+(アニメ) みなみけ おかえり 映像特典 ノンクレジットOP 「経験値速上々↑↑」(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 26,306,770 d3744f4adfcc2a9587acc3be02f2732e48f8f7dc<br>
+(アニメ) みなみけ おかえり 映像特典 ノンクレジットED 「絶対カラフル宣言」 フルサイズver(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 35,162,587 85427b75af12981cb1bdcb10e8a6a89af557d960<br>
+(アニメ) みなみけ おかえり 映像特典 ノンクレジットED 「絶対カラフル宣言」(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 19,809,096 05852bb951b1cbf5042ef457d0d74467685605e8<br>
+(アニメ) みなみけ おかえり 映像特典 番宣スポット集 (DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 19,285,988 0545ce58ae7b190251a2dc5b2432846774eeb56f<br>
+(アニメ) みなみけ おかえり 第01話 「年の初めの」(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 345,542,399 6f038146ea80b16224701a53167bb0f86e3abf76<br>
+(アニメ) みなみけ おかえり 第02話 「オレも」(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 356,941,305 f915e51ca73f025eb97111c435fa608cbf6e7533<br>
+(アニメ) みなみけ おかえり 第03話 「ケンカでも」(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 348,062,570 f22570655e6f3071538ebdbef0cf471d91114127<br>
+(アニメ) みなみけ おかえり 第04話 「あるべき秩序が」(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 356,542,752 c9403a3bca8177e829754fbe116a12cb62967844<br>
+(アニメ) みなみけ おかえり 第05話 「楽しくなる」(DVD 1280x720 x264 AAC revkome).mp4 OJAMAJOxI1 348,873,129 f092057bc29f29a7ad3e5fed1f3b918fa3eb59c0<br>
+(アニメ) みなみけ おかえり 第06話 「流してほしい」(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 340,871,559 8d6b6ecab14df15abfb891fd832a4fe5ef1f5df6<br>
+(アニメ) みなみけ おかえり 第07話 「オレでよければ」(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 367,879,223 6521262e60b7c15c2861aba8b5b7faabbb7d6735<br>
+(アニメ) みなみけ おかえり 第08話 「法ですよ」(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 362,519,548 6a068b1bef8936e189d561743a2e87bf45016ae8<br>
+(アニメ) みなみけ おかえり 第09話 「そうか」(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 352,111,707 1354c1f8b5e9269ef4988550ab213f432eac2e82<br>
+(アニメ) みなみけ おかえり 第10話 「態度には」(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 349,005,839 16df4e761456bc94635977da251df29036f4a62b<br>
+(アニメ) みなみけ おかえり 第11話 「いいイメージ」(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 355,959,098 8cef3db1e1019879517783952e27d79a226b96ec<br>
+(アニメ) みなみけ おかえり 第12話 「あったかい所」(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 354,225,111 86c7df88f7db1ef57fe1f65de3a8bdef59968c63<br>
+(アニメ) みなみけ おかえり 第13話(終) 「一緒だからね」(DVD 1280x720 x264 AAC).mp4 OJAMAJOxI1 395,067,865 2ab8496ab7d0194cef5a7e70053c4cd992e7948c<br>
+<hr class="A">
+(アニメ) みなみけ おかえり 1巻特典 「ノンクレジットOP」 (DVD 1280x720 x264).mp4 ROM☆DCreifjd1M 21,985,132 ee1473d7fb066775484cf19837c72640db8c2fc6<br>
+(アニメ) みなみけ おかえり 1巻特典 「ノンクレジットED」 (DVD 1280x720 x264).mp4 ROM☆DCreifjd1M 11,834,381 5d541aebb459d25c65ad9c514e7bfea19ec01225<br>
+(アニメ) みなみけ おかえり 第01話 「年の初めの」 (DVD 1280x720 x264).mp4 ROM☆DCreifjd1M 158,564,864 5875cad63dd34b8bd0b45e794d6433ad52b409f1<br>
+(アニメ) みなみけ おかえり 第02話 「オレも」 (DVD 1280x720 x264).mp4 ROM☆DCreifjd1M 157,120,191 7dd3b57fe942abe39fc2a13bec2200abbf1cabda<br>
+(アニメ) みなみけ おかえり 第03話 「ケンカでも」 (DVD 1280x720 x264).mp4 ROM☆DCreifjd1M 141,455,637 fc7931357ff5a9bcc164426f0f5043c40183a38b<br>
+(アニメ) みなみけ おかえり 第04話 「あるべき秩序が」 (DVD 1280x720 x264).mp4 ROM☆DCreifjd1M 154,682,302 f767c3ac618a28a9337065d5f83480fcd2764e6e<br>
+(アニメ) みなみけ おかえり 第05話 「楽しくなる」 (DVD 1280x720 x264).mp4 ROM☆DCreifjd1M 163,573,835 8f32fc7c5bbfc711085660442149716f83fbad7b<br>
+(アニメ) みなみけ おかえり 第06話 「流してほしい」 (DVD 1280x720 x264).mp4 ROM☆DCreifjd1M 132,342,196 5186b03b1c1da626f94d7e5add95e83a613b2634<br>
+(アニメ) みなみけ おかえり 第07話 「オレでよければ」 (DVD 1280x720 x264).mp4 ROM☆DCreifjd1M 161,003,713 420e5af3a18f2a56514348b42876e49f45c18db5<br>
+(アニメ) みなみけ おかえり 第08話 「法ですよ」 (DVD 1280x720 x264).mp4 ROM☆DCreifjd1M 163,696,210 03b83458d6df41842f4c972592fe6d5a98dec683<br>
+(アニメ) みなみけ おかえり 第09話 「そうか」 (DVD 1280x720 x264).mp4 ROM☆DCreifjd1M 156,882,826 ed6c9ddc64d769e2597422450d6746943d4b101d<br>
+(アニメ) みなみけ おかえり 第10話 「態度には」 (DVD 1280x720 x264).mp4 ROMスターIDvqV1tXhQ 160,217,770 6085068edb61f76abd7bd00461572fc440dce857<br>
+(アニメ) みなみけ おかえり 第11話 「いいイメージ」 (DVD 1280x720 x264).mp4 ROMスターIDvqV1tXhQ 140,066,730 0b664c51e6c714774bf326cc64e9c182ec3bb7fa<br>
+(アニメ) みなみけ おかえり 第12話 「あったかい所」 (DVD 1280x720 x264).mp4 ROMスターIDvqV1tXhQ 174,734,727 9b5f1361eebe9695f6fa4dae6857a14f8571cda4<br>
+(アニメ) みなみけ おかえり 第13話 「一緒だからね」 (DVD 1280x720 x264).mp4 ROMスターIDvqV1tXhQ 175,934,804 45bd8ee77bde1d6f73753046b15810941651733a<br>
+<hr class="A">
+【アニメ】[DVD] みなみけ おかえり 01 映像特典 「ノンクレジットOP」 (704x396 WMV9 WMA Lossless QL97).wmv 29,905,029 eaede26a860d3eb3accf81cd4c225dc6d7874465<br>
+【アニメ】[DVD] みなみけ おかえり 01 映像特典 「ノンクレジットED」 (704x396 WMV9 WMA Lossless QL97).wmv 21,799,127 19d5485588a5e3aac0198ab23c741d660448f24d<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 01／20 「ノンクレジットエンディング フルサイズ画面Ver.」 (704x396 WMV9 WMA Lossless QL97).wmv 28,562,258 fcf22c1999c13abf6cfb7a99c4bb66396faa0ddf<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 02／20 「新番組宣伝スポット」 (704x396 WMV9 QL97).wmv 5,399,840 58c0a6db3befaa3b124c6052cd371af613339ec2<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 03／20 「新番組宣伝スポット 15秒Ver.」 (704x396 WMV9 QL97).wmv 4,289,705 43aa7b728425c455098beb948342e859f6500221<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 04／20 「新番組宣伝スポット 30秒Ver.」 (704x396 WMV9 QL97).wmv 8,055,929 d9f7bc464b3f7ec817800291deda6cf03e50b316<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 05／20 「OPマキシCD『経験値速上々↑↑』発売前」 (704x396 WMV9 QL97).wmv 5,194,235 a4db8aa04d2945af642a3cedde7f3c6976e3e730<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 06／20 「OPマキシCD『経験値速上々↑↑』発売後」 (704x396 WMV9 QL97).wmv 5,194,235 2443fe3e3aecda58b1cef298b450ac181ae69366<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 07／20 「EDマキシCD『絶対カラフル宣言』発売前」 (704x396 WMV9 QL97).wmv 6,238,556 65b34820399108f86533457096738bd58ab0f385<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 08／20 「EDマキシCD『絶対カラフル宣言』発売後」 (704x396 WMV9 QL97).wmv 5,926,082 c73a947fab6a7ac3dcd2f1430680acdb6bbecf1d<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 09／20 「DVD①通常Ver. 発売前」 (704x396 WMV9 QL97).wmv 6,082,319 f4df75a18ee7ab5d8571b78072e88999bc197db8<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 10／20 「DVD①通常Ver. 発売後」 (704x396 WMV9 QL97).wmv 6,057,650 1fffe3af8c05179253743d1ba18fac0f6a79d28e<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 11／20 「DVD①保坂カレーVer. 発売前」 (704x396 WMV9 QL97).wmv 3,812,771 d909b5082a11fd1bd5a5a49be89b86716a4209a3<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 12／20 「DVD①保坂カレーVer. 発売後」 (704x396 WMV9 QL97).wmv 3,771,656 bcc812ef551f1a637da918621c461a03b4e5a4ee<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 13／20 「DVD② 発売前」 (704x396 WMV9 QL97).wmv 5,728,730 4a51fc99075768ab850c387f4380197c197058e5<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 14／20 「DVD② 発売後」 (704x396 WMV9 QL97).wmv 5,005,106 becaff2aaa4be4176b5ee16c12f9da7d4d6b03e9<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 15／20 「DVD③ 発売前」 (704x396 WMV9 QL97).wmv 4,824,200 c85ac3615a02e9837740d60487151e44d585822a<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 16／20 「DVD③ 発売後」 (704x396 WMV9 QL97).wmv 5,334,026 b645c10a48e679e1c48b7c05778bf66595dff036<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 17／20 「DVD④通常Ver. 発売前」 (704x396 WMV9 QL97).wmv 5,342,249 f32286cd8ae93ba896a5eb4d4ad687af1c708a1f<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 18／20 「DVD④通常Ver. 発売後」 (704x396 WMV9 QL97).wmv 4,881,761 8aacb34423bc0902a428da411efde8b9381c4adb<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 19／20 「DVD④保坂妄想Ver. 発売前」 (704x396 WMV9 QL97).wmv 3,598,973 40086394c1f164af0164480898d89d0989ca9361<br>
+【アニメ】[DVD] みなみけ おかえり 04 映像特典 20／20 「DVD①保坂妄想Ver. 発売後」 (704x396 WMV9 QL97).wmv 3,607,196 886d274ce3c9450323d6bd1cfaaff02f0294e77a<br>
+【アニメ】[DVD] みなみけ おかえり 第01話 「年の初めの」 (704x396 WMV9 QL97).wmv 257,237,639 cafdddd915de9104f00ecf7f5351e9f360604066<br>
+【アニメ】[DVD] みなみけ おかえり 第02話 「オレも」 (704x396 WMV9 QL97).wmv 248,513,042 7947730e47cd9d3aab02c003aeb87b628837451c<br>
+【アニメ】[DVD] みなみけ おかえり 第03話 「ケンカでも」 (704x396 WMV9 QL97).wmv 235,923,623 6ae3d1cf9b6f991404dee2635e775c8eb5369eca<br>
+【アニメ】[DVD] みなみけ おかえり 第04話 「あるべき秩序が」 (704x396 WMV9 QL97).wmv 241,901,744 d25101eb8f6244e881b3d0e6060bc86bbc226844<br>
+【アニメ】[DVD] みなみけ おかえり 第05話 「楽しくなる」 (704x396 WMV9 QL97).wmv 261,957,641 d3372e12af6674f7c5334d51b818b4be1d15e356<br>
+【アニメ】[DVD] みなみけ おかえり 第06話 「流してほしい」 (704x396 WMV9 QL97).wmv 214,724,735 05ec1b67304db648da9e9c378beb801eb42efac4<br>
+【アニメ】[DVD] みなみけ おかえり 第07話 「オレでよければ」 (704x396 WMV9 QL97).wmv 263,339,105 27b6a77ab5b3c2cb0ed7cb2f5a7249faae4bae22<br>
+【アニメ】[DVD] みなみけ おかえり 第08話 「法ですよ」 (704x396 WMV9 QL97).wmv 255,609,485 97398ee633b009b5c7bf66a64e89cfa71cb1918c<br>
+【アニメ】[DVD] みなみけ おかえり 第09話 「そうか」 (704x396 WMV9 QL97).wmv 250,141,190 1b5742560c81225c9fba8b9d92835c75d0fb9b42<br>
+【アニメ】[DVD] みなみけ おかえり 第10話 「態度には」 (704x396 WMV9 QL97).wmv 310,678,916 1f8d580429a31435d8993638c45f8c4effd886b9<br>
+【アニメ】[DVD] みなみけ おかえり 第11話 「いいイメージ」 (704x396 WMV9 QL97).wmv 278,214,518 b888f8cfe047c936dbce89652d10a1d6a2d5d104<br>
+【アニメ】[DVD] みなみけ おかえり 第12話 「あったかい所」 (704x396 WMV9 QL97).wmv 339,952,802 8a84349c9a6e9e36fbbc44b3ee8b8e907638f75c<br>
+【アニメ】[DVD] みなみけ おかえり 第13話 「一緒だからね」 (704x396 WMV9 QL97).wmv 334,122,605 dff226d8ce871eb11f85aa46a1d61ed9b6706164<br>
+<div class="sup">pcT6OjjAFE</div>
+<br></dd>
+<dt><span class="title">みなみけ べつばら<b>◆</b></span>09/07/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ] みなみけ べつばら 「いただこう／かもしれない／やる気／できること」 (DVD x264 704x480 AC3).mkv MiZyLKZqK0Jno 162,564,460 c6bdf93d6bd50ba9a8dda3253d75819c5562f393<br>
+<hr class="A">
+(アニメ) みなみけ べつばら「いただこう／かもしれない／やる気／できること」 (DVD 1280x720 x264 AAC ED60 Ps3upcon).mp4 OJAMAJOxI1 358,118,665 4026f9077c64c1422fa3eebed531d76ff81078c7<br>
+<hr class="A">
+【アニメ】[DVD] みなみけ べつばら 「いただこう／かもしれない／やる気／できること」 (704x396 WMV9 QL97).wmv 286,610,669 d55ba3d6d6c5c92a64ef46a7677c0ed6668cac5e<br>
+<br></dd>
+<dt><span class="title">未来警察ウラシマン<b>◆</b></span>05/12/23 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] 未来警察 ウラシマン 第01話 「突然！2050年」 (640x480 WMV9).wmv 283,687,758 f392aa8e8abab460fb0323dcbd70b6f9754e4c04<br>
+[アニメ DVD] 未来警察 ウラシマン 第02話 「誕生！ブリッコ刑事」 (640x480 WMV9).wmv 231,271,784 d5e7e87433d27c0d3631fdb881876bf618fc0b67<br>
+[アニメ DVD] 未来警察 ウラシマン 第03話 「失われた時を求めて」 (640x480 WMV9).wmv 292,679,756 97f3546da388c242e2357c3ab5b1a7d0f4ac9992<br>
+[アニメ DVD] 未来警察 ウラシマン 第04話 「追いかけてビートル」 (640x480 WMV9).wmv 293,367,800 dad95c8ef92746290bff33182c90f3d3511722b3<br>
+[アニメ DVD] 未来警察 ウラシマン 第05話 「危険なディスコ女王」 (640x480 WMV9).wmv 308,407,800 b1983d93dfae40dc3032db975d5de48ec8351718<br>
+[アニメ DVD] 未来警察 ウラシマン 第06話 「巨大ザメは美女好き」 (640x480 WMV9).wmv 229,287,786 3e91bd1548bf9e7da734185f47b2a4e108bbaeff<br>
+[アニメ DVD] 未来警察 ウラシマン 第07話 「札束でひっぱたけ！」 (640x480 WMV9).wmv 236,903,786 3b8ac563ddb89e4bd325a6cdc0441dc3f6385748<br>
+[アニメ DVD] 未来警察 ウラシマン 第08話 「月の足跡は80才？」 (640x480 WMV9).wmv 233,751,786 2c06a233a89bb75c1ac92a89be71ac185b17d905<br>
+[アニメ DVD] 未来警察 ウラシマン 第09話 「昨日の友は今日の敵」 (640x480 WMV9).wmv 262,103,772 270d4f3d85592b0e551fe920ea0139ee86f6adcb<br>
+[アニメ DVD] 未来警察 ウラシマン 第10話 「エベレストより高く」 (640x480 WMV9).wmv 245,831,760 2a0296020e6ae93ef1445913596101fbc2310c2b<br>
+[アニメ DVD] 未来警察 ウラシマン 第11話 「挑発！南の島に吹雪」 (640x480 WMV9).wmv 283,831,774 2184da98baa60b5566a5e45f4ef829020e9adc7f<br>
+[アニメ DVD] 未来警察 ウラシマン 第12話 「空飛ぶ真っ赤な天使」 (640x480 WMV9).wmv 302,007,760 836eeaca812c6ee350c1ddbc858459684d505760<br>
+[アニメ DVD] 未来警察 ウラシマン 第13話 「過去にささったトゲ」 (640x480 WMV9).wmv 267,751,802 f9e2135c5614ce7edc3e8ca1c3aaa704f44b6316<br>
+[アニメ DVD] 未来警察 ウラシマン 第14話 「ミャーにも超能力！」 (640x480 WMV9).wmv 215,127,774 e77377c2dd8dc31e9f78247f0bca6eae5c94e769<br>
+[アニメ DVD] 未来警察 ウラシマン 第15話 「撮られたリュウの心」 (640x480 WMV9).wmv 306,391,774 541a4ded82ec819d5ce14c45d72135edc1f3ac31<br>
+[アニメ DVD] 未来警察 ウラシマン 第16話 「殺し屋グッドラック」 (640x480 WMV9).wmv 249,367,788 ed2a6ee90406358b1d11b6793767f1e3043bdd0d<br>
+[アニメ DVD] 未来警察 ウラシマン 第17話 「愛！ロボットに愛！」 (640x480 WMV9).wmv 256,631,788 c2deb250777975918d5122e89050cd3ae6f4f291<br>
+[アニメ DVD] 未来警察 ウラシマン 第18話 「ガラスに書いた「ママ」」 (640x480 WMV9).wmv 241,863,760 f7b431d0da0ba1fb6579a34435f62fc8baf7ef31<br>
+[アニメ DVD] 未来警察 ウラシマン 第19話 「ティファニーで人魚」 (640x480 WMV9).wmv 285,559,788 4b71587486fb937b58bcb617ea7daf14376c890c<br>
+[アニメ DVD] 未来警察 ウラシマン 第20話 「フューラーとの遭遇」 (640x480 WMV9).wmv 289,447,788 b7480f73903437bafaf0e390e54ec3231e738f77<br>
+[アニメ DVD] 未来警察 ウラシマン 第21話 「入れかわった性格！」 (640x480 WMV9).wmv 276,663,640 9af3ed817ac8be811eff64e7c6a54043fb28c825<br>
+[アニメ DVD] 未来警察 ウラシマン 第22話 「涙！権藤警部の決意」 (640x480 WMV9).wmv 312,791,774 3e30e9310b36eb5e259f19b2883d2f875ba7df65<br>
+[アニメ DVD] 未来警察 ウラシマン 第23話 「戦利品に手を出すな！」 (640x480 WMV9).wmv 248,807,640 30227703e11f42ed6fd0613980e0f0a80402ec39<br>
+[アニメ DVD] 未来警察 ウラシマン 第24話 「デスゲーム一発勝負」 (640x480 WMV9).wmv 281,975,760 9cb6fad358b1cbba8d3a1345a9d5c806a86725ee<br>
+[アニメ DVD] 未来警察 ウラシマン 第25話 「伝説のビッグサタデー」 (640x480 WMV9).wmv 291,927,236 98c164c8fc9a334da96c573abbdcaa9b308e4ad2<br>
+[アニメ DVD] 未来警察 ウラシマン 第26話 「ネオトキオ発地獄行き」 (640x480 WMV9).wmv 384,567,236 7d3a951aa9a06cecd8448df59eb8d86292628dda<br>
+[アニメ DVD] 未来警察 ウラシマン 第27話 「ベアー宇宙に死す･･･」 (640x480 WMV9).wmv 283,975,222 2295f5673f5acb7d284f34d188328d94fde8b725<br>
+[アニメ DVD] 未来警察 ウラシマン 第28話 「プロレスはつらいぜ」 (640x480 WMV9).wmv 296,199,222 34aca640a1efe8f9a95e6701a6f7fdb3544e89a6<br>
+[アニメ DVD] 未来警察 ウラシマン 第29話 「指名手配！リュウの首」 (640x480 WMV9).wmv 258,071,236 42735a355326fd6bd87a8454ce89dd1c72dc2df8<br>
+[アニメ DVD] 未来警察 ウラシマン 第30話 「荒野の悪徳保安官」 (640x480 WMV9).wmv 274,759,250 63e0e95f266d17b531c721e79c48d3b49dbea81d<br>
+[アニメ DVD] 未来警察 ウラシマン 第31話 「リュウより愛を込めて」 (640x480 WMV9).wmv 204,874,340 37e91794b5dc2a704ccb0e365e2d20aac087e9e7<br>
+[アニメ DVD] 未来警察 ウラシマン 第32話 「トリック1983」 (640x480 WMV9).wmv 262,826,354 e0854858bffff0c57ae5569faf94308c56fdaa6b<br>
+[アニメ DVD] 未来警察 ウラシマン 第33話 「フューラーの真実」 (640x480 WMV9).wmv 284,458,326 6199a0ed032d1ad754671b61c6de51bdd605f73a<br>
+[アニメ DVD] 未来警察 ウラシマン 第34話 「反逆のメロディー」 (640x480 WMV9).wmv 259,930,326 023b8b81698063d7e5b40d8af5679a9092ff973f<br>
+[アニメ DVD] 未来警察 ウラシマン 第35話 「フューラーの遺産」 (640x480 WMV9 rev2).wmv 239,738,326 eac8ddfb9ba8f16923dff00e214634bf34873c4a<br>
+[アニメ DVD] 未来警察 ウラシマン 第36話 「ルードビッヒの罠」 (640x480 WMV9).wmv 230,202,168 d6f9cf1c96568c0451768086156375ed4e773f92<br>
+[アニメ DVD] 未来警察 ウラシマン 第37話 「変身！ダーティリュウ」 (640x480 WMV9).wmv 208,394,340 8cc17ae361777fab27788ffc0d2490b1ff4b2048<br>
+[アニメ DVD] 未来警察 ウラシマン 第38話 「金庫に向って走れ！」 (640x480 WMV9).wmv 227,674,324 9db90c175eee6935e485a8e90b301497baf7a70f<br>
+[アニメ DVD] 未来警察 ウラシマン 第39話 「ネオトキオの休日」 (640x480 WMV9).wmv 256,618,324 561bfbfadf0e6a1f6e48a3e1acc045df2f40e898<br>
+[アニメ DVD] 未来警察 ウラシマン 第40話 「フューラーの逆襲」 (640x480 WMV9).wmv 249,114,154 2d39c846742132c56a7b48d73ff317fd43dc976f<br>
+[アニメ DVD] 未来警察 ウラシマン 第41話 「アマゾンの七人」 (640x480 WMV9).wmv 238,474,154 989b921b0db942da63b044f5633f40da7bd7ba44<br>
+[アニメ DVD] 未来警察 ウラシマン 第42話 「さらば！クロード」 (640x480 WMV9).wmv 291,386,168 0de9f39136e1a07f67b713d07ef3dc8012de604b<br>
+[アニメ DVD] 未来警察 ウラシマン 第43話 「栄光のルードビッヒ」 (640x480 WMV9).wmv 238,234,154 6a8af50eb77dc38399e81b8934fec07f068f37af<br>
+[アニメ DVD] 未来警察 ウラシマン 第44話 「幻の超能力一族」 (640x480 WMV9).wmv 198,826,340 b28fb619962a057f6a8b70ad37088fdbcc9fbdf4<br>
+[アニメ DVD] 未来警察 ウラシマン 第45話 「必殺！恐怖の刺客」 (640x480 WMV9).wmv 310,585,922 9952fd0bb25d0551e59e4f77aa38b8382a676b19<br>
+[アニメ DVD] 未来警察 ウラシマン 第46話 「ネクライムの総攻撃」 (640x480 WMV9).wmv 274,778,326 38af909ddf58e438d08670aa57e0f84a5fe7b151<br>
+[アニメ DVD] 未来警察 ウラシマン 第47話 「帰ってきたフューラー」 (640x480 WMV9).wmv 269,786,354 bf51f0fd105e8585fac582213628d67453ebe2b9<br>
+[アニメ DVD] 未来警察 ウラシマン 第48話 「ルードビッヒの最期」 (640x480 WMV9).wmv 232,074,340 c6c4a300daaf7230de6bc45a141772aef77c1498<br>
+[アニメ DVD] 未来警察 ウラシマン 第49話 「愛と死の超能力」 (640x480 WMV9).wmv 264,314,340 f73fa713543ab7050e0e7b2bd5a85c81d0488bfc<br>
+[アニメ DVD] 未来警察 ウラシマン 第50話 「サヨナラ2050年」 (640x480 WMV9).wmv 289,274,046 69c52cd2cde157a985fc9d98c988f0c6ede47332<br>
+<div class="sup">wlGEFEpoAG</div>
+<br></dd>
+</dl><a name="footer"></a><hr><br></body></html>

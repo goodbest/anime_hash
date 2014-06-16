@@ -1,0 +1,1334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja" dir="ltr"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="robots" content="index,noarchive">
+<title>ハッシュ保管庫 MD5-ク版</title>
+<style type="text/css">
+<!--
+*{margin:0; padding:0;}
+body{margin:0; padding:0; font-size:9pt; color:#000000; background:#F5F5F5;}
+dd{margin:0 0 0 20px;}
+hr{margin:1px 0; border:1px #C1C0B5 solid;}
+hr.A{text-align:left; width:95%; margin:2px 0; border:1px #87A9D5 solid;}
+hr.B{text-align:left; width:95%; margin:2px 0; border:2px #43599A solid;}
+a{color:#0080C0; text-decoration:none;}
+a:hover{color:#FFFFFF; background-color:#0080C0;}
+table{font-size:8pt;}
+td{text-align:center; width:50px; border:2px #0080C0 solid;}
+td a{display:block; height:1.2em; line-height:1.2em;}
+.font{margin:5px 0 0 2px; font-size:10pt; color:#6E6E6E;}
+.title{color:#D95131;}
+.sup{color:#0000FF;}
+.exc{color:#808080;}
+-->
+</style></head><body>
+<a name="header"></a>
+<table><tr>
+<td><a href="001_md5aa.html">あ</a></td><td><a href="002_md5ai.html">い</a></td><td><a href="003_md5au.html">う</a></td><td><a href="004_md5ae.html">え</a></td>
+<td><a href="005_md5ao.html">お</a></td><td><a href="006_md5ka.html">か</a></td><td><a href="007_md5ki.html">き</a></td><td><a href="008_md5ku.html">く</a></td>
+<td><a href="009_md5ke.html">け</a></td><td><a href="010_md5ko.html">こ</a></td><td><a href="011_md5sa.html">さ</a></td><td><a href="012_md5si.html">し</a></td>
+<td><a href="013_md5su.html">す</a></td><td><a href="014_md5se.html">せ</a></td><td><a href="015_md5so.html">そ</a></td><td><a href="016_md5ta.html">た</a></td>
+<td><a href="017_md5ti.html">ち</a></td><td><a href="018_md5tu.html">つ</a></td><td><a href="019_md5te.html">て</a></td><td><a href="020_md5to.html">と</a></td>
+<td><a href="021_md5na.html">な</a></td><td><a href="022_md5ni.html">に</a></td><td><a href="0javascript:void(0)">ぬ</a></td><td><a href="024_md5ne.html">ね</a></td>
+<td><a href="025_md5no.html">の</a></td>
+</tr><tr>
+<td><a href="026_md5ha.html">は</a></td><td><a href="027_md5hi.html">ひ</a></td><td><a href="028_md5hu.html">ふ</a></td><td><a href="029_md5he.html">へ</a></td>
+<td><a href="030_md5ho.html">ほ</a></td><td><a href="031_md5ma.html">ま</a></td><td><a href="032_md5mi.html">み</a></td><td><a href="033_md5mu.html">む</a></td>
+<td><a href="034_md5me.html">め</a></td><td><a href="035_md5mo.html">も</a></td><td><a href="036_md5ya.html">や</a></td><td><a href="037_md5yu.html">ゆ</a></td>
+<td><a href="038_md5yo.html">よ</a></td><td><a href="039_md5ra.html">ら</a></td><td><a href="040_md5ri.html">り</a></td><td><a href="041_md5ru.html">る</a></td>
+<td><a href="042_md5re.html">れ</a></td><td><a href="043_md5ro.html">ろ</a></td><td><a href="044_md5wa.html">わ</a></td><td><a href="045_md5ld.html">LD</a></td>
+<td><a href="046_md5ow.html">旧</a></td><td><a href="../bd/047_bd.html">BD</a></td><td><a href="../psp/048_psp.html">PSP</a></td>
+<td colspan="2" style="width:100px;"><a href="../update.html">更新リスト</a></td>
+</tr></table>
+<span class="font">ハッシュ保管庫 MD5-ク版</span><hr>
+<dl>
+<dt><span class="title">ＧU-ＧUガンモ<b>◆</b></span>04/11/08 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD] ＧU-ＧUガンモ ノンクレジットOP (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 22,896,640 c7ecb8339c40f7ce398548adc1f6a6ee<br>
+[DVD] ＧU-ＧUガンモ ノンクレジットＥＤ (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 12,509,184 c4b6e73b54130984d67b88dc30411793<br>
+[DVD] ＧU-ＧUガンモ 細野不二彦インタビュー (DivX5.1 VGA AC3).avi rTS5D56UkW 79,230,976 98f02155ec2802c7da0d42c813f7bed0<br>
+[DVD] ＧU-ＧUガンモ 第01回 「なんだ？どうした！？不思議なガンモ登場 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 407,590,912 138a8821b6fe18cdc3f8a48da1537a5e<br>
+[DVD] ＧU-ＧUガンモ 第02回 「ガンモ小学校へゆく 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 383,174,656 9adf06391f8b1e9c626fafbda59ee007<br>
+[DVD] ＧU-ＧUガンモ 第03回 「コーヒー持ってこ～い 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 383,184,896 f010740862b5c2343759f80a793aaf84<br>
+[DVD] ＧU-ＧUガンモ 第04回 「ガキ大将？おれはそうじのプロだから 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 397,666,304 52c29eb3c967e748c95e6de646eb164c<br>
+[DVD] ＧU-ＧUガンモ 第05回 「なに！？コーヒー飲んだらガンモがきえた 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 352,139,264 3217fd7b47a5caec16ee86fc9fc227b2<br>
+[DVD] ＧU-ＧUガンモ 第06回 「え！？ガンモがだるまでダルマががんも！？ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 363,036,672 741e3b8005b2df1675c248257d6a0f69<br>
+[DVD] ＧU-ＧUガンモ 第07回 「あゆみちゃんちのおばあちゃん 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 456,220,672 2eaf44cd184cf9dc47b50be29f851a5a<br>
+[DVD] ＧU-ＧUガンモ 第12回 「ニャンニャン大パニック！！　他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 369,342,464 c07f62ea46af35eb19b8ed67c90e5651<br>
+[DVD] ＧU-ＧUガンモ 第13回 「ボクの愛したスニーカー　他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 409,772,032 f196124cfdfd9d7f6ad33404175a8892<br>
+[DVD] ＧU-ＧUガンモ 第14回 「ガンモVSジョーズ！？ サマービーチの対決　他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 399,286,272 27a441fdf1951005af14a611977e46ee<br>
+[DVD] ＧU-ＧUガンモ 第15回 「新任教師のハチャメチャ家庭訪問なのだ　他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 390,512,640 2084794a42bbf48d1fde05f01b6f1712<br>
+[DVD] ＧU-ＧUガンモ 第16回 「注意一秒！ケガ一生！！この道危険なのだ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 370,057,216 a2db836602121f420c20038a7935cca8<br>
+[DVD] ＧU-ＧUガンモ 第17回 「ガンモの恋の橋わたし！！ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 462,202,880 71c32634fb68616cfffe6e90eaa01b50<br>
+[DVD] ＧU-ＧUガンモ 第18回 「とびだせ夏休み！昆虫採集はたいへん 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 415,885,312 cd49f3cea5371158fef4a8b0e69d99ae<br>
+[DVD] ＧU-ＧUガンモ 第19回 「イモ vs ダッセー！！死闘キモダメシ！ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 356,091,904 0b44ea694c8f24a02587a1f9eb8d41da<br>
+[DVD] ＧU-ＧUガンモ 第20回 「高い恐～い！ガンモの弱点 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 444,186,624 7e40b05f64a22766ed7255dbb295fb7c<br>
+[DVD] ＧU-ＧUガンモ 第21回 「なーんにもおぼえてない！？ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 382,373,888 e8c2eb1623fe53913a5970efe9161d2c<br>
+[DVD] ＧU-ＧUガンモ 第22回 「おしんの心はチクチクなの… 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 381,597,696 f3e2f133394516fb7ef25d8cdd278463<br>
+[DVD] ＧU-ＧUガンモ 第23回 「ひょこぽん遠足！おさるさんがルンルン！！ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 362,254,336 3ec487f8b76cac0801e86a024fd36fd4<br>
+[DVD] ＧU-ＧUガンモ 第24回 「すごいですね！！ガンモ百万円で犬になる 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 328,544,256 ff4e1f6146aee36afe716731884b79e3<br>
+[DVD] ＧU-ＧUガンモ 第25回 「ガンモでメチャクチャ！美しき姉弟愛！！ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 380,915,712 a3215393908a0c16258f79970dc542e3<br>
+[DVD] ＧU-ＧUガンモ 第26回 「ハ・ハクション！ガンモが病気？ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 322,379,776 39dc4341e26a0563062cbe4602ffc3d6<br>
+[DVD] ＧU-ＧUガンモ 第27回 「天才画家ガンモ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 304,535,552 6e4c8c33d8dce42958d599a990b88d66<br>
+[DVD] ＧU-ＧUガンモ 第28回 「ズバリ！あゆみのボーイフレンド決定！？ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 332,261,376 92f803457050ad98076c292fec14f19c<br>
+[DVD] ＧU-ＧUガンモ 第29回 「ガンモにかくし仔！？子育て大パニック！！ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 316,235,776 027e47c2960cc514bf3b5309a46ddac8<br>
+[DVD] ＧU-ＧUガンモ 第30回 「暗闇でドッキリ！！ふしぎ不思議メガネ！！ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 344,424,448 496c5a0f48fc7a232b0c6d902525d939<br>
+[DVD] ＧU-ＧUガンモ 第31回 「不幸な子！？カシオのミノ虫地獄！！」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 340,674,560 9a9c4ee94d76adcc4ec6c2dd50e309c4<br>
+[DVD] ＧU-ＧUガンモ 第32回 「ぴょこん!!カエルとガンモはおともだち 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 346,425,344 bdf6e3ed4009d73a61dc701163a7e26a<br>
+[DVD] ＧU-ＧUガンモ 第33回 「アルバイトを探せ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 344,174,592 da6393a85f0c0ef8c8d830984b60e601<br>
+[DVD] ＧU-ＧUガンモ 第34回 「事件ですよ！ガムガム名探偵 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 426,395,648 3b910ec3ced9e348622135e46b787872<br>
+[DVD] ＧU-ＧUガンモ 第35回 「いのちと1000円どっちがだいじ！？ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 355,383,296 1fcb8a18f4ecac873f30d0487cb6bdec<br>
+[DVD] ＧU-ＧUガンモ 第36回 「禁酒 禁煙 禁コーヒー 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 353,183,744 f2f2c14d7810768255ecc205cba3c5f4<br>
+[DVD] ＧU-ＧUガンモ 第37回 「何がでるかな？オバケ用心 火の用心！！ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 328,931,328 516a6b513c2ce42a77458b69f2251783<br>
+[DVD] ＧU-ＧUガンモ 第38回 「冬だ！スキーだ！３人娘のデス・マッチ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 363,780,096 efee34b116cc79f9b726b9bb247488eb<br>
+[DVD] ＧU-ＧUガンモ 第39回 「みんな集合！クルシミマス・パーティー」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 387,485,696 554b7d97fa6705a822e4654a6460d6ba<br>
+[DVD] ＧU-ＧUガンモ 第40回 「宿命の対決！恐怖の雪中バトルロイヤル！ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 400,662,528 cf85eb9c6d842df38eb881003f3a931f<br>
+[DVD] ＧU-ＧUガンモ 第41回 「宿命の対決！恐怖の雪中バトルロイヤル！ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 428,441,600 4881aa65a356e8cb717ac34f97b9f4bd<br>
+[DVD] ＧU-ＧUガンモ 第42回 「メカガンモ出動！ブルドッグ軍団をたたけ」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 394,223,616 88cf3989884a6cfd6fc83d135a60a824<br>
+[DVD] ＧU-ＧUガンモ 第43回 「ガンモの宇宙戦争！トサカ帝国の逆襲！！」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 316,932,096 c67be3baf15ea4f85471666a5598acc2<br>
+[DVD] ＧU-ＧUガンモ 第44回 「節分大好き！？カゲで糸ひくナットー娘！！ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 354,377,728 090f83f5b1747aa0475822ac5018d305<br>
+[DVD] ＧU-ＧUガンモ 第45回 「まるひドッキリ！！ガンモのフォーカス大作戦 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 359,049,216 312a428b83e150a531cd925a77c0f8f5<br>
+[DVD] ＧU-ＧUガンモ 第46回 「ムス！！男はだまって勝負です！！ 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 318,230,528 2fe5841fe8c5caf5e9d56c4726f2ad4a<br>
+[DVD] ＧU-ＧUガンモ 第47回 「大盗賊参上！！ガンモの金庫いただきます」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 330,205,184 4f0cae396b29b3f789a2c26b931d48c1<br>
+[DVD] ＧU-ＧUガンモ 第48回 「春だ！飛びだせ！シェイプアップ大作戦 他」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 262,129,664 871ac3dc3f0c55b9bab7fd4371c238c2<br>
+[DVD] ＧU-ＧUガンモ 第49回 「秘技連発！ガンモの爆笑すもう大会！！」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 323,960,832 2051fae408a5f51e386f17efaca6090d<br>
+[DVD] ＧU-ＧUガンモ 第50回 「ウソ！ヤダ！ダメ！涙のお別れパーティー」 (DivX5.1 VGA QB90 AC3).avi rTS5D56UkW 319,805,440 a2a77f7010e121e028d434fe96848e64<br>
+<br></dd>
+<dt><span class="title">孔雀王<b>◆</b></span>05/08/20 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD] 孔雀王 鬼還祭 [640x480 WMV9 残像テレシネ].wmv SVasPcj1Hn 644,414,023 1389e658cfc21988b538f7a1f4ebaf5c<br>
+<br></dd>
+<dt><span class="title">雲のむこう、約束の場所<b>◆</b></span>07/10/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ・映画] 雲のむこう、約束の場所 映像特典 インタビュー 吉岡秀隆(藤沢浩紀) (DVD 640x480 XviD1.0.2 QT2 AC-3).avi Cyilz3t3oo 96,284,672 0d714b633ec5338eb993bdb6d2198709<br>
+[アニメ・映画] 雲のむこう、約束の場所 映像特典 インタビュー 新海誠(監督) (DVD 640x480 XviD1.0.2 QT2 AC-3).avi Cyilz3t3oo 190,064,640 777a509d56d7b892355acb1d288450a7<br>
+[アニメ・映画] 雲のむこう、約束の場所 映像特典 インタビュー 南里侑香(沢渡佐由理) (DVD 640x480 XviD1.0.2 QT2 AC-3).avi Cyilz3t3oo 142,297,088 bfab88c2f2c53f477aa4a15b35dadcc8<br>
+[アニメ・映画] 雲のむこう、約束の場所 映像特典 インタビュー 萩原聖人(白川拓也) (DVD 640x480 XviD1.0.2 QT2 AC-3).avi Cyilz3t3oo 123,164,672 e62caeb08262c5aa1e8ccbd6d5e8cc42<br>
+[アニメ・映画] 雲のむこう、約束の場所 映像特典 パイロット版ムービー (DVD 704x396 XviD1.0.2 QT2 AC-3)　.avi Cyilz3t3oo 51,109,888 8184028d465e74a2bae96989c45de555<br>
+[アニメ・映画] 雲のむこう、約束の場所 映像特典 Web版予告編 (DVD 704x396 XviD1.0.2 QT2 AC-3).avi Cyilz3t3oo 34,217,984 3b8146c39a062538595b9c4903436145<br>
+[アニメ・映画] 雲のむこう、約束の場所 映像特典 劇場版予告編 (DVD 704x396 XviD1.0.2 QT2 AC-3).avi Cyilz3t3oo 22,423,552 0aa4fa0bfb2fb3732c5c06dbf3be1c1c<br>
+[アニメ・映画] 雲のむこう、約束の場所 (DVD 704x396 XviD1.0.2 QT2 AC-3 2ch+5.1ch).avi Cyilz3t3oo 1,292,335,104 f36c377bbd4328c7f96f08548678afb5<br>
+<hr class="A">
+[アニメ DVD] 雲のむこう、約束の場所 映像特典 ～web版予告編(120秒) (WMV9 704x396 AC3).avi okidokezwg 31,899,816 b8e537d15cc6ccd687426ac90e42239a<br>
+[アニメ DVD] 雲のむこう、約束の場所 映像特典 ～パイロット版ムービー (WMV9 704x396 AC3).avi okidokezwg 45,854,898 7e772d8c3c5497e86ea38b47d1d3130e<br>
+[アニメ DVD] 雲のむこう、約束の場所 映像特典 ～吉岡秀隆(藤沢浩紀) (WMV9 VGA AC3).avi okidokezwg 100,135,088 f9063328d767172579a9cf33e9d67897<br>
+[アニメ DVD] 雲のむこう、約束の場所 映像特典 ～劇場版予告編(90秒) (WMV9 704x396 AC3).avi okidokezwg 20,828,330 1dc0e58dbd692d07fb8164b0da2a73ad<br>
+[アニメ DVD] 雲のむこう、約束の場所 映像特典 ～深海誠(監督) (WMV9 VGA 120fps AC3).avi okidokezwg 212,588,724 93e4522a14c7aa2c6277c9d8b8db496a<br>
+[アニメ DVD] 雲のむこう、約束の場所 映像特典 ～南里侑香(沢渡佐由理) (WMV9 VGA AC3).avi okidokezwg 151,779,506 515bada6b37701f4c85115bd5fe6712e<br>
+[アニメ DVD] 雲のむこう、約束の場所 映像特典 ～萩原聖人(白川拓也) (WMV9 VGA AC3).avi okidokezwg 130,087,088 bbfaccd23454b14a0417d8f6204d6ead<br>
+[アニメ DVD] 雲のむこう、約束の場所 (WMV9 704x396 AC3).mkv okidokezwg 1,215,592,433 94bde95baac5e66911feef54d8b98b42<br>
+<hr class="A">
+[アニメ DVD] 雲のむこう、約束の場所 -The place promised in our early days- (704x480 H.264 5.1ch AC3).mkv 774AWRlnRo 1,089,988,100 c57e258fa59d61d2bcdc42cfb5f3fb45<br>
+<hr class="A">
+[アニメ] 雲のむこう、約束の場所 (DVD 704x396 DivX502).avi U14kVzyY5K 620,554,240 0175328b4b5ff8b277468a16c27d3dc7<br>
+<hr class="A">
+[アニメ] 雲のむこう、約束の場所(DVD 704x396 XviD Q4 AAC).mkv fakeTVNE16 408,793,878 30d4e855b777891f0a35527d8c05abee<br>
+<hr class="A">
+(アニメ) 雲のむこう、約束の場所 (DVD 704x396 XviD1.0.2 QT2 AC-3 2ch+5.1ch).avi 1,292,334,340 fd7348619c484cd608a8fe136ea91e91<br>
+<hr class="A">
+[DVD-RIP] 雲のむこう、約束の場所 (704x396 WMV9 by ranga).wmv 719,356,752 2cdabfb5198566a588eb170f69606d6a<br>
+<hr class="A">
+[DVD] 雲のむこう、約束の場所(Xvid1.1.0Beta1 1024x576 30fps AC3 2.0ch ver.1CD).Ertai.avi Bo5Q2E5H6w 716,341,248 e8c31d10cdc0f099b38db86528d3722d<br>
+[DVD] 雲のむこう、約束の場所(Xvid1.1.0Beta1 1024x576 30fps AC3 5.1ch+2.0ch ver.2CD).partA.Ertai.avi Bo5Q2E5H6w 712,828,928 baac84c1ec3b21258b169a21d4d66928<br>
+[DVD] 雲のむこう、約束の場所(Xvid1.1.0Beta1 1024x576 30fps AC3 5.1ch+2.0ch ver.2CD).partB.Ertai.avi Bo5Q2E5H6w 704,077,824 d5a4e0f42ccfb386d784238cc91e8eaa<br>
+<hr class="A">
+[映画 アニメ][XviD-1.1.0-Beta1 704x396 AC3 5.1ch 448k][日本語音声＋字幕切り替え＋チャプター 正規DVDRip]雲のむこう、約束の場所.mkv FakOuo3zUG 941,149,111 e7e048244a48fa66044f7f8805ed75d6<br>
+<hr class="A">
+【アニメ】雲のむこう、約束の場所 (DVD 704x396 DivX5.11 QB93 24fps).avi Vyr2sbEnVX 921,281,546 4f07b2e9c22dde201ad4ee0a1e75d441<br>
+<hr class="A">
+雲のむこう、約束の場所 [640x360 DivX521 mp3-48KHz-192Kbps].avi e86BISiPxn 731,929,186 1de5305f1201c5bad420b49e01598b77<br>
+雲のむこう、約束の場所 [640x360 WMV9 mp3-48KHz-192Kbps].avi e86BISiPxn 680,967,138 96f1aa7ea6db0809e2b81bc819ae0bc9<br>
+<hr class="A">
+雲のむこう、約束の場所 (DVD 704x396 WMV9).avi unkoaVInQ4 567,556,096 d98007f8ea9acefe622e27699c745b34<br>
+<br></dd>
+<dt><span class="title">雲のように風のように<b>◆</b></span>07/05/16 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ_DVD]雲のように風のように (640x480 DivX502).avi M2mETsex0u 837,644,288 a915e55144a0ea03019556ae2d8859ee<br>
+[アニメ_DVD]雲のように風のように (640x480 WMV).avi M2mETsex0u 744,560,640 55ef0dfc626e0cedffa7f2fb32a1e9b8<br>
+<hr class="A">
+[アニメ DVD] 雲のように風のように 「01.プロローグ」 (640x480 WMV9).wmv HUDBwkE3Yq 16,072,330 9b5d2f65b1fbea3373b789a7f0e82b01<br>
+[アニメ DVD] 雲のように風のように 「02.皇帝崩御」 (640x480 WMV9).wmv HUDBwkE3Yq 72,675,965 40a005d27ccbb63b582a40d591187be8<br>
+[アニメ DVD] 雲のように風のように 「03.都へ」 (640x480 WMV9).wmv HUDBwkE3Yq 109,423,265 cfd853cfa44c64db334517fb72a4c4e9<br>
+[アニメ DVD] 雲のように風のように 「04.後宮」 (640x480 WMV9).wmv HUDBwkE3Yq 123,407,071 e684b058b3d68d7260a65787731292f8<br>
+[アニメ DVD] 雲のように風のように 「05.女大学」 (640x480 WMV9).wmv HUDBwkE3Yq 118,347,417 859010f368f28efb858f8995a43c340b<br>
+[アニメ DVD] 雲のように風のように 「06.挙兵」 (640x480 WMV9).wmv HUDBwkE3Yq 82,807,726 536ceb0581d6bcac6000e22fd193311b<br>
+[アニメ DVD] 雲のように風のように 「07.銀正妃」 (640x480 WMV9).wmv HUDBwkE3Yq 72,408,220 1a2346eda84f9465eb06678e5f35448e<br>
+[アニメ DVD] 雲のように風のように 「08.後宮攻撃」 (640x480 WMV9).wmv HUDBwkE3Yq 175,502,972 f835fd0105069060206913438748af92<br>
+[アニメ DVD] 雲のように風のように 「09.コリューンの最後」 (640x480 WMV9).wmv HUDBwkE3Yq 65,680,478 e5c27a17b5d02059242356b9f74d606b<br>
+[アニメ DVD] 雲のように風のように 「10.エピローグ」 (640x480 WMV9).wmv HUDBwkE3Yq 22,770,661 36c3edb7cc386c001f90a8cf33f7e276<br>
+[アニメ DVD] 雲のように風のように 「11.エンディングテーマ」 (640x480 WMV9).wmv HUDBwkE3Yq 25,932,543 69d14988ea117f647408adec15d72b83<br>
+<br></dd>
+<dt><span class="title">KURAU Phantom Memory<b>◆</b></span>06/09/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] KURAU Phantom Memory Vol.01 特典映像 CMコレクション (VGA XviD 120fps AAC).mkv 774AWRlnRo 86,828,170 e4828fe6c1a43715894b352fb37dd5e7<br>
+[アニメ DVD] KURAU Phantom Memory Vol.01 特典映像 スペシャルプロモーション映像 (VGA XviD AAC).mkv 774AWRlnRo 35,481,568 60151094402c0a01a72d3bf5e0e74a0d<br>
+[アニメ DVD] KURAU Phantom Memory Vol.01 特典映像 ノンクレジットオープニング (VGA XviD AAC).mkv 774AWRlnRo 26,751,947 1572e587600976ea2279e22fbdab3a52<br>
+[アニメ DVD] KURAU Phantom Memory Vol.01 特典映像 ノンクレジットエンディング (VGA XviD AAC).mkv 774AWRlnRo 9,840,191 8d621113280d28ddae19d3389ad9090d<br>
+[アニメ DVD] KURAU Phantom Memory 第01話 「広い世界へ…」 (VGA XviD AAC).mkv 774AWRlnRo 157,886,067 2d29aff830932feb092949a818b54df8<br>
+[アニメ DVD] KURAU Phantom Memory 第02話 「なにか、いい言葉」 (VGA XviD AAC).mkv 774AWRlnRo 161,257,629 ab5d8cd4ca979410e32616bd93a50f5e<br>
+[アニメ DVD] KURAU Phantom Memory 第03話 「追う者たち」 (VGA XviD AAC).mkv 774AWRlnRo 170,524,527 566cd9da9388b7cf075dc7d9982b43ba<br>
+[アニメ DVD] KURAU Phantom Memory 第04話 「夜を越えて」 (VGA XviD AAC).mkv 774AWRlnRo 146,336,393 577c6304482ca9adc99502c4dfeb867c<br>
+[アニメ DVD] KURAU Phantom Memory 第05話 「迷い子」 (VGA XviD 120fps AAC).mkv 774AWRlnRo 191,737,786 a273ed80c5014cb88c857a92bed589aa<br>
+[アニメ DVD] KURAU Phantom Memory 第06話 「光る雨」 (VGA XviD AAC).mkv 774AWRlnRo 180,591,676 e9110b943e8cace11ad25bcb773f3c9e<br>
+[アニメ DVD] KURAU Phantom Memory 第07話 「新しい暮らし」 (VGA XviD AAC).mkv 774AWRlnRo 156,656,052 968bd58bd6f2c6240f29fb8c37067538<br>
+[アニメ DVD] KURAU Phantom Memory 第08話 「もうひとつのクリスマス」 (VGA XviD AAC).mkv 774AWRlnRo 200,456,528 04812508ce1cd11cc8537cda7a1ce3ce<br>
+[アニメ DVD] KURAU Phantom Memory 第09話 「天使が消えた街」 (VGA XviD AAC).mkv 774AWRlnRo 177,958,782 00736265a47a6136966dfb18988814f3<br>
+[アニメ DVD] KURAU Phantom Memory 第10話 「眠り姫」 (VGA XviD AAC).mkv 774AWRlnRo 193,291,247 6b8db54e6d15df962777de8ae6df5575<br>
+[アニメ DVD] KURAU Phantom Memory 第11話 「呼び合う声」 (VGA XviD AAC).mkv 774AWRlnRo 179,456,198 c29755e9b1baf373a30039f6dc1c07ce<br>
+[アニメ DVD] KURAU Phantom Memory 第12話 「いまここにいる」 (VGA XviD AAC).mkv 774AWRlnRo 134,651,071 ecf016a0db77d20b8b3636f4205bcdfb<br>
+[アニメ DVD] KURAU Phantom Memory 第13話 「守るべきもの」 (VGA XviD AAC).mkv 774AWRlnRo 175,859,493 4fa8a9db6fcaa3611533a6c2703a6017<br>
+[アニメ DVD] KURAU Phantom Memory 第14話 「昨日・今日・明日」 (VGA XviD AAC).mkv 774AWRlnRo 175,375,419 ea648b8a22ecaf1a29c78951dc62f1f6<br>
+[アニメ DVD] KURAU Phantom Memory 第15話 「アゲハ蝶の不安」 (VGA XviD AAC).mkv 774AWRlnRo 228,707,263 89bc32075619f93e23b1ccbf361c9007<br>
+[アニメ DVD] KURAU Phantom Memory 第16話 「丘の上の墓標」 (VGA XviD AAC).mkv 774AWRlnRo 185,438,222 9c218cc449ff6263470c4b3fd9fa3843<br>
+[アニメ DVD] KURAU Phantom Memory 第17話 「霧の中」 (VGA XviD AAC).mkv 774AWRlnRo 180,720,226 2b7dffdf5fcca6e8f5ec3a85b6a001bd<br>
+[アニメ DVD] KURAU Phantom Memory 第18話 「来訪者」 (VGA XviD 120fps AAC).mkv 774AWRlnRo 164,308,770 fec782da3450cac4c57c22d2e6921032<br>
+[アニメ DVD] KURAU Phantom Memory 第19話 「それぞれの道」 (VGA XviD AAC).mkv 774AWRlnRo 191,207,082 21bdc354e97ef3a965d8478497ab4395<br>
+[アニメ DVD] KURAU Phantom Memory 第20話 「窓をひらいて」 (VGA XviD AAC).mkv 774AWRlnRo 199,385,689 78c97f1963a46b1d790d481cf4b04051<br>
+[アニメ DVD] KURAU Phantom Memory 第21話 「凍り付いた河」 (VGA XviD AAC).mkv 774AWRlnRo 187,866,976 045d2eafef60fee645c0d2b8f5cf8048<br>
+[アニメ DVD] KURAU Phantom Memory 第22話 「闇に瞬く」 (VGA XviD 120fps AAC).mkv 774AWRlnRo 241,950,704 0d3d4059a2cd5dc3e4830c173d49439b<br>
+[アニメ DVD] KURAU Phantom Memory 第23話 「最後の光」 (VGA XviD AAC).mkv 774AWRlnRo 195,008,703 e7bdc095c6537b66a99d618a29e6eb3f<br>
+[アニメ DVD] KURAU Phantom Memory 第24話 「さよならの前に」 (VGA XviD 120fps AAC).mkv 774AWRlnRo 206,692,007 6b545d1a3f974fba0c8247c4d94630b4<br>
+<hr class="A">
+[アニメ DVD] KURAU Phantom Memory Vol.01 INFORMATION (640x480 WMV9).wmv okidokezwg 4,296,716 28a0a8d8ba80d148f72334445f9a76f4<br>
+[アニメ DVD] KURAU Phantom Memory Vol.01 特典映像 「CMコレクション」 (640x480 WMV9).wmv okidokezwg 132,838,704 8fed54714205c7f081e342ef3b83b0d9<br>
+[アニメ DVD] KURAU Phantom Memory Vol.01 特典映像 「スペシャルプロモーション映像」 (640x480 WMV9).wmv okidokezwg 55,878,556 2e0d0849c1014cee0b568b19ca231c2e<br>
+[アニメ DVD] KURAU Phantom Memory Vol.01 特典映像 「ノンクレジットオープニング」 (640x480 WMV9 rev2).wmv okidokezwg 36,005,010 26561bb2602cdabd33f0ebec4761f712<br>
+[アニメ DVD] KURAU Phantom Memory Vol.01 特典映像 「ノンクレジットエンディング」 (640x480 WMV9).wmv okidokezwg 15,957,000 576f2513a1f0b8835640c03b2a7845a3<br>
+[アニメ DVD] KURAU Phantom Memory Vol.02 INFORMATION (640x480 WMV9).wmv okidokezwg 3,910,235 34d87503efd55b775d9b4e5094a28456<br>
+[アニメ DVD] KURAU Phantom Memory Vol.03 INFORMATION (640x480 WMV9).wmv okidokezwg 4,436,507 fd635f4cd4a1aa408a814d12f0307678<br>
+[アニメ DVD] KURAU Phantom Memory Vol.04 INFORMATION (640x480 WMV9).wmv okidokezwg 4,288,493 d25cbbf44371728dab47182dc1e88dfb<br>
+[アニメ DVD] KURAU Phantom Memory Vol.05 INFORMATION (640x480 WMV9).wmv okidokezwg 4,255,601 47da7a8eaf8e0aafde2d3aaabc600279<br>
+[アニメ DVD] KURAU Phantom Memory Vol.06 INFORMATION (640x480 WMV9).wmv okidokezwg 4,321,385 50aa94d8196bc3e18d30eaf9d96e0c8f<br>
+[アニメ DVD] KURAU Phantom Memory Vol.07 INFORMATION (640x480 WMV9).wmv okidokezwg 4,230,932 9a25247b795f21304facfcf2d3a6a835<br>
+[アニメ DVD] KURAU Phantom Memory Vol.08 INFORMATION (640x480 WMV9).wmv okidokezwg 4,304,939 554a0beec36cc73b91e362dfe0b65550<br>
+[アニメ DVD] KURAU Phantom Memory Vol.09 INFORMATION (640x480 WMV9).wmv okidokezwg 4,189,817 292af3a4011ec3fd3fbeb07cb658809d<br>
+[アニメ DVD] KURAU Phantom Memory 第01話 「広い世界へ・・・」 (640x480 WMV9).wmv okidokezwg 150,631,402 fea4e04de9d98fec5b22d5339edf5979<br>
+[アニメ DVD] KURAU Phantom Memory 第02話 「なにか、いい言葉」 (640x480 WMV9).wmv okidokezwg 146,663,386 b961d9e486ec199ea3819620f11ef3ff<br>
+[アニメ DVD] KURAU Phantom Memory 第03話 「追う者たち」 (640x480 WMV9).wmv okidokezwg 162,343,380 7e9dfe2fd1ebc54726f73159da16e936<br>
+[アニメ DVD] KURAU Phantom Memory 第04話 「夜を越えて」 (640x480 WMV9).wmv okidokezwg 135,415,380 37b89905522798b34abd01dc9c5dd0a5<br>
+[アニメ DVD] KURAU Phantom Memory 第05話 「迷い子」 (640x480 WMV9).wmv okidokezwg 175,607,242 42eca82d12355fe299a9ab1e044860e1<br>
+[アニメ DVD] KURAU Phantom Memory 第06話 「光る雨」 (640x480 WMV9).wmv okidokezwg 176,599,376 c5837ab42781e5ef7f4fafd2160d86b0<br>
+[アニメ DVD] KURAU Phantom Memory 第07話 「新しい暮らし」 (640x480 WMV9).wmv okidokezwg 149,895,382 241c5c613dfd15ad3f58defc7473e062<br>
+[アニメ DVD] KURAU Phantom Memory 第08話 「もうひとつのクリスマス」 (640x480 WMV9).wmv okidokezwg 200,023,392 265944e001aaeb11a9521eb387207705<br>
+[アニメ DVD] KURAU Phantom Memory 第09話 「天使が消えた街」 (640x480 WMV9).wmv okidokezwg 172,423,384 ae34c3c05f04ba07664fd35c602b89cd<br>
+[アニメ DVD] KURAU Phantom Memory 第10話 「眠り姫」 (640x480 WMV9).wmv okidokezwg 179,767,376 bc53d93ed8b61b2555fc9be07d9e6840<br>
+[アニメ DVD] KURAU Phantom Memory 第11話 「呼び合う声」 (640x480 WMV9).wmv okidokezwg 169,335,380 c2e7690db6b34d9475cf812f7508a476<br>
+[アニメ DVD] KURAU Phantom Memory 第12話 「いまここにいる」 (640x480 WMV9).wmv okidokezwg 124,791,384 958b6d9285ac437afb64bd3c45169410<br>
+[アニメ DVD] KURAU Phantom Memory 第13話 「守るべきもの」 (640x480 WMV9).wmv okidokezwg 166,631,382 fdeb53c5fcf30b0d9cdd43b401e96437<br>
+[アニメ DVD] KURAU Phantom Memory 第14話 「昨日・今日・明日」 (640x480 WMV9).wmv okidokezwg 161,431,386 6f30eb9dca75c92bfba8d7b1bfca21fe<br>
+[アニメ DVD] KURAU Phantom Memory 第15話 「アゲハ蝶の不安」 (640x480 WMV9).wmv okidokezwg 208,887,384 85067d1bb7bb1e475ea0b3a516e03ad5<br>
+[アニメ DVD] KURAU Phantom Memory 第16話 「丘の上の墓標」 (640x480 WMV9).wmv okidokezwg 172,759,382 ada9e133d8da3154a9ec8590212a47d6<br>
+[アニメ DVD] KURAU Phantom Memory 第17話 「霧の中」 (640x480 WMV9).wmv okidokezwg 166,663,376 c59da9d92dc3aa92151693357b47f091<br>
+[アニメ DVD] KURAU Phantom Memory 第18話 「来訪者」 (640x480 WMV9).wmv okidokezwg 164,807,376 0f95a643d3b7e323deca5a36ef83c6ba<br>
+[アニメ DVD] KURAU Phantom Memory 第19話 「それぞれの道」 (640x480 WMV9).wmv okidokezwg 179,351,382 4bb2c9bea10d67107d4fd22e256c0148<br>
+[アニメ DVD] KURAU Phantom Memory 第20話 「窓をひらいて」 (640x480 WMV9).wmv okidokezwg 191,447,382 79a3c0e240414a2d25062a9024b3bc1b<br>
+[アニメ DVD] KURAU Phantom Memory 第21話 「凍り付いた河」 (640x480 WMV9).wmv okidokezwg 180,087,382 182b304d17c38d92253f91714c5084ff<br>
+[アニメ DVD] KURAU Phantom Memory 第22話 「闇に瞬く」 (640x480 WMV9).wmv okidokezwg 225,895,258 beb8d742e99db091cca65c5cd2bcf6aa<br>
+[アニメ DVD] KURAU Phantom Memory 第23話 「最後の光」 (640x480 WMV9).wmv okidokezwg 182,615,392 5aee925003aef547c696e7b12d6c67ba<br>
+[アニメ DVD] KURAU Phantom Memory 第24話 「さよならの前に」 (640x480 WMV9).wmv okidokezwg 190,711,250 3b635e2b2bff84daaef6502817fa1a88<br>
+<hr class="A">
+[アニメ] KURAU Phantom Memory 特典映像 第1巻 CMコレクション (DVD 640x480 WMV9VCM QB93 120fps) [CRC32_0C16E973].avi GsaBExmE1n 83,795,968 f16249a8543455d013e248ac9e6e0fb7<br>
+[アニメ] KURAU Phantom Memory 特典映像 第1巻 スペシャルプロモーション映像 (DVD 640x480 WMV9VCM QB93) [CRC32_7BA688BC].avi GsaBExmE1n 37,513,216 58c215463ad251a83a5c8e00394d841c<br>
+[アニメ] KURAU Phantom Memory 特典映像 第1巻 ノンクレジットオープニング (DVD 640x480 WMV9VCM QB93) [CRC32_A7291213].avi GsaBExmE1n 27,641,856 c4efa2236a60cfd9f2ed66f5f14a4160<br>
+[アニメ] KURAU Phantom Memory 特典映像 第1巻 ノンクレジットエンディング (DVD 640x480 WMV9VCM QB93) [CRC32_E17B3C33].avi GsaBExmE1n 10,831,872 c38c35c03be1174c53b82380a4fb2983<br>
+[アニメ] KURAU Phantom Memory 第01話 「広い世界へ…」 (DVD 640x480 WMV9VCM QB93) [CRC32_2CE37150].avi GsaBExmE1n 173,369,344 34220eb4284c372ba6ebc3fc36ecd730<br>
+[アニメ] KURAU Phantom Memory 第02話 「なにか、いい言葉」 (DVD 640x480 WMV9VCM QB93) [CRC32_4A3FA1BB].avi GsaBExmE1n 176,406,528 88dbb6dcd666b96783bb3fc928a036d0<br>
+[アニメ] KURAU Phantom Memory 第03話 「追う者たち」 (DVD 640x480 WMV9VCM QB93) [CRC32_77E574B5].avi GsaBExmE1n 189,290,496 028d67693a41890e8c819be402969551<br>
+[アニメ] KURAU Phantom Memory 第04話 「夜を越えて」 (DVD 640x480 WMV9VCM QB93) [CRC32_356B151E].avi GsaBExmE1n 161,566,720 451ea14416125eafd56de4053dd47ed8<br>
+[アニメ] KURAU Phantom Memory 第05話 「迷い子」 (DVD 640x480 WMV9VCM QB93 120fps) [CRC32_991DEF31].avi GsaBExmE1n 212,107,264 749dbd954326ca14f241fe4b2f6bed81<br>
+[アニメ] KURAU Phantom Memory 第06話 「光る雨」 (DVD 640x480 WMV9VCM QB93) [CRC32_26CEECAC].avi GsaBExmE1n 204,486,656 0350f29fa49bd4291f62a178f89ac27e<br>
+[アニメ] KURAU Phantom Memory 第07話 「新しい暮らし」 (DVD 640x480 WMV9VCM QB93) [CRC32_9C0FA14C].avi GsaBExmE1n 181,594,112 386b15f5fad3a5d1760053148a317ae9<br>
+[アニメ] KURAU Phantom Memory 第08話 「もうひとつのクリスマス」 (DVD 640x480 WMV9VCM QB93) [CRC32_136EC001].avi GsaBExmE1n 236,718,080 f08e78162526ae2d4dc6c6e4cb52e893<br>
+[アニメ] KURAU Phantom Memory 第09話 「天使が消えた街」 (DVD 640x480 WMV9VCM QB93) [CRC32_0C592120].avi GsaBExmE1n 208,179,200 4d343b87d6edf5caf303a206a3afe880<br>
+[アニメ] KURAU Phantom Memory 第10話 「眠り姫」 (DVD 640x480 WMV9VCM QB93) [CRC32_CB05170A].avi GsaBExmE1n 211,169,280 80059207553a36a6d8a8ee398a8d41a0<br>
+[アニメ] KURAU Phantom Memory 第11話 「呼び合う声」 (DVD 640x480 WMV9VCM QB93) [CRC32_98A7BE4C].avi GsaBExmE1n 194,486,272 3756e2115449839ab74746980a18c0e3<br>
+[アニメ] KURAU Phantom Memory 第12話 「いまここにいる」 (DVD 640x480 WMV9VCM QB93) [CRC32_9D074B8D].avi GsaBExmE1n 151,422,976 64f2c9039b8226bd6c9a166393ab0dc8<br>
+<hr class="A">
+【アニメ】KURAU -Phantom Memory- 映像特典 ノンテロップOP (DVD 640x480 DivX5.11 QB95 24fps).avi Vyr2sbEnVX 41,839,394 cafa976148d619ef8ce1367dd0071663<br>
+【アニメ】KURAU -Phantom Memory- 映像特典 ノンテロップED (DVD 640x480 DivX5.11 QB95 24fps).avi Vyr2sbEnVX 18,589,074 3c84b0b5bc72b46d72f697a6c774c769<br>
+【アニメ】KURAU -Phantom Memory- 第01話 「広い世界へ･･･」 (DVD 640x480 DivX5.11 QB95 24fps).avi Vyr2sbEnVX 231,671,128 509c31f1237284a23300249c885bd681<br>
+【アニメ】KURAU -Phantom Memory- 第02話 「なにか、いい言葉」 (DVD 640x480 DivX5.11 QB95 24fps).avi Vyr2sbEnVX 233,467,108 531eaf73b9ba5f0044c09007e13a4320<br>
+【アニメ】KURAU -Phantom Memory- 第03話 「追う者たち」 (DVD 640x480 DivX5.11 QB95 24fps).avi Vyr2sbEnVX 248,297,264 296dc9ecf320c7f1fd626681b733b9d2<br>
+【アニメ】KURAU -Phantom Memory- 第04話 「夜を越えて」 (DVD 640x480 DivX5.11 QB95 24fps).avi Vyr2sbEnVX 209,656,508 07da8041a7f4a2699b7f2a7b2ce7d8d3<br>
+【アニメ】KURAU -Phantom Memory- 第05話 「迷い子」 (DVD 640x480 DivX5.11 QB95 24fps).avi Vyr2sbEnVX 277,066,362 4f4df85353882eb343ec7aad412f6197<br>
+【アニメ】KURAU -Phantom Memory- 第06話 「光る雨」 (DVD 640x480 DivX5.11 QB95 24fps).avi Vyr2sbEnVX 271,632,688 ccdf5f058b48849de494bf6a6d829fc0<br>
+【アニメ】KURAU -Phantom Memory- 第07話 「新しい暮らし」 (DVD 640x480 DivX5.11 QB95 24fps).avi Vyr2sbEnVX 244,708,990 407c57bc04c1c69fab7798818ef9b102<br>
+【アニメ】KURAU -Phantom Memory- 第08話 「もうひとつのクリスマス」 (DVD 640x480 DivX5.11 QB95 24fps).avi Vyr2sbEnVX 326,824,480 d00e526938a8ecbd175861122bba3d63<br>
+【アニメ】KURAU -Phantom Memory- 第09話 「天使が消えた街」 (DVD 640x480 DivX5.11 QB95 24fps).avi Vyr2sbEnVX 277,481,520 847931e75a58ecf5e6b8f4f9a95475d9<br>
+【アニメ】KURAU -Phantom Memory- 第10話 「眠り姫」 (DVD 640x480 DivX5.11 QB95 24fps).avi Vyr2sbEnVX 291,677,368 b1dbbeb68a7667cc6f9fc1f5c41148a3<br>
+【アニメ】KURAU -Phantom Memory- 第11話 「呼び合う声」 (DVD 640x480 DivX5.11 QB95 24fps).avi Vyr2sbEnVX 264,307,072 bdd383e6e639532d8e808ac4f05f80b0<br>
+【アニメ】KURAU -Phantom Memory- 第12話 「いまここにいる」 (DVD 640x480 DivX5.11 QB95 24fps).avi Vyr2sbEnVX 201,492,022 47ceca96112c2f509ce20cfd9ba1bfec<br>
+<br></dd>
+<dt><span class="title">クラスターエッジ<b>◆</b></span>06/10/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ OVA Secret Episode1 「集う日」 (640x480 WMV9).wmv mGH2KEH39b 195,530,164 0a2a828749e3ad8ffbdb6a64a16af1fe<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ OVA Secret Episode2 「白き足跡」 (640x480 WMV9).wmv mGH2KEH39b 200,202,152 809660d3b9ac7521ad8dfd2fe08d05ac<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ OVA Secret Episode3 「自由の翼」 (640x480 WMV9).wmv mGH2KEH39b 190,361,746 1aa466679703661a4882165ccdd60c75<br><br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第01巻 初回特典 インターネットラジオ「嗚呼、クラスター学園！」 Special CD part.1.zip mGH2KEH39b 87,890,164 7b5c457418d1c19eae3dcb975ea3509b<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第01巻 映像特典 「クラスターE.A. オリエンテーション」 (640x480 WMV9).wmv mGH2KEH39b 18,064,408 00d0e04ed40e07185be08c001a8b83ff<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第02巻 映像特典 「クラスターE.A. 生物学講座」 (640x480 WMV9).wmv mGH2KEH39b 41,173,048 dba417a59eb250f07e8280dc01738407<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第02巻 映像特典 番宣スポット集 (640x480 WMV9).wmv mGH2KEH39b 14,086,836 515464b6c2c62676a08f9f897130de09<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第03巻 映像特典 「クラスターE.A. 航空学講座」 (640x480 WMV9).wmv mGH2KEH39b 26,457,270 1af8b26f982dbfb74d6e051541e6efda<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第03巻 映像特典 ノンテロップオープニング (640x480 WMV9).wmv mGH2KEH39b 27,607,448 07add6465cf36d1b92c4f2db67387190<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第03巻 映像特典 ノンテロップエンディング (640x480 WMV9).wmv mGH2KEH39b 18,135,448 88856ac7602b452f6a2ff55c1fcae50d<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第03巻 映像特典 初期放送版 ノンテロップオープニング (640x480 WMV9).wmv mGH2KEH39b 27,719,474 575d8887b3a194a46663a4234d090bb7<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第04巻 映像特典 DVD1巻告知CM（アゲートver.） (640x480 WMV9).wmv mGH2KEH39b 9,766,979 0576026ad6f04833cc3389fa0d7b7523<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第04巻 映像特典 DVD1巻告知CM（ベリルver.） (640x480 WMV9).wmv mGH2KEH39b 6,165,359 45b4ce1bf0d619b9103009275cec9d3e<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第04巻 映像特典 「クラスターE.A.特別講座 ジャスパー家の秘密」 (640x480 WMV9).wmv mGH2KEH39b 30,297,090 c6fb007d2c3dd843984500cd2fd92de3<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第05巻 映像特典 2nd ノンテロップオープニング (640x480 WMV9).wmv mGH2KEH39b 30,167,456 a873059922b07fdfe36d01c1a8f43995<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第05巻 映像特典 2nd ノンテロップエンディング (640x480 WMV9).wmv mGH2KEH39b 14,919,456 50b6427b55149e7fcf4d2f3544409c6f<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第05巻 映像特典 2nd 初期放送版 ノンテロップオープニング (640x480 WMV9).wmv mGH2KEH39b 33,014,456 b5ff81de0a16ede2ae7948bddbeaac6f<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第05巻 映像特典 Extra1 「過去への旅(TV放送7話)」 (640x480 WMV9).wmv mGH2KEH39b 202,649,744 ad134269437cd9773ae9f952c68dcd13<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第05巻 映像特典 Extra1 予告 (640x480 WMV9).wmv mGH2KEH39b 3,990,602 ce32cbd465cfeaeeb5d8148df75d8f92<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第05巻 映像特典 「クラスターE.A. 服飾学講座」 (640x480 WMV9).wmv mGH2KEH39b 16,120,556 69fd4c68584a365de0aa28b427713e90<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第05巻 映像特典 店頭用プロモーション映像 (640x480 WMV9).wmv mGH2KEH39b 76,216,798 5c826472dc41e7bf11a716d60ada136e<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第06巻 映像特典 DVD1巻好評発売中CM (640x480 WMV9).wmv mGH2KEH39b 5,450,024 c9611ed3479c0f81eba914ede9a2207f<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第06巻 映像特典 Extra2 「運命の道(TV放送10話)」 (640x480 WMV9).wmv mGH2KEH39b 264,889,758 656bc80dc405f1cf8a9451a8db15f158<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第06巻 映像特典 Extra2 予告 (640x480 WMV9).wmv mGH2KEH39b 3,382,602 78c6d5ed07f0736fea084fe16e6161f8<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第06巻 映像特典 Secret Episode1 予告 (640x480 WMV9).wmv mGH2KEH39b 3,414,614 afbb66e8222175a7c873945a68ebdf58<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第06巻 映像特典 「クラスターE.A.特別講座 ～人々の生活と文化～」 (640x480 WMV9).wmv mGH2KEH39b 84,920,364 53c97ca8899358ccd41c513bef26673f<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第07巻 映像特典 Secret Episode2 予告 (640x480 WMV9).wmv mGH2KEH39b 3,780,843 3adb2216830fd31a9456b72903879899<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第07巻 映像特典 「クラスターE.A.特別講座 ～学園の歴史～」 (640x480 WMV9).wmv mGH2KEH39b 20,583,840 547107951a9374eed11d1012084eaf02<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第08巻 映像特典 Secret Episode3 予告 (640x480 WMV9).wmv mGH2KEH39b 6,902,620 c97ab1f3192f8735e1443bc71b8b0f83<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第08巻 映像特典 「クラスターE.A.特別講座 ～飛行機レース～」 (640x480 WMV9).wmv mGH2KEH39b 19,603,517 8f10d1f8cda5af0ade52828763161b77<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第09巻 映像特典 「クラスターE.A.特別講座 ～教団の秘密～」 (640x480 WMV9).wmv mGH2KEH39b 17,822,328 e62c195634efffd7da4966200bc1a0a9<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第01話 「アゲートという名の少年」 (640x480 WMV9).wmv mGH2KEH39b 226,746,172 3e1d712b1e7a9ca71c507c97c058d286<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第02話 「ベリルの剣」 (640x480 WMV9 オーディオコメンタリー切替可 rev2).wmv mGH2KEH39b 249,552,609 460895fb03c2db060abdbefa0edadd81<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第03話 「冷たい銃弾」 (640x480 WMV9).wmv mGH2KEH39b 159,306,152 efead89dc531b35f6531dcb3aa1cdc23<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第04話 「漆黒のクロム団登場！！」 (640x480 WMV9 オーディオコメンタリー切替可).wmv mGH2KEH39b 244,112,621 73d907b54d935e7955b1f7af73326bcb<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第05話 「奇蹟のレース」 (640x480 WMV9).wmv mGH2KEH39b 232,154,288 af6341bc7cad240716ce8aca128c09e2<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第06話 「教授とフォン」 (640x480 WMV9).wmv mGH2KEH39b 192,042,168 6ad04271145a37a2730d925ae63da2b5<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第07話 「生徒会選挙」 (640x480 WMV9 オーディオコメンタリー切替可).wmv mGH2KEH39b 266,096,591 239ec46fd17a5d0605aeb8f10aae955b<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第08話 「館の亡霊」 (640x480 WMV9).wmv mGH2KEH39b 179,274,150 b4cff37808851ac6658b2b04f51f1bf4<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第09話 「それぞれの想い」 (640x480 WMV9 オーディオコメンタリー切替可).wmv mGH2KEH39b 226,464,595 48791f57f6d28bfe1e6c9c14fe6b9129<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第10話 「アゲートの叫び」 (640x480 WMV9).wmv mGH2KEH39b 209,738,156 89e33392e33868368f1b7020bd1c1de1<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第11話 「カールスの遺したもの」 (640x480 WMV9).wmv mGH2KEH39b 182,362,148 620432a0552be47b5249e4cde0f92dbe<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第12話 「明日への風」 (640x480 WMV9).wmv mGH2KEH39b 215,146,152 ca34f9f78179c10037882f2c4a43fd85<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第13話 「エマへの手紙」 (640x480 WMV9 オーディオコメンタリー切替可).wmv mGH2KEH39b 229,328,593 54bc01ecbfa2b998137f09a680cb81d3<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第14話 「クロムとアゲート」 (640x480 WMV9).wmv mGH2KEH39b 156,074,130 3230f8314dee8e5c24588279aeeda773<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第15話 「怯えた瞳」 (640x480 WMV9).wmv mGH2KEH39b 199,386,136 0fb6a2021bac03c18fc90b60153f24ed<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第16話 「翼のもとに」 (640x480 WMV9 オーディオコメンタリー切替可).wmv mGH2KEH39b 233,600,609 e1cea9018d727c38df6da26ef57a3881<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第17話 「大空への絆」 (640x480 WMV9).wmv mGH2KEH39b 161,738,124 39a8d1d95809a2f05faa7556873d7468<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第18話 「さまよえる人造兵」 (640x480 WMV9).wmv mGH2KEH39b 181,706,292 1415d8751c8e4ff3e1d559081e76ba05<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第19話 「決意の時」 (640x480 WMV9 オーディオコメンタリー切替可).wmv mGH2KEH39b 270,816,589 de6448ebf685ca04e8baf19e8f120df5<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第20話 「悲しき怒り」 (640x480 WMV9).wmv mGH2KEH39b 204,746,138 12a3d2078a05681091b331ebfea0c702<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第21話 「遺言」 (640x480 WMV9).wmv mGH2KEH39b 177,562,132 f8c6e8c021c2703d2d710747664425c2<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第22話 「破滅への序曲」 (640x480 WMV9).wmv mGH2KEH39b 175,402,140 ca67d77c3376911690650cee518d439a<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第23話 「裁きの火、そして、明日へ(TV最終話)」 (640x480 WMV9 オーディオコメンタリー切替可).wmv mGH2KEH39b 257,008,079 16099f7c36c6625f3ad6284a14b01147<br><br>
+
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 映像特典 第01巻 「クラスターE.A オリエンテーション」 (640x480 WMV9).wmv okidokeiTL 28,520,484 c9ba0de3df5462e7d8afab7de9fbf95a<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第01話 「アゲートという名の少年」 (640x480 WMV9).wmv okidokeiTL 237,178,396 2fb582acd27928c231630cb9b8161a39<br>
+[アニメ DVD] CLUSTER EDGE クラスターエッジ 第02話 「ベリルの剣」 (640x480 WMV9 コメンタリー付).wmv okidokeiTL 235,808,771 db2d107733fca121a7c809f49f3b027a<br>
+<br></dd>
+<dt><span class="title">クラッシャージョウ<b>◆</b></span>04/04/08 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD] クラッシャージョウ 劇場版 [640x480 wmv9].avi 7Sx3YOKwkJ 1,482,847,462 22edf317f9b9946bb1412b08610b5626<br><br>
+[DVD] クラッシャージョウ OVA1 氷結監獄の罠 [640x480 wmv9].avi 7Sx3YOKwkJ 797,108,526 c787439c961b15495afe642ed176ad7e<br>
+[DVD] クラッシャージョウ OVA2 最終兵器アッシュ [640x480 wmv9].avi 7Sx3YOKwkJ 1,123,270,992 e315162c92ebe3626bc5895c3bccc9b1<br>
+<br></dd>
+<dt><span class="title">グラップラー刃牙<b>◆</b></span>08/09/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+グラップラー刃牙 第01話 「宿命への胎動」 (DVD 640x480 DivX5.02 30fps).avi 280,375,296 3aec4b2d234e32520cc1e99a814295f2<br>
+グラップラー刃牙 第02話 「蠢く者たち」 (DVD 640x480 DivX5.02 30fps).avi 318,996,480 e073644d6a7c7178b1d4a21abfccb0cf<br>
+グラップラー刃牙 第03話 「夜叉岩の魔獣」 (DVD 640x480 DivX5.02 30fps).avi 286,898,176 7795f98f04681810d265c707618cd53c<br>
+グラップラー刃牙 第04話 「牙と絆」 (DVD 640x480 DivX5.02 30fps).avi 328,388,608 5187cb8965a7fd05a15bef545261c329<br>
+グラップラー刃牙 第05話 「戦士の心」 (DVD 640x480 DivX5.02 30fps).avi 264,775,680 dfb9977b9b13cccecc95e7dea0a8e7f5<br>
+グラップラー刃牙 第06話 「侠客立ち」 (DVD 640x480 DivX5.02 30fps).avi 276,713,472 dd65f8de68f6a7b611365d8cee86c109<br>
+グラップラー刃牙 第07話 「握撃」 (DVD 640x480 DivX5.02 30fps).avi 297,570,304 a7489277cdf205e232f461683f5a27f6<br>
+グラップラー刃牙 第08話 「鬼」 (DVD 640x480 DivX5.02 30fps).avi 276,432,896 7a0626f69eca3091a4d89f42d0f894e1<br>
+グラップラー刃牙 第09話 「訣別」 (DVD 640x480 DivX5.02 30fps).avi 256,372,736 71d648dbad007ed528024103612270dc<br>
+グラップラー刃牙 第10話 「戦場」 (DVD 640x480 DivX5.02 30fps).avi 252,815,360 a255b790e05ec7b6c26fa82a3d8452f3<br>
+グラップラー刃牙 第11話 「ガイア」 (DVD 640x480 DivX5.02 30fps).avi 289,259,520 9467036ae3c23af50c8215b10e5068b8<br>
+グラップラー刃牙 第12話 「噛み跡」 (DVD 640x480 DivX5.02 30fps).avi 239,855,616 04214304e50ef7801084bf4bec8e175a<br>
+グラップラー刃牙 第13話 「挑む」 (DVD 640x480 DivX5.02 30fps).avi 248,551,424 243d2a9f05fe3833884aaa1b500a1a6c<br>
+グラップラー刃牙 第14話 「夢を見たあと」 (DVD 640x480 DivX5.02 30fps).avi 272,945,152 c6336de6ab0167adba9d781d0882bade<br>
+グラップラー刃牙 第15話 「彼奴」 (DVD 640x480 DivX5.02 30fps).avi 245,960,704 e77349f1da16ef78bf46b1de2b22c85c<br>
+グラップラー刃牙 第16話 「聖地への道」 (DVD 640x480 DivX5.02 30fps).avi 231,485,440 b8926f3234250909673958c2643779a5<br>
+グラップラー刃牙 第17話 「集結」 (DVD 640x480 DivX5.02 30fps).avi 225,048,576 d8ec884f2dbf1cf9c4c4ad46a69986bd<br>
+グラップラー刃牙 第18話 「紐切り」 (DVD 640x480 DivX5.02 30fps).avi 253,739,008 6e9a23cb784521d3d8440d0a57670dc2<br>
+グラップラー刃牙 第19話 「対戦者」 (DVD 640x480 DivX5.02 30fps).avi 247,764,992 f1168556dce3ab4a5d9f64e29936de8e<br>
+グラップラー刃牙 第20話 「名誉ある敗北」 (DVD 640x480 DivX5.02 30fps).avi 298,256,384 09ca5dafc1e6360761fdaad901c82614<br>
+グラップラー刃牙 第21話 「殺傷本能」 (DVD 640x480 DivX5.02 30fps).avi 233,480,192 14139444e6d62af4053049bfdbfd677f<br>
+グラップラー刃牙 第22話 「両雄激突」 (DVD 640x480 DivX5.02 30fps).avi 293,249,024 f354b2cef16d68bac6eacf497e565f0a<br>
+グラップラー刃牙 第23話 「武神、死神」 (DVD 640x480 DivX5.02 30fps).avi 233,392,128 5aa611bda651ff3c03f16ecababa6691<br>
+グラップラー刃牙 第24話 「悪魔の報酬」 (DVD 640x480 DivX5.02 30fps).avi 277,313,536 b726238a65bfdb9cec3df6c6e898b081<br>
+<hr class="A">
+グラップラー刃牙 最大トーナメント編 第01話 「開始！」 (DVD 640x480 DivX5.02 30fps).avi 299,081,728 72fdf44fce4b27b6b2091e7484904265<br>
+グラップラー刃牙 最大トーナメント編 第02話 「超A級リザーバー」 (DVD 640x480 DivX5.02 30fps).avi 265,553,920 75aacef251eba40a3181ab7d4d0ed986<br>
+グラップラー刃牙 最大トーナメント編 第03話 「ファイナルターゲット」 (DVD 640x480 DivX5.02 30fps).avi 273,504,256 930726185657b4b32144509a04df32b1<br>
+グラップラー刃牙 最大トーナメント編 第04話 「オーガ降臨」 (DVD 640x480 DivX5.02 30fps).avi 294,158,336 fc9690c1b65c10850c43c9f9be479c64<br>
+グラップラー刃牙 最大トーナメント編 第05話 「ヤツと闘る権利」 (DVD 640x480 DivX5.02 30fps).avi 251,578,368 f6b4612b72fc27ded2e21d5affd8e81c<br>
+グラップラー刃牙 最大トーナメント編 第06話 「達人」 (DVD 640x480 DivX5.02 30fps).avi 257,273,856 e7c34809bb05572e3cd3e56c8643d75a<br>
+グラップラー刃牙 最大トーナメント編 第07話 「超えるべき者」 (DVD 640x480 DivX5.02 30fps).avi 267,022,336 8b7310d48df96a358356665635d76377<br>
+グラップラー刃牙 最大トーナメント編 第08話 「負けられぬ理由」 (DVD 640x480 DivX5.02 30fps).avi 271,622,144 df1ed03b1b0a13ad9ac36231b1374e6e<br>
+グラップラー刃牙 最大トーナメント編 第09話 「武人VS侠客」 (DVD 640x480 DivX5.02 30fps).avi 262,064,128 2b515620d3798f55f8d3dfbc9e9acc37<br>
+グラップラー刃牙 最大トーナメント編 第10話 「ファイティングキッズ」 (DVD 640x480 DivX5.02 30fps).avi 332,843,008 018cc69c16277b215ab670c659bd7f57<br>
+グラップラー刃牙 最大トーナメント編 第11話 「牙」 (DVD 640x480 DivX5.02 30fps).avi 279,400,448 68cd497bc0795cb89cecbc89de3849e1<br>
+グラップラー刃牙 最大トーナメント編 第12話 「究極！愚地流」 (DVD 640x480 DivX5.02 30fps).avi 263,419,904 1cbc0e9cff4a711fb88357eb22e06163<br>
+グラップラー刃牙 最大トーナメント編 第13話 「揃い踏み」 (DVD 640x480 DivX5.02 30fps).avi 248,258,560 991b61ad397551e161cacf2b22b57e10<br>
+グラップラー刃牙 最大トーナメント編 第14話 「プロレス勝負！」 (DVD 640x480 DivX5.02 30fps).avi 277,925,888 fb22da33b59d45c2f967eeb0561e3f50<br>
+グラップラー刃牙 最大トーナメント編 第15話 「悲運！音速拳」 (DVD 640x480 DivX5.02 30fps).avi 272,564,224 4dcfaeb1e0cb491b9d5ea65db786f5df<br>
+グラップラー刃牙 最大トーナメント編 第16話 「明日を捨てた男」 (DVD 640x480 DivX5.02 30fps).avi 304,611,328 3ce47e6f15cc65924844332c055434ee<br>
+グラップラー刃牙 最大トーナメント編 第17話 「独歩、舞う！」 (DVD 640x480 DivX5.02 30fps).avi 281,350,144 5d9497675976128aaab24439446289b5<br>
+グラップラー刃牙 最大トーナメント編 第18話 「継ぐ者」 (DVD 640x480 DivX5.02 30fps).avi 268,742,656 029830eaa5f6ce8fe408b5b950ef9807<br>
+グラップラー刃牙 最大トーナメント編 第19話 「達人VS怪物」 (DVD 640x480 DivX5.02 30fps).avi 265,437,184 bfd8b22a9462570afdab946c94c02a63<br>
+グラップラー刃牙 最大トーナメント編 第20話 「決勝(ファイナル)」 (DVD 640x480 DivX5.02 30fps).avi 246,034,432 17434a3e713fcbc19d602ead01cf9a21<br>
+グラップラー刃牙 最大トーナメント編 第21話 「シークレットウォー」 (DVD 640x480 DivX5.02 30fps).avi 287,145,984 00bc680b95f0869c4c1d9bcd1a813343<br>
+グラップラー刃牙 最大トーナメント編 第22話 「進化する天才」 (DVD 640x480 DivX5.02 30fps).avi 301,815,808 b710a77c6421fbc189c79c1b415e916d<br>
+グラップラー刃牙 最大トーナメント編 第23話 「決着」 (DVD 640x480 DivX5.02 30fps).avi 329,601,024 7b67edeeddca8b39a05d6f70d7268db9<br>
+グラップラー刃牙 最大トーナメント編 第24話 「邂逅(TV未放映)」 (DVD 640x480 DivX5.02 30fps).avi 255,043,584 9c3908a49f590c447a421fe4780cd242<br>
+<br></dd>
+<dt><span class="title">CLANNAD<b>◆</b></span>08/08/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD] CLANNAD -クラナド- ACTOR AND ACTRESS (640x480 DivX6.11).avi KcGM9kl3tD 440,124,574 823bd359b5e02f35e33affdc18fe4fc7<br>
+<hr class="A">
+[アニメ DVD] CLANNAD Invitation オリジナルプロモーションクリップ (856x480 DivX670 1080i).avi RutiXicZB0 33,558,016 a273462a27a52ec4796e182f45c09a2b<br>
+[アニメ DVD] CLANNAD Invitation ノンテロップOP (856x480 DivX670 1080i).avi RutiXicZB0 43,093,504 b562da82d68123f7b25fe54c09e16f4e<br>
+<hr class="A">
+[アニメ DVD] CLANNAD Invitation 「オリジナルプロモーションクリップ」 (704x480 16：9 x264 AAC).mp4 YUKKY1dzxv 33,871,942 48b7c06a56296a3760fbc8a17cebbcaa<br>
+[アニメ DVD] CLANNAD Invitation 「ノンテロップOP」 (704x480 16：9 x264 AAC).mp4 YUKKY1dzxv 38,962,345 2aaf9f9a5b61fbc65487cc7df66f6fda<br><br>
+[アニメ DVD] CLANNAD Invitation 「オリジナルプロモーションクリップ」 (704x480 16：9 x264 AAC 無加工版).mp4 YUKKY1dzxv 39,279,855 d24918713f023d8fa79eaa3a2eb7328a<br>
+[アニメ DVD] CLANNAD Invitation 「ノンテロップOP」 (704x480 16：9 x264 AAC 無加工版).mp4 YUKKY1dzxv 44,368,320 954df984a88c424d37aac3018afea280<br>
+<hr class="A">
+[アニメ] CLANNAD Invitation 01.特報プロモビデオ (DVD 704x480 NTSC16：9 QL97).wmv nVluF9DX4h 17,543,584 821d95c5df93b51ee626332bd24394a1<br>
+[アニメ] CLANNAD Invitation 02.宣伝用プロモビデオ (DVD 704x480 NTSC16：9 QL97).wmv nVluF9DX4h 24,346,438 f11ac4c1f0efae4dbdbfc25a1520216d<br>
+[アニメ] CLANNAD Invitation 03.オリジナルプロモーションクリップ (DVD 704x480 NTSC16：9 QL97).wmv nVluF9DX4h 57,560,646 b3bafbe25f34d5522e161fe3372f287c<br>
+[アニメ] CLANNAD Invitation 04.ノンクレジットオープニング (DVD 704x480 NTSC16：9 QL97).wmv nVluF9DX4h 66,881,240 ebc99d22bd0dd1e2d049f72417443957<br>
+[アニメ] CLANNAD Invitation 05.ノンクレジットエンディング (DVD 704x480 NTSC16：9 QL97).wmv nVluF9DX4h 45,488,078 370c44e443f46c183e09f2e896fbc3b9<br>
+<hr class="A">
+CLANNAD Invitation ノンテロップOP+ED (DVD 712x480 40：33 x264 Vorbis).mkv 1MSJX48jeZ 59,136,823 e21ee994a715cb134ebdbe85a8048fdc<br>
+CLANNAD Invitation 特報プロモビデオ／宣伝用プロモビデオ／オリジナルプロモーションクリップ (DVD 712x480 40：33 x264 Vorbis ﾁｬﾌﾟﾀｰ付).mkv 1MSJX48jeZ 43,851,912 194d8409bfee3e3452ea8dca7404e220<br>
+<hr class="A">
+[アニメ DVD] CLANNAD -クラナド- Vol.1 映像特典 「アニちゃんねる！ CLANNAD特集 ゲスト：中原麻衣」 (WMV9 640x480).wmv TALKca6VWU 554,046,699 4d1e13ad2c658e32b1de444a36398ef4<br>
+[アニメ DVD] CLANNAD -クラナド- Vol.1 映像特典 「石原監督スペシャルインタビュー 」 (WMV9 704x396).wmv TALKca6VWU 212,046,699 cb7f347c0f4bdf769403bee1a6b58114<br>
+[アニメ DVD] CLANNAD -クラナド- Vol.2 映像特典 「神田朱未スペシャルインタビュー 」 (WMV9 704x396).wmv TALKca6VWU 230,641,119 16e0b6dcd0104f62e08c082852034573<br>
+[アニメ DVD] CLANNAD -クラナド- Vol.3 映像特典 「野中藍スペシャルインタビュー」 (WMV9 704x396).wmv TALKca6VWU 198,215,958 2d3315b3a450374df6103bdc64ab7f2f<br>
+[アニメ DVD] CLANNAD -クラナド- Vol.4 映像特典 「井上喜久子スペシャルインタビュー」 (WMV9 704x396).wmv TALKca6VWU 294,105,435 28652c052fc1b195a796343ab79faea3<br>
+[アニメ DVD] CLANNAD -クラナド- 第01話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー).wmv TALKca6VWU 409,664,614 c450c5d49c7cf5363f2046cce636ae2a<br>
+[アニメ DVD] CLANNAD -クラナド- 第02話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー).wmv TALKca6VWU 348,192,632 ef0eaa23a268a06a9cadc3b98327f4e8<br>
+[アニメ DVD] CLANNAD -クラナド- 第03話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー rev2).wmv TALKca6VWU 324,864,596 3cd57fcc8da967b4f176603c5f80bee0<br>
+[アニメ DVD] CLANNAD -クラナド- 第04話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー).wmv TALKca6VWU 351,776,614 a550c0abefbf07253f856e1e8f5b2df1<br>
+[アニメ DVD] CLANNAD -クラナド- 第05話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー).wmv TALKca6VWU 335,120,632 dcc7857a87a5d8e777ca77eb20627d4c<br>
+[アニメ DVD] CLANNAD -クラナド- 第06話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー).wmv TALKca6VWU 344,688,614 64853c4ebebd957a13e7b69fc7ea8931<br>
+[アニメ DVD] CLANNAD -クラナド- 第07話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー ファイル名修正orz).wmv TALKca6VWU 335,808,614 070f68d50dd72203a85312a74f1c16dc<br>
+[アニメ DVD] CLANNAD -クラナド- 第08話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー ファイル名修正orz).wmv TALKca6VWU 335,744,614 517dc1976133b3e825bd850c25c6065c<br>
+[アニメ DVD] CLANNAD -クラナド- 第09話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー).wmv TALKca6VWU 313,600,614 55b232b8a89cba61a6562a7c671399a6<br>
+[アニメ DVD] CLANNAD -クラナド- 第10話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー rev2).wmv TALKca6VWU 373,376,614 4bce6d95bd5eeb244981bd45c6986cb0<br>
+[アニメ DVD] CLANNAD -クラナド- 第11話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー).wmv TALKca6VWU 358,992,632 ff5e05b9d2c0439e2f7c927cb1d014bb<br>
+[アニメ DVD] CLANNAD -クラナド- 第12話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー).wmv TALKca6VWU 364,688,614 5bc1822dd67dc7e2e4612534d15169fc<br>
+[アニメ DVD] CLANNAD -クラナド- 第13話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー).wmv 331,344,614 289e9e6a7155e69e7f4692ec2eb4e9e1<br>
+[アニメ DVD] CLANNAD -クラナド- 第14話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー).wmv 353,024,632 cb4cec2ddaff6dda599880f3b34a8ed3<br>
+[アニメ DVD] CLANNAD -クラナド- 第15話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー).wmv 406,176,614 b41e882782676de13f161a9b6a78693c<br>
+[アニメ DVD] CLANNAD -クラナド- 第16話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー).wmv 373,424,602 bab1c68fc5c67b7fa7d83da4d96c89dc<br>
+[アニメ DVD] CLANNAD -クラナド- 第17話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー).wmv 342,464,620 9d2f318e184641fd413cfe575b0e3619<br>
+[アニメ DVD] CLANNAD -クラナド- 第18話 (WMV9 704x480 NTSC 16：9[Par 40：33] +オーディオコメンタリー).wmv 349,152,602 c2b5935aaf845c46559e95789694179c<br>
+<hr class="A">
+[アニメ] CLANNAD -クラナド- Vol.1 映像特典1 「石原監督スペシャル・インタビュー」(DVD 704x480 16：9 DivX68 1500kbps).mkv Jv2kzX4v01 376,106,985 fa66dbc62d6a48de62d80e5223c8ec84<br>
+[アニメ] CLANNAD -クラナド- 第01話 「桜舞い散る坂道で」(コメンタリー音声付)(DVD 704x480 16：9 DivX68 Q2.8).mkv Jv2kzX4v01 299,738,832 a9db6b365f264f7976aca31ba3241211<br>
+[アニメ] CLANNAD -クラナド- 第02話 「最初の一歩」(コメンタリー音声付)(DVD 704x480 16：9 DivX68 Q2.8).mkv Jv2kzX4v01 252,973,933 0e7fb7c82fd396f224e18dd3b04c7a21<br>
+<hr class="A">
+[アニメ] CLANNAD Invitation オリジナルプロモーションクリップ (DVD 704x480 16：9 WMV9).wmv QZx3FRYLcG 27,096,779 b366db7cc0186ccd35d494ac937f7429<br>
+[アニメ] CLANNAD Invitation ノンテロップオープニング (DVD 704x480 16：9 WMV9).wmv QZx3FRYLcG 33,623,505 2ed1a3a3bf77a2b851d2d5f7a92b9d81<br>
+[アニメ] CLANNAD Invitation ノンテロップエンディング (DVD 704x480 16：9 WMV9).wmv QZx3FRYLcG 28,183,505 e3134f071f90be177d918376015606bf<br>
+[アニメ] CLANNAD Invitation 宣伝用プロモビデオ (DVD 704x480 16：9 WMV9).wmv QZx3FRYLcG 12,407,099 230f810f9dc8a85ca18e1fb8344ea870<br>
+[アニメ] CLANNAD Invitation 特報プロモビデオ (DVD 704x480 16：9 WMV9).wmv QZx3FRYLcG 8,550,637 15652102e800a05e7e7bde3a6ef619ca<br>
+[アニメ] CLANNAD -クラナド- DVD Vol.01 映像特典 古河渚役 中原麻衣 インタビュー (DVD 640x480 WMV9 インターレース保持).wmv QZx3FRYLcG 290,147,089 51240d20e94d2a563b0011417f7a157c<br>
+[アニメ] CLANNAD -クラナド- DVD Vol.01 映像特典 石原立矢監督 スペシャルインタビュー (DVD 704x480 16：9 WMV9 インターレース保持).wmv QZx3FRYLcG 118,092,743 fc1d6256ae2035a88183cb8fb4e4cabd<br>
+[アニメ] CLANNAD -クラナド- 第01回 「桜舞い散る坂道で」 (DVD 704x480 16：9 WMV9 コメンタリー切替可).wmv QZx3FRYLcG 277,648,888 90aa47a7fa622ef27ee203c810a9744c<br>
+[アニメ] CLANNAD -クラナド- 第02回 「最初の一歩」 (DVD 704x480 16：9 WMV9 コメンタリー切替可).wmv QZx3FRYLcG 233,312,924 a7985335e1ecd42efbfa70c68fb54482<br>
+[アニメ] CLANNAD -クラナド- 第03回 「涙のあとにもう一度」 (DVD 704x480 16：9 WMV9 コメンタリー切替可).wmv QZx3FRYLcG 216,144,924 35588c9487f20eaa0ae2f3edb8917c74<br>
+[アニメ] CLANNAD -クラナド- 第04回 「仲間をさがそう」 (DVD 704x480 16：9 WMV9 コメンタリー切替可).wmv QZx3FRYLcG 235,584,888 70cee904d022613e6d70a1957007946d<br>
+<hr class="A">
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) オリジナルプロモーションクリップ (PS3アプコン版 1280x720 DivX651).avi 5vEoAyLhCo 35,876,864 3672807dbd5d3ce74d9f31ab0b825f62<br>
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) ノンテロップオープニング (PS3アプコン版 1280x720 DivX651).avi 5vEoAyLhCo 49,750,016 3ee3533ff591a5e377423e6e1daf49bb<br>
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) ノンテロップエンディング (PS3アプコン版 1280x720 DivX651).avi 5vEoAyLhCo 31,698,944 47e3114ed03a81b0ec77b721135e61ce<br>
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) 宣伝用プロモビデオ (PS3アプコン版 1280x720 DivX651).avi 5vEoAyLhCo 16,885,760 9dd91005c09425e40a3e87b87fa93c6c<br>
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) 特報プロモビデオ (PS3アプコン版 1280x720 DivX651).avi 5vEoAyLhCo 12,392,448 1b6fb9973d45ea6da7a35defc8fa6a50<br><br>
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) オリジナルプロモーションクリップ (PS3アプコン版 1280x720 WMV9 CRCC32_8B8F3DC1).wmv 5vEoAyLhCo 50,008,404 ecdb951f798d5750db7fffc46c290114<br>
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) ノンテロップオープニング (PS3アプコン版 1280x720 WMV9 CRCC32_29CC3857).wmv 5vEoAyLhCo 61,895,130 febcd14cade0f1825a37f31a42544082<br>
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) ノンテロップエンディング (PS3アプコン版 1280x720 WMV9 CRCC32_F411FCA0).wmv 5vEoAyLhCo 44,103,130 b46b51d2df9b10bcd3ea8001e3be4dae<br>
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) 宣伝用プロモビデオ (PS3アプコン版 1280x720 WMV9 CRCC32_2F791216).wmv 5vEoAyLhCo 23,206,724 066aff4739322866f39cbe66bc344ddb<br>
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) 特報プロモビデオ (PS3アプコン版 1280x720 WMV9 CRCC32_963ED62A).wmv 5vEoAyLhCo 15,983,579 75897adfbd1e98fdda66ad2cc5335f4e<br><br>
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) オリジナルプロモーションクリップ (PS3アプコン版 1600x900 x264 AAC HDMI-cap).mp4 5vEoAyLhCo 46,374,942 7ee540b011cfe6c1a19aea4788de4802<br>
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) ノンテロップオープニング (PS3アプコン版 1600x900 x264 AAC HDMI-cap).mp4 5vEoAyLhCo 62,231,012 4131dc9774c31a06366b784030f2b1ca<br>
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) ノンテロップエンディング (PS3アプコン版 1600x900 x264 AAC HDMI-cap).mp4 5vEoAyLhCo 41,483,017 53de576e81097cac44043318cfec1e94<br>
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) 宣伝用プロモビデオ (PS3アプコン版 1600x900 x264 AAC HDMI-cap).mp4 5vEoAyLhCo 21,410,916 d31adc1e3ba00fdb0cc3d706e2e9625c<br>
+(アニメ)[DVD] CLANNAD -クラナド- Invitation (Kanon全巻購入特典) 特報プロモビデオ (PS3アプコン版 1600x900 x264 AAC HDMI-cap).mp4 5vEoAyLhCo 15,273,388 2ff67c0c0a45f08dec56f0b3bb56f427<br><br>
+(アニメ)[DVD] CLANNAD -クラナド- 第01話 「桜舞い散る坂道で」 (コメンタリ音声有り 704x396 DivX651).avi 5vEoAyLhCo 326,496,256 637712ec41fb905ba5a407603b75e368<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第02話 「最初の一歩」 (コメンタリ音声有り 704x396 DivX651).avi 5vEoAyLhCo 272,640,000 ad6f90dc409747eec9c785376d5423f9<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第03話 「涙のあとにもう一度」 (コメンタリ音声有り 704x396 DivX651).avi 5vEoAyLhCo 251,949,056 f2eb0b577335b12343d152560da61f93<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第04話 「仲間をさがそう」 (コメンタリ音声有り 704x396 DivX651).avi 5vEoAyLhCo 262,631,424 f2075105ac41d34bfe58765efffe9177<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第05話 「彫刻のある風景」 (コメンタリ音声有り 704x396 DivX651).avi 5vEoAyLhCo 250,011,648 3eaa4470ed0b1c8f1191fb6d56daa3ca<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第06話 「姉と妹の創立者祭」 (コメンタリ音声有り 704x396 DivX651).avi 5vEoAyLhCo 254,062,592 ec15c8ce92a93a326a0c2644521f8176<br><br>
+(アニメ)[DVD] CLANNAD -クラナド- 第01話 「桜舞い散る坂道で」 (コメンタリ音声有り 704x396 WMV9 CRC32_4D9EB845).wmv 5vEoAyLhCo 389,696,501 7402ff5c7b410fc7aec69eea2d018953<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第02話 「最初の一歩」 (コメンタリ音声有り 704x396 WMV9 CRC32_F31A85B7).wmv 5vEoAyLhCo 328,992,501 074127538d89a3a946bb6a94e19d5575<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第03話 「涙のあとにもう一度」 (コメンタリ音声有り 704x396 WMV9 CRC32_54E77C70).wmv 5vEoAyLhCo 311,232,501 e0de5af0efe8c11c1e211b688aa0719f<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第04話 「仲間をさがそう」 (コメンタリ音声有り 704x396 WMV9 CRC32_D8CC996D).wmv 5vEoAyLhCo 457,600,553 af8b66bf8019d30a2b29138d969551c5<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第05話 「彫刻のある風景」 (コメンタリ音声有り 704x396 WMV9 CRC32_32A80083).wmv 5vEoAyLhCo 436,080,553 533053ff8b9d22f85ebee7b5a40efc9d<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第06話 「姉と妹の創立者祭」 (コメンタリ音声有り 704x396 WMV9 CRC32_633D8F28).wmv 5vEoAyLhCo 444,672,553 220586850553faf9561d0469b112eb8f<br><br>
+(アニメ)[DVD] CLANNAD -クラナド- 第01話 「桜舞い散る坂道で」 (PS3アプコン版 1440x810 x264 AAC コメンタリ音声有り).mp4 5vEoAyLhCo 396,925,598 9d5b6da16ffc2e5caa726cbeb3fb21f9<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第02話 「最初の一歩」 (PS3アプコン版 1440x810 x264 AAC コメンタリ音声有り).mp4 5vEoAyLhCo 321,924,057 cd0f6c5065d08dc9a995c0724e201543<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第03話 「涙のあとにもう一度」 (PS3アプコン版 1440x810 x264 AAC コメンタリ音声有り).mp4 5vEoAyLhCo 305,485,248 3caa2cf07dba5c22db17947520cfbd01<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第04話 「仲間をさがそう」 (PS3アプコン版 1280x720 x264 AAC コメンタリ音声有り).mp4 5vEoAyLhCo 311,783,311 200256bf285196ba17e9ebe3e0a14763<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第05話 「彫刻のある風景」 (PS3アプコン版 1280x720 x264 AAC コメンタリ音声有り).mp4 5vEoAyLhCo 309,528,723 433b8b58c98c1faa93218b3a776b3e6e<br>
+(アニメ)[DVD] CLANNAD -クラナド- 第06話 「姉と妹の創立者祭」 (PS3アプコン版 1280x720 x264 AAC コメンタリ音声有り).mp4 5vEoAyLhCo 317,956,583 a044b4bd4be71c318f6bcd435a8b6f52<br>
+<hr class="A">
+CLANNAD オリジナルプロモーションクリップ [DVD DivX670 704×396].avi czZ9LtxOQP 24,824,818 36069372194af182e14eb6fddc98b22e<br>
+CLANNAD ノンテロップオープニング [DVD DivX670 704×396].avi czZ9LtxOQP 32,486,294 a3e45d443fba86306f97b512e522a367<br>
+CLANNAD ノンテロップエンディング [DVD DivX670 704×396].avi czZ9LtxOQP 14,744,332 5d8d08d09dd4038584b101784ffee26b<br>
+CLANNAD 宣伝用プロモビデオ [DVD DivX670 704×396].avi czZ9LtxOQP 11,750,120 743f7d0cd3ba2707713ba37ee44cb278<br>
+CLANNAD 特報プロモビデオ [DVD DivX670 704×396].avi czZ9LtxOQP 7,714,052 cb8895ffedc2299c6cb6b6789405acee<br>
+CLANNAD DVD 第01巻 映像特典 アニちゃんねる！ CLANNAD特集 ゲスト：中原麻衣 [DVD DivX680 640×480].avi czZ9LtxOQP 683,540,480 4f33591ac7e993cbffc28c95d9a1f0e0<br>
+CLANNAD DVD 第01巻 映像特典 石原監督スペシャルインタビュー [DVD DivX680 640×480].avi czZ9LtxOQP 247,840,256 1c9a632075685466c109b015cc9fb6bb<br>
+CLANNAD DVD 第02巻 映像特典 神田朱未スペシャルインタビュー [DVD DivX680 704×396].avi czZ9LtxOQP 301,609,814 263d23dd0fa4c7f98c3194b5d71bc1c2<br>
+CLANNAD DVD 第03巻 映像特典 野中藍スペシャルインタビュー [DVD DivX680 704×396 rev].avi czZ9LtxOQP 240,231,122 8f7b024390d2ead935c109bd28b1c281<br>
+CLANNAD DVD 第04巻 映像特典 井上喜久子スペシャルインタビュー [DVD DivX680 704×396 rev].avi czZ9LtxOQP 216,069,960 e5942708ff7d38cbd80e32f55e6cd99e<br>
+CLANNAD DVD 第05巻 映像特典 能登麻美子スペシャルインタビュー [DVD DivX682 704×396].avi czZ9LtxOQP 249,851,238 406672ee2134cb50f9c197181bce03af<br>
+CLANNAD 第01話 「桜舞い散る坂道で」 [DVD DivX680 704×396].avi czZ9LtxOQP 255,773,740 ad7a5aab8aa9b5c6dcb61d4fbe2b0cff<br>
+CLANNAD 第02話 「最初の一歩」 [DVD DivX680 704×396].avi czZ9LtxOQP 211,873,036 00d5d3db357445f1ad66096be85804af<br>
+CLANNAD 第03話 「涙のあとにもう一度」 [DVD DivX680 704×396].avi czZ9LtxOQP 193,036,930 4ad47805b91f9331ce0f33ca7721962c<br>
+CLANNAD 第04話 「仲間をさがそう」 [DVD DivX680 704×396].avi czZ9LtxOQP 206,640,060 19854cd507d8ab47a209bc5c76406c49<br>
+CLANNAD 第05話 「彫刻のある風景」 [DVD DivX680 704×396].avi czZ9LtxOQP 197,298,920 0c4ffa9f859ce86572cd63cd132c846e<br>
+CLANNAD 第06話 「姉と妹の創立者祭」 [DVD DivX680 704×396].avi czZ9LtxOQP 197,182,884 52d8d7dc346a06748c7a3f3d8290a723<br>
+CLANNAD 第07話 「星型の気持ち」 [DVD DivX680 704×396].avi czZ9LtxOQP 249,716,342 f770f300a7efae1ac15ceedf67534c68<br>
+CLANNAD 第08話 「黄昏に消える風」 [DVD DivX680 704×396 rev].avi czZ9LtxOQP 244,749,220 449edc6e5a6d17002df18139b472702b<br>
+CLANNAD 第09話 「夢の最後まで」 [DVD DivX680 704×396 rev].avi czZ9LtxOQP 244,824,500 2af2d4981ef7387ce89cc690990bfe9a<br>
+CLANNAD 第10話 「天才少女の挑戦」 [DVD DivX680 704×396].avi czZ9LtxOQP 277,436,598 4396a7e3cd45c7ce98ab919857ac560a<br>
+CLANNAD 第11話 「放課後の狂想曲」 [DVD DivX680 704×396].avi czZ9LtxOQP 260,484,378 9afc715ff57e02533f331bc009f2deb8<br>
+CLANNAD 第12話 「かくされた世界」 [DVD DivX680 704×396].avi czZ9LtxOQP 265,866,158 d34b2169e8d13a3498a480d133098bc8<br>
+CLANNAD 第13話 「思い出の庭を」 [DVD DivX682 704×396].avi czZ9LtxOQP 252,117,040 751d7d41e462d7fd1583b017e9cb107c<br>
+CLANNAD 第14話 「Theory of Everything」 [DVD DivX682 704×396].avi czZ9LtxOQP 272,484,796 da80e1279d3b120fa19c169f69c6dfec<br>
+CLANNAD 第15話 「困った問題」 [DVD DivX682 704×396].avi czZ9LtxOQP 318,938,774 b8e841d84582984c2d58afdafdc55a4c<br><br>
+CLANNAD 第01話 「桜舞い散る坂道で」 [DVD WMV9 704×480].wmv czZ9LtxOQP 317,728,906 4db21a7fbe47cea343ad98aacc0de43d<br>
+CLANNAD 第02話 「最初の一歩」 [DVD WMV9 704×480].wmv czZ9LtxOQP 246,656,906 d43ee7e888baa4b998267d0882166318<br>
+CLANNAD 第03話 「涙のあとにもう一度」 [DVD WMV9 704×480].wmv czZ9LtxOQP 228,384,906 9faae2ae4061285a1145801ea146cc07<br>
+CLANNAD 第04話 「仲間をさがそう」 [DVD WMV9 704×480].wmv czZ9LtxOQP 268,912,906 f752efb5623f16af5f570df6bd09da4b<br>
+CLANNAD 第05話 「彫刻のある風景」 [DVD WMV9 704×480].wmv czZ9LtxOQP 255,760,906 1ce1754ce8c4e7b84b2daf89b57b521f<br>
+CLANNAD 第06話 「姉と妹の創立者祭」 [DVD WMV9 704×480].wmv czZ9LtxOQP 259,344,906 a58a2f30359831c4dc90c35e2a997be7<br>
+CLANNAD 第07話 「星型の気持ち」 [DVD WMV9 704×480].wmv czZ9LtxOQP 257,728,906 8eed92316ae5986906f8671487d7dbff<br>
+CLANNAD 第08話 「黄昏に消える風」 [DVD WMV9 704×480].wmv czZ9LtxOQP 241,360,906 2c67b5f91e03240468374452d8db9ed7<br>
+CLANNAD 第09話 「夢の最後まで」 [DVD WMV9 704×480].wmv czZ9LtxOQP 230,800,906 27c6514f1e2e3fa15e920ee588793510<br>
+CLANNAD 第10話 「天才少女の挑戦」 [DVD WMV9 704×480].wmv czZ9LtxOQP 260,384,888 694c831a5f4afefa244215dcf6115095<br>
+CLANNAD 第11話 「放課後の狂想曲」 [DVD WMV9 704×480].wmv czZ9LtxOQP 253,520,906 20fa1a4d51670d41926d1d0e2781f7b8<br>
+CLANNAD 第12話 「かくされた世界」 [DVD WMV9 704×480].wmv czZ9LtxOQP 250,864,906 782e8dfc3f7fce498a9447d9ab947c90<br>
+CLANNAD 第13話 「思い出の庭を」 [DVD WMV9 704×480].wmv czZ9LtxOQP 206,544,658 4a34b3a65ce180e32e57046b058853ca<br>
+CLANNAD 第14話 「Theory of Everything」 [DVD WMV9 704×480].wmv czZ9LtxOQP 240,688,794 b9b854763f2bf11cd8928801ae02249b<br>
+CLANNAD 第15話 「困った問題」 [DVD WMV9 704×480].wmv czZ9LtxOQP 309,584,906 0771de4864da70156b6ace1d946858fb<br>
+<hr class="A">
+CLANNAD 第xx話 「全話音声切り替え可能」 (DVD 704x396 DivX680)(zip).avi YAyAoONEVq 7,948,239 cf994f67ee927686742615620782ada7<br>
+CLANNAD 第01話 「桜舞い散る坂道で」 (DVD 704x396 DivX680).avi YAyAoONEVq 314,222,592 0526ca327249370c112723492b654ce6<br>
+CLANNAD 第02話 「最初の一歩」 (DVD 704x396 DivX680).avi YAyAoONEVq 244,168,704 0cbf5f26e3eb0ebb37f8391bcab12e23<br>
+<hr class="A">
+CLANNAD -クラナド- Special「もうひとつの世界 智代編」 (DVD アプコン 1280x720)[Veoh].wmv 410,902,464 76233caf4e14fbbb3dbd603630e72559<br>
+<br></dd>
+<dt><span class="title">CLANNAD 劇場版<b>◆</b></span>08/03/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+［アニメ］劇場版CLANNAD -クラナド- 限定前売り券特典ディスク 「デモムービー」(DVDRip WMV9AP 640x480 QL93).wmv JXQxacSITN 173,821,444 d4e1705df036979a260e43a28455dbec<br>
+［アニメ］劇場版CLANNAD -クラナド- 限定前売り券特典ディスク 「メグメルPV(Short)」(DVDRip WMV9AP 640x480 QL93).wmv JXQxacSITN 13,175,200 2f1cdfeeddee895d7ce41b1ea886a52f<br>
+［アニメ］劇場版CLANNAD -クラナド- 限定前売り券特典ディスク 「特報その１」(DVDRip WMV9AP 640x480 QL93).wmv JXQxacSITN 9,035,060 b0b44f3e4c87ff7c466c43c5e2056f02<br>
+［アニメ］劇場版CLANNAD -クラナド- 限定前売り券特典ディスク 「特報その２」(DVDRip WMV9AP 640x480 QL93).wmv JXQxacSITN 5,688,298 431a490519c041f15f6cf58ee6289e83<br>
+<hr class="A">
+【アニメ】[DVD] 劇場版CLANNAD-クラナド-限定前売り券特典ディスク  [704x480(sar=10：11) x264+AAC].mp4 GdolXZ6NXy 177,362,534 a5eaf0d43a2f7995995a8a214fd8d087<br>
+<hr class="A">
+[アニメ DVD] 劇場版 CLANNAD -クラナド-  (WMV9 704x480 NTSC 16：9[Par 40：33] WMA 5.1ch).wmv TALKca6VWU 1,562,385,518 f0acf12ae4ddcbeea6db60f1c4009230<br>
+<hr class="A">
+劇場版 CLANNAD ボーナスDVD [DVD DivX680 704×396].avi czZ9LtxOQP 245,545,780 59550790a7c4b9659390ca509363d9c5<br>
+劇場版 CLANNAD [DVD DivX680 704×396].avi czZ9LtxOQP 831,486,976 90f72fd94aa3c42628d231080be92e10<br>
+<br></dd>
+<dt><span class="title">グラビテーション<b>◆</b></span>08/03/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] グラビテーション GRAVITATION Vol.1 Chapter Menu (640x480 XviD Vorbis).mkv K2rlaMywrJ 14,900,191 2597ed0ce1baa0ab25053fc5ad46112f<br>
+[アニメ DVD] グラビテーション GRAVITATION Vol.2 Chapter Menu (640x480 XviD Vorbis).mkv K2rlaMywrJ 19,171,232 47e4c7bfd1db38d797410e40d033b015<br>
+[アニメ DVD] グラビテーション GRAVITATION Vol.3 Chapter Menu (640x480 XviD Vorbis).mkv K2rlaMywrJ 22,360,889 7f40625750f0ecee89400b957acfdbe0<br>
+[アニメ DVD] グラビテーション GRAVITATION Vol.4 Chapter Menu (640x480 XviD Vorbis).mkv K2rlaMywrJ 20,678,521 64e4ca06bee298e61c16b1b678057a8e<br>
+[アニメ DVD] グラビテーション GRAVITATION 第01話 「Track-1 GRAVITATION」 (640x480 XviD Vorbis).mkv K2rlaMywrJ 335,675,641 b46ad45a59fc46dd25e2615a62e4ee4b<br>
+[アニメ DVD] グラビテーション GRAVITATION 第02話 「Track-2 Live in soul」 (640x480 XviD Vorbis).mkv K2rlaMywrJ 492,695,194 e680e6b85f2f62484083b197697915b8<br>
+[アニメ DVD] グラビテーション GRAVITATION 第03話 「Track-3 Stray heart」 (640x480 XviD Vorbis).mkv K2rlaMywrJ 383,595,873 4899a25a0f80d62ed63cdfd38ed01391<br>
+[アニメ DVD] グラビテーション GRAVITATION 第04話 「Track-4 Wave shock」 (640x480 XviD Vorbis).mkv K2rlaMywrJ 289,572,681 4630f3fffb1ea042beca20a6de2c9803<br>
+[アニメ DVD] グラビテーション GRAVITATION 第05話 「Track-5 Windeig road」 (640x480 XviD Vorbis).mkv K2rlaMywrJ 273,284,419 7654ede55eeecfc1daf68bf880f1ac17<br>
+[アニメ DVD] グラビテーション GRAVITATION 第06話 「Track-6 Shady scheme」 (640x480 XviD Vorbis).mkv K2rlaMywrJ 310,607,030 c43ab9d41a7bb86d8d1ac2637cbd0103<br>
+[アニメ DVD] グラビテーション GRAVITATION 第07話 「Track-7 Ground zero」 (640x480 XviD Vorbis).mkv K2rlaMywrJ 324,359,179 8143e0d8acb2c79cdfe21e89bdd7891d<br>
+[アニメ DVD] グラビテーション GRAVITATION 第08話 「Track-8 Song and song」 (640x480 XviD Vorbis).mkv K2rlaMywrJ 335,168,930 5e230c43f0fcc00a9a56f6455ac94576<br>
+[アニメ DVD] グラビテーション GRAVITATION 第09話 「Track-9 The deepest brain」 (640x480 XviD Vorbis).mkv K2rlaMywrJ 271,992,463 5e43f61d30a703fd8c713f9a0bb0a81a<br>
+[アニメ DVD] グラビテーション GRAVITATION 第10話 「Track-10 Heads or tails」 (640x480 XviD Vorbis).mkv K2rlaMywrJ 257,987,473 316a8f48f37f04a0a5f7c5e00cac2bc2<br>
+[アニメ DVD] グラビテーション GRAVITATION 第11話 「Track-11 Secret day」 (640x480 XviD Vorbis).mkv K2rlaMywrJ 296,126,256 8687ee358a2695fe7543727bd49e246b<br>
+[アニメ DVD] グラビテーション GRAVITATION 第12話 「Track-12 Breathless」 (640x480 XviD Vorbis).mkv K2rlaMywrJ 295,573,804 91bb829ed84ca029210d44ef0e649452<br>
+[アニメ DVD] グラビテーション GRAVITATION 第13話 「Track-13 Got it all」 (640x480 XviD Vorbis).mkv K2rlaMywrJ 302,366,368 f201de1d6e1bfb47b67da94f41170d1c<br><br>
+[アニメ DVD] OVA グラビテーション GRAVITATION Chapter Menu (640x480 JPG).zip K2rlaMywrJ 2,939,565 94decf2daf6adc98173153c80b03baed<br>
+[アニメ DVD] OVA グラビテーション GRAVITATION (640x480 XviD Vorbis).mkv K2rlaMywrJ 671,429,837 6e5acce00bf127feadcd62b582d79714<br>
+<br></dd>
+<dt><span class="title">グランディーク<b>◆</b></span>05/09/19 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+(DVD)グランディーク ～外伝～ 特典映像 田中理恵エンディング曲[VGA-DivX5].avi 7Sx3YOKwkJ 28,896,276 f71eca4cfeef91645d4a56cc378522ae<br>
+(DVD)グランディーク ～外伝～ 特典映像 堀江由衣インタビュー[VGA-DivX5].avi 7Sx3YOKwkJ 37,818,644 8ddd4aae65410f8ab941a03e3fc0f2bf<br>
+(DVD)グランディーク ～外伝～ [640x360 DivX5 120fps].avi 7Sx3YOKwkJ 323,797,250 48e6fd8b48247f3a808c1e5d9578fdf8<br>
+<hr class="A">
+(DVD)グランディーク ～外伝～ 映像特典「田中理恵エンディング曲レコーディング風景」(640x480 DivX5.11).avi pb4KLu109e 46,634,200 dca31c044d9405c3301167e79cac9046<br>
+(DVD)グランディーク ～外伝～ 映像特典「堀江由衣インタビュー」(640x480 DivX5.11).avi pb4KLu109e 91,221,728 6ca7c6f47620874a4ee5d19fe4caf4d4<br>
+(DVD)グランディーク ～外伝～ (640x352 DivX5.11 120fps).avi pb4KLu109e 412,798,574 6e5214982846dc11b494bf7eeaa57cee<br>
+<br></dd>
+<dt><span class="title">CLAMP IN WONDERLAND<b>◆</b></span>08/01/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] CLAMP IN WONDERLAND (720x480 4：3 x264 AC3).mkv eU00mod3BZ 132,028,161 6ad5ab3173adb41d9b13a02bb6e7ca1d<br>
+<br></dd>
+<dt><span class="title">グリーングリーン<b>◆</b></span>07/09/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD] OVA グリーングリーン 映像特典 [640x480 wmv9].wmv 7Sx3YOKwkJ 480,381,278 decc2b9b7cf40aa8cd06d95d4982d863<br>
+[DVD] OVA グリーングリーン [640x480 wmv9].wmv 7Sx3YOKwkJ 316,556,374 df50512087c8b0d6714a59659edea657<br>
+<hr class="A">
+グリーングリーン OVA (640x480 DVD 30fps).avi 201,211,550 0ad8d6298c263901e3a330ab6f1d7d7f<br>
+<hr class="B">
+[アニメ DVD] グリーングリーン 映像特典 01巻 DVD販売CM (640x480 WMV9).wmv aaLPbRVQ8B 18,316,077 ab234a45962b8a64b70ee1c44d15f3af<br>
+[アニメ DVD] グリーングリーン 映像特典 01巻 放送開始直前CM Ver.1 (640x480 WMV9).wmv aaLPbRVQ8B 4,731,471 69f062e5132fe0edbb688994dcfcd00f<br>
+[アニメ DVD] グリーングリーン 映像特典 01巻 放送開始直前CM Ver.2 (640x480 WMV9).wmv aaLPbRVQ8B 4,715,025 fdef226da21c183be87b194131538f6c<br>
+[アニメ DVD] グリーングリーン 映像特典 01巻 放送開始直前CM Ver.3 (640x480 WMV9).wmv aaLPbRVQ8B 3,596,697 fc544ff1f28a992f13e1d1cbb53546a0<br>
+[アニメ DVD] グリーングリーン 映像特典 01巻 放送開始直前CM Ver.4 (640x480 WMV9).wmv aaLPbRVQ8B 3,596,697 334ce5818236e6ea5df14be72d5dee7b<br>
+[アニメ DVD] グリーングリーン 映像特典 02巻 プロモーション映像 (640x480 WMV9).wmv aaLPbRVQ8B 47,092,693 9ced1d24c429352d33d39f059ac971dd<br>
+[アニメ DVD] グリーングリーン 映像特典 03巻 ノンクレジットオープニング (640x480 WMV9).wmv aaLPbRVQ8B 31,012,876 f04330b5fd67ab582822cd01307b5c7f<br>
+[アニメ DVD] グリーングリーン 映像特典 03巻 ノンクレジットエンディング (640x480 WMV9).wmv aaLPbRVQ8B 8,404,890 b030672c3d650cebeaef6d4ee7b4cfe2<br>
+[アニメ DVD] グリーングリーン 映像特典 04巻 ノンクレジットエンディング 別バージョン1 (640x480 WMV9).wmv aaLPbRVQ8B 7,964,320 430780220af8ff14f52be1bea07df142<br>
+[アニメ DVD] グリーングリーン 映像特典 04巻 ノンクレジットエンディング 別バージョン2 (640x480 WMV9).wmv aaLPbRVQ8B 7,651,846 87a00f2ed87309551e6761ef5e383415<br>
+[アニメ DVD] グリーングリーン 映像特典 05巻 Kanenone Jam CM Ver.1 (640x480 WMV9).wmv 1KmZIQ7VvU 12,699,475 925fbc9ea06333196db6b1087c32a5bf<br>
+[アニメ DVD] グリーングリーン 映像特典 05巻 Kanenone Jam CM Ver.2 (640x480 WMV9).wmv aaLPbRVQ8B 31,770,510 110802d69a6b74681cce483ef344306e<br>
+[アニメ DVD] グリーングリーン 映像特典 05巻 Kanenone Jam CM Ver.3 (640x480 WMV9).wmv 1KmZIQ7VvU 12,370,841 17f83daf31a5aadfd756f02b278dcbb4<br>
+[アニメ DVD] グリーングリーン 映像特典 05巻 Kanenone Jam CM Ver.4 (640x480 WMV9).wmv 1KmZIQ7VvU 12,239,407 129ce890d2ed511064357e54f2865bbe<br>
+[アニメ DVD] グリーングリーン 映像特典 05巻 Kanenone Jam CM Ver.5 (640x480 WMV9).wmv 1KmZIQ7VvU 31,584,292 36cc16c137e261188a51f20cf9b74eca<br>
+[アニメ DVD] グリーングリーン 映像特典 05巻 Kanenone Jam CM Ver.6 (640x480 WMV9).wmv 1KmZIQ7VvU 12,370,841 94f8692d3fdfb978ad7c466fbe596e76<br>
+[アニメ DVD] グリーングリーン 映像特典 06巻 ノンクレジットオープニング Ver.2 (640x480 WMV9).wmv aaLPbRVQ8B 27,476,876 f4df751dfbb8a9d8e3f25f57cb5c2618<br>
+[アニメ DVD] グリーングリーン 映像特典 06巻 ノンクレジットエンディング テレビ埼玉Ver (640x480 WMV9).wmv aaLPbRVQ8B 7,684,876 43414b403cd880f3ee96c5e52f7ad066<br>
+[アニメ DVD] グリーングリーン 映像特典 06巻 ノンクレジットエンディング 最終話版 (640x480 WMV9).wmv aaLPbRVQ8B 23,717,016 128cf01ecfac7fd1b232707194758e2e<br>
+[アニメ DVD] グリーングリーン 映像特典 06巻 植田佳奈 実写CM (640x480 WMV9).wmv aaLPbRVQ8B 7,421,042 4da1212b9b81a954056470f4b26f20a5<br>
+[アニメ DVD] グリーングリーン 映像特典 06巻 飯野千種の秘蔵アカペラソング 「Eカップ純情」 (640x480 WMV9).wmv aaLPbRVQ8B 5,764,092 6aba28b4dba66a9d00bb807d1e05d7e1<br>
+[アニメ DVD] グリーングリーン 第01話 「山奥でどっきどき」 (640x480 WMV9).wmv aaLPbRVQ8B 230,615,394 bb6024ff4293f8bd0b4f5f938b27d672<br>
+[アニメ DVD] グリーングリーン 第02話 「露天風呂ですってんころりん」 (640x480 WMV9 混合処理rev2).wmv aaLPbRVQ8B 254,871,287 3837e9076904541f34df0f203dc2396a<br>
+[アニメ DVD] グリーングリーン 第03話 「森の中でどっこいしょ」 (640x480 WMV9).wmv aaLPbRVQ8B 239,783,394 75edfe68fd4ca6c0c5dcfb89d66f4062<br>
+[アニメ DVD] グリーングリーン 第04話 「女子寮でてんてこまい」 (640x480 WMV9).wmv aaLPbRVQ8B 210,231,394 cb2cacf36eda336682a76a66e9189271<br>
+[アニメ DVD] グリーングリーン 第05話 「保健室でばったんきゅー」 (640x480 WMV9).wmv aaLPbRVQ8B 224,279,445 67289083658bff28829f30996a16af99<br>
+[アニメ DVD] グリーングリーン 第06話 「体育倉庫であっちっち」 (640x480 WMV9).wmv aaLPbRVQ8B 239,399,445 86f8f2c33cc4e4df8874ce206c7baca7<br>
+[アニメ DVD] グリーングリーン 第07話 「プールサイドでびっしょびしょ」 (640x480 WMV9).wmv aaLPbRVQ8B 229,751,459 7712bd14dda7b1bd423db7e491fba5b4<br>
+[アニメ DVD] グリーングリーン 第08話 「朝風呂ですったもんだ」 (640x480 WMV9).wmv aaLPbRVQ8B 215,351,445 967a778882e647da426fdb05494098ab<br>
+[アニメ DVD] グリーングリーン 第09話 「肝試しですたこらさっさ」 (640x480 WMV9).wmv aaLPbRVQ8B 189,623,445 66f23752155b2211b3da887d5d403f3a<br>
+[アニメ DVD] グリーングリーン 第10話 「図書室でどったんばったん」 (640x480 WMV9).wmv aaLPbRVQ8B 198,103,445 37761d4184c708803d1009a78403da8b<br>
+[アニメ DVD] グリーングリーン 第11話 「運命にふにゃふにゃ」 (640x480 WMV9).wmv aaLPbRVQ8B 193,111,445 e80ad274cd160a7071075a5eb30a14ad<br>
+[アニメ DVD] グリーングリーン 第12話 「鐘ノ音にサヨウナラ」 (640x480 WMV9).wmv aaLPbRVQ8B 370,119,445 1b86e8548b11a279df0d578dfecbcc4a<br><br>
+[アニメ DVD] グリーングリーン キャラクターDVD 早苗&若菜 「...HAPPY」 (640x480 WMV9).wmv aaLPbRVQ8B 32,374,786 5dace47dea393c7d7c4467e21e836b71<br>
+[アニメ DVD] グリーングリーン キャラクターDVD 早苗&若菜 「ショートストーリー」 (640x480 WMV9).wmv aaLPbRVQ8B 89,954,042 043520bfc98290589301141d75eaf285<br>
+[アニメ DVD] グリーングリーン キャラクターDVD 早苗&若菜 「永遠の星」 (640x480 WMV9).wmv aaLPbRVQ8B 88,360,778 ee3658f70b1757f3205c386714a648c3<br>
+[アニメ DVD] グリーングリーン キャラクターDVD 早苗&若菜 「鐘ノ音学級委員会 その1」 (640x480 WMV9).wmv aaLPbRVQ8B 117,408,008 6f6de7fdcaa1e78d03b57dd01d11dfbd<br>
+[アニメ DVD] グリーングリーン キャラクターDVD 早苗&若菜 「実写プロモーション映像」 (640x480 WMV9).wmv aaLPbRVQ8B 185,599,588 ad446c0f95f5459e9411e0a438dffded<br>
+[アニメ DVD] グリーングリーン キャラクターDVD 双葉＆千種 「キスして」 (640x480 WMV9).wmv aaLPbRVQ8B 42,124,439 7314b1c46c2005a49adcb8ffd3064782<br>
+[アニメ DVD] グリーングリーン キャラクターDVD 双葉＆千種 「ショートストーリー」 (640x480 WMV9).wmv aaLPbRVQ8B 92,171,657 17225a0aafb424fba4f6294604e95203<br>
+[アニメ DVD] グリーングリーン キャラクターDVD 双葉＆千種 「鐘ノ音学級委員会 その2」 (640x480 WMV9).wmv aaLPbRVQ8B 92,798,541 99faedd15f3b3bf04a2f19a8851884a8<br>
+[アニメ DVD] グリーングリーン キャラクターDVD 双葉＆千種 「総力取材 グリーングリーンを攻略せよ！」 (640x480 WMV9).wmv aaLPbRVQ8B 164,182,074 4913c477a5952c32869736e5dc132de4<br>
+[アニメ DVD] グリーングリーン キャラクターDVD みどり＆麗華 「より抜き実写特番 その2」 (640x480 WMV9).wmv 1KmZIQ7VvU 155,018,476 8f40c857a0ec933cb1db539040ab9c8d<br>
+[アニメ DVD] グリーングリーン キャラクターDVD みどり＆麗華 「ショートストーリー」 (640x480 WMV9).wmv 1KmZIQ7VvU 91,690,607 238cc2e1951e6f754a96df81098939c4<br>
+[アニメ DVD] グリーングリーン キャラクターDVD みどり＆麗華 「チェリー」 (640x480 WMV9).wmv 1KmZIQ7VvU 35,526,491 aef9250b4845ef2da96c9ec7d70f7fb2<br>
+[アニメ DVD] グリーングリーン キャラクターDVD みどり＆麗華 「ロケット」 (640x480 WMV9).wmv 1KmZIQ7VvU 32,661,791 54d8ebac56daa000a62aefa891c33e28<br>
+[アニメ DVD] グリーングリーン キャラクターDVD みどり＆麗華 「鐘ノ音学級委員会 その3」 (640x480 WMV9).wmv 1KmZIQ7VvU 78,526,802 bc78045c97aa8e9bc2effc583858ae41<br><br>
+[アニメ DVD] グリーングリーン エロリューションズ THIRTEEN 「DVD販促CM」 (640x480 WMV9).wmv 26,676,796 fa34123dc4c72ed9bc6124eda79659b2<br>
+[アニメ DVD] グリーングリーン エロリューションズ THIRTEEN 「私はだあれ？」 (640x480 WMV9).wmv 13,927,386 b207835e85690ec34f1c102b33a57f4c<br>
+[アニメ DVD] グリーングリーン エロリューションズ THIRTEEN (640x480 WMV9).wmv aaLPbRVQ8B 335,065,937 c36945c5572cc06c1b9606a90180b119<br>
+<hr class="A">
+[アニメ][DVD] グリーングリーン エロリューションズ おまけ映像1 (640x480 WMV9 QL90).wmv 8,155,593 f29666bdb9b456f287e09ca63b8f114c<br>
+[アニメ][DVD] グリーングリーン エロリューションズ おまけ映像2 (640x480 WMV9 QL90).wmv 12,292,632 d34d1f36237c7b652e4896e8cabc8dfd<br>
+[アニメ][DVD] グリーングリーン エロリューションズ (640x480 WMV9 QL90).wmv 215,753,907 5c70ddf8e264ad89d1a127ef2ef3bf10<br>
+<hr class="A">
+(DVD) グリーングリーン エロリューションズ 特典映像 (640x480 DivX5.1 QB95) [CRC_FC81].avi OKSTYzwjuL 14,654,882 5146aed1da7578e40cc96229d9afb0f9<br>
+(DVD) グリーングリーン エロリューションズ 特典映像 警告 (640x480 DivX5.1 QB95) [CRC_3FB1].avi OKSTYzwjuL 2,161,168 e28a0bfbd9b0cc83e5191cf11840d38e<br>
+(DVD) グリーングリーン 第13話 「グリーングリーン エロリューションズ」 (640x480 DivX5.1 QB95 120fps 192kbps) [CRC_F7E3].avi OKSTYzwjuL 388,239,356 1a7e4b1fff4ad4240f6b03de2332f680<br><br>
+(DVD) グリーングリーン エロリューションズ 特典映像 (640x480 WMV9 QB95) [CRC_A17C].avi OKSTYzwjuL 12,191,416 90df2bbf7ef471d8cc59d9f88a428f9a<br>
+(DVD) グリーングリーン 第13話 「グリーングリーン エロリューションズ」 (640x480 WMV9 q93 120fps) [CRC_4E37].avi OKSTYzwjuL 370,762,522 37222fac906713e883a393e2519b41da<br>
+<hr class="A">
+グリーングリーン エロリューションズ [640x480 120fps WMV9].avi 288,369,752 a108e9777bb5d90d38d82ac31a117d0f<br>
+<br></dd>
+<dt><span class="title">グリーンレジェンド乱<b>◆</b></span>04/10/05 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+(DVD)グリーンレジェンド乱 Ⅰ 「たびだち」(DivX5 640x480) [CRC32_1EFA70CB].avi pb4KLu109e 564,835,448 15e0d394c400f3c91b8f21b0ecf3acef<br>
+(DVD)グリーンレジェンド乱 Ⅱ 「グリーン5」(DivX5 640x480) [CRC32_8715248B].avi pb4KLu109e 283,306,430 e733381e14f3dc84ac3ccfeb903a8a53<br>
+(DVD)グリーンレジェンド乱 Ⅲ 「聖緑」(DivX5 640x480) [CRC32_7A280D27].avi pb4KLu109e 336,605,380 79c59f12497732dcbc734cbedc2e1236<br>
+<br></dd>
+<dt><span class="title">くりぃむレモン<b>◆</b></span>06/06/22 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+(アニメ) くりぃむレモン New Generation vol.1 特典映像 (DVD 640x480 WMV9)[CRC 2BC9].avi ZOMBI08ifI 142,778,368 388e2dc69ac7dfd59f779bd00228f13b<br>
+(アニメ) くりぃむレモン New Generation vol.2 特典映像 (DVD 640x480 WMV9)[CRC 8366].avi ZOMBI08ifI 240,347,136 55cff31250e5962b3a03b9964d6e5ee1<br>
+(アニメ) くりぃむレモン New Generation vol.1 亜美 前編「Ｉ・妹・美」(DVD 640x480 WMV9)[CRC 6FF6].avi ZOMBI08ifI 192,249,856 632a90beb983237a2fa96833e0635eec<br>
+(アニメ) くりぃむレモン New Generation vol.2 レトルト美女八景 (DVD 640x480 WMV9)[CRC 3C25].avi ZOMBI08ifI 166,744,064 45d21e78cc299b44ec1bd1ebf4cbb1a4<br>
+(アニメ) くりぃむレモン New Generation vol.3 亜美 前編「もういちど・・・」(DVD 640x480 WMV9)[CRC 0B3B].avi ZOMBI08ifI 148,226,048 516b1f28ce8b37307c98df0180f05513<br>
+(アニメ) くりぃむレモン New Generation vol.4 「クリーチャーバスター」(DVD 640x480 WMV9)[CRC DAE0].avi ZOMBI08ifI 126,539,776 a339fa96ebde18d0d3d75bca8c7b874b<br>
+<br></dd>
+<dt><span class="title">CLAYMORE クレイモア<b>◆</b></span>08/06/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+(アニメ DVD) CLAYMORE 第01話 「大剣」 (704x480 16：9 H264 29.71fps Vorbis).mkv nX0fg0FCz5 236,593,749 ee8a9d85081adc22fee7994021970d3f<br>
+(アニメ DVD) CLAYMORE 第02話 「黒の書」 (704x480 16：9 H264 31.23fps Vorbis rev1).mkv nX0fg0FCz5 319,224,023 334f756a8be6441de7236d1f945c083d<br>
+<hr class="A">
+【アニメ】[DVD] CLAYMORE クレイモア 第01話 「大剣 -クレイモア-」 (704x396 WMV9).wmv pcT6OjjAFE 298,187,855 2cefe7a014b50ae9b24cc319315bff6d<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第02話 「黒の書」 (704x396 WMV9).wmv pcT6OjjAFE 262,623,374 3835b0dc873b0126dfacb4322f2734ca<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第03話 「まほろばの闇」 (704x396 WMV9).wmv pcT6OjjAFE 241,498,487 836b03461b946902db72a13c6c16e043<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第04話 「クレアの覚醒」 (704x396 WMV9).wmv pcT6OjjAFE 221,812,631 d13bdf6c9cde2606d58cb6817ba9c7b8<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第05話 「微笑のテレサ」 (704x396 WMV9).wmv pcT6OjjAFE 269,966,513 bd802c371ff274ebd61d2b8b4b26fd11<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第06話 「テレサとクレア」 (704x396 WMV9).wmv pcT6OjjAFE 217,150,190 bda3f04b7be4be2d1d0e6e6ddeb95dcf<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第07話 「死者の烙印」 (704x396 WMV9).wmv pcT6OjjAFE 251,892,365 5580cfbd58adc496830b45c3850d6136<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第08話 「覚醒」 (704x396 WMV9).wmv pcT6OjjAFE 328,267,583 4143a0d124c02a83837802f245038e2c<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第09話 「斬り裂く者たち Ⅰ」 (704x396 WMV9).wmv pcT6OjjAFE 250,428,671 d83fb7f6cd977d44a5f2a42f1cd3a872<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第10話 「斬り裂く者たち Ⅱ」 (704x396 WMV9).wmv pcT6OjjAFE 234,015,563 1273a1234c3de518829f1ae65a0be9c0<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第11話 「斬り裂く者たち Ⅲ」 (704x396 WMV9).wmv pcT6OjjAFE 265,583,660 3de8a52f7534daa9b03aa07b6017814d<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第12話 「果て無き墓標 Ⅰ」 (704x396 WMV9).wmv pcT6OjjAFE 244,351,874 0dbcccc903edb33fe4c413249d194925<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第13話 「果て無き墓標 Ⅱ」 (704x396 WMV9).wmv pcT6OjjAFE 260,436,056 79f5c98bbdea2abb238d55fcb0967b96<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第14話 「闘う資格」 (704x396 WMV9).wmv pcT6OjjAFE 202,085,648 d1b2bbb7530425855a9038b62ce7d98d<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第15話 「魔女の顎門 Ⅰ」 (704x396 WMV9).wmv pcT6OjjAFE 208,450,256 465ca7ef7908d96c93f078f2043c7002<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第16話 「魔女の顎門 Ⅱ」 (704x396 WMV9).wmv pcT6OjjAFE 207,044,123 9cf9288493853d9faa40a06c73ab7061<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第17話 「魔女の顎門 Ⅲ」 (704x396 WMV9).wmv pcT6OjjAFE 236,383,781 7be3a8eb23e446e33932e2f05c2f0f94<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第18話 「北の戦乱 Ⅰ」 (704x396 WMV9).wmv pcT6OjjAFE 265,600,106 98e76e2f14c2f7bb6e29b2cfa1be3191<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第19話 「北の戦乱 Ⅱ」 (704x396 WMV9).wmv pcT6OjjAFE 292,316,633 344b5c5d9ed2ea1899fc3b1e6a5aaf20<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第20話 「北の戦乱 Ⅲ」 (704x396 WMV9).wmv pcT6OjjAFE 230,356,322 2ba25c0d41e6f42fa3496166f9b68cc1<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第21話 「ピエタ侵攻 Ⅰ」 (704x396 WMV9).wmv pcT6OjjAFE 349,581,599 af93355b95879ebf64040b0b0724be6b<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第22話 「ピエタ侵攻 Ⅱ」 (704x396 WMV9).wmv pcT6OjjAFE 335,964,317 2df0986492eb0e49b2640e644efbd46f<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第23話 「臨界点 Ⅰ」 (704x396 WMV9).wmv pcT6OjjAFE 417,034,874 557c0422b8206f8ac2a641c4b4840ab4<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第24話 「臨界点 Ⅱ」 (704x396 WMV9).wmv pcT6OjjAFE 449,285,474 6c0566d3492bc356c1778d872e517241<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第25話 「誰が為に」 (704x396 WMV9).wmv pcT6OjjAFE 312,134,063 d3cc64c6c603dd6701b408ffaba466b5<br>
+【アニメ】[DVD] CLAYMORE クレイモア 第26話 「受け継ぐ者へ」 (704x396 WMV9).wmv pcT6OjjAFE 335,166,620 cf4212174d13126db9038a24e2a1d40b<br>
+<hr class="A">
+CLAYMORE クレイモア 第01話 「大剣」(DVD 704x396 WMV9).wmv 6xq53mfVU5 350,312,909 b0cac0d641312f2028218b9b22c83365<br>
+CLAYMORE クレイモア 第02話 「黒の書」(DVD 704x396 WMV9).wmv 6xq53mfVU5 308,200,895 9e1f509662acccb32d3d893f1fcbe456<br>
+CLAYMORE クレイモア 第03話 「まほろばの闇」(DVD 704x396 WMV9).wmv wjZyz1b6PU 295,976,895 c6411bcffd79745dbec692d9a415a5e5<br>
+CLAYMORE クレイモア 第04話 「クレアの覚醒」(DVD 704x396 WMV9).wmv 6xq53mfVU5 270,312,895 b9527da385644642c512b34b384aa2fe<br>
+CLAYMORE クレイモア 第05話 「微笑のテレサ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 322,070,481 40a3fe78515450606d7f25e747b26ba7<br>
+CLAYMORE クレイモア 第06話 「テレサとクレア」(DVD 704x396 WMV9).wmv 6xq53mfVU5 247,685,209 97f16e5696809a0d0048390f518b20f3<br>
+CLAYMORE クレイモア 第07話 「死者の烙印」(DVD 704x396 WMV9).wmv 6xq53mfVU5 260,104,895 1a3519129e4eec023bbbfa914bfa72b6<br>
+CLAYMORE クレイモア 第08話 「覚醒」(DVD 704x396 WMV9).wmv 6xq53mfVU5 321,976,895 ae819b33a5234c6f9a52afed5bc7c0ef<br>
+CLAYMORE クレイモア 第09話 「斬り裂く者たちⅠ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 294,136,909 1f4958337658a7e0a3317a53d9aff9db<br>
+CLAYMORE クレイモア 第10話 「斬り裂く者たちⅡ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 248,952,895 60888614431a6dc3a5f84139d48fe403<br>
+CLAYMORE クレイモア 第11話 「斬り裂く者たちⅢ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 285,720,895 ba3ff893f33f3c90144f45cf93bd290e<br>
+CLAYMORE クレイモア 第12話 「果て無き墓標Ⅰ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 250,808,895 824a91bdfb067b77fd17801caceffb6c<br>
+CLAYMORE クレイモア 第13話 「果て無き墓標Ⅱ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 279,480,895 2e14362afc6f2ee110f7670d707ce636<br>
+CLAYMORE クレイモア 第14話 「闘う資格」(DVD 704x396 WMV9).wmv 6xq53mfVU5 225,496,909 012ebc407a3233b8e0383e9385a3841f<br>
+CLAYMORE クレイモア 第15話 「魔女の顎門Ⅰ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 226,216,909 7c9f5cb9ce103a776ce553f1d0cacd6c<br>
+CLAYMORE クレイモア 第16話 「魔女の顎門Ⅱ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 232,248,895 e57452b2c008d11ee5a339707b4ef55a<br>
+CLAYMORE クレイモア 第17話 「魔女の顎門III」(DVD 704x396 WMV9).wmv 6xq53mfVU5 259,400,895 94b7944f29183a8294d16ccde536fc61<br>
+CLAYMORE クレイモア 第18話 「北の戦乱Ⅰ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 305,205,094 eeb7561cb1fa9c06c79cfa2a57de8caa<br>
+CLAYMORE クレイモア 第19話 「北の戦乱Ⅱ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 319,464,895 a1b3cf99d24a800264d481cbf6ec7176<br>
+CLAYMORE クレイモア 第20話 「北の戦乱Ⅲ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 267,208,909 c3a5985379c1a9de7d1b91ed91d5d4c9<br>
+CLAYMORE クレイモア 第21話 「ピエタ侵攻Ⅰ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 394,408,909 1c10e10ca08920f3b37a727031528d7f<br>
+CLAYMORE クレイモア 第22話 「ピエタ侵攻Ⅱ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 385,784,895 5c5dece6a19520342547e0ab1c0a13c9<br>
+CLAYMORE クレイモア 第23話 「臨界点Ⅰ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 480,120,895 5580610dad1d1613fbf1610ba60de65f<br>
+CLAYMORE クレイモア 第24話 「臨界点Ⅱ」(DVD 704x396 WMV9).wmv 6xq53mfVU5 521,352,895 e8a9430e2da2c04094256bd654f349b3<br>
+CLAYMORE クレイモア 第25話 「誰が為に」(DVD 704x396 WMV9).wmv wjZyz1b6PU 336,344,895 d98b3575f99066d06c4dc23d69496a82<br>
+CLAYMORE クレイモア 第26話 「受け継ぐものへ」(DVD 704x396 WMV9).wmv wjZyz1b6PU 349,384,769 7ef0f2a0fb431882ea7261677856038e<br>
+<hr class="A">
+CLAYMORE クレイモア Sequence.1 映像特典 「DVD販促用 店頭プロモーション映像」 (DVD 704x396 XviD110).avi ion6NlC8Fx 67,848,192 f5afe02ab12762483580474dc2cd3377<br>
+CLAYMORE クレイモア Sequence.1 映像特典 「スタッフインタビュー 音響監督 本田保則」 (DVD 704x396 XviD110).avi ion6NlC8Fx 147,607,552 887b3fdd7f2195d9b966bb3fa02a884c<br>
+CLAYMORE クレイモア Sequence.1 映像特典 「スタッフインタビュー 監督 田中洋之」 (DVD 704x396 XviD110).avi ion6NlC8Fx 110,970,880 2f52042c77a33578670c4cf014e809c2<br>
+CLAYMORE クレイモア Sequence.1 映像特典 「スタッフインタビュー 美術監督 緒続学」 (DVD 704x396 XviD110).avi ion6NlC8Fx 117,250,048 b05b2128f6da34c0e98b7317bbf87e26<br>
+CLAYMORE クレイモア Sequence.1 映像特典 「ノンクレジットOP」 (DVD 704x396 XviD110).avi ion6NlC8Fx 38,150,144 7229ec29ada2d9df1fd858c628cc916f<br>
+CLAYMORE クレイモア Sequence.1 映像特典 「ノンクレジットED」 (DVD 704x396 XviD110).avi ion6NlC8Fx 20,701,184 17c1c428a70e982978eecccc83b84b79<br>
+CLAYMORE クレイモア Sequence.1 映像特典 「先行プロモーション映像」 (DVD 704x396 XviD110).avi ion6NlC8Fx 60,246,016 f9ff165eef2be30590e33fe475f4159d<br>
+CLAYMORE クレイモア Sequence.1 映像特典 「美術設定の仕事 ～KUSANAGI現場リポート～」 (DVD 704x396 XviD110).avi ion6NlC8Fx 203,452,416 65e26dfde105e27855e4f220c0a8e2c6<br>
+<hr class="A">
+CLAYMORE クレイモア  Limited Edition Sequence.1 特典disc DVD販促用広報プロモーション映像 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 35,473,674 29684eb02421f721c8ca9d70e997b28d<br>
+CLAYMORE クレイモア  Limited Edition Sequence.1 特典disc 《extra》 美術設定の仕事 ～KUSANAGI現場リポート～ (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 93,414,248 bad242f539ef66de938a259132ffa21f<br>
+CLAYMORE クレイモア  Limited Edition Sequence.1 特典disc スタッフインタビュー 音響監督 本田保則 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 69,653,432 5ba3b0e50f4f152448c4c086551b074e<br>
+CLAYMORE クレイモア  Limited Edition Sequence.1 特典disc スタッフインタビュー 監督 田中洋之 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 51,347,690 0caea6486e41713442ea64300d1fded4<br>
+CLAYMORE クレイモア  Limited Edition Sequence.1 特典disc ノンクレジット・オープニング (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 17,636,573 18f7cc314fa7105c3892f482d7f2c114<br>
+CLAYMORE クレイモア  Limited Edition Sequence.1 特典disc ノンクレジット・エンディング (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 8,451,622 a6122b1f74011f9ee546592af80f1dac<br>
+CLAYMORE クレイモア  Limited Edition Sequence.1 特典disc 先行プロモーション映像 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 28,181,273 81dcb4a059c4ea2bb0a5bc40d7400e7b<br>
+CLAYMORE クレイモア 第01話 「大剣」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 299,450,946 c75a7dd2dc87a489215c60c137d97fa1<br>
+CLAYMORE クレイモア 第02話 「黒の書」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 256,691,130 b93be54f11066ab7a0b7664a67b7abdd<br>
+CLAYMORE クレイモア 第03話 「まほろばの闇」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 179,074,239 44471e90573570f406404f3a1ba3cd8c<br>
+CLAYMORE クレイモア 第04話 「クレアの覚醒」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 167,348,241 06ac74bc9c4d4e5f397d06531feaf4cf<br>
+CLAYMORE クレイモア 第05話 「微笑のテレサ」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 188,802,048 296899b24cec51faf02f6aae107611bb<br>
+CLAYMORE クレイモア 第06話 「テレサとクレア」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 185,586,855 159ed67b4c0acd33a5e856fdc422739e<br>
+CLAYMORE クレイモア 第07話 「死者の烙印」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 209,137,527 180084a5d9af14835fc0015617a02abb<br>
+CLAYMORE クレイモア 第08話 「覚醒」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 271,147,170 d13f6544ac6f2e881c6aa1a2be828991<br>
+CLAYMORE クレイモア 第09話 「斬り裂く者たちⅠ」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 234,758,559 f66e11b8893d2bf97aa4be95d9937a89<br>
+CLAYMORE クレイモア 第10話 「斬り裂く者たちⅡ」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 210,122,451 35cf3646b6e0e9504d9a8cca1a0e0a1d<br>
+CLAYMORE クレイモア 第11話 「斬り裂く者たちⅢ」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 233,862,252 e0c129b53d9a5f764272182cbaa02a8f<br>
+CLAYMORE クレイモア 第12話 「果て無き墓標Ⅰ」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 213,115,623 8a4d893c2ce1257602a1d61c14ec4d04<br>
+CLAYMORE クレイモア 第13話 「果て無き墓標Ⅱ」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 277,304,347 66dc644e21cbeb7db401c304001c6963<br>
+CLAYMORE クレイモア 第14話 「闘う資格」 (DVD 704x478 WMV9 16：9 PAR40：33).wmv unkoaVInQ4 201,521,193 d0cd9d67d196c209723c7950881b66f5<br><br>
+CLAYMORE クレイモア 第01話 「大剣」 (DVD 704x396 x264).avi unkoaVInQ4 197,083,136 e2d094270dc7c2b6dda7815f66fa004d<br>
+CLAYMORE クレイモア 第02話 「黒の書」 (DVD 704x396 x264).avi unkoaVInQ4 185,430,016 91870d113ae7579e4c1c2382a1ce2f0c<br>
+CLAYMORE クレイモア 第03話 「まほろばの闇」 (DVD 704x396 x264).avi unkoaVInQ4 178,001,920 f6972f068822868c18b875e946a92817<br>
+CLAYMORE クレイモア 第04話 「クレアの覚醒」 (DVD 704x396 x264).avi unkoaVInQ4 171,915,264 5b7b25dc1f17692c54108ad3b698ad4b<br>
+CLAYMORE クレイモア 第05話 「微笑のテレサ」 (DVD 704x396 x264).avi unkoaVInQ4 193,652,736 e9c3108e48f960b31055dda13190e5ea<br>
+CLAYMORE クレイモア 第06話 「テレサとクレア」 (DVD 704x396 x264).avi unkoaVInQ4 176,271,360 9d33ffdbb5bad2bde4e60f4605bcc380<br>
+CLAYMORE クレイモア 第07話 「死者の烙印」 (DVD 704x396 x264).avi unkoaVInQ4 197,541,888 3a2203ab37576a403b7b1088273c3c18<br>
+CLAYMORE クレイモア 第08話 「覚醒」 (DVD 704x396 x264).avi unkoaVInQ4 254,072,832 b247522ac5533fcd0a3aeceb017d2a16<br>
+CLAYMORE クレイモア 第09話 「斬り裂く者たちⅠ」 (DVD 704x396 x264).avi unkoaVInQ4 203,319,296 5a0bde27df14d0cc494c4c635c5562c0<br>
+CLAYMORE クレイモア 第10話 「斬り裂く者たちⅡ」 (DVD 704x396 x264).avi unkoaVInQ4 210,028,544 7687e95289c950e729a3acc99726a026<br>
+CLAYMORE クレイモア 第11話 「斬り裂く者たちⅢ」 (DVD 704x396 x264).avi unkoaVInQ4 235,366,400 e6b35722e49d99ed50e5b3c5455cf4bd<br>
+CLAYMORE クレイモア 第12話 「果て無き墓標Ⅰ」 (DVD 704x396 x264).avi unkoaVInQ4 222,945,280 cd15a853547c6e761a943e3025005f97<br>
+CLAYMORE クレイモア 第13話 「果て無き墓標Ⅱ」 (DVD 704x396 x264).avi unkoaVInQ4 216,313,856 72762e581d7b41ee2bf98cf8ca41d814<br>
+CLAYMORE クレイモア 第14話 「闘う資格」 (DVD 704x396 x264).avi unkoaVInQ4 171,448,320 38567b3eeecbbdb5a8affa75f5351a4f<br>
+<br></dd>
+<dt><span class="title">紅 KURENAI<b>◆</b></span>09/02/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] 紅 -Kurenai- VOL.1 映像特典 本編未使用シーン(コンテ絵+プレスコ音声)(704x396 WMV9).avi 122,550,216 f96fd5db1d84408a08490a24be0f2c12<br>
+[アニメ DVD] 紅 -Kurenai- VOL.2 映像特典 本編未使用シーン(コンテ絵+プレスコ音声)(704x396 WMV9).avi 91,916,296 bd317c94607fa92b34c8e2d1117c063f<br>
+[アニメ DVD] 紅 -Kurenai- 第01話「極夜」(704x396 WMV9).avi 298,876,642 9e98bf7981d23e661db3b55f5e428f42<br>
+[アニメ DVD] 紅 -Kurenai- 第02話「溝と流れと」(704x396 WMV9).avi 300,063,018 ffba9e490a17c126b41a9569066c2c1d<br>
+[アニメ DVD] 紅 -Kurenai- 第03話「偽者の顔」(704x396 WMV9).avi 298,878,954 cdada80c2269502be497943ee62b1bb2<br>
+[アニメ DVD] 紅 -Kurenai- 第04話「才物」(704x396 WMV9).avi 298,886,726 a1bdfb1e50a5696e65a85b06681ad642<br>
+<hr class="A">
+【アニメ】[DVD] 紅 KURENAI 01 映像特典 「本編未使用シーン（コンテ絵＋プレスコ音声）」 (704x396 WMV9).wmv 49,963,763 5b227ee34aac9930d2c4e55105aa1aa8<br>
+【アニメ】[DVD] 紅 KURENAI 02 映像特典 「本編未使用シーン（コンテ絵＋プレスコ音声）」 (704x396 WMV9 rev.2).wmv 41,534,288 d7f061c11cb2f61d7ef01b0bb01f0fb2<br>
+【アニメ】[DVD] 紅 KURENAI 03 映像特典 「本編未使用シーン（コンテ絵＋プレスコ音声）」 (704x396 WMV9).wmv 43,335,587 fea2269dc48b27db4ad60de9e1cd20ee<br>
+【アニメ】[DVD] 紅 KURENAI 04 映像特典 「本編未使用シーン（コンテ絵＋プレスコ音声）」 (704x396 WMV9).wmv 49,601,537 f736d431732227a8fc3354a5a967c12c<br>
+【アニメ】[DVD] 紅 KURENAI 05 映像特典 「本編未使用シーン（コンテ絵＋プレスコ音声）」 (704x396 WMV9).wmv 44,454,221 ae1e80d47d372bd922af174cfa5fa3de<br>
+【アニメ】[DVD] 紅 KURENAI 06 映像特典 「エンドカード集」 (704x396 WMV9).wmv 10,523,447 a2beed3432c5206d5e9b8c28111aceb3<br>
+【アニメ】[DVD] 紅 KURENAI 06 映像特典 「テレビCM集」 (640x480 WMV9).wmv 43,053,887 82235bbf45ba041c6681cf3e6159612b<br>
+【アニメ】[DVD] 紅 KURENAI 06 映像特典 「ノンテロップオープニング 『Love Jump』」 (704x396 WMV9 WMA Lossless QL97).wmv 107,490,091 b81bb43db65c855b1837599d5b77fff6<br>
+【アニメ】[DVD] 紅 KURENAI 06 映像特典 「ノンテロップエンディング 『crossing days』」 (704x396 WMV9 WMA Lossless QL97).wmv 17,930,961 c0f41d67018d4a51bdffffc8b8662448<br>
+【アニメ】[DVD] 紅 KURENAI 06 映像特典 「本編未使用シーン（コンテ絵＋プレスコ音声）」 (704x396 WMV9).wmv 28,845,377 f588e3b899cf8789ea70870667524a40<br>
+【アニメ】[DVD] 紅 KURENAI 第01話 「極夜」 (704x396 WMV9 2コメンタリー切替可).wmv 317,879,548 0823b7878f422ca7de8fcefca40bec0d<br>
+【アニメ】[DVD] 紅 KURENAI 第02話 「溝と流れと」 (704x396 WMV9 2コメンタリー切替可).wmv 327,479,548 7ae8e51a13ee62032972d7fe5e45f4f0<br>
+【アニメ】[DVD] 紅 KURENAI 第03話 「偽者の顔」 (704x396 WMV9 2コメンタリー切替可 rev.2).wmv 332,791,548 d8ec076872968e98ab155b1fa299bd1e<br>
+【アニメ】[DVD] 紅 KURENAI 第04話 「才物」 (704x396 WMV9 2コメンタリー切替可 rev.2).wmv 329,783,548 d5c555f72cedfd4333fd3c95c84eedb0<br>
+【アニメ】[DVD] 紅 KURENAI 第05話 「望み」 (704x396 WMV9 2コメンタリー切替可).wmv 363,319,548 a68859047ca7cb88dcf837f80af5d481<br>
+【アニメ】[DVD] 紅 KURENAI 第06話 「貴方の頭上に光が輝くでしょう」 (704x396 WMV9 2コメンタリー切替可).wmv 334,231,548 7e75dc9584f401c1c107eb3c29e3f3f6<br>
+【アニメ】[DVD] 紅 KURENAI 第07話 「女」 (704x396 WMV9 2コメンタリー切替可).wmv 324,887,548 8439eec7db027aad039323872eea9f9b<br>
+【アニメ】[DVD] 紅 KURENAI 第08話 「自愛と臆病と」 (704x396 WMV9 2コメンタリー切替可).wmv 345,895,658 5e8ba284041df9ea7390f81be9a2c93f<br>
+【アニメ】[DVD] 紅 KURENAI 第09話 「貴方と私と」 (704x396 WMV9 2コメンタリー切替可).wmv 310,263,548 88a9c1c5443c6f9a822dd0c5352e6abe<br>
+【アニメ】[DVD] 紅 KURENAI 第10話 「慣れの恐怖」 (704x396 WMV9 2コメンタリー切替可).wmv 323,543,570 45baaf0e7c9814565ca2a5d0d69f07a8<br>
+【アニメ】[DVD] 紅 KURENAI 第11話 「われ思考う」 (704x396 WMV9 2コメンタリー切替可).wmv 466,455,548 de1b6f798c0197c7905e70f59857d566<br>
+【アニメ】[DVD] 紅 KURENAI 第12話 「われ存在り」 (704x396 WMV9 2コメンタリー切替可).wmv 395,879,372 2e56d8444d3619e959d45aa763d8da0b<br>
+<div class="sup">pcT6OjjAFE</div>
+<br></dd>
+<dt><span class="title">紅三四郎<b>◆</b></span>05/07/16 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+(アニメ)[DVD]紅三四郎　映像特典「12話エンディングテロップ付き」(640x480 WMV9).avi 4,577,280 e3b109ae39f973ef6a3dc1a41fd89f0a<br>
+(アニメ)[DVD]紅三四郎　映像特典「12話オープニングテロップ付き」(640x480 WMV9).avi 33,601,536 8884483663d0076ef0bd05db0e9d3668<br>
+(アニメ)[DVD]紅三四郎　映像特典「旧エンディング」(640x480 WMV9).avi 2,727,936 78e0c5f0d63083a947011812eed8f0a1<br>
+(アニメ)[DVD]紅三四郎　映像特典「新エンディングVer1999」(640x480 WMV9).avi 11,270,144 162eddb68e26a8c4d8566357e0a8c9ec<br>
+(アニメ)[DVD]紅三四郎　映像特典「新エンディング」(640x480 WMV9).avi 2,715,648 d00fe5dccf1bdff558b4de45e8bfa459<br>
+(アニメ)[DVD]紅三四郎　第01話「紅の風雲児」(640x480 WMV9).avi 365,269,096 f952f63683c44fd3a8dc7712122e462d<br>
+(アニメ)[DVD]紅三四郎　第02話「摩天楼の片目」(640x480 WMV9).avi 256,950,376 5c20306b7ef3528e340e0ba576598e28<br>
+(アニメ)[DVD]紅三四郎　第03話「猫魔族の挑戦」(640x480 WMV9).avi 266,322,024 b9a70091860c551fd55cf400a9134625<br>
+(アニメ)[DVD]紅三四郎　第04話「燃ゆる大平原」(640x480 WMV9).avi 299,485,288 049aaec5d200cc580afa03a5ba8510c6<br>
+(アニメ)[DVD]紅三四郎　第05話「荒野の暴れん坊」(640x480 WMV9).avi 288,385,128 38bb230d76c26576a459ccc0b89455a2<br>
+(アニメ)[DVD]紅三四郎　第06話「必殺！紅十字星」(640x480 WMV9).avi 317,980,776 9fcd1d3c4791f543c2c3fae1a0ae097d<br>
+(アニメ)[DVD]紅三四郎　第07話「海の虎（ハリマオ）」【修正版】(640x480 WMV9).avi 314,968,064 f3d5fd53ab78fd2d08f9b775b5e8f2fb<br>
+(アニメ)[DVD]紅三四郎　第08話「魔の超人マシン」(640x480 WMV9).avi 286,158,952 266c8a6dbf034e265fabef852ce660cf<br>
+(アニメ)[DVD]紅三四郎　第09話「白銀の対決」(640x480 WMV9).avi 343,152,744 1de09efa6410bc10b82dd89df0d634cb<br>
+(アニメ)[DVD]紅三四郎　第10話「幻の独眼帝王」(640x480 WMV9).avi 273,782,888 e1c2dd45f17db1d5dd3007e1d3b5a7bf<br>
+(アニメ)[DVD]紅三四郎　第11話「キリマンジャロの戦士」(640x480 WMV9).avi 279,234,560 23dd586e2e93b220a1ab49843a397f56<br>
+(アニメ)[DVD]紅三四郎　第12話「夕陽の決斗」(640x480 WMV9).avi 314,880,000 f8e2c70ca6dc14b51056ff272933b4b1<br>
+(アニメ)[DVD]紅三四郎　第13話「紅脱出作戦」(640x480 WMV9).avi 257,531,904 f140b79b68379f556c60109e4d1db4db<br>
+(アニメ)[DVD]紅三四郎　第14話「殺し屋オリンピック」(640x480 WMV9).avi 321,660,928 c0653ad1e575e658d18a03c5da0494cb<br>
+(アニメ)[DVD]紅三四郎　第15話「決死の復讐犬」(640x480 WMV9).avi 289,763,328 d3ba5cecfd84c82eb7a86274967de773<br>
+(アニメ)[DVD]紅三四郎　第16話「地獄の三四郎」(640x480 WMV9).avi 287,922,176 892cf13588742ddde1d48a72f6399080<br>
+(アニメ)[DVD]紅三四郎　第17話「片目の鬼将軍」(640x480 WMV9).avi 255,043,584 156a9c35770a4ec34949e8cf689d930b<br>
+(アニメ)[DVD]紅三四郎　第18話「墓場をあばけ」(640x480 WMV9).avi 236,902,400 894689db822d76e217a56066eda6c98f<br>
+(アニメ)[DVD]紅三四郎　第19話「裏切りの報酬」(640x480 WMV9).avi 220,006,400 0cdc55dc598042c72c622f5911069f2a<br>
+(アニメ)[DVD]紅三四郎　第20話「片目の白虎(前編)」(640x480 WMV9).avi 278,509,568 46c5e547a772fefbe63de4f2d714d309<br>
+(アニメ)[DVD]紅三四郎　第21話「片目の白虎(後編)」(640x480 WMV9).avi 306,528,256 fe6ef407b78aaa9fbf82765bf0657f8e<br>
+(アニメ)[DVD]紅三四郎　第22話「必殺マグマ流」(640x480 WMV9).avi 322,068,480 29fc91198b8ae3897f40dcb4c0c26c91<br>
+(アニメ)[DVD]紅三四郎　第23話「三四郎絶体絶命」(640x480 WMV9).avi 240,965,632 91bc35d36c29f037b40a9d3603ea5bb4<br>
+(アニメ)[DVD]紅三四郎　第24話「極意天地崩し」(640x480 WMV9).avi 288,612,352 66809dfa67859264136afc76fc959a5f<br>
+(アニメ)[DVD]紅三四郎　第25話「狼人殺法」(640x480 WMV9).avi 254,842,880 ded5454da9018c69267adb8a007f2b25<br>
+(アニメ)[DVD]紅三四郎　第26話「秘剣美少女」(640x480 WMV9).avi 290,992,128 b5ed4a4c197b41969a5cc2d2af91f3cb<br>
+<br></dd>
+<dt><span class="title">グレネーダー<b>◆</b></span>05/09/19 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～  （とりあえずはじめに読んでください） .wmv.txt C9Nep66V4Q 586 d0a67a1b5b310bef39e839f92ff4bc88<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (WOWOW版 OP) 「KOHAKU／下川みくに」 (704x396 WMV9).wmv C9Nep66V4Q 25,127,328 a2745bd5b1e39c5885fa309368034fdc<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (WOWOW版 第01話ED) 「悲しみに負けないで／下川みくに」 (704x396 WMV9).wmv C9Nep66V4Q 8,487,328 245a28e59d4d63496790cb1b9bddb299<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (WOWOW版 第02話ED) (704x396 WMV9).wmv C9Nep66V4Q 8,679,328 c4a1d5fe4ec81aef1cfab9156fa22f02<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (WOWOW版 第03話ED) (704x396 WMV9).wmv C9Nep66V4Q 8,727,328 7ac088bdcc0519dfd44d6534e5f9b291<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (WOWOW版 第04話ED) (704x396 WMV9).wmv C9Nep66V4Q 8,615,328 7285f30293420db7c001d1f3ddaeaf31<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (WOWOW版 第05話ED) (704x396 WMV9).wmv C9Nep66V4Q 8,967,328 df44a6e9a23ffd9d0729e8b27c371c5a<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (WOWOW版 第06話ED) (704x396 WMV9).wmv C9Nep66V4Q 8,743,328 c035c59225e25b1cab57f8c88d33291b<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (WOWOW版 第07話ED) (704x396 WMV9).wmv C9Nep66V4Q 7,495,376 a38368be9816ed06d3b2a77426915ca2<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (WOWOW版 第08話ED) (704x396 WMV9).wmv C9Nep66V4Q 7,383,376 53c076ab97144087d53fa449ce04fdc4<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (WOWOW版 第09話ED) (704x396 WMV9).wmv C9Nep66V4Q 7,335,328 0eeb207e60d5a1ff093ea3fd7161cd55<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (WOWOW版 第10話ED) (704x396 WMV9).wmv C9Nep66V4Q 7,431,328 377225de7b65e58c1996e7080541785d<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (WOWOW版 第11話ED) (704x396 WMV9).wmv C9Nep66V4Q 7,447,328 4ea4f99f49fd662e5d4706fa29159146<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (地上波版 OP) 「暁ノ空ヲ翔ル／佐藤裕美」 (704x396 WMV9).wmv C9Nep66V4Q 27,863,216 785efbea905f913972d436bf6ac6d65c<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (地上波版 第01話ED) 「花のように／佐藤裕美」 (704x396 WMV9).wmv C9Nep66V4Q 27,895,194 77b6087653fbb00db5e9b2f04564a88b<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (地上波版 第02話ED) (704x396 WMV9).wmv C9Nep66V4Q 28,007,194 41b53df40707330d9fef8f7b83c6ec0e<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (地上波版 第03話ED) (704x396 WMV9).wmv C9Nep66V4Q 26,551,328 4cb2ada5e3247bb9bcb1fde11c06711e<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (地上波版 第04話ED) (704x396 WMV9).wmv C9Nep66V4Q 26,311,328 fb18289a2aa1510bb174db9f6347f638<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (地上波版 第05話ED) (704x396 WMV9).wmv C9Nep66V4Q 26,343,328 83ffa7a84a6fda24d980be7eeb74b497<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (地上波版 第06話ED) (704x396 WMV9).wmv C9Nep66V4Q 26,327,328 22b88c9814fb5a37424b6ab516bd16aa<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (地上波版 第07話ED) (704x396 WMV9).wmv C9Nep66V4Q 24,007,376 a537724b4ea2a1bc5ebf48912c1f735e<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (地上波版 第08話ED) (704x396 WMV9).wmv C9Nep66V4Q 23,799,376 afb0ef9796a023fa8858b75520fe21f9<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (地上波版 第09話ED) (704x396 WMV9).wmv C9Nep66V4Q 23,815,328 e51a53586dccbc121b7ea7ba979117c8<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (地上波版 第10話ED) (704x396 WMV9).wmv C9Nep66V4Q 23,831,328 7c597e36abffa6866e2761d98490ed3e<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ (地上波版 第11話ED) (704x396 WMV9).wmv C9Nep66V4Q 24,359,328 d1a54dd3ea306e1645b08b63808f35fe<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 映像特典 放送直前スペシャル（2004.10.7放送） (640x480 WMV9).wmv C9Nep66V4Q 276,230,154 ddccc447bceae12836c8cc01a216f9b3<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 映像特典 『一方その頃劇場』 第一幕 (704x396 WMV9).wmv C9Nep66V4Q 9,511,300 ee257a939cf23c203548a2335281032a<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 映像特典 『一方その頃劇場』 第二幕 (704x396 WMV9).wmv C9Nep66V4Q 9,047,076 4c0331ee5caae5c29808ae88d3d04b40<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 映像特典 『一方その頃劇場』 第三幕 (704x396 WMV9).wmv C9Nep66V4Q 10,327,020 805cfc16b4c1ccae45e4f841ee303170<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 映像特典 『一方その頃劇場』 第4幕 (704x396 WMV9).wmv C9Nep66V4Q 11,175,426 aae8dd4670eaa7a2ed270a47fabb1d39<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 映像特典 『一方その頃劇場』 第5幕 (704x396 WMV9).wmv C9Nep66V4Q 8,647,146 5fba8c9107e8580003754b605d679acf<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 映像特典 『一方その頃劇場』 第6幕 (704x396 WMV9).wmv C9Nep66V4Q 10,007,132 a27780ac88aa0808efb678db139eff70]<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 映像特典 ＣＭ集 (704x396 WMV9).wmv C9Nep66V4Q 41,477,739 dfdee06871b5de0c4cbfc725af075d07<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 映像特典 ドキュメンタリー「Bridging the Gap（ブリッジング・ザ・ギャップ）」 (640x480 WMV9 音声切り替え可).wmv C9Nep66V4Q 867,217,625 02416f4f325c3b468218a5b358b976d9<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 映像特典 ノンクレジットオープニング・エンディング集 (704x396 WMV9).wmv C9Nep66V4Q 74,359,341 9d670ae042eeeec3ead1a0d6b2a00c59<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 映像特典 プロモーション映像集 (704x396 WMV9).wmv C9Nep66V4Q 98,039,563 ae4edaabde5766d5da3d7aad3b90e72d<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第01話 「ほほえみの閃士」 (WOWOW版 704x396 WMV9 本編・コメンタリー音声切り替え可 rev.2).wmv C9Nep66V4Q 279,888,317 04bdb9d9b3ba586d56da749c149f646a<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第02話 「狙われた琉朱菜」 (WOWOW版 704x396 WMV9 本編・コメンタリー音声切り替え可 rev.2).wmv C9Nep66V4Q 272,960,317 14fe9a7c764a9cf2c39e5373aa7c45c5<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第03話 「魔の閃」 (WOWOW版 704x396 WMV9 本編・コメンタリー音声切り替え可).wmv C9Nep66V4Q 247,056,435 d7db5be45983a0eb43474a43ab1ab84d<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第04話 「笑わない町」 (WOWOW版 704x396 WMV9 本編・コメンタリー音声切り替え可).wmv C9Nep66V4Q 240,592,435 ddf95496c814055c74917692432b74d2<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第05話 「爆裂！拳槍閃 紅桃華」 (WOWOW版 704x396 WMV9 本編・コメンタリー音声切り替え可).wmv C9Nep66V4Q 298,288,435 cfe684175ee2dcb3b1327c4a0f952846<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第06話 「風船使いみかんの仇討ち」 (WOWOW版 704x396 WMV9 本編・コメンタリー音声切り替え可).wmv C9Nep66V4Q 288,176,435 e07451d4e2f09d91de231feabd7afd34<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第07話 「いざ、天都へ」 (WOWOW版 704x396 WMV9 本編・コメンタリー音声切り替え可 音声修正版).wmv C9Nep66V4Q 282,144,871 bdcfde87e81926c663439b0bd8b7fb2d<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第08話 「想い出の敵・藍前鉄破」 (WOWOW版 704x396 WMV9 本編・コメンタリー音声切り替え可 音声修正版).wmv C9Nep66V4Q 264,432,871 68e8926b896ca2dfcf808afafcc5eb1c<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第09話 「風花、舞う時・・・」 (WOWOW版 704x396 WMV9 本編・コメンタリー音声切り替え可 音声修正版).wmv C9Nep66V4Q 245,232,871 c3233c5cd9e91646ded34a7fc30bf5b4<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第10話 「天都入り」 (WOWOW版 704x396 WMV9 本編・コメンタリー音声切り替え可 音声修正版).wmv C9Nep66V4Q 222,288,871 70701a47254deced538e18aac948c146<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第11話 「天子との対決」 (WOWOW版 704x396 WMV9 本編・コメンタリー音声切り替え可).wmv C9Nep66V4Q 264,576,871 ae1bf4a2488adaf47440595cc8047204<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第12話 「旅で身につけたもの」 (WOWOW版 704x396 WMV9 本編・コメンタリー音声切り替え可).wmv C9Nep66V4Q 259,296,853 4795661cd70a3e327d7349d70f497d8a<br><br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第01話 「ほほえみの閃士」 (地上波版 704x396 WMV9 本編・コメンタリー音声切り替え可 rev.2).wmv C9Nep66V4Q 302,713,245 38bf6c2395fb0778430ab5296ad42a77<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第02話 「狙われた琉朱菜」 (地上波版 704x396 WMV9 本編・コメンタリー音声切り替え可 rev.2).wmv C9Nep66V4Q 295,735,547 ec9f13a492a36a98b19a9e91b938bb52<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第03話 「魔の閃」 (地上波版 704x396 WMV9 本編・コメンタリー音声切り替え可).wmv C9Nep66V4Q 266,960,435 56d6820d3b91d3990f77a251d370f691<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第04話 「笑わない町」 (地上波版 704x396 WMV9 本編・コメンタリー音声切り替え可).wmv C9Nep66V4Q 257,168,453 6c4117935a96f2820ae97df818e7eeab<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第05話 「爆裂！拳槍閃 紅桃華」 (地上波版 704x396 WMV9 本編・コメンタリー音声切り替え可).wmv C9Nep66V4Q 317,872,435 1f5c316886699e54b39b716169c658f4<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第06話 「風船使いみかんの仇討ち」 (地上波版 704x396 WMV9 本編・コメンタリー音声切り替え可).wmv C9Nep66V4Q 308,016,435 028c2d2fb63f5a62a2236ff574b98f04<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第07話 「いざ、天都へ」 (地上波版 704x396 WMV9 本編・コメンタリー音声切り替え可 音声修正版).wmv C9Nep66V4Q 300,464,871 8b1e403a82d11b6831a62f1cce4022f5<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第08話 「想い出の敵・藍前鉄破」 (地上波版 704x396 WMV9 本編・コメンタリー音声切り替え可 音声修正版).wmv C9Nep66V4Q 282,688,871 a6aa7655a6ed7723842d5b17551ebfe8<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第09話 「風花、舞う時・・・」 (地上波版 704x396 WMV9 本編・コメンタリー音声切り替え可 音声修正版).wmv C9Nep66V4Q 263,328,871 db9dd50eed348e650a76a7e26f2c1f85<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第10話 「天都入り」 (地上波版 704x396 WMV9 本編・コメンタリー音声切り替え可 音声修正版).wmv C9Nep66V4Q 240,608,871 4279cb9567fc587eb59470b3169faacc<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第11話 「天子との対決」 (地上波版 704x396 WMV9 本編・コメンタリー音声切り替え可).wmv C9Nep66V4Q 283,600,871 c5feb45539454107de5fb09ec6f0cd16<br>
+[アニメ DVD] グレネーダー ～ほほえみの閃士～ 第12話 「旅で身につけたもの」 (地上波版 704x396 WMV9 本編・コメンタリー音声切り替え可).wmv C9Nep66V4Q 261,232,961 60f4c3032f415df17dc8373d69d6a1ad<br>
+<br></dd>
+<dt><span class="title">クレヨンしんちゃん<b>◆</b></span>05/10/18 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[映画] [2001年公開] クレヨンしんちゃん 嵐を呼ぶ モーレツ！オトナ帝国の逆襲 (DVD WMV9 640x360 HE-AAC 6ch).mkv M71f3NEcNK 732,365,659 80ea06ae6f8e5cd296912f6143f0b1f8<br>
+[映画] [2002年公開] クレヨンしんちゃん 嵐を呼ぶ アッパレ！戦国大合戦 (DVD WMV9 640x360 HE-AAC 6ch rev2).mkv M71f3NEcNK 736,442,667 4752c651b9e3203fb9576593c308122e<br>
+<hr class="A">
+[映画] クレヨンしんちゃん アクション仮面VSハイグレ魔王(DVD 704x396 XviD LameVBR).avi cs5dxPQfWN 1,798,178,816 f762f06057a480fd998c187228f5763c<br>
+[映画] クレヨンしんちゃん ブリブリ王国の秘宝(DVD 704x396 XviD LameVBR).avi cs5dxPQfWN 1,088,774,144 685dd03b4cdc807d795639cc1819b59a<br>
+[映画] クレヨンしんちゃん ヘンダｰランドの大冒険(DVD 704x396 XviD LameVBR).avi cs5dxPQfWN 1,527,742,464 8c8ca2c696ee364658b6b2cecfb3d4fa<br>
+[映画] クレヨンしんちゃん 雲黒斎の野望(DVD 704x396 XviD LameVBR).avi cs5dxPQfWN 1,080,045,568 4fa14642e8f6147ba9eabba2657c5a91<br>
+[映画] クレヨンしんちゃん 爆発！温泉わくわく大決戦(DVD 704x396 XviD LameVBR).avi cs5dxPQfWN 1,460,387,840 fb26b9e3abff039599aecd813ccd2155<br>
+[映画] クレヨンしんちゃん 嵐を呼ぶアッパレ！戦国大合戦(DVD 704x396 XviD LameVBR).avi cs5dxPQfWN 1,728,065,536 8d7c96059b283e351a1de9f81fc17d0b<br>
+[映画] クレヨンしんちゃん 嵐を呼ぶモーレツ！オトナ帝国の逆襲(DVD 704x396 XviD LameVBR).avi cs5dxPQfWN 1,693,399,040 306912f7f9e5e091953a087da4282298<br>
+[映画] クレヨンしんちゃん 嵐を呼ぶ栄光のヤキニクロード(DVD 704x396 XviD1.0.3).avi cs5dxPQfWN 1,332,635,648 86e61db9720448ad8d15258b7145bdd4<br>
+[映画] クレヨンしんちゃん 暗黒タマタマ大追跡 (DVD 704x396 XviD Lame192CBR).avi cs5dxPQfWN 756,703,232 11234e09aeb505b0646cf6d6178ccc24<br>
+<br></dd>
+<dt><span class="title">Clover<b>◆</b></span>07/06/16 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] HDリマスター版 Clover (WMV9 688x368 AC3 5.1ch+MP3 2ch).avi TALKca6VWU 110,678,016 79c941c3de97d06ee73d627b8f6073cb<br>
+<br></dd>
+<dt><span class="title">黒い雨にうたれて<b>◆</b></span>08/02/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+【アニメ映画】　黒い雨にうたれて  [DVD 1h34m39s 640x480 DivX521].avi 759,680,000 d42ae5d1ab220708a2c10e752e273c1e<br>
+<br></dd>
+<dt><span class="title">鉄コミュニケイション<b>◆</b></span>04/01/19 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[DVD] 鉄コミュニケイション 第01話 『少女ハルカ』 [VGA DivX5.05 24fps].avi n26DJU6e4I 105,258,380 f9c30dde795851bcbd4ac9b954777527<br>
+[DVD] 鉄コミュニケイション 第02話 『失われた記憶』 [VGA DivX5.05 24fps].avi n26DJU6e4I 99,946,854 c11372fd5e2c6b00301cb153f7871717<br>
+[DVD] 鉄コミュニケイション 第03話 『オアシス』 [VGA DivX5.05 24fps].avi n26DJU6e4I 112,274,106 133f40760b7ee602b97f51ad69f67729<br>
+[DVD] 鉄コミュニケイション 第04話 『マシン 非AI戦闘体』 [VGA DivX5.05 24fps].avi n26DJU6e4I 112,785,126 4a37f43220f814623a85457f2e5d1f4f<br>
+[DVD] 鉄コミュニケイション 第05話 『アンジェラ （前編）』 [VGA DivX5.05 24fps].avi n26DJU6e4I 80,968,166 008d2395d3ed08a9297729275bf41c38<br>
+[DVD] 鉄コミュニケイション 第06話 『アンジェラ （後編）』 [VGA DivX5.05 24fps].avi n26DJU6e4I 91,667,160 61a981ba9f9fe077528c8f1358121293<br>
+[DVD] 鉄コミュニケイション 第07話 『キャンプ』 [VGA DivX5.05 24fps].avi n26DJU6e4I 120,926,078 2f587f1cbfcfc37bf73831ab1d08ee20<br>
+[DVD] 鉄コミュニケイション 第08話 『異変』 [VGA DivX5.05 24fps].avi n26DJU6e4I 102,606,184 d93f73a6ecaac632165b0e73269a3ede<br>
+[DVD] 鉄コミュニケイション 第09話 『シェルター』 [VGA DivX5.05 24fps].avi n26DJU6e4I 107,519,110 4e90bfa54b11bd1a4569e0b1713a7626<br>
+[DVD] 鉄コミュニケイション 第10話 『真実』 [VGA DivX5.05 24fps].avi n26DJU6e4I 94,525,868 ca2cb016455cadaf651cac5083175d02<br>
+[DVD] 鉄コミュニケイション 第11話 『フライヤー』 [VGA DivX5.05 24fps].avi n26DJU6e4I 103,626,404 c786bdafc0131d666d0c3881dae88c46<br>
+[DVD] 鉄コミュニケイション 第12話 『旅立ち』 [VGA DivX5.05 24fps].avi n26DJU6e4I 117,447,006 94bcd8b78ea079ee21c6a47ef475b32f<br>
+[DVD] 鉄コミュニケイション 第13話 『新大陸』 [VGA DivX5.05 24fps].avi n26DJU6e4I 101,542,194 a9e0da2a744c9572ea7b7eb572197b4d<br>
+[DVD] 鉄コミュニケイション 第14話 『カナト』 [VGA DivX5.05 24fps].avi n26DJU6e4I 100,253,018 804d381d17b31126aba48dab495fa1b2<br>
+[DVD] 鉄コミュニケイション 第15話 『遺跡』 [VGA DivX5.05 24fps].avi n26DJU6e4I 94,024,704 797143608114db1b48bb586256e99050<br>
+[DVD] 鉄コミュニケイション 第16話 『憎しみ』 [VGA DivX5.05 24fps].avi n26DJU6e4I 107,949,568 08a897df013c8962d32c0bed51068696<br>
+[DVD] 鉄コミュニケイション 第17話 『母親』 [VGA DivX5.05 24fps].avi n26DJU6e4I 95,697,374 667594be2f8f3dbd302b34ade94c8e87<br>
+[DVD] 鉄コミュニケイション 第18話 『人質』 [VGA DivX5.05 24fps].avi n26DJU6e4I 95,843,962 ca14c3271e771f8263488ec16f745857<br>
+[DVD] 鉄コミュニケイション 第19話 『再会』 [VGA DivX5.05 24fps].avi n26DJU6e4I 96,514,346 71992b85d6a5e731a516d60a3c66ff72<br>
+[DVD] 鉄コミュニケイション 第20話 『生存者』 [VGA DivX5.05 24fps].avi n26DJU6e4I 94,289,576 d72920f3fdc21116313a707d700be8aa<br>
+[DVD] 鉄コミュニケイション 第21話 『ホーニー』 [VGA DivX5.05 24fps].avi n26DJU6e4I 94,855,360 41db06a7900735a08c929814433ace5c<br>
+[DVD] 鉄コミュニケイション 第22話 『裏切り』 [VGA DivX5.05 24fps].avi n26DJU6e4I 92,419,804 b142a125b3788d2e54c0ba2a6919f361<br>
+[DVD] 鉄コミュニケイション 第23話 『発動』 [VGA DivX5.05 24fps].avi n26DJU6e4I 87,061,160 4e137a3d5bcffcb0234a62590f8570e6<br>
+[DVD] 鉄コミュニケイション 第24話 『再生』 [VGA DivX5.05 24fps].avi n26DJU6e4I 103,577,366 648b9c9b8809ad962ecfb353aee61e4d<br>
+<br></dd>
+<dt><span class="title">鉄のラインバレル<b>◆</b></span>09/12/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ] 鉄のラインバレル 映像特典 Vol.1 FILE 1 日高政光監督インタビュー (704x480 4：3 WMV9 DVD).wmv G2X5ogsNVZ 43,159,239 dbeabbd4dca68ee84af015f31d5a8b16<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.1 FILE 2 潜入！3D製作現場 白石氏インタビュー (704x480 4：3 WMV9 DVD).wmv G2X5ogsNVZ 180,856,925 6026989b0073261e62c4ce31a1c54d02<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.1 FILE 3 出演声優インタビュー 柿原徹也(早瀬浩一)ｘ能登麻美子(城崎絵美) (704x480 4：3 WMV9 DVD).wmv G2X5ogsNVZ 279,627,695 65ff4e3886256db7517deb75abdb1996<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.1 FILE 4 出演声優インタビュー 中村悠一(森次玲二)ｘ沢城みゆき(山下サトル) (704x480 4：3 WMV9 DVD).wmv G2X5ogsNVZ 396,091,835 09ed7707cdfd4078647e9db1b13b4376<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.1 FILE 5 出演声優インタビュー 植田佳奈(遠藤シズナ)ｘ釘宮理恵(遠藤イズナ) (704x480 4：3 WMV9 DVD).wmv G2X5ogsNVZ 373,179,553 fcd1ccf7aa8bc393775c8668f49c1685<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.1 FILE 6 出演声優インタビュー 平野綾(九条美海)ｘ斉藤千和(レイチェル) (704x480 4：3 WMV9 DVD).wmv G2X5ogsNVZ 302,410,739 233d314d7606003ea1b36993c34f53f0<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.1 ピクチャードラマ#01 城崎絵美さんのはじめてのお着替え (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 29,991,989 34740d84fed6a32f9674b767187f8ddc<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.2 ピクチャードラマ#02 うたれたタマ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 32,391,939 ec36249821c46ee064c263bca3e25aa1<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.2 プロモーション映像 Ver.01 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 27,542,861 7ffb8a36c2f30c659daefa633932fe8a<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.2 プロモーション映像 Ver.01(海外版) (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 28,118,913 55c58e8d5d9dc95208e1c87644557702<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.2 柿原徹也ドイツ語メッセージ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 6,469,573 8f5c90be437c76c8c495ef9655e21fda<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.3 ピクチャードラマ#03 眠れぬ夜に (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 27,431,727 30869f5e3e6b327e4afb5d9189971695<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.3 プロモーション映像 Ver.02 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 33,318,819 2493a2f48d61325fd67e66e6e8fb4c16<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.3 番宣スポットコレクション (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 27,350,601 b704c7a87aeedbae171d85fc121f7870<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.4 CMコレクション 城崎絵美編 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 210,504,303 a563ceb300e69add90f2e207a2197ae3<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.4 CMコレクション 森次玲二＆山下サトル編 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 68,631,103 167614e136ca4a5b30fe1e190163dfeb<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.4 ピクチャードラマ#04 みうみうのハッピー☆JUDAブログ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 24,663,697 114426aaf61ef803f76e75b7f0f4d7af<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.5 CMコレクション 遠藤シズナ＆イズナ編 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 68,291,025 f42aa527b881616d2bc27c4961a9032e<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.5 CMコレクション 早瀬浩一＆城崎絵美編 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 81,077,660 4780e77484468fb8aae7a187e00aa1c4<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.5 ピクチャードラマ#05 加藤機関、起つ！ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 34,231,883 62eeab308f53ba12093c6d86281f7f48<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.6 「雨が降る」(カラオケ UGA Ver.) (704x480 4：3 WMV9 DVD).wmv G2X5ogsNVZ 74,712,083 aa1e548add5aa6dc3ece1f51d890571f<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.6 ピクチャードラマ#06 管理人さんのヒミツ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 20,583,573 8255be40290a86cf619a6307d42c50c6<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.7 BIGLOBE CMコレクション (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 22,038,507 8856fad8a6f5022e25311b964011e5ce<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.7 ピクチャードラマ#07 その背に見えるもの (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 18,135,699 2a7286859b3920ddeefecb22f2df1777<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.7 『雨が降る』 CMコレクション (704x480 4：3 WMV9 DVD).wmv G2X5ogsNVZ 6,278,353 d62674b4b4286d4f108cd37041f76ac2<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.7 『鬼帝の剣』 CMコレクション (704x480 4：3 WMV9 DVD).wmv G2X5ogsNVZ 7,061,687 c645ea6ecdd42817911c72460381b66d<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.8 ノンクレジットオープニングコレクション (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 225,720,673 8e37acd914e4bc59b6f496e384ae8d05<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.8 ノンクレジットエンディングコレクション (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 93,975,353 4ba3170a6fdaf73263abc9cc22090ca2<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.8 ピクチャードラマ#08 父と子 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 39,448,557 8682b7c4b618aede5f25c14ae241639e<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.8 特報 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 26,182,593 46d9fa75e6ab2ac8dec1d5653db2af44<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.9 「PROUD」アニメーションミュージッククリップ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 60,295,493 2cc3e529b68f8f427097ba23d23137fd<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.9 「心のままに」アニメーションミュージッククリップ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 46,567,493 f7be778b0a368637f74d21fff3b37305<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.9 ピクチャードラマ#09 我らの未来を想像せよ！ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 51,656,649 3fecc0a2df5f3557585688ff38fa0b24<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.EXTRA PSPゲーム プロモーション映像 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 111,415,761 94185a394f2cf81d9bcfb56623e717ed<br>
+[アニメ] 鉄のラインバレル 映像特典 Vol.EXTRA 次回予告ロングヴァージョンコレクション (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 86,026,581 c2d1b0b7dac11a7052d040aa487f3a37<br>
+[アニメ] 鉄のラインバレル #01 クロガネと少年 (704x480 16：9 WMV9 DVD コメンタリー切替可).wmv G2X5ogsNVZ 347,554,398 e301946948dce7fc2ac8d9b2f6eaf531<br>
+[アニメ] 鉄のラインバレル #02 疾走する正義 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 213,998,693 9bd4e294bf4bbd70f95d92c80ede5fdc<br>
+[アニメ] 鉄のラインバレル #03 蒼の戦慄 (704x480 16：9 WMV9 DVD コメンタリー切替可).wmv G2X5ogsNVZ 292,832,628 babb3d8732afabbd9bc57809cd82ccbe<br>
+[アニメ] 鉄のラインバレル #04 正義の代償 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 223,166,691 44b8f04a7b95759d963405600062dd70<br>
+[アニメ] 鉄のラインバレル #05 明日への道標 (704x480 16：9 WMV9 DVD コメンタリー切替可).wmv G2X5ogsNVZ 262,912,632 7ddc0f58085c927f57e0150b9a2d3fdb<br>
+[アニメ] 鉄のラインバレル #06 明るい夜 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 228,750,689 c7e969b97108f1a07a9585de179a9d53<br>
+[アニメ] 鉄のラインバレル #07 サイアクな放課後 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 228,158,697 dd89af03d3368c3347ba84269dea48b2<br>
+[アニメ] 鉄のラインバレル #08 戯れの鬼たち (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 216,670,603 c126d3238cd77a40d91cd223f3560485<br>
+[アニメ] 鉄のラインバレル #09 ブラック・チェンバー (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 246,398,603 fb5813cefb8747c20f4e1a38af3b9a79<br>
+[アニメ] 鉄のラインバレル #10 OVER DRIVE (704x480 16：9 WMV9 DVD コメンタリー切替可).wmv G2X5ogsNVZ 265,856,542 2691b4a569e54cdd95517fa3394463b5<br>
+[アニメ] 鉄のラインバレル #11 SUPER NOVA (704x480 16：9 WMV9 DVD コメンタリー切替可).wmv G2X5ogsNVZ 290,480,640 9e4eedaa177bf1f169cffdacaaa4f4a7<br>
+[アニメ] 鉄のラインバレル #12 南海より愛をこめて (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 222,526,699 950395693ffccf85f02f4c2d5027c0f3<br>
+[アニメ] 鉄のラインバレル #13 黒の執行者 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 235,550,691 9e17054889d09242d3e39990ae156a9a<br>
+[アニメ] 鉄のラインバレル #14 流れるは血、失うは涙 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 201,438,701 dc50e315f968f700195155d5faa6fbbb<br>
+[アニメ] 鉄のラインバレル #15 ベクトル (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 198,190,689 b4387597de6719e92fb565637223924b<br>
+[アニメ] 鉄のラインバレル #16 黄昏の断罪 (704x480 16：9 WMV9 DVD コメンタリー切替可).wmv G2X5ogsNVZ 249,936,630 b2b1c8f9a2434d142808d410c73637f4<br>
+[アニメ] 鉄のラインバレル #17 機械じかけの呪い (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 188,302,697 b5078f6f70d0c3a8b9b8d99ec7dd0e96<br>
+[アニメ] 鉄のラインバレル #18 メメント・モリ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 203,006,695 dab3d284489c89429866465628b804ec<br>
+[アニメ] 鉄のラインバレル #19 届く陽、暴かれる陰 (704x480 16：9 WMV9 DVD コメンタリー切替可).wmv G2X5ogsNVZ 231,824,638 7ad714418aad2a39c55fdcb1c246da01<br>
+[アニメ] 鉄のラインバレル #20 運命の男 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 247,214,689 c2bfded273f4fcddda83916c743c3344<br>
+[アニメ] 鉄のラインバレル #21 狂気の翼 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 198,478,689 2aab0f00884b35f15d2aa71c64e40e8d<br>
+[アニメ] 鉄のラインバレル #22 鬼を喰らうモノ (704x480 16：9 WMV9 DVD コメンタリー切替可).wmv G2X5ogsNVZ 231,600,634 25f7f4b15dc4d70817845cfa3728cd0d<br>
+[アニメ] 鉄のラインバレル #23 死に方が決める生き方 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 234,206,693 35e0a1bd18a37333055f87d179a454e0<br>
+[アニメ] 鉄のラインバレル #24 鋼鉄の華(最終回) (704x480 16：9 WMV9 DVD コメンタリー切替可).wmv G2X5ogsNVZ 307,408,360 a10550bf911c1893b2cb9cc490afebe0<br>
+[アニメ] 鉄のラインバレル #25 天才美少女科学者レイチェルちゃん（SPECIAL EPISODE） (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 242,686,739 57228e4cf91c725e44e3fa153992e56f<br>
+[アニメ] 鉄のラインバレル #26 鉄の影(TV未放送) (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 240,174,711 f1fb621ab89911310f9ff8e5a0acc13e<br>
+<br></dd>
+<dt><span class="title">クロスゲーム<b>◆</b></span>10/11/15 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ] クロスゲーム 映像特典 第01巻 喫茶クローバー 開店準備中 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 225,708,575 220650b7448928cf80676cf295ba63df<br>
+[アニメ] クロスゲーム 映像特典 第13巻 ノモのえかきうた (704x480 16：9 WMV9 DVD ※).wmv G2X5ogsNVZ 2,184,417 1dd18c143ebc3c1be3293079f3016c59<br>
+[アニメ] クロスゲーム 映像特典 第13巻 ノンテロップオープニング (前期) 「Summer rain」 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 46,518,709 7f71d8c1c7b2789aced4c2876cdef701<br>
+[アニメ] クロスゲーム 映像特典 第13巻 ノンテロップオープニング (後期) 「Summer rain」 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 44,102,709 938b936f3b5d441386769319191d9f28<br>
+[アニメ] クロスゲーム 映像特典 第13巻 ノンテロップエンディング1 「恋焦がれて見た夢」 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 42,646,695 fd2e21cd57a13e03a4da6d61719a12e4<br>
+[アニメ] クロスゲーム 映像特典 第13巻 ノンテロップエンディング2 「オレンジDays」 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 35,942,695 fa6928a78048bb427faa5105c2cc512c<br>
+[アニメ] クロスゲーム 映像特典 第13巻 ノンテロップエンディング3 「燃えるような恋じゃないけど」 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 53,558,705 b0ac672b1cb6843150430bb5c3c30c71<br>
+[アニメ] クロスゲーム 映像特典 第13巻 ノンテロップエンディング4 「リハーサル」 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 20,070,689 ead08902b5c3006b6d15492d165e09d4<br>
+[アニメ] クロスゲーム 映像特典 第13巻 ノンテロップエンディング50話 「恋スル乙女」 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 29,063,005 7c984689e514d970d88839577f86deec<br>
+[アニメ] クロスゲーム 第01話 四つ葉のクローバー (704x480 16：9 WMV9 DVD r2 ※).wmv G2X5ogsNVZ 190,190,853 374978c6f9aff52be954bc02d55baa86<br>
+[アニメ] クロスゲーム 第02話 大っ嫌い！ (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 187,502,811 c6b9e8a96cdae36b9cf517eb684588e0<br>
+[アニメ] クロスゲーム 第03話 ちゃんと？ (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 192,830,811 1af29dace290982dc1e04d00f94aab06<br>
+[アニメ] クロスゲーム 第04話 秘密兵器 (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 199,422,809 6196152edf20cffb934e8e576301cbd6<br>
+[アニメ] クロスゲーム 第05話 ナベ貸してくれる？ (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 165,422,819 87a021c654ce9d66f10394f70fa762a2<br>
+[アニメ] クロスゲーム 第06話 誰だ？おまえ (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 197,102,813 d2a2af08c991a70e2d99dece4426d19f<br>
+[アニメ] クロスゲーム 第07話 面食いなんです (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 202,782,815 5f9e5eb0db61c2e7711a97edcfbc747f<br>
+[アニメ] クロスゲーム 第08話 似てるんだ (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 265,454,811 cd60fb8898e347e1fb6d89a0f839f0fb<br>
+[アニメ] クロスゲーム 第09話 しまって行こー (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 245,854,815 c67b8712bd4c5798e1760fe749fa0056<br>
+[アニメ] クロスゲーム 第10話 冗談はよせ (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 279,278,811 4a82cd03af4d6f0e3a96771e2586cb83<br>
+[アニメ] クロスゲーム 第11話 ニヤニヤするな (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 273,902,815 6372e899dc1e9f7e7d8ed459f4d0d081<br>
+[アニメ] クロスゲーム 第12話 勝負しなさい！ (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 258,830,821 98dee04cf63b526bd3fe0c8b4cbb3d7c<br>
+[アニメ] クロスゲーム 第13話 夏合宿？ (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 272,478,809 00a4858c6053d2b4283c799dfebc20d2<br>
+[アニメ] クロスゲーム 第14話 何点？ (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 373,502,807 254acce02b2d2cba046d92f612d4bf63<br>
+[アニメ] クロスゲーム 第15話 もっと楽しめよ (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 332,894,815 fc7d5ed3361ee910c78da77858ee2cf1<br>
+[アニメ] クロスゲーム 第16話 知るか (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 359,422,567 8cbf564bfdec9d5a16912e7de3fac12b<br>
+[アニメ] クロスゲーム 第17話 シンドイな (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 303,566,571 c30751f635bccbc85503c509391e1583<br>
+[アニメ] クロスゲーム 第18話 オーディション？ (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 346,446,577 9a86d171e1f06e52d7833b12fc981368<br>
+[アニメ] クロスゲーム 第19話 思い出の・・・ (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 319,822,575 6c08deda9162fb78fedb7c03611b9050<br>
+[アニメ] クロスゲーム 第20話 朝見水輝 (704x480 16：9 WMV9 DVD r2).wmv G2X5ogsNVZ 317,518,569 243a866e650fc595f4469128718eaa4f<br>
+[アニメ] クロスゲーム 第21話 何はともあれ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 299,662,483 f0726d897f36fef2478b4d03613c4564<br>
+[アニメ] クロスゲーム 第22話 なめてたでしょ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 309,662,483 330af2014c52e36ed3da61d797a67b8c<br>
+[アニメ] クロスゲーム 第23話 逆転するよね？ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 406,782,483 a883883e78ad68d407e92272856cd5a9<br>
+[アニメ] クロスゲーム 第24話 やめるなよ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 382,926,543 7837320b9f6fadecb9f42cac58cd9846<br>
+[アニメ] クロスゲーム 第25話 光栄ですね (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 342,894,543 2719afbe0c5e5b3c72bae6e84985ebdc<br>
+[アニメ] クロスゲーム 第26話 知ってるよ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 337,694,621 09c56902dd5e971cbbdaba5ccd209403<br>
+[アニメ] クロスゲーム 第27話 ･･･かもしんない (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 315,102,629 9a3674f4b03f8f70849b65ef5de7ba19<br>
+[アニメ] クロスゲーム 第28話 終わらせようぜ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 335,870,625 e044b4c7a3dd9ae90e733d09e12b21f2<br>
+[アニメ] クロスゲーム 第29話 だれがァ！？ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 299,838,623 b32a5ff74ac7c383c2cbd0c256d905b1<br>
+[アニメ] クロスゲーム 第30話 若葉 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 257,918,615 23f956a34b557fb2ba2196ff3d29720f<br>
+[アニメ] クロスゲーム 第31話 年をとるのかなァ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 238,238,627 197921246723859c3a590e2da53ece11<br>
+[アニメ] クロスゲーム 第32話 ちょっと (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 235,758,619 1e4c7863c65be6c25211057cd933ef4c<br>
+[アニメ] クロスゲーム 第33話 はたまた運命･･･か (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 268,078,631 94aa5b7d43f4778f1658e4f4461614d6<br>
+[アニメ] クロスゲーム 第34話 あけまして (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 267,598,621 98d8ebec0076c4655e59dbc3f1d4436d<br>
+[アニメ] クロスゲーム 第35話 2月14日 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 241,550,621 2fb196bd7237fb8e129e40c2dff3f3ec<br>
+[アニメ] クロスゲーム 第36話 女子野球へ！？ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 279,390,625 c37797fcb96321ccebcb47e0fb694389<br>
+[アニメ] クロスゲーム 第37話 よく寝たからでしょ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 208,046,569 5e7cd8d02e0ec04c73373dc7c9ded0ce<br>
+[アニメ] クロスゲーム 第38話 初デートですよ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 227,534,565 13c5c47abbcbf7c5584ecea9717a108a<br>
+[アニメ] クロスゲーム 第39話 ずっとずっと (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 239,630,563 9a4588d2b8515c40f2b4b2c5372b3bf6<br>
+[アニメ] クロスゲーム 第40話 バカたれ！ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 241,118,621 de4b4486053efea907f613c47c49b456<br>
+[アニメ] クロスゲーム 第41話 行くぞ甲子園！ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 338,750,625 abd2b1d6f5fe43b849e73b6b70cd363d<br>
+[アニメ] クロスゲーム 第42話 それぞれの夏 (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 213,166,623 9e63ddc67c2c714983157630074f69b9<br>
+[アニメ] クロスゲーム 第43話 あいかわらずだな・・・ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 248,030,633 b6bc27c48d6fb1e46b41e0abb060e620<br>
+[アニメ] クロスゲーム 第44話 失投･･･か？ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 210,254,625 7b2055b7cebedfde9e03e46925e3d4d3<br>
+[アニメ] クロスゲーム 第45話 こっちのセリフだろ！ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 263,438,571 64b1e8df6df653bd3ec627e1b79c60a4<br>
+[アニメ] クロスゲーム 第46話 やーな感じだなァ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 244,046,567 871f5158ccb24670d53bcce0ddd3231f<br>
+[アニメ] クロスゲーム 第47話 ウソついてもいいか？ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 291,326,871 6983ed97be8b6a0c988dca783828935c<br>
+[アニメ] クロスゲーム 第48話 よし (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 305,886,855 ee5da312c6f2e360cc7aeb2dbb200d41<br>
+[アニメ] クロスゲーム 第49話 楽しんでるか？ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 287,886,865 a509768118827f3d65b37af15ab30c17<br>
+[アニメ] クロスゲーム 第50話 世界中で一番・・・ (704x480 16：9 WMV9 DVD).wmv G2X5ogsNVZ 357,918,689 f351b8b4c09390cc177a44a80e435214<br>
+<br></dd>
+<dt><span class="title">クロノクルセイド<b>◆</b></span>05/10/18 <a href="#header">▲</a><a href="#footer">▼</a></dt><dd>
+[アニメ DVD] クロノクルセイド Chapter.Zero (640x480 WMV9 LameVBR).avi apZC6EE4SL 91,760,640 683389afb48935e31bdfe94709735e07<br>
+<hr class="A">
+(DVD)(アニメ) クロノクルセイド Chapter.Zero (640x480 24fps WMV9).avi OUTdop5wgL 128,198,712 0fcf8393db19059bc13e89ca8054d6a8<br>
+<hr class="A">
+[DVD] クロノクルセイド プロモーションDVD (640x480 DivX511 120fps LameVBR rev2).avi INK1J68G22 131,893,248 bff36e78e2e52b1be4a6810055815868<br>
+[DVD] クロノクルセイド プロモーションDVD (640x480 WMV9 120fps AAC rev2).mkv INK1J68G22 147,941,125 7b11428a4ec4e2c23be0e91e935412f1<br>
+[DVD] クロノクルセイド プロモーションDVD (640x480 WMV9 rev2).wmv INK1J68G22 148,011,765 3160840ae7b2b50ea07a8ecce272381b<br>
+<hr class="A">
+[アニメ DVD] クロノクルセイド Chapter.0 (640x480 DivX5.11 VFR).mkv FooLpnMy17 139,986,252 f07c8d320c87aaf7199a6d675c92ca85<br>
+[アニメ DVD] クロノクルセイド Chapter.0 (640x480 WMV9 AAC 120fps).mkv FooLpnMy17 161,010,208 eccd8f7127c1548e55dbea6984d9a3e9<br>
+[アニメ DVD] クロノクルセイド 映像特典 Chapter.01 (640x480 WMV9 AAC).mkv 250,440,415 f15ab27f304c1dcd5efdb5962a7cf5cd<br>
+[アニメ DVD] クロノクルセイド 映像特典 Chapter.02 (640x480 WMV9 AAC).mkv 177,570,485 21a5c1853cd0c496ef25c334a9e9c9ef<br>
+[アニメ DVD] クロノクルセイド 映像特典 Chapter.03 (640x480 WMV9 AAC).mkv 184,925,759 494952bbabc0bc5d4a1af1c42f9d1055<br>
+[アニメ DVD] クロノクルセイド 映像特典 Chapter.04 (640x480 WMV9 AAC).mkv 202,805,318 5c45eec59cad9b936213f9544c95952b<br>
+[アニメ DVD] クロノクルセイド 映像特典 Chapter.05 (640x480 WMV9 AAC).mkv 198,764,117 c27853765cae9cc738fe12f089fb32d7<br>
+[アニメ DVD] クロノクルセイド 映像特典 Chapter.06 (640x480 WMV9 AAC).mkv 185,696,239 0b4d81f8da7fd1f2316e42d7db255526<br>
+[アニメ DVD] クロノクルセイド 映像特典 Chapter.07 (640x480 WMV9 AAC).mkv 181,661,394 2bd2f7458b1e4432854975286070cd7a<br>
+[アニメ DVD] クロノクルセイド 映像特典 Chapter.08 (640x480 WMV9 AAC).mkv 177,535,424 4684728e4cd37bedbb0346cc51514662<br>
+[アニメ DVD] クロノクルセイド 映像特典 Chapter.09 (640x480 WMV9 AAC).mkv 186,594,359 8eea255ef6368c8e390a3b1d83cfddca<br>
+[アニメ DVD] クロノクルセイド 映像特典 Chapter.10 (640x480 WMV9 AAC).mkv 191,056,419 0f0b61d51cfc26a07eedc658c32245a7<br>
+[アニメ DVD] クロノクルセイド 映像特典 Chapter.11 (640x480 WMV9 AAC).mkv 206,737,368 48cc5d1fdcd34851e44fc899b23b5982<br>
+[アニメ DVD] クロノクルセイド 映像特典 Chapter.12 (640x480 WMV9 AAC).mkv 119,045,362 84f3ad59ca9102bbf4ee8a55b69d6a1a<br>
+[アニメ DVD] クロノクルセイド Chapter01 「シスターロゼット」 (640x480 WMV9 AAC Ver2).mkv 264,195,474 05b8722ad28119d1c5a28573572e3514<br>
+[アニメ DVD] クロノクルセイド Chapter02 「契約者」 (640x480 WMV9 AAC Ver2).mkv 246,947,068 285406905d9ec3a8639427224ed81907<br>
+[アニメ DVD] クロノクルセイド Chapter03 「御使い」 (640x480 WMV9 AAC Ver2).mkv 264,230,939 833be4a0690d770b081a41b624447ec5<br>
+[アニメ DVD] クロノクルセイド Chapter04 「罪人」 (640x480 WMV9 AAC Ver2).mkv 232,705,416 82d74db8db6eff767789f8f90a5d697c<br>
+[アニメ DVD] クロノクルセイド Chapter05 「修道騎士」 (640x480 WMV9 AAC).mkv 216,239,336 4dd7de068de02c17ec4188a6992fa422<br>
+[アニメ DVD] クロノクルセイド Chapter06 「宝石の魔女」 (640x480 WMV9 AAC).mkv 257,580,630 0b9627dc6cd7938d00a7ba6504a3b49e<br>
+[アニメ DVD] クロノクルセイド Chapter07 「悪魔」 (640x480 WMV9 AAC).mkv 224,433,594 8a0a69ebd0c7351c374951f010e37ed3<br>
+[アニメ DVD] クロノクルセイド Chapter08 「傀儡」 (640x480 WMV9 AAC).mkv 252,232,929 adf30b7be08c53a5a7e119786fc84d7a<br>
+[アニメ DVD] クロノクルセイド Chapter09 「ヨシュア」 (640x480 WMV9 AAC).mkv 226,144,525 d53a59ea6076e3ed87094a3a53b7e20e<br>
+[アニメ DVD] クロノクルセイド Chapter10 「Horn」 (640x480 WMV9 AAC).mkv 204,189,875 442ae9aa06bad314602a8aaaeb6936dc<br>
+[アニメ DVD] クロノクルセイド Chapter11 「けだもの」 (640x480 WMV9 AAC).mkv 243,067,793 a84667045cb4605a3099b86c23ec5d34<br>
+[アニメ DVD] クロノクルセイド Chapter12 「聖夜」 (640x480 WMV9 AAC).mkv 245,430,082 5dcf6c41dce021e071c3aa69dc7b022b<br>
+[アニメ DVD] クロノクルセイド Chapter13 「姉」 (640x480 WMV9 AAC).mkv 245,185,617 819272e8d271a5b2804643497b5fee09<br>
+[アニメ DVD] クロノクルセイド Chapter14 「祈り」 (640x480 WMV9 AAC).mkv 270,320,598 3ed6247da826674b07a4ecd713c17804<br>
+[アニメ DVD] クロノクルセイド Chapter15 「追手」 (640x480 WMV9 AAC).mkv 192,098,979 7cc46ed6e0b88407fdb47acffba586ea<br>
+[アニメ DVD] クロノクルセイド Chapter16 「信仰者」 (640x480 WMV9 AAC).mkv 211,354,554 7d38c9de067e2433b5f6af950701c06f<br>
+[アニメ DVD] クロノクルセイド Chapter17 「共犯者たち」 (640x480 WMV9 AAC).mkv 253,770,504 5f97f938e2fbef98e23621b5bf5a2b9a<br>
+[アニメ DVD] クロノクルセイド Chapter18 「四人」 (640x480 WMV9 AAC).mkv 243,970,021 78580ed1a396a0fd32269145fe0d0085<br>
+[アニメ DVD] クロノクルセイド Chapter19 「首」 (640x480 WMV9 AAC).mkv 219,050,832 4eaf76357d58175f69ccc822b32c964b<br>
+[アニメ DVD] クロノクルセイド Chapter20 「毒」 (640x480 WMV9 AAC).mkv 208,167,383 118b16f923e747827a9bbbc62c4406e0<br>
+[アニメ DVD] クロノクルセイド Chapter21 「マグダレーナ」 (640x480 WMV9 AAC).mkv 240,414,131 1b101f721d918c3803718f2264be0d49<br>
+[アニメ DVD] クロノクルセイド Chapter22 「さよなら」 (640x480 WMV9 AAC).mkv 267,001,653 97f327676e546a48b0107a4de5f9ce93<br>
+[アニメ DVD] クロノクルセイド Chapter23 「ノイズ」 (640x480 WMV9 AAC).mkv 237,634,633 487a464d627719788f09389968f0e53c<br>
+[アニメ DVD] クロノクルセイド Chapter24 「クロノ」 (640x480 WMV9 AAC).mkv 282,540,288 55c763883349adfb379ea980422fb7ef<br>
+<div class="sup">FooLptNE19VF17</div>
+<hr class="A">
+[アニメ DVD] クロノクルセイド DVD Chapter.01 映像特典 アズの補習授業♪ (640x480 WMV9).wmv OZ9az3pcZo 44,678,303 5f9111833015c172250f451700a18322<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.01 映像特典 ノンテロップ・オープニング (640x480 WMV9).wmv OZ9az3pcZo 26,229,095 2fb461e787fb514e334c3318077fe49e<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.01 映像特典 ノンテロップ・オープニング OAバージョン(第01話) (640x480 WMV9).wmv OZ9az3pcZo 37,989,095 bf82f1a17155b2799a60845202ac2f34<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.01 映像特典 ノンテロップ・オープニング OAバージョン(第02話) (640x480 WMV9).wmv OZ9az3pcZo 38,757,095 14fffa04e027a981fc6f7e985d03ea3b<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.01 映像特典 ノンテロップ・エンディング (640x480 WMV9).wmv OZ9az3pcZo 16,245,081 7113d28656817002f5bbdae8bba894e4<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.02 映像特典 アズの補習授業♪ (640x480 WMV9).wmv OZ9az3pcZo 37,398,275 466907f8afdbba0a7a2bd5d97db3ac33<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.02 映像特典 ノンテロップ・オープニング OAバージョン(第03話) (640x480 WMV9).wmv OZ9az3pcZo 33,221,137 d6cb562a81307ffb0d17bbdb2330ef30<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.02 映像特典 ノンテロップ・オープニング OAバージョン(第04話) (640x480 WMV9).wmv OZ9az3pcZo 32,581,137 cec97b64da98d20ce8b70284f7720b0b<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.03 映像特典 アズの補習授業♪ (640x480 WMV9 rev2 音声修正).wmv OZ9az3pcZo 37,446,443 143557738ac12a7216f20215718bc158<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.03 映像特典 ノンテロップ・オープニング OA版 第05話 (640x480 WMV9 rev2 音声修正).wmv OZ9az3pcZo 32,165,141 1ece0d2111bcaf5ccc7684a903a82f48<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.03 映像特典 ノンテロップ・オープニング 第06話 未公開Ver. (640x480 WMV9 rev2 音声修正).wmv OZ9az3pcZo 34,245,149 88279c350465b9dbcf25946e98490367<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.04 映像特典 アズの補習授業♪ (640x480 WMV9).wmv OZ9az3pcZo 41,350,981 e4560d4c009a06beac5eeaacb11d70fd<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.04 映像特典 ノンテロップ・オープニング 第07話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 33,793,456 c861946728d9875936f9e51c99c32ea5<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.04 映像特典 ノンテロップ・オープニング 第08話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 35,541,149 9b01beb1aa4dd3c21db878dbfb153076<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.05 映像特典 アズの補習授業♪ (640x480 WMV9).wmv OZ9az3pcZo 43,622,589 315069d969af7a7ec92925ad46f8f7c6<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.05 映像特典 ノンテロップ・オープニング 第09話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 34,405,135 a785b86d70a10d0b3708902a02fea26c<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.05 映像特典 ノンテロップ・オープニング 第10話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 37,669,135 b1d139d0b87367b4e95b15e88ff56233<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.06 映像特典 アズの補習授業♪ (640x480 WMV9).wmv OZ9az3pcZo 36,857,478 5b66c9fb6ee19260f0b86774e9c45619<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.06 映像特典 ノンテロップ・オープニング 第11話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 31,287,830 a55796ef05c752fe65b2e403a4c634d1<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.06 映像特典 ノンテロップ・オープニング 第12話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 35,591,702 4b867334add187f3e4c842859621a1e4<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.07 映像特典 アズの補習授業♪ (640x480 WMV9).wmv OZ9az3pcZo 33,032,884 928205f8452d968f420fda5f59bdd045<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.07 映像特典 ノンテロップ・オープニング 第13話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 36,087,492 4ec1d741208521b2fff2f07ca8416940<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.07 映像特典 ノンテロップ・オープニング 第14話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 38,151,500 669877c7617fd634a20ff6550f18166d<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.08 映像特典 アズの補習授業♪ (640x480 WMV9).wmv OZ9az3pcZo 28,217,052 00c4ca259dfed1538975a6e360d8d5cd<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.08 映像特典 ノンテロップ・オープニング 第15話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 33,127,486 3960b63d0cfffc71e572ed5b72601bc3<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.08 映像特典 ノンテロップ・オープニング 第16話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 38,375,486 ed6764c70efc91b9d48a3f648c1d488a<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.09 映像特典 ノンテロップ・オープニング 第17話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 36,359,500 eb765c709404e95c5c5ceaf978e2bf59<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.09 映像特典 ノンテロップ・オープニング 第18話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 38,551,500 31ec0c8452875872f3927d3240d8302f<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.09 映像特典 アズの補習授業♪ (640x480 WMV9).wmv OZ9az3pcZo 34,809,352 27f93c6bd10e0410757d355ab2fc0e11<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.10 映像特典 アズの補習授業♪ (640x480 WMV9).wmv OZ9az3pcZo 34,265,356 47d2ae118ba63f4fcd20e3beb535edd0<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.10 映像特典 ノンテロップ・オープニング 第19話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 38,679,486 275bf1b050413847af49dd31dcf1f925<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.10 映像特典 ノンテロップ・オープニング 第20話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 38,503,486 ed2dd29fea0fb3ee23b36e93ee09bc02<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.11 映像特典 アズの補習授業♪ (640x480 WMV9).wmv OZ9az3pcZo 47,593,436 aced312bfec33a750fa82cce0af11cff<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.11 映像特典 ノンテロップ・オープニング 第21話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 37,527,486 2c6ce0ebc60773def1ac75b118ff431c<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.11 映像特典 ノンテロップ・オープニング 第22話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 35,543,500 ad8b174e2b79441757c7106336c0955e<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.12 映像特典 ノンテロップ・オープニング 第23話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 36,535,500 b74db5e151cdd0b32152c7960fbb4142<br>
+[アニメ DVD] クロノクルセイド DVD Chapter.12 映像特典 ノンテロップ・オープニング 第24話 未公開Ver. (640x480 WMV9).wmv OZ9az3pcZo 33,751,500 d481b9c7dfaee710ba32b62deb96e379<br>
+[アニメ DVD] クロノクルセイド 第01話 「シスターロゼット」 (640x480 WMV9 rev2).wmv OZ9az3pcZo 309,943,129 9f2df110c8460097b2fa06dbe7fb1fa3<br>
+[アニメ DVD] クロノクルセイド 第02話 「契約者」 (640x480 WMV9).wmv OZ9az3pcZo 289,543,119 7b5cddbec70b04f64635506b8ce0afe1<br>
+[アニメ DVD] クロノクルセイド 第03話 「御使い」 (640x480 WMV9).wmv OZ9az3pcZo 285,698,404 7afe60ce57548718b8d23024a51477da<br>
+[アニメ DVD] クロノクルセイド 第04話 「罪人」 (640x480 WMV9).wmv OZ9az3pcZo 244,131,137 a7352d3471a3a6976d97cf9076cff4ba<br>
+[アニメ DVD] クロノクルセイド 第05話 「修道騎士」 (640x480 WMV9).wmv OZ9az3pcZo 213,747,156 27609dc077958562208ca0873adb2c3b<br>
+[アニメ DVD] クロノクルセイド 第06話 「宝石の魔女」 (640x480 WMV9).wmv OZ9az3pcZo 247,995,953 e05e8fc67745c53e9cc50ecece28416a<br>
+[アニメ DVD] クロノクルセイド 第07話 「悪魔」 (640x480 WMV9).wmv OZ9az3pcZo 216,542,972 4ca257aa0532370f68deb898a248d9a1<br>
+[アニメ DVD] クロノクルセイド 第08話 「傀儡」 (640x480 WMV9).wmv OZ9az3pcZo 259,943,966 bb2925474ea2ee344fb97a39c40b31a7<br>
+[アニメ DVD] クロノクルセイド 第09話 「ヨシュア」 (640x480 WMV9).wmv OZ9az3pcZo 219,421,026 791425fbc4d9fb95c5b33ade9978a27a<br>
+[アニメ DVD] クロノクルセイド 第10話 「尖角」 (640x480 WMV9).wmv OZ9az3pcZo 200,911,049 a3e56d02ebc2a865428994741f0615cb<br>
+[アニメ DVD] クロノクルセイド 第11話 「けだもの」 (640x480 WMV9).wmv OZ9az3pcZo 238,278,722 84038dfb064bee9c629b92a8b76c34e6<br>
+[アニメ DVD] クロノクルセイド 第12話 「聖夜」 (640x480 WMV9).wmv OZ9az3pcZo 246,222,136 f6a1bada49d3dc1ff72ebe0e1c483e96<br>
+[アニメ DVD] クロノクルセイド 第13話 「姉」 (640x480 WMV9).wmv OZ9az3pcZo 232,497,947 4000d0e15a55521f5b02f1d8f6d7585e<br>
+[アニメ DVD] クロノクルセイド 第14話 「祈り」 (640x480 WMV9).wmv OZ9az3pcZo 251,131,267 4945e54e1afda37be563ba1f927a93e8<br>
+[アニメ DVD] クロノクルセイド 第15話 「追手」 (640x480 WMV9).wmv OZ9az3pcZo 201,283,441 c8ec5ab41a6b80c48ed105c9b31e5f7a<br>
+[アニメ DVD] クロノクルセイド 第16話 「信仰者」 (640x480 WMV9).wmv OZ9az3pcZo 220,525,269 95e83b0cf7b4e50ef7e34cfd497247ea<br>
+[アニメ DVD] クロノクルセイド 第17話 「共犯者たち」 (640x480 WMV9).wmv OZ9az3pcZo 242,349,115 0ea2d86ac22124e3c2139f606d0f6d0f<br>
+[アニメ DVD] クロノクルセイド 第18話 「四人」 (640x480 WMV9).wmv OZ9az3pcZo 232,226,590 956ea7a1ba35b2392b12bbc8abcdff5f<br>
+[アニメ DVD] クロノクルセイド 第19話 「首」 (640x480 WMV9).wmv OZ9az3pcZo 199,852,637 dfca97ea9b97645bb4f2df94c8eb848e<br>
+[アニメ DVD] クロノクルセイド 第20話 「毒」 (640x480 WMV9).wmv OZ9az3pcZo 189,286,082 97f8d5de8f08c297a2ffaafb9206a1f3<br>
+[アニメ DVD] クロノクルセイド 第21話 「マグダレーナ」 (640x480 WMV9).wmv OZ9az3pcZo 235,696,710 9db31678e28a7454144167b5130d91d2<br>
+[アニメ DVD] クロノクルセイド 第22話 「さよなら」 (640x480 WMV9).wmv OZ9az3pcZo 264,880,127 76acd9def57316b892fd3a5e0c0012c2<br>
+[アニメ DVD] クロノクルセイド 第23話 「ノイズ」 (640x480 WMV9).wmv OZ9az3pcZo 240,720,951 dc7f73942464cc7a3beca13be64a3015<br>
+[アニメ DVD] クロノクルセイド 第24話 「クロノ」 (640x480 WMV9).wmv OZ9az3pcZo 279,147,036 23d0246d9792b2b0f47a29c03a8d90c9<br>
+<hr class="A">
+(DVD) クロノクルセイド Chapter.Zero (640x480 WMV9 q93) [CRC_9A90].wmv OKSTYzwjuL 100,846,650 2be234000bba682646c6edce71d72be3<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.01 特典映像 アズの補習授業 (640x480 WMV9 q93) [CRC_ED62].wmv OKSTYzwjuL 35,825,130 b16d63e55119dea360a9b4bbae6722da<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.01 特典映像 クロノクルセイド インフォメーション (640x480 WMV9 q93) [CRC_633D].wmv OKSTYzwjuL 2,626,348 4c1203efd47a503f062b4ff9188ef8db<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.01 特典映像 ノンテロップ・オープニング (640x480 WMV9 q93) [CRC_C123].wmv OKSTYzwjuL 22,926,472 ebaaddccd373c5761384a1f08f04b5ea<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.01 特典映像 ノンテロップ・エンディング (640x480 WMV9 q93) [CRC_6C5F].wmv OKSTYzwjuL 13,640,792 60a9bcd5689652977b6ba44d5451da90<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.01 特典映像 ノンテロップ・オープニング OAバージョン 第01話 (640x480 WMV9 q93) [CRC_D34E].wmv OKSTYzwjuL 32,712,848 4860c4a4ccbc02283ec10e9998efde89<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.01 特典映像 ノンテロップ・オープニング OAバージョン 第02話 (640x480 WMV9 q93) [CRC_28B6].wmv OKSTYzwjuL 32,462,458 6799bfb296af672ab78439ea4abccc82<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.02 特典映像 アズの補習授業♪ (640x480 WMV9 q93) [CRC_3525].wmv OKSTYzwjuL 30,139,220 cb5316e4ed03454b23457e641f3f8df2<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.02 特典映像 ノンテロップ・オープニング OAバージョン 第03話 (640x480 WMV9 q93) [CRC_BE13].wmv OKSTYzwjuL 30,150,048 049512e66abb3aee1d65982df267387a<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.02 特典映像 ノンテロップ・オープニング OAバージョン 第04話 (640x480 WMV9 q93) [CRC_8202].wmv OKSTYzwjuL 32,641,258 2e8067d3e4a2c6a33df143c81e790160<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.03 特典映像 アズの補習授業♪ (640x480 WMV9 q93) [CRC_8CB6].wmv OKSTYzwjuL 35,348,386 385abfb5ee7824ca13ff68040df5b627<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.03 特典映像 ノンテロップ・オープニング OAバージョン 第05話 (640x480 WMV9 q93) [CRC_0CF8].wmv OKSTYzwjuL 32,820,128 bb43b2610450d87de0207319e3716e0b<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.03 特典映像 ノンテロップ・オープニング OAバージョン 第06話 (640x480 WMV9 q93) [CRC_AA71].wmv OKSTYzwjuL 33,380,298 091935c1331bafdff14e73bbb44baa5d<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.04 特典映像 アズの補習授業♪ アズでもわかるクロノクルセイド講座 Chapter4.5(640x480 WMV9 q93) [CRC_C8A3].wmv OKSTYzwjuL 42,787,026 043f7681c721798865cecf4e736d17ab<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.04 特典映像 クロノクルセイド インフォメーション (640x480 WMV9 q93) [CRC_AD76].wmv OKSTYzwjuL 47,746,166 820e4640cdd235464f56f14172cd4acf<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.04 特典映像 ノンテロップ・オープニング 未公開Ver. 第07話 (640x480 WMV9 q93) [CRC_AAA9].wmv OKSTYzwjuL 32,474,448 c86f84c23732eb24278029dc7181503c<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.04 特典映像 ノンテロップ・オープニング 未公開Ver. 第08話 (640x480 WMV9 q93) [CRC_5174].wmv OKSTYzwjuL 33,225,338 76ff3b4d539c17c1e1872e8849be4a56<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.05 特典映像 アズの補習授業♪ アズでもわかるクロノクルセイド講座 Chapter5.5 (640x480 WMV9 q93) [CRC_AE09].wmv OKSTYzwjuL 43,454,140 01a90676b6a698b06d5476bd7aa5b1bd<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.05 特典映像 クロノクルセイド インフォメーション (640x480 WMV9 q93) [CRC_A075].wmv OKSTYzwjuL 47,221,378 9ae1bcb141193fde1c4584284699d6a3<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.05 特典映像 ノンテロップ・オープニング 未公開Ver. 第09話 (640x480 WMV9 q93) [ [CRC_C879].wmv OKSTYzwjuL 31,377,808 210ff1af70108433ccd617b75be82d6e<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド Chapter.05 特典映像 ノンテロップ・オープニング 未公開Ver. 第10話 (640x480 WMV9 q93) [ [CRC_1748].wmv OKSTYzwjuL 32,677,018 74d48eee9214763ce66fec8098ac80fa<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド 第01話 「シスターロゼット」 (640x480 WMV9 q93) [CRC_A583].wmv OKSTYzwjuL 235,382,786 38f2b67c2337ea4db09333f2f2bf98b1<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド 第02話 「契約者」 (640x480 WMV9 q93) [CRC_DE10].wmv OKSTYzwjuL 212,317,600 77e7be88cd4b905cb26e5b90ef0cf37d<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド 第03話 「御使い」 (640x480 WMV9 q93) [CRC_2D0B].wmv OKSTYzwjuL 233,547,106 476c7872193042f979101bef25b33a49<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド 第04話 「罪人」 (640x480 WMV9 q93) [CRC_77DC].wmv OKSTYzwjuL 212,544,080 f317b9440fe9ca1b734484fe7d8c05ae<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド 第05話 「修道騎士」 (640x480 WMV9 q93) [CRC_5FCE].wmv OKSTYzwjuL 191,040,386 6a1f5857a63b86a8431e3fc5bed996d1<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド 第06話 「宝石の魔女」 (640x480 WMV9 q93) [CRC_8139].wmv OKSTYzwjuL 228,242,720 a1330062c0d52aaac0928348b5f28397<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド 第07話 「悪魔」 (640x480 WMV9 q93) [CRC_D791].wmv OKSTYzwjuL 203,830,546 7c6918dc9d4e41f7f7412a76a4a70815<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド 第08話 「傀儡」 (640x480 WMV9 q93) [CRC_4008].wmv OKSTYzwjuL 238,780,000 2ccfa5b83088510ff7a3c29e79f36baa<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド 第09話 「ヨシュア」 (640x480 WMV9 q93) [CRC_AFF8].wmv OKSTYzwjuL 206,250,306 fed872c3438ac21e63f483347ca97f47<br>
+(DVD) CHRNO † CRUSADE クロノクルセイド 第10話 「尖角」 (640x480 WMV9 q93) [CRC_E560].wmv OKSTYzwjuL 188,048,480 715d59575ffe26a190deff5aa13a7cbf<br>
+<hr class="A">
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイド(OP) 翼はPleasure Line  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 12,341,130 d9aaff0b6c4d62abfd8e6458eab67a1d<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 01話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 15,119,634 40093cf62d7843e5478d477c26f2f5e7<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 02話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 14,749,168 8f1594854e5f9ce60e8662bf29b17175<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 03話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 14,807,718 cc3e7f44e91b8cafe7df22c16aa49925<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 04話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 14,741,056 a63c16cefdec1150bcec71ee6b4b69a7<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 05話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 14,740,170 6ee9f35b4f969329a505795a2202ca3e<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 06話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 15,590,848 c2f861218150f0fbc1cf732d37fafb98<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 07話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 15,448,622 f10f4c268c6973d8267f8aa6c3d7de2b<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 08話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 15,705,216 21a26a09887a83ea21a405aca3eaa947<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 09話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 14,755,028 e96a682c003a348d71d889999848c143<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 10話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 15,183,320 9e87c00d56bbc67cc36d0f446fd055c3<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 11話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 15,440,934 8bdf94b31f59086b347841ecf39d22cf<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 12話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 15,682,888 d08a3c0b08880511c2e421ccdc305479<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 13話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 15,540,200 19126088f4c44b599423270de9bb6639<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 14話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 15,781,390 d0756f4ea4e165cf4e923009c2435beb<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 15話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 14,403,498 7af4292b6476140d39445779dc6bb049<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 16話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 16,045,180 b98082212ff41e21041bc29f626c5c41<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 17話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 15,454,700 65f9c82f20a8e908f311247f276f597b<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 18話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 15,670,386 4b0b69db1509b62055eb4dd0c0700c68<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 19話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 16,186,784 f1d060a04736a2b11d33bc15566f809a<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 20話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 16,296,728 4d12ee90d457b0661bc1bdb20b5534ce<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 21話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 15,667,634 014ad95d065c3da829935df7d9498855<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 22話ver  [1m29s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 15,189,324 8e8059ec1e89896982b331593037aee6<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 23話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 15,759,038 ab16afa03b2428d4aa4ba40ddfd504ea<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイドOP 24話ver  [1m30s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 14,974,122 257e3d1af230072c760867c30b51d2c9<br>
+#(ANIME) (OP-ED) (ノンテロップ) クロノクルセイド(ED) さよならソリティア  [1m29s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 8,037,686 96dc02f3c9a14653e00bb0e853ec60df<br>
+#(DVDアニメ) クロノクルセイド vol01特典 「アズの補習授業」  [3m01s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 21,008,070 a1343f29aed2172908b7385add9f2c9c<br>
+#(DVDアニメ) クロノクルセイド vol02特典 「アズの補習授業」  [2m56s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 17,091,700 7cb90625ae6da235512872a4cf0234af<br>
+#(DVDアニメ) クロノクルセイド vol03特典 「アズの補習授業」  [3m06s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 20,475,988 87936ae468679f4d5d1b87812bdf5802<br>
+#(DVDアニメ) クロノクルセイド vol04特典 「アズの補習授業」  [3m45s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 23,247,122 d24b19f01c199278c21ad484b44fcd4e<br>
+#(DVDアニメ) クロノクルセイド vol05特典 「アズの補習授業」  [3m16s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 25,576,944 d73655b8243d31c7ee028f9201693cf3<br>
+#(DVDアニメ) クロノクルセイド vol06特典 「アズの補習授業」  [3m39s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 22,546,124 d5265d04fea90278534697aafc35e985<br>
+#(DVDアニメ) クロノクルセイド vol07特典 「アズの補習授業」  [3m11s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 20,278,230 7c779aa3eb19556bf5e7b1dfb45718bc<br>
+#(DVDアニメ) クロノクルセイド vol08特典 「アズの補習授業」  [3m23s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 17,514,052 b28a12df4c0362926c8119383d673638<br>
+#(DVDアニメ) クロノクルセイド vol09特典 「アズの補習授業」  [3m44s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 20,921,530 a563d64de63e7d52f9f5173205c74dbc<br>
+#(DVDアニメ) クロノクルセイド vol10特典 「アズの補習授業」  [3m45s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 22,726,046 1200420330cd38fe664360a7c4371da1<br>
+#(DVDアニメ) クロノクルセイド vol11特典 「アズの補習授業」  [3m50s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 28,412,210 83bcb974c0bce7bee8c4074cd618f258<br>
+#(DVDアニメ) クロノクルセイド 第01話 「シスターロゼット」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 132,848,556 094a53abb10c49e82dd0e2f900925ecf<br>
+#(DVDアニメ) クロノクルセイド 第02話 「契約者」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 121,729,084 549d1d5c08bae6e8f196c56136454d49<br>
+#(DVDアニメ) クロノクルセイド 第03話 「御使い」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 129,873,956 f299117cec02fd788826171865f8dcc6<br>
+#(DVDアニメ) クロノクルセイド 第04話 「罪人」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 128,259,880 dab1750be3db0a349d7a9470ae68ce76<br>
+#(DVDアニメ) クロノクルセイド 第05話 「修道騎士」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 111,508,588 7aa04727fc3f57784d8ccc81d61906e1<br>
+#(DVDアニメ) クロノクルセイド 第06話 「宝石の魔女」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 128,654,360 673d00e3b3b07adfefcc9cd4199e6a44<br>
+#(DVDアニメ) クロノクルセイド 第07話 「悪魔」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 121,439,080 58498f9899cd23e6eecfb13aeead61e0<br>
+#(DVDアニメ) クロノクルセイド 第08話 「傀儡」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 129,699,596 d032913f7ccdc271121b54c56942664b<br>
+#(DVDアニメ) クロノクルセイド 第09話 「ヨシュア」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 116,141,982 01f3ab82a617579bcd11c7a85e20ef19<br>
+#(DVDアニメ) クロノクルセイド 第10話 「尖角」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 110,288,844 fa41f25db6dbc4377cd9ef611095271b<br>
+#(DVDアニメ) クロノクルセイド 第11話 「けだもの」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 130,810,996 2a858fefd25dbd591fbc9641a036bf5b<br>
+#(DVDアニメ) クロノクルセイド 第12話 「聖夜」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 126,631,132 fb332a2f6f4bd84d68de816da42fa884<br>
+#(DVDアニメ) クロノクルセイド 第13話 「姉」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 132,773,200 64e1fa572cd382f22a9695d44bc8e58f<br>
+#(DVDアニメ) クロノクルセイド 第14話 「祈り」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 138,974,996 a3ea96e0d41e167bd9580ec3daa70542<br>
+#(DVDアニメ) クロノクルセイド 第15話 「追手」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 114,516,666 029e13963bca07b7b7e3d340cc220a1b<br>
+#(DVDアニメ) クロノクルセイド 第16話 「信仰者」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 119,136,734 bee9f889476498d64f2b41eeb20144f7<br>
+#(DVDアニメ) クロノクルセイド 第17話 「共犯者たち」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 138,754,314 9d3a6f2ba6560493593bfe8dfef5a43b<br>
+#(DVDアニメ) クロノクルセイド 第18話 「四人」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 128,479,548 821632dda680838720ec590e29c50a4c<br>
+#(DVDアニメ) クロノクルセイド 第19話 「首」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 126,906,260 5b90f8ab2e19528968d64d8f423444c9<br>
+#(DVDアニメ) クロノクルセイド 第20話 「毒」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 111,666,120 4d75634acbf21ab9537785c042296b1a<br>
+#(DVDアニメ) クロノクルセイド 第21話 「マグダレーナ」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 121,473,924 6001484b74a8b60e4e6b714bfd88c3c3<br>
+#(DVDアニメ) クロノクルセイド 第22話 「さよなら」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 136,146,728 23192e86f6a036d299af78e0469e08bb<br>
+#(DVDアニメ) クロノクルセイド 第23話 「ノイズ」  [23m05s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 122,775,644 52afbe4cb8e46c572ed49bca1a26323f<br>
+#(DVDアニメ) クロノクルセイド 第24話 「クロノ」  [23m04s 640x480 XviD 23.98fps MP3 160Kbps].avi JvUTZV44Ex 132,912,928 464a8849f41946a833276f79f3b3927e<br>
+<hr class="A">
+【アニメ】【DVD】 クロノクルセイド 第01巻 映像特典 (640x480.23.976fps.9m51s.192Kbps.WMV9).avi Az5BRF69CZ 166,282,024 451a8063edb8667ed542bff8ab1c34be<br>
+【アニメ】【DVD】 クロノクルセイド 第02巻 映像特典 (640x480.23.976fps.6m13s.192Kbps.WMV9).avi Az5BRF69CZ 104,680,808 9ff217fdd2b24a62947085eea06c9467<br>
+【アニメ】【DVD】 クロノクルセイド 第03巻 映像特典 (640x480.23.976fps.6m28s.192Kbps.WMV9.ver.2).avi Az5BRF69CZ 109,063,326 5307750bc426c7f737abf76cc9f98d77<br>
+【アニメ】【DVD】 クロノクルセイド 第04巻 映像特典 (640x480.23.976fps.7m8s.192Kbps.WMV9).avi Az5BRF69CZ 120,484,404 5ea12cfc135b12438e05bda14aeea06a<br>
+【アニメ】【DVD】 クロノクルセイド 第05巻 映像特典 (640x480.23.976fps.6m20s.192Kbps.WMV9).avi Az5BRF69CZ 111,034,896 b8bc6a2016f7ca30b420a0f29086a54a<br>
+【アニメ】【DVD】 クロノクルセイド 第06巻 映像特典 (640x480.23.976fps.7m3s.192Kbps.WMV9).avi Az5BRF69CZ 119,182,298 44a53f4c53251d6ec71c98df4a9d2802<br>
+【アニメ】【DVD】 クロノクルセイド 第07巻 映像特典 (640x480.23.976fps.6m35s.192Kbps.WMV9).avi Az5BRF69CZ 112,397,606 cbefe48de9136ea4e75304a55bd42a86<br>
+【アニメ】【DVD】 クロノクルセイド 第08巻 映像特典 (640x480.23.976fps.7m8s.192Kbps.WMV9).avi Az5BRF69CZ 113,873,568 fc5311856bde1bfc7e705f1734e3d2f4<br>
+【アニメ】【DVD】 クロノクルセイド 第09巻 映像特典 (640x480.23.976fps.7m8s.192Kbps.WMV9).avi Az5BRF69CZ 120,320,920 112cb0f6634d6337eced5dbb2789fb68<br>
+【アニメ】【DVD】 クロノクルセイド 第10巻 映像特典 (640x480.23.976fps.7m9s.192Kbps.WMV9).avi Az5BRF69CZ 120,614,518 492521ea0ad381f36cbc26ea404f9691<br>
+【アニメ】【DVD】 クロノクルセイド 第11巻 映像特典 (640x480.23.976fps.7m13s.192Kbps.WMV9).avi Az5BRF69CZ 121,559,376 65db996a777620a357eff297f2ffc463<br>
+【アニメ】【DVD】 クロノクルセイド 第12巻 映像特典 (640x480.23.976fps.3m21s.192Kbps.WMV9).avi Az5BRF69CZ 56,413,856 b5fa45ff4439115c8c07363871d739d7<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.00 「先行プロモ－ション映像＆設定資料集」 (640x480.23.976fps.10m16s.192Kbps.WMV9.ver.2).avi Az5BRF69CZ 204,839,060 8ff9b56fd2b88de11b15db4f3511a187<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.01 「シスターロゼット」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,732,832 85b08c8ce2e3ea35320eea9fa522f784<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.02 「契約者」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,774,842 836892cb655bac83ce0f3362764f5b66<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.03 「御使い」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,722,884 80d6e6f160f0d519d2b51e8d763ff86a<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.04 「罪人」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,725,636 eb946ebe47dee670a3d8b4fd1657fe39<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.05 「修道騎士」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,594,702 23ecc2fef9c3a8feaaa7ca54c9b2cc44<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.06 「宝石の魔女」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,715,372 46f30cc0b6cf9672f0cb2daaa1a04da5<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.07 「悪魔」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,761,584 06e657fd771c2ee5fe82f8e884d0799e<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.08 「傀儡」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,720,762 1b28f1a7f96639bbc8c606b7ce1e40b3<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.09 「ヨシュア」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,714,926 b5cdad5e5e576507e7658fc39c589c05<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.10 「尖角」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,801,672 4efd41c238b26721e531cc8c9f6ea564<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.11 「けだもの」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,760,672 648b27cd63cdbe336ee157b323c8179a<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.12 「聖夜」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,792,582 48b1b131cb0061a6bea1edc7d45e80f1<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.13 「姉」 (640x480.23.976fps.23m4s.192Kbps.WMV9).avi Az5BRF69CZ 353,673,852 b5b978cbce59d8ee7e83909b900239f4<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.14 「祈り」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 354,030,590 e1a7d51d836c1d936f1d27683299e20c<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.15 「追手」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,723,292 d347d6a75a8a668061814aa48129a498<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.16 「信仰者」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,693,282 4192f34f5c0501858a31ade97b3e35e6<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.17 「共犯者たち」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,688,046 d88733243f7a9dfb05c6f26c3e17f2e9<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.18 「四人」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,757,546 f982fbafa69715b3014ffeb5f59cdaec<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.19 「首」 (640x480.23.976fps.23m4s.192Kbps.WMV9).avi Az5BRF69CZ 353,697,920 e1d5bb8d48b84dac166148661f4136a3<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.20 「毒」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,739,750 27759ff805f91e916528e51175fef929<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.21 「マグダレーナ」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,640,202 af1a5fcc448c40d92a6e8696b3c0c880<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.22 「さよなら」 (640x480.23.976fps.23m5s.192Kbps.WMV9).avi Az5BRF69CZ 353,663,980 986e9096217f92e2107529a519dd6d1d<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.23 「ノイズ」 (640x480.23.976fps.23m4s.192Kbps.WMV9).avi Az5BRF69CZ 369,641,706 6b447102c098b15073d811a0361a3768<br>
+【アニメ】【DVD】 クロノクルセイド Chapter.24 「クロノ」 (640x480.119.890fps.23m4s.192Kbps.WMV9.Q97).avi Az5BRF69CZ 356,527,440 2b5e330c356fc0e8bee2ef874421c9ce<br>
+<hr class="A">
+クロノクルセイド DVD特典 「アズでもわかるクロノクルセイド講座 第01回」 (DVD 640x480 DivX502 QB97 24fps).avi 35,893,658 45b592e42a66e1ad5e384b7b4e594936<br>
+クロノクルセイド DVD特典 「アズでもわかるクロノクルセイド講座 第02回」 (DVD 640x480 DivX502 QB97 24fps).avi 30,083,632 aabe2c64bf240843e7ede9d4353583de<br>
+クロノクルセイド DVD特典 「アズでもわかるクロノクルセイド講座 第03回」 (DVD 640x480 DivX502 QB97 24fps).avi 34,144,814 6c3c95dc6690f3bdb348ae12bd8550cc<br>
+クロノクルセイド DVD特典 「アズでもわかるクロノクルセイド講座 第04回」 (DVD 640x480 DivX502 QB97 24fps).avi 33,656,842 ffb6c8bb8e5c93f9b57198a23ab1e1e0<br>
+クロノクルセイド DVD特典 「アズでもわかるクロノクルセイド講座 第05回」 (DVD 640x480 DivX502 QB97 24fps).avi 44,233,120 beb63477ee7ec1cb00ed62b84afe4f9b<br>
+クロノクルセイド DVD特典 「アズでもわかるクロノクルセイド講座 第06回」 (DVD 640x480 DivX502 QB97 24fps).avi 38,098,244 904b1bd87ced523605f740aab1a758bd<br>
+クロノクルセイド DVD特典 「アズでもわかるクロノクルセイド講座 第07回」 (DVD 640x480 DivX502 QB97 24fps).avi 34,578,712 9bbdd978bc6cbd3c4d17cf6a04eb2a9d<br>
+クロノクルセイド DVD特典 「アズでもわかるクロノクルセイド講座 第08回」 (DVD 640x480 DivX502 QB97 120fps).avi 33,453,332 8533c9b8616a91dc5a136624622e97b8<br>
+クロノクルセイド DVD特典 「アズでもわかるクロノクルセイド講座 第09回」 (DVD 640x480 DivX502 QB97 24fps).avi 36,768,584 4a58551e4ae4ddea1ace948fa816feb2<br>
+クロノクルセイド DVD特典 「アズでもわかるクロノクルセイド講座 第10回」 (DVD 640x480 DivX502 QB97 24fps).avi 36,472,806 9bb16735f4a978d5734522f2301236ce<br>
+クロノクルセイド DVD特典 「アズでもわかるクロノクルセイド講座 第11回」 (DVD 640x480 DivX502 QB97 24fps).avi 49,501,640 295470725ad7e07537553170ae6f31a9<br>
+クロノクルセイド 第01話 「シスターロゼット」 (DVD 640x480 DivX502 QB97 24fps).avi 220,748,324 cff1fb62e10f3f1243313eddcf2c2c7d<br>
+クロノクルセイド 第02話 「契約者」 (DVD 640x480 DivX502 QB97 24fps).avi 201,795,702 9f146b38eb9d96dc96445ded228e2da4<br>
+クロノクルセイド 第03話 「御使い」 (DVD 640x480 DivX502 QB97 24fps).avi 231,962,938 9bc7965cbac0934fd643dfd42e5630ef<br>
+クロノクルセイド 第04話 「罪人」 (DVD 640x480 DivX502 QB97 24fps).avi 200,531,268 83a1a6d8003990fee7ab3962a0b90382<br>
+クロノクルセイド 第05話 「修道騎士」 (DVD 640x480 DivX502 QB97 24fps).avi 187,816,548 4610d6e36526ed778f34b814b15deb12<br>
+クロノクルセイド 第06話 「宝石の魔女」 (DVD 640x480 DivX502 QB97 24fps).avi 226,471,632 ef8cb561475b24d2066ed514354cbe99<br>
+クロノクルセイド 第07話 「悪魔」 (DVD 640x480 DivX502 QB97 24fps).avi 176,239,828 ddf31d13af6f59995f5675371eed697d<br>
+クロノクルセイド 第08話 「傀儡」 (DVD 640x480 DivX502 QB97 24fps).avi 203,843,864 0e067c3b3d18a394fa9ecf9ed7c43d90<br>
+クロノクルセイド 第09話 「ヨシュア」 (DVD 640x480 DivX502 QB97 24fps).avi 218,738,826 de7e00d27f743eba4366314b95dfa9fa<br>
+クロノクルセイド 第10話 「尖角」 (DVD 640x480 DivX502 QB97 24fps).avi 197,348,334 ec477a7ac4c8761d3d07f27c3d8c9f2d<br>
+クロノクルセイド 第11話 「けだもの」 (DVD 640x480 DivX502 QB97 24fps).avi 227,669,754 1d652a5f4cdb5eb87aa3f880cd3aa415<br>
+クロノクルセイド 第12話 「聖夜」 (DVD 640x480 DivX502 QB97 24fps).avi 253,005,204 bc6a6c2777e34d35a1e6b9d052c03a95<br>
+クロノクルセイド 第13話 「姉」 (DVD 640x480 DivX502 QB97 24fps).avi 238,868,802 8b3f6db5696b5e365b459448197c50a3<br>
+クロノクルセイド 第14話 「祈り」 (DVD 640x480 DivX502 QB97 24fps).avi 280,036,866 8a6bb0e44ad5fcb65f460967b3dc24f6<br>
+クロノクルセイド 第15話 「追手」 (DVD 640x480 DivX502 QB97 24fps).avi 197,774,854 c75aafea561520c3be609b891b0dd07e<br>
+クロノクルセイド 第16話 「信仰者」 (DVD 640x480 DivX502 QB97 24fps).avi 219,021,214 ee08ac490f64baed9be2c5a47148cf30<br>
+クロノクルセイド 第17話 「共犯者たち」 (DVD 640x480 DivX502 QB97 24fps).avi 247,269,708 6711b6ba7b568b9f16bb75fd38a05109<br>
+クロノクルセイド 第18話 「四人」 (DVD 640x480 DivX502 QB97 24fps).avi 254,882,204 9ed491b04292ad4b80c0ac27aa19c019<br>
+クロノクルセイド 第19話 「首」 (DVD 640x480 DivX502 QB97 24fps).avi 202,942,296 5224876207607ae34617a03645c7d96e<br>
+クロノクルセイド 第20話 「毒」 (DVD 640x480 DivX502 QB97 24fps).avi 194,295,236 fd106c5f9b299953f576e42b212750d5<br>
+クロノクルセイド 第21話 「マグダレーナ」 (DVD 640x480 DivX502 QB97 24fps).avi 235,008,494 adf3fe1a0bfc93bb2f6be432657996df<br>
+クロノクルセイド 第22話 「さよなら」 (DVD 640x480 DivX502 QB97 24fps).avi 263,147,326 993ce0b6c76e98a6d9fb130ec78db9ac<br>
+クロノクルセイド 第23話 「ノイズ」 (DVD 640x480 DivX502 QB97 24fps).avi 237,247,134 017504358c8832d522fb40a64a3cfd76<br>
+クロノクルセイド 第24話 「クロノ」 (DVD 640x480 DivX502 QB97 120fps).avi 312,637,642 597ed46e915e001e55b604d97329cb0d<br>
+<hr class="A">
+クロノクルセイド 第01巻 映像特典 アズの補習授業♪ (DVD 640x480 WMV9).avi G1WrcQ3EnH 32,130,276 c4b84d324a183bc5630c387066ecefc3<br>
+クロノクルセイド 第02巻 映像特典 アズの補習授業♪ (DVD 640x480 WMV9).avi G1WrcQ3EnH 26,338,370 ebf7efc457e5e26e49a488e433eddcd3<br>
+クロノクルセイド 第03巻 映像特典 アズの補習授業♪ (DVD 640x480 WMV9).avi G1WrcQ3EnH 30,292,238 7e36be391a8d2112ab21e75f4f00fb87<br>
+クロノクルセイド 第04巻 映像特典 「アズでもわかるクロノクルセイド講座 Chapter.4.5」 アズの補習授業♪ (DVD 640x480 WMV9).avi G1WrcQ3EnH 34,408,990 b3a1d6ce8895ab0ebbffc2e6025603c3<br>
+クロノクルセイド 第01話 「シスターロゼット」 (DVD 640x480 WMV9).avi G1WrcQ3EnH 211,194,980 8eb46f8b3a79180ac8cf0aba42a0f184<br>
+クロノクルセイド 第02話 「契約者」 (DVD 640x480 WMV9).avi G1WrcQ3EnH 195,408,134 931fb563b81e6a8f99577432a6d6469c<br>
+クロノクルセイド 第03話 「御使い」 (DVD 640x480 WMV9).avi G1WrcQ3EnH 234,698,782 be27ca04858359708613fd5b58e98582<br>
+クロノクルセイド 第04話 「罪人」 (DVD 640x480 WMV9).avi G1WrcQ3EnH 203,943,614 cb8f73adddfb66397ee3b5ac9aef074d<br>
+クロノクルセイド 第05話 「修道騎士」 (DVD 640x480 WMV9).avi G1WrcQ3EnH 173,994,234 acdc7d3bd0a644732e84ef99eb0a9e9f<br>
+クロノクルセイド 第06話 「宝石の魔女」 (DVD 640x480 WMV9).avi G1WrcQ3EnH 206,613,212 5ec5d94df6184c11fa3868c316af8d75<br>
+<br></dd>
+</dl><a name="footer"></a><hr><br></body></html>
